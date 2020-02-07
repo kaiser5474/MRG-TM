@@ -9,7 +9,7 @@
         "flagTreeViewGrid": true,
         "flagTreeViewDV": true,
         "componentType": "Grid",
-        "Xbasic": "dim tmpl as p\ntmpl.ComponentName = \"Indicador3\"\ntmpl.ComponentType = \"Grid\"\ntmpl.AjaxOn = .t.\ntmpl.LayoutColumns = 1\ntmpl.useCompactTheme = .t.\ntmpl.showPulseEffect = .t.\ntmpl.queryEcho = .f.\ntmpl.connectToWebSocketServer = .f.\ntmpl.flagAddPKToORDER = .t.\ntmpl.saveFileType = \"Formatted JSON\"\ntmpl.captureJSErrorStackTrace = .f.\ntmpl.SecurityModel = \"Group Based\"\ntmpl.SecurityMode = \"\"\ntmpl.PreCalcMode = \"Standard\"\ntmpl.clientSideDateFormat = \"MM/dd/yyyy\"\ntmpl.publishedServerVariables = \"\"\ntmpl.datePicker.dayNames = \"Sun,Mon,Tue,Wed,Thu,Fri,Sat\"\ntmpl.datePicker.firstDayOfWeek = 1\ntmpl.datePicker.monthNames = \"January,February,March,April,May,June,July,August,September,October,November,December\"\ntmpl.datePicker.todayButtonText = \"Today\"\ntmpl.datePicker.closeButtonText = \"Close\"\ntmpl.datePicker.closeButtonText = \"Close\"\ntmpl.friendlydatesCustomizationJSON = \"\"\ntmpl.customizationString.javascriptDialogs = \"\"\ntmpl.iconMapOverrides = \"\"\ntmpl.DataSourceType = \"CS\"\ntmpl.CS.database_type = \"CS\"\ntmpl.CS.type = \"connectionstring\"\ntmpl.cs.ConnectionString  = \"::name::Nibble\"\ntmpl.CS.SQL = \"SELECT Id_Recorrido,  Max(Fecha)  AS MaxofFecha,  Max(FechaHasta)  AS MaxofFechahasta \"+chr(13)+chr(10)+\"FROM RecMedTranspRepAct \"+chr(13)+chr(10)+\"WHERE Id_Actividad IN (4, 49, 9) \"+chr(13)+chr(10)+\"GROUP BY Id_Recorrido\"\nDIM tmpl.Arguments[0] AS P\nDIM tmpl.ArgumentsPage AS P\nwith tmpl.ArgumentsPage\n\t.PromptTextAbove = \"\"\nend with\ntmpl.CS.PrimaryKeyColumns = \"RecMedTranspRepAct|Id_RecMedTranspRepAct\"\ntmpl.CS.IdentitySequenceName  = \"\"\ntmpl.CS.primaryKeyTopAliasIsAutoIncrement  = .f.\ntmpl.search.has_search_component = .t.\ntmpl.search.title = \"Search \"\ntmpl.search.show_title = .t.\ntmpl.search.search_button_label = \"Search\"\ntmpl.search.include_sorting_listbox = .t.\ntmpl.search.sort.prompt = \"Sort&nbsp;by\"\ntmpl.search.sorting_listbox_Label_position = \"Left\"\ntmpl.search.sort.promptInLineStyle = \"\"\ntmpl.search.sort.listbox.fieldname_prompt = \"Select Field\"\ntmpl.search.sort.listbox.use_column_headings = .f.\ntmpl.search.customSortDefinition = \"\"\ntmpl.search.search_button.useIcon = .f.\ntmpl.search.clear_link.useIcon = .f.\ntmpl.search.sort.listbox.order_prompt = \"Select Order\"\ntmpl.search.sort.listbox.order_choices = \"Ascending,Descending\"\ntmpl.search.include_records_per_page_listbox = .t.\ntmpl.search.records_per_page.prompt = \"Records&nbsp;per&nbsp;page\"\ntmpl.search.records_per_page_Label_position = \"Left\"\ntmpl.search.records_per_page.promptInLineStyle = \"\"\ntmpl.search.records_per_page.listbox.value_prompt = \"Select Value\"\ntmpl.search.records_per_page.listbox.choices = \"1,2,5,10,25,50,75,100\"\ntmpl.search.orientation = \"Vertical\"\ntmpl.search.combine_criteria_using = 1\ntmpl.search.style = 2\ntmpl.search.allow_qbf_style = .t.\ntmpl.search.show_single_search_field = .f.\ntmpl.search.keyword_label = \"Search for?\"\ntmpl.search.has_Clear_link = .t.\ntmpl.search.Clear_link_Label = \"Clear Search Criteria\"\ntmpl.search.Clear_link_BubbleHelp = \"Clear Search\"\ntmpl.search.EnableShowHide  = .f.\ntmpl.search.InitialState = \"Open\"\ntmpl.search.title_when_hidden = \"Click here to search...\"\ntmpl.search.qbe_exclusions = \"\"\ntmpl.search.toolbarPosition = \"Below\"\ntmpl.search.disableAutoComplete = .f.\ntmpl.search.HideGridWhenNoActiveSearch = .f.\ntmpl.search.GridHTMLWhenHidden  = \"\"\ntmpl.EditRegion.Search.Top = \"\"\ntmpl.EditRegion.Search.Bottom = \"\"\ntmpl.EditRegion.Search.Left = \"\"\ntmpl.EditRegion.Search.Right = \"\"\ntmpl.search.allowSearchCriteriaSave = .f.\ntmpl.search.allowSearchCriteriaLoad = .f.\ntmpl.SearchFields = 1\nDIM tmpl.SearchField_Info[tmpl.SearchFields] as P \nwith tmpl.searchField_info[1]\n\t.Fieldname = \"MaxofFecha\"\n\t.SearchExpression = \"Max(Fecha)\"\n\t.RangeSearch = .t.\n\t.FromLabel = \"From:\"\n\t.ToLabel = \"To:\"\n\t.Initial_Value = \"NULL\"\n\t.Search_Style = 0\n\t.KeywordSearch = .f.\n\t.Scope = \"Local\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .f.\n\t.portableType = \"NationalVaryingCharacter\"\n\t.nativeType = \"\"\n\t.Type = \"C\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Varname = \"MAXOFFECHA\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"TextBox\"\n\t.Textbox.Size = 40\n\t.Textbox.HTML5Type = \"\"\n\t.Textbox.customAttributes = \"\"\n\t.Textbox.readonly = .f.\n\t.Textbox.MaxLength = 200\n\t.Textbox.InLineStyle = \"\"\n\t.Textbox.className = \"\"\n\t.Textbox.ContainerInlineStyle = \"\"\n\t.Textbox.IsPassword = .f.\n\t.hasWatermark= .f.\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .f.\n\t.BaseFieldExpression = \"Max(Fecha)\"\n\t.SourceAlias = \"\"\n\t.Column.Heading = \"Maxof Fecha\"\nend with\ntmpl.grid_layout_style = 1\ntmpl.add_records_only = .f.\ntmpl.rows = 10\ntmpl.maxRowsPerPage = 200\ntmpl.rowsWhenSearchActive = -1\ntmpl.suppress_empty_rows = .t.\ntmpl.has_row_separator = .t.\ntmpl.alternate_bands = .f.\ntmpl.even_band_size = 1\ntmpl.odd_band_size = 1\ntmpl.alternate_column_bands = .f.\ntmpl.even_column_band_size = 1\ntmpl.odd_column_band_size = 1\ntmpl.conditionalStyle = \"\"\ntmpl.clientSideConditionalStyle = \"\"\ntmpl.show_title = .f.\ntmpl.title = \"\"\ntmpl.FontSize = \"Medium\"\ntmpl.No_records_message = \"No records in query\"\ntmpl.total_records_row_position = 1\ntmpl.total_records_row = \"Records:&nbsp; {Total_Records}&nbsp;\"\ntmpl.show_column_titles = 1\ntmpl.suppress_titles_if_no_records = .f.\ntmpl.show_row_labels = .t.\ntmpl.snakingLayout_suppressRepeatedLabels = .f.\ntmpl.sort_style = 3\ntmpl.reset_page_number_when_sorting = .t.\ntmpl.allowGridBodyScrolling = .f.\ntmpl.scrollableRegionHeight = \"2in\"\ntmpl.scrollableRegionWidth = \"100%\"\ntmpl.fixedWidthColumns = .f.\ntmpl.defaultColumnWidth = \"1in\"\ntmpl.columnWidthSettings = \"\"\ntmpl.EditRegion.Grid.Top = <<%editregion%\n%editregion%\ntmpl.EditRegion.Grid.Bottom = <<%editregion%\n%editregion%\ntmpl.EditRegion.Grid.Left = <<%editregion%\n%editregion%\ntmpl.EditRegion.Grid.Right = <<%editregion%\n%editregion%\ntmpl.HasNewRecordsTitle = .f.\ntmpl.NewRecordsTitle = \"<tr><td class=\\\"[class.gridData]\\\" colspan=\\\"{a5_colspan}\\\" style=\\\"padding: 0px;\\\" >New Records</td></tr>\"\ntmpl.HasExistingRecordsTitle = .f.\ntmpl.ExistingRecordsTitle = \"<tr><td class=\\\"[class.gridData]\\\" colspan=\\\"{a5_colspan}\\\" style=\\\"padding: 0px;\\\" >Existing Records</td></tr>\"\ntmpl.Highlight_row_onHover =  .t.\ntmpl.Highlight_row_onSelect =  .t.\ntmpl.HasRecordsPerPageSelector = .t.\ntmpl.RecordsPerPageChoices =   \"1,2,5,10,25,50,75,100\"\ntmpl.RecordsPerPageSelectorTemplate = \"&nbsp;&nbsp;{Grid.RecordsPerPageSelector} Records per page\"\ntmpl.has_qbe_row = .f.\ntmpl.qbe.initial_display = \"Hidden\"\ntmpl.qbe.toggleQBERowHyperlinkText = \"Show/Hide QBE Row\"\ntmpl.has_advancedSearch = .f.\ntmpl.hasLinkedContent = .f.\ntmpl.hasExternalNavigators = .f.\ntmpl.hasRowExpandColumn = .f.\ntmpl.hasSelectedRowColumn = .t.\ntmpl.hasCheckboxSelectColumn = .f.\ntmpl.AdditionalGridStyles = \"\"\ntmpl.LocalCss = \"\"\ntmpl.CSSLinkedFiles = \"\"\ntmpl.localsvg = \"\"\ntmpl.SVGLinkedFiles = \"\"\ntmpl.CSSIcons = \"\"\ntmpl.JavaScriptLinkedFiles = \"\"\ntmpl.useMasterTemplate = .f.\ntmpl.MasterTemplateStyle = \"Table - Vertical Layout\"\ntmpl.MasterLayoutTemplate = \"\"\ntmpl.MasterLayoutTemplateJavascript = \"\"\ntmpl.MasterLayout.PaneLabel.Search = \"Search\"\ntmpl.MasterLayout.PaneLabel.Grid = \"Grid\"\ntmpl.MasterLayout.PaneLabel.DetailView = \"Detail\"\ntmpl.MasterLayout.AccordionStyle = \"Multiple\"\ntmpl.MasterLayout.InitialOpenPanes = \"Search,Grid,DetailView\"\ntmpl.verticalAlignDataInColumns = \"Middle\"\ntmpl.CanCollapseGrid = .f.\ntmpl.CollapseBar.Title = \"Collapse Grid\"\ntmpl.CollapseBar.OpenIcon = \"\"\ntmpl.CollapseBar.ClosedIcon = \"\"\ntmpl.CollapseBar.Style = \"\"\ntmpl.Collapsebar.Class = \"\"\ntmpl.Collapsebar.ContainerStyle = \"\"\ntmpl.Collapsebar.ContainerClass = \"\"\ntmpl.Collapsebar.InitialState = \"open\"\ntmpl.languageTags_RemoveUnConsumedTags = .t.\ntmpl.activeLanguage = \"<Default>\"\ntmpl.search.highlightSearchStrings = .f.\ntmpl.autoRefreshGrid = .f.\ntmpl.autoRefreshInterval = 60\ntmpl.helpTableType = \"DBF\"\ntmpl.helpTableName = \"\"\ntmpl.helpConnectionString = \"\"\ntmpl.helpIDfield = \"\"\ntmpl.helpContentsField = \"\"\ntmpl.fieldHelpWindowStyle = \"modal-resizeable\"\ntmpl.fields = 3\nDIM tmpl.field_info[tmpl.fields] as P \nwith tmpl.field_info[1]\n\t.Fieldname = \"Id_Recorrido\"\n\t.Scope = \"Local\"\n\t.DisplayFormat = \"\"\n\t.DisplayUnFormat = \"\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .f.\n\t.portableType = \"Integer32\"\n\t.nativeType = \"\"\n\t.Type = \"N\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Varname = \"ID_RECORRIDO\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"Label\"\n\t.Label.InLineStyle = \"text-align: right;\"\n\t.Label.ClassName = \"\"\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .f.\n\t.BaseFieldExpression = \"Id_Recorrido\"\n\t.SourceAlias = \"\"\n\t.Column.Heading = \"Id Recorrido\"\n\t.Column.Sort = \"Id_Recorrido\"\n\t.Column.FirstClickDirection = \"A\"\nend with\nwith tmpl.field_info[2]\n\t.Fieldname = \"MaxofFecha\"\n\t.Scope = \"Local\"\n\t.DisplayFormat = \"\"\n\t.DisplayUnFormat = \"\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .f.\n\t.portableType = \"NationalVaryingCharacter\"\n\t.nativeType = \"\"\n\t.Type = \"C\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Varname = \"MAXOFFECHA\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"Label\"\n\t.Label.InLineStyle = \"\"\n\t.Label.ClassName = \"\"\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .f.\n\t.BaseFieldExpression = \"Max(Fecha)\"\n\t.SourceAlias = \"\"\n\t.Column.Heading = \"Maxof Fecha\"\n\t.Column.Sort = \"Max(Fecha)\"\n\t.Column.FirstClickDirection = \"A\"\nend with\nwith tmpl.field_info[3]\n\t.Fieldname = \"MaxofFechahasta\"\n\t.Scope = \"Local\"\n\t.DisplayFormat = \"\"\n\t.DisplayUnFormat = \"\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .f.\n\t.portableType = \"NationalVaryingCharacter\"\n\t.nativeType = \"\"\n\t.Type = \"C\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Varname = \"MAXOFFECHAHASTA\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"Label\"\n\t.Label.InLineStyle = \"\"\n\t.Label.ClassName = \"\"\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .f.\n\t.BaseFieldExpression = \"Max(FechaHasta)\"\n\t.SourceAlias = \"\"\n\t.Column.Heading = \"Maxof Fechahasta\"\n\t.Column.Sort = \"Max(FechaHasta)\"\n\t.Column.FirstClickDirection = \"A\"\nend with\ntmpl.RecordNavigationStyle = \"NavigationButtons\"\ntmpl.fetchMoreRecordsButton.text = \"More Records\"\ntmpl.fetchMoreRecordsButton.style = \"\"\ntmpl.RecNav.SuppressIfOnlyOnePage = .t.\ntmpl.RecNav.First_Label = \"First\"\ntmpl.RecNav.Has_First_Button = .t.\ntmpl.RecNav.Has_Last_Button = .t.\ntmpl.RecNav.Has_Next_Button = .t.\ntmpl.RecNav.Has_Prev_Button = .t.\ntmpl.RecNav.HTML_Template_source = \"Computed\"\ntmpl.RecNav.Justify = \"Left\"\ntmpl.RecNav.Last_Label = \"Last\"\ntmpl.RecNav.Next_Label = \"Next\"\ntmpl.RecNav.Number_of_page_links = 10\ntmpl.RecNav.Page_Numbering_Style = 3\ntmpl.RecNav.PagesTemplate_w_PageCount = \"{PageNumber} of {PageCount}\"\ntmpl.RecNav.PagesTemplate_wout_PageCount = \"{PageNumber}\"\ntmpl.RecNav.Position = 1\ntmpl.RecNav.suppress_recNavBar_if_no_records = .f.\ntmpl.RecNav.Prev_Label = \"Prev\"\ntmpl.RecNav.Show_disabled_controls = .t.\ntmpl.RecNav.Show_Page_Count = .t.\ntmpl.RecNav.Use_Images = .f.\ntmpl.gridToolbarTemplate = <<%html%\n%html%\ntmpl.gridToolbarTemplateEditable = <<%html%\n%html%\ntmpl.style_name = \"GrBlue\"\ntmpl.resolveAbstractClassNames = .t.\ntmpl.style_type = \"Alpha Five\"\ntmpl.UseSimpleStyles = .f.\ntmpl.overrideStylesForJavascriptObjects = .f.\ntmpl.searchBehavior = \"\"\ntmpl.GUID = \"41ebb570-1543-4ff8-acdd-34d8a3ced9df\"\ntmpl.onlyIncludeSelectedFieldsInQuery = .t.\ntmpl.hasGroupBreaks = .f.\ntmpl.groupBreaks.expression1 = \"\"\ntmpl.groupBreaks.direction1 = \"\"\ntmpl.groupBreaks.header1 = <<%HTML%\n%HTML%\ntmpl.groupBreaks.footer1 = <<%HTML%\n%HTML%\ntmpl.groupBreaks.collapseAllGroupsOnInitialDisplay = .f.\ntmpl.timestamp = \"2019-10-21:18-15-32.497\"\ntmpl.resolveAbstractClassNamesAtDesignTime  = .f.\ntmpl.resolveAbstractIconNamesAtDesignTime = .f. \ntmpl.useLegacyDatePicker = .f.\ntmpl.javascriptUnboundActionDefinitions = <<%javascriptActions%\n%javascriptActions%\n\ntmpl.precalc.sessionVarsInShowHideExpns = <<%sessionvars%\n%sessionvars%\ntmpl.precalc.unboundActionsXbasicFunctions = \"\"\ntmpl.precalc.includeS3Javascript = .f.",
+        "Xbasic": "dim tmpl as p\ntmpl.ComponentName = \"Indicador3\"\ntmpl.ComponentType = \"Grid\"\ntmpl.AjaxOn = .t.\ntmpl.LayoutColumns = 1\ntmpl.useCompactTheme = .t.\ntmpl.showPulseEffect = .t.\ntmpl.queryEcho = .f.\ntmpl.connectToWebSocketServer = .f.\ntmpl.flagAddPKToORDER = .t.\ntmpl.saveFileType = \"Formatted JSON\"\ntmpl.captureJSErrorStackTrace = .f.\ntmpl.pusherApp = .f.\ntmpl.pusherConfigJSON = \"\"\ntmpl.SecurityModel = \"Group Based\"\ntmpl.SecurityMode = \"\"\ntmpl.PreCalcMode = \"Standard\"\ntmpl.clientSideDateFormat = \"MM/dd/yyyy\"\ntmpl.publishedServerVariables = \"\"\ntmpl.datePicker.dayNames = \"Sun,Mon,Tue,Wed,Thu,Fri,Sat\"\ntmpl.datePicker.firstDayOfWeek = 1\ntmpl.datePicker.monthNames = \"January,February,March,April,May,June,July,August,September,October,November,December\"\ntmpl.datePicker.todayButtonText = \"Today\"\ntmpl.datePicker.closeButtonText = \"Close\"\ntmpl.datePicker.closeButtonText = \"Close\"\ntmpl.friendlydatesCustomizationJSON = \"\"\ntmpl.customizationString.javascriptDialogs = \"\"\ntmpl.iconMapOverrides = \"\"\ntmpl.DataSourceType = \"CS\"\ntmpl.CS.database_type = \"CS\"\ntmpl.CS.type = \"connectionstring\"\ntmpl.cs.ConnectionString  = \"::name::Nibble\"\ntmpl.CS.SQL = \"SELECT Id_Recorrido,  Max(Fecha)  AS MaxofFecha,  Max(FechaHasta)  AS MaxofFechahasta \"+chr(13)+chr(10)+\"FROM RecMedTranspRepAct \"+chr(13)+chr(10)+\"WHERE Id_Actividad IN (4, 49, 9) \"+chr(13)+chr(10)+\"GROUP BY Id_Recorrido\"\nDIM tmpl.Arguments[1] AS P\nwith tmpl.Arguments[1]\n\t.Name = \"\"\n\t.DataType = \"\"\n\t.Source = \"\"\n\t.SourceDisplay = \"\"\n\t.VariableScope = \"\"\n\t.VariableName = \"\"\n\t.VariableWithScope = \"\"\n\t.DefaultValue = \"\"\n\t.Prompt = .f.\n\t.PromptText = \"\"\n\t.PromptControlType = \"\"\n\t.PromptChoices = \"\"\n\t.PromptDlgTitle = \"\"\n\t.PromptTextAbove = \"\"\n\t.PreviewValue = \"\"\nend with\nDIM tmpl.ArgumentsPage AS P\nwith tmpl.ArgumentsPage\n\t.PromptTextAbove = \"\"\nend with\ntmpl.CS.PrimaryKeyColumns = \"RecMedTranspRepAct|Id_RecMedTranspRepAct\"\ntmpl.CS.IdentitySequenceName  = \"\"\ntmpl.CS.primaryKeyTopAliasIsAutoIncrement  = .f.\ntmpl.search.has_search_component = .t.\ntmpl.search.title = \"Search \"\ntmpl.search.show_title = .t.\ntmpl.search.search_button_label = \"Search\"\ntmpl.search.include_sorting_listbox = .t.\ntmpl.search.sort.prompt = \"Sort&nbsp;by\"\ntmpl.search.sorting_listbox_Label_position = \"Left\"\ntmpl.search.sort.promptInLineStyle = \"\"\ntmpl.search.sort.listbox.fieldname_prompt = \"Select Field\"\ntmpl.search.sort.listbox.use_column_headings = .f.\ntmpl.search.customSortDefinition = \"\"\ntmpl.search.search_button.useIcon = .f.\ntmpl.search.clear_link.useIcon = .f.\ntmpl.search.sort.listbox.order_prompt = \"Select Order\"\ntmpl.search.sort.listbox.order_choices = \"Ascending,Descending\"\ntmpl.search.include_records_per_page_listbox = .t.\ntmpl.search.records_per_page.prompt = \"Records&nbsp;per&nbsp;page\"\ntmpl.search.records_per_page_Label_position = \"Left\"\ntmpl.search.records_per_page.promptInLineStyle = \"\"\ntmpl.search.records_per_page.listbox.value_prompt = \"Select Value\"\ntmpl.search.records_per_page.listbox.choices = \"1,2,5,10,25,50,75,100\"\ntmpl.search.orientation = \"Vertical\"\ntmpl.search.combine_criteria_using = 1\ntmpl.search.style = 2\ntmpl.search.allow_qbf_style = .t.\ntmpl.search.show_single_search_field = .f.\ntmpl.search.keyword_label = \"Search for?\"\ntmpl.search.has_Clear_link = .t.\ntmpl.search.Clear_link_Label = \"<a5:t>Clear Search Criteria</a5:t>\"\ntmpl.search.Clear_link_BubbleHelp = \"Clear Search\"\ntmpl.search.EnableShowHide  = .f.\ntmpl.search.InitialState = \"Open\"\ntmpl.search.title_when_hidden = \"Click here to search...\"\ntmpl.search.qbe_exclusions = \"\"\ntmpl.search.toolbarPosition = \"Below\"\ntmpl.search.disableAutoComplete = .f.\ntmpl.search.HideGridWhenNoActiveSearch = .f.\ntmpl.search.GridHTMLWhenHidden  = \"\"\ntmpl.EditRegion.Search.Top = \"\"\ntmpl.EditRegion.Search.Bottom = \"\"\ntmpl.EditRegion.Search.Left = \"\"\ntmpl.EditRegion.Search.Right = \"\"\ntmpl.search.allowSearchCriteriaSave = .f.\ntmpl.search.allowSearchCriteriaLoad = .f.\ntmpl.SearchFields = 1\nDIM tmpl.SearchField_Info[tmpl.SearchFields] as P \nwith tmpl.searchfield_info[1]\n\t.Fieldname = \"MaxofFecha\"\n\t.SearchExpression = \"Max(Fecha)\"\n\t.RangeSearch = .t.\n\t.FromLabel = \"From:\"\n\t.ToLabel = \"To:\"\n\t.Initial_Value = \"NULL\"\n\t.Search_Style = 0\n\t.KeywordSearch = .f.\n\t.Scope = \"Local\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .f.\n\t.portableType = \"NationalVaryingCharacter\"\n\t.nativeType = \"\"\n\t.Type = \"C\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Varname = \"MAXOFFECHA\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"TextBox\"\n\t.Textbox.Size = 40\n\t.Textbox.HTML5Type = \"\"\n\t.Textbox.customAttributes = \"\"\n\t.Textbox.readonly = .f.\n\t.Textbox.MaxLength = 200\n\t.Textbox.InLineStyle = \"\"\n\t.Textbox.className = \"\"\n\t.Textbox.ContainerInlineStyle = \"\"\n\t.Textbox.IsPassword = .f.\n\t.hasWatermark= .f.\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .f.\n\t.BaseFieldExpression = \"Max(Fecha)\"\n\t.SourceAlias = \"\"\n\t.Column.Heading = \"Maxof Fecha\"\nend with\ntmpl.grid_layout_style = 1\ntmpl.add_records_only = .f.\ntmpl.rows = 10\ntmpl.maxRowsPerPage = 200\ntmpl.rowsWhenSearchActive = -1\ntmpl.suppress_empty_rows = .t.\ntmpl.has_row_separator = .t.\ntmpl.alternate_bands = .f.\ntmpl.even_band_size = 1\ntmpl.odd_band_size = 1\ntmpl.alternate_column_bands = .f.\ntmpl.even_column_band_size = 1\ntmpl.odd_column_band_size = 1\ntmpl.conditionalStyle = \"\"\ntmpl.clientSideConditionalStyle = \"\"\ntmpl.show_title = .f.\ntmpl.title = \"\"\ntmpl.FontSize = \"Medium\"\ntmpl.No_records_message = \"No records in query\"\ntmpl.total_records_row_position = 1\ntmpl.total_records_row = \"Records:&nbsp; {Total_Records}&nbsp;\"\ntmpl.show_column_titles = 1\ntmpl.suppress_titles_if_no_records = .f.\ntmpl.show_row_labels = .t.\ntmpl.snakingLayout_suppressRepeatedLabels = .f.\ntmpl.sort_style = 3\ntmpl.reset_page_number_when_sorting = .t.\ntmpl.allowGridBodyScrolling = .f.\ntmpl.scrollableRegionHeight = \"2in\"\ntmpl.scrollableRegionWidth = \"100%\"\ntmpl.fixedWidthColumns = .f.\ntmpl.defaultColumnWidth = \"1in\"\ntmpl.columnWidthSettings = \"\"\ntmpl.EditRegion.Grid.Top = <<%editregion%\n%editregion%\ntmpl.EditRegion.Grid.Bottom = <<%editregion%\n%editregion%\ntmpl.EditRegion.Grid.Left = <<%editregion%\n%editregion%\ntmpl.EditRegion.Grid.Right = <<%editregion%\n%editregion%\ntmpl.HasNewRecordsTitle = .f.\ntmpl.NewRecordsTitle = \"<tr><td class=\\\"[class.gridData]\\\" colspan=\\\"{a5_colspan}\\\" style=\\\"padding: 0px;\\\" >New Records</td></tr>\"\ntmpl.HasExistingRecordsTitle = .f.\ntmpl.ExistingRecordsTitle = \"<tr><td class=\\\"[class.gridData]\\\" colspan=\\\"{a5_colspan}\\\" style=\\\"padding: 0px;\\\" >Existing Records</td></tr>\"\ntmpl.Highlight_row_onHover =  .t.\ntmpl.Highlight_row_onSelect =  .t.\ntmpl.HasRecordsPerPageSelector = .t.\ntmpl.RecordsPerPageChoices =   \"1,2,5,10,25,50,75,100\"\ntmpl.RecordsPerPageSelectorTemplate = \"&nbsp;&nbsp;{Grid.RecordsPerPageSelector} Records per page\"\ntmpl.has_qbe_row = .f.\ntmpl.qbe.initial_display = \"Hidden\"\ntmpl.qbe.toggleQBERowHyperlinkText = \"Show/Hide QBE Row\"\ntmpl.has_advancedSearch = .f.\ntmpl.hasLinkedContent = .f.\ntmpl.hasExternalNavigators = .f.\ntmpl.hasRowExpandColumn = .f.\ntmpl.hasSelectedRowColumn = .t.\ntmpl.hasCheckboxSelectColumn = .f.\ntmpl.AdditionalGridStyles = \"\"\ntmpl.LocalCss = \"\"\ntmpl.CSSLinkedFiles = \"\"\ntmpl.localsvg = \"\"\ntmpl.SVGLinkedFiles = \"\"\ntmpl.CSSIcons = \"\"\ntmpl.JavaScriptLinkedFiles = \"\"\ntmpl.useMasterTemplate = .f.\ntmpl.MasterTemplateStyle = \"Table - Vertical Layout\"\ntmpl.MasterLayoutTemplate = \"\"\ntmpl.MasterLayoutTemplateJavascript = \"\"\ntmpl.MasterLayout.PaneLabel.Search = \"Search\"\ntmpl.MasterLayout.PaneLabel.Grid = \"Grid\"\ntmpl.MasterLayout.PaneLabel.DetailView = \"Detail\"\ntmpl.MasterLayout.AccordionStyle = \"Multiple\"\ntmpl.MasterLayout.InitialOpenPanes = \"Search,Grid,DetailView\"\ntmpl.verticalAlignDataInColumns = \"Middle\"\ntmpl.CanCollapseGrid = .f.\ntmpl.CollapseBar.Title = \"Collapse Grid\"\ntmpl.CollapseBar.OpenIcon = \"\"\ntmpl.CollapseBar.ClosedIcon = \"\"\ntmpl.CollapseBar.Style = \"\"\ntmpl.Collapsebar.Class = \"\"\ntmpl.Collapsebar.ContainerStyle = \"\"\ntmpl.Collapsebar.ContainerClass = \"\"\ntmpl.Collapsebar.InitialState = \"open\"\ntmpl.languageTags_RemoveUnConsumedTags = .t.\ntmpl.activeLanguage = \"<Default>\"\ntmpl.search.highlightSearchStrings = .f.\ntmpl.autoRefreshGrid = .f.\ntmpl.autoRefreshInterval = 60\ntmpl.helpTableType = \"DBF\"\ntmpl.helpTableName = \"\"\ntmpl.helpConnectionString = \"\"\ntmpl.helpIDfield = \"\"\ntmpl.helpContentsField = \"\"\ntmpl.fieldHelpWindowStyle = \"modal-resizeable\"\ntmpl.fields = 3\nDIM tmpl.field_info[tmpl.fields] as P \nwith tmpl.field_info[1]\n\t.Fieldname = \"Id_Recorrido\"\n\t.Scope = \"Local\"\n\t.DisplayFormat = \"\"\n\t.DisplayUnFormat = \"\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .f.\n\t.portableType = \"Integer32\"\n\t.nativeType = \"\"\n\t.Type = \"N\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Varname = \"ID_RECORRIDO\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"Label\"\n\t.Label.InLineStyle = \"text-align: right;\"\n\t.Label.ClassName = \"\"\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .f.\n\t.BaseFieldExpression = \"Id_Recorrido\"\n\t.SourceAlias = \"\"\n\t.Column.Heading = \"Id Recorrido\"\n\t.Column.Sort = \"Id_Recorrido\"\n\t.Column.FirstClickDirection = \"A\"\nend with\nwith tmpl.field_info[2]\n\t.Fieldname = \"MaxofFecha\"\n\t.Scope = \"Local\"\n\t.DisplayFormat = \"\"\n\t.DisplayUnFormat = \"\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .f.\n\t.portableType = \"NationalVaryingCharacter\"\n\t.nativeType = \"\"\n\t.Type = \"C\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Varname = \"MAXOFFECHA\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"Label\"\n\t.Label.InLineStyle = \"\"\n\t.Label.ClassName = \"\"\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .f.\n\t.BaseFieldExpression = \"Max(Fecha)\"\n\t.SourceAlias = \"\"\n\t.Column.Heading = \"Maxof Fecha\"\n\t.Column.Sort = \"Max(Fecha)\"\n\t.Column.FirstClickDirection = \"A\"\nend with\nwith tmpl.field_info[3]\n\t.Fieldname = \"MaxofFechahasta\"\n\t.Scope = \"Local\"\n\t.DisplayFormat = \"\"\n\t.DisplayUnFormat = \"\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .f.\n\t.portableType = \"NationalVaryingCharacter\"\n\t.nativeType = \"\"\n\t.Type = \"C\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Varname = \"MAXOFFECHAHASTA\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"Label\"\n\t.Label.InLineStyle = \"\"\n\t.Label.ClassName = \"\"\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .f.\n\t.BaseFieldExpression = \"Max(FechaHasta)\"\n\t.SourceAlias = \"\"\n\t.Column.Heading = \"Maxof Fechahasta\"\n\t.Column.Sort = \"Max(FechaHasta)\"\n\t.Column.FirstClickDirection = \"A\"\nend with\ntmpl.RecordNavigationStyle = \"NavigationButtons\"\ntmpl.fetchMoreRecordsButton.text = \"More Records\"\ntmpl.fetchMoreRecordsButton.style = \"\"\ntmpl.RecNav.SuppressIfOnlyOnePage = .t.\ntmpl.RecNav.First_Label = \"First\"\ntmpl.RecNav.Has_First_Button = .t.\ntmpl.RecNav.Has_Last_Button = .t.\ntmpl.RecNav.Has_Next_Button = .t.\ntmpl.RecNav.Has_Prev_Button = .t.\ntmpl.RecNav.HTML_Template_source = \"Computed\"\ntmpl.RecNav.Justify = \"Left\"\ntmpl.RecNav.Last_Label = \"Last\"\ntmpl.RecNav.Next_Label = \"Next\"\ntmpl.RecNav.Number_of_page_links = 10\ntmpl.RecNav.Page_Numbering_Style = 3\ntmpl.RecNav.PagesTemplate_w_PageCount = \"{PageNumber} of {PageCount}\"\ntmpl.RecNav.PagesTemplate_wout_PageCount = \"{PageNumber}\"\ntmpl.RecNav.Position = 1\ntmpl.RecNav.suppress_recNavBar_if_no_records = .f.\ntmpl.RecNav.Prev_Label = \"Prev\"\ntmpl.RecNav.Show_disabled_controls = .t.\ntmpl.RecNav.Show_Page_Count = .t.\ntmpl.RecNav.Use_Images = .f.\ntmpl.gridToolbarTemplate = <<%html%\n%html%\ntmpl.gridToolbarTemplateEditable = <<%html%\n%html%\ntmpl.style_name = \"GrBlue\"\ntmpl.resolveAbstractClassNames = .t.\ntmpl.style_type = \"Alpha Five\"\ntmpl.UseSimpleStyles = .f.\ntmpl.overrideStylesForJavascriptObjects = .f.\ntmpl.searchBehavior = \"\"\ntmpl.GUID = \"41ebb570-1543-4ff8-acdd-34d8a3ced9df\"\ntmpl.onlyIncludeSelectedFieldsInQuery = .t.\ntmpl.hasGroupBreaks = .f.\ntmpl.groupBreaks.expression1 = \"\"\ntmpl.groupBreaks.direction1 = \"\"\ntmpl.groupBreaks.header1 = <<%HTML%\n%HTML%\ntmpl.groupBreaks.footer1 = <<%HTML%\n%HTML%\ntmpl.groupBreaks.collapseAllGroupsOnInitialDisplay = .f.\ntmpl.timestamp = \"2020-02-07:14-38-12.546\"\ntmpl.resolveAbstractClassNamesAtDesignTime  = .f.\ntmpl.resolveAbstractIconNamesAtDesignTime = .f. \ntmpl.useLegacyDatePicker = .f.\ntmpl.javascriptUnboundActionDefinitions = <<%javascriptActions%\n%javascriptActions%\n\ntmpl.precalc.sessionVarsInShowHideExpns = <<%sessionvars%\n%sessionvars%\ntmpl.precalc.unboundActionsXbasicFunctions = \"\"\ntmpl.precalc.includeS3Javascript = .f.",
         "datasourceType": 3,
         "componentName": "Indicador3",
         "query_ado": {
@@ -117,11 +117,11 @@
                     },
                     "TextBox": {
                         "InLineStyle": "text-align: right;",
-                        "className": "",
                         "Size": 20,
-                        "readonly": false,
                         "MaxLength": 20,
-                        "stylefieldiferror": true
+                        "stylefieldiferror": true,
+                        "className": "",
+                        "readonly": false
                     },
                     "Watermark": {
                         "text": "<FieldLabel>"
@@ -138,9 +138,9 @@
                                 "width": "2in"
                             },
                             "style": "font: 9pt Arial;",
+                            "editButtonText": "Edit...",
                             "toolbaricons": "",
-                            "toolbardefinition": "",
-                            "editButtonText": "Edit..."
+                            "toolbardefinition": ""
                         }
                     },
                     "radiobutton": {
@@ -179,12 +179,6 @@
                         "OpenMethod": "ClickIcon",
                         "UseComboBoxes": true,
                         "DateFormat": "<DefaultTimeFormat>",
-                        "friendlyDisplay": {
-                            "settingsJSON": "",
-                            "enabled": false
-                        },
-                        "showPreDefinedDates": false,
-                        "preDefinedDatesJSON": "",
                         "LowYear": 1950,
                         "HighYear": 2050,
                         "SwitchYear": 20,
@@ -192,7 +186,13 @@
                         "showDaysOfWeek": true,
                         "showTodayButton": true,
                         "OKButtonLabel": "OK",
-                        "CancelButtonLabel": "Cancel"
+                        "CancelButtonLabel": "Cancel",
+                        "friendlyDisplay": {
+                            "settingsJSON": "",
+                            "enabled": false
+                        },
+                        "showPreDefinedDates": false,
+                        "preDefinedDatesJSON": ""
                     },
                     "column": {
                         "heading": "Id Recorrido",
@@ -204,7 +204,6 @@
                     "initial_value": "NULL",
                     "BreakType": "None",
                     "nCols": 1,
-                    "columnQBEOptionsJSON": "",
                     "link": {
                         "StaticImageInlineStyle": "border-style: none;",
                         "DisplayType": "Value in Field",
@@ -265,7 +264,8 @@
                     "displayODFlat": "{F=Tahoma,8}{I:'a5_blue_text'}{T=.2}{C=}{DATA=Id_Recorrido}Id_Recorrido",
                     "scope": "Local",
                     "tmplTxtComputed": true,
-                    "tmplTxt": "with tmpl.field_info[_fieldNumber_]\n\t.Fieldname = \"Id_Recorrido\"\n\t.Scope = \"Local\"\n\t.DisplayFormat = \"\"\n\t.DisplayUnFormat = \"\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .f.\n\t.portableType = \"Integer32\"\n\t.nativeType = \"\"\n\t.Type = \"N\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Varname = \"ID_RECORRIDO\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"Label\"\n\t.Label.InLineStyle = \"text-align: right;\"\n\t.Label.ClassName = \"\"\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .f.\n\t.BaseFieldExpression = \"Id_Recorrido\"\n\t.SourceAlias = \"\"\n\t.Column.Heading = \"Id Recorrido\"\n\t.Column.Sort = \"Id_Recorrido\"\n\t.Column.FirstClickDirection = \"A\"\nend with\n\n\n\n\n"
+                    "tmplTxt": "with tmpl.field_info[_fieldNumber_]\n\t.Fieldname = \"Id_Recorrido\"\n\t.Scope = \"Local\"\n\t.DisplayFormat = \"\"\n\t.DisplayUnFormat = \"\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .f.\n\t.portableType = \"Integer32\"\n\t.nativeType = \"\"\n\t.Type = \"N\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Varname = \"ID_RECORRIDO\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"Label\"\n\t.Label.InLineStyle = \"text-align: right;\"\n\t.Label.ClassName = \"\"\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .f.\n\t.BaseFieldExpression = \"Id_Recorrido\"\n\t.SourceAlias = \"\"\n\t.Column.Heading = \"Id Recorrido\"\n\t.Column.Sort = \"Id_Recorrido\"\n\t.Column.FirstClickDirection = \"A\"\nend with\n\n\n\n\n\n",
+                    "columnQBEOptionsJSON": ""
                 },
                 {
                     "fieldname": "MaxofFecha",
@@ -332,11 +332,11 @@
                         "HighYear": 2050
                     },
                     "TextBox": {
-                        "className": "",
                         "Size": 40,
-                        "readonly": false,
                         "MaxLength": 200,
-                        "stylefieldiferror": true
+                        "stylefieldiferror": true,
+                        "className": "",
+                        "readonly": false
                     },
                     "Watermark": {
                         "text": "<FieldLabel>"
@@ -353,9 +353,9 @@
                                 "width": "2in"
                             },
                             "style": "font: 9pt Arial;",
+                            "editButtonText": "Edit...",
                             "toolbaricons": "",
-                            "toolbardefinition": "",
-                            "editButtonText": "Edit..."
+                            "toolbardefinition": ""
                         }
                     },
                     "radiobutton": {
@@ -394,12 +394,6 @@
                         "OpenMethod": "ClickIcon",
                         "UseComboBoxes": true,
                         "DateFormat": "<DefaultTimeFormat>",
-                        "friendlyDisplay": {
-                            "settingsJSON": "",
-                            "enabled": false
-                        },
-                        "showPreDefinedDates": false,
-                        "preDefinedDatesJSON": "",
                         "LowYear": 1950,
                         "HighYear": 2050,
                         "SwitchYear": 20,
@@ -407,7 +401,13 @@
                         "showDaysOfWeek": true,
                         "showTodayButton": true,
                         "OKButtonLabel": "OK",
-                        "CancelButtonLabel": "Cancel"
+                        "CancelButtonLabel": "Cancel",
+                        "friendlyDisplay": {
+                            "settingsJSON": "",
+                            "enabled": false
+                        },
+                        "showPreDefinedDates": false,
+                        "preDefinedDatesJSON": ""
                     },
                     "column": {
                         "heading": "Maxof Fecha",
@@ -419,7 +419,6 @@
                     "initial_value": "NULL",
                     "BreakType": "None",
                     "nCols": 1,
-                    "columnQBEOptionsJSON": "",
                     "link": {
                         "StaticImageInlineStyle": "border-style: none;",
                         "ajaxWindowType": "Modal-Popup",
@@ -474,7 +473,8 @@
                     "displayODFlat": "{F=Tahoma,8}{I:'a5_blue_text'}{T=.2}{C=}{DATA=MaxofFecha}MaxofFecha",
                     "scope": "Local",
                     "tmplTxtComputed": true,
-                    "tmplTxt": "with tmpl.field_info[_fieldNumber_]\n\t.Fieldname = \"MaxofFecha\"\n\t.Scope = \"Local\"\n\t.DisplayFormat = \"\"\n\t.DisplayUnFormat = \"\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .f.\n\t.portableType = \"NationalVaryingCharacter\"\n\t.nativeType = \"\"\n\t.Type = \"C\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Varname = \"MAXOFFECHA\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"Label\"\n\t.Label.InLineStyle = \"\"\n\t.Label.ClassName = \"\"\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .f.\n\t.BaseFieldExpression = \"Max(Fecha)\"\n\t.SourceAlias = \"\"\n\t.Column.Heading = \"Maxof Fecha\"\n\t.Column.Sort = \"Max(Fecha)\"\n\t.Column.FirstClickDirection = \"A\"\nend with\n"
+                    "tmplTxt": "with tmpl.field_info[_fieldNumber_]\n\t.Fieldname = \"MaxofFecha\"\n\t.Scope = \"Local\"\n\t.DisplayFormat = \"\"\n\t.DisplayUnFormat = \"\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .f.\n\t.portableType = \"NationalVaryingCharacter\"\n\t.nativeType = \"\"\n\t.Type = \"C\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Varname = \"MAXOFFECHA\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"Label\"\n\t.Label.InLineStyle = \"\"\n\t.Label.ClassName = \"\"\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .f.\n\t.BaseFieldExpression = \"Max(Fecha)\"\n\t.SourceAlias = \"\"\n\t.Column.Heading = \"Maxof Fecha\"\n\t.Column.Sort = \"Max(Fecha)\"\n\t.Column.FirstClickDirection = \"A\"\nend with\n\n",
+                    "columnQBEOptionsJSON": ""
                 },
                 {
                     "fieldname": "MaxofFechahasta",
@@ -541,11 +541,11 @@
                         "HighYear": 2050
                     },
                     "TextBox": {
-                        "className": "",
                         "Size": 40,
-                        "readonly": false,
                         "MaxLength": 200,
-                        "stylefieldiferror": true
+                        "stylefieldiferror": true,
+                        "className": "",
+                        "readonly": false
                     },
                     "Watermark": {
                         "text": "<FieldLabel>"
@@ -562,9 +562,9 @@
                                 "width": "2in"
                             },
                             "style": "font: 9pt Arial;",
+                            "editButtonText": "Edit...",
                             "toolbaricons": "",
-                            "toolbardefinition": "",
-                            "editButtonText": "Edit..."
+                            "toolbardefinition": ""
                         }
                     },
                     "radiobutton": {
@@ -603,12 +603,6 @@
                         "OpenMethod": "ClickIcon",
                         "UseComboBoxes": true,
                         "DateFormat": "<DefaultTimeFormat>",
-                        "friendlyDisplay": {
-                            "settingsJSON": "",
-                            "enabled": false
-                        },
-                        "showPreDefinedDates": false,
-                        "preDefinedDatesJSON": "",
                         "LowYear": 1950,
                         "HighYear": 2050,
                         "SwitchYear": 20,
@@ -616,7 +610,13 @@
                         "showDaysOfWeek": true,
                         "showTodayButton": true,
                         "OKButtonLabel": "OK",
-                        "CancelButtonLabel": "Cancel"
+                        "CancelButtonLabel": "Cancel",
+                        "friendlyDisplay": {
+                            "settingsJSON": "",
+                            "enabled": false
+                        },
+                        "showPreDefinedDates": false,
+                        "preDefinedDatesJSON": ""
                     },
                     "column": {
                         "heading": "Maxof Fechahasta",
@@ -628,7 +628,6 @@
                     "initial_value": "NULL",
                     "BreakType": "None",
                     "nCols": 1,
-                    "columnQBEOptionsJSON": "",
                     "link": {
                         "StaticImageInlineStyle": "border-style: none;",
                         "ajaxWindowType": "Modal-Popup",
@@ -683,7 +682,8 @@
                     "displayODFlat": "{F=Tahoma,8}{I:'a5_blue_text'}{T=.2}{C=}{DATA=MaxofFechahasta}MaxofFechahasta",
                     "scope": "Local",
                     "tmplTxtComputed": true,
-                    "tmplTxt": "with tmpl.field_info[_fieldNumber_]\n\t.Fieldname = \"MaxofFechahasta\"\n\t.Scope = \"Local\"\n\t.DisplayFormat = \"\"\n\t.DisplayUnFormat = \"\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .f.\n\t.portableType = \"NationalVaryingCharacter\"\n\t.nativeType = \"\"\n\t.Type = \"C\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Varname = \"MAXOFFECHAHASTA\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"Label\"\n\t.Label.InLineStyle = \"\"\n\t.Label.ClassName = \"\"\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .f.\n\t.BaseFieldExpression = \"Max(FechaHasta)\"\n\t.SourceAlias = \"\"\n\t.Column.Heading = \"Maxof Fechahasta\"\n\t.Column.Sort = \"Max(FechaHasta)\"\n\t.Column.FirstClickDirection = \"A\"\nend with\n"
+                    "tmplTxt": "with tmpl.field_info[_fieldNumber_]\n\t.Fieldname = \"MaxofFechahasta\"\n\t.Scope = \"Local\"\n\t.DisplayFormat = \"\"\n\t.DisplayUnFormat = \"\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .f.\n\t.portableType = \"NationalVaryingCharacter\"\n\t.nativeType = \"\"\n\t.Type = \"C\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Varname = \"MAXOFFECHAHASTA\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"Label\"\n\t.Label.InLineStyle = \"\"\n\t.Label.ClassName = \"\"\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .f.\n\t.BaseFieldExpression = \"Max(FechaHasta)\"\n\t.SourceAlias = \"\"\n\t.Column.Heading = \"Maxof Fechahasta\"\n\t.Column.Sort = \"Max(FechaHasta)\"\n\t.Column.FirstClickDirection = \"A\"\nend with\n\n",
+                    "columnQBEOptionsJSON": ""
                 }
             ]
         },
@@ -795,7 +795,7 @@
             "allow_qbf_style": true,
             "keyword_label": "Search for?",
             "has_Clear_link": true,
-            "Clear_link_Label": "Clear Search Criteria",
+            "Clear_link_Label": "<a5:t>Clear Search Criteria</a5:t>",
             "Clear_link_BubbleHelp": "Clear Search",
             "TargetPage": "<Self>",
             "InitialState": "Open",
@@ -836,10 +836,168 @@
         "searchFields": {
             "a_fields": [
                 {
+                    "controltype": "TextBox",
+                    "Label": {
+                        "className": ""
+                    },
+                    "Image": {
+                        "noImageFoundImage": "<None>",
+                        "newRecordImage": "<None>"
+                    },
+                    "TextBox": {
+                        "Size": 40,
+                        "MaxLength": 200,
+                        "stylefieldiferror": true,
+                        "className": "",
+                        "readonly": false
+                    },
+                    "TextArea": {
+                        "rows": 2,
+                        "cols": 20,
+                        "RichText": {
+                            "display": {
+                                "height": "1in",
+                                "width": "2in"
+                            },
+                            "style": "font: 9pt Arial;",
+                            "editButtonText": "Edit...",
+                            "css": "",
+                            "toolbaricons": "",
+                            "toolbardefinition": ""
+                        }
+                    },
+                    "radiobutton": {
+                        "datasource": "DBF-Table",
+                        "NotInListRule": "Add To List if Not Null",
+                        "orientation": "Horizontal",
+                        "stylefieldiferror": true,
+                        "type": "Static",
+                        "columnFlow": "LRTB",
+                        "columnCount": 3,
+                        "rowCount": 3
+                    },
+                    "CheckBox": {
+                        "type": "Static",
+                        "datasource": "DBF-Table",
+                        "stylefieldiferror": true,
+                        "NotInListRule": "Add To List if Not Null",
+                        "orientation": "Horizontal",
+                        "initial_value": "False",
+                        "columnFlow": "LRTB",
+                        "columnCount": 3,
+                        "rowCount": 3
+                    },
+                    "connection_type": "Access Database",
+                    "dropdownbox": {
+                        "Size": 1,
+                        "type": "Static",
+                        "selectStyle": "Single",
+                        "datasource": "DBF-Table",
+                        "stylefieldiferror": true,
+                        "NotInListRule": "Add To List if Not Null",
+                        "fieldNameOfFieldLinkedToParentControl": "<Auto>",
+                        "methodForComputingCascadingFilter": "<Auto>"
+                    },
+                    "DatePicker": {
+                        "UseComboBoxes": true,
+                        "DateFormat": "<DefaultTimeFormat>",
+                        "LowYear": 1950,
+                        "HighYear": 2050,
+                        "SwitchYear": 20,
+                        "IconNumber": 2,
+                        "OpenMethod": "ClickIcon",
+                        "showDaysOfWeek": true,
+                        "OKButtonLabel": "OK",
+                        "CancelButtonLabel": "Cancel",
+                        "showTodayButton": true,
+                        "friendlyDisplay": {
+                            "settingsJSON": "",
+                            "enabled": false
+                        },
+                        "showPreDefinedDates": false,
+                        "preDefinedDatesJSON": ""
+                    },
+                    "column": {
+                        "heading": "Maxof Fecha",
+                        "sort": "Maxoffecha",
+                        "LabelPosition": "Left",
+                        "canSort": true,
+                        "firstclickdirection": "Ascending"
+                    },
+                    "initial_value": "NULL",
+                    "link": {
+                        "StaticImageInlineStyle": "border-style: none;",
+                        "ajaxWindowType": "Modal-Popup",
+                        "ajaxWindowTitle": "Window",
+                        "ajaxWindowHeight": "3in",
+                        "ajaxWindowWidth": "4in",
+                        "ajaxWindowisResizable": true,
+                        "ajaxWindowWorkingMessage": "Working...",
+                        "ajaxWindowWorkingMessageIcon": "css/A5System/Images/wait.gif",
+                        "ajaxWindowRefreshGridOnClose": "None",
+                        "targetDIVHideHyperlink": "Close"
+                    },
+                    "type": "C",
+                    "display": "MaxofFecha",
+                    "varname": "MaxofFecha",
                     "fieldname": "MaxofFecha",
+                    "BreakType": "None",
+                    "DisplayOD": "{F=Tahoma,8}{I:'$a5_control_field'}{T=.2}{C=}{DATA=MaxofFecha}MaxofFecha",
+                    "DisplayODFlat": "{F=Tahoma,8}{I:'$a5_control_field'}{T=.2}{C=}{DATA=MaxofFecha}MaxofFecha",
+                    "displayODtree": "{F=Tahoma,8}{I:'$a5_control_field'} {C=}{DATA=MaxofFecha}MaxofFecha",
+                    "Search": {
+                        "RangeSearch": true,
+                        "FromLabel": "From:",
+                        "ToLabel": "To:"
+                    },
+                    "scope": "Local",
+                    "conditionalStyleLevel": "Cell",
+                    "clientSideconditionalStyleLevel": "Cell",
+                    "Watermark": {
+                        "text": "<FieldLabel>"
+                    },
+                    "lookup": {
+                        "type": "Edit-Combo List"
+                    },
+                    "nCols": 1,
+                    "BaseFieldExpression": "Max(Fecha)",
+                    "summary": {
+                        "total": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "count": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "average": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "min": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "max": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "StdDev": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "Var": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "First": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "Last": {
+                            "inlinestyle": "text-align: right;"
+                        }
+                    },
+                    "tmplTxtComputed": true,
+                    "tmplTxt": "with tmpl.searchfield_info[_fieldNumber_]\n\t.Fieldname = \"MaxofFecha\"\n\t.SearchExpression = \"Max(Fecha)\"\n\t.RangeSearch = .t.\n\t.FromLabel = \"From:\"\n\t.ToLabel = \"To:\"\n\t.Initial_Value = \"NULL\"\n\t.Search_Style = 0\n\t.KeywordSearch = .f.\n\t.Scope = \"Local\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .f.\n\t.portableType = \"NationalVaryingCharacter\"\n\t.nativeType = \"\"\n\t.Type = \"C\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Varname = \"MAXOFFECHA\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"TextBox\"\n\t.Textbox.Size = 40\n\t.Textbox.HTML5Type = \"\"\n\t.Textbox.customAttributes = \"\"\n\t.Textbox.readonly = .f.\n\t.Textbox.MaxLength = 200\n\t.Textbox.InLineStyle = \"\"\n\t.Textbox.className = \"\"\n\t.Textbox.ContainerInlineStyle = \"\"\n\t.Textbox.IsPassword = .f.\n\t.hasWatermark= .f.\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .f.\n\t.BaseFieldExpression = \"Max(Fecha)\"\n\t.SourceAlias = \"\"\n\t.Column.Heading = \"Maxof Fecha\"\nend with\n\n",
+                    "canBeUsedInWhereClause": true,
+                    "PortableType": "NationalVaryingCharacter",
+                    "onChange_ValidationOption": "None",
+                    "repeatingSectionParentId": -1,
                     "showHelpIcon": "None",
                     "helpIconBehavior": "ShowHelpOnClick",
-                    "onChange_ValidationOption": "None",
                     "Layout": {
                         "Title": "Tab label",
                         "TabPane": {
@@ -880,19 +1038,6 @@
                         },
                         "nCols": 1
                     },
-                    "controltype": "TextBox",
-                    "Search": {
-                        "RangeSearch": true,
-                        "FromLabel": "From:",
-                        "ToLabel": "To:"
-                    },
-                    "Label": {
-                        "className": ""
-                    },
-                    "Image": {
-                        "noImageFoundImage": "<None>",
-                        "newRecordImage": "<None>"
-                    },
                     "calendar": {
                         "DateFormat": "mm/dd/yy",
                         "SwitchYear": 20,
@@ -900,156 +1045,11 @@
                         "LowYear": 1950,
                         "HighYear": 2050
                     },
-                    "TextBox": {
-                        "className": "",
-                        "Size": 40,
-                        "readonly": false,
-                        "MaxLength": 200,
-                        "stylefieldiferror": true
-                    },
-                    "Watermark": {
-                        "text": "<FieldLabel>"
-                    },
                     "clientSideFormat": {
                         "type": "Mask"
                     },
-                    "Lookup": {
-                        "Type": "Edit-Combo List"
-                    },
-                    "TextArea": {
-                        "rows": 2,
-                        "cols": 20,
-                        "RichText": {
-                            "display": {
-                                "height": "1in",
-                                "width": "2in"
-                            },
-                            "style": "font: 9pt Arial;",
-                            "css": "",
-                            "toolbaricons": "",
-                            "toolbardefinition": "",
-                            "editButtonText": "Edit..."
-                        }
-                    },
-                    "radiobutton": {
-                        "datasource": "DBF-Table",
-                        "NotInListRule": "Add To List if Not Null",
-                        "orientation": "Horizontal",
-                        "columnFlow": "LRTB",
-                        "columnCount": 3,
-                        "rowCount": 3,
-                        "stylefieldiferror": true,
-                        "type": "Static"
-                    },
-                    "CheckBox": {
-                        "type": "Static",
-                        "datasource": "DBF-Table",
-                        "stylefieldiferror": true,
-                        "NotInListRule": "Add To List if Not Null",
-                        "orientation": "Horizontal",
-                        "columnFlow": "LRTB",
-                        "columnCount": 3,
-                        "rowCount": 3,
-                        "initial_value": "False"
-                    },
-                    "connection_type": "Access Database",
-                    "dropdownbox": {
-                        "Size": 1,
-                        "type": "Static",
-                        "selectStyle": "Single",
-                        "datasource": "DBF-Table",
-                        "stylefieldiferror": true,
-                        "NotInListRule": "Add To List if Not Null",
-                        "fieldNameOfFieldLinkedToParentControl": "<Auto>",
-                        "methodForComputingCascadingFilter": "<Auto>"
-                    },
-                    "DatePicker": {
-                        "OpenMethod": "ClickIcon",
-                        "UseComboBoxes": true,
-                        "DateFormat": "<DefaultTimeFormat>",
-                        "friendlyDisplay": {
-                            "settingsJSON": "",
-                            "enabled": false
-                        },
-                        "showPreDefinedDates": false,
-                        "preDefinedDatesJSON": "",
-                        "LowYear": 1950,
-                        "HighYear": 2050,
-                        "SwitchYear": 20,
-                        "IconNumber": 2,
-                        "showDaysOfWeek": true,
-                        "showTodayButton": true,
-                        "OKButtonLabel": "OK",
-                        "CancelButtonLabel": "Cancel"
-                    },
-                    "column": {
-                        "heading": "Maxof Fecha",
-                        "LabelPosition": "Left",
-                        "CanSort": true,
-                        "sort": "Maxoffecha",
-                        "firstclickdirection": "Ascending"
-                    },
-                    "initial_value": "NULL",
-                    "BreakType": "None",
-                    "nCols": 1,
-                    "columnQBEOptionsJSON": "",
-                    "link": {
-                        "StaticImageInlineStyle": "border-style: none;",
-                        "ajaxWindowType": "Modal-Popup",
-                        "ajaxWindowTitle": "Window",
-                        "ajaxWindowHeight": "3in",
-                        "ajaxWindowWidth": "4in",
-                        "ajaxWindowisResizable": true,
-                        "ajaxWindowWorkingMessage": "Working...",
-                        "ajaxWindowWorkingMessageIcon": "css/A5System/Images/wait.gif",
-                        "ajaxWindowRefreshGridOnClose": "None",
-                        "targetDIVHideHyperlink": "Close"
-                    },
-                    "BaseFieldExpression": "Max(Fecha)",
-                    "type": "C",
-                    "ConditionalStyleLevel": "Cell",
-                    "ClientSideConditionalStyleLevel": "Cell",
-                    "canBeUsedInWhereClause": true,
-                    "summary": {
-                        "total": {
-                            "inlinestyle": "text-align: right;"
-                        },
-                        "count": {
-                            "inlinestyle": "text-align: right;"
-                        },
-                        "average": {
-                            "inlinestyle": "text-align: right;"
-                        },
-                        "min": {
-                            "inlinestyle": "text-align: right;"
-                        },
-                        "max": {
-                            "inlinestyle": "text-align: right;"
-                        },
-                        "StdDev": {
-                            "inlinestyle": "text-align: right;"
-                        },
-                        "Var": {
-                            "inlinestyle": "text-align: right;"
-                        },
-                        "First": {
-                            "inlinestyle": "text-align: right;"
-                        },
-                        "Last": {
-                            "inlinestyle": "text-align: right;"
-                        }
-                    },
-                    "PortableType": "NationalVaryingCharacter",
-                    "varname": "MaxofFecha",
-                    "Display": "MaxofFecha",
-                    "displayOD": "{F=Tahoma,8}{I:'$a5_control_field'} {C=}{DATA=MaxofFecha}MaxofFecha",
-                    "displayODFlat": "{F=Tahoma,8}{I:'$a5_control_field'}{T=.2}{C=}{DATA=MaxofFecha}MaxofFecha",
-                    "scope": "Local",
-                    "tmplTxtComputed": true,
-                    "tmplTxt": "with tmpl.searchfield_info[_fieldNumber_]\n\t.Fieldname = \"MaxofFecha\"\n\t.SearchExpression = \"Max(Fecha)\"\n\t.RangeSearch = .t.\n\t.FromLabel = \"From:\"\n\t.ToLabel = \"To:\"\n\t.Initial_Value = \"NULL\"\n\t.Search_Style = 0\n\t.KeywordSearch = .f.\n\t.Scope = \"Local\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .f.\n\t.portableType = \"NationalVaryingCharacter\"\n\t.nativeType = \"\"\n\t.Type = \"C\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Varname = \"MAXOFFECHA\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"TextBox\"\n\t.Textbox.Size = 40\n\t.Textbox.HTML5Type = \"\"\n\t.Textbox.customAttributes = \"\"\n\t.Textbox.readonly = .f.\n\t.Textbox.MaxLength = 200\n\t.Textbox.InLineStyle = \"\"\n\t.Textbox.className = \"\"\n\t.Textbox.ContainerInlineStyle = \"\"\n\t.Textbox.IsPassword = .f.\n\t.hasWatermark= .f.\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .f.\n\t.BaseFieldExpression = \"Max(Fecha)\"\n\t.SourceAlias = \"\"\n\t.Column.Heading = \"Maxof Fecha\"\nend with\n",
                     "SearchExpression": "Max(Fecha)",
-                    "repeatingSectionParentId": -1,
-                    "displayODtree": "{F=Tahoma,8}{I:'$a5_control_field'} {C=}{DATA=MaxofFecha}MaxofFecha"
+                    "columnQBEOptionsJSON": ""
                 }
             ]
         },
@@ -1220,6 +1220,8 @@
         "scrollableRegionHeight": "2in",
         "scrollableRegionWidth": "100%",
         "defaultColumnWidth": "1in",
+        "pusherConfigJSON": "",
+        "pusherApp": false,
         "RecNav": {
             "HTML_Template_source": "Computed",
             "Position": 1,
@@ -1314,26 +1316,26 @@
         },
         "info": {
             "createdBy": "Jarvis",
-            "LastUpdatedBy": "Jarvis",
-            "DateUpdated": "10/21/2019 06:24:54 19 pm",
-            "DateCreated": "10/21/2019 05:49:30 12 pm"
+            "LastUpdatedBy": "ASUS",
+            "DateUpdated": "07-02-2020 02:38:12 43 pm",
+            "DateCreated": "07-02-2020 02:38:14 20 pm"
         },
         "BuilderVersion": 2,
-        "current_pane_tree": "Search.Fields",
+        "current_pane_tree": "Search.Properties",
         "embeddedMode": false,
         "_style_versionNumber": 2,
         "AjaxOn": true,
-        "fpInstalled": "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",
-        "componentFilename": "D:\\Nibble-TM\\Nibble-TM.WebProjects\\Default.WebProject\\Indicador3.a5wcmp",
+        "fpInstalled": "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",
+        "componentFilename": "C:\\4-Trabajos\\Mariloginsa\\Nibble-TM\\Nibble-TM.WebProjects\\MRG.WebProject\\Indicador3.a5wcmp",
         "PAliases": {
             "alias": "[PathAlias.ADB_Path]\n",
-            "alias_expanded": "D:\\Nibble-TM\n",
-            "alias_aliasExpanded": "[PathAlias.ADB_Path]|D:\\Nibble-TM"
+            "alias_expanded": "C:\\4-Trabajos\\Mariloginsa\\Nibble-TM\n",
+            "alias_aliasExpanded": "[PathAlias.ADB_Path]|C:\\4-Trabajos\\Mariloginsa\\Nibble-TM"
         },
         "_row_onHover": true,
-        "ADB_PATH": "D:\\Nibble-TM",
+        "ADB_PATH": "C:\\4-Trabajos\\Mariloginsa\\Nibble-TM",
         "EXE_PATH": "C:\\Program Files (x86)\\a5V12",
         "VersionNumber": 4,
-        "A5SaveTimeStamp": "20191021182454233"
+        "A5SaveTimeStamp": "20200207143812475"
     }
 }
