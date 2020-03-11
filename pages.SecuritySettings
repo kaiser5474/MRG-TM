@@ -2994,4 +2994,12 @@
 <action="allow">
 <groups="">
 >
+<[750]<page="Registro_Eventos_AcuerdosSolucionados.a5wcmp">
+<action="allow">
+<groups="">
+>
+<[751]<page="Registro_Eventos_AcuerdosPendientes.a5wcmp">
+<action="allow">
+<groups="">
+>
 >
