@@ -3010,4 +3010,12 @@
 <action="allow">
 <groups="">
 >
+<[754]<page="BL_Escala.a5wcmp">
+<action="allow">
+<groups="">
+>
+<[755]<page="Recorridos_Prepaid_Collect.a5wcmp">
+<action="allow">
+<groups="">
+>
 >
