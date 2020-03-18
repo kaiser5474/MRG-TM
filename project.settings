@@ -54,7 +54,7 @@
 <password="Encrypted:m0\"NQGK=\"J">
 <path="/">
 <port=21>
-<FTPProgram="Internal">
+<FTPProgram="InternalOptimized">
 <FTPCurl=.T.>
 <FTPCurlActiveMode=.F.>
 >
