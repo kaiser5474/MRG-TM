@@ -35,6 +35,7 @@
 <showPublishCompleteDialog=.F.>
 <livePreviewMachineName="Localhost">
 <lastselectedbuttonsubtheme="base">
+<encryptPublishedComponents=.F.>
 >
 <NamedResources="PZ4+/sQt/NuUzwoQIJkoilAWp4k9gB4q5xPFA/DVAPPbK1r76Gd8kIxT3Tg6UFOCALJpV0GnWM+TGtIbSpYzsNuz9s2LeJ7zoG73+wAzsYlTDLQFgqJG4rVrB4cVU9KW3eURQcd9m3CBxrG26RSllkE9clqlFmGYd+p/K5IFFgc8F29OHXRGst4z/VHQVPm7+eEPRfrm7oWbeode/Z3yah3T92CnKKH4KvYK3FGxFus3D2JXbxmMBbk75a3vDNwDdb8XXtqUFG3bX4sxW7u0lEkXnzH/mnwxbayGdID3/6itwz58RikY+sTYnC3MJJCW8IIFaQavyPg=">
 <email<smtp_server="">
@@ -97,6 +98,7 @@
 <maxUploadSizeMB=100>
 <sessionCookieName="XBasic_SessionId">
 <authenticationCookieName=".ASPXFORMSAUTH">
+<cookieSameSite="Strict">
 >
 <reportEvents<afterPrint="">
 <library="">
@@ -161,3 +163,9 @@
 <library="">
 >
 <excelfilesExtension=".xls">
+<protocol="https:">
+<componentcache<tableType="SQL">
+<connectionString="">
+<tableName="">
+<fieldmap="">
+>
