@@ -3026,4 +3026,12 @@
 <action="allow">
 <groups="">
 >
+<[758]<page="app_MRG.a5wcmp">
+<action="allow">
+<groups="">
+>
+<[759]<page="Reporte_Posicion_Especial.a5rpt">
+<action="allow">
+<groups="">
+>
 >

@@ -38,17 +38,16 @@
         "onTimerEventInterval": 60,
         "securityDeniedAction": "Redirect to login page",
         "clientSideEvents": {
-            "_canAjaxCallback": "",
-            "__afterAjaxCallbackComplete": "",
             "canAjaxCallback": "var msgBoxOptions = {\n\t\tuseCSSAnimation: false,\n\t\tmessage: 'Procesando ... ',\n\t\ticon: 'css/A5System/Images/wait.gif',\n\t\twaitMessageAutoCloseDelay: 90000\n\t};\n\t\n{dialog.object}.showWaitMessage('page',msgBoxOptions);\n\n//{dialog.object}.showWaitMessage('page', {dialog.object}._waitMsg);",
             "afterAjaxCallbackComplete": "{dialog.object}.hideWaitMessage('page');",
+            "onInitializeComplete": "//{dialog.object}.synchronizeLists();\n//{dialog.object}.refreshListData('LIST1',{mode: 'incremental'});\n//{dialog.object}.getControl('list1').clearSearchList({searchMode : 'auto'});\ndocument.addEventListener('deviceready', function() { // PhoneGap started\nvar platform = device.platform;\nswitch (platform) {\ncase \"Android\":\n\n// back button support\ndocument.addEventListener('backbutton', handleBackButton, false);\nbreak;\ncase \"iOS\":\nif (typeof StatusBar === 'undefined') break;\n\n// configure statusbar in iOS 7+\nStatusBar.overlaysWebView(false);\n\n// Light statusbar text color. Use StatusBar.styleDefault() for dark text.\nStatusBar.styleLightContent();\nStatusBar.backgroundColorByHexString(\"#3355AA\"); // Hex RGB value, similar to CSS\nbreak;\n}\n\n}\n\n);\n\n\n//var user = {dialog.object}.getValue('username');\n//var pass = {dialog.object}.getValue('password');\n//\n//if(user != \"\" && pass != \"\"){\n//{dialog.object}.buttonClick('LOGIN_BUTTON');\n////{dialog.object}.setControlDisplay('PANELHEADER_5')setDisabled()\n//}\n\n\n\n",
+            "_canAjaxCallback": "",
+            "__afterAjaxCallbackComplete": "",
             "onAjaxCallbackFailed": "",
             "onAjaxCallbackNotAvailable": "",
             "onAjaxCallbackNotAllowed": "",
-            "onBeforeCreate": "",
             "onServerSideEventHandlerError": "",
             "onFieldValidationError": "",
-            "onInitializeComplete": "//{dialog.object}.synchronizeLists();\n//{dialog.object}.refreshListData('LIST1',{mode: 'incremental'});\n//{dialog.object}.getControl('list1').clearSearchList({searchMode : 'auto'});\ndocument.addEventListener('deviceready', function() { // PhoneGap started\nvar platform = device.platform;\nswitch (platform) {\ncase \"Android\":\n\n// back button support\ndocument.addEventListener('backbutton', handleBackButton, false);\nbreak;\ncase \"iOS\":\nif (typeof StatusBar === 'undefined') break;\n\n// configure statusbar in iOS 7+\nStatusBar.overlaysWebView(false);\n\n// Light statusbar text color. Use StatusBar.styleDefault() for dark text.\nStatusBar.styleLightContent();\nStatusBar.backgroundColorByHexString(\"#3355AA\"); // Hex RGB value, similar to CSS\nbreak;\n}\n\n}\n\n);\n\n\n//var user = {dialog.object}.getValue('username');\n//var pass = {dialog.object}.getValue('password');\n//\n//if(user != \"\" && pass != \"\"){\n//{dialog.object}.buttonClick('LOGIN_BUTTON');\n////{dialog.object}.setControlDisplay('PANELHEADER_5')setDisabled()\n//}\n\n\n\n",
             "beforePrepare": "",
             "afterPrepare": "",
             "afterValidate": "",
@@ -61,7 +60,6 @@
             "afterRptSectionRowDelete": "",
             "onStateChange": "",
             "onDataStateChange": "",
-            "afterControlBasedOnClientSideDataCacheRefreshed": "",
             "onControlFocus": "",
             "onRptSectionFocus": "",
             "onRptSectionRowChange": "",
@@ -105,7 +103,6 @@
             "appCache_obsolete": "",
             "appCache_progress": "",
             "appCache_updateready": "",
-            "onOAuthCompleted": "",
             "onControlBlur": "",
             "onControlChange": "",
             "onBeforePersistControlValuesToLocalStorage": "",
@@ -119,11 +116,14 @@
             "webSocketOnMessage": "",
             "webSocketServerClose": "",
             "webSocketSendMessageFail": "",
-            "onOAuthAuthorize": "",
             "afterGoogleAddressSelect": "",
             "onBeforeClientSideDataCacheRead": "",
             "afterClientSideDataCacheAjaxCallback": "",
+            "onBeforeCreate": "",
+            "afterControlBasedOnClientSideDataCacheRefreshed": "",
             "onWatchEvent": "",
+            "onOAuthCompleted": "",
+            "onOAuthAuthorize": "",
             "onWindowResize": ""
         },
         "onlyValidateChangedFields": true,
@@ -202,7 +202,8 @@
         "info": {
             "createdBy": "ASUS",
             "dateCreated": "2018-5-15",
-            "dateLastEdited": "2019-7-19"
+            "dateLastEdited": "2020-3-23",
+            "revisionnumber": 2
         },
         "loadHTML5ImageUploadJavascript": true,
         "flagShowCommentsInTree": true,
@@ -9062,8 +9063,6 @@
                                     "displayFormat": "",
                                     "serverSideInlineStyle": "",
                                     "serverSideConditionalStyle": "",
-                                    "clientSideConditionalStyle": "",
-                                    "clientSideConditionalCellStyle": "",
                                     "securityGroups": "",
                                     "javascriptAddressible": true,
                                     "serversideShowhideExpn": "",
@@ -9206,6 +9205,8 @@
                                     "controlHTML": "<span  id=\"{dialog.componentName}.LIST1.ESTADO.I.{*dataRow}\">{estado}</span>&nbsp;",
                                     "controlHTMLFreeformLayout": "<span  id=\"{dialog.componentName}.LIST1.ESTADO.I.{*dataRow}\">{estado}</span>",
                                     "deleteField": false,
+                                    "clientSideConditionalStyle": "",
+                                    "clientSideConditionalCellStyle": "",
                                     "xbfunction": ""
                                 },
                                 {
@@ -26049,7 +26050,7 @@
         "builderType": "Dialog2",
         "guid": "57d876eb-82b0-49f9-b5ca-443bfde642af",
         "componentName": "app_Cliente",
-        "componentFilename": "C:\\4-Trabajos\\Mariloginsa\\Nibble-TM\\Nibble-TM.WebProjects\\Default.WebProject\\app_Cliente.a5wcmp",
+        "componentFilename": "C:\\4-Trabajos\\Mariloginsa\\Nibble-TM\\Nibble-TM.WebProjects\\MRG.WebProject\\app_Cliente.a5wcmp",
         "_style_versionNumber": 2,
         "_style_hasSassOverrides": false,
         "_style_hasCSSTweaks": false,
@@ -26080,7 +26081,7 @@
         "keyboardShortcutsJSON": "",
         "preRenderWarningMessageShow": true,
         "autoSetPreRenderOnForAllUX": true,
-        "selected": "845dabf4-b6cb-4045-a4c6-9fc766fd048f\n",
+        "selected": "bfd79fec-2025-4f1e-88b5-f20fa3fb1235",
         "designPaneIndex": 1,
         "masterPaneC": "controls",
         "serverSideEventIndex": 8,
@@ -26095,12 +26096,12 @@
         "containerSubTypeOld": "",
         "flagDropdownCascadingChanged": false,
         "toolBox_value": "",
-        "addinBuildNumber": "5315",
-        "addinBuildNumberHighestUsed": "5315",
+        "addinBuildNumber": "5436",
+        "addinBuildNumberHighestUsed": "5436",
         "alphaFiveBuildNumber": "12",
         "openedFromTemplate": false,
         "builtWithVersionNumer": 1,
-        "_buildCount": "592",
+        "_buildCount": "593",
         "securityEnabled": true,
         "showHideIsUsed": false,
         "precalc": {
@@ -26275,7 +26276,7 @@
         "sassProcessor": true,
         "debugMode": false,
         "__jsLibraries": "<script type=\"text/javascript\" src=\"javascript/a5.js\"></script>\n<script type=\"text/javascript\" src=\"javascript/a5_url.js\"></script>\n",
-        "A5SaveTimeStamp": "20190719212522142",
+        "A5SaveTimeStamp": "20200323121958401",
         "a_actionJavascript": [
             {
                 "actionGuid": "6ecef1dc-1265-4695-bac2-15589b600869",
@@ -26450,20 +26451,51 @@
             },
             "iconMap": "{images.RowExpander.Open}=\"css/{grid.style}/Expand.png\"\n{images.RowExpander.Close}=\"css/{grid.style}/Collapse.png\"\n{images.EmbeddedSearch.Search}=\"css/{grid.style}/GridSearch.png\"\n{images.EmbeddedSearch.ClearSearch}=\"css/{grid.style}/GridSearchClear.png\"\n{images.EmbeddedSearch.ShowHideEmbeddedSearch}=\"css/{grid.style}/GridSearchToggle.png\"\n{images.GridRow.NewRecordRow.NoFocus}=\"css/{grid.style}/GridRowNew.png\"\n{images.GridRow.NewRecordRow.HasFocus}=\"css/{grid.style}/GridRowNewSelected.png\"\n{images.GridRow.SaveRecord}=\"css/{grid.style}/GridRowSave.png\"\n{images.GridRow.SaveRecord.Disabled}=\"css/{grid.style}/GridRowSaveDisabled.png\"\n{images.GridRow.UndoChanges}=\"css/{grid.style}/GridRowUndoEdits.png\"\n{images.GridRow.UndoChanges.Disabled}=\"css/{grid.style}/GridRowUndoEditsDisabled.png\"\n{images.GridRow.EditRecord}=\"css/{grid.style}/GridRowEdit.png\"\n{images.GridRow.EditRecord.Disabled}=\"css/{grid.style}/GridRowEditDisabled.png\"\n{images.GridRow.DeleteRecord}=\"css/{grid.style}/GridRowDelete.png\"\n{images.GridRow.DeleteRecord.Disabled}=\"css/{grid.style}/GridRecordDeleteDisabled.png\"\n{images.GridRow.CancelEditRecord}=\"css/{grid.style}/GridRowCancelEdits.png\"\n{images.GridRow.CancelEditRecord.Disabled}=\n{images.GridRow.HasError}=\"css/{grid.style}/GridRowError.png\"\n{images.QBE.OperatorIsSelected}=\n{images.QBE.OpenQBEMenu}=\"css/{grid.style}/GridQBEMenu.png\"\n{images.QBE.ShowHideQBERow}=\"css/{grid.style}/GridQBEToggle.png\"\n{images.PopUpWindow.Lookup.Close}=\"css/{grid.style}/WinClose.png\"\n{images.PopUpWindow.DetailView.Close}=\"css/{grid.style}/WinClose.png\"\n{images.CollapseContainer.Open}=\"css/{grid.style}/Expand.png\"\n{images.CollapseContainer.Close}=\"css/{grid.style}/Collapse.png\"\n{images.FieldHelpIcon}=\"css/{grid.style}/EditHelp.png\"\n{images.SearchPart.SaveSearchCriteria}=\"css/{grid.style}/GridSearchSave.png\"\n{images.SearchPart.LoadSearchCriteria}=\"css/{grid.style}/GridSearchLoad.png\"\n{images.SearchPart.RunSearch}=\"css/{grid.style}/GridSearch.png\"\n{images.SearchPart.ClearSearch}=\"css/{grid.style}/GridSearchClear.png\"\n{images.GridRow.SelectionPointer}=\"css/{grid.style}/GridRowSelected.png\"\n{images.Grid.SortAsc}=\"css/{grid.style}/GridSortAsc.png\"\n{images.Grid.SortAscDisabled}=\"css/{grid.style}/GridSortAscDisabled.png\"\n{images.Grid.sortDesc}=\"css/{grid.style}/GridSortDesc.png\"\n{images.grid.sortDescDisabled}=\"css/{grid.style}/GridSortDescDisabled.png\"\n{images.grid.firstPage}=\"css/{grid.style}/GridPageFirst.png\"\n{images.grid.firstPageDisabled}=\"css/{grid.style}/GridPageFirstDisabled.png\"\n{images.grid.prevPage}=\"css/{grid.style}/GridPagePrev.png\"\n{images.grid.prevPageDisabled}=\"css/{grid.style}/GridPagePrevDisabled.png\"\n{images.grid.nextPage}=\"css/{grid.style}/GridPageNext.png\"\n{images.grid.nextPageDisabled}=\"css/{grid.style}/GridPageNextDisabled.png\"\n{images.grid.lastPage}=\"css/{grid.style}/GridPageLast.png\"\n{images.grid.lastPageDisabled}=\"css/{grid.style}/GridPageLastDisabled.png\"\n{images.edit.dropdownArrow}=\"css/{grid.style}/EditDDArrow.png\"\n{images.edit.datePicker}=\"css/{grid.style}/EditDP.png\"\n{images.edit.dateTimePicker}=\"css/{grid.style}/EditDTP.png\"\n{images.edit.timePicker}=\"css/{grid.style}/EditTP.png\"\n{images.edit.calculator}=\n{images.edit.lookup}=\"css/{grid.style}/EditLookup.png\"\n{images.javascript.deleteRowConfirmation}=\"css/{grid.style}/MessageQuestion.png\"\n{images.javascript.cancelEditRowConfirmation}=\"css/{grid.style}/MessageInfo.png\"\n{images.javascript.UndoEditsConfirmation}=\"css/{grid.style}/MessageInfo.png\"\n{images.javascript.UndoAllEditsConfirmation}=\"css/{grid.style}/MessageInfo.png\"\n{images.javascript.dirtyRecordWarning}=\"css/{grid.style}/MessageInfo.png\"\n{images.dv.close}=\"css/{grid.style}/GridRecordClose.png\"\n{images.dv.firstRecord}=\"css/{grid.style}/GridRecordFirst.png\"\n{images.dv.prevRecord}=\"css/{grid.style}/GridRecordPrev.png\"\n{images.dv.nextRecord}=\"css/{grid.style}/GridRecordNext.png\"\n{images.dv.lastRecord}=\"css/{grid.style}/GridRecordLast.png\"\n{images.dv.newRecord}=\"css/{grid.style}/GridRecordNew.png\"\n{images.dv.cancelEdits}=\"css/{grid.style}/GridRecordCancelEdits.png\"\n{images.dv.deleteRecord}=\"css/{grid.style}/GridRecordDelete.png\"\n{images.dv.saveRecord}=\"css/{grid.style}/GridRecordSave.png\"\n{images.dv.saveAndEnter}=\"css/{grid.style}/GridRecordSaveAndEnter.png\"\n{images.dv.switchToEdit}=\"css/{grid.style}/GridRecordSwitchToEdit.png\"\n{images.dv.switchToView}=\"css/{grid.style}/GridRecordSwitchToView.png\"\n{images.disabled.dv.newRecord}=\"css/{grid.style}/GridRecordNew.png\"\n{images.disabled.dv.cancelEdits}=\"css/{grid.style}/GridRecordCancelEditsDisabled.png\"\n{images.disabled.dv.deleteRecord}=\"css/{grid.style}/GridRecordDeleteDisabled.png\"\n{images.disabled.dv.saveRecord}=\"css/{grid.style}/GridRecordSaveDisabled.png\"\n{images.disabled.dv.saveAndEnter}=\"css/{grid.style}/GridRecordSaveAndEnterDisabled.png\"\n{images.dv.cancelNewRecord}=\"css/{grid.style}/GridRecordNewCancelEdits.png\"\n{images.grid.editError}=\"css/{grid.style}/EditError.png\"\n{images.dialog.editError}=\"css/{grid.style}/EditError.png\"\n{images.tabbedUI.menuExpandLeft}=\"css/{grid.style}/PanelLeftExpand.png\"\n{images.tabbedUI.menuCollapseLeft}=\"css/{grid.style}/PanelLeftCollapse.png\"\n{images.tabbedUI.menuExpandRight}=\"css/{grid.style}/PanelRightExpand.png\"\n{images.tabbedUI.menuCollapseRight}=\"css/{grid.style}/PanelRightCollapse.png\"\n{images.dialog.repeatingSectionActiveRowIcon}=\"css/{dialog.style}/DialogRSRowSelected.png\"\n{images.dialog.repeatingSectionAddRowIcon}=\"css/{dialog.style}/DialogRSRowAdd.png\"\n{images.dialog.repeatingSectionDeleteRowIcon}=\"css/{dialog.style}/DialogRSRowDelete.png\"\n{images.dialog.repeatingSectionErrorRowIcon}=\"css/{dialog.style}/DialogRSRowError.png\"\n{images.dialog.deleteRowMessage.icon}=\"css/GrBlue/MessageQuestion.png\"\n{images.dialog.resetForm.icon}=\"css/GrBlue/MessageQuestion.png\"\n{images.dialog.dirtyForm.icon}=\"css/GrBlue/MessageInfo.png\"\n{images.dialog.editError}=\"css/GrBlue/EditError.png\"\n{images.dialog.listNav}=\"css/GrBlue/ListNav.png\"\n{images.dialog.listNavSubtle}=\"css/GrBlue/ListNavSubtle.png\"\n{images.dialog.menu}=\"images/menuPanel24x24.png.a5image\"\n{images.dialog.refresh}=\"images/$$generic.refresh.color.png.a5image\"\n{images.dialog.refreshDisabled}=\"images/disabled/$$generic.refresh.color.png.a5image\""
         },
+        "_flagDoTreeview": true,
+        "Livepreview_permissions": "18470709a31c4fc7a89b4529bf99f4ea",
+        "__allowCascadingRecalc": true,
+        "a_UnboundActionJavascript": [
+            {
+                "idInternal": "7e841fc5-3dc3-47a7-84b6-6fb9b1519580",
+                "name": "asd",
+                "javascript": {
+                    "unbound": "/* actionJavascript:df43e041-fc80-4703-942e-7c1e46226ab9  */\n{dialog.object}.showWaitMessage('container:',{useCSSAnimation: false,message: 'Wait...',icon: 'css/A5System/Images/wait.gif'});"
+                },
+                "javascriptDeclarationsRow": {
+                    "unbound": ""
+                },
+                "javascriptDeclarationsGlobal": {
+                    "unbound": ""
+                },
+                "xbasicFunctions": {
+                    "unbound": ""
+                },
+                "clientSideXbasicFunctions": {
+                    "unbound": ""
+                },
+                "part": ""
+            }
+        ],
+        "unboundActionShowOnNewActionMessage": true,
+        "actionJavascriptUnboundLastEdited": "7e841fc5-3dc3-47a7-84b6-6fb9b1519580",
+        "_forceMobileSimulation": false,
+        "mobileDeviceDefault": "iphone4_v",
         "minimumBuildNumber": "",
-        "style_color_palette": "",
         "customTabOrder": "",
+        "captureJSErrorStackTrace": false,
+        "__flagHasMacro": false,
+        "__flagCreateAppCache": false,
+        "livePreview_permissions_friendly": "Administrators\n",
+        "style_color_palette": "",
         "showPulseEffect": true,
         "flagShowDeleteConfirmation": true,
         "friendlydatesCustomizationJSON": "",
-        "captureJSErrorStackTrace": false,
         "optionalSystemLibraries": "",
         "useIphoneXStyling": false,
         "iPhoneXStylingJSON": "",
         "wrapPasswordFieldsInForms": true,
         "__LPhostName": "Internet Explorer",
         "_style_isInherited": false,
-        "__flagHasMacro": false,
         "__idinternalCurrentControl": "74c3e1c7_6240_4f10_8eaf_8faea88c3920",
         "__nameCurrentControl": "SEARCH_Id_Contrato",
         "preRenderOptimization": false,
@@ -26471,7 +26503,6 @@
         "__changeAJAXURL": "",
         "__phoneGapInstantUpdate": false,
         "_isPartial": false,
-        "__flagCreateAppCache": false,
         "serverSideActionsArray": [
             {
                 "name": "Load_Primary_keys_for_Parent_Table",
@@ -26516,11 +26547,6 @@
                 "builder": "getKeyValues"
             }
         ],
-        "Livepreview_permissions": "18470709a31c4fc7a89b4529bf99f4ea",
-        "livePreview_permissions_friendly": "Administrators\n",
-        "_flagDoTreeview": true,
-        "mobileDeviceDefault": "iphone4_v",
-        "_forceMobileSimulation": false,
         "informixFix": false,
         "arguments": [
             {
@@ -26534,34 +26560,17 @@
                 "sr": "{ENTIDADUSUARIOCLIENTE}=\"\""
             }
         ],
-        "a_UnboundActionJavascript": [
-            {
-                "idInternal": "7e841fc5-3dc3-47a7-84b6-6fb9b1519580",
-                "name": "asd",
-                "javascript": {
-                    "unbound": "/* actionJavascript:df43e041-fc80-4703-942e-7c1e46226ab9  */\n{dialog.object}.showWaitMessage('container:',{useCSSAnimation: false,message: 'Wait...',icon: 'css/A5System/Images/wait.gif'});"
-                },
-                "javascriptDeclarationsRow": {
-                    "unbound": ""
-                },
-                "javascriptDeclarationsGlobal": {
-                    "unbound": ""
-                },
-                "xbasicFunctions": {
-                    "unbound": ""
-                },
-                "clientSideXbasicFunctions": {
-                    "unbound": ""
-                },
-                "part": ""
-            }
-        ],
-        "unboundActionShowOnNewActionMessage": true,
-        "actionJavascriptUnboundLastEdited": "7e841fc5-3dc3-47a7-84b6-6fb9b1519580",
-        "__allowCascadingRecalc": true,
         "showJavascriptActions": false,
         "showResponsiveLayoutHelp": false,
         "lastbutton": "OK",
-        "flagAddPKToORDER": true
+        "flagAddPKToORDER": true,
+        "flagOptimizedUXTree": false,
+        "cachecomponent": false,
+        "pusherapp": false,
+        "_crcXbEvents": 4294947191,
+        "_crcJSFunctions": 4294953096,
+        "_crcJSEvents": 4294914094,
+        "_treeErrors": "",
+        "_display": ""
     }
 }

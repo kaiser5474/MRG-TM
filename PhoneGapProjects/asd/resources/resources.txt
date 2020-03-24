@@ -1,12 +1,12 @@
 {
-	"_id": "3740965",
+	"_id": "3894428",
 	"_icon": "C:\\5- Proyectos\\TRABAJOS\\Mariloginsa\\8-Logos\\icon-96-xhdpi.png",
 	"_storyboardImage": "",
 	"_ssL": "C:\\5- Proyectos\\TRABAJOS\\Mariloginsa\\8-Logos\\icon-96-xhdpi.png",
-	"_ssP": "",
+	"_ssP": "C:\\5- Proyectos\\TRABAJOS\\Mariloginsa\\8-Logos\\icon-96-xhdpi.png",
 	"_ssA9": "C:\\5- Proyectos\\TRABAJOS\\Mariloginsa\\8-Logos\\icon-96-xhdpi.png",
-	"_initialUxComponent": "app_visita",
-	"_componentLastUpdated": "17-10-2019 12:50:56 30 pm",
+	"_initialUxComponent": "app_MRG",
+	"_componentLastUpdated": "23-03-2020 03:04:51 95 pm",
 	"_ajaxUrl": "https://www.mariloginsatm.com",
 	"_additionalFiles": "",
 	"_userName": "hFH2jej01ny3tO9Ezprj0oD4YPioh7jsu4xSeBeX4QA=",
@@ -48,10 +48,13 @@
 	"launchAppManager": true,
 	"_sqlitedbdefined": false,
 	"_channel": "",
-	"_baseLineGuid": "282bfd2627f54f5fb18ee6aef9b3b5a5",
+	"_baseLineGuid": "6f64484e5d1a4dffbcabd5989a16c35e",
 	"baseline": {
-		"_initialUXcomponent": "app_visita",
+		"_initialUXcomponent": "app_MRG",
 		"_ajaxurl": "https://www.mariloginsatm.com"
 	},
-	"_channels": ""
+	"_channels": "",
+	"_genStoryboardImages": false,
+	"_gen9PatchImages": true,
+	"_allowHttpClearTextTraffic": false
 }

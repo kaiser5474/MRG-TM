@@ -1,7 +1,98 @@
 [
 {
 	"internalVersionC": "1",
-	"description": "Visitas y eventos",
+	"description": "Baseline version",
 	"version": "1.0.0",
-	"date": "2019-10-17 12:52 PM"
+	"date": "2020-03-23 03:06 PM"
+},
+{
+	"internalVersionC": "2",
+	"description": "",
+	"version": "",
+	"channel": "",
+	"date": "2020-03-23 03:36 PM"
+},
+{
+	"internalVersionC": "3",
+	"description": "",
+	"version": "",
+	"channel": "",
+	"date": "2020-03-23 03:40 PM"
+},
+{
+	"internalVersionC": "4",
+	"description": "",
+	"version": "",
+	"channel": "",
+	"date": "2020-03-23 03:46 PM"
+},
+{
+	"internalVersionC": "5",
+	"description": "",
+	"version": "",
+	"channel": "",
+	"date": "2020-03-23 03:51 PM"
+},
+{
+	"internalVersionC": "6",
+	"description": "",
+	"version": "",
+	"channel": "",
+	"date": "2020-03-23 03:55 PM"
+},
+{
+	"internalVersionC": "7",
+	"description": "",
+	"version": "",
+	"channel": "",
+	"date": "2020-03-23 04:12 PM"
+},
+{
+	"internalVersionC": "8",
+	"description": "",
+	"version": "",
+	"channel": "",
+	"date": "2020-03-23 04:18 PM"
+},
+{
+	"internalVersionC": "9",
+	"description": "",
+	"version": "",
+	"channel": "",
+	"date": "2020-03-23 04:21 PM"
+},
+{
+	"internalVersionC": "10",
+	"description": "",
+	"version": "",
+	"channel": "",
+	"date": "2020-03-23 04:40 PM"
+},
+{
+	"internalVersionC": "11",
+	"description": "",
+	"version": "",
+	"channel": "",
+	"date": "2020-03-23 04:46 PM"
+},
+{
+	"internalVersionC": "12",
+	"description": "",
+	"version": "",
+	"channel": "",
+	"date": "2020-03-23 05:55 PM"
+},
+{
+	"internalVersionC": "13",
+	"description": "",
+	"version": "",
+	"channel": "",
+	"date": "2020-03-23 06:16 PM"
+},
+{
+	"internalVersionC": "14",
+	"description": "",
+	"version": "",
+	"channel": "",
+	"date": "2020-03-23 06:21 PM"
 }]

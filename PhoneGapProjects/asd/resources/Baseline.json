@@ -97,6 +97,10 @@
 		"name": "\\a5images\\disabledgenerichome.png"
 	},
 	{
+		"crc": 4294962518,
+		"name": "\\a5images\\disabledgenericimage.png"
+	},
+	{
 		"crc": 4294945876,
 		"name": "\\a5images\\disabledgenericpeople.png"
 	},
@@ -111,6 +115,10 @@
 	{
 		"crc": 4294937505,
 		"name": "\\a5images\\disabledmininavigateprev.png"
+	},
+	{
+		"crc": 4294917377,
+		"name": "\\a5images\\disabledpresentationformfind.png"
 	},
 	{
 		"crc": 4294956857,
@@ -149,6 +157,10 @@
 		"name": "\\a5images\\generichome.png"
 	},
 	{
+		"crc": 4294949391,
+		"name": "\\a5images\\genericimage.png"
+	},
+	{
 		"crc": 4294933187,
 		"name": "\\a5images\\genericpeople.png"
 	},
@@ -183,6 +195,10 @@
 	{
 		"crc": 4294912126,
 		"name": "\\a5images\\null_1x1.png"
+	},
+	{
+		"crc": 4294912478,
+		"name": "\\a5images\\presentationformfind.png"
 	},
 	{
 		"crc": 4294905703,
@@ -1773,7 +1789,7 @@
 		"name": "\\Images\\Pic6.jpg"
 	},
 	{
-		"crc": 4294920809,
+		"crc": 4294916996,
 		"name": "\\javascript\\a5.js"
 	},
 	{
@@ -1790,11 +1806,11 @@
 	}],
 	"rootfiles": [
 	{
-		"crc": 4294940235,
+		"crc": 4294947690,
 		"name": "\\baseline.zip"
 	},
 	{
-		"crc": 4294907505,
+		"crc": 4294920490,
 		"name": "\\config.xml"
 	},
 	{
@@ -1802,7 +1818,7 @@
 		"name": "\\icon.png"
 	},
 	{
-		"crc": 4294917477,
+		"crc": 4294956078,
 		"name": "\\index.html"
 	},
 	{
@@ -1814,15 +1830,15 @@
 		"name": "\\splash.png"
 	},
 	{
-		"crc": 4294945512,
+		"crc": 4294957784,
 		"name": "\\version.json"
 	},
 	{
-		"crc": 4294964063,
+		"crc": 4294907008,
 		"name": "\\_instantUpdateSettings.js"
 	},
 	{
-		"crc": 4294947313,
+		"crc": 4294953351,
 		"name": "\\_phoneGapSettings.js"
 	}],
 	"plugins": [
@@ -1880,6 +1896,11 @@
 		"name": "cordova-plugin-camera",
 		"source": "npm",
 		"version": "2.4.1"
+	},
+	{
+		"name": "cordova-plugin-file-opener2-base64",
+		"source": "npm",
+		"version": ""
 	},
 	{
 		"name": "",

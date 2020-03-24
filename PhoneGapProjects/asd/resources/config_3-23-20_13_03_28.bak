@@ -207,6 +207,4 @@
 		</edit-config>
 	<!-- end cordova-plugin-camera support -->
 
-	<plugin name="cordova-plugin-file-opener2-base64" source="npm" />
-	<plugin spec="https://github.com/remoorejr/cordova-open.git" source="git" />
 </widget>
