@@ -65,6 +65,14 @@
 		"name": "\\a5images\\$$window.button.close.png"
 	},
 	{
+		"crc": 4294943371,
+		"name": "\\a5images\\applicationadobepdf.png"
+	},
+	{
+		"crc": 4294957330,
+		"name": "\\a5images\\applicationmsexcel.png"
+	},
+	{
 		"crc": 4294918645,
 		"name": "\\a5images\\applicationmsword.png"
 	},
@@ -75,6 +83,10 @@
 	{
 		"crc": 4294923687,
 		"name": "\\a5images\\controlimage.png"
+	},
+	{
+		"crc": 4294914621,
+		"name": "\\a5images\\deviceprinter.png"
 	},
 	{
 		"crc": 4294911020,
@@ -1822,7 +1834,7 @@
 		"name": "\\icon.png"
 	},
 	{
-		"crc": 4294925404,
+		"crc": 4294915663,
 		"name": "\\index.html"
 	},
 	{
@@ -1834,7 +1846,7 @@
 		"name": "\\splash.png"
 	},
 	{
-		"crc": 4294922527,
+		"crc": 4294966687,
 		"name": "\\version.json"
 	},
 	{

@@ -3034,4 +3034,12 @@
 <action="allow">
 <groups="">
 >
+<[760]<page="Reporte_Posicion_Especial_Bote.a5rpt">
+<action="allow">
+<groups="">
+>
+<[761]<page="lt_Lista_Pasajeros1.a5rpt">
+<action="allow">
+<groups="">
+>
 >
