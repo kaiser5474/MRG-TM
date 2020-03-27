@@ -5,8 +5,8 @@
 	"_ssL": "C:\\5- Proyectos\\TRABAJOS\\Mariloginsa\\8-Logos\\icon-96-xhdpi.png",
 	"_ssP": "C:\\5- Proyectos\\TRABAJOS\\Mariloginsa\\8-Logos\\icon-96-xhdpi.png",
 	"_ssA9": "C:\\5- Proyectos\\TRABAJOS\\Mariloginsa\\8-Logos\\icon-96-xhdpi.png",
-	"_initialUxComponent": "app_MRG",
-	"_componentLastUpdated": "23-03-2020 03:04:51 95 pm",
+	"_initialUxComponent": "app_MRG_Login",
+	"_componentLastUpdated": "25-03-2020 12:02:06 93 pm",
 	"_ajaxUrl": "https://www.mariloginsatm.com",
 	"_additionalFiles": "",
 	"_userName": "hFH2jej01ny3tO9Ezprj0oD4YPioh7jsu4xSeBeX4QA=",
@@ -48,9 +48,9 @@
 	"launchAppManager": true,
 	"_sqlitedbdefined": false,
 	"_channel": "",
-	"_baseLineGuid": "6f64484e5d1a4dffbcabd5989a16c35e",
+	"_baseLineGuid": "202bffd8cbb447cd892d9fe6d3576c2a",
 	"baseline": {
-		"_initialUXcomponent": "app_MRG",
+		"_initialUXcomponent": "app_MRG_Login",
 		"_ajaxurl": "https://www.mariloginsatm.com"
 	},
 	"_channels": "",

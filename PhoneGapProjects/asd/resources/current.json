@@ -493,6 +493,3242 @@
 		"name": "\\css\\A5System\\Vista\\theme.js"
 	},
 	{
+		"crc": 4294936434,
+		"name": "\\css\\Alpha\\icons\\academicCap.svg"
+	},
+	{
+		"crc": 4294913398,
+		"name": "\\css\\Alpha\\icons\\add.svg"
+	},
+	{
+		"crc": 4294903741,
+		"name": "\\css\\Alpha\\icons\\addCircle.svg"
+	},
+	{
+		"crc": 4294903895,
+		"name": "\\css\\Alpha\\icons\\addCircleBorder.svg"
+	},
+	{
+		"crc": 4294912047,
+		"name": "\\css\\Alpha\\icons\\addLarge.svg"
+	},
+	{
+		"crc": 4294952077,
+		"name": "\\css\\Alpha\\icons\\addRounded.svg"
+	},
+	{
+		"crc": 4294920671,
+		"name": "\\css\\Alpha\\icons\\addRoundedBorder.svg"
+	},
+	{
+		"crc": 4294921872,
+		"name": "\\css\\Alpha\\icons\\addSquare.svg"
+	},
+	{
+		"crc": 4294917840,
+		"name": "\\css\\Alpha\\icons\\addSquareBorder.svg"
+	},
+	{
+		"crc": 4294931881,
+		"name": "\\css\\Alpha\\icons\\alignBottom.svg"
+	},
+	{
+		"crc": 4294908722,
+		"name": "\\css\\Alpha\\icons\\alignCenterHorizontal.svg"
+	},
+	{
+		"crc": 4294940657,
+		"name": "\\css\\Alpha\\icons\\alignCenterVertical.svg"
+	},
+	{
+		"crc": 4294926131,
+		"name": "\\css\\Alpha\\icons\\alignLeft.svg"
+	},
+	{
+		"crc": 4294904898,
+		"name": "\\css\\Alpha\\icons\\alignRight.svg"
+	},
+	{
+		"crc": 4294961594,
+		"name": "\\css\\Alpha\\icons\\alignTop.svg"
+	},
+	{
+		"crc": 4294915996,
+		"name": "\\css\\Alpha\\icons\\anchor.svg"
+	},
+	{
+		"crc": 4294919794,
+		"name": "\\css\\Alpha\\icons\\angle.svg"
+	},
+	{
+		"crc": 4294927245,
+		"name": "\\css\\Alpha\\icons\\appEnter.svg"
+	},
+	{
+		"crc": 4294963068,
+		"name": "\\css\\Alpha\\icons\\appExit.svg"
+	},
+	{
+		"crc": 4294952176,
+		"name": "\\css\\Alpha\\icons\\arrowClockwise.svg"
+	},
+	{
+		"crc": 4294952022,
+		"name": "\\css\\Alpha\\icons\\arrowCounterClockwise.svg"
+	},
+	{
+		"crc": 4294934295,
+		"name": "\\css\\Alpha\\icons\\arrowDown.svg"
+	},
+	{
+		"crc": 4294956697,
+		"name": "\\css\\Alpha\\icons\\arrowDownLeft.svg"
+	},
+	{
+		"crc": 4294915987,
+		"name": "\\css\\Alpha\\icons\\arrowDownRight.svg"
+	},
+	{
+		"crc": 4294905922,
+		"name": "\\css\\Alpha\\icons\\arrowLeft.svg"
+	},
+	{
+		"crc": 4294935096,
+		"name": "\\css\\Alpha\\icons\\arrowRight.svg"
+	},
+	{
+		"crc": 4294927072,
+		"name": "\\css\\Alpha\\icons\\arrows.svg"
+	},
+	{
+		"crc": 4294923844,
+		"name": "\\css\\Alpha\\icons\\arrowsDiagonal.svg"
+	},
+	{
+		"crc": 4294923079,
+		"name": "\\css\\Alpha\\icons\\arrowsDiagonalBLTR.svg"
+	},
+	{
+		"crc": 4294926760,
+		"name": "\\css\\Alpha\\icons\\arrowsDiagonalTLBR.svg"
+	},
+	{
+		"crc": 4294942317,
+		"name": "\\css\\Alpha\\icons\\arrowsHorizontal.svg"
+	},
+	{
+		"crc": 4294909020,
+		"name": "\\css\\Alpha\\icons\\arrowsIn.svg"
+	},
+	{
+		"crc": 4294926137,
+		"name": "\\css\\Alpha\\icons\\arrowsInDiagonal.svg"
+	},
+	{
+		"crc": 4294929947,
+		"name": "\\css\\Alpha\\icons\\arrowsInHorizontal.svg"
+	},
+	{
+		"crc": 4294921693,
+		"name": "\\css\\Alpha\\icons\\arrowsInVertical.svg"
+	},
+	{
+		"crc": 4294945807,
+		"name": "\\css\\Alpha\\icons\\arrowsJoinDown.svg"
+	},
+	{
+		"crc": 4294953053,
+		"name": "\\css\\Alpha\\icons\\arrowsJoinLeft.svg"
+	},
+	{
+		"crc": 4294946048,
+		"name": "\\css\\Alpha\\icons\\arrowsJoinRight.svg"
+	},
+	{
+		"crc": 4294961735,
+		"name": "\\css\\Alpha\\icons\\arrowsJoinUp.svg"
+	},
+	{
+		"crc": 4294905883,
+		"name": "\\css\\Alpha\\icons\\arrowsOut.svg"
+	},
+	{
+		"crc": 4294902590,
+		"name": "\\css\\Alpha\\icons\\arrowsOutDiagonal.svg"
+	},
+	{
+		"crc": 4294924974,
+		"name": "\\css\\Alpha\\icons\\arrowsOutHorizontal.svg"
+	},
+	{
+		"crc": 4294925119,
+		"name": "\\css\\Alpha\\icons\\arrowsOutVertical.svg"
+	},
+	{
+		"crc": 4294944246,
+		"name": "\\css\\Alpha\\icons\\arrowsSplitDown.svg"
+	},
+	{
+		"crc": 4294908828,
+		"name": "\\css\\Alpha\\icons\\arrowsSplitLeft.svg"
+	},
+	{
+		"crc": 4294931611,
+		"name": "\\css\\Alpha\\icons\\arrowsSplitRight.svg"
+	},
+	{
+		"crc": 4294951913,
+		"name": "\\css\\Alpha\\icons\\arrowsSplitUp.svg"
+	},
+	{
+		"crc": 4294919009,
+		"name": "\\css\\Alpha\\icons\\arrowsSwapHorizontal.svg"
+	},
+	{
+		"crc": 4294957279,
+		"name": "\\css\\Alpha\\icons\\arrowsSwapVertical.svg"
+	},
+	{
+		"crc": 4294930189,
+		"name": "\\css\\Alpha\\icons\\arrowsUDown.svg"
+	},
+	{
+		"crc": 4294933690,
+		"name": "\\css\\Alpha\\icons\\arrowsULeft.svg"
+	},
+	{
+		"crc": 4294933071,
+		"name": "\\css\\Alpha\\icons\\arrowsURight.svg"
+	},
+	{
+		"crc": 4294959511,
+		"name": "\\css\\Alpha\\icons\\arrowsUUp.svg"
+	},
+	{
+		"crc": 4294959874,
+		"name": "\\css\\Alpha\\icons\\arrowsVertical.svg"
+	},
+	{
+		"crc": 4294914956,
+		"name": "\\css\\Alpha\\icons\\arrowUDownLeft.svg"
+	},
+	{
+		"crc": 4294906383,
+		"name": "\\css\\Alpha\\icons\\arrowUDownRight.svg"
+	},
+	{
+		"crc": 4294957458,
+		"name": "\\css\\Alpha\\icons\\arrowULeftBottom.svg"
+	},
+	{
+		"crc": 4294957436,
+		"name": "\\css\\Alpha\\icons\\arrowULeftTop.svg"
+	},
+	{
+		"crc": 4294951695,
+		"name": "\\css\\Alpha\\icons\\arrowUp.svg"
+	},
+	{
+		"crc": 4294909543,
+		"name": "\\css\\Alpha\\icons\\arrowUpLeft.svg"
+	},
+	{
+		"crc": 4294932317,
+		"name": "\\css\\Alpha\\icons\\arrowUpRight.svg"
+	},
+	{
+		"crc": 4294915498,
+		"name": "\\css\\Alpha\\icons\\arrowURightBottom.svg"
+	},
+	{
+		"crc": 4294923563,
+		"name": "\\css\\Alpha\\icons\\arrowURightTop.svg"
+	},
+	{
+		"crc": 4294919802,
+		"name": "\\css\\Alpha\\icons\\arrowUUpLeft.svg"
+	},
+	{
+		"crc": 4294960039,
+		"name": "\\css\\Alpha\\icons\\arrowUUpRight.svg"
+	},
+	{
+		"crc": 4294911869,
+		"name": "\\css\\Alpha\\icons\\audio.svg"
+	},
+	{
+		"crc": 4294931112,
+		"name": "\\css\\Alpha\\icons\\backspace.svg"
+	},
+	{
+		"crc": 4294929410,
+		"name": "\\css\\Alpha\\icons\\bag.svg"
+	},
+	{
+		"crc": 4294928981,
+		"name": "\\css\\Alpha\\icons\\bagAdd.svg"
+	},
+	{
+		"crc": 4294937336,
+		"name": "\\css\\Alpha\\icons\\bagAddSolid.svg"
+	},
+	{
+		"crc": 4294953127,
+		"name": "\\css\\Alpha\\icons\\bagCheck.svg"
+	},
+	{
+		"crc": 4294963152,
+		"name": "\\css\\Alpha\\icons\\bagCheckSolid.svg"
+	},
+	{
+		"crc": 4294940254,
+		"name": "\\css\\Alpha\\icons\\bagFull.svg"
+	},
+	{
+		"crc": 4294910297,
+		"name": "\\css\\Alpha\\icons\\bagFullSolid.svg"
+	},
+	{
+		"crc": 4294959252,
+		"name": "\\css\\Alpha\\icons\\bagRemove.svg"
+	},
+	{
+		"crc": 4294935909,
+		"name": "\\css\\Alpha\\icons\\bagRemoveSolid.svg"
+	},
+	{
+		"crc": 4294962976,
+		"name": "\\css\\Alpha\\icons\\bagSolid.svg"
+	},
+	{
+		"crc": 4294917110,
+		"name": "\\css\\Alpha\\icons\\bagX.svg"
+	},
+	{
+		"crc": 4294924713,
+		"name": "\\css\\Alpha\\icons\\bagXSolid.svg"
+	},
+	{
+		"crc": 4294921262,
+		"name": "\\css\\Alpha\\icons\\bandAid.svg"
+	},
+	{
+		"crc": 4294926296,
+		"name": "\\css\\Alpha\\icons\\bandAidCrossed.svg"
+	},
+	{
+		"crc": 4294951720,
+		"name": "\\css\\Alpha\\icons\\bandAidCrossedSolid.svg"
+	},
+	{
+		"crc": 4294927074,
+		"name": "\\css\\Alpha\\icons\\bandAidSolid.svg"
+	},
+	{
+		"crc": 4294932870,
+		"name": "\\css\\Alpha\\icons\\bars.svg"
+	},
+	{
+		"crc": 4294946698,
+		"name": "\\css\\Alpha\\icons\\basket.svg"
+	},
+	{
+		"crc": 4294955451,
+		"name": "\\css\\Alpha\\icons\\basketAdd.svg"
+	},
+	{
+		"crc": 4294934339,
+		"name": "\\css\\Alpha\\icons\\basketAddSolid.svg"
+	},
+	{
+		"crc": 4294963617,
+		"name": "\\css\\Alpha\\icons\\basketCheck.svg"
+	},
+	{
+		"crc": 4294947661,
+		"name": "\\css\\Alpha\\icons\\basketCheckSolid.svg"
+	},
+	{
+		"crc": 4294904859,
+		"name": "\\css\\Alpha\\icons\\basketFull.svg"
+	},
+	{
+		"crc": 4294964873,
+		"name": "\\css\\Alpha\\icons\\basketFullSolid.svg"
+	},
+	{
+		"crc": 4294927043,
+		"name": "\\css\\Alpha\\icons\\basketRemove.svg"
+	},
+	{
+		"crc": 4294952606,
+		"name": "\\css\\Alpha\\icons\\basketRemoveSolid.svg"
+	},
+	{
+		"crc": 4294943344,
+		"name": "\\css\\Alpha\\icons\\basketSolid.svg"
+	},
+	{
+		"crc": 4294920190,
+		"name": "\\css\\Alpha\\icons\\basketX.svg"
+	},
+	{
+		"crc": 4294919317,
+		"name": "\\css\\Alpha\\icons\\basketXSolid.svg"
+	},
+	{
+		"crc": 4294948608,
+		"name": "\\css\\Alpha\\icons\\battery.svg"
+	},
+	{
+		"crc": 4294966596,
+		"name": "\\css\\Alpha\\icons\\batteryEmpty.svg"
+	},
+	{
+		"crc": 4294934385,
+		"name": "\\css\\Alpha\\icons\\batteryHigh.svg"
+	},
+	{
+		"crc": 4294958860,
+		"name": "\\css\\Alpha\\icons\\batteryLow.svg"
+	},
+	{
+		"crc": 4294927529,
+		"name": "\\css\\Alpha\\icons\\batteryMid.svg"
+	},
+	{
+		"crc": 4294961309,
+		"name": "\\css\\Alpha\\icons\\beaker.svg"
+	},
+	{
+		"crc": 4294943531,
+		"name": "\\css\\Alpha\\icons\\beakerReaction.svg"
+	},
+	{
+		"crc": 4294928329,
+		"name": "\\css\\Alpha\\icons\\bell.svg"
+	},
+	{
+		"crc": 4294907922,
+		"name": "\\css\\Alpha\\icons\\bellOff.svg"
+	},
+	{
+		"crc": 4294942910,
+		"name": "\\css\\Alpha\\icons\\bellRing.svg"
+	},
+	{
+		"crc": 4294956433,
+		"name": "\\css\\Alpha\\icons\\binoculars.svg"
+	},
+	{
+		"crc": 4294952726,
+		"name": "\\css\\Alpha\\icons\\book.svg"
+	},
+	{
+		"crc": 4294936101,
+		"name": "\\css\\Alpha\\icons\\bookAdd.svg"
+	},
+	{
+		"crc": 4294932791,
+		"name": "\\css\\Alpha\\icons\\bookCheck.svg"
+	},
+	{
+		"crc": 4294936531,
+		"name": "\\css\\Alpha\\icons\\bookContact.svg"
+	},
+	{
+		"crc": 4294931048,
+		"name": "\\css\\Alpha\\icons\\bookDogeared.svg"
+	},
+	{
+		"crc": 4294948924,
+		"name": "\\css\\Alpha\\icons\\bookEdit.svg"
+	},
+	{
+		"crc": 4294939678,
+		"name": "\\css\\Alpha\\icons\\bookmark.svg"
+	},
+	{
+		"crc": 4294935042,
+		"name": "\\css\\Alpha\\icons\\bookMarked.svg"
+	},
+	{
+		"crc": 4294959011,
+		"name": "\\css\\Alpha\\icons\\bookmarks.svg"
+	},
+	{
+		"crc": 4294931470,
+		"name": "\\css\\Alpha\\icons\\bookmarkSolid.svg"
+	},
+	{
+		"crc": 4294955911,
+		"name": "\\css\\Alpha\\icons\\bookmarksSolid.svg"
+	},
+	{
+		"crc": 4294921646,
+		"name": "\\css\\Alpha\\icons\\bookOpen.svg"
+	},
+	{
+		"crc": 4294918863,
+		"name": "\\css\\Alpha\\icons\\bookOpenMarked.svg"
+	},
+	{
+		"crc": 4294913718,
+		"name": "\\css\\Alpha\\icons\\bookRemove.svg"
+	},
+	{
+		"crc": 4294954576,
+		"name": "\\css\\Alpha\\icons\\books.svg"
+	},
+	{
+		"crc": 4294947840,
+		"name": "\\css\\Alpha\\icons\\bookX.svg"
+	},
+	{
+		"crc": 4294944063,
+		"name": "\\css\\Alpha\\icons\\briefcase.svg"
+	},
+	{
+		"crc": 4294906316,
+		"name": "\\css\\Alpha\\icons\\broom.svg"
+	},
+	{
+		"crc": 4294937643,
+		"name": "\\css\\Alpha\\icons\\broomSweep.svg"
+	},
+	{
+		"crc": 4294942380,
+		"name": "\\css\\Alpha\\icons\\bucket.svg"
+	},
+	{
+		"crc": 4294927725,
+		"name": "\\css\\Alpha\\icons\\bucketPour.svg"
+	},
+	{
+		"crc": 4294918297,
+		"name": "\\css\\Alpha\\icons\\bucketPourSolid.svg"
+	},
+	{
+		"crc": 4294962616,
+		"name": "\\css\\Alpha\\icons\\bucketPourTrans.svg"
+	},
+	{
+		"crc": 4294924515,
+		"name": "\\css\\Alpha\\icons\\bucketSolid.svg"
+	},
+	{
+		"crc": 4294914683,
+		"name": "\\css\\Alpha\\icons\\bucketTrans.svg"
+	},
+	{
+		"crc": 4294923199,
+		"name": "\\css\\Alpha\\icons\\calendar.svg"
+	},
+	{
+		"crc": 4294914773,
+		"name": "\\css\\Alpha\\icons\\calendarAdd.svg"
+	},
+	{
+		"crc": 4294902781,
+		"name": "\\css\\Alpha\\icons\\calendarCheck.svg"
+	},
+	{
+		"crc": 4294920634,
+		"name": "\\css\\Alpha\\icons\\calendarDate.svg"
+	},
+	{
+		"crc": 4294919843,
+		"name": "\\css\\Alpha\\icons\\calendarEdit.svg"
+	},
+	{
+		"crc": 4294903991,
+		"name": "\\css\\Alpha\\icons\\calendarRemove.svg"
+	},
+	{
+		"crc": 4294934152,
+		"name": "\\css\\Alpha\\icons\\calendarWeek.svg"
+	},
+	{
+		"crc": 4294917999,
+		"name": "\\css\\Alpha\\icons\\calendarX.svg"
+	},
+	{
+		"crc": 4294967203,
+		"name": "\\css\\Alpha\\icons\\camera.svg"
+	},
+	{
+		"crc": 4294958112,
+		"name": "\\css\\Alpha\\icons\\cameraVideo.svg"
+	},
+	{
+		"crc": 4294953913,
+		"name": "\\css\\Alpha\\icons\\cart.svg"
+	},
+	{
+		"crc": 4294931409,
+		"name": "\\css\\Alpha\\icons\\cartAdd.svg"
+	},
+	{
+		"crc": 4294916566,
+		"name": "\\css\\Alpha\\icons\\cartAddSolid.svg"
+	},
+	{
+		"crc": 4294905623,
+		"name": "\\css\\Alpha\\icons\\cartCheck.svg"
+	},
+	{
+		"crc": 4294926547,
+		"name": "\\css\\Alpha\\icons\\cartCheckSolid.svg"
+	},
+	{
+		"crc": 4294953759,
+		"name": "\\css\\Alpha\\icons\\cartFull.svg"
+	},
+	{
+		"crc": 4294949210,
+		"name": "\\css\\Alpha\\icons\\cartFullSolid.svg"
+	},
+	{
+		"crc": 4294943094,
+		"name": "\\css\\Alpha\\icons\\cartRemove.svg"
+	},
+	{
+		"crc": 4294921299,
+		"name": "\\css\\Alpha\\icons\\cartRemoveSolid.svg"
+	},
+	{
+		"crc": 4294914256,
+		"name": "\\css\\Alpha\\icons\\cartSolid.svg"
+	},
+	{
+		"crc": 4294916099,
+		"name": "\\css\\Alpha\\icons\\cartX.svg"
+	},
+	{
+		"crc": 4294922586,
+		"name": "\\css\\Alpha\\icons\\cartXSolid.svg"
+	},
+	{
+		"crc": 4294928784,
+		"name": "\\css\\Alpha\\icons\\chartArea.svg"
+	},
+	{
+		"crc": 4294930179,
+		"name": "\\css\\Alpha\\icons\\chartBar.svg"
+	},
+	{
+		"crc": 4294907646,
+		"name": "\\css\\Alpha\\icons\\chartBubble.svg"
+	},
+	{
+		"crc": 4294941078,
+		"name": "\\css\\Alpha\\icons\\chartLine.svg"
+	},
+	{
+		"crc": 4294938260,
+		"name": "\\css\\Alpha\\icons\\chartPie.svg"
+	},
+	{
+		"crc": 4294956945,
+		"name": "\\css\\Alpha\\icons\\check.svg"
+	},
+	{
+		"crc": 4294962076,
+		"name": "\\css\\Alpha\\icons\\checkCircle.svg"
+	},
+	{
+		"crc": 4294915316,
+		"name": "\\css\\Alpha\\icons\\checkCircleBorder.svg"
+	},
+	{
+		"crc": 4294936561,
+		"name": "\\css\\Alpha\\icons\\checkLarge.svg"
+	},
+	{
+		"crc": 4294954330,
+		"name": "\\css\\Alpha\\icons\\checkList.svg"
+	},
+	{
+		"crc": 4294945433,
+		"name": "\\css\\Alpha\\icons\\checkRounded.svg"
+	},
+	{
+		"crc": 4294915747,
+		"name": "\\css\\Alpha\\icons\\checkRoundedBorder.svg"
+	},
+	{
+		"crc": 4294946833,
+		"name": "\\css\\Alpha\\icons\\checkShield.svg"
+	},
+	{
+		"crc": 4294932394,
+		"name": "\\css\\Alpha\\icons\\checkSquare.svg"
+	},
+	{
+		"crc": 4294918572,
+		"name": "\\css\\Alpha\\icons\\checkSquareBorder.svg"
+	},
+	{
+		"crc": 4294929212,
+		"name": "\\css\\Alpha\\icons\\chevronDblDown.svg"
+	},
+	{
+		"crc": 4294959357,
+		"name": "\\css\\Alpha\\icons\\chevronDblDownLarge.svg"
+	},
+	{
+		"crc": 4294957283,
+		"name": "\\css\\Alpha\\icons\\chevronDblLeft.svg"
+	},
+	{
+		"crc": 4294925999,
+		"name": "\\css\\Alpha\\icons\\chevronDblLeftLarge.svg"
+	},
+	{
+		"crc": 4294962308,
+		"name": "\\css\\Alpha\\icons\\chevronDblRight.svg"
+	},
+	{
+		"crc": 4294965025,
+		"name": "\\css\\Alpha\\icons\\chevronDblRightLarge.svg"
+	},
+	{
+		"crc": 4294947470,
+		"name": "\\css\\Alpha\\icons\\chevronDblUp.svg"
+	},
+	{
+		"crc": 4294955820,
+		"name": "\\css\\Alpha\\icons\\chevronDblUpLarge.svg"
+	},
+	{
+		"crc": 4294965519,
+		"name": "\\css\\Alpha\\icons\\chevronDown.svg"
+	},
+	{
+		"crc": 4294928042,
+		"name": "\\css\\Alpha\\icons\\chevronDownLarge.svg"
+	},
+	{
+		"crc": 4294956343,
+		"name": "\\css\\Alpha\\icons\\chevronLeft.svg"
+	},
+	{
+		"crc": 4294923709,
+		"name": "\\css\\Alpha\\icons\\chevronLeftLarge.svg"
+	},
+	{
+		"crc": 4294966545,
+		"name": "\\css\\Alpha\\icons\\chevronLineDown.svg"
+	},
+	{
+		"crc": 4294931373,
+		"name": "\\css\\Alpha\\icons\\chevronLineDownLarge.svg"
+	},
+	{
+		"crc": 4294948118,
+		"name": "\\css\\Alpha\\icons\\chevronLineLeft.svg"
+	},
+	{
+		"crc": 4294952228,
+		"name": "\\css\\Alpha\\icons\\chevronLineLeftLarge.svg"
+	},
+	{
+		"crc": 4294927560,
+		"name": "\\css\\Alpha\\icons\\chevronLineRight.svg"
+	},
+	{
+		"crc": 4294939204,
+		"name": "\\css\\Alpha\\icons\\chevronLineRightLarge.svg"
+	},
+	{
+		"crc": 4294949929,
+		"name": "\\css\\Alpha\\icons\\chevronLineUp.svg"
+	},
+	{
+		"crc": 4294935016,
+		"name": "\\css\\Alpha\\icons\\chevronLineUpLarge.svg"
+	},
+	{
+		"crc": 4294922296,
+		"name": "\\css\\Alpha\\icons\\chevronRight.svg"
+	},
+	{
+		"crc": 4294905867,
+		"name": "\\css\\Alpha\\icons\\chevronRightLarge.svg"
+	},
+	{
+		"crc": 4294939040,
+		"name": "\\css\\Alpha\\icons\\chevronUp.svg"
+	},
+	{
+		"crc": 4294954801,
+		"name": "\\css\\Alpha\\icons\\chevronUpLarge.svg"
+	},
+	{
+		"crc": 4294923753,
+		"name": "\\css\\Alpha\\icons\\circle.svg"
+	},
+	{
+		"crc": 4294962942,
+		"name": "\\css\\Alpha\\icons\\circleSlash.svg"
+	},
+	{
+		"crc": 4294903745,
+		"name": "\\css\\Alpha\\icons\\circleSolid.svg"
+	},
+	{
+		"crc": 4294935228,
+		"name": "\\css\\Alpha\\icons\\circleSolidWithBorder.svg"
+	},
+	{
+		"crc": 4294939140,
+		"name": "\\css\\Alpha\\icons\\circleSolidWithPaddedBorder.svg"
+	},
+	{
+		"crc": 4294912936,
+		"name": "\\css\\Alpha\\icons\\clipboard.svg"
+	},
+	{
+		"crc": 4294915073,
+		"name": "\\css\\Alpha\\icons\\clipboardAdd.svg"
+	},
+	{
+		"crc": 4294944151,
+		"name": "\\css\\Alpha\\icons\\clipboardAddSolid.svg"
+	},
+	{
+		"crc": 4294960830,
+		"name": "\\css\\Alpha\\icons\\clipboardCheck.svg"
+	},
+	{
+		"crc": 4294932453,
+		"name": "\\css\\Alpha\\icons\\clipboardCheckSolid.svg"
+	},
+	{
+		"crc": 4294916956,
+		"name": "\\css\\Alpha\\icons\\clipboardRemove.svg"
+	},
+	{
+		"crc": 4294916867,
+		"name": "\\css\\Alpha\\icons\\clipboardRemoveSolid.svg"
+	},
+	{
+		"crc": 4294960614,
+		"name": "\\css\\Alpha\\icons\\clipboardSolid.svg"
+	},
+	{
+		"crc": 4294915543,
+		"name": "\\css\\Alpha\\icons\\clipboardX.svg"
+	},
+	{
+		"crc": 4294916919,
+		"name": "\\css\\Alpha\\icons\\clipboardXSolid.svg"
+	},
+	{
+		"crc": 4294925799,
+		"name": "\\css\\Alpha\\icons\\clock.svg"
+	},
+	{
+		"crc": 4294913696,
+		"name": "\\css\\Alpha\\icons\\clockAlarm.svg"
+	},
+	{
+		"crc": 4294953427,
+		"name": "\\css\\Alpha\\icons\\clockAlarmAdd.svg"
+	},
+	{
+		"crc": 4294945591,
+		"name": "\\css\\Alpha\\icons\\clockAlarmCheck.svg"
+	},
+	{
+		"crc": 4294922390,
+		"name": "\\css\\Alpha\\icons\\clockAlarmRemove.svg"
+	},
+	{
+		"crc": 4294951537,
+		"name": "\\css\\Alpha\\icons\\clockAlarmRing.svg"
+	},
+	{
+		"crc": 4294930088,
+		"name": "\\css\\Alpha\\icons\\clockAlarmX.svg"
+	},
+	{
+		"crc": 4294927710,
+		"name": "\\css\\Alpha\\icons\\cloud.svg"
+	},
+	{
+		"crc": 4294952437,
+		"name": "\\css\\Alpha\\icons\\codeBug.svg"
+	},
+	{
+		"crc": 4294908800,
+		"name": "\\css\\Alpha\\icons\\codeDebug.svg"
+	},
+	{
+		"crc": 4294929635,
+		"name": "\\css\\Alpha\\icons\\codeDebugBreakpoint.svg"
+	},
+	{
+		"crc": 4294919638,
+		"name": "\\css\\Alpha\\icons\\codeDebugBreakpointOff.svg"
+	},
+	{
+		"crc": 4294918865,
+		"name": "\\css\\Alpha\\icons\\codeDebugHalt.svg"
+	},
+	{
+		"crc": 4294918234,
+		"name": "\\css\\Alpha\\icons\\codeDebugPause.svg"
+	},
+	{
+		"crc": 4294951514,
+		"name": "\\css\\Alpha\\icons\\codeDebugResume.svg"
+	},
+	{
+		"crc": 4294928906,
+		"name": "\\css\\Alpha\\icons\\codeDebugRun.svg"
+	},
+	{
+		"crc": 4294939116,
+		"name": "\\css\\Alpha\\icons\\codeDebugStep.svg"
+	},
+	{
+		"crc": 4294907015,
+		"name": "\\css\\Alpha\\icons\\codeDebugStepIn.svg"
+	},
+	{
+		"crc": 4294909398,
+		"name": "\\css\\Alpha\\icons\\codeDebugStepOut.svg"
+	},
+	{
+		"crc": 4294926842,
+		"name": "\\css\\Alpha\\icons\\codeDebugStepSkip.svg"
+	},
+	{
+		"crc": 4294909030,
+		"name": "\\css\\Alpha\\icons\\comment.svg"
+	},
+	{
+		"crc": 4294932870,
+		"name": "\\css\\Alpha\\icons\\commentAdd.svg"
+	},
+	{
+		"crc": 4294939216,
+		"name": "\\css\\Alpha\\icons\\commentAddSolid.svg"
+	},
+	{
+		"crc": 4294921110,
+		"name": "\\css\\Alpha\\icons\\commentCheck.svg"
+	},
+	{
+		"crc": 4294911194,
+		"name": "\\css\\Alpha\\icons\\commentCheckSolid.svg"
+	},
+	{
+		"crc": 4294941360,
+		"name": "\\css\\Alpha\\icons\\commentEdit.svg"
+	},
+	{
+		"crc": 4294938772,
+		"name": "\\css\\Alpha\\icons\\commentEditSolid.svg"
+	},
+	{
+		"crc": 4294948819,
+		"name": "\\css\\Alpha\\icons\\commentError.svg"
+	},
+	{
+		"crc": 4294928964,
+		"name": "\\css\\Alpha\\icons\\commentErrorSolid.svg"
+	},
+	{
+		"crc": 4294932752,
+		"name": "\\css\\Alpha\\icons\\commentInfo.svg"
+	},
+	{
+		"crc": 4294965820,
+		"name": "\\css\\Alpha\\icons\\commentInfoSolid.svg"
+	},
+	{
+		"crc": 4294919432,
+		"name": "\\css\\Alpha\\icons\\commenting.svg"
+	},
+	{
+		"crc": 4294959386,
+		"name": "\\css\\Alpha\\icons\\commentingSolid.svg"
+	},
+	{
+		"crc": 4294917340,
+		"name": "\\css\\Alpha\\icons\\commentPerson.svg"
+	},
+	{
+		"crc": 4294956875,
+		"name": "\\css\\Alpha\\icons\\commentPersonSolid.svg"
+	},
+	{
+		"crc": 4294939387,
+		"name": "\\css\\Alpha\\icons\\commentQuestion.svg"
+	},
+	{
+		"crc": 4294949699,
+		"name": "\\css\\Alpha\\icons\\commentQuestionSolid.svg"
+	},
+	{
+		"crc": 4294961823,
+		"name": "\\css\\Alpha\\icons\\commentQuote.svg"
+	},
+	{
+		"crc": 4294958300,
+		"name": "\\css\\Alpha\\icons\\commentQuoteSolid.svg"
+	},
+	{
+		"crc": 4294947188,
+		"name": "\\css\\Alpha\\icons\\commentRemove.svg"
+	},
+	{
+		"crc": 4294919938,
+		"name": "\\css\\Alpha\\icons\\commentRemoveSolid.svg"
+	},
+	{
+		"crc": 4294907596,
+		"name": "\\css\\Alpha\\icons\\comments.svg"
+	},
+	{
+		"crc": 4294937673,
+		"name": "\\css\\Alpha\\icons\\commentSolid.svg"
+	},
+	{
+		"crc": 4294908444,
+		"name": "\\css\\Alpha\\icons\\commentsSolid.svg"
+	},
+	{
+		"crc": 4294902232,
+		"name": "\\css\\Alpha\\icons\\commentX.svg"
+	},
+	{
+		"crc": 4294946985,
+		"name": "\\css\\Alpha\\icons\\commentXSolid.svg"
+	},
+	{
+		"crc": 4294947212,
+		"name": "\\css\\Alpha\\icons\\compass.svg"
+	},
+	{
+		"crc": 4294905156,
+		"name": "\\css\\Alpha\\icons\\compress.svg"
+	},
+	{
+		"crc": 4294966408,
+		"name": "\\css\\Alpha\\icons\\compressAlt.svg"
+	},
+	{
+		"crc": 4294913642,
+		"name": "\\css\\Alpha\\icons\\creditCard.svg"
+	},
+	{
+		"crc": 4294935421,
+		"name": "\\css\\Alpha\\icons\\creditCards.svg"
+	},
+	{
+		"crc": 4294942939,
+		"name": "\\css\\Alpha\\icons\\creditCardSolid.svg"
+	},
+	{
+		"crc": 4294921939,
+		"name": "\\css\\Alpha\\icons\\creditCardsSolid.svg"
+	},
+	{
+		"crc": 4294954084,
+		"name": "\\css\\Alpha\\icons\\cube.svg"
+	},
+	{
+		"crc": 4294944618,
+		"name": "\\css\\Alpha\\icons\\cubeSolid.svg"
+	},
+	{
+		"crc": 4294929662,
+		"name": "\\css\\Alpha\\icons\\dataBarcode.svg"
+	},
+	{
+		"crc": 4294953292,
+		"name": "\\css\\Alpha\\icons\\dataJSON.svg"
+	},
+	{
+		"crc": 4294963855,
+		"name": "\\css\\Alpha\\icons\\dataQRCode.svg"
+	},
+	{
+		"crc": 4294937847,
+		"name": "\\css\\Alpha\\icons\\dataRSS.svg"
+	},
+	{
+		"crc": 4294917787,
+		"name": "\\css\\Alpha\\icons\\dataXML.svg"
+	},
+	{
+		"crc": 4294952102,
+		"name": "\\css\\Alpha\\icons\\dateTime.svg"
+	},
+	{
+		"crc": 4294958868,
+		"name": "\\css\\Alpha\\icons\\delivery.svg"
+	},
+	{
+		"crc": 4294964032,
+		"name": "\\css\\Alpha\\icons\\deliveryAdd.svg"
+	},
+	{
+		"crc": 4294948751,
+		"name": "\\css\\Alpha\\icons\\deliveryCheck.svg"
+	},
+	{
+		"crc": 4294925520,
+		"name": "\\css\\Alpha\\icons\\deliveryMoving.svg"
+	},
+	{
+		"crc": 4294912635,
+		"name": "\\css\\Alpha\\icons\\deliveryRemove.svg"
+	},
+	{
+		"crc": 4294923818,
+		"name": "\\css\\Alpha\\icons\\deliveryX.svg"
+	},
+	{
+		"crc": 4294933356,
+		"name": "\\css\\Alpha\\icons\\deviceDesktop.svg"
+	},
+	{
+		"crc": 4294934128,
+		"name": "\\css\\Alpha\\icons\\deviceLaptop.svg"
+	},
+	{
+		"crc": 4294913462,
+		"name": "\\css\\Alpha\\icons\\deviceMobile.svg"
+	},
+	{
+		"crc": 4294924775,
+		"name": "\\css\\Alpha\\icons\\devicePhone.svg"
+	},
+	{
+		"crc": 4294929674,
+		"name": "\\css\\Alpha\\icons\\devicePrinter.svg"
+	},
+	{
+		"crc": 4294920995,
+		"name": "\\css\\Alpha\\icons\\deviceTablet.svg"
+	},
+	{
+		"crc": 4294923925,
+		"name": "\\css\\Alpha\\icons\\doc.svg"
+	},
+	{
+		"crc": 4294962818,
+		"name": "\\css\\Alpha\\icons\\docAdd.svg"
+	},
+	{
+		"crc": 4294923411,
+		"name": "\\css\\Alpha\\icons\\docAddCircle.svg"
+	},
+	{
+		"crc": 4294926818,
+		"name": "\\css\\Alpha\\icons\\docAddSolid.svg"
+	},
+	{
+		"crc": 4294916996,
+		"name": "\\css\\Alpha\\icons\\docAudio.svg"
+	},
+	{
+		"crc": 4294935201,
+		"name": "\\css\\Alpha\\icons\\docAudioSolid.svg"
+	},
+	{
+		"crc": 4294954942,
+		"name": "\\css\\Alpha\\icons\\docCheck.svg"
+	},
+	{
+		"crc": 4294955204,
+		"name": "\\css\\Alpha\\icons\\docCheckCircle.svg"
+	},
+	{
+		"crc": 4294925401,
+		"name": "\\css\\Alpha\\icons\\docCheckSolid.svg"
+	},
+	{
+		"crc": 4294955924,
+		"name": "\\css\\Alpha\\icons\\docCircleSlash.svg"
+	},
+	{
+		"crc": 4294962269,
+		"name": "\\css\\Alpha\\icons\\docCircleSlashSolid.svg"
+	},
+	{
+		"crc": 4294915678,
+		"name": "\\css\\Alpha\\icons\\docDuplicate.svg"
+	},
+	{
+		"crc": 4294926869,
+		"name": "\\css\\Alpha\\icons\\docDuplicateSolid.svg"
+	},
+	{
+		"crc": 4294942936,
+		"name": "\\css\\Alpha\\icons\\docEdit.svg"
+	},
+	{
+		"crc": 4294965504,
+		"name": "\\css\\Alpha\\icons\\docEditSolid.svg"
+	},
+	{
+		"crc": 4294929921,
+		"name": "\\css\\Alpha\\icons\\docExport.svg"
+	},
+	{
+		"crc": 4294907999,
+		"name": "\\css\\Alpha\\icons\\docImage.svg"
+	},
+	{
+		"crc": 4294912302,
+		"name": "\\css\\Alpha\\icons\\docImageSolid.svg"
+	},
+	{
+		"crc": 4294913709,
+		"name": "\\css\\Alpha\\icons\\docImport.svg"
+	},
+	{
+		"crc": 4294915979,
+		"name": "\\css\\Alpha\\icons\\docIn.svg"
+	},
+	{
+		"crc": 4294965814,
+		"name": "\\css\\Alpha\\icons\\docInk.svg"
+	},
+	{
+		"crc": 4294955948,
+		"name": "\\css\\Alpha\\icons\\docInkSolid.svg"
+	},
+	{
+		"crc": 4294923160,
+		"name": "\\css\\Alpha\\icons\\docInSolid.svg"
+	},
+	{
+		"crc": 4294965986,
+		"name": "\\css\\Alpha\\icons\\docJSON.svg"
+	},
+	{
+		"crc": 4294950649,
+		"name": "\\css\\Alpha\\icons\\docJSONSolid.svg"
+	},
+	{
+		"crc": 4294958176,
+		"name": "\\css\\Alpha\\icons\\docLock.svg"
+	},
+	{
+		"crc": 4294962785,
+		"name": "\\css\\Alpha\\icons\\docLockOpen.svg"
+	},
+	{
+		"crc": 4294902616,
+		"name": "\\css\\Alpha\\icons\\docLockOpenSolid.svg"
+	},
+	{
+		"crc": 4294956362,
+		"name": "\\css\\Alpha\\icons\\docLockSolid.svg"
+	},
+	{
+		"crc": 4294934554,
+		"name": "\\css\\Alpha\\icons\\docOut.svg"
+	},
+	{
+		"crc": 4294918741,
+		"name": "\\css\\Alpha\\icons\\docOutSolid.svg"
+	},
+	{
+		"crc": 4294934337,
+		"name": "\\css\\Alpha\\icons\\docRemove.svg"
+	},
+	{
+		"crc": 4294914383,
+		"name": "\\css\\Alpha\\icons\\docRemoveCircle.svg"
+	},
+	{
+		"crc": 4294944757,
+		"name": "\\css\\Alpha\\icons\\docRemoveSolid.svg"
+	},
+	{
+		"crc": 4294957247,
+		"name": "\\css\\Alpha\\icons\\docRename.svg"
+	},
+	{
+		"crc": 4294918367,
+		"name": "\\css\\Alpha\\icons\\docRenameCircle.svg"
+	},
+	{
+		"crc": 4294902036,
+		"name": "\\css\\Alpha\\icons\\docRenameSolid.svg"
+	},
+	{
+		"crc": 4294940187,
+		"name": "\\css\\Alpha\\icons\\docRip.svg"
+	},
+	{
+		"crc": 4294938975,
+		"name": "\\css\\Alpha\\icons\\docRipSolid.svg"
+	},
+	{
+		"crc": 4294962771,
+		"name": "\\css\\Alpha\\icons\\docSolid.svg"
+	},
+	{
+		"crc": 4294916317,
+		"name": "\\css\\Alpha\\icons\\docSpreadsheet.svg"
+	},
+	{
+		"crc": 4294920092,
+		"name": "\\css\\Alpha\\icons\\docSpreadsheetSolid.svg"
+	},
+	{
+		"crc": 4294939069,
+		"name": "\\css\\Alpha\\icons\\docText.svg"
+	},
+	{
+		"crc": 4294949317,
+		"name": "\\css\\Alpha\\icons\\docTextSolid.svg"
+	},
+	{
+		"crc": 4294940195,
+		"name": "\\css\\Alpha\\icons\\docVector.svg"
+	},
+	{
+		"crc": 4294903388,
+		"name": "\\css\\Alpha\\icons\\docVectorSolid.svg"
+	},
+	{
+		"crc": 4294926955,
+		"name": "\\css\\Alpha\\icons\\docVideo.svg"
+	},
+	{
+		"crc": 4294931360,
+		"name": "\\css\\Alpha\\icons\\docVideoSolid.svg"
+	},
+	{
+		"crc": 4294966100,
+		"name": "\\css\\Alpha\\icons\\docX.svg"
+	},
+	{
+		"crc": 4294939851,
+		"name": "\\css\\Alpha\\icons\\docXCircle.svg"
+	},
+	{
+		"crc": 4294921326,
+		"name": "\\css\\Alpha\\icons\\docXML.svg"
+	},
+	{
+		"crc": 4294951329,
+		"name": "\\css\\Alpha\\icons\\docXMLSolid.svg"
+	},
+	{
+		"crc": 4294923361,
+		"name": "\\css\\Alpha\\icons\\docXSolid.svg"
+	},
+	{
+		"crc": 4294958142,
+		"name": "\\css\\Alpha\\icons\\docZip.svg"
+	},
+	{
+		"crc": 4294912891,
+		"name": "\\css\\Alpha\\icons\\docZipSolid.svg"
+	},
+	{
+		"crc": 4294909825,
+		"name": "\\css\\Alpha\\icons\\download.svg"
+	},
+	{
+		"crc": 4294945958,
+		"name": "\\css\\Alpha\\icons\\drop.svg"
+	},
+	{
+		"crc": 4294964440,
+		"name": "\\css\\Alpha\\icons\\dropper.svg"
+	},
+	{
+		"crc": 4294961790,
+		"name": "\\css\\Alpha\\icons\\dropperIn.svg"
+	},
+	{
+		"crc": 4294942759,
+		"name": "\\css\\Alpha\\icons\\dropperOut.svg"
+	},
+	{
+		"crc": 4294946740,
+		"name": "\\css\\Alpha\\icons\\dropSlash.svg"
+	},
+	{
+		"crc": 4294957910,
+		"name": "\\css\\Alpha\\icons\\dropSlashSolid.svg"
+	},
+	{
+		"crc": 4294918236,
+		"name": "\\css\\Alpha\\icons\\dropSolid.svg"
+	},
+	{
+		"crc": 4294921271,
+		"name": "\\css\\Alpha\\icons\\edit.svg"
+	},
+	{
+		"crc": 4294954249,
+		"name": "\\css\\Alpha\\icons\\editCancel.svg"
+	},
+	{
+		"crc": 4294922413,
+		"name": "\\css\\Alpha\\icons\\editCopy.svg"
+	},
+	{
+		"crc": 4294961831,
+		"name": "\\css\\Alpha\\icons\\editCut.svg"
+	},
+	{
+		"crc": 4294917245,
+		"name": "\\css\\Alpha\\icons\\editDuplicate.svg"
+	},
+	{
+		"crc": 4294918431,
+		"name": "\\css\\Alpha\\icons\\editPaste.svg"
+	},
+	{
+		"crc": 4294911564,
+		"name": "\\css\\Alpha\\icons\\eject.svg"
+	},
+	{
+		"crc": 4294902405,
+		"name": "\\css\\Alpha\\icons\\ellipsisHorizontal.svg"
+	},
+	{
+		"crc": 4294930849,
+		"name": "\\css\\Alpha\\icons\\ellipsisVertical.svg"
+	},
+	{
+		"crc": 4294937612,
+		"name": "\\css\\Alpha\\icons\\enter.svg"
+	},
+	{
+		"crc": 4294920554,
+		"name": "\\css\\Alpha\\icons\\envelope.svg"
+	},
+	{
+		"crc": 4294945880,
+		"name": "\\css\\Alpha\\icons\\envelopeAdd.svg"
+	},
+	{
+		"crc": 4294934160,
+		"name": "\\css\\Alpha\\icons\\envelopeAddSolid.svg"
+	},
+	{
+		"crc": 4294961884,
+		"name": "\\css\\Alpha\\icons\\envelopeIn.svg"
+	},
+	{
+		"crc": 4294924027,
+		"name": "\\css\\Alpha\\icons\\envelopeInSolid.svg"
+	},
+	{
+		"crc": 4294947255,
+		"name": "\\css\\Alpha\\icons\\envelopeLetter.svg"
+	},
+	{
+		"crc": 4294962591,
+		"name": "\\css\\Alpha\\icons\\envelopeLetterSolid.svg"
+	},
+	{
+		"crc": 4294944138,
+		"name": "\\css\\Alpha\\icons\\envelopeOpen.svg"
+	},
+	{
+		"crc": 4294943346,
+		"name": "\\css\\Alpha\\icons\\envelopeOpenSolid.svg"
+	},
+	{
+		"crc": 4294942268,
+		"name": "\\css\\Alpha\\icons\\envelopeOut.svg"
+	},
+	{
+		"crc": 4294930122,
+		"name": "\\css\\Alpha\\icons\\envelopeOutSolid.svg"
+	},
+	{
+		"crc": 4294902514,
+		"name": "\\css\\Alpha\\icons\\envelopeRemove.svg"
+	},
+	{
+		"crc": 4294915891,
+		"name": "\\css\\Alpha\\icons\\envelopeRemoveSolid.svg"
+	},
+	{
+		"crc": 4294937881,
+		"name": "\\css\\Alpha\\icons\\envelopes.svg"
+	},
+	{
+		"crc": 4294964542,
+		"name": "\\css\\Alpha\\icons\\envelopeSolid.svg"
+	},
+	{
+		"crc": 4294941105,
+		"name": "\\css\\Alpha\\icons\\envelopesSolid.svg"
+	},
+	{
+		"crc": 4294918264,
+		"name": "\\css\\Alpha\\icons\\eraser.svg"
+	},
+	{
+		"crc": 4294907387,
+		"name": "\\css\\Alpha\\icons\\exclamation.svg"
+	},
+	{
+		"crc": 4294928399,
+		"name": "\\css\\Alpha\\icons\\exclamationCircle.svg"
+	},
+	{
+		"crc": 4294925688,
+		"name": "\\css\\Alpha\\icons\\exclamationCircleBorder.svg"
+	},
+	{
+		"crc": 4294925532,
+		"name": "\\css\\Alpha\\icons\\exclamationShield.svg"
+	},
+	{
+		"crc": 4294944776,
+		"name": "\\css\\Alpha\\icons\\exclamationTriangle.svg"
+	},
+	{
+		"crc": 4294933484,
+		"name": "\\css\\Alpha\\icons\\exit.svg"
+	},
+	{
+		"crc": 4294944179,
+		"name": "\\css\\Alpha\\icons\\expand.svg"
+	},
+	{
+		"crc": 4294914455,
+		"name": "\\css\\Alpha\\icons\\expandAlt.svg"
+	},
+	{
+		"crc": 4294954873,
+		"name": "\\css\\Alpha\\icons\\export.svg"
+	},
+	{
+		"crc": 4294926394,
+		"name": "\\css\\Alpha\\icons\\eye.svg"
+	},
+	{
+		"crc": 4294933421,
+		"name": "\\css\\Alpha\\icons\\eyeOff.svg"
+	},
+	{
+		"crc": 4294957183,
+		"name": "\\css\\Alpha\\icons\\ff.svg"
+	},
+	{
+		"crc": 4294944504,
+		"name": "\\css\\Alpha\\icons\\ffEnd.svg"
+	},
+	{
+		"crc": 4294906408,
+		"name": "\\css\\Alpha\\icons\\ffJump.svg"
+	},
+	{
+		"crc": 4294921445,
+		"name": "\\css\\Alpha\\icons\\filter.svg"
+	},
+	{
+		"crc": 4294954303,
+		"name": "\\css\\Alpha\\icons\\filterOff.svg"
+	},
+	{
+		"crc": 4294963684,
+		"name": "\\css\\Alpha\\icons\\flag.svg"
+	},
+	{
+		"crc": 4294952903,
+		"name": "\\css\\Alpha\\icons\\flagSolid.svg"
+	},
+	{
+		"crc": 4294932136,
+		"name": "\\css\\Alpha\\icons\\flame.svg"
+	},
+	{
+		"crc": 4294949537,
+		"name": "\\css\\Alpha\\icons\\folder.svg"
+	},
+	{
+		"crc": 4294948988,
+		"name": "\\css\\Alpha\\icons\\folderAdd.svg"
+	},
+	{
+		"crc": 4294965962,
+		"name": "\\css\\Alpha\\icons\\folderAddCircle.svg"
+	},
+	{
+		"crc": 4294944069,
+		"name": "\\css\\Alpha\\icons\\folderAddSolid.svg"
+	},
+	{
+		"crc": 4294905704,
+		"name": "\\css\\Alpha\\icons\\folderCheck.svg"
+	},
+	{
+		"crc": 4294920981,
+		"name": "\\css\\Alpha\\icons\\folderCheckCircle.svg"
+	},
+	{
+		"crc": 4294930913,
+		"name": "\\css\\Alpha\\icons\\folderCheckSolid.svg"
+	},
+	{
+		"crc": 4294960314,
+		"name": "\\css\\Alpha\\icons\\folderEdit.svg"
+	},
+	{
+		"crc": 4294933632,
+		"name": "\\css\\Alpha\\icons\\folderEditSolid.svg"
+	},
+	{
+		"crc": 4294933302,
+		"name": "\\css\\Alpha\\icons\\folderIn.svg"
+	},
+	{
+		"crc": 4294904270,
+		"name": "\\css\\Alpha\\icons\\folderInSolid.svg"
+	},
+	{
+		"crc": 4294940540,
+		"name": "\\css\\Alpha\\icons\\folderLock.svg"
+	},
+	{
+		"crc": 4294951643,
+		"name": "\\css\\Alpha\\icons\\folderLockOpen.svg"
+	},
+	{
+		"crc": 4294918804,
+		"name": "\\css\\Alpha\\icons\\folderLockOpenSolid.svg"
+	},
+	{
+		"crc": 4294938726,
+		"name": "\\css\\Alpha\\icons\\folderLockSolid.svg"
+	},
+	{
+		"crc": 4294943395,
+		"name": "\\css\\Alpha\\icons\\folderOpen.svg"
+	},
+	{
+		"crc": 4294966424,
+		"name": "\\css\\Alpha\\icons\\folderOpenSolid.svg"
+	},
+	{
+		"crc": 4294935515,
+		"name": "\\css\\Alpha\\icons\\folderOut.svg"
+	},
+	{
+		"crc": 4294929048,
+		"name": "\\css\\Alpha\\icons\\folderOutSolid.svg"
+	},
+	{
+		"crc": 4294912151,
+		"name": "\\css\\Alpha\\icons\\folderRemove.svg"
+	},
+	{
+		"crc": 4294920374,
+		"name": "\\css\\Alpha\\icons\\folderRemoveCircle.svg"
+	},
+	{
+		"crc": 4294906327,
+		"name": "\\css\\Alpha\\icons\\folderRemoveSolid.svg"
+	},
+	{
+		"crc": 4294923214,
+		"name": "\\css\\Alpha\\icons\\folderRename.svg"
+	},
+	{
+		"crc": 4294916583,
+		"name": "\\css\\Alpha\\icons\\folderRenameCircle.svg"
+	},
+	{
+		"crc": 4294926693,
+		"name": "\\css\\Alpha\\icons\\folderRenameSolid.svg"
+	},
+	{
+		"crc": 4294952224,
+		"name": "\\css\\Alpha\\icons\\folderSolid.svg"
+	},
+	{
+		"crc": 4294948856,
+		"name": "\\css\\Alpha\\icons\\folderX.svg"
+	},
+	{
+		"crc": 4294910706,
+		"name": "\\css\\Alpha\\icons\\folderXCircle.svg"
+	},
+	{
+		"crc": 4294960868,
+		"name": "\\css\\Alpha\\icons\\folderXSolid.svg"
+	},
+	{
+		"crc": 4294944007,
+		"name": "\\css\\Alpha\\icons\\folderZip.svg"
+	},
+	{
+		"crc": 4294956595,
+		"name": "\\css\\Alpha\\icons\\folderZipSolid.svg"
+	},
+	{
+		"crc": 4294948763,
+		"name": "\\css\\Alpha\\icons\\fontBold.svg"
+	},
+	{
+		"crc": 4294905872,
+		"name": "\\css\\Alpha\\icons\\fontFamily.svg"
+	},
+	{
+		"crc": 4294939546,
+		"name": "\\css\\Alpha\\icons\\fontItalic.svg"
+	},
+	{
+		"crc": 4294959907,
+		"name": "\\css\\Alpha\\icons\\fontSize.svg"
+	},
+	{
+		"crc": 4294917101,
+		"name": "\\css\\Alpha\\icons\\fontStrike.svg"
+	},
+	{
+		"crc": 4294946652,
+		"name": "\\css\\Alpha\\icons\\fontUnderline.svg"
+	},
+	{
+		"crc": 4294927266,
+		"name": "\\css\\Alpha\\icons\\gauge.svg"
+	},
+	{
+		"crc": 4294936053,
+		"name": "\\css\\Alpha\\icons\\gear.svg"
+	},
+	{
+		"crc": 4294953755,
+		"name": "\\css\\Alpha\\icons\\gears.svg"
+	},
+	{
+		"crc": 4294934398,
+		"name": "\\css\\Alpha\\icons\\gift.svg"
+	},
+	{
+		"crc": 4294921729,
+		"name": "\\css\\Alpha\\icons\\giftSolid.svg"
+	},
+	{
+		"crc": 4294965201,
+		"name": "\\css\\Alpha\\icons\\glasses.svg"
+	},
+	{
+		"crc": 4294936387,
+		"name": "\\css\\Alpha\\icons\\glassesSolid.svg"
+	},
+	{
+		"crc": 4294955719,
+		"name": "\\css\\Alpha\\icons\\globe.svg"
+	},
+	{
+		"crc": 4294923190,
+		"name": "\\css\\Alpha\\icons\\globeOrbit.svg"
+	},
+	{
+		"crc": 4294931055,
+		"name": "\\css\\Alpha\\icons\\graphicBlur.svg"
+	},
+	{
+		"crc": 4294963510,
+		"name": "\\css\\Alpha\\icons\\graphicBrightness.svg"
+	},
+	{
+		"crc": 4294926149,
+		"name": "\\css\\Alpha\\icons\\graphicBrightnessDown.svg"
+	},
+	{
+		"crc": 4294911204,
+		"name": "\\css\\Alpha\\icons\\graphicBrightnessSmall.svg"
+	},
+	{
+		"crc": 4294908548,
+		"name": "\\css\\Alpha\\icons\\graphicBrightnessUp.svg"
+	},
+	{
+		"crc": 4294915022,
+		"name": "\\css\\Alpha\\icons\\graphicContrast.svg"
+	},
+	{
+		"crc": 4294907259,
+		"name": "\\css\\Alpha\\icons\\graphicCrop.svg"
+	},
+	{
+		"crc": 4294909018,
+		"name": "\\css\\Alpha\\icons\\graphicMask.svg"
+	},
+	{
+		"crc": 4294948893,
+		"name": "\\css\\Alpha\\icons\\graphicOpacity.svg"
+	},
+	{
+		"crc": 4294962060,
+		"name": "\\css\\Alpha\\icons\\graphicSharpen.svg"
+	},
+	{
+		"crc": 4294935980,
+		"name": "\\css\\Alpha\\icons\\hammer.svg"
+	},
+	{
+		"crc": 4294948254,
+		"name": "\\css\\Alpha\\icons\\handicap.svg"
+	},
+	{
+		"crc": 4294911766,
+		"name": "\\css\\Alpha\\icons\\headphones.svg"
+	},
+	{
+		"crc": 4294945725,
+		"name": "\\css\\Alpha\\icons\\headset.svg"
+	},
+	{
+		"crc": 4294942389,
+		"name": "\\css\\Alpha\\icons\\heart.svg"
+	},
+	{
+		"crc": 4294963309,
+		"name": "\\css\\Alpha\\icons\\heartbeat.svg"
+	},
+	{
+		"crc": 4294916952,
+		"name": "\\css\\Alpha\\icons\\heartBroken.svg"
+	},
+	{
+		"crc": 4294925878,
+		"name": "\\css\\Alpha\\icons\\heartSolid.svg"
+	},
+	{
+		"crc": 4294955365,
+		"name": "\\css\\Alpha\\icons\\history.svg"
+	},
+	{
+		"crc": 4294936598,
+		"name": "\\css\\Alpha\\icons\\home.svg"
+	},
+	{
+		"crc": 4294962016,
+		"name": "\\css\\Alpha\\icons\\hourglass.svg"
+	},
+	{
+		"crc": 4294928891,
+		"name": "\\css\\Alpha\\icons\\hourglassEnd.svg"
+	},
+	{
+		"crc": 4294914649,
+		"name": "\\css\\Alpha\\icons\\hourglassStart.svg"
+	},
+	{
+		"crc": 4294912446,
+		"name": "\\css\\Alpha\\icons\\image.svg"
+	},
+	{
+		"crc": 4294934325,
+		"name": "\\css\\Alpha\\icons\\images.svg"
+	},
+	{
+		"crc": 4294913098,
+		"name": "\\css\\Alpha\\icons\\import.svg"
+	},
+	{
+		"crc": 4294935689,
+		"name": "\\css\\Alpha\\icons\\info.svg"
+	},
+	{
+		"crc": 4294928370,
+		"name": "\\css\\Alpha\\icons\\infoCircle.svg"
+	},
+	{
+		"crc": 4294925080,
+		"name": "\\css\\Alpha\\icons\\infoCircleBorder.svg"
+	},
+	{
+		"crc": 4294955445,
+		"name": "\\css\\Alpha\\icons\\inputKeyboard.svg"
+	},
+	{
+		"crc": 4294936532,
+		"name": "\\css\\Alpha\\icons\\inputKeypad.svg"
+	},
+	{
+		"crc": 4294942844,
+		"name": "\\css\\Alpha\\icons\\inputMouse.svg"
+	},
+	{
+		"crc": 4294915553,
+		"name": "\\css\\Alpha\\icons\\inputStylus.svg"
+	},
+	{
+		"crc": 4294956850,
+		"name": "\\css\\Alpha\\icons\\inputTouch.svg"
+	},
+	{
+		"crc": 4294929320,
+		"name": "\\css\\Alpha\\icons\\inputVoice.svg"
+	},
+	{
+		"crc": 4294950711,
+		"name": "\\css\\Alpha\\icons\\key.svg"
+	},
+	{
+		"crc": 4294915506,
+		"name": "\\css\\Alpha\\icons\\keyOff.svg"
+	},
+	{
+		"crc": 4294960614,
+		"name": "\\css\\Alpha\\icons\\layer.svg"
+	},
+	{
+		"crc": 4294935592,
+		"name": "\\css\\Alpha\\icons\\layerAdd.svg"
+	},
+	{
+		"crc": 4294916748,
+		"name": "\\css\\Alpha\\icons\\layerBottom.svg"
+	},
+	{
+		"crc": 4294926767,
+		"name": "\\css\\Alpha\\icons\\layerDown.svg"
+	},
+	{
+		"crc": 4294953300,
+		"name": "\\css\\Alpha\\icons\\layerRemove.svg"
+	},
+	{
+		"crc": 4294924480,
+		"name": "\\css\\Alpha\\icons\\layerTop.svg"
+	},
+	{
+		"crc": 4294931394,
+		"name": "\\css\\Alpha\\icons\\layerUp.svg"
+	},
+	{
+		"crc": 4294945426,
+		"name": "\\css\\Alpha\\icons\\leaf.svg"
+	},
+	{
+		"crc": 4294911876,
+		"name": "\\css\\Alpha\\icons\\lightBulb.svg"
+	},
+	{
+		"crc": 4294907821,
+		"name": "\\css\\Alpha\\icons\\lightBulbOff.svg"
+	},
+	{
+		"crc": 4294962606,
+		"name": "\\css\\Alpha\\icons\\lightning.svg"
+	},
+	{
+		"crc": 4294954856,
+		"name": "\\css\\Alpha\\icons\\lightningSolid.svg"
+	},
+	{
+		"crc": 4294920573,
+		"name": "\\css\\Alpha\\icons\\link.svg"
+	},
+	{
+		"crc": 4294953834,
+		"name": "\\css\\Alpha\\icons\\listBulleted.svg"
+	},
+	{
+		"crc": 4294904297,
+		"name": "\\css\\Alpha\\icons\\listNumbered.svg"
+	},
+	{
+		"crc": 4294955564,
+		"name": "\\css\\Alpha\\icons\\load.svg"
+	},
+	{
+		"crc": 4294962704,
+		"name": "\\css\\Alpha\\icons\\lock.svg"
+	},
+	{
+		"crc": 4294955451,
+		"name": "\\css\\Alpha\\icons\\lockCheck.svg"
+	},
+	{
+		"crc": 4294912728,
+		"name": "\\css\\Alpha\\icons\\lockOpen.svg"
+	},
+	{
+		"crc": 4294941009,
+		"name": "\\css\\Alpha\\icons\\lockX.svg"
+	},
+	{
+		"crc": 4294905410,
+		"name": "\\css\\Alpha\\icons\\logoFacebook.svg"
+	},
+	{
+		"crc": 4294938376,
+		"name": "\\css\\Alpha\\icons\\logoGooglePlus.svg"
+	},
+	{
+		"crc": 4294950622,
+		"name": "\\css\\Alpha\\icons\\logoInstagram.svg"
+	},
+	{
+		"crc": 4294931430,
+		"name": "\\css\\Alpha\\icons\\logoLinkedIn.svg"
+	},
+	{
+		"crc": 4294910839,
+		"name": "\\css\\Alpha\\icons\\logoTwitter.svg"
+	},
+	{
+		"crc": 4294933832,
+		"name": "\\css\\Alpha\\icons\\logoViddler.svg"
+	},
+	{
+		"crc": 4294944869,
+		"name": "\\css\\Alpha\\icons\\logoVimeo.svg"
+	},
+	{
+		"crc": 4294918720,
+		"name": "\\css\\Alpha\\icons\\logoYouTube.svg"
+	},
+	{
+		"crc": 4294952630,
+		"name": "\\css\\Alpha\\icons\\magGlass.svg"
+	},
+	{
+		"crc": 4294914271,
+		"name": "\\css\\Alpha\\icons\\magGlassIn.svg"
+	},
+	{
+		"crc": 4294958578,
+		"name": "\\css\\Alpha\\icons\\magGlassOut.svg"
+	},
+	{
+		"crc": 4294951496,
+		"name": "\\css\\Alpha\\icons\\magGlassX.svg"
+	},
+	{
+		"crc": 4294959304,
+		"name": "\\css\\Alpha\\icons\\magnet.svg"
+	},
+	{
+		"crc": 4294958246,
+		"name": "\\css\\Alpha\\icons\\map.svg"
+	},
+	{
+		"crc": 4294964489,
+		"name": "\\css\\Alpha\\icons\\mapLocation.svg"
+	},
+	{
+		"crc": 4294966688,
+		"name": "\\css\\Alpha\\icons\\mapMarker.svg"
+	},
+	{
+		"crc": 4294952292,
+		"name": "\\css\\Alpha\\icons\\mapMarkers.svg"
+	},
+	{
+		"crc": 4294921675,
+		"name": "\\css\\Alpha\\icons\\mapMarkerTime.svg"
+	},
+	{
+		"crc": 4294947193,
+		"name": "\\css\\Alpha\\icons\\mapPerson.svg"
+	},
+	{
+		"crc": 4294949130,
+		"name": "\\css\\Alpha\\icons\\mapRoute.svg"
+	},
+	{
+		"crc": 4294940946,
+		"name": "\\css\\Alpha\\icons\\megaphone.svg"
+	},
+	{
+		"crc": 4294940533,
+		"name": "\\css\\Alpha\\icons\\megaphoneOff.svg"
+	},
+	{
+		"crc": 4294940986,
+		"name": "\\css\\Alpha\\icons\\mic.svg"
+	},
+	{
+		"crc": 4294916367,
+		"name": "\\css\\Alpha\\icons\\micOff.svg"
+	},
+	{
+		"crc": 4294902621,
+		"name": "\\css\\Alpha\\icons\\na.svg"
+	},
+	{
+		"crc": 4294955269,
+		"name": "\\css\\Alpha\\icons\\note.svg"
+	},
+	{
+		"crc": 4294962824,
+		"name": "\\css\\Alpha\\icons\\noteAdd.svg"
+	},
+	{
+		"crc": 4294919558,
+		"name": "\\css\\Alpha\\icons\\noteAddSolid.svg"
+	},
+	{
+		"crc": 4294906901,
+		"name": "\\css\\Alpha\\icons\\noteCheck.svg"
+	},
+	{
+		"crc": 4294903727,
+		"name": "\\css\\Alpha\\icons\\noteCheckSolid.svg"
+	},
+	{
+		"crc": 4294964213,
+		"name": "\\css\\Alpha\\icons\\noteEdit.svg"
+	},
+	{
+		"crc": 4294926127,
+		"name": "\\css\\Alpha\\icons\\noteEditSolid.svg"
+	},
+	{
+		"crc": 4294931850,
+		"name": "\\css\\Alpha\\icons\\noteRemove.svg"
+	},
+	{
+		"crc": 4294949822,
+		"name": "\\css\\Alpha\\icons\\noteRemoveSolid.svg"
+	},
+	{
+		"crc": 4294925332,
+		"name": "\\css\\Alpha\\icons\\noteSolid.svg"
+	},
+	{
+		"crc": 4294918900,
+		"name": "\\css\\Alpha\\icons\\noteX.svg"
+	},
+	{
+		"crc": 4294923601,
+		"name": "\\css\\Alpha\\icons\\noteXSolid.svg"
+	},
+	{
+		"crc": 4294923049,
+		"name": "\\css\\Alpha\\icons\\offline.svg"
+	},
+	{
+		"crc": 4294954930,
+		"name": "\\css\\Alpha\\icons\\online.svg"
+	},
+	{
+		"crc": 4294909328,
+		"name": "\\css\\Alpha\\icons\\palette.svg"
+	},
+	{
+		"crc": 4294905113,
+		"name": "\\css\\Alpha\\icons\\paperclip.svg"
+	},
+	{
+		"crc": 4294929178,
+		"name": "\\css\\Alpha\\icons\\paperPlane.svg"
+	},
+	{
+		"crc": 4294956853,
+		"name": "\\css\\Alpha\\icons\\paperPlaneSolid.svg"
+	},
+	{
+		"crc": 4294967209,
+		"name": "\\css\\Alpha\\icons\\pause.svg"
+	},
+	{
+		"crc": 4294919900,
+		"name": "\\css\\Alpha\\icons\\penFine.svg"
+	},
+	{
+		"crc": 4294925534,
+		"name": "\\css\\Alpha\\icons\\penFountain.svg"
+	},
+	{
+		"crc": 4294961835,
+		"name": "\\css\\Alpha\\icons\\penMarker.svg"
+	},
+	{
+		"crc": 4294960782,
+		"name": "\\css\\Alpha\\icons\\people.svg"
+	},
+	{
+		"crc": 4294926654,
+		"name": "\\css\\Alpha\\icons\\peopleAdd.svg"
+	},
+	{
+		"crc": 4294952500,
+		"name": "\\css\\Alpha\\icons\\peopleAddSolid.svg"
+	},
+	{
+		"crc": 4294915613,
+		"name": "\\css\\Alpha\\icons\\peopleHeart.svg"
+	},
+	{
+		"crc": 4294933607,
+		"name": "\\css\\Alpha\\icons\\peopleHeartSolid.svg"
+	},
+	{
+		"crc": 4294946517,
+		"name": "\\css\\Alpha\\icons\\peopleRemove.svg"
+	},
+	{
+		"crc": 4294953262,
+		"name": "\\css\\Alpha\\icons\\peopleRemoveSolid.svg"
+	},
+	{
+		"crc": 4294930174,
+		"name": "\\css\\Alpha\\icons\\peopleSolid.svg"
+	},
+	{
+		"crc": 4294937724,
+		"name": "\\css\\Alpha\\icons\\peopleX.svg"
+	},
+	{
+		"crc": 4294918905,
+		"name": "\\css\\Alpha\\icons\\peopleXSolid.svg"
+	},
+	{
+		"crc": 4294952540,
+		"name": "\\css\\Alpha\\icons\\person.svg"
+	},
+	{
+		"crc": 4294910519,
+		"name": "\\css\\Alpha\\icons\\personAdd.svg"
+	},
+	{
+		"crc": 4294950354,
+		"name": "\\css\\Alpha\\icons\\personAddSolid.svg"
+	},
+	{
+		"crc": 4294945544,
+		"name": "\\css\\Alpha\\icons\\personDoc.svg"
+	},
+	{
+		"crc": 4294923886,
+		"name": "\\css\\Alpha\\icons\\personDocSolid.svg"
+	},
+	{
+		"crc": 4294920647,
+		"name": "\\css\\Alpha\\icons\\personEdit.svg"
+	},
+	{
+		"crc": 4294963424,
+		"name": "\\css\\Alpha\\icons\\personEditSolid.svg"
+	},
+	{
+		"crc": 4294939900,
+		"name": "\\css\\Alpha\\icons\\personHeart.svg"
+	},
+	{
+		"crc": 4294963039,
+		"name": "\\css\\Alpha\\icons\\personHeartSolid.svg"
+	},
+	{
+		"crc": 4294925074,
+		"name": "\\css\\Alpha\\icons\\personIn.svg"
+	},
+	{
+		"crc": 4294954051,
+		"name": "\\css\\Alpha\\icons\\personInSolid.svg"
+	},
+	{
+		"crc": 4294949945,
+		"name": "\\css\\Alpha\\icons\\personOut.svg"
+	},
+	{
+		"crc": 4294931647,
+		"name": "\\css\\Alpha\\icons\\personOutSolid.svg"
+	},
+	{
+		"crc": 4294965063,
+		"name": "\\css\\Alpha\\icons\\personRemove.svg"
+	},
+	{
+		"crc": 4294908232,
+		"name": "\\css\\Alpha\\icons\\personRemoveSolid.svg"
+	},
+	{
+		"crc": 4294956965,
+		"name": "\\css\\Alpha\\icons\\personSolid.svg"
+	},
+	{
+		"crc": 4294913214,
+		"name": "\\css\\Alpha\\icons\\personX.svg"
+	},
+	{
+		"crc": 4294933684,
+		"name": "\\css\\Alpha\\icons\\personXSolid.svg"
+	},
+	{
+		"crc": 4294942667,
+		"name": "\\css\\Alpha\\icons\\phone.svg"
+	},
+	{
+		"crc": 4294914965,
+		"name": "\\css\\Alpha\\icons\\phoneDown.svg"
+	},
+	{
+		"crc": 4294935189,
+		"name": "\\css\\Alpha\\icons\\phoneEllipsis.svg"
+	},
+	{
+		"crc": 4294903364,
+		"name": "\\css\\Alpha\\icons\\phoneIn.svg"
+	},
+	{
+		"crc": 4294901973,
+		"name": "\\css\\Alpha\\icons\\phoneOff.svg"
+	},
+	{
+		"crc": 4294926987,
+		"name": "\\css\\Alpha\\icons\\phoneOut.svg"
+	},
+	{
+		"crc": 4294945825,
+		"name": "\\css\\Alpha\\icons\\phoneRing.svg"
+	},
+	{
+		"crc": 4294925822,
+		"name": "\\css\\Alpha\\icons\\phoneRinging.svg"
+	},
+	{
+		"crc": 4294938944,
+		"name": "\\css\\Alpha\\icons\\pin.svg"
+	},
+	{
+		"crc": 4294909180,
+		"name": "\\css\\Alpha\\icons\\play.svg"
+	},
+	{
+		"crc": 4294949852,
+		"name": "\\css\\Alpha\\icons\\plug.svg"
+	},
+	{
+		"crc": 4294909935,
+		"name": "\\css\\Alpha\\icons\\plugConnect.svg"
+	},
+	{
+		"crc": 4294934326,
+		"name": "\\css\\Alpha\\icons\\plugDisconnect.svg"
+	},
+	{
+		"crc": 4294966708,
+		"name": "\\css\\Alpha\\icons\\podcast.svg"
+	},
+	{
+		"crc": 4294950788,
+		"name": "\\css\\Alpha\\icons\\power.svg"
+	},
+	{
+		"crc": 4294920047,
+		"name": "\\css\\Alpha\\icons\\powerOff.svg"
+	},
+	{
+		"crc": 4294964878,
+		"name": "\\css\\Alpha\\icons\\powerOn.svg"
+	},
+	{
+		"crc": 4294948663,
+		"name": "\\css\\Alpha\\icons\\powerSleep.svg"
+	},
+	{
+		"crc": 4294953149,
+		"name": "\\css\\Alpha\\icons\\powerToggleStandby.svg"
+	},
+	{
+		"crc": 4294911661,
+		"name": "\\css\\Alpha\\icons\\question.svg"
+	},
+	{
+		"crc": 4294908663,
+		"name": "\\css\\Alpha\\icons\\questionCircle.svg"
+	},
+	{
+		"crc": 4294926829,
+		"name": "\\css\\Alpha\\icons\\questionCircleBorder.svg"
+	},
+	{
+		"crc": 4294956420,
+		"name": "\\css\\Alpha\\icons\\quill.svg"
+	},
+	{
+		"crc": 4294947906,
+		"name": "\\css\\Alpha\\icons\\quote.svg"
+	},
+	{
+		"crc": 4294944295,
+		"name": "\\css\\Alpha\\icons\\record.svg"
+	},
+	{
+		"crc": 4294946535,
+		"name": "\\css\\Alpha\\icons\\recordPause.svg"
+	},
+	{
+		"crc": 4294957169,
+		"name": "\\css\\Alpha\\icons\\redo.svg"
+	},
+	{
+		"crc": 4294928537,
+		"name": "\\css\\Alpha\\icons\\refresh.svg"
+	},
+	{
+		"crc": 4294918245,
+		"name": "\\css\\Alpha\\icons\\refreshAlt.svg"
+	},
+	{
+		"crc": 4294902716,
+		"name": "\\css\\Alpha\\icons\\remove.svg"
+	},
+	{
+		"crc": 4294906488,
+		"name": "\\css\\Alpha\\icons\\removeCircle.svg"
+	},
+	{
+		"crc": 4294920211,
+		"name": "\\css\\Alpha\\icons\\removeCircleBorder.svg"
+	},
+	{
+		"crc": 4294913734,
+		"name": "\\css\\Alpha\\icons\\removeLarge.svg"
+	},
+	{
+		"crc": 4294917080,
+		"name": "\\css\\Alpha\\icons\\removeRounded.svg"
+	},
+	{
+		"crc": 4294954719,
+		"name": "\\css\\Alpha\\icons\\removeRoundedBorder.svg"
+	},
+	{
+		"crc": 4294923507,
+		"name": "\\css\\Alpha\\icons\\removeSquare.svg"
+	},
+	{
+		"crc": 4294966654,
+		"name": "\\css\\Alpha\\icons\\removeSquareBorder.svg"
+	},
+	{
+		"crc": 4294927948,
+		"name": "\\css\\Alpha\\icons\\reorder.svg"
+	},
+	{
+		"crc": 4294943062,
+		"name": "\\css\\Alpha\\icons\\reorderDown.svg"
+	},
+	{
+		"crc": 4294939324,
+		"name": "\\css\\Alpha\\icons\\reorderUp.svg"
+	},
+	{
+		"crc": 4294960884,
+		"name": "\\css\\Alpha\\icons\\repeat.svg"
+	},
+	{
+		"crc": 4294949240,
+		"name": "\\css\\Alpha\\icons\\returnLeft.svg"
+	},
+	{
+		"crc": 4294936972,
+		"name": "\\css\\Alpha\\icons\\returnRight.svg"
+	},
+	{
+		"crc": 4294914152,
+		"name": "\\css\\Alpha\\icons\\ribbon.svg"
+	},
+	{
+		"crc": 4294951556,
+		"name": "\\css\\Alpha\\icons\\rocket.svg"
+	},
+	{
+		"crc": 4294936175,
+		"name": "\\css\\Alpha\\icons\\ruler.svg"
+	},
+	{
+		"crc": 4294967003,
+		"name": "\\css\\Alpha\\icons\\rulerSolid.svg"
+	},
+	{
+		"crc": 4294913119,
+		"name": "\\css\\Alpha\\icons\\rw.svg"
+	},
+	{
+		"crc": 4294928498,
+		"name": "\\css\\Alpha\\icons\\rwJump.svg"
+	},
+	{
+		"crc": 4294929219,
+		"name": "\\css\\Alpha\\icons\\rwStart.svg"
+	},
+	{
+		"crc": 4294942557,
+		"name": "\\css\\Alpha\\icons\\save.svg"
+	},
+	{
+		"crc": 4294948417,
+		"name": "\\css\\Alpha\\icons\\saveAll.svg"
+	},
+	{
+		"crc": 4294943130,
+		"name": "\\css\\Alpha\\icons\\saveAndEnter.svg"
+	},
+	{
+		"crc": 4294916430,
+		"name": "\\css\\Alpha\\icons\\saveAs.svg"
+	},
+	{
+		"crc": 4294902662,
+		"name": "\\css\\Alpha\\icons\\scale.svg"
+	},
+	{
+		"crc": 4294934784,
+		"name": "\\css\\Alpha\\icons\\scissors.svg"
+	},
+	{
+		"crc": 4294961699,
+		"name": "\\css\\Alpha\\icons\\screwdriver.svg"
+	},
+	{
+		"crc": 4294921957,
+		"name": "\\css\\Alpha\\icons\\screwdriverAndWrench.svg"
+	},
+	{
+		"crc": 4294917694,
+		"name": "\\css\\Alpha\\icons\\select.svg"
+	},
+	{
+		"crc": 4294910379,
+		"name": "\\css\\Alpha\\icons\\selectAll.svg"
+	},
+	{
+		"crc": 4294947638,
+		"name": "\\css\\Alpha\\icons\\selectAreaEllipse.svg"
+	},
+	{
+		"crc": 4294904242,
+		"name": "\\css\\Alpha\\icons\\selectAreaFree.svg"
+	},
+	{
+		"crc": 4294915158,
+		"name": "\\css\\Alpha\\icons\\selectAreaPolygon.svg"
+	},
+	{
+		"crc": 4294963146,
+		"name": "\\css\\Alpha\\icons\\selectAreaRectangle.svg"
+	},
+	{
+		"crc": 4294961475,
+		"name": "\\css\\Alpha\\icons\\selectLine.svg"
+	},
+	{
+		"crc": 4294909908,
+		"name": "\\css\\Alpha\\icons\\selectWord.svg"
+	},
+	{
+		"crc": 4294905203,
+		"name": "\\css\\Alpha\\icons\\settings.svg"
+	},
+	{
+		"crc": 4294952679,
+		"name": "\\css\\Alpha\\icons\\share.svg"
+	},
+	{
+		"crc": 4294967188,
+		"name": "\\css\\Alpha\\icons\\shield.svg"
+	},
+	{
+		"crc": 4294911886,
+		"name": "\\css\\Alpha\\icons\\shieldSlash.svg"
+	},
+	{
+		"crc": 4294966596,
+		"name": "\\css\\Alpha\\icons\\shuffle.svg"
+	},
+	{
+		"crc": 4294909173,
+		"name": "\\css\\Alpha\\icons\\signpost.svg"
+	},
+	{
+		"crc": 4294934216,
+		"name": "\\css\\Alpha\\icons\\signpostSolid.svg"
+	},
+	{
+		"crc": 4294914046,
+		"name": "\\css\\Alpha\\icons\\slideshow.svg"
+	},
+	{
+		"crc": 4294915126,
+		"name": "\\css\\Alpha\\icons\\slideshowSolid.svg"
+	},
+	{
+		"crc": 4294939534,
+		"name": "\\css\\Alpha\\icons\\sort.svg"
+	},
+	{
+		"crc": 4294959852,
+		"name": "\\css\\Alpha\\icons\\sortAlphaAsc.svg"
+	},
+	{
+		"crc": 4294929095,
+		"name": "\\css\\Alpha\\icons\\sortAlphaDesc.svg"
+	},
+	{
+		"crc": 4294952430,
+		"name": "\\css\\Alpha\\icons\\sortAmountAsc.svg"
+	},
+	{
+		"crc": 4294958258,
+		"name": "\\css\\Alpha\\icons\\sortAmountDesc.svg"
+	},
+	{
+		"crc": 4294912150,
+		"name": "\\css\\Alpha\\icons\\sortNumericAsc.svg"
+	},
+	{
+		"crc": 4294916650,
+		"name": "\\css\\Alpha\\icons\\sortNumericDesc.svg"
+	},
+	{
+		"crc": 4294904236,
+		"name": "\\css\\Alpha\\icons\\speaker.svg"
+	},
+	{
+		"crc": 4294912451,
+		"name": "\\css\\Alpha\\icons\\speakerMid.svg"
+	},
+	{
+		"crc": 4294961438,
+		"name": "\\css\\Alpha\\icons\\speakerMinus.svg"
+	},
+	{
+		"crc": 4294940994,
+		"name": "\\css\\Alpha\\icons\\speakerOff.svg"
+	},
+	{
+		"crc": 4294955547,
+		"name": "\\css\\Alpha\\icons\\speakerPlus.svg"
+	},
+	{
+		"crc": 4294921543,
+		"name": "\\css\\Alpha\\icons\\spellcheck.svg"
+	},
+	{
+		"crc": 4294944933,
+		"name": "\\css\\Alpha\\icons\\square.svg"
+	},
+	{
+		"crc": 4294944967,
+		"name": "\\css\\Alpha\\icons\\squareRounded.svg"
+	},
+	{
+		"crc": 4294912342,
+		"name": "\\css\\Alpha\\icons\\squareRoundedSolid.svg"
+	},
+	{
+		"crc": 4294952894,
+		"name": "\\css\\Alpha\\icons\\squareRoundedSolidBorder.svg"
+	},
+	{
+		"crc": 4294960388,
+		"name": "\\css\\Alpha\\icons\\squareRoundedSolidPaddedBorder.svg"
+	},
+	{
+		"crc": 4294922227,
+		"name": "\\css\\Alpha\\icons\\squareSolid.svg"
+	},
+	{
+		"crc": 4294946448,
+		"name": "\\css\\Alpha\\icons\\squareSolidBorder.svg"
+	},
+	{
+		"crc": 4294960196,
+		"name": "\\css\\Alpha\\icons\\squareSolidPaddedBorder.svg"
+	},
+	{
+		"crc": 4294960942,
+		"name": "\\css\\Alpha\\icons\\star.svg"
+	},
+	{
+		"crc": 4294905737,
+		"name": "\\css\\Alpha\\icons\\starHalfSolid.svg"
+	},
+	{
+		"crc": 4294956694,
+		"name": "\\css\\Alpha\\icons\\starSolid.svg"
+	},
+	{
+		"crc": 4294930827,
+		"name": "\\css\\Alpha\\icons\\stop.svg"
+	},
+	{
+		"crc": 4294915129,
+		"name": "\\css\\Alpha\\icons\\symbolAt.svg"
+	},
+	{
+		"crc": 4294911170,
+		"name": "\\css\\Alpha\\icons\\symbolFemale.svg"
+	},
+	{
+		"crc": 4294901815,
+		"name": "\\css\\Alpha\\icons\\symbolHash.svg"
+	},
+	{
+		"crc": 4294958161,
+		"name": "\\css\\Alpha\\icons\\symbolHazardBio.svg"
+	},
+	{
+		"crc": 4294931972,
+		"name": "\\css\\Alpha\\icons\\symbolHazardNonIonizingRad.svg"
+	},
+	{
+		"crc": 4294960154,
+		"name": "\\css\\Alpha\\icons\\symbolHazardRad.svg"
+	},
+	{
+		"crc": 4294951582,
+		"name": "\\css\\Alpha\\icons\\symbolMale.svg"
+	},
+	{
+		"crc": 4294937902,
+		"name": "\\css\\Alpha\\icons\\symbolParagraph.svg"
+	},
+	{
+		"crc": 4294910892,
+		"name": "\\css\\Alpha\\icons\\symbolQuote.svg"
+	},
+	{
+		"crc": 4294963076,
+		"name": "\\css\\Alpha\\icons\\symbolRecycle.svg"
+	},
+	{
+		"crc": 4294953875,
+		"name": "\\css\\Alpha\\icons\\symbolTransgender.svg"
+	},
+	{
+		"crc": 4294921764,
+		"name": "\\css\\Alpha\\icons\\symbolUnisex.svg"
+	},
+	{
+		"crc": 4294915001,
+		"name": "\\css\\Alpha\\icons\\sync.svg"
+	},
+	{
+		"crc": 4294948447,
+		"name": "\\css\\Alpha\\icons\\synced.svg"
+	},
+	{
+		"crc": 4294952269,
+		"name": "\\css\\Alpha\\icons\\syncError.svg"
+	},
+	{
+		"crc": 4294966570,
+		"name": "\\css\\Alpha\\icons\\tag.svg"
+	},
+	{
+		"crc": 4294921216,
+		"name": "\\css\\Alpha\\icons\\tags.svg"
+	},
+	{
+		"crc": 4294936876,
+		"name": "\\css\\Alpha\\icons\\tagSolid.svg"
+	},
+	{
+		"crc": 4294916750,
+		"name": "\\css\\Alpha\\icons\\tagsSolid.svg"
+	},
+	{
+		"crc": 4294964593,
+		"name": "\\css\\Alpha\\icons\\target.svg"
+	},
+	{
+		"crc": 4294955397,
+		"name": "\\css\\Alpha\\icons\\terminal.svg"
+	},
+	{
+		"crc": 4294942363,
+		"name": "\\css\\Alpha\\icons\\textAlignCenter.svg"
+	},
+	{
+		"crc": 4294938372,
+		"name": "\\css\\Alpha\\icons\\textAlignJustify.svg"
+	},
+	{
+		"crc": 4294909886,
+		"name": "\\css\\Alpha\\icons\\textAlignLeft.svg"
+	},
+	{
+		"crc": 4294963437,
+		"name": "\\css\\Alpha\\icons\\textAlignRight.svg"
+	},
+	{
+		"crc": 4294929445,
+		"name": "\\css\\Alpha\\icons\\textIndent.svg"
+	},
+	{
+		"crc": 4294928218,
+		"name": "\\css\\Alpha\\icons\\textLineSpacing.svg"
+	},
+	{
+		"crc": 4294935466,
+		"name": "\\css\\Alpha\\icons\\textOutdent.svg"
+	},
+	{
+		"crc": 4294955726,
+		"name": "\\css\\Alpha\\icons\\textWrap.svg"
+	},
+	{
+		"crc": 4294903092,
+		"name": "\\css\\Alpha\\icons\\thermometer.svg"
+	},
+	{
+		"crc": 4294949227,
+		"name": "\\css\\Alpha\\icons\\thermometerHigh.svg"
+	},
+	{
+		"crc": 4294928671,
+		"name": "\\css\\Alpha\\icons\\thermometerLow.svg"
+	},
+	{
+		"crc": 4294948792,
+		"name": "\\css\\Alpha\\icons\\thermometerMed.svg"
+	},
+	{
+		"crc": 4294947792,
+		"name": "\\css\\Alpha\\icons\\thumbsDown.svg"
+	},
+	{
+		"crc": 4294938777,
+		"name": "\\css\\Alpha\\icons\\thumbsUp.svg"
+	},
+	{
+		"crc": 4294946282,
+		"name": "\\css\\Alpha\\icons\\timer.svg"
+	},
+	{
+		"crc": 4294932043,
+		"name": "\\css\\Alpha\\icons\\transformMirrorHorizontal.svg"
+	},
+	{
+		"crc": 4294966634,
+		"name": "\\css\\Alpha\\icons\\transformMirrorVertical.svg"
+	},
+	{
+		"crc": 4294958883,
+		"name": "\\css\\Alpha\\icons\\transformRotate.svg"
+	},
+	{
+		"crc": 4294922796,
+		"name": "\\css\\Alpha\\icons\\transformScale.svg"
+	},
+	{
+		"crc": 4294962181,
+		"name": "\\css\\Alpha\\icons\\transformScaleX.svg"
+	},
+	{
+		"crc": 4294966070,
+		"name": "\\css\\Alpha\\icons\\transformScaleY.svg"
+	},
+	{
+		"crc": 4294947253,
+		"name": "\\css\\Alpha\\icons\\transformShear.svg"
+	},
+	{
+		"crc": 4294936223,
+		"name": "\\css\\Alpha\\icons\\transformTranslate.svg"
+	},
+	{
+		"crc": 4294938871,
+		"name": "\\css\\Alpha\\icons\\transformTranslateX.svg"
+	},
+	{
+		"crc": 4294942897,
+		"name": "\\css\\Alpha\\icons\\transformTranslateY.svg"
+	},
+	{
+		"crc": 4294905683,
+		"name": "\\css\\Alpha\\icons\\trash.svg"
+	},
+	{
+		"crc": 4294945592,
+		"name": "\\css\\Alpha\\icons\\tray.svg"
+	},
+	{
+		"crc": 4294908246,
+		"name": "\\css\\Alpha\\icons\\trayAdd.svg"
+	},
+	{
+		"crc": 4294964264,
+		"name": "\\css\\Alpha\\icons\\trayCheck.svg"
+	},
+	{
+		"crc": 4294926403,
+		"name": "\\css\\Alpha\\icons\\trayFull.svg"
+	},
+	{
+		"crc": 4294923874,
+		"name": "\\css\\Alpha\\icons\\trayHeart.svg"
+	},
+	{
+		"crc": 4294932309,
+		"name": "\\css\\Alpha\\icons\\trayHeartSolid.svg"
+	},
+	{
+		"crc": 4294951234,
+		"name": "\\css\\Alpha\\icons\\trayIn.svg"
+	},
+	{
+		"crc": 4294921437,
+		"name": "\\css\\Alpha\\icons\\trayOut.svg"
+	},
+	{
+		"crc": 4294907378,
+		"name": "\\css\\Alpha\\icons\\trayRemove.svg"
+	},
+	{
+		"crc": 4294940913,
+		"name": "\\css\\Alpha\\icons\\trayRename.svg"
+	},
+	{
+		"crc": 4294910352,
+		"name": "\\css\\Alpha\\icons\\trayStar.svg"
+	},
+	{
+		"crc": 4294946942,
+		"name": "\\css\\Alpha\\icons\\trayStarSolid.svg"
+	},
+	{
+		"crc": 4294909165,
+		"name": "\\css\\Alpha\\icons\\trayX.svg"
+	},
+	{
+		"crc": 4294963942,
+		"name": "\\css\\Alpha\\icons\\trendingDown.svg"
+	},
+	{
+		"crc": 4294924521,
+		"name": "\\css\\Alpha\\icons\\trendingLevel.svg"
+	},
+	{
+		"crc": 4294906051,
+		"name": "\\css\\Alpha\\icons\\trendingUp.svg"
+	},
+	{
+		"crc": 4294902896,
+		"name": "\\css\\Alpha\\icons\\triDown.svg"
+	},
+	{
+		"crc": 4294906224,
+		"name": "\\css\\Alpha\\icons\\triDownLeft.svg"
+	},
+	{
+		"crc": 4294965574,
+		"name": "\\css\\Alpha\\icons\\triDownLeftSolid.svg"
+	},
+	{
+		"crc": 4294959698,
+		"name": "\\css\\Alpha\\icons\\triDownRight.svg"
+	},
+	{
+		"crc": 4294913075,
+		"name": "\\css\\Alpha\\icons\\triDownRightSolid.svg"
+	},
+	{
+		"crc": 4294919534,
+		"name": "\\css\\Alpha\\icons\\triDownSolid.svg"
+	},
+	{
+		"crc": 4294946456,
+		"name": "\\css\\Alpha\\icons\\triLeft.svg"
+	},
+	{
+		"crc": 4294928529,
+		"name": "\\css\\Alpha\\icons\\triLeftSolid.svg"
+	},
+	{
+		"crc": 4294951970,
+		"name": "\\css\\Alpha\\icons\\triRight.svg"
+	},
+	{
+		"crc": 4294945297,
+		"name": "\\css\\Alpha\\icons\\triRightSolid.svg"
+	},
+	{
+		"crc": 4294920994,
+		"name": "\\css\\Alpha\\icons\\trisDiagonalDownIn.svg"
+	},
+	{
+		"crc": 4294958688,
+		"name": "\\css\\Alpha\\icons\\trisDiagonalDownInSolid.svg"
+	},
+	{
+		"crc": 4294957419,
+		"name": "\\css\\Alpha\\icons\\trisDiagonalDownOut.svg"
+	},
+	{
+		"crc": 4294917935,
+		"name": "\\css\\Alpha\\icons\\trisDiagonalDownOutSolid.svg"
+	},
+	{
+		"crc": 4294906914,
+		"name": "\\css\\Alpha\\icons\\trisDiagonalIn.svg"
+	},
+	{
+		"crc": 4294907716,
+		"name": "\\css\\Alpha\\icons\\trisDiagonalInSolid.svg"
+	},
+	{
+		"crc": 4294960081,
+		"name": "\\css\\Alpha\\icons\\trisDiagonalOut.svg"
+	},
+	{
+		"crc": 4294919571,
+		"name": "\\css\\Alpha\\icons\\trisDiagonalOutSolid.svg"
+	},
+	{
+		"crc": 4294903431,
+		"name": "\\css\\Alpha\\icons\\trisDiagonalUpIn.svg"
+	},
+	{
+		"crc": 4294961923,
+		"name": "\\css\\Alpha\\icons\\trisDiagonalUpInSolid.svg"
+	},
+	{
+		"crc": 4294902745,
+		"name": "\\css\\Alpha\\icons\\trisDiagonalUpOut.svg"
+	},
+	{
+		"crc": 4294939189,
+		"name": "\\css\\Alpha\\icons\\trisDiagonalUpOutSolid.svg"
+	},
+	{
+		"crc": 4294961956,
+		"name": "\\css\\Alpha\\icons\\trisHorizontalIn.svg"
+	},
+	{
+		"crc": 4294941229,
+		"name": "\\css\\Alpha\\icons\\trisHorizontalInSolid.svg"
+	},
+	{
+		"crc": 4294917956,
+		"name": "\\css\\Alpha\\icons\\trisHorizontalOut.svg"
+	},
+	{
+		"crc": 4294958589,
+		"name": "\\css\\Alpha\\icons\\trisHorizontalOutSolid.svg"
+	},
+	{
+		"crc": 4294917787,
+		"name": "\\css\\Alpha\\icons\\trisIn.svg"
+	},
+	{
+		"crc": 4294954400,
+		"name": "\\css\\Alpha\\icons\\trisInSolid.svg"
+	},
+	{
+		"crc": 4294932313,
+		"name": "\\css\\Alpha\\icons\\trisOut.svg"
+	},
+	{
+		"crc": 4294925538,
+		"name": "\\css\\Alpha\\icons\\trisOutSolid.svg"
+	},
+	{
+		"crc": 4294937862,
+		"name": "\\css\\Alpha\\icons\\trisVerticalIn.svg"
+	},
+	{
+		"crc": 4294967196,
+		"name": "\\css\\Alpha\\icons\\trisVerticalInSolid.svg"
+	},
+	{
+		"crc": 4294943449,
+		"name": "\\css\\Alpha\\icons\\trisVerticalOut.svg"
+	},
+	{
+		"crc": 4294954683,
+		"name": "\\css\\Alpha\\icons\\trisVerticalOutSolid.svg"
+	},
+	{
+		"crc": 4294933019,
+		"name": "\\css\\Alpha\\icons\\triUp.svg"
+	},
+	{
+		"crc": 4294962010,
+		"name": "\\css\\Alpha\\icons\\triUpLeft.svg"
+	},
+	{
+		"crc": 4294929962,
+		"name": "\\css\\Alpha\\icons\\triUpLeftSolid.svg"
+	},
+	{
+		"crc": 4294940039,
+		"name": "\\css\\Alpha\\icons\\triUpRight.svg"
+	},
+	{
+		"crc": 4294937886,
+		"name": "\\css\\Alpha\\icons\\triUpRightSolid.svg"
+	},
+	{
+		"crc": 4294937692,
+		"name": "\\css\\Alpha\\icons\\triUpSolid.svg"
+	},
+	{
+		"crc": 4294933713,
+		"name": "\\css\\Alpha\\icons\\undo.svg"
+	},
+	{
+		"crc": 4294955523,
+		"name": "\\css\\Alpha\\icons\\unlink.svg"
+	},
+	{
+		"crc": 4294957103,
+		"name": "\\css\\Alpha\\icons\\unpin.svg"
+	},
+	{
+		"crc": 4294966760,
+		"name": "\\css\\Alpha\\icons\\upload.svg"
+	},
+	{
+		"crc": 4294947794,
+		"name": "\\css\\Alpha\\icons\\video.svg"
+	},
+	{
+		"crc": 4294912073,
+		"name": "\\css\\Alpha\\icons\\videoReel.svg"
+	},
+	{
+		"crc": 4294966575,
+		"name": "\\css\\Alpha\\icons\\wand.svg"
+	},
+	{
+		"crc": 4294951614,
+		"name": "\\css\\Alpha\\icons\\weight.svg"
+	},
+	{
+		"crc": 4294939474,
+		"name": "\\css\\Alpha\\icons\\weightKg.svg"
+	},
+	{
+		"crc": 4294901927,
+		"name": "\\css\\Alpha\\icons\\weightLbs.svg"
+	},
+	{
+		"crc": 4294928217,
+		"name": "\\css\\Alpha\\icons\\world.svg"
+	},
+	{
+		"crc": 4294939726,
+		"name": "\\css\\Alpha\\icons\\wrench.svg"
+	},
+	{
+		"crc": 4294907021,
+		"name": "\\css\\Alpha\\icons\\x.svg"
+	},
+	{
+		"crc": 4294901832,
+		"name": "\\css\\Alpha\\icons\\xCircle.svg"
+	},
+	{
+		"crc": 4294926882,
+		"name": "\\css\\Alpha\\icons\\xCircleBorder.svg"
+	},
+	{
+		"crc": 4294906333,
+		"name": "\\css\\Alpha\\icons\\xLarge.svg"
+	},
+	{
+		"crc": 4294907467,
+		"name": "\\css\\Alpha\\icons\\xRounded.svg"
+	},
+	{
+		"crc": 4294917059,
+		"name": "\\css\\Alpha\\icons\\xRoundedBorder.svg"
+	},
+	{
+		"crc": 4294915532,
+		"name": "\\css\\Alpha\\icons\\xShield.svg"
+	},
+	{
+		"crc": 4294956173,
+		"name": "\\css\\Alpha\\icons\\xSquare.svg"
+	},
+	{
+		"crc": 4294921420,
+		"name": "\\css\\Alpha\\icons\\xSquareBorder.svg"
+	},
+	{
+		"crc": 4294929722,
+		"name": "\\css\\Alpha\\tweaks\\blue.json"
+	},
+	{
+		"crc": 4294936676,
+		"name": "\\css\\Alpha\\tweaks\\coffee.json"
+	},
+	{
+		"crc": 4294905677,
+		"name": "\\css\\Alpha\\tweaks\\dark.json"
+	},
+	{
+		"crc": 4294962521,
+		"name": "\\css\\Alpha\\tweaks\\magenta.json"
+	},
+	{
+		"crc": 4294938239,
+		"name": "\\css\\Alpha\\tweaks\\purple.json"
+	},
+	{
+		"crc": 4294943289,
+		"name": "\\css\\Alpha\\tweaks\\slate.json"
+	},
+	{
+		"crc": 4294958064,
+		"name": "\\css\\Alpha\\accentEditBorder.png"
+	},
+	{
+		"crc": 4294936046,
+		"name": "\\css\\Alpha\\accentForeEditBorder.png"
+	},
+	{
+		"crc": 4294927519,
+		"name": "\\css\\Alpha\\contrastEditBorder.png"
+	},
+	{
+		"crc": 4294936046,
+		"name": "\\css\\Alpha\\headerEditBorder.png"
+	},
+	{
+		"crc": 4294935931,
+		"name": "\\css\\Alpha\\spinListBack.png"
+	},
+	{
+		"crc": 4294959042,
+		"name": "\\css\\Alpha\\spinListBackMask.png"
+	},
+	{
+		"crc": 4294938614,
+		"name": "\\css\\Alpha\\style.css"
+	},
+	{
+		"crc": 4294943685,
+		"name": "\\css\\Alpha\\style.dat"
+	},
+	{
+		"crc": 4294951516,
+		"name": "\\css\\Alpha\\style.js"
+	},
+	{
+		"crc": 4294918359,
+		"name": "\\css\\Alpha\\style.json"
+	},
+	{
+		"crc": 4294928939,
+		"name": "\\css\\Alpha\\style.sass"
+	},
+	{
 		"crc": 4294948287,
 		"name": "\\css\\GrBlue\\ButtonDDArrow.png"
 	},
@@ -1822,7 +5058,7 @@
 	}],
 	"rootfiles": [
 	{
-		"crc": 4294947690,
+		"crc": 4294926934,
 		"name": "\\baseline.zip"
 	},
 	{
@@ -1834,7 +5070,7 @@
 		"name": "\\icon.png"
 	},
 	{
-		"crc": 4294915663,
+		"crc": 4294925792,
 		"name": "\\index.html"
 	},
 	{
@@ -1846,11 +5082,11 @@
 		"name": "\\splash.png"
 	},
 	{
-		"crc": 4294966687,
+		"crc": 4294953771,
 		"name": "\\version.json"
 	},
 	{
-		"crc": 4294907008,
+		"crc": 4294954386,
 		"name": "\\_instantUpdateSettings.js"
 	},
 	{
