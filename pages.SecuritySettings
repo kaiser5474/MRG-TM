@@ -3066,4 +3066,12 @@
 <action="allow">
 <groups="">
 >
+<[768]<page="RRHH_MonitoreoSintomas.a5wcmp">
+<action="allow">
+<groups="">
+>
+<[769]<page="RRHH_MonitoreoSintomas.a5rpt">
+<action="allow">
+<groups="">
+>
 >
