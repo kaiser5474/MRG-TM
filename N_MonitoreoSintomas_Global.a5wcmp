@@ -9,7 +9,7 @@
         "flagTreeViewGrid": true,
         "flagTreeViewDV": true,
         "componentType": "Grid",
-        "Xbasic": "dim tmpl as p\ntmpl.ComponentName = \"N_MonitoreoSintomas_Global\"\ntmpl.ComponentType = \"Grid\"\ntmpl.AjaxOn = .t.\ntmpl.LayoutColumns = 1\ntmpl.useCompactTheme = .t.\ntmpl.showPulseEffect = .t.\ntmpl.queryEcho = .f.\ntmpl.connectToWebSocketServer = .f.\ntmpl.flagAddPKToORDER = .t.\ntmpl.saveFileType = \"Formatted JSON\"\ntmpl.captureJSErrorStackTrace = .f.\ntmpl.pusherApp = .f.\ntmpl.pusherConfigJSON = \"\"\ntmpl.SecurityModel = \"Group Based\"\ntmpl.SecurityMode = \"\"\ntmpl.PreCalcMode = \"Standard\"\ntmpl.clientSideDateFormat = \"dd/MM/yyyy\"\ntmpl.publishedServerVariables = \"\"\ntmpl.datePicker.dayNames = \"Sun,Mon,Tue,Wed,Thu,Fri,Sat\"\ntmpl.datePicker.firstDayOfWeek = 1\ntmpl.datePicker.monthNames = \"January,February,March,April,May,June,July,August,September,October,November,December\"\ntmpl.datePicker.todayButtonText = \"Today\"\ntmpl.datePicker.closeButtonText = \"Close\"\ntmpl.datePicker.closeButtonText = \"Close\"\ntmpl.friendlydatesCustomizationJSON = \"\"\ntmpl.customizationString.javascriptDialogs = \"\"\ntmpl.iconMapOverrides = \"\"\ntmpl.DataSourceType = \"CS\"\ntmpl.CS.database_type = \"CS\"\ntmpl.CS.type = \"connectionstring\"\ntmpl.cs.ConnectionString  = \"::name::Nibble\"\ntmpl.CS.SQL = \"SELECT N_MonitoreoSintomas_Global.*, N_Sintomas.Descripcion AS Sintoma \"+chr(13)+chr(10)+\"FROM N_MonitoreoSintomas_Global N_MonitoreoSintomas_Global\"+chr(13)+chr(10)+\"\t LEFT OUTER JOIN N_Sintomas N_Sintomas\"+chr(13)+chr(10)+\"\t\t ON  N_MonitoreoSintomas_Global.Id_Sintoma_FK = N_Sintomas.Id_Sintomas\"\nDIM tmpl.Arguments[0] AS P\nDIM tmpl.ArgumentsPage AS P\nwith tmpl.ArgumentsPage\n\t.PromptTextAbove = \"\"\nend with\ntmpl.CS.PrimaryKeyColumns = <<%txt%\nN_MonitoreoSintomas_Global|Id_MonitoreoSintomas_Global\nN_Sintomas|Id_Sintomas%txt%\ntmpl.CS.IdentitySequenceName  = \"\"\ntmpl.CS.primaryKeyTopAliasIsAutoIncrement  = .t.\nDIM tmpl.update.tables[2] as p\nwith tmpl.update.tables[1]\n\t.Name = \"N_MonitoreoSintomas_Global\"\n\t.Table_Alias = \"N_MonitoreoSintomas_Global\"\n\t.PrimaryKey = \"Id_MonitoreoSintomas_Global\"\nEnd With\nwith tmpl.update.tables[2]\n\t.Name = \"N_Sintomas\"\n\t.Table_Alias = \"N_Sintomas\"\n\t.Readonly = .t.\nEnd With\ntmpl.search.has_search_component = .t.\ntmpl.search.title = \"<a5:t>SearchB</a5:t>\"\ntmpl.search.show_title = .t.\ntmpl.search.search_button_label = \"<a5:t>Search</a5:t>\"\ntmpl.search.include_sorting_listbox = .f.\ntmpl.search.sort.prompt = \"Sort&nbsp;by\"\ntmpl.search.sorting_listbox_Label_position = \"Left\"\ntmpl.search.sort.promptInLineStyle = \"\"\ntmpl.search.sort.listbox.fieldname_prompt = \"Select Field\"\ntmpl.search.sort.listbox.use_column_headings = .f.\ntmpl.search.customSortDefinition = \"\"\ntmpl.search.search_button.useIcon = .f.\ntmpl.search.clear_link.useIcon = .f.\ntmpl.search.sort.listbox.order_prompt = \"Select Order\"\ntmpl.search.sort.listbox.order_choices = \"Ascending,Descending\"\ntmpl.search.include_records_per_page_listbox = .f.\ntmpl.search.records_per_page.prompt = \"Records&nbsp;per&nbsp;page\"\ntmpl.search.records_per_page_Label_position = \"Left\"\ntmpl.search.records_per_page.promptInLineStyle = \"\"\ntmpl.search.records_per_page.listbox.value_prompt = \"Select Value\"\ntmpl.search.records_per_page.listbox.choices = \"1,2,5,10,25,50,75,100\"\ntmpl.search.orientation = \"Vertical\"\ntmpl.search.combine_criteria_using = 1\ntmpl.search.style = 2\ntmpl.search.allow_qbf_style = .t.\ntmpl.search.show_single_search_field = .f.\ntmpl.search.keyword_label = \"Search for?\"\ntmpl.search.has_Clear_link = .t.\ntmpl.search.Clear_link_Label = \"<a5:t>Clear Search Criteria</a5:t>\"\ntmpl.search.Clear_link_BubbleHelp = \"<a5:t>Clear Search</a5:t>\"\ntmpl.search.EnableShowHide  = .t.\ntmpl.search.InitialState = \"Open\"\ntmpl.search.title_when_hidden = \"<a5:t>Click here to search...</a5:t>\"\ntmpl.search.qbe_exclusions = \"\"\ntmpl.search.toolbarPosition = \"Below\"\ntmpl.search.disableAutoComplete = .f.\ntmpl.search.HideGridWhenNoActiveSearch = .f.\ntmpl.search.GridHTMLWhenHidden  = \"\"\ntmpl.EditRegion.Search.Top = \"\"\ntmpl.EditRegion.Search.Bottom = \"\"\ntmpl.EditRegion.Search.Left = \"\"\ntmpl.EditRegion.Search.Right = \"\"\ntmpl.search.allowSearchCriteriaSave = .f.\ntmpl.search.allowSearchCriteriaLoad = .f.\ntmpl.SearchFields = 2\nDIM tmpl.SearchField_Info[tmpl.SearchFields] as P \nwith tmpl.searchfield_info[1]\n\t.Fieldname = \"Id_MonitoreoSintomas_Global\"\n\t.SearchExpression = \"N_MonitoreoSintomas_Global.Id_MonitoreoSintomas_Global\"\n\t.Initial_Value = \"NULL\"\n\t.Search_Style = 0\n\t.KeywordSearch = .f.\n\t.Scope = \"Local\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .f.\n\t.portableType = \"Integer32\"\n\t.nativeType = \"\"\n\t.Type = \"N\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Varname = \"ID_MONITOREOSINTOMAS_GLOBAL\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"TextBox\"\n\t.Textbox.Size = 40\n\t.Textbox.HTML5Type = \"\"\n\t.Textbox.customAttributes = \"\"\n\t.Textbox.readonly = .f.\n\t.Textbox.MaxLength = 200\n\t.Textbox.InLineStyle = \"text-align: right; width:2in;\"\n\t.Textbox.className = \"\"\n\t.Textbox.ContainerInlineStyle = \"\"\n\t.Textbox.IsPassword = .f.\n\t.hasWatermark= .f.\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .f.\n\t.BaseFieldExpression = \"N_MonitoreoSintomas_Global.Id_MonitoreoSintomas_Global\"\n\t.SourceAlias = \"N_MonitoreoSintomas_Global\"\n\t.Column.Heading = \"Id:\"\nend with\nwith tmpl.searchfield_info[2]\n\t.Fieldname = \"Id_Sintoma_FK\"\n\t.SearchExpression = \"N_MonitoreoSintomas_Global.Id_Sintoma_FK\"\n\t.Initial_Value = \"NULL\"\n\t.Search_Style = 0\n\t.KeywordSearch = .f.\n\t.Scope = \"Local\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .f.\n\t.portableType = \"Integer32\"\n\t.nativeType = \"\"\n\t.Type = \"N\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Varname = \"ID_SINTOMA_FK\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"DropDownBox\"\n\t.DropdownBox.fieldNameOfFieldLinkedToParentControl = \"<Auto>\"\n\t.DropdownBox.fieldTypeOfFieldLinkedToParentControl = \"\"\n\t.DropdownBox.methodForComputingCascadingFilter = \"<Auto>\"\n\t.DropdownBox.explicitCasacadingFilter = \"\"\n\t.DropdownBox.InLineStyle = \"width:2in;\"\n\t.DropdownBox.Type = \"Dynamic\"\n\t.DropdownBox.Size = 1\n\t.DropdownBox.selectStyle = \"Single\"\n\t.DropdownBox.NotInListRule = \"Add To List if Not Null\"\n\t.DropDownBox.Datasource = \"CS\"\n\t.DropDownBox.maxchoices = 0\n\t.DropDownBox.CS.ConnectionString = \"::name::Nibble\"\n\t.DropDownBox.CS.SQL = \"SELECT DISTINCT Descripcion, Id_Sintomas FROM N_Sintomas ORDER BY Descripcion, Id_Sintomas\"\n\t.DropDownBox.DisplayValueField = \"Descripcion\"\n\t.DropDownBox.StoredValueField = \"Id_Sintomas\"\n\t.DropDownBox.DisplayValueFieldType = \"C\"\n\t.DropDownBox.StoredValueFieldType = \"N\"\n\t.DropdownBox.noSelectionDisplayValue = \"\"\n\t.DropdownBox.hasCascadingChoices = .f.\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .f.\n\t.BaseFieldExpression = \"N_MonitoreoSintomas_Global.Id_Sintoma_FK\"\n\t.SourceAlias = \"N_MonitoreoSintomas_Global\"\n\t.Column.Heading = \"S&iacute;ntoma:\"\nend with\ntmpl.grid_layout_style = 1\ntmpl.add_records_only = .f.\ntmpl.rows = 10\ntmpl.maxRowsPerPage = 200\ntmpl.rowsWhenSearchActive = -1\ntmpl.suppress_empty_rows = .t.\ntmpl.has_row_separator = .t.\ntmpl.alternate_bands = .f.\ntmpl.even_band_size = 1\ntmpl.odd_band_size = 1\ntmpl.alternate_column_bands = .f.\ntmpl.even_column_band_size = 1\ntmpl.odd_column_band_size = 1\ntmpl.conditionalStyle = \"\"\ntmpl.clientSideConditionalStyle = \"\"\ntmpl.show_title = .f.\ntmpl.title = \"\"\ntmpl.FontSize = \"Medium\"\ntmpl.No_records_message = \"<a5:t>No records in query</a5:t>\"\ntmpl.total_records_row_position = 1\ntmpl.total_records_row = \"<a5:t>Records</a5:t>:&nbsp; {Total_Records}&nbsp;\"\ntmpl.show_column_titles = 1\ntmpl.suppress_titles_if_no_records = .f.\ntmpl.show_row_labels = .t.\ntmpl.snakingLayout_suppressRepeatedLabels = .f.\ntmpl.sort_style = 3\ntmpl.reset_page_number_when_sorting = .t.\ntmpl.allowGridBodyScrolling = .f.\ntmpl.scrollableRegionHeight = \"2in\"\ntmpl.scrollableRegionWidth = \"100%\"\ntmpl.fixedWidthColumns = .f.\ntmpl.defaultColumnWidth = \"1in\"\ntmpl.columnWidthSettings = \"\"\ntmpl.EditRegion.Grid.Top = <<%editregion%\n%editregion%\ntmpl.EditRegion.Grid.Bottom = <<%editregion%\n%editregion%\ntmpl.EditRegion.Grid.Left = <<%editregion%\n%editregion%\ntmpl.EditRegion.Grid.Right = <<%editregion%\n%editregion%\ntmpl.HasNewRecordsTitle = .f.\ntmpl.NewRecordsTitle = \"<tr><td class=\\\"[class.gridData]\\\" colspan=\\\"{a5_colspan}\\\" style=\\\"padding: 0px;\\\" >New Records</td></tr>\"\ntmpl.HasExistingRecordsTitle = .f.\ntmpl.ExistingRecordsTitle = \"<tr><td class=\\\"[class.gridData]\\\" colspan=\\\"{a5_colspan}\\\" style=\\\"padding: 0px;\\\" >Existing Records</td></tr>\"\ntmpl.Highlight_row_onHover =  .t.\ntmpl.Highlight_row_onSelect =  .t.\ntmpl.HasRecordsPerPageSelector = .t.\ntmpl.RecordsPerPageChoices =   \"1,2,5,10,25,50,75,100\"\ntmpl.RecordsPerPageSelectorTemplate = \"&nbsp;&nbsp;{Grid.RecordsPerPageSelector} <a5:t>Records per page</a5:t>\"\ntmpl.has_qbe_row = .f.\ntmpl.qbe.initial_display = \"Hidden\"\ntmpl.qbe.toggleQBERowHyperlinkText = \"Show/Hide QBE Row\"\ntmpl.has_advancedSearch = .f.\ntmpl.hasLinkedContent = .f.\ntmpl.hasExternalNavigators = .f.\ntmpl.hasRowExpandColumn = .f.\ntmpl.hasSelectedRowColumn = .t.\ntmpl.hasCheckboxSelectColumn = .f.\ntmpl.AdditionalGridStyles = \"\"\ntmpl.LocalCss = \"\"\ntmpl.CSSLinkedFiles = \"\"\ntmpl.localsvg = \"\"\ntmpl.SVGLinkedFiles = \"\"\ntmpl.CSSIcons = \"\"\ntmpl.JavaScriptLinkedFiles = \"\"\ntmpl.useMasterTemplate = .f.\ntmpl.MasterTemplateStyle = \"Table - Vertical Layout\"\ntmpl.MasterLayoutTemplate = \"\"\ntmpl.MasterLayoutTemplateJavascript = \"\"\ntmpl.MasterLayout.PaneLabel.Search = \"Search\"\ntmpl.MasterLayout.PaneLabel.Grid = \"Grid\"\ntmpl.MasterLayout.PaneLabel.DetailView = \"Detail\"\ntmpl.MasterLayout.AccordionStyle = \"Multiple\"\ntmpl.MasterLayout.InitialOpenPanes = \"Search,Grid,DetailView\"\ntmpl.verticalAlignDataInColumns = \"Middle\"\ntmpl.CanCollapseGrid = .f.\ntmpl.CollapseBar.Title = \"Collapse Grid\"\ntmpl.CollapseBar.OpenIcon = \"\"\ntmpl.CollapseBar.ClosedIcon = \"\"\ntmpl.CollapseBar.Style = \"\"\ntmpl.Collapsebar.Class = \"\"\ntmpl.Collapsebar.ContainerStyle = \"\"\ntmpl.Collapsebar.ContainerClass = \"\"\ntmpl.Collapsebar.InitialState = \"open\"\ntmpl.languageTags_RemoveUnConsumedTags = .t.\ntmpl.activeLanguage = \"<Default>\"\ntmpl.search.highlightSearchStrings = .f.\ntmpl.autoRefreshGrid = .f.\ntmpl.autoRefreshInterval = 60\ntmpl.helpTableType = \"DBF\"\ntmpl.helpTableName = \"\"\ntmpl.helpConnectionString = \"\"\ntmpl.helpIDfield = \"\"\ntmpl.helpContentsField = \"\"\ntmpl.fieldHelpWindowStyle = \"modal-resizeable\"\ntmpl.fields = 4\nDIM tmpl.field_info[tmpl.fields] as P \nwith tmpl.field_info[1]\n\t.Fieldname = \"Id_MonitoreoSintomas_Global\"\n\t.Scope = \"Local\"\n\t.DisplayFormat = \"\"\n\t.DisplayUnFormat = \"\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .f.\n\t.portableType = \"Integer32\"\n\t.nativeType = \"\"\n\t.Type = \"N\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Varname = \"ID_MONITOREOSINTOMAS_GLOBAL\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"Label\"\n\t.Label.InLineStyle = \"text-align: right;\"\n\t.Label.ClassName = \"\"\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .f.\n\t.BaseFieldExpression = \"N_MonitoreoSintomas_Global.Id_MonitoreoSintomas_Global\"\n\t.SourceAlias = \"N_MonitoreoSintomas_Global\"\n\t.Column.Heading = \"Id\"\n\t.Column.Sort = \"N_MonitoreoSintomas_Global.Id_MonitoreoSintomas_Global\"\n\t.Column.FirstClickDirection = \"A\"\nend with\nwith tmpl.field_info[2]\n\t.Fieldname = \"Id_MonitoreoGlobal_FK\"\n\t.Scope = \"Local\"\n\t.DisplayFormat = \"\"\n\t.DisplayUnFormat = \"\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .f.\n\t.portableType = \"Integer32\"\n\t.nativeType = \"\"\n\t.Type = \"N\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Varname = \"ID_MONITOREOGLOBAL_FK\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"Label\"\n\t.Label.InLineStyle = \"text-align: right;\"\n\t.Label.ClassName = \"\"\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .t.\n\t.BaseFieldExpression = \"N_MonitoreoSintomas_Global.Id_MonitoreoGlobal_FK\"\n\t.SourceAlias = \"N_MonitoreoSintomas_Global\"\n\t.Column.Heading = \"Id Monitoreo Global FK\"\nend with\nwith tmpl.field_info[3]\n\t.Fieldname = \"Id_Sintoma_FK\"\n\t.Scope = \"Local\"\n\t.DisplayFormat = \"\"\n\t.DisplayUnFormat = \"\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .f.\n\t.portableType = \"Integer32\"\n\t.nativeType = \"\"\n\t.Type = \"N\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Varname = \"ID_SINTOMA_FK\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"Label\"\n\t.Label.InLineStyle = \"text-align: right;\"\n\t.Label.ClassName = \"\"\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .t.\n\t.BaseFieldExpression = \"N_MonitoreoSintomas_Global.Id_Sintoma_FK\"\n\t.SourceAlias = \"N_MonitoreoSintomas_Global\"\n\t.Column.Heading = \"Id Sintoma FK\"\nend with\nwith tmpl.field_info[4]\n\t.Fieldname = \"Sintoma\"\n\t.Scope = \"Local\"\n\t.DisplayFormat = \"\"\n\t.DisplayUnFormat = \"\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .f.\n\t.portableType = \"NationalVaryingCharacter\"\n\t.nativeType = \"\"\n\t.Type = \"C\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Varname = \"SINTOMA\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"Label\"\n\t.Label.InLineStyle = \"\"\n\t.Label.ClassName = \"\"\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .f.\n\t.BaseFieldExpression = \"N_Sintomas.Descripcion\"\n\t.SourceAlias = \"N_Sintomas\"\n\t.Column.Heading = \"S&iacute;ntoma\"\n\t.Column.Sort = \"N_Sintomas.Descripcion\"\n\t.Column.FirstClickDirection = \"A\"\nend with\ntmpl.RecordNavigationStyle = \"NavigationButtons\"\ntmpl.fetchMoreRecordsButton.text = \"More Records\"\ntmpl.fetchMoreRecordsButton.style = \"\"\ntmpl.RecNav.SuppressIfOnlyOnePage = .t.\ntmpl.RecNav.First_Label = \"First\"\ntmpl.RecNav.Has_First_Button = .t.\ntmpl.RecNav.Has_Last_Button = .t.\ntmpl.RecNav.Has_Next_Button = .t.\ntmpl.RecNav.Has_Prev_Button = .t.\ntmpl.RecNav.HTML_Template_source = \"Computed\"\ntmpl.RecNav.Justify = \"Left\"\ntmpl.RecNav.Last_Label = \"Last\"\ntmpl.RecNav.Next_Label = \"Next\"\ntmpl.RecNav.Number_of_page_links = 10\ntmpl.RecNav.Page_Numbering_Style = 3\ntmpl.RecNav.PagesTemplate_w_PageCount = \"{PageNumber} of {PageCount}\"\ntmpl.RecNav.PagesTemplate_wout_PageCount = \"{PageNumber}\"\ntmpl.RecNav.Position = 1\ntmpl.RecNav.suppress_recNavBar_if_no_records = .f.\ntmpl.RecNav.Prev_Label = \"Prev\"\ntmpl.RecNav.Show_disabled_controls = .t.\ntmpl.RecNav.Show_Page_Count = .t.\ntmpl.RecNav.Use_Images = .f.\ntmpl.gridToolbarTemplate = <<%html%\n%html%\ntmpl.gridToolbarTemplateEditable = <<%html%\n%html%\ntmpl.ToolbarActionButtons = <<%html%\n{ActionButton:REFRESH}\n%html%\ntmpl.style_name = \"GrBlue\"\ntmpl.resolveAbstractClassNames = .t.\ntmpl.style_type = \"Alpha Five\"\ntmpl.UseSimpleStyles = .f.\ntmpl.overrideStylesForJavascriptObjects = .f.\ntmpl.searchBehavior = \"\"\ntmpl.DetailView.Has_DetailView = .t.\ntmpl.detailView.show_row_labels = .t.\ntmpl.DetailView.linkfield = \"\"\ntmpl.DetailView.editable = .t.\ntmpl.DetailView.edit.allow_update = .t.\ntmpl.DetailView.edit.allow_insert = .t.\ntmpl.DetailView.edit.allow_delete = .t.\ntmpl.DetailView.edit.validateFieldsSetting = \"Dirty Fields Only\"\ntmpl.DetailView.edit.updateWhichFields = \"Dirty Fields Only\"\ntmpl.DetailView.edit.Show_Update_Commands = .f.\ntmpl.DetailView.edit.Execute_Update_Commands = .t.\ntmpl.DetailView.AddNewLinkLabel  = \"New Record\"\ntmpl.DetailView.LayoutColumns = 1\ntmpl.DetailView.UseSimpleStyles  = .t.\ntmpl.DetailView.SimpleStyleMode  = \"LayoutOnly\"\ntmpl.DetailView.HasTitle  = .t.\ntmpl.DetailView.SaveRecordButtonLabel  = \"Save\"\ntmpl.DetailView.Title  = \"Detail View \"\ntmpl.DetailView.edit.Delete_TargetPage = \"<Self>\"\ntmpl.DetailView.edit.Save_TargetPage = \"<Self>\"\ntmpl.DetailView.edit.Add_TargetPage = \"<Self>\"\ntmpl.DetailView.Toolbar.Position = \"Below\"\ntmpl.DetailView.Toolbar.showRecordNavigatorLinks = .t.\ntmpl.customizationString.DetailView.toolbar = \"\"\ntmpl.DetailView.edit.check_for_write_conflicts = .t.\ntmpl.DetailView.Toolbar.Buttons = \"\"\ntmpl.DetailView.ToolbarActionButtons = \"\"\ntmpl.detailView.window.animation.hasAnimation = .f.\ntmpl.detailView.window.animation.show.method = \"Fade\"\ntmpl.detailView.window.animation.show.speed = \"Slow\"\ntmpl.detailView.window.animation.hide.method = \"None\"\ntmpl.detailView.window.animation.hide.speed = \"Fast\"\ntmpl.DetailView.scrollIntoView = .f.\ntmpl.edit.field_error_style.type = \"Icon\"\ntmpl.edit.field_error_style.icon = \"images/$$generic.error.png.a5image\"\ntmpl.edit.field_error_style.control_classname = \"\"\ntmpl.edit.field_error_style.error_classname = \"\"\ntmpl.edit.field_error_style.control_hover_classname = \"\"\ntmpl.edit.field_error_style.error_hover_classname = \"\"\ntmpl.edit.show_row_errors_in_popup = .f.\ntmpl.edit.row_errors_window_title = \"Errors\"\ntmpl.edit.row_errors_window_style = \"color: red; width: 6in; height: 2in;\"\ntmpl.DetailView.edit.RefreshRowMethod = \"AutoSelect\"\ntmpl.DetailView.edit.Editable_GridRow_Options_Style = \"Icons\"\ntmpl.DetailView.edit.RefreshRowOnDirty = .t.\ntmpl.DetailView.edit.RowEditStyle = \"InitiallyEditable\"\ntmpl.DetailView.edit.LazyEdit = .t.\ntmpl.DetailView.displayStyle = \"PopupWindow-Modal\"\ntmpl.DetailView.ajaxWindowPositionAttribute = \"\"\ntmpl.DetailView.ajaxWindowWidth = \"\"\ntmpl.DetailView.ajaxWindowHeight = \"\"\ntmpl.DetailView.ShowNewRecordIfNoRecordsInQuery = .f.\ntmpl.DetailView.windowDragOpacity = 75\ntmpl.DetailView.PopupWindowTitle = \"S&iacute;ntomas\"\ntmpl.DetailView.PopupWindowDirection = \"ltr\"\ntmpl.DetailView.OpenMethod = \"Click a hyperlink field\"\ntmpl.DetailView.Toggle = .f.\ntmpl.DetailView.PopulateUsingJavaScript = .f.\ntmpl.DetailView.OnlyShowOnRequest = .t.\ntmpl.DetailView.HideGridIfDetailViewIsVisible = .f.\ntmpl.DetailView.HasCloseLink = .t.\ntmpl.DetailView.CloseDetailViewLinkLabel = \"Close\"\ntmpl.DetailView.CanClose = .t.\ntmpl.DetailView.total_records_row = \"\"\ntmpl.DetailView.CloseAfterSubmit = .t.\ntmpl.EditRegion.DetailView.Top = <<%editregion%\n%editregion%\ntmpl.EditRegion.DetailView.Bottom = <<%editregion%\n%editregion%\ntmpl.EditRegion.DetailView.Left = <<%editregion%\n%editregion%\ntmpl.EditRegion.DetailView.Right = <<%editregion%\n%editregion%\n\ntmpl.DetailFields = 3\nDIM tmpl.DetailField_Info[tmpl.DetailFields] as P \nwith tmpl.detailfield_info[1]\n\t.Fieldname = \"Id_MonitoreoSintomas_Global\"\n\t.Scope = \"Local\"\n\t.DisplayFormat = \"\"\n\t.DisplayUnFormat = \"\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .f.\n\t.portableType = \"Integer32\"\n\t.nativeType = \"\"\n\t.Type = \"N\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Updateable = .f.\n\t.Varname = \"ID_MONITOREOSINTOMAS_GLOBAL\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"Label\"\n\t.Label.InLineStyle = \"text-align: right;\"\n\t.Label.ClassName = \"\"\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .f.\n\t.BaseFieldExpression = \"N_MonitoreoSintomas_Global.Id_MonitoreoSintomas_Global\"\n\t.SourceAlias = \"N_MonitoreoSintomas_Global\"\n\t.Column.Heading = \"Id:\"\n\t.Column.Sort = \"Id_Monitoreosintomas_Global\"\n\t.Column.FirstClickDirection = \"A\"\nend with\nwith tmpl.detailfield_info[2]\n\t.Fieldname = \"Id_MonitoreoGlobal_FK\"\n\t.Scope = \"Local\"\n\t.DisplayFormat = \"\"\n\t.DisplayUnFormat = \"\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .f.\n\t.portableType = \"Integer32\"\n\t.nativeType = \"\"\n\t.Type = \"N\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Updateable = .t.\n\t.TreatBlankAsNull = .f.\n\t.Table_Alias = \"N_MonitoreoSintomas_Global\"\n\t.FieldToUpdate = \"Id_MonitoreoGlobal_FK\"\n\t.Varname = \"ID_MONITOREOGLOBAL_FK\"\n\t.Initial_Value = \"NULL\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"Textbox\"\n\t.Textbox.Size = 20\n\t.Textbox.HTML5Type = \"\"\n\t.Textbox.customAttributes = \"\"\n\t.Textbox.readonly = .f.\n\t.Textbox.MaxLength = 20\n\t.Textbox.InLineStyle = \"text-align: right;\"\n\t.Textbox.className = \"\"\n\t.Textbox.ContainerInlineStyle = \"\"\n\t.Textbox.IsPassword = .f.\n\t.hasWatermark= .f.\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .t.\n\t.BaseFieldExpression = \"N_MonitoreoSintomas_Global.Id_MonitoreoGlobal_FK\"\n\t.SourceAlias = \"N_MonitoreoSintomas_Global\"\n\t.Column.Heading = \"Id Monitoreo Global FK\"\nend with\nwith tmpl.detailfield_info[3]\n\t.Fieldname = \"Id_Sintoma_FK\"\n\t.Scope = \"Local\"\n\t.DisplayFormat = \"\"\n\t.DisplayUnFormat = \"\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .f.\n\t.portableType = \"Integer32\"\n\t.nativeType = \"\"\n\t.Type = \"N\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Updateable = .t.\n\t.TreatBlankAsNull = .f.\n\t.Table_Alias = \"N_MonitoreoSintomas_Global\"\n\t.FieldToUpdate = \"Id_Sintoma_FK\"\n\t.Varname = \"ID_SINTOMA_FK\"\n\t.Initial_Value = \"NULL\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"DropDownBox\"\n\t.DropdownBox.fieldNameOfFieldLinkedToParentControl = \"<Auto>\"\n\t.DropdownBox.fieldTypeOfFieldLinkedToParentControl = \"\"\n\t.DropdownBox.methodForComputingCascadingFilter = \"<Auto>\"\n\t.DropdownBox.explicitCasacadingFilter = \"\"\n\t.DropdownBox.InLineStyle = \"\"\n\t.DropdownBox.Type = \"Dynamic\"\n\t.DropdownBox.Size = 1\n\t.DropdownBox.selectStyle = \"Single\"\n\t.DropdownBox.NotInListRule = \"Add to List\"\n\t.DropDownBox.Datasource = \"CS\"\n\t.DropDownBox.maxchoices = 0\n\t.DropDownBox.CS.ConnectionString = \"::name::Nibble\"\n\t.DropDownBox.CS.SQL = \"SELECT DISTINCT Descripcion, Id_Sintomas FROM N_Sintomas ORDER BY Descripcion, Id_Sintomas\"\n\t.DropDownBox.DisplayValueField = \"Descripcion\"\n\t.DropDownBox.StoredValueField = \"Id_Sintomas\"\n\t.DropDownBox.DisplayValueFieldType = \"C\"\n\t.DropDownBox.StoredValueFieldType = \"N\"\n\t.DropdownBox.noSelectionDisplayValue = \"\"\n\t.DropdownBox.hasCascadingChoices = .f.\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .f.\n\t.BaseFieldExpression = \"N_MonitoreoSintomas_Global.Id_Sintoma_FK\"\n\t.SourceAlias = \"N_MonitoreoSintomas_Global\"\n\t.Column.Heading = \"S&iacute;ntoma:\"\n\t.Column.Sort = \"Id_Sintoma_Fk\"\n\t.Column.FirstClickDirection = \"A\"\nend with\ntmpl.GUID = \"795adf9c-7b0b-4948-9573-f941ad9e7038\"\ntmpl.onlyIncludeSelectedFieldsInQuery = .t.\nDIM tmpl.controls[1] as P\nwith  tmpl.controls[1]\n\t.idInternal = \"02c55546-11e9-4484-89c6-4267357b8902\"\n\t.type = \"Button\"\n\t.Name = \"REFRESH\"\n\t.trailingSeparator = .T.\n\t.bubbleHelp = \"\"\n\t.readDataFrom = \"GridPart\"\n\t.actionJSAttribute = <<%str%\n/* actionJavascript:c4b811c5-1007-4af1-97e0-065c24f7e4fc */\nfunction tempfunction_0dc11522_559e_4814_aea2_14bdb2d767ea() {\nvar dropDownType = 'wait';\nvar title = 'Espere por favor';\nvar msgBody = '';\nvar width = '300px';\nvar oKButtonLabel = '';\nvar cancelButtonLabel = '';\nvar loc = 'center';\nvar onOK = function() { alert('pressed ok'); };\nvar onCancel = function() { };\n{grid.object}.dropDownMessage(dropDownType,title,msgBody,width,oKButtonLabel,cancelButtonLabel,onOK,onCancel, loc);\n}\nfunction tempfunction_652b6d8c_815a_4601_a6f6_10ab90b99aaf() {\n{grid.object}.dropDownMessageHide();\n}\nfunction tempfunction_fec3caca_50fe_4581_9c18_bc5f1f38e2d9() {\n{grid.object}.dropDownMessageHide();\n}\nA5.executeThisThenThat(tempfunction_0dc11522_559e_4814_aea2_14bdb2d767ea,tempfunction_652b6d8c_815a_4601_a6f6_10ab90b99aaf,tempfunction_fec3caca_50fe_4581_9c18_bc5f1f38e2d9);%str%\n\t.actionJSGlobal = \"\"\n\t.actionXbasic = \"\"\n\t.actionClientSideXbasic = \"\"\n\t.buttonStyle = \"Image only\"\n\t.buttonClass = \"[class.gridButton]\"\n\t.buttonClassHover = \"[class.gridButtonHover]\"\n\t.buttonClassPressed = \"[class.gridButtonPressed]\"\n\t.buttonClassDisabled = \"[class.gridButtonDisabled]\"\n\t.buttonInlineStyle = \"\"\n\t.buttonText = \"refresh\"\n\t.hyperlinkClass = \"[class.gridHyperlinkButton]\"\n\t.hyperlinkInlineStyle = \"\"\n\t.hyperlinkImagePosition = \"None\"\n\t.textClass = \"\"\n\t.textInlineStyle = \"\"\n\t.imageName = \"images/$$generic.refresh.color.png.a5image\"\n\t.hoverImageName = \"\"\n\t.pressedImageName = \"\"\n\t.disabledimageName = \"\"\n\t.imageClass = \"\"\n\t.imageInlineStyle = \"\"\n\t.securityGroups = \"\"\n\t.serverSideShowHideExpression = \"\"\n\t.readDataFromForClientSideExpns = \"GridPart\"\n\t.clientSideShowHideExpression = \"\"\n\t.clientSideEnableExpression = \"\"\n\t.precalc.watchJavascriptShowHide = \"\"\n\t.precalc.watchJavascriptEnable = \"\"\n\t.precalc.watchColumnsShowHide = \"\"\n\t.precalc.watchColumnsEnable = \"\"\n\t.precalc.JStoSetupWatchEvents = \"\"\n\t.precalc.buttonObjectJavascript = <<%str%\nwindow['{grid.componentName}_BUTTONS_REFRESH'] = new A5.Button({\n\tlayout: 'icon',\n\tclassName: '[class.gridButton]',\n\thoverClassName: '[class.gridButtonHover]',\n\tpressedClassName: '[class.gridButtonPressed]',\n\tdisabledClassName: '[class.gridButtonDisabled]',\n\thtml: 'refresh',\n\ticon: 'images/$$generic.refresh.color.png.a5image',\n\tdisabledIcon: 'images/disabled/$$generic.refresh.color.png.a5image',\n\tonClick: function() { /* actionJavascript:c4b811c5-1007-4af1-97e0-065c24f7e4fc */\nfunction tempfunction_0dc11522_559e_4814_aea2_14bdb2d767ea() {\nvar dropDownType = 'wait';\nvar title = 'Espere por favor';\nvar msgBody = '';\nvar width = '300px';\nvar oKButtonLabel = '';\nvar cancelButtonLabel = '';\nvar loc = 'center';\nvar onOK = function() { alert('pressed ok'); };\nvar onCancel = function() { };\n{grid.object}.dropDownMessage(dropDownType,title,msgBody,width,oKButtonLabel,cancelButtonLabel,onOK,onCancel, loc);\n}\nfunction tempfunction_652b6d8c_815a_4601_a6f6_10ab90b99aaf() {\n{grid.object}.dropDownMessageHide();\n}\nfunction tempfunction_fec3caca_50fe_4581_9c18_bc5f1f38e2d9() {\n{grid.object}.dropDownMessageHide();\n}\nA5.executeThisThenThat(tempfunction_0dc11522_559e_4814_aea2_14bdb2d767ea,tempfunction_652b6d8c_815a_4601_a6f6_10ab90b99aaf,tempfunction_fec3caca_50fe_4581_9c18_bc5f1f38e2d9);\n},\n\ttheme: '{grid.style}'\n});%str%\n\t.precalc.objectHTML = \"<button type=\\\"button\\\" id=\\\"{id}\\\"></button>&nbsp;\"\n\t.precalc.objectName = \"{grid.componentName}_BUTTONS_REFRESH\"\n\t.precalc.bindJS = \"{grid.componentName}_BUTTONS_REFRESH.bind({bindIdList});\"\nend with\ntmpl.hasGroupBreaks = .f.\ntmpl.groupBreaks.expression1 = \"\"\ntmpl.groupBreaks.direction1 = \"\"\ntmpl.groupBreaks.header1 = <<%HTML%\n%HTML%\ntmpl.groupBreaks.footer1 = <<%HTML%\n%HTML%\ntmpl.groupBreaks.collapseAllGroupsOnInitialDisplay = .f.\ntmpl.timestamp = \"2020-04-04:15-43-27.647\"\ntmpl.resolveAbstractClassNamesAtDesignTime  = .f.\ntmpl.resolveAbstractIconNamesAtDesignTime = .f. \ntmpl.useLegacyDatePicker = .f.\ntmpl.javascriptUnboundActionDefinitions = <<%javascriptActions%\n%javascriptActions%\n\ntmpl.precalc.sessionVarsInShowHideExpns = <<%sessionvars%\n%sessionvars%\ntmpl.precalc.unboundActionsXbasicFunctions = \"\"\ntmpl.precalc.includeS3Javascript = .f.",
+        "Xbasic": "dim tmpl as p\ntmpl.ComponentName = \"N_MonitoreoSintomas_Global\"\ntmpl.ComponentType = \"Grid\"\ntmpl.AjaxOn = .t.\ntmpl.LayoutColumns = 1\ntmpl.useCompactTheme = .t.\ntmpl.showPulseEffect = .t.\ntmpl.queryEcho = .f.\ntmpl.connectToWebSocketServer = .f.\ntmpl.flagAddPKToORDER = .t.\ntmpl.saveFileType = \"Formatted JSON\"\ntmpl.captureJSErrorStackTrace = .f.\ntmpl.pusherApp = .f.\ntmpl.pusherConfigJSON = \"\"\ntmpl.SecurityModel = \"Group Based\"\ntmpl.SecurityMode = \"\"\ntmpl.PreCalcMode = \"Standard\"\ntmpl.clientSideDateFormat = \"dd/MM/yyyy\"\ntmpl.publishedServerVariables = \"\"\ntmpl.datePicker.dayNames = \"Sun,Mon,Tue,Wed,Thu,Fri,Sat\"\ntmpl.datePicker.firstDayOfWeek = 1\ntmpl.datePicker.monthNames = \"January,February,March,April,May,June,July,August,September,October,November,December\"\ntmpl.datePicker.todayButtonText = \"Today\"\ntmpl.datePicker.closeButtonText = \"Close\"\ntmpl.datePicker.closeButtonText = \"Close\"\ntmpl.friendlydatesCustomizationJSON = \"\"\ntmpl.customizationString.javascriptDialogs = \"\"\ntmpl.iconMapOverrides = \"\"\ntmpl.DataSourceType = \"CS\"\ntmpl.CS.database_type = \"CS\"\ntmpl.CS.type = \"connectionstring\"\ntmpl.cs.ConnectionString  = \"::name::Nibble\"\ntmpl.CS.SQL = \"SELECT N_MonitoreoSintomas_Global.*, N_Sintomas.Descripcion AS Sintoma \"+chr(13)+chr(10)+\"FROM N_MonitoreoSintomas_Global N_MonitoreoSintomas_Global\"+chr(13)+chr(10)+\"\t LEFT OUTER JOIN N_Sintomas N_Sintomas\"+chr(13)+chr(10)+\"\t\t ON  N_MonitoreoSintomas_Global.Id_Sintoma_FK = N_Sintomas.Id_Sintomas\"\nDIM tmpl.Arguments[1] AS P\nwith tmpl.Arguments[1]\n\t.Name = \"\"\n\t.DataType = \"\"\n\t.Source = \"\"\n\t.SourceDisplay = \"\"\n\t.VariableScope = \"\"\n\t.VariableName = \"\"\n\t.VariableWithScope = \"\"\n\t.DefaultValue = \"\"\n\t.Prompt = .f.\n\t.PromptText = \"\"\n\t.PromptControlType = \"\"\n\t.PromptChoices = \"\"\n\t.PromptDlgTitle = \"\"\n\t.PromptTextAbove = \"\"\n\t.PreviewValue = \"\"\nend with\nDIM tmpl.ArgumentsPage AS P\nwith tmpl.ArgumentsPage\n\t.PromptTextAbove = \"\"\nend with\ntmpl.CS.PrimaryKeyColumns = <<%txt%\nN_MonitoreoSintomas_Global|Id_MonitoreoSintomas_Global\nN_Sintomas|Id_Sintomas%txt%\ntmpl.CS.IdentitySequenceName  = \"\"\ntmpl.CS.primaryKeyTopAliasIsAutoIncrement  = .t.\nDIM tmpl.update.tables[2] as p\nwith tmpl.update.tables[1]\n\t.Name = \"N_MonitoreoSintomas_Global\"\n\t.Table_Alias = \"N_MonitoreoSintomas_Global\"\n\t.PrimaryKey = \"Id_MonitoreoSintomas_Global\"\nEnd With\nwith tmpl.update.tables[2]\n\t.Name = \"N_Sintomas\"\n\t.Table_Alias = \"N_Sintomas\"\n\t.Readonly = .t.\nEnd With\ntmpl.search.has_search_component = .t.\ntmpl.search.title = \"<a5:t>SearchB</a5:t>\"\ntmpl.search.show_title = .t.\ntmpl.search.search_button_label = \"<a5:t>Search</a5:t>\"\ntmpl.search.include_sorting_listbox = .f.\ntmpl.search.sort.prompt = \"Sort&nbsp;by\"\ntmpl.search.sorting_listbox_Label_position = \"Left\"\ntmpl.search.sort.promptInLineStyle = \"\"\ntmpl.search.sort.listbox.fieldname_prompt = \"Select Field\"\ntmpl.search.sort.listbox.use_column_headings = .f.\ntmpl.search.customSortDefinition = \"\"\ntmpl.search.search_button.useIcon = .f.\ntmpl.search.clear_link.useIcon = .f.\ntmpl.search.sort.listbox.order_prompt = \"Select Order\"\ntmpl.search.sort.listbox.order_choices = \"Ascending,Descending\"\ntmpl.search.include_records_per_page_listbox = .f.\ntmpl.search.records_per_page.prompt = \"Records&nbsp;per&nbsp;page\"\ntmpl.search.records_per_page_Label_position = \"Left\"\ntmpl.search.records_per_page.promptInLineStyle = \"\"\ntmpl.search.records_per_page.listbox.value_prompt = \"Select Value\"\ntmpl.search.records_per_page.listbox.choices = \"1,2,5,10,25,50,75,100\"\ntmpl.search.orientation = \"Vertical\"\ntmpl.search.combine_criteria_using = 1\ntmpl.search.style = 2\ntmpl.search.allow_qbf_style = .t.\ntmpl.search.show_single_search_field = .f.\ntmpl.search.keyword_label = \"Search for?\"\ntmpl.search.has_Clear_link = .t.\ntmpl.search.Clear_link_Label = \"<a5:t>Clear Search Criteria</a5:t>\"\ntmpl.search.Clear_link_BubbleHelp = \"<a5:t>Clear Search</a5:t>\"\ntmpl.search.EnableShowHide  = .t.\ntmpl.search.InitialState = \"Open\"\ntmpl.search.title_when_hidden = \"<a5:t>Click here to search...</a5:t>\"\ntmpl.search.qbe_exclusions = \"\"\ntmpl.search.toolbarPosition = \"Below\"\ntmpl.search.disableAutoComplete = .f.\ntmpl.search.HideGridWhenNoActiveSearch = .f.\ntmpl.search.GridHTMLWhenHidden  = \"\"\ntmpl.EditRegion.Search.Top = \"\"\ntmpl.EditRegion.Search.Bottom = \"\"\ntmpl.EditRegion.Search.Left = \"\"\ntmpl.EditRegion.Search.Right = \"\"\ntmpl.search.allowSearchCriteriaSave = .f.\ntmpl.search.allowSearchCriteriaLoad = .f.\ntmpl.SearchFields = 2\nDIM tmpl.SearchField_Info[tmpl.SearchFields] as P \nwith tmpl.searchfield_info[1]\n\t.Fieldname = \"Id_MonitoreoSintomas_Global\"\n\t.SearchExpression = \"N_MonitoreoSintomas_Global.Id_MonitoreoSintomas_Global\"\n\t.Initial_Value = \"NULL\"\n\t.Search_Style = 0\n\t.KeywordSearch = .f.\n\t.Scope = \"Local\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .f.\n\t.portableType = \"Integer32\"\n\t.nativeType = \"\"\n\t.Type = \"N\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Varname = \"ID_MONITOREOSINTOMAS_GLOBAL\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"TextBox\"\n\t.Textbox.Size = 40\n\t.Textbox.HTML5Type = \"\"\n\t.Textbox.customAttributes = \"\"\n\t.Textbox.readonly = .f.\n\t.Textbox.MaxLength = 200\n\t.Textbox.InLineStyle = \"text-align: right; width:2in;\"\n\t.Textbox.className = \"\"\n\t.Textbox.ContainerInlineStyle = \"\"\n\t.Textbox.IsPassword = .f.\n\t.hasWatermark= .f.\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .f.\n\t.BaseFieldExpression = \"N_MonitoreoSintomas_Global.Id_MonitoreoSintomas_Global\"\n\t.SourceAlias = \"N_MonitoreoSintomas_Global\"\n\t.Column.Heading = \"Id:\"\nend with\nwith tmpl.searchfield_info[2]\n\t.Fieldname = \"Id_Sintoma_FK\"\n\t.SearchExpression = \"N_MonitoreoSintomas_Global.Id_Sintoma_FK\"\n\t.Initial_Value = \"NULL\"\n\t.Search_Style = 0\n\t.KeywordSearch = .f.\n\t.Scope = \"Local\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .f.\n\t.portableType = \"Integer32\"\n\t.nativeType = \"\"\n\t.Type = \"N\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Varname = \"ID_SINTOMA_FK\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"DropDownBox\"\n\t.DropdownBox.fieldNameOfFieldLinkedToParentControl = \"<Auto>\"\n\t.DropdownBox.fieldTypeOfFieldLinkedToParentControl = \"\"\n\t.DropdownBox.methodForComputingCascadingFilter = \"<Auto>\"\n\t.DropdownBox.explicitCasacadingFilter = \"\"\n\t.DropdownBox.InLineStyle = \"width:2in;\"\n\t.DropdownBox.Type = \"Dynamic\"\n\t.DropdownBox.Size = 1\n\t.DropdownBox.selectStyle = \"Single\"\n\t.DropdownBox.NotInListRule = \"Add To List if Not Null\"\n\t.DropDownBox.Datasource = \"CS\"\n\t.DropDownBox.maxchoices = 0\n\t.DropDownBox.CS.ConnectionString = \"::name::Nibble\"\n\t.DropDownBox.CS.SQL = \"SELECT DISTINCT Descripcion, Id_Sintomas FROM N_Sintomas ORDER BY Descripcion, Id_Sintomas\"\n\t.DropDownBox.DisplayValueField = \"Descripcion\"\n\t.DropDownBox.StoredValueField = \"Id_Sintomas\"\n\t.DropDownBox.DisplayValueFieldType = \"C\"\n\t.DropDownBox.StoredValueFieldType = \"N\"\n\t.DropdownBox.noSelectionDisplayValue = \"\"\n\t.DropdownBox.hasCascadingChoices = .f.\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .f.\n\t.BaseFieldExpression = \"N_MonitoreoSintomas_Global.Id_Sintoma_FK\"\n\t.SourceAlias = \"N_MonitoreoSintomas_Global\"\n\t.Column.Heading = \"S&iacute;ntoma:\"\nend with\ntmpl.grid_layout_style = 1\ntmpl.add_records_only = .f.\ntmpl.rows = 10\ntmpl.maxRowsPerPage = 200\ntmpl.rowsWhenSearchActive = -1\ntmpl.suppress_empty_rows = .t.\ntmpl.has_row_separator = .t.\ntmpl.alternate_bands = .f.\ntmpl.even_band_size = 1\ntmpl.odd_band_size = 1\ntmpl.alternate_column_bands = .f.\ntmpl.even_column_band_size = 1\ntmpl.odd_column_band_size = 1\ntmpl.conditionalStyle = \"\"\ntmpl.clientSideConditionalStyle = \"\"\ntmpl.show_title = .f.\ntmpl.title = \"\"\ntmpl.FontSize = \"Medium\"\ntmpl.No_records_message = \"<a5:t>No records in query</a5:t>\"\ntmpl.total_records_row_position = 1\ntmpl.total_records_row = \"<a5:t>Records</a5:t>:&nbsp; {Total_Records}&nbsp;\"\ntmpl.show_column_titles = 1\ntmpl.suppress_titles_if_no_records = .f.\ntmpl.show_row_labels = .t.\ntmpl.snakingLayout_suppressRepeatedLabels = .f.\ntmpl.sort_style = 3\ntmpl.reset_page_number_when_sorting = .t.\ntmpl.allowGridBodyScrolling = .f.\ntmpl.scrollableRegionHeight = \"2in\"\ntmpl.scrollableRegionWidth = \"100%\"\ntmpl.fixedWidthColumns = .f.\ntmpl.defaultColumnWidth = \"1in\"\ntmpl.columnWidthSettings = \"\"\ntmpl.EditRegion.Grid.Top = <<%editregion%\n%editregion%\ntmpl.EditRegion.Grid.Bottom = <<%editregion%\n%editregion%\ntmpl.EditRegion.Grid.Left = <<%editregion%\n%editregion%\ntmpl.EditRegion.Grid.Right = <<%editregion%\n%editregion%\ntmpl.HasNewRecordsTitle = .f.\ntmpl.NewRecordsTitle = \"<tr><td class=\\\"[class.gridData]\\\" colspan=\\\"{a5_colspan}\\\" style=\\\"padding: 0px;\\\" >New Records</td></tr>\"\ntmpl.HasExistingRecordsTitle = .f.\ntmpl.ExistingRecordsTitle = \"<tr><td class=\\\"[class.gridData]\\\" colspan=\\\"{a5_colspan}\\\" style=\\\"padding: 0px;\\\" >Existing Records</td></tr>\"\ntmpl.Highlight_row_onHover =  .t.\ntmpl.Highlight_row_onSelect =  .t.\ntmpl.HasRecordsPerPageSelector = .t.\ntmpl.RecordsPerPageChoices =   \"1,2,5,10,25,50,75,100\"\ntmpl.RecordsPerPageSelectorTemplate = \"&nbsp;&nbsp;{Grid.RecordsPerPageSelector} <a5:t>Records per page</a5:t>\"\ntmpl.has_qbe_row = .f.\ntmpl.qbe.initial_display = \"Hidden\"\ntmpl.qbe.toggleQBERowHyperlinkText = \"Show/Hide QBE Row\"\ntmpl.has_advancedSearch = .f.\ntmpl.hasLinkedContent = .f.\ntmpl.hasExternalNavigators = .f.\ntmpl.hasRowExpandColumn = .f.\ntmpl.hasSelectedRowColumn = .t.\ntmpl.hasCheckboxSelectColumn = .f.\ntmpl.AdditionalGridStyles = \"\"\ntmpl.LocalCss = \"\"\ntmpl.CSSLinkedFiles = \"\"\ntmpl.localsvg = \"\"\ntmpl.SVGLinkedFiles = \"\"\ntmpl.CSSIcons = \"\"\ntmpl.JavaScriptLinkedFiles = \"\"\ntmpl.useMasterTemplate = .f.\ntmpl.MasterTemplateStyle = \"Table - Vertical Layout\"\ntmpl.MasterLayoutTemplate = \"\"\ntmpl.MasterLayoutTemplateJavascript = \"\"\ntmpl.MasterLayout.PaneLabel.Search = \"Search\"\ntmpl.MasterLayout.PaneLabel.Grid = \"Grid\"\ntmpl.MasterLayout.PaneLabel.DetailView = \"Detail\"\ntmpl.MasterLayout.AccordionStyle = \"Multiple\"\ntmpl.MasterLayout.InitialOpenPanes = \"Search,Grid,DetailView\"\ntmpl.verticalAlignDataInColumns = \"Middle\"\ntmpl.CanCollapseGrid = .f.\ntmpl.CollapseBar.Title = \"Collapse Grid\"\ntmpl.CollapseBar.OpenIcon = \"\"\ntmpl.CollapseBar.ClosedIcon = \"\"\ntmpl.CollapseBar.Style = \"\"\ntmpl.Collapsebar.Class = \"\"\ntmpl.Collapsebar.ContainerStyle = \"\"\ntmpl.Collapsebar.ContainerClass = \"\"\ntmpl.Collapsebar.InitialState = \"open\"\ntmpl.languageTags_RemoveUnConsumedTags = .t.\ntmpl.activeLanguage = \"<Default>\"\ntmpl.search.highlightSearchStrings = .f.\ntmpl.autoRefreshGrid = .f.\ntmpl.autoRefreshInterval = 60\ntmpl.helpTableType = \"DBF\"\ntmpl.helpTableName = \"\"\ntmpl.helpConnectionString = \"\"\ntmpl.helpIDfield = \"\"\ntmpl.helpContentsField = \"\"\ntmpl.fieldHelpWindowStyle = \"modal-resizeable\"\ntmpl.fields = 5\nDIM tmpl.field_info[tmpl.fields] as P \nwith tmpl.field_info[1]\n\t.Fieldname = \"Id_MonitoreoSintomas_Global\"\n\t.Scope = \"Local\"\n\t.DisplayFormat = \"\"\n\t.DisplayUnFormat = \"\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .f.\n\t.portableType = \"Integer32\"\n\t.nativeType = \"\"\n\t.Type = \"N\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Varname = \"ID_MONITOREOSINTOMAS_GLOBAL\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"Label\"\n\t.Label.InLineStyle = \"text-align: right;\"\n\t.Label.ClassName = \"\"\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .f.\n\t.BaseFieldExpression = \"N_MonitoreoSintomas_Global.Id_MonitoreoSintomas_Global\"\n\t.SourceAlias = \"N_MonitoreoSintomas_Global\"\n\t.Column.Heading = \"Id\"\n\t.Column.Sort = \"N_MonitoreoSintomas_Global.Id_MonitoreoSintomas_Global\"\n\t.Column.FirstClickDirection = \"A\"\nend with\nwith tmpl.field_info[2]\n\t.Fieldname = \"Id_MonitoreoGlobal_FK\"\n\t.Scope = \"Local\"\n\t.DisplayFormat = \"\"\n\t.DisplayUnFormat = \"\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .f.\n\t.portableType = \"Integer32\"\n\t.nativeType = \"\"\n\t.Type = \"N\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Varname = \"ID_MONITOREOGLOBAL_FK\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"Label\"\n\t.Label.InLineStyle = \"text-align: right;\"\n\t.Label.ClassName = \"\"\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .t.\n\t.BaseFieldExpression = \"N_MonitoreoSintomas_Global.Id_MonitoreoGlobal_FK\"\n\t.SourceAlias = \"N_MonitoreoSintomas_Global\"\n\t.Column.Heading = \"Id Monitoreo Global FK\"\nend with\nwith tmpl.field_info[3]\n\t.Fieldname = \"Id_Sintoma_FK\"\n\t.Scope = \"Local\"\n\t.DisplayFormat = \"\"\n\t.DisplayUnFormat = \"\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .f.\n\t.portableType = \"Integer32\"\n\t.nativeType = \"\"\n\t.Type = \"N\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Varname = \"ID_SINTOMA_FK\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"Label\"\n\t.Label.InLineStyle = \"text-align: right;\"\n\t.Label.ClassName = \"\"\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .t.\n\t.BaseFieldExpression = \"N_MonitoreoSintomas_Global.Id_Sintoma_FK\"\n\t.SourceAlias = \"N_MonitoreoSintomas_Global\"\n\t.Column.Heading = \"Id Sintoma FK\"\nend with\nwith tmpl.field_info[4]\n\t.Fieldname = \"Sintoma\"\n\t.Scope = \"Local\"\n\t.DisplayFormat = \"\"\n\t.DisplayUnFormat = \"\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .f.\n\t.portableType = \"NationalVaryingCharacter\"\n\t.nativeType = \"\"\n\t.Type = \"C\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Varname = \"SINTOMA\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"Label\"\n\t.Label.InLineStyle = \"\"\n\t.Label.ClassName = \"\"\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .f.\n\t.BaseFieldExpression = \"N_Sintomas.Descripcion\"\n\t.SourceAlias = \"N_Sintomas\"\n\t.Column.Heading = \"S&iacute;ntoma\"\n\t.Column.Sort = \"N_Sintomas.Descripcion\"\n\t.Column.FirstClickDirection = \"A\"\nend with\nwith tmpl.field_info[5]\n\t.Controltype = \"Unbound_DynamicImage\"\n\t.Fieldname = \"_Unbound_DynamicImage_1\"\n\t.Varname = \"_Unbound_DynamicImage_1\"\n\t.ImageDefinition = <<%txt%\n1=1|a5image:$$generic.add\n%txt%\n\t.DynamicImage.Alt = \"\"\n\t.Column.CanSort = .f.\n\t.Column.Sort = \"\"\n\t.Column.Heading = \"\"\n\t.Column.LabelInLineStyle = \"\"\n\t.Column.heading_left = \"\"\n\t.Column.InLineStyle = \"\"\n\t.BreakType = \"None\"\n\t.DynamicImage.class = \"\"\n\t.DynamicImage.style = \"\"\n\t.Column.Hide = .f.\n\t.Column.LabelPosition = \"Left\"\n\t.nCols = 1\n\t.javascript.onclick = <<%txt%\n/* actionJavascript:f8f5412e-9272-4c54-baff-ce1eb5b7f6e0 */\n{grid.componentName}_G__UNBOUND_IMAGE_1_1({grid.rownumber},'{grid.rowId}',this);%txt%\n\t.javascriptDeclarationsGlobal.onclick = <<%txt%\nwindow['{grid.componentName}_G__UNBOUND_IMAGE_1_1'] = function(rowNum,rowId,objEle) {\nvar tempTbiObj = getTabbedUI();\t\t\nif(tempTbiObj == false) {\nvar windowName = 'WINDOW_6242f552_51a5_4c4b_a0c2_e2007f7c04ea_R'+rowId+'';\nvar currWindow = {Grid.object}.getWindow(windowName);\nvar go = new Object();\nif(typeof {grid.object} != 'undefined' &&typeof {grid.object}._workingPreviewHost != 'undefined') { \n\tgo._workingPreviewHost = {grid.object}._workingPreviewHost;\n}\nif(typeof {grid.object} != 'undefined' && typeof {grid.object}._workingPreviewHost != 'undefined') { \n\tgo._workingPreviewHost = {grid.object}._workingPreviewHost;\n}\nif(typeof tbiObj != 'undefined' && typeof tbiObj._workingPreviewHost != 'undefined') { \n\tgo._workingPreviewHost = tbiObj._workingPreviewHost;\n}\ngo.objectId = objEle.id;\ngo.gridName = 'N_Sintomas';\ngo.alias = '{Grid.componentname}_N_Sintomas_xbow_R'+rowId+'';\t\ngo.submitCurrentFieldValues = true;\ngo.sourceGridPart = 'G';\ngo.sourceGridRowNumber = rowNum;\ngo.workingMessage = '<img src=\\'css/A5System/Images/wait.gif\\' /><a5:t>Working...</a5:t>';\ngo.userFilter = '';\ngo.baseFilter = '';\ngo.arguments = '';\nif(typeof rowNum == 'undefined') rowNum = '';\ngo.linkDefinition = '';\ngo.placeHolderValues = '';\ngo.userOrder = '';\ngo._thisGridAlias = {grid.object}.gridId;\nif(typeof {grid.object}.gridId != 'undefined') go._thisGridAlias = {grid.object}.gridId;\nif(typeof {grid.object}.dialogId != 'undefined') go._thisGridAlias = {grid.object}.dialogId;\ngo._thisGridGUID = {grid.object}.componentGUID;\ngo._gridCurrentFilter = {grid.object}._gridFilter;\ngo._gridCurrentOrder = {grid.object}._gridOrder;\ngo._gridCurrentArguments = {grid.object}._gridArguments;\ngo._gridCurrentDBType = {grid.object}._gridDBType;\ngo.overrideSettings = 'Style_name = `{Grid.style}`'+'||';\ngo.a5_default_path = '{grid.defaultPath}';\ngo.flagTimer = 'F';\ngo.flagQueryEcho = 'F';\ngo.flagDebugMode = 'F';\ngo.windowName = windowName;\nif(typeof go.direction == 'undefined') go.direction = 'ltr';\ngo.showWindowParameters = '';\nif(!currWindow) {\n\tcurrWindow = {Grid.object}.createWindow(windowName,'modeless-resizable',\n\t{\n\tbody: {\n\t\tcontent: {\n\t\t\ttype: 'blank',\n\t\t\telementId: '~'\n\t\t}\n\t},\n\theight: '5in',\n\twidth: '8in',\n\ttitle: {\n\t\thtml: 'Window',\n\t\tlocation: 'top',\n\t\tdirection: 'ltr',\n\t\tshow: true\n\t},\n\tdisableMove: false,\n\ttheme: '{Grid.style}',\n\tonBeforeHide: function() {\nvar isDirty = false;\nif(typeof window['{GRID.COMPONENTNAME}_N_SINTOMAS_XBOW_R'+rowId+'_GridObj'] != 'undefined') {\n\tisDirty = window['{GRID.COMPONENTNAME}_N_SINTOMAS_XBOW_R'+rowId+'_GridObj']._isDirty ||  window['{GRID.COMPONENTNAME}_N_SINTOMAS_XBOW_R'+rowId+'_GridObj']._detailViewIsDirty;\n}\nif(isDirty) {\n\t\twindow['{GRID.COMPONENTNAME}_N_SINTOMAS_XBOW_R'+rowId+'_GridObj']._confirmAction();\n\t\treturn false;\n} else return true;\n}\n}\n\t);\t\t\n\tgo.gridDiv = currWindow.getWindowId('body');\n\t{grid.Object}.openChildGrid(go);\nsetTimeout(function() { {grid.object}.blur();},100);\n\tcurrWindow.show();\n} else {\n\t\tvar ele = '{Grid.componentname}_N_Sintomas_xbow_R'+rowId+'.GRID_PART.FORM_CONTAINER_DIV';\n\tvar pele = $(ele);\n\tif(pele) pele.innerHTML = '<img src=\\'css/A5System/Images/wait.gif\\' /> <a5:t>Working...</a5:t>';\n\tgo.gridDiv = currWindow.getWindowId('body');\n\tgo.parentGridId = '{grid.componentname}';\n\twindow['{GRID.COMPONENTNAME}_N_SINTOMAS_XBOW_R'+rowId+'_GridObj'].synchronizeGrid(go);\nsetTimeout(function() { {grid.object}.blur();},100);\n};\n} else {\n\tvar go = new Object();\nif(typeof {grid.object} != 'undefined' &&typeof {grid.object}._workingPreviewHost != 'undefined') { \n\tgo._workingPreviewHost = {grid.object}._workingPreviewHost;\n}\nif(typeof {grid.object} != 'undefined' && typeof {grid.object}._workingPreviewHost != 'undefined') { \n\tgo._workingPreviewHost = {grid.object}._workingPreviewHost;\n}\nif(typeof tbiObj != 'undefined' && typeof tbiObj._workingPreviewHost != 'undefined') { \n\tgo._workingPreviewHost = tbiObj._workingPreviewHost;\n}\ngo.objectId = objEle.id;\ngo.gridName = 'N_Sintomas';\ngo.alias = '{Grid.componentname}_N_Sintomas_xbow_R'+rowId+'';\t\ngo.submitCurrentFieldValues = true;\ngo.sourceGridPart = 'G';\ngo.sourceGridRowNumber = rowNum;\ngo.workingMessage = '<img src=\\'css/A5System/Images/wait.gif\\' /><a5:t>Working...</a5:t>';\ngo.userFilter = '';\ngo.baseFilter = '';\ngo.arguments = '';\nif(typeof rowNum == 'undefined') rowNum = '';\ngo.linkDefinition = '';\ngo.placeHolderValues = '';\ngo.userOrder = '';\ngo._thisGridAlias = {grid.object}.gridId;\nif(typeof {grid.object}.gridId != 'undefined') go._thisGridAlias = {grid.object}.gridId;\nif(typeof {grid.object}.dialogId != 'undefined') go._thisGridAlias = {grid.object}.dialogId;\ngo._thisGridGUID = {grid.object}.componentGUID;\ngo._gridCurrentFilter = {grid.object}._gridFilter;\ngo._gridCurrentOrder = {grid.object}._gridOrder;\ngo._gridCurrentArguments = {grid.object}._gridArguments;\ngo._gridCurrentDBType = {grid.object}._gridDBType;\ngo.overrideSettings = 'Style_name = `{Grid.style}`'+'||';\ngo.a5_default_path = '{grid.defaultPath}';\ngo.flagTimer = 'F';\ngo.flagQueryEcho = 'F';\ngo.flagDebugMode = 'F';\nif(typeof go.direction == 'undefined') go.direction = 'ltr';\n\tvar randString = Date.parse(new Date().toString())\n\tif(typeof {grid.object}.gridId != 'undefined'){\n\t\tvar rowKey = {Grid.object}._getCurrentKey(rowNum);\n\t\tif(rowKey!=''){\n\t\t\trowKey = rowKey.replace(/\\|/g,'XYX');\n\t\t\trowKey = rowKey.replace(/[^a-zA-Z$0-9]+/g,''); \n\t\t\tgo.alias = '{Grid.componentname}_N_Sintomas_xbow'+rowKey+'';\n\t\t}else{\n\t\t \tgo.alias = '{Grid.componentname}_N_Sintomas_xbow_R'+randString+'';\n\t\t}\n\t} else {\n\t\tgo.alias = '{Grid.componentname}_N_Sintomas_xbow_'+randString;\n\t}\n\tpaneName = go.alias.toUpperCase();\n\tpaneName = paneName + go.placeholderValues;\n\tpaneName = paneName.toUpperCase();\n\tvar paneTitle = 'S&iacute;ntomas';\n\ttempTbiObj.add({title: paneTitle , name : paneName, type:'grid', data: go    }); \n\tvar xObj = {grid.object};\n\tif(typeof xObj != 'undefined') {\n\t\tsetTimeout(function() { {grid.object}.blur();},100);\n\t}\n}\n}%txt%\nend with\ntmpl.RecordNavigationStyle = \"NavigationButtons\"\ntmpl.fetchMoreRecordsButton.text = \"More Records\"\ntmpl.fetchMoreRecordsButton.style = \"\"\ntmpl.RecNav.SuppressIfOnlyOnePage = .t.\ntmpl.RecNav.First_Label = \"First\"\ntmpl.RecNav.Has_First_Button = .t.\ntmpl.RecNav.Has_Last_Button = .t.\ntmpl.RecNav.Has_Next_Button = .t.\ntmpl.RecNav.Has_Prev_Button = .t.\ntmpl.RecNav.HTML_Template_source = \"Computed\"\ntmpl.RecNav.Justify = \"Left\"\ntmpl.RecNav.Last_Label = \"Last\"\ntmpl.RecNav.Next_Label = \"Next\"\ntmpl.RecNav.Number_of_page_links = 10\ntmpl.RecNav.Page_Numbering_Style = 3\ntmpl.RecNav.PagesTemplate_w_PageCount = \"{PageNumber} of {PageCount}\"\ntmpl.RecNav.PagesTemplate_wout_PageCount = \"{PageNumber}\"\ntmpl.RecNav.Position = 1\ntmpl.RecNav.suppress_recNavBar_if_no_records = .f.\ntmpl.RecNav.Prev_Label = \"Prev\"\ntmpl.RecNav.Show_disabled_controls = .t.\ntmpl.RecNav.Show_Page_Count = .t.\ntmpl.RecNav.Use_Images = .f.\ntmpl.gridToolbarTemplate = <<%html%\n%html%\ntmpl.gridToolbarTemplateEditable = <<%html%\n%html%\ntmpl.ToolbarActionButtons = <<%html%\n{ActionButton:REFRESH}\n%html%\ntmpl.style_name = \"GrBlue\"\ntmpl.resolveAbstractClassNames = .t.\ntmpl.style_type = \"Alpha Five\"\ntmpl.UseSimpleStyles = .f.\ntmpl.overrideStylesForJavascriptObjects = .f.\ntmpl.searchBehavior = \"\"\ntmpl.DetailView.Has_DetailView = .t.\ntmpl.detailView.show_row_labels = .t.\ntmpl.DetailView.linkfield = \"\"\ntmpl.DetailView.editable = .t.\ntmpl.DetailView.edit.allow_update = .t.\ntmpl.DetailView.edit.allow_insert = .t.\ntmpl.DetailView.edit.allow_delete = .t.\ntmpl.DetailView.edit.validateFieldsSetting = \"Dirty Fields Only\"\ntmpl.DetailView.edit.updateWhichFields = \"Dirty Fields Only\"\ntmpl.DetailView.edit.Show_Update_Commands = .f.\ntmpl.DetailView.edit.Execute_Update_Commands = .t.\ntmpl.DetailView.AddNewLinkLabel  = \"New Record\"\ntmpl.DetailView.LayoutColumns = 1\ntmpl.DetailView.UseSimpleStyles  = .t.\ntmpl.DetailView.SimpleStyleMode  = \"LayoutOnly\"\ntmpl.DetailView.HasTitle  = .t.\ntmpl.DetailView.SaveRecordButtonLabel  = \"Save\"\ntmpl.DetailView.Title  = \"Detail View \"\ntmpl.DetailView.edit.Delete_TargetPage = \"<Self>\"\ntmpl.DetailView.edit.Save_TargetPage = \"<Self>\"\ntmpl.DetailView.edit.Add_TargetPage = \"<Self>\"\ntmpl.DetailView.Toolbar.Position = \"Below\"\ntmpl.DetailView.Toolbar.showRecordNavigatorLinks = .t.\ntmpl.customizationString.DetailView.toolbar = \"\"\ntmpl.DetailView.edit.check_for_write_conflicts = .t.\ntmpl.DetailView.Toolbar.Buttons = \"\"\ntmpl.DetailView.ToolbarActionButtons = \"\"\ntmpl.detailView.window.animation.hasAnimation = .f.\ntmpl.detailView.window.animation.show.method = \"Fade\"\ntmpl.detailView.window.animation.show.speed = \"Slow\"\ntmpl.detailView.window.animation.hide.method = \"None\"\ntmpl.detailView.window.animation.hide.speed = \"Fast\"\ntmpl.DetailView.scrollIntoView = .f.\ntmpl.edit.field_error_style.type = \"Icon\"\ntmpl.edit.field_error_style.icon = \"images/$$generic.error.png.a5image\"\ntmpl.edit.field_error_style.control_classname = \"\"\ntmpl.edit.field_error_style.error_classname = \"\"\ntmpl.edit.field_error_style.control_hover_classname = \"\"\ntmpl.edit.field_error_style.error_hover_classname = \"\"\ntmpl.edit.show_row_errors_in_popup = .f.\ntmpl.edit.row_errors_window_title = \"Errors\"\ntmpl.edit.row_errors_window_style = \"color: red; width: 6in; height: 2in;\"\ntmpl.DetailView.edit.RefreshRowMethod = \"AutoSelect\"\ntmpl.DetailView.edit.Editable_GridRow_Options_Style = \"Icons\"\ntmpl.DetailView.edit.RefreshRowOnDirty = .t.\ntmpl.DetailView.edit.RowEditStyle = \"InitiallyEditable\"\ntmpl.DetailView.edit.LazyEdit = .t.\ntmpl.DetailView.displayStyle = \"PopupWindow-Modal\"\ntmpl.DetailView.ajaxWindowPositionAttribute = \"\"\ntmpl.DetailView.ajaxWindowWidth = \"\"\ntmpl.DetailView.ajaxWindowHeight = \"\"\ntmpl.DetailView.ShowNewRecordIfNoRecordsInQuery = .f.\ntmpl.DetailView.windowDragOpacity = 75\ntmpl.DetailView.PopupWindowTitle = \"S&iacute;ntomas\"\ntmpl.DetailView.PopupWindowDirection = \"ltr\"\ntmpl.DetailView.OpenMethod = \"Click a hyperlink field\"\ntmpl.DetailView.Toggle = .f.\ntmpl.DetailView.PopulateUsingJavaScript = .f.\ntmpl.DetailView.OnlyShowOnRequest = .t.\ntmpl.DetailView.HideGridIfDetailViewIsVisible = .f.\ntmpl.DetailView.HasCloseLink = .t.\ntmpl.DetailView.CloseDetailViewLinkLabel = \"Close\"\ntmpl.DetailView.CanClose = .t.\ntmpl.DetailView.total_records_row = \"\"\ntmpl.DetailView.CloseAfterSubmit = .t.\ntmpl.EditRegion.DetailView.Top = <<%editregion%\n%editregion%\ntmpl.EditRegion.DetailView.Bottom = <<%editregion%\n%editregion%\ntmpl.EditRegion.DetailView.Left = <<%editregion%\n%editregion%\ntmpl.EditRegion.DetailView.Right = <<%editregion%\n%editregion%\n\ntmpl.DetailFields = 3\nDIM tmpl.DetailField_Info[tmpl.DetailFields] as P \nwith tmpl.detailfield_info[1]\n\t.Fieldname = \"Id_MonitoreoSintomas_Global\"\n\t.Scope = \"Local\"\n\t.DisplayFormat = \"\"\n\t.DisplayUnFormat = \"\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .f.\n\t.portableType = \"Integer32\"\n\t.nativeType = \"\"\n\t.Type = \"N\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Updateable = .f.\n\t.Varname = \"ID_MONITOREOSINTOMAS_GLOBAL\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"Label\"\n\t.Label.InLineStyle = \"text-align: right;\"\n\t.Label.ClassName = \"\"\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .f.\n\t.BaseFieldExpression = \"N_MonitoreoSintomas_Global.Id_MonitoreoSintomas_Global\"\n\t.SourceAlias = \"N_MonitoreoSintomas_Global\"\n\t.Column.Heading = \"Id:\"\n\t.Column.Sort = \"Id_Monitoreosintomas_Global\"\n\t.Column.FirstClickDirection = \"A\"\nend with\nwith tmpl.detailfield_info[2]\n\t.Fieldname = \"Id_MonitoreoGlobal_FK\"\n\t.Scope = \"Local\"\n\t.DisplayFormat = \"\"\n\t.DisplayUnFormat = \"\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .f.\n\t.portableType = \"Integer32\"\n\t.nativeType = \"\"\n\t.Type = \"N\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Updateable = .t.\n\t.TreatBlankAsNull = .f.\n\t.Table_Alias = \"N_MonitoreoSintomas_Global\"\n\t.FieldToUpdate = \"Id_MonitoreoGlobal_FK\"\n\t.Varname = \"ID_MONITOREOGLOBAL_FK\"\n\t.Initial_Value = \"NULL\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"Textbox\"\n\t.Textbox.Size = 20\n\t.Textbox.HTML5Type = \"\"\n\t.Textbox.customAttributes = \"\"\n\t.Textbox.readonly = .f.\n\t.Textbox.MaxLength = 20\n\t.Textbox.InLineStyle = \"text-align: right;\"\n\t.Textbox.className = \"\"\n\t.Textbox.ContainerInlineStyle = \"\"\n\t.Textbox.IsPassword = .f.\n\t.hasWatermark= .f.\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .t.\n\t.BaseFieldExpression = \"N_MonitoreoSintomas_Global.Id_MonitoreoGlobal_FK\"\n\t.SourceAlias = \"N_MonitoreoSintomas_Global\"\n\t.Column.Heading = \"Id Monitoreo Global FK\"\nend with\nwith tmpl.detailfield_info[3]\n\t.Fieldname = \"Id_Sintoma_FK\"\n\t.Scope = \"Local\"\n\t.DisplayFormat = \"\"\n\t.DisplayUnFormat = \"\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .f.\n\t.portableType = \"Integer32\"\n\t.nativeType = \"\"\n\t.Type = \"N\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Updateable = .t.\n\t.TreatBlankAsNull = .f.\n\t.Table_Alias = \"N_MonitoreoSintomas_Global\"\n\t.FieldToUpdate = \"Id_Sintoma_FK\"\n\t.Varname = \"ID_SINTOMA_FK\"\n\t.Initial_Value = \"NULL\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"DropDownBox\"\n\t.DropdownBox.fieldNameOfFieldLinkedToParentControl = \"<Auto>\"\n\t.DropdownBox.fieldTypeOfFieldLinkedToParentControl = \"\"\n\t.DropdownBox.methodForComputingCascadingFilter = \"<Auto>\"\n\t.DropdownBox.explicitCasacadingFilter = \"\"\n\t.DropdownBox.InLineStyle = \"\"\n\t.DropdownBox.Type = \"Dynamic\"\n\t.DropdownBox.Size = 1\n\t.DropdownBox.selectStyle = \"Single\"\n\t.DropdownBox.NotInListRule = \"Add to List\"\n\t.DropDownBox.Datasource = \"CS\"\n\t.DropDownBox.maxchoices = 0\n\t.DropDownBox.CS.ConnectionString = \"::name::Nibble\"\n\t.DropDownBox.CS.SQL = \"SELECT DISTINCT Descripcion, Id_Sintomas FROM N_Sintomas ORDER BY Descripcion, Id_Sintomas\"\n\t.DropDownBox.DisplayValueField = \"Descripcion\"\n\t.DropDownBox.StoredValueField = \"Id_Sintomas\"\n\t.DropDownBox.DisplayValueFieldType = \"C\"\n\t.DropDownBox.StoredValueFieldType = \"N\"\n\t.DropdownBox.noSelectionDisplayValue = \"\"\n\t.DropdownBox.hasCascadingChoices = .f.\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .f.\n\t.BaseFieldExpression = \"N_MonitoreoSintomas_Global.Id_Sintoma_FK\"\n\t.SourceAlias = \"N_MonitoreoSintomas_Global\"\n\t.Column.Heading = \"S&iacute;ntoma:\"\n\t.Column.Sort = \"Id_Sintoma_Fk\"\n\t.Column.FirstClickDirection = \"A\"\nend with\ntmpl.GUID = \"795adf9c-7b0b-4948-9573-f941ad9e7038\"\ntmpl.onlyIncludeSelectedFieldsInQuery = .t.\nDIM tmpl.controls[1] as P\nwith  tmpl.controls[1]\n\t.idInternal = \"02c55546-11e9-4484-89c6-4267357b8902\"\n\t.type = \"Button\"\n\t.Name = \"REFRESH\"\n\t.trailingSeparator = .T.\n\t.bubbleHelp = \"\"\n\t.readDataFrom = \"GridPart\"\n\t.actionJSAttribute = <<%str%\n/* actionJavascript:c4b811c5-1007-4af1-97e0-065c24f7e4fc */\nfunction tempfunction_0dc11522_559e_4814_aea2_14bdb2d767ea() {\nvar dropDownType = 'wait';\nvar title = 'Espere por favor';\nvar msgBody = '';\nvar width = '300px';\nvar oKButtonLabel = '';\nvar cancelButtonLabel = '';\nvar loc = 'center';\nvar onOK = function() { alert('pressed ok'); };\nvar onCancel = function() { };\n{grid.object}.dropDownMessage(dropDownType,title,msgBody,width,oKButtonLabel,cancelButtonLabel,onOK,onCancel, loc);\n}\nfunction tempfunction_652b6d8c_815a_4601_a6f6_10ab90b99aaf() {\n{grid.object}.dropDownMessageHide();\n}\nfunction tempfunction_fec3caca_50fe_4581_9c18_bc5f1f38e2d9() {\n{grid.object}.dropDownMessageHide();\n}\nA5.executeThisThenThat(tempfunction_0dc11522_559e_4814_aea2_14bdb2d767ea,tempfunction_652b6d8c_815a_4601_a6f6_10ab90b99aaf,tempfunction_fec3caca_50fe_4581_9c18_bc5f1f38e2d9);%str%\n\t.actionJSGlobal = \"\"\n\t.actionXbasic = \"\"\n\t.actionClientSideXbasic = \"\"\n\t.buttonStyle = \"Image only\"\n\t.buttonClass = \"[class.gridButton]\"\n\t.buttonClassHover = \"[class.gridButtonHover]\"\n\t.buttonClassPressed = \"[class.gridButtonPressed]\"\n\t.buttonClassDisabled = \"[class.gridButtonDisabled]\"\n\t.buttonInlineStyle = \"\"\n\t.buttonText = \"refresh\"\n\t.hyperlinkClass = \"[class.gridHyperlinkButton]\"\n\t.hyperlinkInlineStyle = \"\"\n\t.hyperlinkImagePosition = \"None\"\n\t.textClass = \"\"\n\t.textInlineStyle = \"\"\n\t.imageName = \"images/$$generic.refresh.color.png.a5image\"\n\t.hoverImageName = \"\"\n\t.pressedImageName = \"\"\n\t.disabledimageName = \"\"\n\t.imageClass = \"\"\n\t.imageInlineStyle = \"\"\n\t.securityGroups = \"\"\n\t.serverSideShowHideExpression = \"\"\n\t.readDataFromForClientSideExpns = \"GridPart\"\n\t.clientSideShowHideExpression = \"\"\n\t.clientSideEnableExpression = \"\"\n\t.precalc.watchJavascriptShowHide = \"\"\n\t.precalc.watchJavascriptEnable = \"\"\n\t.precalc.watchColumnsShowHide = \"\"\n\t.precalc.watchColumnsEnable = \"\"\n\t.precalc.JStoSetupWatchEvents = \"\"\n\t.precalc.buttonObjectJavascript = <<%str%\nwindow['{grid.componentName}_BUTTONS_REFRESH'] = new A5.Button({\n\tlayout: 'icon',\n\tclassName: '[class.gridButton]',\n\thoverClassName: '[class.gridButtonHover]',\n\tpressedClassName: '[class.gridButtonPressed]',\n\tdisabledClassName: '[class.gridButtonDisabled]',\n\thtml: 'refresh',\n\ticon: 'images/$$generic.refresh.color.png.a5image',\n\tdisabledIcon: 'images/disabled/$$generic.refresh.color.png.a5image',\n\tonClick: function() { /* actionJavascript:c4b811c5-1007-4af1-97e0-065c24f7e4fc */\nfunction tempfunction_0dc11522_559e_4814_aea2_14bdb2d767ea() {\nvar dropDownType = 'wait';\nvar title = 'Espere por favor';\nvar msgBody = '';\nvar width = '300px';\nvar oKButtonLabel = '';\nvar cancelButtonLabel = '';\nvar loc = 'center';\nvar onOK = function() { alert('pressed ok'); };\nvar onCancel = function() { };\n{grid.object}.dropDownMessage(dropDownType,title,msgBody,width,oKButtonLabel,cancelButtonLabel,onOK,onCancel, loc);\n}\nfunction tempfunction_652b6d8c_815a_4601_a6f6_10ab90b99aaf() {\n{grid.object}.dropDownMessageHide();\n}\nfunction tempfunction_fec3caca_50fe_4581_9c18_bc5f1f38e2d9() {\n{grid.object}.dropDownMessageHide();\n}\nA5.executeThisThenThat(tempfunction_0dc11522_559e_4814_aea2_14bdb2d767ea,tempfunction_652b6d8c_815a_4601_a6f6_10ab90b99aaf,tempfunction_fec3caca_50fe_4581_9c18_bc5f1f38e2d9);\n},\n\ttheme: '{grid.style}'\n});%str%\n\t.precalc.objectHTML = \"<button type=\\\"button\\\" id=\\\"{id}\\\"></button>&nbsp;\"\n\t.precalc.objectName = \"{grid.componentName}_BUTTONS_REFRESH\"\n\t.precalc.bindJS = \"{grid.componentName}_BUTTONS_REFRESH.bind({bindIdList});\"\nend with\ntmpl.hasGroupBreaks = .f.\ntmpl.groupBreaks.expression1 = \"\"\ntmpl.groupBreaks.direction1 = \"\"\ntmpl.groupBreaks.header1 = <<%HTML%\n%HTML%\ntmpl.groupBreaks.footer1 = <<%HTML%\n%HTML%\ntmpl.groupBreaks.collapseAllGroupsOnInitialDisplay = .f.\ntmpl.timestamp = \"2020-04-06:14-15-08.243\"\ntmpl.resolveAbstractClassNamesAtDesignTime  = .f.\ntmpl.resolveAbstractIconNamesAtDesignTime = .f. \ntmpl.useLegacyDatePicker = .f.\ntmpl.javascriptUnboundActionDefinitions = <<%javascriptActions%\n%javascriptActions%\n\ntmpl.precalc.sessionVarsInShowHideExpns = <<%sessionvars%\n%sessionvars%\ntmpl.precalc.unboundActionsXbasicFunctions = \"\"\ntmpl.precalc.includeS3Javascript = .f.",
         "datasourceType": 3,
         "componentName": "N_MonitoreoSintomas_Global",
         "query_ado": {
@@ -48,9 +48,6 @@
         "query_dbf": {
             "type": "Table",
             "Direction": "Ascending",
-            "JoinInfo": {
-                "a_tables": []
-            },
             "Arguments": []
         },
         "fields": {
@@ -122,11 +119,11 @@
                     },
                     "TextBox": {
                         "InLineStyle": "text-align: right;",
-                        "className": "",
                         "Size": 20,
-                        "readonly": false,
                         "MaxLength": 20,
-                        "stylefieldiferror": true
+                        "stylefieldiferror": true,
+                        "className": "",
+                        "readonly": false
                     },
                     "Watermark": {
                         "text": "<FieldLabel>"
@@ -143,9 +140,9 @@
                                 "width": "2in"
                             },
                             "style": "font: 9pt Arial;",
+                            "editButtonText": "Edit...",
                             "toolbaricons": "",
-                            "toolbardefinition": "",
-                            "editButtonText": "Edit..."
+                            "toolbardefinition": ""
                         }
                     },
                     "radiobutton": {
@@ -184,12 +181,6 @@
                         "OpenMethod": "ClickIcon",
                         "UseComboBoxes": true,
                         "DateFormat": "<DefaultTimeFormat>",
-                        "friendlyDisplay": {
-                            "settingsJSON": "",
-                            "enabled": false
-                        },
-                        "showPreDefinedDates": false,
-                        "preDefinedDatesJSON": "",
                         "LowYear": 1950,
                         "HighYear": 2050,
                         "SwitchYear": 20,
@@ -197,7 +188,13 @@
                         "showDaysOfWeek": true,
                         "showTodayButton": true,
                         "OKButtonLabel": "OK",
-                        "CancelButtonLabel": "Cancel"
+                        "CancelButtonLabel": "Cancel",
+                        "friendlyDisplay": {
+                            "settingsJSON": "",
+                            "enabled": false
+                        },
+                        "showPreDefinedDates": false,
+                        "preDefinedDatesJSON": ""
                     },
                     "column": {
                         "heading": "Id",
@@ -209,7 +206,6 @@
                     "initial_value": "NULL",
                     "BreakType": "None",
                     "nCols": 1,
-                    "columnQBEOptionsJSON": "",
                     "link": {
                         "StaticImageInlineStyle": "border-style: none;",
                         "DisplayType": "Value in Field",
@@ -271,12 +267,13 @@
                     "displayODFlat": "{F=Tahoma,8}{I:'a5_blue_text'}{T=.2}{C=}{DATA=Id_MonitoreoSintomas_Global}Id_MonitoreoSintomas_Global",
                     "scope": "Local",
                     "tmplTxtComputed": true,
-                    "tmplTxt": "with tmpl.field_info[_fieldNumber_]\n\t.Fieldname = \"Id_MonitoreoSintomas_Global\"\n\t.Scope = \"Local\"\n\t.DisplayFormat = \"\"\n\t.DisplayUnFormat = \"\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .f.\n\t.portableType = \"Integer32\"\n\t.nativeType = \"\"\n\t.Type = \"N\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Varname = \"ID_MONITOREOSINTOMAS_GLOBAL\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"Label\"\n\t.Label.InLineStyle = \"text-align: right;\"\n\t.Label.ClassName = \"\"\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .f.\n\t.BaseFieldExpression = \"N_MonitoreoSintomas_Global.Id_MonitoreoSintomas_Global\"\n\t.SourceAlias = \"N_MonitoreoSintomas_Global\"\n\t.Column.Heading = \"Id\"\n\t.Column.Sort = \"N_MonitoreoSintomas_Global.Id_MonitoreoSintomas_Global\"\n\t.Column.FirstClickDirection = \"A\"\nend with\n\n\n\n\n",
+                    "tmplTxt": "with tmpl.field_info[_fieldNumber_]\n\t.Fieldname = \"Id_MonitoreoSintomas_Global\"\n\t.Scope = \"Local\"\n\t.DisplayFormat = \"\"\n\t.DisplayUnFormat = \"\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .f.\n\t.portableType = \"Integer32\"\n\t.nativeType = \"\"\n\t.Type = \"N\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Varname = \"ID_MONITOREOSINTOMAS_GLOBAL\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"Label\"\n\t.Label.InLineStyle = \"text-align: right;\"\n\t.Label.ClassName = \"\"\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .f.\n\t.BaseFieldExpression = \"N_MonitoreoSintomas_Global.Id_MonitoreoSintomas_Global\"\n\t.SourceAlias = \"N_MonitoreoSintomas_Global\"\n\t.Column.Heading = \"Id\"\n\t.Column.Sort = \"N_MonitoreoSintomas_Global.Id_MonitoreoSintomas_Global\"\n\t.Column.FirstClickDirection = \"A\"\nend with\n\n\n\n\n\n",
                     "SearchExpression": "N_MonitoreoSintomas_Global.Id_Sintoma_FK",
-                    "parentContainer": -1,
-                    "repeatingSectionParentId": -1,
                     "displayODtree": "{F=Tahoma,8}{I:'$a5_control_field'} {C=}{DATA=Id_MonitoreoGlobal_FK}Id_MonitoreoGlobal_FK",
-                    "index": 3000
+                    "index": 3000,
+                    "repeatingSectionParentId": -1,
+                    "parentContainer": -1,
+                    "columnQBEOptionsJSON": ""
                 },
                 {
                     "fieldname": "Id_MonitoreoGlobal_FK",
@@ -345,11 +342,11 @@
                     },
                     "TextBox": {
                         "InLineStyle": "text-align: right;",
-                        "className": "",
                         "Size": 20,
-                        "readonly": false,
                         "MaxLength": 20,
-                        "stylefieldiferror": true
+                        "stylefieldiferror": true,
+                        "className": "",
+                        "readonly": false
                     },
                     "Watermark": {
                         "text": "<FieldLabel>"
@@ -366,9 +363,9 @@
                                 "width": "2in"
                             },
                             "style": "font: 9pt Arial;",
+                            "editButtonText": "Edit...",
                             "toolbaricons": "",
-                            "toolbardefinition": "",
-                            "editButtonText": "Edit..."
+                            "toolbardefinition": ""
                         }
                     },
                     "radiobutton": {
@@ -407,12 +404,6 @@
                         "OpenMethod": "ClickIcon",
                         "UseComboBoxes": true,
                         "DateFormat": "<DefaultTimeFormat>",
-                        "friendlyDisplay": {
-                            "settingsJSON": "",
-                            "enabled": false
-                        },
-                        "showPreDefinedDates": false,
-                        "preDefinedDatesJSON": "",
                         "LowYear": 1950,
                         "HighYear": 2050,
                         "SwitchYear": 20,
@@ -420,7 +411,13 @@
                         "showDaysOfWeek": true,
                         "showTodayButton": true,
                         "OKButtonLabel": "OK",
-                        "CancelButtonLabel": "Cancel"
+                        "CancelButtonLabel": "Cancel",
+                        "friendlyDisplay": {
+                            "settingsJSON": "",
+                            "enabled": false
+                        },
+                        "showPreDefinedDates": false,
+                        "preDefinedDatesJSON": ""
                     },
                     "column": {
                         "Hide": true,
@@ -433,7 +430,6 @@
                     "initial_value": "NULL",
                     "BreakType": "None",
                     "nCols": 1,
-                    "columnQBEOptionsJSON": "",
                     "link": {
                         "StaticImageInlineStyle": "border-style: none;",
                         "DisplayType": "Value in Field",
@@ -495,12 +491,13 @@
                     "displayODFlat": "{F=Tahoma,8}{I:'a5_blue_text'}{T=.2}{C=#130,130,130}{DATA=Id_MonitoreoGlobal_FK}Id_MonitoreoGlobal_FK",
                     "scope": "Local",
                     "tmplTxtComputed": true,
-                    "tmplTxt": "with tmpl.field_info[_fieldNumber_]\n\t.Fieldname = \"Id_MonitoreoGlobal_FK\"\n\t.Scope = \"Local\"\n\t.DisplayFormat = \"\"\n\t.DisplayUnFormat = \"\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .f.\n\t.portableType = \"Integer32\"\n\t.nativeType = \"\"\n\t.Type = \"N\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Varname = \"ID_MONITOREOGLOBAL_FK\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"Label\"\n\t.Label.InLineStyle = \"text-align: right;\"\n\t.Label.ClassName = \"\"\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .t.\n\t.BaseFieldExpression = \"N_MonitoreoSintomas_Global.Id_MonitoreoGlobal_FK\"\n\t.SourceAlias = \"N_MonitoreoSintomas_Global\"\n\t.Column.Heading = \"Id Monitoreo Global FK\"\nend with\n\n\n\n\n",
+                    "tmplTxt": "with tmpl.field_info[_fieldNumber_]\n\t.Fieldname = \"Id_MonitoreoGlobal_FK\"\n\t.Scope = \"Local\"\n\t.DisplayFormat = \"\"\n\t.DisplayUnFormat = \"\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .f.\n\t.portableType = \"Integer32\"\n\t.nativeType = \"\"\n\t.Type = \"N\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Varname = \"ID_MONITOREOGLOBAL_FK\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"Label\"\n\t.Label.InLineStyle = \"text-align: right;\"\n\t.Label.ClassName = \"\"\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .t.\n\t.BaseFieldExpression = \"N_MonitoreoSintomas_Global.Id_MonitoreoGlobal_FK\"\n\t.SourceAlias = \"N_MonitoreoSintomas_Global\"\n\t.Column.Heading = \"Id Monitoreo Global FK\"\nend with\n\n\n\n\n\n",
                     "SearchExpression": "N_MonitoreoSintomas_Global.Id_Sintoma_FK",
-                    "parentContainer": -1,
-                    "repeatingSectionParentId": -1,
                     "displayODtree": "{F=Tahoma,8}{I:'$a5_control_field'} {C=}{DATA=Id_MonitoreoGlobal_FK}Id_MonitoreoGlobal_FK",
-                    "index": 3000
+                    "index": 3000,
+                    "repeatingSectionParentId": -1,
+                    "parentContainer": -1,
+                    "columnQBEOptionsJSON": ""
                 },
                 {
                     "fieldname": "Id_Sintoma_FK",
@@ -569,11 +566,11 @@
                     },
                     "TextBox": {
                         "InLineStyle": "text-align: right;",
-                        "className": "",
                         "Size": 20,
-                        "readonly": false,
                         "MaxLength": 20,
-                        "stylefieldiferror": true
+                        "stylefieldiferror": true,
+                        "className": "",
+                        "readonly": false
                     },
                     "Watermark": {
                         "text": "<FieldLabel>"
@@ -590,9 +587,9 @@
                                 "width": "2in"
                             },
                             "style": "font: 9pt Arial;",
+                            "editButtonText": "Edit...",
                             "toolbaricons": "",
-                            "toolbardefinition": "",
-                            "editButtonText": "Edit..."
+                            "toolbardefinition": ""
                         }
                     },
                     "radiobutton": {
@@ -631,12 +628,6 @@
                         "OpenMethod": "ClickIcon",
                         "UseComboBoxes": true,
                         "DateFormat": "<DefaultTimeFormat>",
-                        "friendlyDisplay": {
-                            "settingsJSON": "",
-                            "enabled": false
-                        },
-                        "showPreDefinedDates": false,
-                        "preDefinedDatesJSON": "",
                         "LowYear": 1950,
                         "HighYear": 2050,
                         "SwitchYear": 20,
@@ -644,7 +635,13 @@
                         "showDaysOfWeek": true,
                         "showTodayButton": true,
                         "OKButtonLabel": "OK",
-                        "CancelButtonLabel": "Cancel"
+                        "CancelButtonLabel": "Cancel",
+                        "friendlyDisplay": {
+                            "settingsJSON": "",
+                            "enabled": false
+                        },
+                        "showPreDefinedDates": false,
+                        "preDefinedDatesJSON": ""
                     },
                     "column": {
                         "Hide": true,
@@ -657,7 +654,6 @@
                     "initial_value": "NULL",
                     "BreakType": "None",
                     "nCols": 1,
-                    "columnQBEOptionsJSON": "",
                     "link": {
                         "StaticImageInlineStyle": "border-style: none;",
                         "DisplayType": "Value in Field",
@@ -719,12 +715,13 @@
                     "displayODFlat": "{F=Tahoma,8}{I:'a5_blue_text'}{T=.2}{C=#130,130,130}{DATA=Id_Sintoma_FK}Id_Sintoma_FK",
                     "scope": "Local",
                     "tmplTxtComputed": true,
-                    "tmplTxt": "with tmpl.field_info[_fieldNumber_]\n\t.Fieldname = \"Id_Sintoma_FK\"\n\t.Scope = \"Local\"\n\t.DisplayFormat = \"\"\n\t.DisplayUnFormat = \"\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .f.\n\t.portableType = \"Integer32\"\n\t.nativeType = \"\"\n\t.Type = \"N\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Varname = \"ID_SINTOMA_FK\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"Label\"\n\t.Label.InLineStyle = \"text-align: right;\"\n\t.Label.ClassName = \"\"\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .t.\n\t.BaseFieldExpression = \"N_MonitoreoSintomas_Global.Id_Sintoma_FK\"\n\t.SourceAlias = \"N_MonitoreoSintomas_Global\"\n\t.Column.Heading = \"Id Sintoma FK\"\nend with\n\n\n\n\n",
+                    "tmplTxt": "with tmpl.field_info[_fieldNumber_]\n\t.Fieldname = \"Id_Sintoma_FK\"\n\t.Scope = \"Local\"\n\t.DisplayFormat = \"\"\n\t.DisplayUnFormat = \"\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .f.\n\t.portableType = \"Integer32\"\n\t.nativeType = \"\"\n\t.Type = \"N\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Varname = \"ID_SINTOMA_FK\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"Label\"\n\t.Label.InLineStyle = \"text-align: right;\"\n\t.Label.ClassName = \"\"\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .t.\n\t.BaseFieldExpression = \"N_MonitoreoSintomas_Global.Id_Sintoma_FK\"\n\t.SourceAlias = \"N_MonitoreoSintomas_Global\"\n\t.Column.Heading = \"Id Sintoma FK\"\nend with\n\n\n\n\n\n",
                     "SearchExpression": "N_MonitoreoSintomas_Global.Id_Sintoma_FK",
-                    "parentContainer": -1,
-                    "repeatingSectionParentId": -1,
                     "displayODtree": "{F=Tahoma,8}{I:'$a5_control_field'} {C=}{DATA=Id_MonitoreoGlobal_FK}Id_MonitoreoGlobal_FK",
-                    "index": 3000
+                    "index": 3000,
+                    "repeatingSectionParentId": -1,
+                    "parentContainer": -1,
+                    "columnQBEOptionsJSON": ""
                 },
                 {
                     "fieldname": "Sintoma",
@@ -772,6 +769,244 @@
                         "nCols": 1
                     },
                     "controltype": "Label",
+                    "Search": {
+                        "FromLabel": "From:",
+                        "ToLabel": "To:"
+                    },
+                    "Label": {
+                        "className": ""
+                    },
+                    "Image": {
+                        "noImageFoundImage": "<None>",
+                        "newRecordImage": "<None>"
+                    },
+                    "calendar": {
+                        "DateFormat": "mm/dd/yy",
+                        "SwitchYear": 20,
+                        "UseComboBoxes": true,
+                        "LowYear": 1950,
+                        "HighYear": 2050
+                    },
+                    "TextBox": {
+                        "Size": 20,
+                        "MaxLength": 20,
+                        "stylefieldiferror": true,
+                        "className": "",
+                        "readonly": false
+                    },
+                    "Watermark": {
+                        "text": "<FieldLabel>"
+                    },
+                    "clientSideFormat": {
+                        "type": "Mask"
+                    },
+                    "TextArea": {
+                        "rows": 2,
+                        "cols": 20,
+                        "RichText": {
+                            "display": {
+                                "height": "1in",
+                                "width": "2in"
+                            },
+                            "style": "font: 9pt Arial;",
+                            "editButtonText": "Edit...",
+                            "toolbaricons": "",
+                            "toolbardefinition": ""
+                        }
+                    },
+                    "radiobutton": {
+                        "datasource": "DBF-Table",
+                        "NotInListRule": "Add to List",
+                        "orientation": "Horizontal",
+                        "columnFlow": "LRTB",
+                        "columnCount": 3,
+                        "rowCount": 3,
+                        "stylefieldiferror": true,
+                        "type": "Static"
+                    },
+                    "CheckBox": {
+                        "type": "Static",
+                        "datasource": "DBF-Table",
+                        "stylefieldiferror": true,
+                        "NotInListRule": "Add to List",
+                        "orientation": "Horizontal",
+                        "columnFlow": "LRTB",
+                        "columnCount": 3,
+                        "rowCount": 3,
+                        "initial_value": "False"
+                    },
+                    "connection_type": "Access Database",
+                    "dropdownbox": {
+                        "Size": 1,
+                        "type": "Static",
+                        "selectStyle": "Single",
+                        "datasource": "DBF-Table",
+                        "stylefieldiferror": true,
+                        "NotInListRule": "Add to List",
+                        "fieldNameOfFieldLinkedToParentControl": "<Auto>",
+                        "methodForComputingCascadingFilter": "<Auto>"
+                    },
+                    "DatePicker": {
+                        "OpenMethod": "ClickIcon",
+                        "UseComboBoxes": true,
+                        "DateFormat": "<DefaultTimeFormat>",
+                        "LowYear": 1950,
+                        "HighYear": 2050,
+                        "SwitchYear": 20,
+                        "IconNumber": 2,
+                        "showDaysOfWeek": true,
+                        "showTodayButton": true,
+                        "OKButtonLabel": "OK",
+                        "CancelButtonLabel": "Cancel",
+                        "friendlyDisplay": {
+                            "settingsJSON": "",
+                            "enabled": false
+                        },
+                        "showPreDefinedDates": false,
+                        "preDefinedDatesJSON": ""
+                    },
+                    "column": {
+                        "heading": "S&iacute;ntoma",
+                        "LabelPosition": "Left",
+                        "CanSort": true,
+                        "sort": "N_Sintomas.Descripcion",
+                        "firstclickdirection": "Ascending"
+                    },
+                    "initial_value": "NULL",
+                    "BreakType": "None",
+                    "nCols": 1,
+                    "link": {
+                        "StaticImageInlineStyle": "border-style: none;",
+                        "DisplayType": "Value in Field",
+                        "Type": "Field value is link address",
+                        "ajaxWindowType": "Modal-Popup",
+                        "ajaxWindowTitle": "Window",
+                        "ajaxWindowHeight": "3in",
+                        "ajaxWindowWidth": "4in",
+                        "ajaxWindowisResizable": true,
+                        "ajaxWindowWorkingMessage": "Working...",
+                        "ajaxWindowWorkingMessageIcon": "css/A5System/Images/wait.gif",
+                        "ajaxWindowRefreshGridOnClose": "None",
+                        "targetDIVHideHyperlink": "Close"
+                    },
+                    "BaseFieldExpression": "N_Sintomas.Descripcion",
+                    "type": "C",
+                    "ConditionalStyleLevel": "Cell",
+                    "ClientSideConditionalStyleLevel": "Cell",
+                    "Updateable": true,
+                    "TableAlias": "N_Sintomas",
+                    "canBeUsedInWhereClause": true,
+                    "table": "N_Sintomas",
+                    "FieldToUpdate": "Descripcion",
+                    "summary": {
+                        "total": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "count": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "average": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "min": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "max": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "StdDev": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "Var": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "First": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "Last": {
+                            "inlinestyle": "text-align: right;"
+                        }
+                    },
+                    "SourceAlias": "N_Sintomas",
+                    "PortableType": "NationalVaryingCharacter",
+                    "width": 50,
+                    "varname": "Sintoma",
+                    "Display": "Sintoma",
+                    "displayOD": "{F=Tahoma,8}{I:'a5_blue_text'}{T=.2}{C=}{DATA=Sintoma}Sintoma",
+                    "displayODFlat": "{F=Tahoma,8}{I:'a5_blue_text'}{T=.2}{C=}{DATA=Sintoma}Sintoma",
+                    "scope": "Local",
+                    "tmplTxtComputed": true,
+                    "tmplTxt": "with tmpl.field_info[_fieldNumber_]\n\t.Fieldname = \"Sintoma\"\n\t.Scope = \"Local\"\n\t.DisplayFormat = \"\"\n\t.DisplayUnFormat = \"\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .f.\n\t.portableType = \"NationalVaryingCharacter\"\n\t.nativeType = \"\"\n\t.Type = \"C\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Varname = \"SINTOMA\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"Label\"\n\t.Label.InLineStyle = \"\"\n\t.Label.ClassName = \"\"\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .f.\n\t.BaseFieldExpression = \"N_Sintomas.Descripcion\"\n\t.SourceAlias = \"N_Sintomas\"\n\t.Column.Heading = \"S&iacute;ntoma\"\n\t.Column.Sort = \"N_Sintomas.Descripcion\"\n\t.Column.FirstClickDirection = \"A\"\nend with\n\n\n\n\n\n",
+                    "SearchExpression": "N_MonitoreoSintomas_Global.Id_Sintoma_FK",
+                    "displayODtree": "{F=Tahoma,8}{I:'$a5_control_field'} {C=}{DATA=Id_MonitoreoGlobal_FK}Id_MonitoreoGlobal_FK",
+                    "index": 3000,
+                    "repeatingSectionParentId": -1,
+                    "parentContainer": -1,
+                    "columnQBEOptionsJSON": ""
+                },
+                {
+                    "varname": "_Unbound_Image_1",
+                    "Fieldname": "[Image].1",
+                    "Display": "[Image].1",
+                    "controltype": "layout_directive_dynamicimage",
+                    "layout": {
+                        "ControlID": "1",
+                        "Title": "Tab label",
+                        "TabPane": {
+                            "show": true
+                        },
+                        "TabControl": {
+                            "useModernTabs": true,
+                            "Type": "Tab",
+                            "TabPosition": "Top",
+                            "AccordionType": "Single",
+                            "InitialPane": 1,
+                            "BreakType": "After",
+                            "animation": {
+                                "show": {
+                                    "method": "Suggested",
+                                    "speed": "Slow"
+                                },
+                                "hide": {
+                                    "method": "Suggested",
+                                    "speed": "Slow"
+                                }
+                            }
+                        },
+                        "FrameTitle": "Frame Label",
+                        "Frame": {
+                            "BreakType": "After",
+                            "type": "Simple",
+                            "initialState": "Shown"
+                        },
+                        "Container": {
+                            "BreakType": "After"
+                        },
+                        "ImageDefinition": "1=1|a5image:$$generic.add\n",
+                        "ButtonText": "Button",
+                        "HyperlinkText": "Hyperlink",
+                        "Spacer": {
+                            "Horizontal": ".1in",
+                            "Vertical": ".1in"
+                        },
+                        "nCols": 1
+                    },
+                    "column": {
+                        "LabelPosition": "Left",
+                        "firstclickdirection": "Ascending"
+                    },
+                    "BreakType": "None",
+                    "displayOD": "{F=Tahoma,8}{I:'$$generic.image'}{T=.2}{C=}{DATA=[Image].1}[Image].1",
+                    "displayODFlat": "{F=Tahoma,8}{I:'$$generic.image'}{T=.2}{C=}{DATA=[Image].1}[Image].1",
+                    "showHelpIcon": "None",
+                    "helpIconBehavior": "ShowHelpOnClick",
+                    "onChange_ValidationOption": "None",
+                    "javascript": {
+                        "onclick": "/* actionJavascript:f8f5412e-9272-4c54-baff-ce1eb5b7f6e0 */\n{grid.componentName}_G__UNBOUND_IMAGE_1_1({grid.rownumber},'{grid.rowId}',this);"
+                    },
+                    "javascriptDeclarationsGlobal": {
+                        "onclick": "window['{grid.componentName}_G__UNBOUND_IMAGE_1_1'] = function(rowNum,rowId,objEle) {\n\nvar tempTbiObj = getTabbedUI();\t\t\n\t\t\n\t\t\nif(tempTbiObj == false) {\n\nvar windowName = 'WINDOW_6242f552_51a5_4c4b_a0c2_e2007f7c04ea_R'+rowId+'';\nvar currWindow = {Grid.object}.getWindow(windowName);\nvar go = new Object();\n\nif(typeof {grid.object} != 'undefined' &&typeof {grid.object}._workingPreviewHost != 'undefined') { \n\tgo._workingPreviewHost = {grid.object}._workingPreviewHost;\n}\n\nif(typeof {grid.object} != 'undefined' && typeof {grid.object}._workingPreviewHost != 'undefined') { \n\tgo._workingPreviewHost = {grid.object}._workingPreviewHost;\n}\n\nif(typeof tbiObj != 'undefined' && typeof tbiObj._workingPreviewHost != 'undefined') { \n\tgo._workingPreviewHost = tbiObj._workingPreviewHost;\n}\n\n\n\n\n\n\ngo.objectId = objEle.id;\ngo.gridName = 'N_Sintomas';\ngo.alias = '{Grid.componentname}_N_Sintomas_xbow_R'+rowId+'';\t\n\ngo.submitCurrentFieldValues = true;\ngo.sourceGridPart = 'G';\ngo.sourceGridRowNumber = rowNum;\ngo.workingMessage = '<img src=\\'css/A5System/Images/wait.gif\\' /><a5:t>Working...</a5:t>';\ngo.userFilter = '';\ngo.baseFilter = '';\ngo.arguments = '';\nif(typeof rowNum == 'undefined') rowNum = '';\ngo.linkDefinition = '';\ngo.placeHolderValues = '';\ngo.userOrder = '';\ngo._thisGridAlias = {grid.object}.gridId;\nif(typeof {grid.object}.gridId != 'undefined') go._thisGridAlias = {grid.object}.gridId;\nif(typeof {grid.object}.dialogId != 'undefined') go._thisGridAlias = {grid.object}.dialogId;\n\n\ngo._thisGridGUID = {grid.object}.componentGUID;\n\ngo._gridCurrentFilter = {grid.object}._gridFilter;\ngo._gridCurrentOrder = {grid.object}._gridOrder;\ngo._gridCurrentArguments = {grid.object}._gridArguments;\ngo._gridCurrentDBType = {grid.object}._gridDBType;\n\ngo.overrideSettings = 'Style_name = `{Grid.style}`'+'||';\ngo.a5_default_path = '{grid.defaultPath}';\n\ngo.flagTimer = 'F';\ngo.flagQueryEcho = 'F';\ngo.flagDebugMode = 'F';\ngo.windowName = windowName;\n\n\n\nif(typeof go.direction == 'undefined') go.direction = 'ltr';\n\n\ngo.showWindowParameters = '';\n\n\n\nif(!currWindow) {\n\tcurrWindow = {Grid.object}.createWindow(windowName,'modeless-resizable',\n\t{\n\tbody: {\n\t\tcontent: {\n\t\t\ttype: 'blank',\n\t\t\telementId: '~'\n\t\t}\n\t},\n\theight: '5in',\n\twidth: '8in',\n\ttitle: {\n\t\thtml: 'Window',\n\t\tlocation: 'top',\n\t\tdirection: 'ltr',\n\t\tshow: true\n\t},\n\tdisableMove: false,\n\ttheme: '{Grid.style}',\n\tonBeforeHide: function() {\nvar isDirty = false;\nif(typeof window['{GRID.COMPONENTNAME}_N_SINTOMAS_XBOW_R'+rowId+'_GridObj'] != 'undefined') {\n\tisDirty = window['{GRID.COMPONENTNAME}_N_SINTOMAS_XBOW_R'+rowId+'_GridObj']._isDirty ||  window['{GRID.COMPONENTNAME}_N_SINTOMAS_XBOW_R'+rowId+'_GridObj']._detailViewIsDirty;\n}\nif(isDirty) {\n\t\twindow['{GRID.COMPONENTNAME}_N_SINTOMAS_XBOW_R'+rowId+'_GridObj']._confirmAction();\n\t\treturn false;\n} else return true;\n}\n}\n\t);\t\t\n\tgo.gridDiv = currWindow.getWindowId('body');\n\t{grid.Object}.openChildGrid(go);\nsetTimeout(function() { {grid.object}.blur();},100);\n\tcurrWindow.show();\n\t\n} else {\n\n\t\tvar ele = '{Grid.componentname}_N_Sintomas_xbow_R'+rowId+'.GRID_PART.FORM_CONTAINER_DIV';\n\tvar pele = $(ele);\n\tif(pele) pele.innerHTML = '<img src=\\'css/A5System/Images/wait.gif\\' /> <a5:t>Working...</a5:t>';\n\tgo.gridDiv = currWindow.getWindowId('body');\n\tgo.parentGridId = '{grid.componentname}';\n\t\n\twindow['{GRID.COMPONENTNAME}_N_SINTOMAS_XBOW_R'+rowId+'_GridObj'].synchronizeGrid(go);\n\nsetTimeout(function() { {grid.object}.blur();},100);\n\n\t\n\n\t\n};\n\n} else {\n\tvar go = new Object();\n\nif(typeof {grid.object} != 'undefined' &&typeof {grid.object}._workingPreviewHost != 'undefined') { \n\tgo._workingPreviewHost = {grid.object}._workingPreviewHost;\n}\n\nif(typeof {grid.object} != 'undefined' && typeof {grid.object}._workingPreviewHost != 'undefined') { \n\tgo._workingPreviewHost = {grid.object}._workingPreviewHost;\n}\n\nif(typeof tbiObj != 'undefined' && typeof tbiObj._workingPreviewHost != 'undefined') { \n\tgo._workingPreviewHost = tbiObj._workingPreviewHost;\n}\n\n\n\n\n\n\ngo.objectId = objEle.id;\ngo.gridName = 'N_Sintomas';\ngo.alias = '{Grid.componentname}_N_Sintomas_xbow_R'+rowId+'';\t\n\ngo.submitCurrentFieldValues = true;\ngo.sourceGridPart = 'G';\ngo.sourceGridRowNumber = rowNum;\ngo.workingMessage = '<img src=\\'css/A5System/Images/wait.gif\\' /><a5:t>Working...</a5:t>';\ngo.userFilter = '';\ngo.baseFilter = '';\ngo.arguments = '';\nif(typeof rowNum == 'undefined') rowNum = '';\ngo.linkDefinition = '';\ngo.placeHolderValues = '';\ngo.userOrder = '';\ngo._thisGridAlias = {grid.object}.gridId;\nif(typeof {grid.object}.gridId != 'undefined') go._thisGridAlias = {grid.object}.gridId;\nif(typeof {grid.object}.dialogId != 'undefined') go._thisGridAlias = {grid.object}.dialogId;\n\n\ngo._thisGridGUID = {grid.object}.componentGUID;\n\ngo._gridCurrentFilter = {grid.object}._gridFilter;\ngo._gridCurrentOrder = {grid.object}._gridOrder;\ngo._gridCurrentArguments = {grid.object}._gridArguments;\ngo._gridCurrentDBType = {grid.object}._gridDBType;\n\ngo.overrideSettings = 'Style_name = `{Grid.style}`'+'||';\ngo.a5_default_path = '{grid.defaultPath}';\n\ngo.flagTimer = 'F';\ngo.flagQueryEcho = 'F';\ngo.flagDebugMode = 'F';\n\n\n\nif(typeof go.direction == 'undefined') go.direction = 'ltr';\n\n\n\n\tvar randString = Date.parse(new Date().toString())\n\tif(typeof {grid.object}.gridId != 'undefined'){\n\t\tvar rowKey = {Grid.object}._getCurrentKey(rowNum);\n\t\tif(rowKey!=''){\n\t\t\trowKey = rowKey.replace(/\\|/g,'XYX');\n\t\t\trowKey = rowKey.replace(/[^a-zA-Z$0-9]+/g,''); \n\t\t\tgo.alias = '{Grid.componentname}_N_Sintomas_xbow'+rowKey+'';\n\t\t}else{\n\t\t \tgo.alias = '{Grid.componentname}_N_Sintomas_xbow_R'+randString+'';\n\t\t}\n\t} else {\n\t\tgo.alias = '{Grid.componentname}_N_Sintomas_xbow_'+randString;\n\t}\n\t\n\tpaneName = go.alias.toUpperCase();\n\t\n\tpaneName = paneName + go.placeholderValues;\n\tpaneName = paneName.toUpperCase();\n\t\n\t\n\tvar paneTitle = 'S&iacute;ntomas';\n\ttempTbiObj.add({title: paneTitle , name : paneName, type:'grid', data: go    }); \n\t\n\tvar xObj = {grid.object};\n\tif(typeof xObj != 'undefined') {\n\t\tsetTimeout(function() { {grid.object}.blur();},100);\n\t}\n\t\n\t\n\n}\n\n}"
+                    },
                     "Search": {
                         "FromLabel": "From:",
                         "ToLabel": "To:"
@@ -852,7 +1087,7 @@
                     "DatePicker": {
                         "OpenMethod": "ClickIcon",
                         "UseComboBoxes": true,
-                        "DateFormat": "<DefaultTimeFormat>",
+                        "DateFormat": "<Default>",
                         "friendlyDisplay": {
                             "settingsJSON": "",
                             "enabled": false
@@ -868,15 +1103,7 @@
                         "OKButtonLabel": "OK",
                         "CancelButtonLabel": "Cancel"
                     },
-                    "column": {
-                        "heading": "S&iacute;ntoma",
-                        "LabelPosition": "Left",
-                        "CanSort": true,
-                        "sort": "N_Sintomas.Descripcion",
-                        "firstclickdirection": "Ascending"
-                    },
                     "initial_value": "NULL",
-                    "BreakType": "None",
                     "nCols": 1,
                     "columnQBEOptionsJSON": "",
                     "link": {
@@ -893,15 +1120,9 @@
                         "ajaxWindowRefreshGridOnClose": "None",
                         "targetDIVHideHyperlink": "Close"
                     },
-                    "BaseFieldExpression": "N_Sintomas.Descripcion",
-                    "type": "C",
                     "ConditionalStyleLevel": "Cell",
                     "ClientSideConditionalStyleLevel": "Cell",
-                    "Updateable": true,
-                    "TableAlias": "N_Sintomas",
                     "canBeUsedInWhereClause": true,
-                    "table": "N_Sintomas",
-                    "FieldToUpdate": "Descripcion",
                     "summary": {
                         "total": {
                             "inlinestyle": "text-align: right;"
@@ -934,18 +1155,14 @@
                     "SourceAlias": "N_Sintomas",
                     "PortableType": "NationalVaryingCharacter",
                     "width": 50,
-                    "varname": "Sintoma",
-                    "Display": "Sintoma",
-                    "displayOD": "{F=Tahoma,8}{I:'a5_blue_text'}{T=.2}{C=}{DATA=Sintoma}Sintoma",
-                    "displayODFlat": "{F=Tahoma,8}{I:'a5_blue_text'}{T=.2}{C=}{DATA=Sintoma}Sintoma",
                     "scope": "Local",
                     "tmplTxtComputed": true,
-                    "tmplTxt": "with tmpl.field_info[_fieldNumber_]\n\t.Fieldname = \"Sintoma\"\n\t.Scope = \"Local\"\n\t.DisplayFormat = \"\"\n\t.DisplayUnFormat = \"\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .f.\n\t.portableType = \"NationalVaryingCharacter\"\n\t.nativeType = \"\"\n\t.Type = \"C\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Varname = \"SINTOMA\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"Label\"\n\t.Label.InLineStyle = \"\"\n\t.Label.ClassName = \"\"\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .f.\n\t.BaseFieldExpression = \"N_Sintomas.Descripcion\"\n\t.SourceAlias = \"N_Sintomas\"\n\t.Column.Heading = \"S&iacute;ntoma\"\n\t.Column.Sort = \"N_Sintomas.Descripcion\"\n\t.Column.FirstClickDirection = \"A\"\nend with\n\n\n\n\n",
+                    "tmplTxt": "with tmpl.field_info[_fieldNumber_]\n\t.Controltype = \"Unbound_DynamicImage\"\n\t.Fieldname = \"_Unbound_DynamicImage_1\"\n\t.Varname = \"_Unbound_DynamicImage_1\"\n\t.ImageDefinition = <<%txt%\n1=1|a5image:$$generic.add\n%txt%\n\t.DynamicImage.Alt = \"\"\n\t.Column.CanSort = .f.\n\t.Column.Sort = \"\"\n\t.Column.Heading = \"\"\n\t.Column.LabelInLineStyle = \"\"\n\t.Column.heading_left = \"\"\n\t.Column.InLineStyle = \"\"\n\t.BreakType = \"None\"\n\t.DynamicImage.class = \"\"\n\t.DynamicImage.style = \"\"\n\t.Column.Hide = .f.\n\t.Column.LabelPosition = \"Left\"\n\t.nCols = 1\n\t.javascript.onclick = <<%txt%\n/* actionJavascript:f8f5412e-9272-4c54-baff-ce1eb5b7f6e0 */\n{grid.componentName}_G__UNBOUND_IMAGE_1_1({grid.rownumber},'{grid.rowId}',this);%txt%\n\t.javascriptDeclarationsGlobal.onclick = <<%txt%\nwindow['{grid.componentName}_G__UNBOUND_IMAGE_1_1'] = function(rowNum,rowId,objEle) {\nvar tempTbiObj = getTabbedUI();\t\t\nif(tempTbiObj == false) {\nvar windowName = 'WINDOW_6242f552_51a5_4c4b_a0c2_e2007f7c04ea_R'+rowId+'';\nvar currWindow = {Grid.object}.getWindow(windowName);\nvar go = new Object();\nif(typeof {grid.object} != 'undefined' &&typeof {grid.object}._workingPreviewHost != 'undefined') { \n\tgo._workingPreviewHost = {grid.object}._workingPreviewHost;\n}\nif(typeof {grid.object} != 'undefined' && typeof {grid.object}._workingPreviewHost != 'undefined') { \n\tgo._workingPreviewHost = {grid.object}._workingPreviewHost;\n}\nif(typeof tbiObj != 'undefined' && typeof tbiObj._workingPreviewHost != 'undefined') { \n\tgo._workingPreviewHost = tbiObj._workingPreviewHost;\n}\ngo.objectId = objEle.id;\ngo.gridName = 'N_Sintomas';\ngo.alias = '{Grid.componentname}_N_Sintomas_xbow_R'+rowId+'';\t\ngo.submitCurrentFieldValues = true;\ngo.sourceGridPart = 'G';\ngo.sourceGridRowNumber = rowNum;\ngo.workingMessage = '<img src=\\'css/A5System/Images/wait.gif\\' /><a5:t>Working...</a5:t>';\ngo.userFilter = '';\ngo.baseFilter = '';\ngo.arguments = '';\nif(typeof rowNum == 'undefined') rowNum = '';\ngo.linkDefinition = '';\ngo.placeHolderValues = '';\ngo.userOrder = '';\ngo._thisGridAlias = {grid.object}.gridId;\nif(typeof {grid.object}.gridId != 'undefined') go._thisGridAlias = {grid.object}.gridId;\nif(typeof {grid.object}.dialogId != 'undefined') go._thisGridAlias = {grid.object}.dialogId;\ngo._thisGridGUID = {grid.object}.componentGUID;\ngo._gridCurrentFilter = {grid.object}._gridFilter;\ngo._gridCurrentOrder = {grid.object}._gridOrder;\ngo._gridCurrentArguments = {grid.object}._gridArguments;\ngo._gridCurrentDBType = {grid.object}._gridDBType;\ngo.overrideSettings = 'Style_name = `{Grid.style}`'+'||';\ngo.a5_default_path = '{grid.defaultPath}';\ngo.flagTimer = 'F';\ngo.flagQueryEcho = 'F';\ngo.flagDebugMode = 'F';\ngo.windowName = windowName;\nif(typeof go.direction == 'undefined') go.direction = 'ltr';\ngo.showWindowParameters = '';\nif(!currWindow) {\n\tcurrWindow = {Grid.object}.createWindow(windowName,'modeless-resizable',\n\t{\n\tbody: {\n\t\tcontent: {\n\t\t\ttype: 'blank',\n\t\t\telementId: '~'\n\t\t}\n\t},\n\theight: '5in',\n\twidth: '8in',\n\ttitle: {\n\t\thtml: 'Window',\n\t\tlocation: 'top',\n\t\tdirection: 'ltr',\n\t\tshow: true\n\t},\n\tdisableMove: false,\n\ttheme: '{Grid.style}',\n\tonBeforeHide: function() {\nvar isDirty = false;\nif(typeof window['{GRID.COMPONENTNAME}_N_SINTOMAS_XBOW_R'+rowId+'_GridObj'] != 'undefined') {\n\tisDirty = window['{GRID.COMPONENTNAME}_N_SINTOMAS_XBOW_R'+rowId+'_GridObj']._isDirty ||  window['{GRID.COMPONENTNAME}_N_SINTOMAS_XBOW_R'+rowId+'_GridObj']._detailViewIsDirty;\n}\nif(isDirty) {\n\t\twindow['{GRID.COMPONENTNAME}_N_SINTOMAS_XBOW_R'+rowId+'_GridObj']._confirmAction();\n\t\treturn false;\n} else return true;\n}\n}\n\t);\t\t\n\tgo.gridDiv = currWindow.getWindowId('body');\n\t{grid.Object}.openChildGrid(go);\nsetTimeout(function() { {grid.object}.blur();},100);\n\tcurrWindow.show();\n} else {\n\t\tvar ele = '{Grid.componentname}_N_Sintomas_xbow_R'+rowId+'.GRID_PART.FORM_CONTAINER_DIV';\n\tvar pele = $(ele);\n\tif(pele) pele.innerHTML = '<img src=\\'css/A5System/Images/wait.gif\\' /> <a5:t>Working...</a5:t>';\n\tgo.gridDiv = currWindow.getWindowId('body');\n\tgo.parentGridId = '{grid.componentname}';\n\twindow['{GRID.COMPONENTNAME}_N_SINTOMAS_XBOW_R'+rowId+'_GridObj'].synchronizeGrid(go);\nsetTimeout(function() { {grid.object}.blur();},100);\n};\n} else {\n\tvar go = new Object();\nif(typeof {grid.object} != 'undefined' &&typeof {grid.object}._workingPreviewHost != 'undefined') { \n\tgo._workingPreviewHost = {grid.object}._workingPreviewHost;\n}\nif(typeof {grid.object} != 'undefined' && typeof {grid.object}._workingPreviewHost != 'undefined') { \n\tgo._workingPreviewHost = {grid.object}._workingPreviewHost;\n}\nif(typeof tbiObj != 'undefined' && typeof tbiObj._workingPreviewHost != 'undefined') { \n\tgo._workingPreviewHost = tbiObj._workingPreviewHost;\n}\ngo.objectId = objEle.id;\ngo.gridName = 'N_Sintomas';\ngo.alias = '{Grid.componentname}_N_Sintomas_xbow_R'+rowId+'';\t\ngo.submitCurrentFieldValues = true;\ngo.sourceGridPart = 'G';\ngo.sourceGridRowNumber = rowNum;\ngo.workingMessage = '<img src=\\'css/A5System/Images/wait.gif\\' /><a5:t>Working...</a5:t>';\ngo.userFilter = '';\ngo.baseFilter = '';\ngo.arguments = '';\nif(typeof rowNum == 'undefined') rowNum = '';\ngo.linkDefinition = '';\ngo.placeHolderValues = '';\ngo.userOrder = '';\ngo._thisGridAlias = {grid.object}.gridId;\nif(typeof {grid.object}.gridId != 'undefined') go._thisGridAlias = {grid.object}.gridId;\nif(typeof {grid.object}.dialogId != 'undefined') go._thisGridAlias = {grid.object}.dialogId;\ngo._thisGridGUID = {grid.object}.componentGUID;\ngo._gridCurrentFilter = {grid.object}._gridFilter;\ngo._gridCurrentOrder = {grid.object}._gridOrder;\ngo._gridCurrentArguments = {grid.object}._gridArguments;\ngo._gridCurrentDBType = {grid.object}._gridDBType;\ngo.overrideSettings = 'Style_name = `{Grid.style}`'+'||';\ngo.a5_default_path = '{grid.defaultPath}';\ngo.flagTimer = 'F';\ngo.flagQueryEcho = 'F';\ngo.flagDebugMode = 'F';\nif(typeof go.direction == 'undefined') go.direction = 'ltr';\n\tvar randString = Date.parse(new Date().toString())\n\tif(typeof {grid.object}.gridId != 'undefined'){\n\t\tvar rowKey = {Grid.object}._getCurrentKey(rowNum);\n\t\tif(rowKey!=''){\n\t\t\trowKey = rowKey.replace(/\\|/g,'XYX');\n\t\t\trowKey = rowKey.replace(/[^a-zA-Z$0-9]+/g,''); \n\t\t\tgo.alias = '{Grid.componentname}_N_Sintomas_xbow'+rowKey+'';\n\t\t}else{\n\t\t \tgo.alias = '{Grid.componentname}_N_Sintomas_xbow_R'+randString+'';\n\t\t}\n\t} else {\n\t\tgo.alias = '{Grid.componentname}_N_Sintomas_xbow_'+randString;\n\t}\n\tpaneName = go.alias.toUpperCase();\n\tpaneName = paneName + go.placeholderValues;\n\tpaneName = paneName.toUpperCase();\n\tvar paneTitle = 'S&iacute;ntomas';\n\ttempTbiObj.add({title: paneTitle , name : paneName, type:'grid', data: go    }); \n\tvar xObj = {grid.object};\n\tif(typeof xObj != 'undefined') {\n\t\tsetTimeout(function() { {grid.object}.blur();},100);\n\t}\n}\n}%txt%\nend with\n",
                     "SearchExpression": "N_MonitoreoSintomas_Global.Id_Sintoma_FK",
-                    "parentContainer": -1,
-                    "repeatingSectionParentId": -1,
                     "displayODtree": "{F=Tahoma,8}{I:'$a5_control_field'} {C=}{DATA=Id_MonitoreoGlobal_FK}Id_MonitoreoGlobal_FK",
-                    "index": 3000
+                    "index": 3000,
+                    "repeatingSectionParentId": -1,
+                    "parentContainer": -1
                 }
             ]
         },
@@ -1028,9 +1245,6 @@
             "a_fields": [
                 {
                     "fieldname": "Id_MonitoreoSintomas_Global",
-                    "showHelpIcon": "None",
-                    "helpIconBehavior": "ShowHelpOnClick",
-                    "onChange_ValidationOption": "None",
                     "Layout": {
                         "Title": "Tab label",
                         "TabPane": {
@@ -1093,11 +1307,11 @@
                     },
                     "TextBox": {
                         "InLineStyle": "text-align: right;",
-                        "className": "",
                         "Size": 20,
-                        "readonly": false,
                         "MaxLength": 20,
-                        "stylefieldiferror": true
+                        "stylefieldiferror": true,
+                        "className": "",
+                        "readonly": false
                     },
                     "Watermark": {
                         "text": "<FieldLabel>"
@@ -1117,20 +1331,20 @@
                                 "width": "2in"
                             },
                             "style": "font: 9pt Arial;",
+                            "editButtonText": "Edit...",
                             "toolbaricons": "",
-                            "toolbardefinition": "",
-                            "editButtonText": "Edit..."
+                            "toolbardefinition": ""
                         }
                     },
                     "radiobutton": {
                         "datasource": "DBF-Table",
                         "NotInListRule": "Add to List",
                         "orientation": "Horizontal",
+                        "stylefieldiferror": true,
+                        "type": "Static",
                         "columnFlow": "LRTB",
                         "columnCount": 3,
-                        "rowCount": 3,
-                        "stylefieldiferror": true,
-                        "type": "Static"
+                        "rowCount": 3
                     },
                     "CheckBox": {
                         "type": "Static",
@@ -1138,10 +1352,10 @@
                         "stylefieldiferror": true,
                         "NotInListRule": "Add to List",
                         "orientation": "Horizontal",
+                        "initial_value": "False",
                         "columnFlow": "LRTB",
                         "columnCount": 3,
-                        "rowCount": 3,
-                        "initial_value": "False"
+                        "rowCount": 3
                     },
                     "connection_type": "Access Database",
                     "dropdownbox": {
@@ -1155,23 +1369,23 @@
                         "methodForComputingCascadingFilter": "<Auto>"
                     },
                     "DatePicker": {
-                        "OpenMethod": "ClickIcon",
                         "UseComboBoxes": true,
                         "DateFormat": "<DefaultTimeFormat>",
+                        "LowYear": 1950,
+                        "HighYear": 2050,
+                        "SwitchYear": 20,
+                        "IconNumber": 2,
+                        "OpenMethod": "ClickIcon",
+                        "showDaysOfWeek": true,
+                        "OKButtonLabel": "OK",
+                        "CancelButtonLabel": "Cancel",
+                        "showTodayButton": true,
                         "friendlyDisplay": {
                             "settingsJSON": "",
                             "enabled": false
                         },
                         "showPreDefinedDates": false,
-                        "preDefinedDatesJSON": "",
-                        "LowYear": 1950,
-                        "HighYear": 2050,
-                        "SwitchYear": 20,
-                        "IconNumber": 2,
-                        "showDaysOfWeek": true,
-                        "showTodayButton": true,
-                        "OKButtonLabel": "OK",
-                        "CancelButtonLabel": "Cancel"
+                        "preDefinedDatesJSON": ""
                     },
                     "column": {
                         "heading": "Id:",
@@ -1183,7 +1397,6 @@
                     "initial_value": "NULL",
                     "BreakType": "None",
                     "nCols": 1,
-                    "columnQBEOptionsJSON": "",
                     "link": {
                         "StaticImageInlineStyle": "border-style: none;",
                         "DisplayType": "Value in Field",
@@ -1236,26 +1449,27 @@
                             "inlinestyle": "text-align: right;"
                         }
                     },
-                    "SourceAlias": "N_MonitoreoSintomas_Global",
-                    "PortableType": "Integer32",
+                    "display": "Id_MonitoreoSintomas_Global",
                     "varname": "Id_MonitoreoSintomas_Global",
-                    "Display": "Id_MonitoreoSintomas_Global",
-                    "displayOD": "{F=Tahoma,8}{I:'a5_blue_text'} {C=}{DATA=Id_MonitoreoSintomas_Global}Id_MonitoreoSintomas_Global",
-                    "displayODFlat": "{F=Tahoma,8}{I:'a5_blue_text'}{T=.2}{C=}{DATA=Id_MonitoreoSintomas_Global}Id_MonitoreoSintomas_Global",
                     "scope": "Local",
                     "tmplTxtComputed": true,
-                    "tmplTxt": "with tmpl.detailfield_info[_fieldNumber_]\n\t.Fieldname = \"Id_MonitoreoSintomas_Global\"\n\t.Scope = \"Local\"\n\t.DisplayFormat = \"\"\n\t.DisplayUnFormat = \"\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .f.\n\t.portableType = \"Integer32\"\n\t.nativeType = \"\"\n\t.Type = \"N\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Updateable = .f.\n\t.Varname = \"ID_MONITOREOSINTOMAS_GLOBAL\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"Label\"\n\t.Label.InLineStyle = \"text-align: right;\"\n\t.Label.ClassName = \"\"\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .f.\n\t.BaseFieldExpression = \"N_MonitoreoSintomas_Global.Id_MonitoreoSintomas_Global\"\n\t.SourceAlias = \"N_MonitoreoSintomas_Global\"\n\t.Column.Heading = \"Id:\"\n\t.Column.Sort = \"Id_Monitoreosintomas_Global\"\n\t.Column.FirstClickDirection = \"A\"\nend with\n\n\n\n",
+                    "tmplTxt": "with tmpl.detailfield_info[_fieldNumber_]\n\t.Fieldname = \"Id_MonitoreoSintomas_Global\"\n\t.Scope = \"Local\"\n\t.DisplayFormat = \"\"\n\t.DisplayUnFormat = \"\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .f.\n\t.portableType = \"Integer32\"\n\t.nativeType = \"\"\n\t.Type = \"N\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Updateable = .f.\n\t.Varname = \"ID_MONITOREOSINTOMAS_GLOBAL\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"Label\"\n\t.Label.InLineStyle = \"text-align: right;\"\n\t.Label.ClassName = \"\"\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .f.\n\t.BaseFieldExpression = \"N_MonitoreoSintomas_Global.Id_MonitoreoSintomas_Global\"\n\t.SourceAlias = \"N_MonitoreoSintomas_Global\"\n\t.Column.Heading = \"Id:\"\n\t.Column.Sort = \"Id_Monitoreosintomas_Global\"\n\t.Column.FirstClickDirection = \"A\"\nend with\n\n\n\n\n",
+                    "DisplayOD": "{F=Tahoma,8}{I:'a5_blue_text'} {C=}{DATA=Id_MonitoreoSintomas_Global}Id_MonitoreoSintomas_Global",
+                    "DisplayODFlat": "{F=Tahoma,8}{I:'a5_blue_text'}{T=.2}{C=}{DATA=Id_MonitoreoSintomas_Global}Id_MonitoreoSintomas_Global",
                     "SearchExpression": "N_MonitoreoSintomas_Global.Id_Sintoma_FK",
+                    "displayODtree": "{F=Tahoma,8}{I:'a5_blue_text'} {C=}{DATA=Id_MonitoreoSintomas_Global}Id_MonitoreoSintomas_Global",
+                    "PortableType": "Integer32",
+                    "onChange_ValidationOption": "None",
                     "parentContainer": -1,
                     "repeatingSectionParentId": -1,
-                    "displayODtree": "{F=Tahoma,8}{I:'a5_blue_text'} {C=}{DATA=Id_MonitoreoSintomas_Global}Id_MonitoreoSintomas_Global",
-                    "index": 1000
+                    "showHelpIcon": "None",
+                    "helpIconBehavior": "ShowHelpOnClick",
+                    "SourceAlias": "N_MonitoreoSintomas_Global",
+                    "index": 1000,
+                    "columnQBEOptionsJSON": ""
                 },
                 {
                     "fieldname": "Id_MonitoreoGlobal_FK",
-                    "showHelpIcon": "None",
-                    "helpIconBehavior": "ShowHelpOnClick",
-                    "onChange_ValidationOption": "None",
                     "Layout": {
                         "Title": "Tab label",
                         "TabPane": {
@@ -1318,11 +1532,11 @@
                     },
                     "TextBox": {
                         "InLineStyle": "text-align: right;",
-                        "className": "",
                         "Size": 20,
-                        "readonly": false,
                         "MaxLength": 20,
-                        "stylefieldiferror": true
+                        "stylefieldiferror": true,
+                        "className": "",
+                        "readonly": false
                     },
                     "Watermark": {
                         "text": "<FieldLabel>"
@@ -1342,20 +1556,20 @@
                                 "width": "2in"
                             },
                             "style": "font: 9pt Arial;",
+                            "editButtonText": "Edit...",
                             "toolbaricons": "",
-                            "toolbardefinition": "",
-                            "editButtonText": "Edit..."
+                            "toolbardefinition": ""
                         }
                     },
                     "radiobutton": {
                         "datasource": "DBF-Table",
                         "NotInListRule": "Add to List",
                         "orientation": "Horizontal",
+                        "stylefieldiferror": true,
+                        "type": "Static",
                         "columnFlow": "LRTB",
                         "columnCount": 3,
-                        "rowCount": 3,
-                        "stylefieldiferror": true,
-                        "type": "Static"
+                        "rowCount": 3
                     },
                     "CheckBox": {
                         "type": "Static",
@@ -1363,10 +1577,10 @@
                         "stylefieldiferror": true,
                         "NotInListRule": "Add to List",
                         "orientation": "Horizontal",
+                        "initial_value": "False",
                         "columnFlow": "LRTB",
                         "columnCount": 3,
-                        "rowCount": 3,
-                        "initial_value": "False"
+                        "rowCount": 3
                     },
                     "connection_type": "Access Database",
                     "dropdownbox": {
@@ -1380,23 +1594,23 @@
                         "methodForComputingCascadingFilter": "<Auto>"
                     },
                     "DatePicker": {
-                        "OpenMethod": "ClickIcon",
                         "UseComboBoxes": true,
                         "DateFormat": "<DefaultTimeFormat>",
+                        "LowYear": 1950,
+                        "HighYear": 2050,
+                        "SwitchYear": 20,
+                        "IconNumber": 2,
+                        "OpenMethod": "ClickIcon",
+                        "showDaysOfWeek": true,
+                        "OKButtonLabel": "OK",
+                        "CancelButtonLabel": "Cancel",
+                        "showTodayButton": true,
                         "friendlyDisplay": {
                             "settingsJSON": "",
                             "enabled": false
                         },
                         "showPreDefinedDates": false,
-                        "preDefinedDatesJSON": "",
-                        "LowYear": 1950,
-                        "HighYear": 2050,
-                        "SwitchYear": 20,
-                        "IconNumber": 2,
-                        "showDaysOfWeek": true,
-                        "showTodayButton": true,
-                        "OKButtonLabel": "OK",
-                        "CancelButtonLabel": "Cancel"
+                        "preDefinedDatesJSON": ""
                     },
                     "column": {
                         "Hide": true,
@@ -1409,7 +1623,6 @@
                     "initial_value": "NULL",
                     "BreakType": "None",
                     "nCols": 1,
-                    "columnQBEOptionsJSON": "",
                     "link": {
                         "StaticImageInlineStyle": "border-style: none;",
                         "DisplayType": "Value in Field",
@@ -1462,26 +1675,27 @@
                             "inlinestyle": "text-align: right;"
                         }
                     },
-                    "SourceAlias": "N_MonitoreoSintomas_Global",
-                    "PortableType": "Integer32",
+                    "display": "Id_MonitoreoGlobal_FK",
                     "varname": "Id_MonitoreoGlobal_FK",
-                    "Display": "Id_MonitoreoGlobal_FK",
-                    "displayOD": "{F=Tahoma,8}{I:'$a5_control_field'} {C=#130,130,130}{DATA=Id_MonitoreoGlobal_FK}Id_MonitoreoGlobal_FK",
-                    "displayODFlat": "{F=Tahoma,8}{I:'$a5_control_field'}{T=.2}{C=#130,130,130}{DATA=Id_MonitoreoGlobal_FK}Id_MonitoreoGlobal_FK",
                     "scope": "Local",
                     "tmplTxtComputed": true,
-                    "tmplTxt": "with tmpl.detailfield_info[_fieldNumber_]\n\t.Fieldname = \"Id_MonitoreoGlobal_FK\"\n\t.Scope = \"Local\"\n\t.DisplayFormat = \"\"\n\t.DisplayUnFormat = \"\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .f.\n\t.portableType = \"Integer32\"\n\t.nativeType = \"\"\n\t.Type = \"N\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Updateable = .t.\n\t.TreatBlankAsNull = .f.\n\t.Table_Alias = \"N_MonitoreoSintomas_Global\"\n\t.FieldToUpdate = \"Id_MonitoreoGlobal_FK\"\n\t.Varname = \"ID_MONITOREOGLOBAL_FK\"\n\t.Initial_Value = \"NULL\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"Textbox\"\n\t.Textbox.Size = 20\n\t.Textbox.HTML5Type = \"\"\n\t.Textbox.customAttributes = \"\"\n\t.Textbox.readonly = .f.\n\t.Textbox.MaxLength = 20\n\t.Textbox.InLineStyle = \"text-align: right;\"\n\t.Textbox.className = \"\"\n\t.Textbox.ContainerInlineStyle = \"\"\n\t.Textbox.IsPassword = .f.\n\t.hasWatermark= .f.\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .t.\n\t.BaseFieldExpression = \"N_MonitoreoSintomas_Global.Id_MonitoreoGlobal_FK\"\n\t.SourceAlias = \"N_MonitoreoSintomas_Global\"\n\t.Column.Heading = \"Id Monitoreo Global FK\"\nend with\n\n\n\n",
+                    "tmplTxt": "with tmpl.detailfield_info[_fieldNumber_]\n\t.Fieldname = \"Id_MonitoreoGlobal_FK\"\n\t.Scope = \"Local\"\n\t.DisplayFormat = \"\"\n\t.DisplayUnFormat = \"\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .f.\n\t.portableType = \"Integer32\"\n\t.nativeType = \"\"\n\t.Type = \"N\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Updateable = .t.\n\t.TreatBlankAsNull = .f.\n\t.Table_Alias = \"N_MonitoreoSintomas_Global\"\n\t.FieldToUpdate = \"Id_MonitoreoGlobal_FK\"\n\t.Varname = \"ID_MONITOREOGLOBAL_FK\"\n\t.Initial_Value = \"NULL\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"Textbox\"\n\t.Textbox.Size = 20\n\t.Textbox.HTML5Type = \"\"\n\t.Textbox.customAttributes = \"\"\n\t.Textbox.readonly = .f.\n\t.Textbox.MaxLength = 20\n\t.Textbox.InLineStyle = \"text-align: right;\"\n\t.Textbox.className = \"\"\n\t.Textbox.ContainerInlineStyle = \"\"\n\t.Textbox.IsPassword = .f.\n\t.hasWatermark= .f.\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .t.\n\t.BaseFieldExpression = \"N_MonitoreoSintomas_Global.Id_MonitoreoGlobal_FK\"\n\t.SourceAlias = \"N_MonitoreoSintomas_Global\"\n\t.Column.Heading = \"Id Monitoreo Global FK\"\nend with\n\n\n\n\n",
+                    "DisplayOD": "{F=Tahoma,8}{I:'$a5_control_field'} {C=#130,130,130}{DATA=Id_MonitoreoGlobal_FK}Id_MonitoreoGlobal_FK",
+                    "DisplayODFlat": "{F=Tahoma,8}{I:'$a5_control_field'}{T=.2}{C=#130,130,130}{DATA=Id_MonitoreoGlobal_FK}Id_MonitoreoGlobal_FK",
                     "SearchExpression": "N_MonitoreoSintomas_Global.Id_Sintoma_FK",
+                    "displayODtree": "{F=Tahoma,8}{I:'$a5_control_field'} {C=#130,130,130}{DATA=Id_MonitoreoGlobal_FK}Id_MonitoreoGlobal_FK",
+                    "PortableType": "Integer32",
+                    "onChange_ValidationOption": "None",
                     "parentContainer": -1,
                     "repeatingSectionParentId": -1,
-                    "displayODtree": "{F=Tahoma,8}{I:'$a5_control_field'} {C=#130,130,130}{DATA=Id_MonitoreoGlobal_FK}Id_MonitoreoGlobal_FK",
-                    "index": 3000
+                    "showHelpIcon": "None",
+                    "helpIconBehavior": "ShowHelpOnClick",
+                    "SourceAlias": "N_MonitoreoSintomas_Global",
+                    "index": 3000,
+                    "columnQBEOptionsJSON": ""
                 },
                 {
                     "fieldname": "Id_Sintoma_FK",
-                    "showHelpIcon": "None",
-                    "helpIconBehavior": "ShowHelpOnClick",
-                    "onChange_ValidationOption": "None",
                     "Layout": {
                         "Title": "Tab label",
                         "TabPane": {
@@ -1544,11 +1758,11 @@
                     },
                     "TextBox": {
                         "InLineStyle": "text-align: right;",
-                        "className": "",
                         "Size": 20,
-                        "readonly": false,
                         "MaxLength": 20,
-                        "stylefieldiferror": true
+                        "stylefieldiferror": true,
+                        "className": "",
+                        "readonly": false
                     },
                     "Watermark": {
                         "text": "<FieldLabel>"
@@ -1568,20 +1782,20 @@
                                 "width": "2in"
                             },
                             "style": "font: 9pt Arial;",
+                            "editButtonText": "Edit...",
                             "toolbaricons": "",
-                            "toolbardefinition": "",
-                            "editButtonText": "Edit..."
+                            "toolbardefinition": ""
                         }
                     },
                     "radiobutton": {
                         "datasource": "DBF-Table",
                         "NotInListRule": "Add to List",
                         "orientation": "Horizontal",
+                        "stylefieldiferror": true,
+                        "type": "Static",
                         "columnFlow": "LRTB",
                         "columnCount": 3,
-                        "rowCount": 3,
-                        "stylefieldiferror": true,
-                        "type": "Static"
+                        "rowCount": 3
                     },
                     "CheckBox": {
                         "type": "Static",
@@ -1589,10 +1803,10 @@
                         "stylefieldiferror": true,
                         "NotInListRule": "Add to List",
                         "orientation": "Horizontal",
+                        "initial_value": "False",
                         "columnFlow": "LRTB",
                         "columnCount": 3,
-                        "rowCount": 3,
-                        "initial_value": "False"
+                        "rowCount": 3
                     },
                     "connection_type": "Access Database",
                     "use_saved_connection_string": true,
@@ -1613,23 +1827,23 @@
                         "flagIsDefined": true
                     },
                     "DatePicker": {
-                        "OpenMethod": "ClickIcon",
                         "UseComboBoxes": true,
                         "DateFormat": "<DefaultTimeFormat>",
+                        "LowYear": 1950,
+                        "HighYear": 2050,
+                        "SwitchYear": 20,
+                        "IconNumber": 2,
+                        "OpenMethod": "ClickIcon",
+                        "showDaysOfWeek": true,
+                        "OKButtonLabel": "OK",
+                        "CancelButtonLabel": "Cancel",
+                        "showTodayButton": true,
                         "friendlyDisplay": {
                             "settingsJSON": "",
                             "enabled": false
                         },
                         "showPreDefinedDates": false,
-                        "preDefinedDatesJSON": "",
-                        "LowYear": 1950,
-                        "HighYear": 2050,
-                        "SwitchYear": 20,
-                        "IconNumber": 2,
-                        "showDaysOfWeek": true,
-                        "showTodayButton": true,
-                        "OKButtonLabel": "OK",
-                        "CancelButtonLabel": "Cancel"
+                        "preDefinedDatesJSON": ""
                     },
                     "column": {
                         "heading": "S&iacute;ntoma:",
@@ -1641,7 +1855,6 @@
                     "initial_value": "NULL",
                     "BreakType": "None",
                     "nCols": 1,
-                    "columnQBEOptionsJSON": "",
                     "link": {
                         "StaticImageInlineStyle": "border-style: none;",
                         "DisplayType": "Value in Field",
@@ -1694,20 +1907,24 @@
                             "inlinestyle": "text-align: right;"
                         }
                     },
-                    "SourceAlias": "N_MonitoreoSintomas_Global",
-                    "PortableType": "Integer32",
+                    "display": "Id_Sintoma_FK",
                     "varname": "Id_Sintoma_FK",
-                    "Display": "Id_Sintoma_FK",
-                    "displayOD": "{F=Tahoma,8}{I:'$a5_control_combobox'} {C=}{DATA=Id_Sintoma_FK}Id_Sintoma_FK",
-                    "displayODFlat": "{F=Tahoma,8}{I:'$a5_control_combobox'}{T=.2}{C=}{DATA=Id_Sintoma_FK}Id_Sintoma_FK",
                     "scope": "Local",
                     "tmplTxtComputed": true,
-                    "tmplTxt": "with tmpl.detailfield_info[_fieldNumber_]\n\t.Fieldname = \"Id_Sintoma_FK\"\n\t.Scope = \"Local\"\n\t.DisplayFormat = \"\"\n\t.DisplayUnFormat = \"\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .f.\n\t.portableType = \"Integer32\"\n\t.nativeType = \"\"\n\t.Type = \"N\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Updateable = .t.\n\t.TreatBlankAsNull = .f.\n\t.Table_Alias = \"N_MonitoreoSintomas_Global\"\n\t.FieldToUpdate = \"Id_Sintoma_FK\"\n\t.Varname = \"ID_SINTOMA_FK\"\n\t.Initial_Value = \"NULL\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"DropDownBox\"\n\t.DropdownBox.fieldNameOfFieldLinkedToParentControl = \"<Auto>\"\n\t.DropdownBox.fieldTypeOfFieldLinkedToParentControl = \"\"\n\t.DropdownBox.methodForComputingCascadingFilter = \"<Auto>\"\n\t.DropdownBox.explicitCasacadingFilter = \"\"\n\t.DropdownBox.InLineStyle = \"\"\n\t.DropdownBox.Type = \"Dynamic\"\n\t.DropdownBox.Size = 1\n\t.DropdownBox.selectStyle = \"Single\"\n\t.DropdownBox.NotInListRule = \"Add to List\"\n\t.DropDownBox.Datasource = \"CS\"\n\t.DropDownBox.maxchoices = 0\n\t.DropDownBox.CS.ConnectionString = \"::name::Nibble\"\n\t.DropDownBox.CS.SQL = \"SELECT DISTINCT Descripcion, Id_Sintomas FROM N_Sintomas ORDER BY Descripcion, Id_Sintomas\"\n\t.DropDownBox.DisplayValueField = \"Descripcion\"\n\t.DropDownBox.StoredValueField = \"Id_Sintomas\"\n\t.DropDownBox.DisplayValueFieldType = \"C\"\n\t.DropDownBox.StoredValueFieldType = \"N\"\n\t.DropdownBox.noSelectionDisplayValue = \"\"\n\t.DropdownBox.hasCascadingChoices = .f.\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .f.\n\t.BaseFieldExpression = \"N_MonitoreoSintomas_Global.Id_Sintoma_FK\"\n\t.SourceAlias = \"N_MonitoreoSintomas_Global\"\n\t.Column.Heading = \"S&iacute;ntoma:\"\n\t.Column.Sort = \"Id_Sintoma_Fk\"\n\t.Column.FirstClickDirection = \"A\"\nend with\n\n",
+                    "tmplTxt": "with tmpl.detailfield_info[_fieldNumber_]\n\t.Fieldname = \"Id_Sintoma_FK\"\n\t.Scope = \"Local\"\n\t.DisplayFormat = \"\"\n\t.DisplayUnFormat = \"\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .f.\n\t.portableType = \"Integer32\"\n\t.nativeType = \"\"\n\t.Type = \"N\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Updateable = .t.\n\t.TreatBlankAsNull = .f.\n\t.Table_Alias = \"N_MonitoreoSintomas_Global\"\n\t.FieldToUpdate = \"Id_Sintoma_FK\"\n\t.Varname = \"ID_SINTOMA_FK\"\n\t.Initial_Value = \"NULL\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"DropDownBox\"\n\t.DropdownBox.fieldNameOfFieldLinkedToParentControl = \"<Auto>\"\n\t.DropdownBox.fieldTypeOfFieldLinkedToParentControl = \"\"\n\t.DropdownBox.methodForComputingCascadingFilter = \"<Auto>\"\n\t.DropdownBox.explicitCasacadingFilter = \"\"\n\t.DropdownBox.InLineStyle = \"\"\n\t.DropdownBox.Type = \"Dynamic\"\n\t.DropdownBox.Size = 1\n\t.DropdownBox.selectStyle = \"Single\"\n\t.DropdownBox.NotInListRule = \"Add to List\"\n\t.DropDownBox.Datasource = \"CS\"\n\t.DropDownBox.maxchoices = 0\n\t.DropDownBox.CS.ConnectionString = \"::name::Nibble\"\n\t.DropDownBox.CS.SQL = \"SELECT DISTINCT Descripcion, Id_Sintomas FROM N_Sintomas ORDER BY Descripcion, Id_Sintomas\"\n\t.DropDownBox.DisplayValueField = \"Descripcion\"\n\t.DropDownBox.StoredValueField = \"Id_Sintomas\"\n\t.DropDownBox.DisplayValueFieldType = \"C\"\n\t.DropDownBox.StoredValueFieldType = \"N\"\n\t.DropdownBox.noSelectionDisplayValue = \"\"\n\t.DropdownBox.hasCascadingChoices = .f.\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .f.\n\t.BaseFieldExpression = \"N_MonitoreoSintomas_Global.Id_Sintoma_FK\"\n\t.SourceAlias = \"N_MonitoreoSintomas_Global\"\n\t.Column.Heading = \"S&iacute;ntoma:\"\n\t.Column.Sort = \"Id_Sintoma_Fk\"\n\t.Column.FirstClickDirection = \"A\"\nend with\n\n\n",
+                    "DisplayOD": "{F=Tahoma,8}{I:'$a5_control_combobox'} {C=}{DATA=Id_Sintoma_FK}Id_Sintoma_FK",
+                    "DisplayODFlat": "{F=Tahoma,8}{I:'$a5_control_combobox'}{T=.2}{C=}{DATA=Id_Sintoma_FK}Id_Sintoma_FK",
                     "SearchExpression": "N_MonitoreoSintomas_Global.Id_Sintoma_FK",
+                    "displayODtree": "{F=Tahoma,8}{I:'$a5_control_combobox'} {C=}{DATA=Id_Sintoma_FK}Id_Sintoma_FK",
+                    "PortableType": "Integer32",
+                    "onChange_ValidationOption": "None",
                     "parentContainer": -1,
                     "repeatingSectionParentId": -1,
-                    "displayODtree": "{F=Tahoma,8}{I:'$a5_control_combobox'} {C=}{DATA=Id_Sintoma_FK}Id_Sintoma_FK",
-                    "index": 3001
+                    "showHelpIcon": "None",
+                    "helpIconBehavior": "ShowHelpOnClick",
+                    "SourceAlias": "N_MonitoreoSintomas_Global",
+                    "index": 3001,
+                    "columnQBEOptionsJSON": ""
                 }
             ]
         },
@@ -1788,55 +2005,7 @@
         "searchFields": {
             "a_fields": [
                 {
-                    "fieldname": "Id_MonitoreoSintomas_Global",
-                    "showHelpIcon": "None",
-                    "helpIconBehavior": "ShowHelpOnClick",
-                    "onChange_ValidationOption": "None",
-                    "Layout": {
-                        "Title": "Tab label",
-                        "TabPane": {
-                            "show": true
-                        },
-                        "TabControl": {
-                            "useModernTabs": true,
-                            "Type": "Tab",
-                            "TabPosition": "Top",
-                            "AccordionType": "Single",
-                            "InitialPane": 1,
-                            "BreakType": "After",
-                            "animation": {
-                                "show": {
-                                    "method": "Suggested",
-                                    "speed": "Slow"
-                                },
-                                "hide": {
-                                    "method": "Suggested",
-                                    "speed": "Slow"
-                                }
-                            }
-                        },
-                        "FrameTitle": "Frame Label",
-                        "Frame": {
-                            "BreakType": "After",
-                            "type": "Simple",
-                            "initialState": "Shown"
-                        },
-                        "Container": {
-                            "BreakType": "After"
-                        },
-                        "ButtonText": "Button",
-                        "HyperlinkText": "Hyperlink",
-                        "Spacer": {
-                            "Horizontal": ".1in",
-                            "Vertical": ".1in"
-                        },
-                        "nCols": 1
-                    },
                     "controltype": "TextBox",
-                    "Search": {
-                        "FromLabel": "From:",
-                        "ToLabel": "To:"
-                    },
                     "Label": {
                         "InLineStyle": "text-align: right;",
                         "className": ""
@@ -1845,29 +2014,13 @@
                         "noImageFoundImage": "<None>",
                         "newRecordImage": "<None>"
                     },
-                    "calendar": {
-                        "DateFormat": "mm/dd/yy",
-                        "SwitchYear": 20,
-                        "UseComboBoxes": true,
-                        "LowYear": 1950,
-                        "HighYear": 2050
-                    },
                     "TextBox": {
                         "InLineStyle": "text-align: right; width:2in;",
-                        "className": "",
                         "Size": 40,
-                        "readonly": false,
                         "MaxLength": 200,
-                        "stylefieldiferror": true
-                    },
-                    "Watermark": {
-                        "text": "<FieldLabel>"
-                    },
-                    "clientSideFormat": {
-                        "type": "Mask"
-                    },
-                    "Lookup": {
-                        "Type": "Edit-Combo List"
+                        "stylefieldiferror": true,
+                        "className": "",
+                        "readonly": false
                     },
                     "TextArea": {
                         "rows": 2,
@@ -1878,21 +2031,21 @@
                                 "width": "2in"
                             },
                             "style": "font: 9pt Arial;",
+                            "editButtonText": "Edit...",
                             "css": "",
                             "toolbaricons": "",
-                            "toolbardefinition": "",
-                            "editButtonText": "Edit..."
+                            "toolbardefinition": ""
                         }
                     },
                     "radiobutton": {
                         "datasource": "DBF-Table",
                         "NotInListRule": "Add To List if Not Null",
                         "orientation": "Horizontal",
+                        "stylefieldiferror": true,
+                        "type": "Static",
                         "columnFlow": "LRTB",
                         "columnCount": 3,
-                        "rowCount": 3,
-                        "stylefieldiferror": true,
-                        "type": "Static"
+                        "rowCount": 3
                     },
                     "CheckBox": {
                         "type": "Static",
@@ -1900,10 +2053,10 @@
                         "stylefieldiferror": true,
                         "NotInListRule": "Add To List if Not Null",
                         "orientation": "Horizontal",
+                        "initial_value": "False",
                         "columnFlow": "LRTB",
                         "columnCount": 3,
-                        "rowCount": 3,
-                        "initial_value": "False"
+                        "rowCount": 3
                     },
                     "connection_type": "Access Database",
                     "dropdownbox": {
@@ -1917,35 +2070,32 @@
                         "methodForComputingCascadingFilter": "<Auto>"
                     },
                     "DatePicker": {
-                        "OpenMethod": "ClickIcon",
                         "UseComboBoxes": true,
                         "DateFormat": "<DefaultTimeFormat>",
+                        "LowYear": 1950,
+                        "HighYear": 2050,
+                        "SwitchYear": 20,
+                        "IconNumber": 2,
+                        "OpenMethod": "ClickIcon",
+                        "showDaysOfWeek": true,
+                        "OKButtonLabel": "OK",
+                        "CancelButtonLabel": "Cancel",
                         "friendlyDisplay": {
                             "settingsJSON": "",
                             "enabled": false
                         },
                         "showPreDefinedDates": false,
                         "preDefinedDatesJSON": "",
-                        "LowYear": 1950,
-                        "HighYear": 2050,
-                        "SwitchYear": 20,
-                        "IconNumber": 2,
-                        "showDaysOfWeek": true,
-                        "showTodayButton": true,
-                        "OKButtonLabel": "OK",
-                        "CancelButtonLabel": "Cancel"
+                        "showTodayButton": true
                     },
                     "column": {
                         "heading": "Id:",
-                        "LabelPosition": "Left",
-                        "CanSort": true,
                         "sort": "Id_Monitoreosintomas_Global",
+                        "LabelPosition": "Left",
+                        "canSort": true,
                         "firstclickdirection": "Ascending"
                     },
                     "initial_value": "NULL",
-                    "BreakType": "None",
-                    "nCols": 1,
-                    "columnQBEOptionsJSON": "",
                     "link": {
                         "StaticImageInlineStyle": "border-style: none;",
                         "ajaxWindowType": "Modal-Popup",
@@ -1958,15 +2108,33 @@
                         "ajaxWindowRefreshGridOnClose": "None",
                         "targetDIVHideHyperlink": "Close"
                     },
-                    "BaseFieldExpression": "N_MonitoreoSintomas_Global.Id_MonitoreoSintomas_Global",
                     "type": "N",
-                    "ConditionalStyleLevel": "Cell",
-                    "ClientSideConditionalStyleLevel": "Cell",
-                    "Updateable": true,
+                    "display": "Id_MonitoreoSintomas_Global",
                     "TableAlias": "N_MonitoreoSintomas_Global",
-                    "canBeUsedInWhereClause": true,
+                    "updateable": true,
                     "table": "N_MonitoreoSintomas_Global",
                     "FieldToUpdate": "Id_MonitoreoSintomas_Global",
+                    "varname": "Id_MonitoreoSintomas_Global",
+                    "fieldname": "Id_MonitoreoSintomas_Global",
+                    "BreakType": "None",
+                    "DisplayOD": "{F=Tahoma,8}{I:'$a5_control_field'} {C=}{DATA=Id_MonitoreoSintomas_Global}Id_MonitoreoSintomas_Global",
+                    "DisplayODFlat": "{F=Tahoma,8}{I:'$a5_control_field'}{T=.2}{C=}{DATA=Id_MonitoreoSintomas_Global}Id_MonitoreoSintomas_Global",
+                    "displayODtree": "{F=Tahoma,8}{I:'$a5_control_field'} {C=}{DATA=Id_MonitoreoSintomas_Global}Id_MonitoreoSintomas_Global",
+                    "Search": {
+                        "FromLabel": "From:",
+                        "ToLabel": "To:"
+                    },
+                    "scope": "Local",
+                    "conditionalStyleLevel": "Cell",
+                    "clientSideconditionalStyleLevel": "Cell",
+                    "Watermark": {
+                        "text": "<FieldLabel>"
+                    },
+                    "lookup": {
+                        "type": "Edit-Combo List"
+                    },
+                    "nCols": 1,
+                    "BaseFieldExpression": "N_MonitoreoSintomas_Global.Id_MonitoreoSintomas_Global",
                     "summary": {
                         "total": {
                             "inlinestyle": "text-align: right;"
@@ -1996,26 +2164,14 @@
                             "inlinestyle": "text-align: right;"
                         }
                     },
-                    "SourceAlias": "N_MonitoreoSintomas_Global",
-                    "PortableType": "Integer32",
-                    "varname": "Id_MonitoreoSintomas_Global",
-                    "Display": "Id_MonitoreoSintomas_Global",
-                    "displayOD": "{F=Tahoma,8}{I:'$a5_control_field'} {C=}{DATA=Id_MonitoreoSintomas_Global}Id_MonitoreoSintomas_Global",
-                    "displayODFlat": "{F=Tahoma,8}{I:'$a5_control_field'}{T=.2}{C=}{DATA=Id_MonitoreoSintomas_Global}Id_MonitoreoSintomas_Global",
-                    "scope": "Local",
                     "tmplTxtComputed": true,
-                    "tmplTxt": "with tmpl.searchfield_info[_fieldNumber_]\n\t.Fieldname = \"Id_MonitoreoSintomas_Global\"\n\t.SearchExpression = \"N_MonitoreoSintomas_Global.Id_MonitoreoSintomas_Global\"\n\t.Initial_Value = \"NULL\"\n\t.Search_Style = 0\n\t.KeywordSearch = .f.\n\t.Scope = \"Local\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .f.\n\t.portableType = \"Integer32\"\n\t.nativeType = \"\"\n\t.Type = \"N\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Varname = \"ID_MONITOREOSINTOMAS_GLOBAL\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"TextBox\"\n\t.Textbox.Size = 40\n\t.Textbox.HTML5Type = \"\"\n\t.Textbox.customAttributes = \"\"\n\t.Textbox.readonly = .f.\n\t.Textbox.MaxLength = 200\n\t.Textbox.InLineStyle = \"text-align: right; width:2in;\"\n\t.Textbox.className = \"\"\n\t.Textbox.ContainerInlineStyle = \"\"\n\t.Textbox.IsPassword = .f.\n\t.hasWatermark= .f.\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .f.\n\t.BaseFieldExpression = \"N_MonitoreoSintomas_Global.Id_MonitoreoSintomas_Global\"\n\t.SourceAlias = \"N_MonitoreoSintomas_Global\"\n\t.Column.Heading = \"Id:\"\nend with\n\n\n\n\n",
-                    "SearchExpression": "N_MonitoreoSintomas_Global.Id_MonitoreoSintomas_Global",
+                    "tmplTxt": "with tmpl.searchfield_info[_fieldNumber_]\n\t.Fieldname = \"Id_MonitoreoSintomas_Global\"\n\t.SearchExpression = \"N_MonitoreoSintomas_Global.Id_MonitoreoSintomas_Global\"\n\t.Initial_Value = \"NULL\"\n\t.Search_Style = 0\n\t.KeywordSearch = .f.\n\t.Scope = \"Local\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .f.\n\t.portableType = \"Integer32\"\n\t.nativeType = \"\"\n\t.Type = \"N\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Varname = \"ID_MONITOREOSINTOMAS_GLOBAL\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"TextBox\"\n\t.Textbox.Size = 40\n\t.Textbox.HTML5Type = \"\"\n\t.Textbox.customAttributes = \"\"\n\t.Textbox.readonly = .f.\n\t.Textbox.MaxLength = 200\n\t.Textbox.InLineStyle = \"text-align: right; width:2in;\"\n\t.Textbox.className = \"\"\n\t.Textbox.ContainerInlineStyle = \"\"\n\t.Textbox.IsPassword = .f.\n\t.hasWatermark= .f.\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .f.\n\t.BaseFieldExpression = \"N_MonitoreoSintomas_Global.Id_MonitoreoSintomas_Global\"\n\t.SourceAlias = \"N_MonitoreoSintomas_Global\"\n\t.Column.Heading = \"Id:\"\nend with\n\n\n\n\n\n",
+                    "canBeUsedInWhereClause": true,
+                    "PortableType": "Integer32",
+                    "onChange_ValidationOption": "None",
                     "repeatingSectionParentId": -1,
-                    "displayODtree": "{F=Tahoma,8}{I:'$a5_control_field'} {C=}{DATA=Id_MonitoreoSintomas_Global}Id_MonitoreoSintomas_Global",
-                    "parentContainer": -1,
-                    "index": 3000
-                },
-                {
-                    "fieldname": "Id_Sintoma_FK",
                     "showHelpIcon": "None",
                     "helpIconBehavior": "ShowHelpOnClick",
-                    "onChange_ValidationOption": "None",
                     "Layout": {
                         "Title": "Tab label",
                         "TabPane": {
@@ -2056,11 +2212,24 @@
                         },
                         "nCols": 1
                     },
-                    "controltype": "DropDownBox",
-                    "Search": {
-                        "FromLabel": "From:",
-                        "ToLabel": "To:"
+                    "calendar": {
+                        "DateFormat": "mm/dd/yy",
+                        "SwitchYear": 20,
+                        "UseComboBoxes": true,
+                        "LowYear": 1950,
+                        "HighYear": 2050
                     },
+                    "clientSideFormat": {
+                        "type": "Mask"
+                    },
+                    "SearchExpression": "N_MonitoreoSintomas_Global.Id_MonitoreoSintomas_Global",
+                    "index": 3000,
+                    "SourceAlias": "N_MonitoreoSintomas_Global",
+                    "parentContainer": -1,
+                    "columnQBEOptionsJSON": ""
+                },
+                {
+                    "controltype": "DropDownBox",
                     "Label": {
                         "InLineStyle": "text-align: right;",
                         "className": ""
@@ -2069,29 +2238,13 @@
                         "noImageFoundImage": "<None>",
                         "newRecordImage": "<None>"
                     },
-                    "calendar": {
-                        "DateFormat": "mm/dd/yy",
-                        "SwitchYear": 20,
-                        "UseComboBoxes": true,
-                        "LowYear": 1950,
-                        "HighYear": 2050
-                    },
                     "TextBox": {
                         "InLineStyle": "text-align: right;",
-                        "className": "",
                         "Size": 40,
-                        "readonly": false,
                         "MaxLength": 200,
-                        "stylefieldiferror": true
-                    },
-                    "Watermark": {
-                        "text": "<FieldLabel>"
-                    },
-                    "clientSideFormat": {
-                        "type": "Mask"
-                    },
-                    "Lookup": {
-                        "Type": "Edit-Combo List"
+                        "stylefieldiferror": true,
+                        "className": "",
+                        "readonly": false
                     },
                     "TextArea": {
                         "rows": 2,
@@ -2102,21 +2255,21 @@
                                 "width": "2in"
                             },
                             "style": "font: 9pt Arial;",
+                            "editButtonText": "Edit...",
                             "css": "",
                             "toolbaricons": "",
-                            "toolbardefinition": "",
-                            "editButtonText": "Edit..."
+                            "toolbardefinition": ""
                         }
                     },
                     "radiobutton": {
                         "datasource": "DBF-Table",
                         "NotInListRule": "Add To List if Not Null",
                         "orientation": "Horizontal",
+                        "stylefieldiferror": true,
+                        "type": "Static",
                         "columnFlow": "LRTB",
                         "columnCount": 3,
-                        "rowCount": 3,
-                        "stylefieldiferror": true,
-                        "type": "Static"
+                        "rowCount": 3
                     },
                     "CheckBox": {
                         "type": "Static",
@@ -2124,10 +2277,10 @@
                         "stylefieldiferror": true,
                         "NotInListRule": "Add To List if Not Null",
                         "orientation": "Horizontal",
+                        "initial_value": "False",
                         "columnFlow": "LRTB",
                         "columnCount": 3,
-                        "rowCount": 3,
-                        "initial_value": "False"
+                        "rowCount": 3
                     },
                     "connection_type": "Access Database",
                     "use_saved_connection_string": true,
@@ -2138,46 +2291,43 @@
                         "selectStyle": "Single",
                         "inlinestyle": "width:2in;",
                         "datasource": "AlphaDAO",
+                        "stylefieldiferror": true,
+                        "NotInListRule": "Add To List if Not Null",
                         "cs": {
                             "connectionString": "::name::Nibble",
                             "sql": "SELECT DISTINCT Descripcion, Id_Sintomas FROM N_Sintomas ORDER BY Descripcion, Id_Sintomas"
                         },
-                        "stylefieldiferror": true,
-                        "NotInListRule": "Add To List if Not Null",
                         "fieldNameOfFieldLinkedToParentControl": "<Auto>",
                         "methodForComputingCascadingFilter": "<Auto>",
                         "flagIsDefined": true
                     },
                     "DatePicker": {
-                        "OpenMethod": "ClickIcon",
                         "UseComboBoxes": true,
                         "DateFormat": "<DefaultTimeFormat>",
+                        "LowYear": 1950,
+                        "HighYear": 2050,
+                        "SwitchYear": 20,
+                        "IconNumber": 2,
+                        "OpenMethod": "ClickIcon",
+                        "showDaysOfWeek": true,
+                        "OKButtonLabel": "OK",
+                        "CancelButtonLabel": "Cancel",
                         "friendlyDisplay": {
                             "settingsJSON": "",
                             "enabled": false
                         },
                         "showPreDefinedDates": false,
                         "preDefinedDatesJSON": "",
-                        "LowYear": 1950,
-                        "HighYear": 2050,
-                        "SwitchYear": 20,
-                        "IconNumber": 2,
-                        "showDaysOfWeek": true,
-                        "showTodayButton": true,
-                        "OKButtonLabel": "OK",
-                        "CancelButtonLabel": "Cancel"
+                        "showTodayButton": true
                     },
                     "column": {
                         "heading": "S&iacute;ntoma:",
-                        "LabelPosition": "Left",
-                        "CanSort": true,
                         "sort": "Id_Sintoma_Fk",
+                        "LabelPosition": "Left",
+                        "canSort": true,
                         "firstclickdirection": "Ascending"
                     },
                     "initial_value": "NULL",
-                    "BreakType": "None",
-                    "nCols": 1,
-                    "columnQBEOptionsJSON": "",
                     "link": {
                         "StaticImageInlineStyle": "border-style: none;",
                         "ajaxWindowType": "Modal-Popup",
@@ -2190,15 +2340,33 @@
                         "ajaxWindowRefreshGridOnClose": "None",
                         "targetDIVHideHyperlink": "Close"
                     },
-                    "BaseFieldExpression": "N_MonitoreoSintomas_Global.Id_Sintoma_FK",
                     "type": "N",
-                    "ConditionalStyleLevel": "Cell",
-                    "ClientSideConditionalStyleLevel": "Cell",
-                    "Updateable": true,
+                    "display": "Id_Sintoma_FK",
                     "TableAlias": "N_MonitoreoSintomas_Global",
-                    "canBeUsedInWhereClause": true,
+                    "updateable": true,
                     "table": "N_MonitoreoSintomas_Global",
                     "FieldToUpdate": "Id_Sintoma_FK",
+                    "varname": "Id_Sintoma_FK",
+                    "fieldname": "Id_Sintoma_FK",
+                    "BreakType": "None",
+                    "DisplayOD": "{F=Tahoma,8}{I:'$a5_control_combobox'} {C=}{DATA=Id_Sintoma_FK}Id_Sintoma_FK",
+                    "DisplayODFlat": "{F=Tahoma,8}{I:'$a5_control_combobox'}{T=.2}{C=}{DATA=Id_Sintoma_FK}Id_Sintoma_FK",
+                    "displayODtree": "{F=Tahoma,8}{I:'$a5_control_combobox'} {C=}{DATA=Id_Sintoma_FK}Id_Sintoma_FK",
+                    "Search": {
+                        "FromLabel": "From:",
+                        "ToLabel": "To:"
+                    },
+                    "scope": "Local",
+                    "conditionalStyleLevel": "Cell",
+                    "clientSideconditionalStyleLevel": "Cell",
+                    "Watermark": {
+                        "text": "<FieldLabel>"
+                    },
+                    "lookup": {
+                        "type": "Edit-Combo List"
+                    },
+                    "nCols": 1,
+                    "BaseFieldExpression": "N_MonitoreoSintomas_Global.Id_Sintoma_FK",
                     "summary": {
                         "total": {
                             "inlinestyle": "text-align: right;"
@@ -2228,20 +2396,69 @@
                             "inlinestyle": "text-align: right;"
                         }
                     },
-                    "SourceAlias": "N_MonitoreoSintomas_Global",
-                    "PortableType": "Integer32",
-                    "varname": "Id_Sintoma_FK",
-                    "Display": "Id_Sintoma_FK",
-                    "displayOD": "{F=Tahoma,8}{I:'$a5_control_combobox'} {C=}{DATA=Id_Sintoma_FK}Id_Sintoma_FK",
-                    "displayODFlat": "{F=Tahoma,8}{I:'$a5_control_combobox'}{T=.2}{C=}{DATA=Id_Sintoma_FK}Id_Sintoma_FK",
-                    "scope": "Local",
                     "tmplTxtComputed": true,
-                    "tmplTxt": "with tmpl.searchfield_info[_fieldNumber_]\n\t.Fieldname = \"Id_Sintoma_FK\"\n\t.SearchExpression = \"N_MonitoreoSintomas_Global.Id_Sintoma_FK\"\n\t.Initial_Value = \"NULL\"\n\t.Search_Style = 0\n\t.KeywordSearch = .f.\n\t.Scope = \"Local\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .f.\n\t.portableType = \"Integer32\"\n\t.nativeType = \"\"\n\t.Type = \"N\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Varname = \"ID_SINTOMA_FK\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"DropDownBox\"\n\t.DropdownBox.fieldNameOfFieldLinkedToParentControl = \"<Auto>\"\n\t.DropdownBox.fieldTypeOfFieldLinkedToParentControl = \"\"\n\t.DropdownBox.methodForComputingCascadingFilter = \"<Auto>\"\n\t.DropdownBox.explicitCasacadingFilter = \"\"\n\t.DropdownBox.InLineStyle = \"width:2in;\"\n\t.DropdownBox.Type = \"Dynamic\"\n\t.DropdownBox.Size = 1\n\t.DropdownBox.selectStyle = \"Single\"\n\t.DropdownBox.NotInListRule = \"Add To List if Not Null\"\n\t.DropDownBox.Datasource = \"CS\"\n\t.DropDownBox.maxchoices = 0\n\t.DropDownBox.CS.ConnectionString = \"::name::Nibble\"\n\t.DropDownBox.CS.SQL = \"SELECT DISTINCT Descripcion, Id_Sintomas FROM N_Sintomas ORDER BY Descripcion, Id_Sintomas\"\n\t.DropDownBox.DisplayValueField = \"Descripcion\"\n\t.DropDownBox.StoredValueField = \"Id_Sintomas\"\n\t.DropDownBox.DisplayValueFieldType = \"C\"\n\t.DropDownBox.StoredValueFieldType = \"N\"\n\t.DropdownBox.noSelectionDisplayValue = \"\"\n\t.DropdownBox.hasCascadingChoices = .f.\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .f.\n\t.BaseFieldExpression = \"N_MonitoreoSintomas_Global.Id_Sintoma_FK\"\n\t.SourceAlias = \"N_MonitoreoSintomas_Global\"\n\t.Column.Heading = \"S&iacute;ntoma:\"\nend with\n\n\n\n\n",
-                    "SearchExpression": "N_MonitoreoSintomas_Global.Id_Sintoma_FK",
+                    "tmplTxt": "with tmpl.searchfield_info[_fieldNumber_]\n\t.Fieldname = \"Id_Sintoma_FK\"\n\t.SearchExpression = \"N_MonitoreoSintomas_Global.Id_Sintoma_FK\"\n\t.Initial_Value = \"NULL\"\n\t.Search_Style = 0\n\t.KeywordSearch = .f.\n\t.Scope = \"Local\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .f.\n\t.portableType = \"Integer32\"\n\t.nativeType = \"\"\n\t.Type = \"N\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Varname = \"ID_SINTOMA_FK\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"DropDownBox\"\n\t.DropdownBox.fieldNameOfFieldLinkedToParentControl = \"<Auto>\"\n\t.DropdownBox.fieldTypeOfFieldLinkedToParentControl = \"\"\n\t.DropdownBox.methodForComputingCascadingFilter = \"<Auto>\"\n\t.DropdownBox.explicitCasacadingFilter = \"\"\n\t.DropdownBox.InLineStyle = \"width:2in;\"\n\t.DropdownBox.Type = \"Dynamic\"\n\t.DropdownBox.Size = 1\n\t.DropdownBox.selectStyle = \"Single\"\n\t.DropdownBox.NotInListRule = \"Add To List if Not Null\"\n\t.DropDownBox.Datasource = \"CS\"\n\t.DropDownBox.maxchoices = 0\n\t.DropDownBox.CS.ConnectionString = \"::name::Nibble\"\n\t.DropDownBox.CS.SQL = \"SELECT DISTINCT Descripcion, Id_Sintomas FROM N_Sintomas ORDER BY Descripcion, Id_Sintomas\"\n\t.DropDownBox.DisplayValueField = \"Descripcion\"\n\t.DropDownBox.StoredValueField = \"Id_Sintomas\"\n\t.DropDownBox.DisplayValueFieldType = \"C\"\n\t.DropDownBox.StoredValueFieldType = \"N\"\n\t.DropdownBox.noSelectionDisplayValue = \"\"\n\t.DropdownBox.hasCascadingChoices = .f.\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .f.\n\t.BaseFieldExpression = \"N_MonitoreoSintomas_Global.Id_Sintoma_FK\"\n\t.SourceAlias = \"N_MonitoreoSintomas_Global\"\n\t.Column.Heading = \"S&iacute;ntoma:\"\nend with\n\n\n\n\n\n",
+                    "canBeUsedInWhereClause": true,
+                    "PortableType": "Integer32",
+                    "onChange_ValidationOption": "None",
                     "repeatingSectionParentId": -1,
-                    "displayODtree": "{F=Tahoma,8}{I:'$a5_control_combobox'} {C=}{DATA=Id_Sintoma_FK}Id_Sintoma_FK",
+                    "showHelpIcon": "None",
+                    "helpIconBehavior": "ShowHelpOnClick",
+                    "Layout": {
+                        "Title": "Tab label",
+                        "TabPane": {
+                            "show": true
+                        },
+                        "TabControl": {
+                            "useModernTabs": true,
+                            "Type": "Tab",
+                            "TabPosition": "Top",
+                            "AccordionType": "Single",
+                            "InitialPane": 1,
+                            "BreakType": "After",
+                            "animation": {
+                                "show": {
+                                    "method": "Suggested",
+                                    "speed": "Slow"
+                                },
+                                "hide": {
+                                    "method": "Suggested",
+                                    "speed": "Slow"
+                                }
+                            }
+                        },
+                        "FrameTitle": "Frame Label",
+                        "Frame": {
+                            "BreakType": "After",
+                            "type": "Simple",
+                            "initialState": "Shown"
+                        },
+                        "Container": {
+                            "BreakType": "After"
+                        },
+                        "ButtonText": "Button",
+                        "HyperlinkText": "Hyperlink",
+                        "Spacer": {
+                            "Horizontal": ".1in",
+                            "Vertical": ".1in"
+                        },
+                        "nCols": 1
+                    },
+                    "calendar": {
+                        "DateFormat": "mm/dd/yy",
+                        "SwitchYear": 20,
+                        "UseComboBoxes": true,
+                        "LowYear": 1950,
+                        "HighYear": 2050
+                    },
+                    "clientSideFormat": {
+                        "type": "Mask"
+                    },
+                    "SearchExpression": "N_MonitoreoSintomas_Global.Id_Sintoma_FK",
+                    "index": 3000,
+                    "SourceAlias": "N_MonitoreoSintomas_Global",
                     "parentContainer": -1,
-                    "index": 3000
+                    "columnQBEOptionsJSON": ""
                 }
             ]
         },
@@ -2510,17 +2727,16 @@
         "info": {
             "createdBy": "ASUS",
             "LastUpdatedBy": "ASUS",
-            "DateUpdated": "04-04-2020 03:43:27 54 pm",
+            "DateUpdated": "06-04-2020 02:15:08 13 pm",
             "DateCreated": "04-04-2020 02:46:49 75 pm"
         },
         "BuilderVersion": 2,
-        "current_pane_tree": "Grid.Properties",
+        "current_pane_tree": "Grid.Fields",
         "hasActionButtons": true,
         "embeddedMode": false,
         "_style_versionNumber": 2,
         "AjaxOn": true,
         "fpInstalled": "/J9SKAmrHowDQK/uW8QePubMUb1rMfRWsbavNpyprxxfbB4mtlSWTcS61WidlLBa9mknM42BQXF5SLqkaxqDCK/mFD3YZDT1OsoQ5vqc6hgx7TW/IadJylcyQwTe/LJM4e+e7Si6lmmszkP6x840X9kGBMNp+HFBya7+/g8mCAC6g8X4+gBdlG7PdsWexeIoGbZLLYUPoO+oMLYidOLX0+uwHDeaZXyWOucHfR6XG1p5PqCa6S5D+BNJQeBHjkzIPPlYlk9j4H3Yv+GqzgWGd4bysULW12C2uSpR9Y30tc0LezliMcpBKFfJ4pZimEp+GyPe+bPuu12ofCilPrtMjZN/d1tdFzUcGqvnP8LoATQEoTUSDWsEgxeACLbWv+OTZAGLD/pHgcdzYhIjUr4zU1LIJgxjsFmSyBYyrCQcQ9xXJrJLNpXcVntGvDiINBYgivQM1NEY2BdKwscytR67fHHzQ5ldyZ6LVJoJqBTGktVPLkoQEua3v0xi1MOOvRrkGgVi6EI8DK+MANbwqOB6tPkNWrYHKhZNIoM48E1+9k02fUEPlz0tCkgwjjRabFYDyDQ54WBCWG6xIgHQkrKr8Sf2nAZXZQDhp+2zwbZs3qVQyGzTBKSPG9Zn81j3xbHj4pPt5hBU+5de4KJIccbHJm6eZM8XEJ9rx/GDhUVnjUUBxOnUWDV0CeBLVDmJx1IV3UWJYEGkomjvi+bR/vOibrfZ3QjwULidp3ZjyT8IpfLG1whvoWb77M8ZVH71Nqd0UbXCDUqMh9UM4gSeBCKlwe3TO63Q1yoVI1CkEYEHCfTFivzspt72EWEmEh2AgtuVq+t8GjLVA+KCul+0R+bGxZnI5xOa1sw55etW9XhOVUGVlvq5GlJQEiY4hDcSTEGzpv9Qzjd4AgpIRJOy6hy3oPL13OWJkVvCL0HeAXjEBJhMFnPPSogTKO4JfRBuoBVMherQnMdTDeVxUeTnRdtzoMhXkb3F0Jl5CLbaX2jp7eX23LbKhi9Pg0X05bQhiiuzoZOdbC2Ec4G2nwv+C8Q/HZa8x/ZRZHrObw/llZTi5OxuVBE6GmjYEPm7SoPVpa3pUJMILki/A5SUWgO7yGJZo+yVv7XSIIoDP66RoQkUDe9tENB5tREaZyoKmAaFE/aksqzPr3clGbIEjtAz7ELWCB306I1jYyZhafPwr/8kd+MAd/KfEQ9CvzFEh2Z/qcOqUkpXB63/XdX3CtpfVNSgMft2xEJ5Xf79r0vxoKiuEZpKO9qe1YJ3ruhHDkLfouoqM/Hu9FqdDONqRnD5LoEy4qqceVYAzLVzRfJVmSC5AVODI31NDI9oRZnkdm4d/KHGr8dCCA+96iEtF941eQd6KSI5YkBxQrdo6VR5JBdxX440mW+v8gR6dugILwoGhNp/KcbSdGpwvcLVedCH3b+vBiussrtKCemuetX3YLgOmuu1s1/QweUMANzwgg5Wlr866LW3a1A5CcYPJPnVbHL15Lbb5wGRa9YRyMuyClvXSfC9wruxsOcO+JWlyhKBNT+rEwSRA0ZAK7h8RhXak5yPQw+8TmGvaXbxaaBSns+Rg7pXmLh/++dUIK2HeWiNcoOc8xOMpNQcUg3UJgJDcNR3Xgy4A8EyRNmHjliZ7i6hH1oTMKXyYwW7+RgkFhpZUZhMlmT/Wnn65LQgiQG3KEC6f/r2XPRRC15KIr9J5lrYRvYPj4Ede3bilH/ibMfmiJLlAOp7j1YWjf+YYhxGEJzvJsYQ9EnKaJg1UsmQmpKQ9Ukp9DBBlV1Rt1//KVjQacUwafizAdv8lUEiXHBYK5gzXM2oEAnfF67FPYOLZpHTycZvTo9B0H4v/gjIzBlz5xOGbeO34xzMpyqEjfy11DEomfm0Qqy1XoNHSJHExzmeXBXU/G97Unn6NcyBKkNEKiIGBo3ANe7rPHeZee44mtel77jW5U/BEaTOtVELtOZtweHEiGwXYfzpX4djrDQXeK/aj6lmwcdXHVJb/+P8unGXq1HYytv0crjpJKWKodKeq9ucHKGpQ/AlEAD3O4QQ/zwor0z5J7ZbF91qyUOEQZ76+VAfrFH+6gff0Zr6C6h25ARVop7e67ifRkYi+uegfD0ANZNVQW39ySPlpxuakFIKGrT7FDqe1tpOSUs3H1CJWJu4ukKnKs3geCA+cn6kjyWHPg1nfK0rXXWs9PhHpzZTkFhm959B1Rr5ZlUQWcKm9HZpgUU0lCxpY+2550RCVGoJnnO1FZYCzjJP0loV9OT5zRP3Lb6BLFTtQI9Ip0rnPtqmHcV5YFUHnXo7gcV8bCjP3EoVOp7OWHLbB98ioAR7L/nlOedHyjLJE/LJ7EVyev6S2nj64jTmBXdxlYFcz5ezP+1FpDdsAAPKCUTQ5xZkI/dvl2PZTzSRSMjvKgBjWajCHQPb83K1LpW0O5xiMpC6muoQMBzBdYrhYuBabaCWzdrscvmrhUH7+X3V8jSkB7nSYyCe2mWWZw3kNmdyVPqK/ThlpelHpM/zo53ICHE46QpvAf+ThZgumXTvYcxY9APTD9yrb7sWPTJ2awZkbw7XS99JwWFb1/KhNBtpoHOYDGyesrsoD+6O8xLW1VtlCZ4hOa9z3OOmvIE3h28Wi/c2QdWIbdIhpcx+DD9KyWWUXEvNJN2rF3JTExE8i9BsVtVfMPpgrxQux5bU1EGWVg9F16SYs8QhsKDCnQwVM09zulo6f/MUa373uE1hkgX84E32w8tWN5dd0mX3+2i9pgYmhf9n1D/Y7EtqzW9pkVJLZ0buqqLJZmtuteghvyXQ02TwFIEsdLt3XdOVnjFum8+y+gSUzOc2ytBKvS5XUwtyprUjaPF+nc5FZpUpXWOQMIyrF2Htl9MBH3ca+Db6Va/E3v0fRqaq+gPY7FGG7Yj6eNg/rxmVxO/L1hpi0Z3DjhzFVYUIP/5KEQFqaG1FjZxHauFKGQN76XxiRFbUDeYhvXI2xiJuXLqW+5PxWRT5NcIsV7NtryNdei6iZqbkmG880OTiLEe3PKaRdXQzfbX/ioFDoH3+HBRVMS2mJJ1TiZrg2c95EGeSZa2z4ASAqRdmZ/rpL5dQSSutwjfqrkPoFi7jqWovVlhjrtoCSxvCI4E4g291OYq/aHzeIq+HGWJ7d42ZmxTHthu03BjQjSmzEyaFogjRKmbkrxV+Sepy/5KgEBfyPnRfi1D3U1puX5DxLhyJ5eDXy5iTqC3yFzQ8KYON+1qlUZ6z09AuqtAmRzTKbcplfUXiqLDvkF/GFo97NbNlwQW9HGHXVhfDgjYyHsC8AuixM9YxDJeqNAv3mkLQCdhCFdtpHouzVqT7PrkgDzeYT4jCAKCATRuH6WGm0VNcjMzOkruM7UZBoq6b75iMbEsyUXPN9A9hM0Mfcw7DYvPM150eYggu8lKBrwVBCYV+Yuop2DdjG6rLfc5QOAaN0CuXXPeGFIeRndEevj29e4AUQ6+b48xWUG5QWtqFiVlrwWOUjfLeT9UFkK7Xsof0UZ4sTsJBJrW17Aef3l61cVIvfEQO4Jr2QLGaQlVLt8mx49yfGt28GpXu+GDfRtUVZ3HLZDdzqautPSo/sV7ikwkGwE7ItpJhuE22jEc1MzIpjcrv3HGghAC4fX5cTWWjrdwfjyTmCEiyUZtkmcgLiIkMaiIB7b8RO7PJbB1xgwOK37SgAI5rcwnTO+5LNSGnS48eqfWAUUydLi5HIXij4spbdYIYBtg9ikFHg/+56k8s0Qk2F90FDhn9CyZrSygPxud5uSLKKigl+yzj/ub0YNEwE31EB2G+cYxxW+djn6C4G8GW/wkS3yYKk+oT0W9RCm+vndTHLxs6y3stSzD1qG63z+XpBirmr+5euKYFWBsTwPxOMKFK8877E7yW9x7ytvgQvmKig10EOpnP9NHAlActuPPGFNg=",
-        "A5SaveTimeStamp": "20200404154327589",
         "componentFilename": "C:\\4-Trabajos\\Mariloginsa\\Nibble-TM\\Nibble-TM.WebProjects\\MRG.WebProject\\N_MonitoreoSintomas_Global.a5wcmp",
         "PAliases": {
             "alias": "[PathAlias.ADB_Path]\n",
@@ -2558,12 +2774,17 @@
                 }
             }
         ],
+        "CurrentSelectionActionButtons": "02c55546-11e9-4484-89c6-4267357b8902",
         "a_actionJavascript": [
             {
                 "actionGuid": "c4b811c5-1007-4af1-97e0-065c24f7e4fc",
                 "scriptMetaData": "<a_ajs<[1]<display=\"{I:'a5_new_xbasic_script'}{F=Tahoma,10}{C=Dark Blue,White}{B=Blue White,Dark Blue}Inline-Javascript{T=4}{I:'a5_vertical_line'}abrir procesando\">\n<action=\"Inline-Javascript\">\n<icon=\"a5_new_xbasic_script\">\n<isCommentedOut=.F.>\n<comment=\"abrir procesando\">\n<builder=\"a5ajs_Inline(v,dlg_mode,wf)\">\n<metaData=<<%str1%\n<inlineJavascript=<<%str%\nvar dropDownType = 'wait';\nvar title = 'Espere por favor';\nvar msgBody = '';\nvar width = '300px';\nvar oKButtonLabel = '';\nvar cancelButtonLabel = '';\nvar loc = 'center';\nvar onOK = function() { alert('pressed ok'); };\nvar onCancel = function() { };\n{grid.object}.dropDownMessage(dropDownType,title,msgBody,width,oKButtonLabel,cancelButtonLabel,onOK,onCancel, loc);\n%str%>\n%str1%>\n<javascriptAttribute=<<%str%\nvar dropDownType = 'wait';\nvar title = 'Espere por favor';\nvar msgBody = '';\nvar width = '300px';\nvar oKButtonLabel = '';\nvar cancelButtonLabel = '';\nvar loc = 'center';\nvar onOK = function() { alert('pressed ok'); };\nvar onCancel = function() { };\n{grid.object}.dropDownMessage(dropDownType,title,msgBody,width,oKButtonLabel,cancelButtonLabel,onOK,onCancel, loc);\n%str%>\n<Javascriptdeclarations_row=\"\">\n<Javascriptdeclarations_global=\"\">\n<xbasicFunctions=\"\">\n>\n<[2]<action=\"Inline-Javascript\">\n<icon=\"a5_new_xbasic_script\">\n<isCommentedOut=.F.>\n<comment=\"refresh\">\n<builder=\"a5ajs_Inline(v,dlg_mode,wf)\">\n<metaData=<<%str%\n<inlineJavascript=\"{grid.object}.dropDownMessageHide();\">\n%str%>\n<javascriptAttribute=\"{grid.object}.dropDownMessageHide();\">\n<Javascriptdeclarations_row=\"\">\n<Javascriptdeclarations_global=\"\">\n<xbasicFunctions=\"\">\n<display=\"{I:'a5_new_xbasic_script'}{F=Tahoma,10}{C=Dark Blue,White}{B=Blue White,Dark Blue}Inline-Javascript{T=4}{I:'a5_vertical_line'}refresh\">\n>\n<[3]<action=\"Inline-Javascript\">\n<icon=\"a5_new_xbasic_script\">\n<isCommentedOut=.F.>\n<comment=\"cerrar procesando\">\n<builder=\"a5ajs_Inline(v,dlg_mode,wf)\">\n<metaData=<<%str%\n<inlineJavascript=\"{grid.object}.dropDownMessageHide();\">\n%str%>\n<javascriptAttribute=\"{grid.object}.dropDownMessageHide();\">\n<Javascriptdeclarations_row=\"\">\n<Javascriptdeclarations_global=\"\">\n<xbasicFunctions=\"\">\n<display=\"{I:'a5_new_xbasic_script'}{F=Tahoma,10}{C=Dark Blue,White}{B=Blue White,Dark Blue}Inline-Javascript{T=4}{I:'a5_vertical_line'}cerrar procesando\">\n>\n>\n<flagRunSynchronously=.T.>\n<flagWrapInTryCatch=.F.>\n<tryCatchJavascript=\"\">\n"
+            },
+            {
+                "actionGuid": "f8f5412e-9272-4c54-baff-ce1eb5b7f6e0",
+                "scriptMetaData": "<a_ajs<[1]<display=\"{I:'$$web.component.grid'}{F=Tahoma,10}{C=Dark Blue,White}{B=Blue White,Dark Blue}Open a Grid component{T=4}{I:'a5_vertical_line'}\">\n<action=\"Open a Grid component\">\n<icon=\"$$web.component.grid\">\n<isCommentedOut=.F.>\n<comment=\"\">\n<builder=\"a5ajs_openGrid(v,wf,pv,dlg_mode)\">\n<metaData=<<%str1%\n<targetGridDefinition=<<%str%\n<gridName=\"N_Sintomas\">\n<gridAlias=\"<DefaultAlias>\">\n<order=\"\">\n<localArguments=\"\">\n<argumentBindings=\"\">\n<overrideSettings=\"\">\n<useSameStyleAsParentGrid=.T.>\n<base_filter=\"\">\n<user_filter=\"\">\n<link=\"\">\n<flagTimer=.F.>\n<flagQueryEcho=.F.>\n<flagDebugMode=.F.>\n<placeHolderValues=\"\">\n<linkSyntax=\"\">\n%str%>\n<grid<gridName=\"N_Sintomas\">\n<alias=\"<DefaultAlias>\">\n<userFilter=\"\">\n<baseFilter=\"\">\n<link=\"\">\n<order=\"\">\n<argumentDefinitions=\"\">\n<argumentBindings=\"\">\n<useMasterStyle=.T.>\n<overrideSettings=\"\">\n<debugMode=.F.>\n<timer=.F.>\n<queryEcho=.F.>\n<workingMessage=\"<img src=\\\"css/A5System/Images/wait.gif\\\" /> Computing Grid. Please wait...\">\n<useCachedGrid=.T.>\n<beforeExecuteClientSideFunctionName=\"\">\n<linksyntax=\"\">\n>\n<targetType=\"TabbedUI Pane\">\n<targetDIVid=\"\">\n<targetPanel=\"\">\n<targetDIVcanHide=.T.>\n<targetDIVHideHyperlink=\"Close\">\n<targetDIVStyle=\"\">\n<parentNavigator=\"\">\n<dynamicPanelTitle=\"\">\n<dynamicPanelSetFocus=.T.>\n<dynamicPanelCanClose=.F.>\n<waitMessagePanel=\"\">\n<ajaxWindowWorkingMessageUseCSSAnimation=.F.>\n<ajaxWindowWorkingMessageCSSAnimationSettings<size=\"32\">\n>\n<dockWindow=.F.>\n<dockLocation=\"Bottom\">\n<windowNameExplicit=\"<Default>\">\n<ajaxWindowType=\"Modal-Popup\">\n<allowAutoCloseIfDirty=.F.>\n<ajaxWindowPositionAttribute=\"\">\n<ajaxWindowPositionAttributeEnglish=\"\">\n<ajaxWindowPositionAttributeDD=\"\">\n<ajaxWindowPositionAttributeEnglishDD=\"\">\n<ajaxWindowModalLockClassName=\"<Default>\">\n<ajaxWindowTitle=\"Window\">\n<ajaxPaneTitle=\"S&iacute;ntomas\">\n<ajaxPaneAutoRefreshOnFocus=.F.>\n<ajaxPaneAlwaysUseNewPane=.T.>\n<ajaxWindowReuseExistingWindow=.F.>\n<ajaxWindowHeight=\"5in\">\n<ajaxWindowWidth=\"8in\">\n<ajaxWindowisResizable=.T.>\n<ajaxWindowWorkingMessage=\"<a5:t>Working...</a5:t>\">\n<ajaxWindowWorkingMessageIcon=\"css/A5System/Images/wait.gif\">\n<ajaxWindowTitlePosition=\"Top\">\n<ajaxWindowTitleDirection=\"ltr\">\n<ajaxWindowTitleHasClose=.T.>\n<ajaxWindowTitleShow=.T.>\n<ajaxWindowDisableMove=.F.>\n<ajaxWindowRefreshGridOnClose=\"None\">\n<window<hasCustomButtons=.F.>\n<buttons>\n<buttonCount=0>\n<customButtonsInLineStyle=\"\">\n<tbar<show=.F.>\n<html=\"\">\n<style=\"\">\n>\n<header<show=.F.>\n<html=\"\">\n<style=\"\">\n>\n<footer<show=.F.>\n<html=\"\">\n<style=\"\">\n>\n<bbar<show=.F.>\n<html=\"\">\n<style=\"\">\n>\n<onInitialize=\"\">\n<onBeforeShow=\"\">\n<onShow=\"\">\n<onBeforeHide=\"\">\n<onHide=\"\">\n<onFocus=\"\">\n<onMove=\"\">\n<onResize=\"\">\n<animation<hasAnimation=.F.>\n<show<method=\"Fade\">\n<speed=\"Slow\">\n>\n<hide<method=\"None\">\n<speed=\"Fast\">\n>\n>\n<backgroundStyle=\"\">\n<centerContentsVertical=.F.>\n<centerContentsHorizontal=.F.>\n<warnOnCloseIfChildGridIsDirty=.T.>\n<pointer<has=.F.>\n<location=\"Auto\">\n>\n<subtheme=\"\">\n>\n<parentTabPaneRefreshGridOnClose=.F.>\n<javascriptTabPane<onBeforeChange=\"\">\n<onChange=\"\">\n<onRightClick=\"\">\n<onInitial=\"\">\n<onBeforeRemove=\"\">\n<onRemove=\"\">\n>\n<ajaxFailedMessage=\"\">\n<offlineJavascript=\"\">\n<ajaxcallbacktimeout=\"<Default>\">\n%str1%>\n<javascriptAttribute=\"{grid.componentName}_G__UNBOUND_IMAGE_1_{ACTIONNUMBER}({grid.rownumber},'{grid.rowId}',this);\">\n<Javascriptdeclarations_row=\"\">\n<Javascriptdeclarations_global=<<%str%\nwindow['{grid.componentName}_G__UNBOUND_IMAGE_1_{ACTIONNUMBER}'] = function(rowNum,rowId,objEle) {\n\nvar tempTbiObj = getTabbedUI();\t\t\n\t\t\n\t\t\nif(tempTbiObj == false) {\n\nvar windowName = 'WINDOW_6242f552_51a5_4c4b_a0c2_e2007f7c04ea_R'+rowId+'';\nvar currWindow = {Grid.object}.getWindow(windowName);\nvar go = new Object();\n\nif(typeof {grid.object} != 'undefined' &&typeof {grid.object}._workingPreviewHost != 'undefined') { \n\tgo._workingPreviewHost = {grid.object}._workingPreviewHost;\n}\n\nif(typeof {grid.object} != 'undefined' && typeof {grid.object}._workingPreviewHost != 'undefined') { \n\tgo._workingPreviewHost = {grid.object}._workingPreviewHost;\n}\n\nif(typeof tbiObj != 'undefined' && typeof tbiObj._workingPreviewHost != 'undefined') { \n\tgo._workingPreviewHost = tbiObj._workingPreviewHost;\n}\n\n\n\n\n\n\ngo.objectId = objEle.id;\ngo.gridName = 'N_Sintomas';\ngo.alias = '{Grid.componentname}_N_Sintomas_xbow_R'+rowId+'';\t\n\ngo.submitCurrentFieldValues = true;\ngo.sourceGridPart = 'G';\ngo.sourceGridRowNumber = rowNum;\ngo.workingMessage = '<img src=\\'css/A5System/Images/wait.gif\\' /><a5:t>Working...</a5:t>';\ngo.userFilter = '';\ngo.baseFilter = '';\ngo.arguments = '';\nif(typeof rowNum == 'undefined') rowNum = '';\ngo.linkDefinition = '';\ngo.placeHolderValues = '';\ngo.userOrder = '';\ngo._thisGridAlias = {grid.object}.gridId;\nif(typeof {grid.object}.gridId != 'undefined') go._thisGridAlias = {grid.object}.gridId;\nif(typeof {grid.object}.dialogId != 'undefined') go._thisGridAlias = {grid.object}.dialogId;\n\n\ngo._thisGridGUID = {grid.object}.componentGUID;\n\ngo._gridCurrentFilter = {grid.object}._gridFilter;\ngo._gridCurrentOrder = {grid.object}._gridOrder;\ngo._gridCurrentArguments = {grid.object}._gridArguments;\ngo._gridCurrentDBType = {grid.object}._gridDBType;\n\ngo.overrideSettings = 'Style_name = `{Grid.style}`'+'||';\ngo.a5_default_path = '{grid.defaultPath}';\n\ngo.flagTimer = 'F';\ngo.flagQueryEcho = 'F';\ngo.flagDebugMode = 'F';\ngo.windowName = windowName;\n\n\n\nif(typeof go.direction == 'undefined') go.direction = 'ltr';\n\n\ngo.showWindowParameters = '';\n\n\n\nif(!currWindow) {\n\tcurrWindow = {Grid.object}.createWindow(windowName,'modeless-resizable',\n\t{\n\tbody: {\n\t\tcontent: {\n\t\t\ttype: 'blank',\n\t\t\telementId: '~'\n\t\t}\n\t},\n\theight: '5in',\n\twidth: '8in',\n\ttitle: {\n\t\thtml: 'Window',\n\t\tlocation: 'top',\n\t\tdirection: 'ltr',\n\t\tshow: true\n\t},\n\tdisableMove: false,\n\ttheme: '{Grid.style}',\n\tonBeforeHide: function() {\nvar isDirty = false;\nif(typeof window['{GRID.COMPONENTNAME}_N_SINTOMAS_XBOW_R'+rowId+'_GridObj'] != 'undefined') {\n\tisDirty = window['{GRID.COMPONENTNAME}_N_SINTOMAS_XBOW_R'+rowId+'_GridObj']._isDirty ||  window['{GRID.COMPONENTNAME}_N_SINTOMAS_XBOW_R'+rowId+'_GridObj']._detailViewIsDirty;\n}\nif(isDirty) {\n\t\twindow['{GRID.COMPONENTNAME}_N_SINTOMAS_XBOW_R'+rowId+'_GridObj']._confirmAction();\n\t\treturn false;\n} else return true;\n}\n}\n\t);\t\t\n\tgo.gridDiv = currWindow.getWindowId('body');\n\t{grid.Object}.openChildGrid(go);\nsetTimeout(function() { {grid.object}.blur();},100);\n\tcurrWindow.show();\n\t\n} else {\n\n\t\tvar ele = '{Grid.componentname}_N_Sintomas_xbow_R'+rowId+'.GRID_PART.FORM_CONTAINER_DIV';\n\tvar pele = $(ele);\n\tif(pele) pele.innerHTML = '<img src=\\'css/A5System/Images/wait.gif\\' /> <a5:t>Working...</a5:t>';\n\tgo.gridDiv = currWindow.getWindowId('body');\n\tgo.parentGridId = '{grid.componentname}';\n\t\n\twindow['{GRID.COMPONENTNAME}_N_SINTOMAS_XBOW_R'+rowId+'_GridObj'].synchronizeGrid(go);\n\nsetTimeout(function() { {grid.object}.blur();},100);\n\n\t\n\n\t\n};\n\n} else {\n\tvar go = new Object();\n\nif(typeof {grid.object} != 'undefined' &&typeof {grid.object}._workingPreviewHost != 'undefined') { \n\tgo._workingPreviewHost = {grid.object}._workingPreviewHost;\n}\n\nif(typeof {grid.object} != 'undefined' && typeof {grid.object}._workingPreviewHost != 'undefined') { \n\tgo._workingPreviewHost = {grid.object}._workingPreviewHost;\n}\n\nif(typeof tbiObj != 'undefined' && typeof tbiObj._workingPreviewHost != 'undefined') { \n\tgo._workingPreviewHost = tbiObj._workingPreviewHost;\n}\n\n\n\n\n\n\ngo.objectId = objEle.id;\ngo.gridName = 'N_Sintomas';\ngo.alias = '{Grid.componentname}_N_Sintomas_xbow_R'+rowId+'';\t\n\ngo.submitCurrentFieldValues = true;\ngo.sourceGridPart = 'G';\ngo.sourceGridRowNumber = rowNum;\ngo.workingMessage = '<img src=\\'css/A5System/Images/wait.gif\\' /><a5:t>Working...</a5:t>';\ngo.userFilter = '';\ngo.baseFilter = '';\ngo.arguments = '';\nif(typeof rowNum == 'undefined') rowNum = '';\ngo.linkDefinition = '';\ngo.placeHolderValues = '';\ngo.userOrder = '';\ngo._thisGridAlias = {grid.object}.gridId;\nif(typeof {grid.object}.gridId != 'undefined') go._thisGridAlias = {grid.object}.gridId;\nif(typeof {grid.object}.dialogId != 'undefined') go._thisGridAlias = {grid.object}.dialogId;\n\n\ngo._thisGridGUID = {grid.object}.componentGUID;\n\ngo._gridCurrentFilter = {grid.object}._gridFilter;\ngo._gridCurrentOrder = {grid.object}._gridOrder;\ngo._gridCurrentArguments = {grid.object}._gridArguments;\ngo._gridCurrentDBType = {grid.object}._gridDBType;\n\ngo.overrideSettings = 'Style_name = `{Grid.style}`'+'||';\ngo.a5_default_path = '{grid.defaultPath}';\n\ngo.flagTimer = 'F';\ngo.flagQueryEcho = 'F';\ngo.flagDebugMode = 'F';\n\n\n\nif(typeof go.direction == 'undefined') go.direction = 'ltr';\n\n\n\n\tvar randString = Date.parse(new Date().toString())\n\tif(typeof {grid.object}.gridId != 'undefined'){\n\t\tvar rowKey = {Grid.object}._getCurrentKey(rowNum);\n\t\tif(rowKey!=''){\n\t\t\trowKey = rowKey.replace(/\\|/g,'XYX');\n\t\t\trowKey = rowKey.replace(/[^a-zA-Z$0-9]+/g,''); \n\t\t\tgo.alias = '{Grid.componentname}_N_Sintomas_xbow'+rowKey+'';\n\t\t}else{\n\t\t \tgo.alias = '{Grid.componentname}_N_Sintomas_xbow_R'+randString+'';\n\t\t}\n\t} else {\n\t\tgo.alias = '{Grid.componentname}_N_Sintomas_xbow_'+randString;\n\t}\n\t\n\tpaneName = go.alias.toUpperCase();\n\t\n\tpaneName = paneName + go.placeholderValues;\n\tpaneName = paneName.toUpperCase();\n\t\n\t\n\tvar paneTitle = 'S&iacute;ntomas';\n\ttempTbiObj.add({title: paneTitle , name : paneName, type:'grid', data: go    }); \n\t\n\tvar xObj = {grid.object};\n\tif(typeof xObj != 'undefined') {\n\t\tsetTimeout(function() { {grid.object}.blur();},100);\n\t}\n\t\n\t\n\n}\n\n}\n%str%>\n<xbasicFunctions=\"\">\n>\n>\n<flagRunSynchronously=.F.>\n<flagWrapInTryCatch=.F.>\n<tryCatchJavascript=\"\">\n"
             }
         ],
-        "CurrentSelectionActionButtons": "02c55546-11e9-4484-89c6-4267357b8902"
+        "A5SaveTimeStamp": "20200406141508178"
     }
 }

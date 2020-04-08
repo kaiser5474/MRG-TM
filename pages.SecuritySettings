@@ -3150,4 +3150,12 @@
 <action="allow">
 <groups="">
 >
+<[789]<page="N_MonitoreoSintomas2.a5rpt">
+<action="allow">
+<groups="">
+>
+<[790]<page="N_MonitoreoGlobal_Hora.a5wcmp">
+<action="allow">
+<groups="">
+>
 >
