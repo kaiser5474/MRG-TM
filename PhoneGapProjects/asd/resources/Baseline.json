@@ -3729,6 +3729,22 @@
 		"name": "\\css\\Alpha\\style.sass"
 	},
 	{
+		"crc": 4294910869,
+		"name": "\\css\\Alpha-Blue\\style.css"
+	},
+	{
+		"crc": 4294943685,
+		"name": "\\css\\Alpha-Blue\\style.dat"
+	},
+	{
+		"crc": 4294921211,
+		"name": "\\css\\Alpha-Blue\\style.js"
+	},
+	{
+		"crc": 4294916376,
+		"name": "\\css\\Alpha-Blue\\styleInherit.json"
+	},
+	{
 		"crc": 4294948287,
 		"name": "\\css\\GrBlue\\ButtonDDArrow.png"
 	},
@@ -5058,11 +5074,11 @@
 	}],
 	"rootfiles": [
 	{
-		"crc": 4294926934,
+		"crc": 4294928636,
 		"name": "\\baseline.zip"
 	},
 	{
-		"crc": 4294920490,
+		"crc": 4294902270,
 		"name": "\\config.xml"
 	},
 	{
@@ -5070,7 +5086,7 @@
 		"name": "\\icon.png"
 	},
 	{
-		"crc": 4294930139,
+		"crc": 4294948152,
 		"name": "\\index.html"
 	},
 	{
@@ -5082,15 +5098,15 @@
 		"name": "\\splash.png"
 	},
 	{
-		"crc": 4294902952,
+		"crc": 4294902963,
 		"name": "\\version.json"
 	},
 	{
-		"crc": 4294954386,
+		"crc": 4294906476,
 		"name": "\\_instantUpdateSettings.js"
 	},
 	{
-		"crc": 4294953351,
+		"crc": 4294937963,
 		"name": "\\_phoneGapSettings.js"
 	}],
 	"plugins": [
@@ -5157,6 +5173,11 @@
 	{
 		"name": "",
 		"source": "git",
+		"version": ""
+	},
+	{
+		"name": "cordova-plugin-phonedialer",
+		"source": "npm",
 		"version": ""
 	}]
 }

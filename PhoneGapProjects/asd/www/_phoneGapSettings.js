@@ -16,7 +16,7 @@ function _phoneGapSettings() {
         "disable-cursor": "false",
         "android-minSdkVersion": "19",
         "android-installLocation": "internalOnly",
-        "phonegap-version": "cli-9.0.0",
+        "phonegap-version": "cli-7.1.0",
         "EnableViewportScale": "true",
         "MediaPlaybackRequiresUserAction": "true",
         "AllowInlineMediaPlayback": "false",
@@ -58,7 +58,8 @@ function _phoneGapSettings() {
         "cordova-plugin-media-capture": "npm",
         "cordova-plugin-camera": "npm",
         "cordova-plugin-file-opener2-base64": "npm",
-        "https://github.com/remoorejr/cordova-open.git": "git"
+        "https://github.com/remoorejr/cordova-open.git": "git",
+        "cordova-plugin-phonedialer": "npm"
     }
 };
 }

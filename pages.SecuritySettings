@@ -3198,4 +3198,12 @@
 <action="allow">
 <groups="">
 >
+<[801]<page="App_Tareas_PorUsuario.a5wcmp">
+<action="allow">
+<groups="">
+>
+<[802]<page="app_TareasMRG.a5wcmp">
+<action="allow">
+<groups="">
+>
 >
