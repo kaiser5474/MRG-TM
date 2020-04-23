@@ -3198,11 +3198,11 @@
 <action="allow">
 <groups="">
 >
-<[801]<page="App_Tareas_PorUsuario.a5wcmp">
+<[801]<page="app_TareasMRG.a5wcmp">
 <action="allow">
 <groups="">
 >
-<[802]<page="app_TareasMRG.a5wcmp">
+<[802]<page="N_Tareas_Detalles.a5wcmp">
 <action="allow">
 <groups="">
 >
