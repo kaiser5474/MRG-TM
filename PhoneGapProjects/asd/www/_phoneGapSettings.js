@@ -16,7 +16,7 @@ function _phoneGapSettings() {
         "disable-cursor": "false",
         "android-minSdkVersion": "19",
         "android-installLocation": "internalOnly",
-        "phonegap-version": "cli-7.1.0",
+        "phonegap-version": "cli-9.0.0",
         "EnableViewportScale": "true",
         "MediaPlaybackRequiresUserAction": "true",
         "AllowInlineMediaPlayback": "false",
@@ -43,7 +43,8 @@ function _phoneGapSettings() {
         "SplashShowOnlyFirstTime": "false",
         "SplashScreenSpinnerColor": "white",
         "pgb-builder-version": "2",
-        "splash-screen-duration": "5000"
+        "splash-screen-duration": "5000",
+        "show-splash-screen-spinner": "true"
     },
     "plugins": {
         "cordova-plugin-network-information": "npm",

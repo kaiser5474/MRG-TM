@@ -5074,11 +5074,11 @@
 	}],
 	"rootfiles": [
 	{
-		"crc": 4294928636,
+		"crc": 4294933604,
 		"name": "\\baseline.zip"
 	},
 	{
-		"crc": 4294902270,
+		"crc": 4294935437,
 		"name": "\\config.xml"
 	},
 	{
@@ -5086,7 +5086,7 @@
 		"name": "\\icon.png"
 	},
 	{
-		"crc": 4294948152,
+		"crc": 4294934411,
 		"name": "\\index.html"
 	},
 	{
@@ -5098,15 +5098,15 @@
 		"name": "\\splash.png"
 	},
 	{
-		"crc": 4294902963,
+		"crc": 4294963642,
 		"name": "\\version.json"
 	},
 	{
-		"crc": 4294906476,
+		"crc": 4294955953,
 		"name": "\\_instantUpdateSettings.js"
 	},
 	{
-		"crc": 4294937963,
+		"crc": 4294957287,
 		"name": "\\_phoneGapSettings.js"
 	}],
 	"plugins": [

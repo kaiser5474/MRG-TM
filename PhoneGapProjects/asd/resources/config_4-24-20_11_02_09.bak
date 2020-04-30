@@ -22,7 +22,7 @@
     <preference name="disable-cursor" value="false" />
     <preference name="android-minSdkVersion" value="19" />
     <preference name="android-installLocation" value="internalOnly" />
-	<preference name="phonegap-version" value="cli-9.0.0" />
+	<preference name="phonegap-version" value="cli-7.1.0" />
 	<preference name="EnableViewportScale" value="true" />
 	<preference name="MediaPlaybackRequiresUserAction" value="true" />
 	<preference name="AllowInlineMediaPlayback" value="false" />
@@ -53,7 +53,6 @@
 	<preference name="SplashScreenSpinnerColor" value="white" />
 	<preference name="pgb-builder-version" value="2" />
 	<preference name="splash-screen-duration" value="5000" />
-	<preference name="show-splash-screen-spinner" value="true" />
 	
     <icon src="icon.png" />
 	<splash src="splash.png" />
@@ -211,5 +210,4 @@
 	<plugin name="cordova-plugin-file-opener2-base64" source="npm" />
 	<plugin spec="https://github.com/remoorejr/cordova-open.git" source="git" />
 	<plugin name="cordova-plugin-phonedialer" source="npm" />
-	<platform name="ios" />
 </widget>
