@@ -3254,4 +3254,12 @@
 <action="allow">
 <groups="">
 >
+<[815]<page="Shipping_Instruction_DescripcionPago.a5rpt">
+<action="allow">
+<groups="">
+>
+<[816]<page="ParaShipping_LugarCargaDescarga.a5wcmp">
+<action="allow">
+<groups="">
+>
 >
