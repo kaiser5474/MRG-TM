@@ -81,12 +81,36 @@
 		"name": "\\a5images\\boxsize8x8fillUp5FDiagonalWhite3A232552C2392C239.png"
 	},
 	{
+		"crc": 4294942819,
+		"name": "\\a5images\\chartline.png"
+	},
+	{
+		"crc": 4294967135,
+		"name": "\\a5images\\codeoperationrun.png"
+	},
+	{
+		"crc": 4294911475,
+		"name": "\\a5images\\controlactionselectText.png"
+	},
+	{
 		"crc": 4294923687,
 		"name": "\\a5images\\controlimage.png"
 	},
 	{
 		"crc": 4294914621,
 		"name": "\\a5images\\deviceprinter.png"
+	},
+	{
+		"crc": 4294911326,
+		"name": "\\a5images\\disabledchartline.png"
+	},
+	{
+		"crc": 4294924758,
+		"name": "\\a5images\\disabledcodeoperationrun.png"
+	},
+	{
+		"crc": 4294958548,
+		"name": "\\a5images\\disabledcontrolactionselectText.png"
 	},
 	{
 		"crc": 4294911020,
@@ -99,6 +123,10 @@
 	{
 		"crc": 4294963417,
 		"name": "\\a5images\\disabledemailsend.png"
+	},
+	{
+		"crc": 4294935962,
+		"name": "\\a5images\\disabledformattextedit.png"
 	},
 	{
 		"crc": 4294959243,
@@ -125,6 +153,10 @@
 		"name": "\\a5images\\disabledgreenbox.png"
 	},
 	{
+		"crc": 4294928795,
+		"name": "\\a5images\\disabledlayouttablecellinsertafter.png"
+	},
+	{
 		"crc": 4294937505,
 		"name": "\\a5images\\disabledmininavigateprev.png"
 	},
@@ -147,6 +179,10 @@
 	{
 		"crc": 4294928518,
 		"name": "\\a5images\\emailsend.png"
+	},
+	{
+		"crc": 4294940567,
+		"name": "\\a5images\\formattextedit.png"
 	},
 	{
 		"crc": 4294923986,
@@ -187,6 +223,10 @@
 	{
 		"crc": 4294929142,
 		"name": "\\a5images\\greenbox.png"
+	},
+	{
+		"crc": 4294939699,
+		"name": "\\a5images\\layouttablecellinsertafter.png"
 	},
 	{
 		"crc": 4294940004,
@@ -5074,11 +5114,11 @@
 	}],
 	"rootfiles": [
 	{
-		"crc": 4294928636,
+		"crc": 4294933604,
 		"name": "\\baseline.zip"
 	},
 	{
-		"crc": 4294902270,
+		"crc": 4294944727,
 		"name": "\\config.xml"
 	},
 	{
@@ -5086,7 +5126,7 @@
 		"name": "\\icon.png"
 	},
 	{
-		"crc": 4294934411,
+		"crc": 4294916880,
 		"name": "\\index.html"
 	},
 	{
@@ -5098,15 +5138,15 @@
 		"name": "\\splash.png"
 	},
 	{
-		"crc": 4294937213,
+		"crc": 4294942629,
 		"name": "\\version.json"
 	},
 	{
-		"crc": 4294906476,
+		"crc": 4294955953,
 		"name": "\\_instantUpdateSettings.js"
 	},
 	{
-		"crc": 4294937963,
+		"crc": 4294959759,
 		"name": "\\_phoneGapSettings.js"
 	}],
 	"plugins": [

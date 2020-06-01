@@ -47,7 +47,7 @@
 	"instantUpdateSettingsJSON": "",
 	"launchAppManager": true,
 	"_sqlitedbdefined": false,
-	"_channel": "<Default>",
+	"_channel": "",
 	"_baseLineGuid": "97517fa9ad97497b9ad98f07de9f7509",
 	"baseline": {
 		"_initialUXcomponent": "app_MRG_Login",
