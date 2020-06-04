@@ -85,6 +85,10 @@
 		"name": "\\a5images\\chartline.png"
 	},
 	{
+		"crc": 4294937474,
+		"name": "\\a5images\\codeenumnew.png"
+	},
+	{
 		"crc": 4294967135,
 		"name": "\\a5images\\codeoperationrun.png"
 	},
@@ -95,6 +99,10 @@
 	{
 		"crc": 4294923687,
 		"name": "\\a5images\\controlimage.png"
+	},
+	{
+		"crc": 4294914073,
+		"name": "\\a5images\\controlole.png"
 	},
 	{
 		"crc": 4294914621,
@@ -205,6 +213,10 @@
 		"name": "\\a5images\\genericedit.png"
 	},
 	{
+		"crc": 4294938438,
+		"name": "\\a5images\\genericfavoritescriptsedit.png"
+	},
+	{
 		"crc": 4294905473,
 		"name": "\\a5images\\generichome.png"
 	},
@@ -215,6 +227,10 @@
 	{
 		"crc": 4294933187,
 		"name": "\\a5images\\genericpeople.png"
+	},
+	{
+		"crc": 4294961884,
+		"name": "\\a5images\\genericperson.png"
 	},
 	{
 		"crc": 4294940833,
@@ -231,6 +247,10 @@
 	{
 		"crc": 4294940004,
 		"name": "\\a5images\\logo.png"
+	},
+	{
+		"crc": 4294953749,
+		"name": "\\a5images\\minicodeexpressionblue.png"
 	},
 	{
 		"crc": 4294910201,
@@ -259,6 +279,14 @@
 	{
 		"crc": 4294905703,
 		"name": "\\a5images\\presentationreport.png"
+	},
+	{
+		"crc": 4294950686,
+		"name": "\\a5images\\tablenew.png"
+	},
+	{
+		"crc": 4294913820,
+		"name": "\\a5images\\webpanelnavigator.png"
 	},
 	{
 		"crc": 4294923674,
@@ -5037,7 +5065,7 @@
 		"name": "\\css\\iOS7\\spinlistOver.png"
 	},
 	{
-		"crc": 4294954731,
+		"crc": 4294934033,
 		"name": "\\css\\iOS7\\style.css"
 	},
 	{
@@ -5111,6 +5139,10 @@
 	{
 		"crc": 4294911978,
 		"name": "\\PhoneGapProjects\\App_MariloginsaTM\\www\\Logo.jpg"
+	},
+	{
+		"crc": 4294903184,
+		"name": "\\staticHTMLFileset\\css\\GrBlue\\DDWinClosePressed.png"
 	}],
 	"rootfiles": [
 	{
@@ -5126,8 +5158,12 @@
 		"name": "\\icon.png"
 	},
 	{
-		"crc": 4294916880,
+		"crc": 4294912436,
 		"name": "\\index.html"
+	},
+	{
+		"crc": 4294959108,
+		"name": "\\LogoMariloginsaVerde.png"
 	},
 	{
 		"crc": 4294957646,
@@ -5138,7 +5174,7 @@
 		"name": "\\splash.png"
 	},
 	{
-		"crc": 4294942629,
+		"crc": 4294944752,
 		"name": "\\version.json"
 	},
 	{

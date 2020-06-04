@@ -1,8 +1,14 @@
-@font-face {
-  font-family: 'A5_iOS7Icons';
-  src: url(A5_iOS7Icons.eot);
-  src: url(A5_iOS7Icons.eot) format("embedded-opentype"), url(A5_iOS7Icons.woff) format("woff"), url(A5_iOS7Icons.ttf) format("truetype"), url(A5_iOS7Icons.svg) format("svg"); }
-
+ @font-face {
+	font-family: 'A5_iOS7Icons';
+	src: url(A5_iOS7Icons.eot) format("embedded-opentype"),
+	url("css/iOS7/A5_iOS7Icons.eot") format("embedded-opentype"), 
+	url(A5_iOS7Icons.woff) format("woff"), 
+	url("css/iOS7/A5_iOS7Icons.woff") format("woff"),
+	url(A5_iOS7Icons.ttf) format("truetype"),
+	url("css/iOS7/A5_iOS7Icons.ttf") format("truetype"), 
+	url(A5_iOS7Icons.svg) format("svg"),
+	url("css/iOS7/A5_iOS7Icons.svg") format("svg");
+}
 html {
   -webkit-tap-highlight-color: transparent;
   -webkit-user-select: none; }
