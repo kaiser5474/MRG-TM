@@ -3282,4 +3282,12 @@
 <action="allow">
 <groups="">
 >
+<[822]<page="app_evento.a5wcmp">
+<action="allow">
+<groups="">
+>
+<[823]<page="N_GrupoSanguineo.a5wcmp">
+<action="allow">
+<groups="">
+>
 >
