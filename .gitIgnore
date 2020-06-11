@@ -5,3 +5,4 @@ __Undo.undo/
 componentInfo
 componentTypeCache
 __staging.staging/
+*.zip
