@@ -81,12 +81,44 @@
 		"name": "\\a5images\\boxsize8x8fillUp5FDiagonalWhite3A232552C2392C239.png"
 	},
 	{
+		"crc": 4294942819,
+		"name": "\\a5images\\chartline.png"
+	},
+	{
+		"crc": 4294937474,
+		"name": "\\a5images\\codeenumnew.png"
+	},
+	{
+		"crc": 4294967135,
+		"name": "\\a5images\\codeoperationrun.png"
+	},
+	{
+		"crc": 4294911475,
+		"name": "\\a5images\\controlactionselectText.png"
+	},
+	{
 		"crc": 4294923687,
 		"name": "\\a5images\\controlimage.png"
 	},
 	{
+		"crc": 4294914073,
+		"name": "\\a5images\\controlole.png"
+	},
+	{
 		"crc": 4294914621,
 		"name": "\\a5images\\deviceprinter.png"
+	},
+	{
+		"crc": 4294911326,
+		"name": "\\a5images\\disabledchartline.png"
+	},
+	{
+		"crc": 4294924758,
+		"name": "\\a5images\\disabledcodeoperationrun.png"
+	},
+	{
+		"crc": 4294958548,
+		"name": "\\a5images\\disabledcontrolactionselectText.png"
 	},
 	{
 		"crc": 4294911020,
@@ -99,6 +131,10 @@
 	{
 		"crc": 4294963417,
 		"name": "\\a5images\\disabledemailsend.png"
+	},
+	{
+		"crc": 4294935962,
+		"name": "\\a5images\\disabledformattextedit.png"
 	},
 	{
 		"crc": 4294959243,
@@ -125,6 +161,10 @@
 		"name": "\\a5images\\disabledgreenbox.png"
 	},
 	{
+		"crc": 4294928795,
+		"name": "\\a5images\\disabledlayouttablecellinsertafter.png"
+	},
+	{
 		"crc": 4294937505,
 		"name": "\\a5images\\disabledmininavigateprev.png"
 	},
@@ -149,6 +189,10 @@
 		"name": "\\a5images\\emailsend.png"
 	},
 	{
+		"crc": 4294940567,
+		"name": "\\a5images\\formattextedit.png"
+	},
+	{
 		"crc": 4294923986,
 		"name": "\\a5images\\genericbook.png"
 	},
@@ -169,6 +213,10 @@
 		"name": "\\a5images\\genericedit.png"
 	},
 	{
+		"crc": 4294938438,
+		"name": "\\a5images\\genericfavoritescriptsedit.png"
+	},
+	{
 		"crc": 4294905473,
 		"name": "\\a5images\\generichome.png"
 	},
@@ -181,6 +229,10 @@
 		"name": "\\a5images\\genericpeople.png"
 	},
 	{
+		"crc": 4294961884,
+		"name": "\\a5images\\genericperson.png"
+	},
+	{
 		"crc": 4294940833,
 		"name": "\\a5images\\genericrefreshcolor.png"
 	},
@@ -189,8 +241,16 @@
 		"name": "\\a5images\\greenbox.png"
 	},
 	{
+		"crc": 4294939699,
+		"name": "\\a5images\\layouttablecellinsertafter.png"
+	},
+	{
 		"crc": 4294940004,
 		"name": "\\a5images\\logo.png"
+	},
+	{
+		"crc": 4294953749,
+		"name": "\\a5images\\minicodeexpressionblue.png"
 	},
 	{
 		"crc": 4294910201,
@@ -219,6 +279,14 @@
 	{
 		"crc": 4294905703,
 		"name": "\\a5images\\presentationreport.png"
+	},
+	{
+		"crc": 4294950686,
+		"name": "\\a5images\\tablenew.png"
+	},
+	{
+		"crc": 4294913820,
+		"name": "\\a5images\\webpanelnavigator.png"
 	},
 	{
 		"crc": 4294923674,
@@ -4997,7 +5065,7 @@
 		"name": "\\css\\iOS7\\spinlistOver.png"
 	},
 	{
-		"crc": 4294954731,
+		"crc": 4294934033,
 		"name": "\\css\\iOS7\\style.css"
 	},
 	{
@@ -5071,14 +5139,18 @@
 	{
 		"crc": 4294911978,
 		"name": "\\PhoneGapProjects\\App_MariloginsaTM\\www\\Logo.jpg"
+	},
+	{
+		"crc": 4294903184,
+		"name": "\\staticHTMLFileset\\css\\GrBlue\\DDWinClosePressed.png"
 	}],
 	"rootfiles": [
 	{
-		"crc": 4294933604,
+		"crc": 4294902870,
 		"name": "\\baseline.zip"
 	},
 	{
-		"crc": 4294935437,
+		"crc": 4294944727,
 		"name": "\\config.xml"
 	},
 	{
@@ -5086,8 +5158,12 @@
 		"name": "\\icon.png"
 	},
 	{
-		"crc": 4294934411,
+		"crc": 4294966413,
 		"name": "\\index.html"
+	},
+	{
+		"crc": 4294959108,
+		"name": "\\LogoMariloginsaVerde.png"
 	},
 	{
 		"crc": 4294957646,
@@ -5098,15 +5174,15 @@
 		"name": "\\splash.png"
 	},
 	{
-		"crc": 4294963642,
+		"crc": 4294927831,
 		"name": "\\version.json"
 	},
 	{
-		"crc": 4294955953,
+		"crc": 4294952154,
 		"name": "\\_instantUpdateSettings.js"
 	},
 	{
-		"crc": 4294957287,
+		"crc": 4294959759,
 		"name": "\\_phoneGapSettings.js"
 	}],
 	"plugins": [
