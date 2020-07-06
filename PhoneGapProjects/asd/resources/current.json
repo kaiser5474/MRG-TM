@@ -177,6 +177,10 @@
 		"name": "\\a5images\\disabledpresentationreport.png"
 	},
 	{
+		"crc": 4294966019,
+		"name": "\\a5images\\editdelete.png"
+	},
+	{
 		"crc": 4294916484,
 		"name": "\\a5images\\editfind.png"
 	},
@@ -199,6 +203,10 @@
 	{
 		"crc": 4294932051,
 		"name": "\\a5images\\genericcondition.png"
+	},
+	{
+		"crc": 4294938603,
+		"name": "\\a5images\\genericconditionditto.png"
 	},
 	{
 		"crc": 4294959986,
@@ -231,6 +239,10 @@
 	{
 		"crc": 4294961884,
 		"name": "\\a5images\\genericperson.png"
+	},
+	{
+		"crc": 4294903155,
+		"name": "\\a5images\\genericrefresh.png"
 	},
 	{
 		"crc": 4294940833,
@@ -5093,6 +5105,10 @@
 		"name": "\\css\\demoapp_index.css"
 	},
 	{
+		"crc": 4294942479,
+		"name": "\\Images\\Aereo.png"
+	},
+	{
 		"crc": 4294957296,
 		"name": "\\Images\\checkmark.png"
 	},
@@ -5146,7 +5162,15 @@
 	}],
 	"rootfiles": [
 	{
-		"crc": 4294902870,
+		"crc": 4294955065,
+		"name": "\\2bad70f2d08429a28dfbebd4c237924b.png"
+	},
+	{
+		"crc": 4294957672,
+		"name": "\\a5_temp_a2f07e17_2012_442f_aa38_4a0c63b64adf.png"
+	},
+	{
+		"crc": 4294931877,
 		"name": "\\baseline.zip"
 	},
 	{
@@ -5154,11 +5178,11 @@
 		"name": "\\config.xml"
 	},
 	{
-		"crc": 4294937314,
+		"crc": 4294936686,
 		"name": "\\icon.png"
 	},
 	{
-		"crc": 4294941881,
+		"crc": 4294912308,
 		"name": "\\index.html"
 	},
 	{
@@ -5174,11 +5198,11 @@
 		"name": "\\splash.png"
 	},
 	{
-		"crc": 4294912146,
+		"crc": 4294905405,
 		"name": "\\version.json"
 	},
 	{
-		"crc": 4294952154,
+		"crc": 4294941071,
 		"name": "\\_instantUpdateSettings.js"
 	},
 	{

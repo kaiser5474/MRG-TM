@@ -6,7 +6,7 @@
 	"_ssP": "C:\\5- Proyectos\\TRABAJOS\\Mariloginsa\\8-Logos\\icon-96-xhdpi.png",
 	"_ssA9": "C:\\5- Proyectos\\TRABAJOS\\Mariloginsa\\8-Logos\\icon-96-xhdpi.png",
 	"_initialUxComponent": "app_MRG_Login",
-	"_componentLastUpdated": "14-06-2020 01:51:40 58 am",
+	"_componentLastUpdated": "23-06-2020 03:28:57 88 pm",
 	"_ajaxUrl": "https://www.mariloginsatm.com",
 	"_additionalFiles": "",
 	"_userName": "hFH2jej01ny3tO9Ezprj0oD4YPioh7jsu4xSeBeX4QA=",
@@ -47,8 +47,8 @@
 	"instantUpdateSettingsJSON": "{\r\n\t\"item1\": \"item1\",\r\n\t\"name\": \"\",\r\n\t\"patchLocation\": \"AlphaSoftware\",\r\n\t\"storageConnectionString\": \"\",\r\n\t\"baseURL\": \"\",\r\n\t\"displayMessageAfterUpdate\": false,\r\n\t\"firsttimerunmessage\": \"Bienvenido a Mariloginsa App\",\r\n\t\"displayfirsttimeloadmessage\": true,\r\n\t\"message\": \"\",\r\n\t\"systemMessages\": \"Verbose\",\r\n\t\"autoUpdate\": true,\r\n\t\"path\": \"\"\r\n}",
 	"launchAppManager": true,
 	"_sqlitedbdefined": false,
-	"_channel": "<Default>",
-	"_baseLineGuid": "e78dd10227024f49ab1b28a0d44eab36",
+	"_channel": "",
+	"_baseLineGuid": "926a7008d0254785ab6f21fa57d8b303",
 	"baseline": {
 		"_initialUXcomponent": "app_MRG_Login",
 		"_ajaxurl": "https://www.mariloginsatm.com"

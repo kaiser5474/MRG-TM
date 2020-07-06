@@ -5146,7 +5146,7 @@
 	}],
 	"rootfiles": [
 	{
-		"crc": 4294902870,
+		"crc": 4294931877,
 		"name": "\\baseline.zip"
 	},
 	{
@@ -5154,11 +5154,11 @@
 		"name": "\\config.xml"
 	},
 	{
-		"crc": 4294961204,
+		"crc": 4294936686,
 		"name": "\\icon.png"
 	},
 	{
-		"crc": 4294966413,
+		"crc": 4294916920,
 		"name": "\\index.html"
 	},
 	{
@@ -5174,11 +5174,11 @@
 		"name": "\\splash.png"
 	},
 	{
-		"crc": 4294927831,
+		"crc": 4294918854,
 		"name": "\\version.json"
 	},
 	{
-		"crc": 4294952154,
+		"crc": 4294941071,
 		"name": "\\_instantUpdateSettings.js"
 	},
 	{
