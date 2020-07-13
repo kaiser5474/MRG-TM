@@ -109,6 +109,10 @@
 		"name": "\\a5images\\deviceprinter.png"
 	},
 	{
+		"crc": 4294938682,
+		"name": "\\a5images\\disabledapplicationadobepdf.png"
+	},
+	{
 		"crc": 4294911326,
 		"name": "\\a5images\\disabledchartline.png"
 	},
@@ -5182,7 +5186,7 @@
 		"name": "\\icon.png"
 	},
 	{
-		"crc": 4294912308,
+		"crc": 4294923347,
 		"name": "\\index.html"
 	},
 	{
@@ -5198,7 +5202,7 @@
 		"name": "\\splash.png"
 	},
 	{
-		"crc": 4294905405,
+		"crc": 4294948819,
 		"name": "\\version.json"
 	},
 	{
