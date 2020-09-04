@@ -1,0 +1,14 @@
+A5SaveTimeStamp:20200526171300086
+css:<ProjectStyle>
+subComponent:N_Entidades
+subComponent:RecMedTransp_Transportista
+subComponent:RecMedTransp_ContOrigen
+subComponent:RecMedTransp_ContDestino
+subComponent:AsignarCargaShipping
+subComponent:AsignarCarga
+subComponent:PickUpDescripcion
+subComponent:Shipping_MedioTransporte
+subComponent:BL_Escala
+subComponent:ParaShipping_LugarCargaDescarga
+copyfile:{C:\4-Trabajos\Mariloginsa\Nibble-TM\Nibble-TM.WebProjects\MRG.WebProject\Alarm-Plus-icon.png}
+copyfile:{C:\4-Trabajos\Mariloginsa\Nibble-TM\Nibble-TM.WebProjects\MRG.WebProject\Pick_UP_Order.a5rpt}

@@ -1,0 +1,16 @@
+A5SaveTimeStamp:20181218191335503
+css:<ProjectStyle>
+subComponent:Recorridos_Detalles_Multimodal
+subComponent:Recorridos_MediosTransportacion_Multimodal
+subComponent:RecorridosMediosTransporte_ReporteActividades_Multimodal
+subComponent:RecorridosMediosTransporte_Observaciones
+subComponent:RecorridosMediosTransporte_Documentos_Multimodal
+subComponent:Recorridos_Responsables
+subComponent:Recorridos_Validaciones_Multimodal
+subComponent:Recorridos_Valores
+copyfile:{C:\Users\Jarvis\Google Drive\Nibble-TM\Nibble-TM.WebProjects\Default.WebProject\Images\doblecheckmark.png}
+copyfile:{C:\Users\Jarvis\Google Drive\Nibble-TM\Nibble-TM.WebProjects\Default.WebProject\Images\checkmark.png}
+copyfile:{C:\Users\Jarvis\Google Drive\Nibble-TM\Nibble-TM.WebProjects\Default.WebProject\Reporte_InformeSupervisionMultimodal_Cliente.a5rpt}
+copyfile:{C:\Users\Jarvis\Google Drive\Nibble-TM\Nibble-TM.WebProjects\Default.WebProject\Reporte_ManifiestoCarga_Multimodal.a5rpt}
+copyfile:{C:\Users\Jarvis\Google Drive\Nibble-TM\Nibble-TM.WebProjects\Default.WebProject\ReporteActividades_LugaresPredefinidosMultimodal.a5rpt}
+cssIcon:materialIcons
