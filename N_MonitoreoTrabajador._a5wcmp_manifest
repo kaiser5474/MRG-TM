@@ -1,0 +1,12 @@
+A5SaveTimeStamp:20200706223621599
+css:GrBlue
+subComponent:N_Monitoreo_Sintomas_Trabajador
+subComponent:N_Monitoreo_Sintomas_Familiar
+subComponent:N_Monitoreo_Trabajador_Encomienda
+subComponent:N_Monitoreo_Prueba
+subComponent:N_Monitoreo_PruebaPCR
+subComponent:N_Monitoreo_Sintomas_Trabajador.a5wcmp
+subComponent:N_Monitoreo_Sintomas_Familiar.a5wcmp
+subComponent:N_Monitoreo_Trabajador_Encomienda.a5wcmp
+subComponent:N_Monitoreo_Prueba.a5wcmp
+subComponent:N_Monitoreo_PruebaPCR.a5wcmp
