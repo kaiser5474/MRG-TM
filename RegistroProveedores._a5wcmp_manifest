@@ -1,0 +1,10 @@
+A5SaveTimeStamp:20200805130711894
+css:<ProjectStyle>
+subComponent:RegistroServicioProveedores2
+subComponent:RegistroProveedoresActividades
+subComponent:RegistroProveedores_Documentos
+subComponent:RegistroProveedoresDatosParaPago2
+subComponent:RegistroProveedores_ContactoEmail
+subComponent:RegistroProveedores_Pagados_Documentos2
+copyfile:{C:\4-Trabajos\Mariloginsa\Nibble-TM\Nibble-TM.WebProjects\MRG.WebProject\Planificacion_Pago.a5rpt}
+copyfile:{C:\4-Trabajos\Mariloginsa\Nibble-TM\Nibble-TM.WebProjects\MRG.WebProject\lt_Instruccion_de_Pago_Excel.a5rpt}
