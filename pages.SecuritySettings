@@ -3318,4 +3318,8 @@
 <action="allow">
 <groups="">
 >
+<[831]<page="Formulario_IngresoPersonal.a5rpt">
+<action="allow">
+<groups="">
+>
 >
