@@ -3322,4 +3322,12 @@
 <action="allow">
 <groups="">
 >
+<[832]<page="ReporteCargas_ParaClientes3.a5rpt">
+<action="allow">
+<groups="">
+>
+<[833]<page="ManifiestoCarga_ReporteCarga.a5rpt">
+<action="allow">
+<groups="">
+>
 >
