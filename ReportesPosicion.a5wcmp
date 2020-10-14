@@ -15,7 +15,8 @@
         "info": {
             "createdBy": "ASUS",
             "dateCreated": "2018-8-29",
-            "dateLastEdited": "2019-11-11"
+            "dateLastEdited": "2020-10-8",
+            "revisionnumber": 2
         },
         "page_fields": [
             {
@@ -28,13 +29,6 @@
                 "displayOD": "{Data=8d05e739-eaaa-4543-8824-e054107ff9fe}{I:'$a5_control_tab'} [Tab Control: TAB_1]",
                 "repeatingSectionParentId": -1,
                 "displayODtree": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=8d05e739-eaaa-4543-8824-e054107ff9fe}{I:'$a5_control_tab'} [Tab Control: TAB_1]",
-                "indentTree": 0,
-                "precalc": {
-                    "ControlHTML": "<div class=\"A5container [theme:tab.base.className|{grid.style}TabT]\" id=\"{grid.componentname}.TAB_1\"><!--Tab Start {grid.componentname}.TAB_1-->\n\t<div id=\"{grid.componentname}.TAB_1.TABBAND\" class=\"[theme:tab.base.tabsClassName|{grid.style}TabTBand]\"><!--Tab Buttons Start {grid.componentname}.TAB_1-->\n\t\t<a id=\"{grid.componentname}.TAB_1.0.TAB\" class=\"\" href=\"#\">Multimodal</a>\n\t\t<a id=\"{grid.componentname}.TAB_1.1.TAB\" class=\"\" href=\"#\">Alquiler de Medios</a>\n\t<br style=\"clear: both;\" />\n\t</div><!--Tab Buttons Start {grid.componentname}.TAB_1-->\n\t<div id=\"{grid.componentname}.TAB_1.PANES\" class=\"[theme:tab.base.panesClassName|{grid.style}TabTPanes]\"><!--Tab Panes Start {grid.componentname}.TAB_1-->",
-                    "controlJS": "window['{grid.componentName}.TAB_1Obj'] = new A5.Tab('{grid.componentName}.TAB_1',[\n{ \thtml: 'Multimodal', \tvalue: '1', \tonDynamicLoadDelay: 0, \tshow: true, \tdisabled: false, \tonDynamicLoad: function() {action_{alias}_405f77ed_aa94_46a7_84ff_ffd11d8a2379();} }, \n{ \thtml: 'Alquiler de Medios', \tvalue: '2', \tonDynamicLoadDelay: 0, \tshow: true, \tdisabled: false, \tonDynamicLoad: function() {action_{alias}_8aa1bd58_37ad_49a4_b205_29acba5eccb1();} }\n],\n\t{\n\ttheme: '{grid.style}'\n}\n\n);\n\n\twindow['{grid.componentName}.TAB_1Obj'].select('1');\n\n"
-                },
-                "errorInDefinition": false,
-                "childTabPanes": "2\n4\n",
                 "v": {
                     "TabControl": {
                         "useModernTabs": true,
@@ -74,7 +68,14 @@
                         "javascriptClientSideWatches": ""
                     },
                     "_displayText": "[Tab Control: TAB_1]"
-                }
+                },
+                "indentTree": 0,
+                "precalc": {
+                    "ControlHTML": "<div class=\"A5container [theme:tab.base.className|{grid.style}TabT]\" id=\"{grid.componentname}.TAB_1\"><!--Tab Start {grid.componentname}.TAB_1-->\n\t<div id=\"{grid.componentname}.TAB_1.TABBAND\" class=\"[theme:tab.base.tabsClassName|{grid.style}TabTBand]\"><!--Tab Buttons Start {grid.componentname}.TAB_1-->\n\t\t<a id=\"{grid.componentname}.TAB_1.0.TAB\" class=\"\" href=\"#\">Multimodal</a>\n\t\t<a id=\"{grid.componentname}.TAB_1.1.TAB\" class=\"\" href=\"#\">Alquiler de Medios</a>\n\t<br style=\"clear: both;\" />\n\t</div><!--Tab Buttons Start {grid.componentname}.TAB_1-->\n\t<div id=\"{grid.componentname}.TAB_1.PANES\" class=\"[theme:tab.base.panesClassName|{grid.style}TabTPanes]\"><!--Tab Panes Start {grid.componentname}.TAB_1-->",
+                    "controlJS": "window['{grid.componentName}.TAB_1Obj'] = new A5.Tab('{grid.componentName}.TAB_1',[\n{ \thtml: 'Multimodal', \tvalue: '1', \tonDynamicLoadDelay: 0, \tshow: true, \tdisabled: false, \tonDynamicLoad: function() {action_{alias}_405f77ed_aa94_46a7_84ff_ffd11d8a2379();} }, \n{ \thtml: 'Alquiler de Medios', \tvalue: '2', \tonDynamicLoadDelay: 0, \tshow: true, \tdisabled: false, \tonDynamicLoad: function() {action_{alias}_8aa1bd58_37ad_49a4_b205_29acba5eccb1();} }\n],\n\t{\n\ttheme: '{grid.style}'\n}\n\n);\n\n\twindow['{grid.componentName}.TAB_1Obj'].select('1');\n\n"
+                },
+                "errorInDefinition": false,
+                "childTabPanes": "2\n4\n"
             },
             {
                 "controlType": "layout_directive_TabPane",
@@ -279,13 +280,6 @@
                 "displayOD": "{Data=c869a6f5-9ce0-439b-89d0-01897139fea2}{I:'$$control.tab.pane'} [TabPane: Otros Tipos Transportacion]",
                 "repeatingSectionParentId": -1,
                 "displayODtree": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{I:'vertLine'}{Data=c869a6f5-9ce0-439b-89d0-01897139fea2}{I:'$$control.tab.pane'} [TabPane: Alquiler de Medios]",
-                "indentTree": 1,
-                "precalc": {
-                    "ControlHTML": "<div id=\"{grid.componentName}.TAB_1.1.PANE\"><!--TabPaneBegin {grid.componentName}.TAB_1.1-->\n",
-                    "DesignViewHTML": "<div id=\"{grid.componentName}.TAB_1.1.PANE\"><!--TabPaneBegin {grid.componentName}.TAB_1.1-->\n"
-                },
-                "parentTabIndex": 1,
-                "tabPaneNumber": 2,
                 "v": {
                     "title": "Alquiler de Medios",
                     "tabPane": {
@@ -299,27 +293,25 @@
                         "renderChildren": "action_{alias}_8aa1bd58_37ad_49a4_b205_29acba5eccb1();\n"
                     },
                     "_displayText": "[TabPane: Alquiler de Medios]"
-                }
+                },
+                "indentTree": 1,
+                "precalc": {
+                    "ControlHTML": "<div id=\"{grid.componentName}.TAB_1.1.PANE\"><!--TabPaneBegin {grid.componentName}.TAB_1.1-->\n",
+                    "DesignViewHTML": "<div id=\"{grid.componentName}.TAB_1.1.PANE\"><!--TabPaneBegin {grid.componentName}.TAB_1.1-->\n"
+                },
+                "parentTabIndex": 1,
+                "tabPaneNumber": 2
             },
             {
-                "controltype": "PageLayoutPart",
+                "controlType": "PageLayoutPart",
                 "display": "{B=White,Light Blue}{I:'vertLine'}{I:'vertLine'}{Data=8aa1bd58-37ad-49a4-b205-29acba5eccb1}{I:'$$control.html.advButton'} [Page Layout Part: ReportePosicion_Ultima (Grid Component)] �",
                 "displayODFlat": "{Data=8aa1bd58-37ad-49a4-b205-29acba5eccb1}{I:'$$control.html.advButton'} [Page Layout Part: ReportePosicion_Ultima] �",
-                "displayOD": "{Data=8aa1bd58-37ad-49a4-b205-29acba5eccb1}{I:'$$control.html.advButton'} [Page Layout Part: ReportePosicion_Ultima] �",
-                "displayODtree": "{B=White,Light Blue}{I:'vertLine'}{I:'vertLine'}{Data=8aa1bd58-37ad-49a4-b205-29acba5eccb1}{I:'$$control.html.advButton'} [Page Layout Part: ReportePosicion_Ultima (Grid Component)] �",
                 "idInternal": "8aa1bd58-37ad-49a4-b205-29acba5eccb1",
                 "parentContainer": 1,
-                "inPanelCard": false,
-                "inTreeControl": false,
                 "parentTabPaneIndex": 4,
+                "displayOD": "{Data=8aa1bd58-37ad-49a4-b205-29acba5eccb1}{I:'$$control.html.advButton'} [Page Layout Part: ReportePosicion_Ultima] �",
                 "repeatingSectionParentId": -1,
-                "indentTree": 2,
-                "precalc": {
-                    "ControlHTML": "\t<div class=\"A5container\">\n\t\t<div id=\"{alias}_DIVCONTAINER_8aa1bd58_37ad_49a4_b205_29acba5eccb1\"   ><img src=\"css/A5System/Images/wait.gif\" /> Working...</div>\n\t</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n\t\t",
-                    "pageLayoutPartJavascript": "window['action_{alias}_8aa1bd58_37ad_49a4_b205_29acba5eccb1'] = function() {\n\t\n\t\n\tvar onCompleteCode = '';\n\tvar callbackId = A5.UUID();\n\tif(typeof objx == 'undefined') objx = {};\n\tobjx[callbackId] = Function(onCompleteCode);\n\t\n\n\n\tvar go = new Object();\n\tgo.gridName = 'ReportePosicion_Ultima';\n\tgo.alias = '{alias}_REPORTEPOS_161027GIDS';\n\tgo.workingMessage = '<img src=\"css/A5System/Images/wait.gif\" /> Working...';\n\tgo.flagTimer = 'F';\n\tgo.flagQueryEcho = 'F';\n\tgo.flagDebugMode = 'F';\n\tgo.userFilter = '';\n\tgo.baseFilter = '';\n\tgo.userOrder = '';\n\tgo.overrideSettings = 'style_name=`{pageLayout.style}`'+'||';\n\tgo.arguments = '';\n\t\n\t\n\tgo.localArguments = '';\n\tgo.linkDefinition = '';\n\tgo.placeHolderValues = '';\n\tgo.parameterBucket = $gvs('{alias}.PARAMETERBUCKET');\n\tgo.argumentValueBucket = $gvs('{alias}.ARGUMENTVALUES');\n\tgo.a5_default_path = '{PageLayout.a5_default_path}';\n\tgo.onLoadCompleteJavascript = 'run:'+callbackId;\n\t\n\t\n\tif(typeof tbiObj != 'undefined' && typeof tbiObj._workingPreviewHost != 'undefined') { \n\t\tgo._workingPreviewHost = tbiObj._workingPreviewHost;\n\t}\n\n\n\tgo.gridDiv = '{alias}_DIVCONTAINER_8aa1bd58_37ad_49a4_b205_29acba5eccb1';\n\tA5.component.runGrid(go);\n\t\n}\n"
-                },
-                "hasParentTab": true,
-                "parentTabId": "c869a6f5-9ce0-439b-89d0-01897139fea2",
+                "displayODtree": "{B=White,Light Blue}{I:'vertLine'}{I:'vertLine'}{Data=8aa1bd58-37ad-49a4-b205-29acba5eccb1}{I:'$$control.html.advButton'} [Page Layout Part: ReportePosicion_Ultima (Grid Component)] �",
                 "v": {
                     "pageLayoutPart": {
                         "showMode": "When page is loaded",
@@ -340,9 +332,9 @@
                             "gridName": "ReportePosicion_Ultima",
                             "componentType": "Grid",
                             "alias": "<DefaultAlias>",
-                            "customSettingOverridesJSON": "",
                             "useMasterStyle": true,
-                            "workingMessage": "<img src=\"css/A5System/Images/wait.gif\" /> Working..."
+                            "workingMessage": "<img src=\"css/A5System/Images/wait.gif\" /> Working...",
+                            "customSettingOverridesJSON": ""
                         },
                         "report": {
                             "workingMessage": "<img src=\"css/A5System/Images/wait.gif\" /> Working...",
@@ -460,7 +452,16 @@
                         "autoRefreshOnFocus": false
                     },
                     "_displayText": "[Page Layout Part: ReportePosicion_Ultima (Grid Component)]"
-                }
+                },
+                "indentTree": 2,
+                "precalc": {
+                    "ControlHTML": "\t<div class=\"A5container\">\n\t\t<div id=\"{alias}_DIVCONTAINER_8aa1bd58_37ad_49a4_b205_29acba5eccb1\"   ><img src=\"css/A5System/Images/wait.gif\" /> Working...</div>\n\t</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n\t\t",
+                    "pageLayoutPartJavascript": "window['action_{alias}_8aa1bd58_37ad_49a4_b205_29acba5eccb1'] = function() {\n\t\n\t\n\tvar onCompleteCode = '';\n\tvar callbackId = A5.UUID();\n\tif(typeof objx == 'undefined') objx = {};\n\tobjx[callbackId] = Function(onCompleteCode);\n\t\n\n\n\tvar go = new Object();\n\tgo.gridName = 'ReportePosicion_Ultima';\n\tgo.alias = '{alias}_REPORTEPOS_161027GIDS';\n\tgo.workingMessage = '<img src=\"css/A5System/Images/wait.gif\" /> Working...';\n\tgo.flagTimer = 'F';\n\tgo.flagQueryEcho = 'F';\n\tgo.flagDebugMode = 'F';\n\tgo.userFilter = '';\n\tgo.baseFilter = '';\n\tgo.userOrder = '';\n\tgo.overrideSettings = 'style_name=`{pageLayout.style}`'+'||';\n\tgo.arguments = '';\n\t\n\t\n\tgo.localArguments = '';\n\tgo.linkDefinition = '';\n\tgo.placeHolderValues = '';\n\tgo.parameterBucket = $gvs('{alias}.PARAMETERBUCKET');\n\tgo.argumentValueBucket = $gvs('{alias}.ARGUMENTVALUES');\n\tgo.a5_default_path = '{PageLayout.a5_default_path}';\n\tgo.onLoadCompleteJavascript = 'run:'+callbackId;\n\t\n\t\n\tif(typeof tbiObj != 'undefined' && typeof tbiObj._workingPreviewHost != 'undefined') { \n\t\tgo._workingPreviewHost = tbiObj._workingPreviewHost;\n\t}\n\n\n\tgo.gridDiv = '{alias}_DIVCONTAINER_8aa1bd58_37ad_49a4_b205_29acba5eccb1';\n\tA5.component.runGrid(go);\n\t\n}\n"
+                },
+                "inPanelCard": false,
+                "inTreeControl": false,
+                "hasParentTab": true,
+                "parentTabId": "c869a6f5-9ce0-439b-89d0-01897139fea2"
             },
             {
                 "controlType": "layout_directive_TabControlEnd",
@@ -489,7 +490,7 @@
         "builderType": "PageLayout",
         "guid": "2624884d-1420-4993-a97a-89aeb1d6f28b",
         "componentName": "ReportesPosicion",
-        "componentFilename": "C:\\4-Trabajos\\Mariloginsa\\Nibble-TM\\Nibble-TM.WebProjects\\Default.WebProject\\ReportesPosicion.a5wcmp",
+        "componentFilename": "C:\\4-Trabajos\\Mariloginsa\\Nibble-TM\\Nibble-TM.WebProjects\\MRG.WebProject\\ReportesPosicion.a5wcmp",
         "_style_versionNumber": -1,
         "_style_hasSassOverrides": false,
         "_style_hasCSSTweaks": false,
@@ -497,7 +498,7 @@
         "useCompactTheme": false,
         "SVGLinkedFiles": "",
         "saveFileType": "Formatted JSON",
-        "selected": "c869a6f5-9ce0-439b-89d0-01897139fea2\n",
+        "selected": "8d05e739-eaaa-4543-8824-e054107ff9fe",
         "designPaneIndex": 1,
         "masterPaneC": "controls",
         "clientSideEventIndexC": "",
@@ -506,13 +507,13 @@
         "_style_hassubthemeTweaks": false,
         "repeatingSectionsAreDirty": true,
         "flagDropdownCascadingChanged": false,
-        "toolBox_value": "pageLayoutComponentButton_GridComponent",
-        "addinBuildNumber": "5338",
-        "addinBuildNumberHighestUsed": "5338",
+        "toolBox_value": "",
+        "addinBuildNumber": "5512",
+        "addinBuildNumberHighestUsed": "5512",
         "alphaFiveBuildNumber": "12",
         "openedFromTemplate": false,
         "builtWithVersionNumer": 1,
-        "_buildCount": "6",
+        "_buildCount": "7",
         "securityEnabled": false,
         "showHideIsUsed": false,
         "precalc": {
@@ -526,7 +527,7 @@
         "componentType": "PageLayout",
         "version": 1,
         "linkedResources": "",
-        "A5SaveTimeStamp": "20191111161051219",
+        "A5SaveTimeStamp": "20201008191147762",
         "minimumBuildNumber": "",
         "masterTemplate": "",
         "_flagDoTreeview": true,
@@ -540,6 +541,7 @@
         "showJavascriptActions": false,
         "showResponsiveLayoutHelp": false,
         "_flagForceRecalcChildren": true,
-        "_treeErrors": ""
+        "_treeErrors": "",
+        "cachecomponent": false
     }
 }
