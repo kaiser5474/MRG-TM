@@ -627,3 +627,12 @@
 {app_Monitoreo_Reporte.a5wcmp}|Dialog2
 {N_FichaTrabajador_Preexistencias.a5wcmp}|Grid
 {ParaShippingAWB.a5wcmp}|Grid
+{Auditoria2parte_Entidades.a5wcmp}|Grid
+{Auditoria2parte_Auditor_Entidad.a5wcmp}|Grid
+{Auditoria_2Parte_PreguntaSeguridad_ParaEntidad.a5wcmp}|Grid
+{Auditoria_2Parte_PreguntaAuditor_ParaEntidad.a5wcmp}|Grid
+{Auditoria_2Parte_PreguntaExperienciaMercado_ParaEntidad.a5wcmp}|Grid
+{Auditoria_2Parte_PreguntaCapacidadOperativa_ParaEntidad.a5wcmp}|Grid
+{Auditoria_2Parte_PreguntaLegal_ParaEntidad.a5wcmp}|Grid
+{Auditoria2parte_Detalles_Entidad.a5wcmp}|Grid
+{Auditoria_2Parte_PreguntaSeguridadHijo_ParaSeguridad.a5wcmp}|Grid
