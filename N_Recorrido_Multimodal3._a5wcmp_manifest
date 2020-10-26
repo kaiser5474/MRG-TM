@@ -1,4 +1,4 @@
-A5SaveTimeStamp:20201015173324697
+A5SaveTimeStamp:20201021001217377
 css:<ProjectStyle>
 subComponent:Contrato_ServiciosTransportacion_MultimodaDesdeCM
 subComponent:Prefacturacion_Multimodal
@@ -11,6 +11,7 @@ subComponent:N_Recorrido_Supervisores
 subComponent:Recorridos_Validaciones_Multimodal_Agrupa
 subComponent:Recorridos_Valores
 subComponent:Recorridos_Prepaid_Collect
+subComponent:RecMedTransp_DocumentosPrefactura
 copyfile:{C:\4-Trabajos\Mariloginsa\Nibble-TM\Nibble-TM.WebProjects\MRG.WebProject\Images\checkmark.png}
 copyfile:{C:\4-Trabajos\Mariloginsa\Nibble-TM\Nibble-TM.WebProjects\MRG.WebProject\Images\doblecheckmark.png}
 copyfile:{C:\4-Trabajos\Mariloginsa\Nibble-TM\Nibble-TM.WebProjects\MRG.WebProject\Reporte_InformeSupervisionMultimodal_Cliente.a5rpt}
