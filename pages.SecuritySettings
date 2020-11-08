@@ -3406,4 +3406,16 @@
 <action="allow">
 <groups="">
 >
+<[853]<page="satisfaccion_al_Cliente.a5wcmp">
+<action="allow">
+<groups="">
+>
+<[854]<page="Reporte_LiquidacionReembolso.a5rpt">
+<action="allow">
+<groups="">
+>
+<[855]<page="anexoPrefactura.a5rpt">
+<action="allow">
+<groups="">
+>
 >

@@ -1,4 +1,4 @@
-A5SaveTimeStamp:20201022152251761
+A5SaveTimeStamp:20201104034417595
 css:GrBlue
 subComponent:N_Recorrido_Multimodal3
 subComponent:MostrarPrefacturas_Multimodal
@@ -6,3 +6,4 @@ subComponent:RecorridosMediosTransporte_Documentos_Multimodal
 subComponent:RecMedTransp_DocumentosPrefactura
 subComponent:N_RecorridoMultimodal_DocumentosIP
 copyfile:{C:\4-Trabajos\Mariloginsa\Nibble-TM\Nibble-TM.WebProjects\MRG.WebProject\Reporte_Prefacturacion_Multimodal3.a5rpt}
+copyfile:{C:\4-Trabajos\Mariloginsa\Nibble-TM\Nibble-TM.WebProjects\MRG.WebProject\Reporte_LiquidacionReembolso.a5rpt}
