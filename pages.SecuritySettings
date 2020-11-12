@@ -3422,4 +3422,8 @@
 <action="allow">
 <groups="">
 >
+<[857]<page="app_MRG_ClienteLogin.a5wcmp">
+<action="allow">
+<groups="">
+>
 >
