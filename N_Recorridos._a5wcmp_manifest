@@ -1,4 +1,4 @@
-A5SaveTimeStamp:20201011090648999
+A5SaveTimeStamp:20201113175442444
 css:<Project>
 subComponent:Recorridos_Detalles
 subComponent:Recorridos_MediosTransportacion_Ultima
@@ -14,6 +14,7 @@ copyfile:{C:\4-Trabajos\Mariloginsa\Nibble-TM\Nibble-TM.WebProjects\MRG.WebProje
 copyfile:{C:\4-Trabajos\Mariloginsa\Nibble-TM\Nibble-TM.WebProjects\MRG.WebProject\Reporte_ManifiestoCarga.a5rpt}
 copyfile:{C:\4-Trabajos\Mariloginsa\Nibble-TM\Nibble-TM.WebProjects\MRG.WebProject\Reporte_Desinfeccion.a5rpt}
 copyfile:{C:\4-Trabajos\Mariloginsa\Nibble-TM\Nibble-TM.WebProjects\MRG.WebProject\Notificacion_Entrega.a5rpt}
+copyfile:{C:\4-Trabajos\Mariloginsa\Nibble-TM\Nibble-TM.WebProjects\MRG.WebProject\Registro_EstadoVehiculoTrayectoria.a5rpt}
 copyfile:{C:\4-Trabajos\Mariloginsa\Nibble-TM\Nibble-TM.WebProjects\MRG.WebProject\ReporteActividades_LugaresPredefinidos.a5rpt}
 copyfile:{C:\4-Trabajos\Mariloginsa\Nibble-TM\Nibble-TM.WebProjects\MRG.WebProject\Plantilla_SEA_Waybill.a5rpt}
 copyfile:{C:\4-Trabajos\Mariloginsa\Nibble-TM\Nibble-TM.WebProjects\MRG.WebProject\Images\doblecheckmark.png}
