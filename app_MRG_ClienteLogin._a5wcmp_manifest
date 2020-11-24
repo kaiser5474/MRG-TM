@@ -1,15 +1,5 @@
-A5SaveTimeStamp:20201110144148075
+A5SaveTimeStamp:20201124130324295
 css:GrBlue
-subComponent:app_Dashboard.a5wcmp
-subComponent:app_evento.a5wcmp
-subComponent:app_Monitoreo.a5wcmp
-subComponent:app_MRG.a5wcmp
-subComponent:app_visita.a5wcmp
 copyfile:{C:\4-Trabajos\Mariloginsa\Nibble-TM\Nibble-TM.WebProjects\MRG.WebProject\LogoMariloginsaVerde.png}
 copyfile:{C:\4-Trabajos\Mariloginsa\Nibble-TM\Nibble-TM.WebProjects\MRG.WebProject\\Images\Aereo.png}
 subComponent:EditarUsuario
-subComponent:app_Dashboard
-subComponent:app_evento
-subComponent:app_Monitoreo
-subComponent:app_MRG
-subComponent:app_visita
