@@ -1,6 +1,6 @@
 function _phoneGapSettings() { 
  return {
-    "appId": "com.yourCompany.yourApp",
+    "appId": "com.yourcompany.yourapp",
     "preferences": {
         "permissions": "",
         "orientation": "default",

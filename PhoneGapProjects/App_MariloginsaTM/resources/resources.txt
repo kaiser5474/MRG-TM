@@ -48,5 +48,15 @@
 	"_firebaseAuthorizedDomainName": "",
 	"_firebaseDynamicLinksDomainName": "",
 	"_changeAjaxURL": false,
-	"_newAjaxURL": ""
+	"_newAjaxURL": "",
+	"_genStoryboardImages": false,
+	"_gen9PatchImages": false,
+	"_appImagesGenerated": false,
+	"baseline": {
+		"_initialUXcomponent": "app_Prueba2",
+		"_ajaxurl": "https://66.6.106.242"
+	},
+	"_allowHttpClearTextTraffic": false,
+	"_ionicAppflowRepoFolder": "",
+	"_channels": ""
 }
