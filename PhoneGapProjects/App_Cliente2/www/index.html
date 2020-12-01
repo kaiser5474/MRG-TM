@@ -90,8 +90,8 @@ iframe {-webkit-user-select: text;}
 
 </style>
 
-<link palette="" rel="stylesheet" type="text/css" href="css/GrBlue/style.css?buildcount_809">
-<link rel="stylesheet" type="text/css" href="css/_sharedStyles/style.css?buildcount_809">
+<link palette="" rel="stylesheet" type="text/css" href="css/GrBlue/style.css?buildcount_881">
+<link rel="stylesheet" type="text/css" href="css/_sharedStyles/style.css?buildcount_881">
 
 <style type="text/css">
 .icon {
@@ -108,7 +108,7 @@ iframe {-webkit-user-select: text;}
   opacity: .75; }
 .DLG1_STARRATING .star {
   padding: 2px;
-  fill: #dedede;
+  fill: white;
   cursor: pointer; }
 .DLG1_STARRATING .selected {
   fill: #fc0; }
@@ -117,7 +117,7 @@ iframe {-webkit-user-select: text;}
   stroke: #fc0; }
 .DLG1_STARRATING1 .star {
   padding: 2px;
-  fill: #dedede;
+  fill: #ffffff;
   cursor: pointer; }
 .DLG1_STARRATING1 .selected {
   fill: #fc0; }
@@ -126,7 +126,7 @@ iframe {-webkit-user-select: text;}
   stroke: #fc0; }
 .DLG1_STARRATING3 .star {
   padding: 2px;
-  fill: #dedede;
+  fill: #ffffff;
   cursor: pointer; }
 .DLG1_STARRATING3 .selected {
   fill: #fc0; }
@@ -144,7 +144,7 @@ iframe {-webkit-user-select: text;}
   stroke: #fc0; }
 .DLG1_STARRATING4 .star {
   padding: 2px;
-  fill: #dedede;
+  fill: #ffffff;
   cursor: pointer; }
 .DLG1_STARRATING4 .selected {
   fill: #fc0; }
@@ -607,6 +607,37 @@ background: url() no-repeat center #1709c7;
 box-shadow: 0 0 0 2px #fff inset;
 }
 
+.CUSTOM_RADIOBUTTON_DLG1_CHECK_NOSSIGUEREDESSOCIALES input {
+display: none;
+}
+.CUSTOM_RADIOBUTTON_DLG1_CHECK_NOSSIGUEREDESSOCIALES label {
+padding-left: 20px;
+margin-right: 18px;
+margin-bottom: 2px;
+display: inline-block;
+cursor: pointer;
+position: relative;
+}
+.CUSTOM_RADIOBUTTON_DLG1_CHECK_NOSSIGUEREDESSOCIALES label:before {
+background-repeat: no-repeat;
+background-position: center;
+border: 1px solid #ddd;
+margin-top: -8px;
+margin-right: 10px;
+display: inline-block;
+position: absolute;
+top: 50%;
+left: 0px;
+width: 16px;
+height: 16px;
+border-radius: 10px;
+content: '';
+}
+.CUSTOM_RADIOBUTTON_DLG1_CHECK_NOSSIGUEREDESSOCIALES input:checked+label:before {
+background: url() no-repeat center #1709c7;
+box-shadow: 0 0 0 2px #fff inset;
+}
+
 
 </style><iframe style="display:none;" id="DLG1.__IFRAME1"></iframe>
 <input type="hidden" value="" id="DLG1.PARAMETERBUCKET"/>
@@ -620,6 +651,38 @@ box-shadow: 0 0 0 2px #fff inset;
 <input type="hidden" id="DLG1.V.R1.STARRATING3" name="V.R1.STARRATING3" />
 <input type="hidden" id="DLG1.V.R1.STARRATING2" name="V.R1.STARRATING2" />
 <input type="hidden" id="DLG1.V.R1.STARRATING4" name="V.R1.STARRATING4" />
+<div 	id="DLG1.V.R1.WINDOW_4"   
+			class=""  style="; display: none;"  >
+<div style="float: right;">
+<div class="A5CWLayout" style="width: 100%" >
+	<button type="button" id="DLG1.V.R1.BUTTON_118"    ></button>
+</div>
+<div class="A5CWLayout" style="width: 100%" >
+	<button type="button" id="DLG1.V.R1.BUTTON_120"    ></button>
+</div>
+<div class="A5CWLayout" style="width: 100%" >
+	<button type="button" id="DLG1.V.R1.BUTTON_121"    ></button>
+</div>
+<div class="A5CWLayout" style="width: 100%" >
+	<button type="button" id="DLG1.V.R1.BUTTON_122"    ></button>
+</div>
+<div class="A5CWLayout" style="width: 100%" >
+	<button type="button" id="DLG1.V.R1.BUTTON_123"    ></button>
+</div>
+<div class="A5CWLayout" style="width: 100%" >
+	<button type="button" id="DLG1.V.R1.BUTTON_124"    ></button>
+</div>
+<div class="A5CWLayout" style="width: 100%" >
+	<button type="button" id="DLG1.V.R1.BUTTON_125"    ></button>
+</div>
+<div class="A5CWLayout" style="width: 100%" >
+	<button type="button" id="DLG1.V.R1.BUTTON_126"    ></button>
+</div>
+<div style="font: 0pt arial;clear:both;"></div>
+	</div>
+	</div>
+
+
 
 <script type="text/javascript" language="javascript">
 
@@ -1013,12 +1076,10 @@ if(typeof DLG1_DlgObj != 'undefined' && typeof DLG1_DlgObj._panelCardResize != '
 		}
 	},
 	header: {
-		html: '<div class="A5CWLayout" style="width: " > \t<button type="button" id="DLG1.V.R1.BUTTON_117"    ></button> </div> <div style="display:none;"></div>',
+		html: '<div class="A5CWLayout" style="width: " > \t<button type="button" id="DLG1.V.R1.BUTTON_117"    ></button> </div> <div class="A5CWLayout" style="width: " > \t<button type="button" id="DLG1.V.R1.BUTTON_127"    ></button> </div> <div style="display:none;"></div>',
 		show: true
 	},
 	footer: {
-		html: '<div class="A5CWLayout" style="width: 12.5%" > \t<button type="button" id="DLG1.V.R1.BUTTON_118"    ></button> </div> <div class="A5CWLayout" style="width: 12.5%" > \t<button type="button" id="DLG1.V.R1.BUTTON_120"    ></button> </div> <div class="A5CWLayout" style="width: 12.5%" > \t<button type="button" id="DLG1.V.R1.BUTTON_121"    ></button> </div> <div class="A5CWLayout" style="width: 12.5%" > \t<button type="button" id="DLG1.V.R1.BUTTON_122"    ></button> </div> <div class="A5CWLayout" style="width: 12.5%" > \t<button type="button" id="DLG1.V.R1.BUTTON_123"    ></button> </div> <div class="A5CWLayout" style="width: 12.5%" > \t<button type="button" id="DLG1.V.R1.BUTTON_124"    ></button> </div> <div class="A5CWLayout" style="width: 12.5%" > \t<button type="button" id="DLG1.V.R1.BUTTON_125"    ></button> </div> <div class="A5CWLayout" style="width: 12.5%" > \t<button type="button" id="DLG1.V.R1.BUTTON_126"    ></button> </div> ',
-		show: true
 	},
 	overlay: {
 	},
@@ -1147,13 +1208,13 @@ if(typeof DLG1_DlgObj != 'undefined' && typeof DLG1_DlgObj._panelCardResize != '
 })
 },
 {
-	name: 'PANELCARD_PREGUNTA1',
+	name: 'PANELCARD_PRESENTACIONENCUESTA',
 	src: new A5.PanelCard({
 	theme: 'GrBlue',
 	body: {
 		content: {
 			type: 'html',
-			src: '<div class="A5CWLayout" style="width: 100%" >\r\n\t<div id="DLG1.V.R1.STATICTEXT_6" title=""  class="" style="width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;"   ><h2>&#x00bf;Cumplimos sus expectativas?</h2></div>\r\n</div><br  style="clear:both; " />\r\n<div class="A5CWLayout" style="width: 100%" >\r\n\t\r\n<div >\r\n\t<div id="DLG1.V.R1.STARRATING.CONTROL"  class="DLG1_STARRATING" style="overflow: auto; width: 100%; "></div>\r\n</div>\r\n\r\n</div><br  style="clear:both; " />\r\n<div class="A5floatClear"></div>'
+			src: '<div \tid="DLG1.V.R1.CONTAINER_10"   \r\n\t\t\tclass="A5CWLayout "  style="background-color: rgba(0,0,0,0.41); padding: -10px; display: flex; width: 100%; height: screen.height; justify-content: center; align-items: center; "  >\r\n<div class="A5CWLayout"  style=" padding: 0px; ">\r\n<div class="A5CWLayout" style="width: 100%" >\r\n\t<div id="DLG1.V.R1.STATICTEXT_8" title=""  class="" style="width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;"   ><h2>Necesitamos su ayuda, su valoraci&oacute;n es relevante para MARILOGINSA pues nos permite mejorar la calidad y seguridad de los servicios que le brindamos.\r\nAgradecidos de su evaluaci&oacute;n, quedamos de usted,</h2>\r\n<h2>Atentamente,</h2>\r\n<h2>Gerente de Desarrollo</h2></div>\r\n</div><br  style="clear:both; " />\r\n</div><div style="font: 0pt arial;clear:both;"></div>\r\n\t</div>\r\n<br  id="DLG1.V.R1.CONTAINER_10.BREAK"  style="clear:both; " />\r\n<div class="A5floatClear"></div>'
 		},
 		scroll: {
 			axis: 'both',
@@ -1180,14 +1241,62 @@ if(typeof DLG1_DlgObj != 'undefined' && typeof DLG1_DlgObj._panelCardResize != '
 				}
 			}
 		},
-		style: 'text-align: center;'
+		style: 'text-align: center;  margin-left:-10px;  margin-right:-10px;  background-color: rgba(0,57,255,0.45);  color: white;;background: url(logoMRGTM.png) center no-repeat; background-size: cover;'
+	},
+	header: {
+		html: '<div style="display:none;"></div>'
+	},
+	footer: {
+		html: '<div class="A5CWLayout" style="width: 50%" > \t<button type="button" id="DLG1.V.R1.BUTTON_128"    ></button> </div> <div class="A5CWLayout" style="width: 50%" > \t<button type="button" id="DLG1.V.R1.BUTTON_129"    ></button> </div> ',
+		show: true
+	},
+	overlay: {
+	},
+	onSize: function() {if(typeof DLG1_DlgObj != 'undefined' && typeof DLG1_DlgObj._panelCardResize != 'undefined') { DLG1_DlgObj._panelCardResize('PANELCARD_PRESENTACIONENCUESTA'); };}
+})
+},
+{
+	name: 'PANELCARD_PREGUNTA1',
+	src: new A5.PanelCard({
+	theme: 'GrBlue',
+	body: {
+		content: {
+			type: 'html',
+			src: '<div \tid="DLG1.V.R1.CONTAINER_9"   \r\n\t\t\tclass="A5CWLayout "  style="background-color: rgba(0,0,0,0.41); padding: -10px; display: flex; width: 100%; height: screen.height/2; justify-content: center; align-items: center; "  >\r\n<div class="A5CWLayout"  style=" padding: 0px; ">\r\n<div class="A5CWLayout" style="width: 100%" >\r\n\t<div id="DLG1.V.R1.STATICTEXT_6" title=""  class="" style="width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;"   ><h1>&#x00bf;Cumplimos sus expectativas?</h1></div>\r\n</div><br  style="clear:both; " />\r\n<div class="A5CWLayout" style="width: 100%" >\r\n\t\r\n<div >\r\n\t<div id="DLG1.V.R1.STARRATING.CONTROL"  class="DLG1_STARRATING" style="overflow: auto; width: 100%; "></div>\r\n</div>\r\n\r\n</div><br  style="clear:both; " />\r\n</div><div style="font: 0pt arial;clear:both;"></div>\r\n\t</div>\r\n<br  id="DLG1.V.R1.CONTAINER_9.BREAK"  style="clear:both; " />\r\n<div \tid="DLG1.V.R1.CONTAINER_16"   \r\n\t\t\tclass="A5CWLayout "  style="background-color: rgba(0,0,0,0.41); width: 100%; height: screen.height; "  >\r\n<div class="A5CWLayout" style="width: 100%" >\r\n\t<label id="DLG1.LBL.R1.PREGUNTA_CUMPLIMOSESPECTATIVAS_DESCRIPCION" for="DLG1.V.R1.PREGUNTA_CUMPLIMOSESPECTATIVAS_DESCRIPCION" title="" class="GrBlueDialogLabel" style="display:block;">&nbsp;</label>\r\n\r\n\t<textarea\tid="DLG1.V.R1.PREGUNTA_CUMPLIMOSESPECTATIVAS_DESCRIPCION" class="GrBlueEdit " title="" style="color: white; background: transparent; font-size: 1.5em; width: 100%; height: screen.height/3; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;" rows="4" cols="0"    name="V.R1.PREGUNTA_CUMPLIMOSESPECTATIVAS_DESCRIPCION"  ></textarea>\r\n\r\n</div><br  style="clear:both; " />\r\n<div style="font: 0pt arial;clear:both;"></div>\r\n\t</div>\r\n<br  id="DLG1.V.R1.CONTAINER_16.BREAK"  style="clear:both; " />\r\n<div class="A5floatClear"></div>'
+		},
+		scroll: {
+			axis: 'both',
+			stopPropogation: false,
+			pull: {
+				y: 'auto',
+				x: 'auto'
+			},
+			indicator: {
+				show: true,
+				h: {
+					show: true,
+					location: 'top',
+					offset: '0px',
+					left: '0px',
+					right: '0px'
+				},
+				v: {
+					show: true,
+					location: 'right',
+					offset: '0px',
+					top: '0px',
+					bottom: '0px'
+				}
+			}
+		},
+		style: 'text-align: center;  margin-left:-10px;  margin-right:-10px;  background-color: rgba(0,57,255,0.45);  color: white;;background: url(medios-sociales-mano-dibujados-garabatos-patrones-fisuras_39663-246.jpg) center no-repeat; background-size: cover;'
 	},
 	header: {
 		html: '<div style="display:table; margin:auto;"><div class="A5CWLayout" style="width: " > \t<div id="DLG1.V.R1.STATICTEXT_1" title=""  class="" style="box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;"   ><b>1/5</b></div> </div> </div><div style="display:none;"></div>',
 		show: true
 	},
 	footer: {
-		html: '<div class="A5CWLayout" style="width: 50%" > \t<button type="button" id="DLG1.V.R1.BUTTON_114"    ></button> </div> <div class="A5CWLayout" style="width: 50%" > \t<button type="button" id="DLG1.V.R1.BUTTON_106"    ></button> </div> ',
+		html: '<div class="A5CWLayout" style="width: 50%" > \t<button type="button" id="DLG1.V.R1.BUTTON_130"    ></button> </div> <div class="A5CWLayout" style="width: 50%" > \t<button type="button" id="DLG1.V.R1.BUTTON_106"    ></button> </div> ',
 		show: true
 	},
 	overlay: {
@@ -1202,7 +1311,7 @@ if(typeof DLG1_DlgObj != 'undefined' && typeof DLG1_DlgObj._panelCardResize != '
 	body: {
 		content: {
 			type: 'html',
-			src: '<div class="A5CWLayout" style="width: 100%" >\r\n\t<div id="DLG1.V.R1.STATICTEXT_9" title=""  class="" style="width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;"   ><h2>Relaci&oacute;n Calidad, Seguridad y Precio</h2></div>\r\n</div><br  style="clear:both; " />\r\n<div class="A5CWLayout" style="width: 100%" >\r\n\t\r\n<div >\r\n\t<div id="DLG1.V.R1.STARRATING1.CONTROL"  class="DLG1_STARRATING1" style="overflow: auto; width: 100%; "></div>\r\n</div>\r\n\r\n</div><br  style="clear:both; " />\r\n<div class="A5floatClear"></div>'
+			src: '<div \tid="DLG1.V.R1.CONTAINER_12"   \r\n\t\t\tclass="A5CWLayout "  style="background-color: rgba(0,0,0,0.41); display: flex; width: 100%; height: screen.height/2; justify-content: center; align-items: center; "  >\r\n<div class="A5CWLayout"  style=" padding: 0px; ">\r\n<div class="A5CWLayout" style="width: 100%" >\r\n\t<div id="DLG1.V.R1.STATICTEXT_9" title=""  class="" style="width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;"   ><h1>Relaci&oacute;n calidad, seguridad y precio</h1></div>\r\n</div><br  style="clear:both; " />\r\n<div class="A5CWLayout" style="width: 100%" >\r\n\t\r\n<div >\r\n\t<div id="DLG1.V.R1.STARRATING1.CONTROL"  class="DLG1_STARRATING1" style="overflow: auto; width: 100%; "></div>\r\n</div>\r\n\r\n</div><br  style="clear:both; " />\r\n</div><div style="font: 0pt arial;clear:both;"></div>\r\n\t</div>\r\n<br  id="DLG1.V.R1.CONTAINER_12.BREAK"  style="clear:both; " />\r\n<div \tid="DLG1.V.R1.CONTAINER_17"   \r\n\t\t\tclass="A5CWLayout "  style="background-color: rgba(0,0,0,0.41); width: 100%; height: screen.height; "  >\r\n<div class="A5CWLayout" style="width: 100%" >\r\n\t<label id="DLG1.LBL.R1.PREGUNTA_RELACIONCALIDAPRECIO_DESCRIPCION" for="DLG1.V.R1.PREGUNTA_RELACIONCALIDAPRECIO_DESCRIPCION" title="" class="GrBlueDialogLabel" style="display:block;">&nbsp;</label>\r\n\r\n\t<textarea\tid="DLG1.V.R1.PREGUNTA_RELACIONCALIDAPRECIO_DESCRIPCION" class="GrBlueEdit " title="" style="color: white; background: transparent; font-size: 1.5em; width: 100%; height: screen.height/3; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;" rows="4" cols="0"    name="V.R1.PREGUNTA_RELACIONCALIDAPRECIO_DESCRIPCION"  ></textarea>\r\n\r\n</div><br  style="clear:both; " />\r\n<div style="font: 0pt arial;clear:both;"></div>\r\n\t</div>\r\n<br  id="DLG1.V.R1.CONTAINER_17.BREAK"  style="clear:both; " />\r\n<div class="A5floatClear"></div>'
 		},
 		scroll: {
 			axis: 'both',
@@ -1229,7 +1338,7 @@ if(typeof DLG1_DlgObj != 'undefined' && typeof DLG1_DlgObj._panelCardResize != '
 				}
 			}
 		},
-		style: 'text-align: center;'
+		style: 'text-align: center;  margin-left:-10px;  margin-right:-10px;  background-color: rgba(0,57,255,0.45);  color: white;;background: url(los-medios-sociales-doodle-patron-sin-fisuras-ornamento-repetidos-con-elementos-dibujados-a-mano-blanca-sobre-fondo-negro-ilustracion-vectorial-2a7gemh.jpg) center no-repeat; background-size: cover;'
 	},
 	header: {
 		html: '<div style="display:table; margin:auto;"><div class="A5CWLayout" style="width: " > \t<div id="DLG1.V.R1.STATICTEXT_2" title=""  class="" style="box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;"   ><b>2/5</b></div> </div> </div><div style="display:none;"></div>',
@@ -1251,7 +1360,7 @@ if(typeof DLG1_DlgObj != 'undefined' && typeof DLG1_DlgObj._panelCardResize != '
 	body: {
 		content: {
 			type: 'html',
-			src: '<div class="A5CWLayout" style="width: 100%" >\r\n\t<div id="DLG1.V.R1.STATICTEXT_10" title=""  class="" style="width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;"   ><h2>Tecnolog&iacute;a de Sistema de Informaci&oacute;n y Reporte</h2></div>\r\n</div><br  style="clear:both; " />\r\n<div class="A5CWLayout" style="width: 100%" >\r\n\t\r\n<div >\r\n\t<div id="DLG1.V.R1.STARRATING3.CONTROL"  class="DLG1_STARRATING3" style="overflow: auto; width: 100%; "></div>\r\n</div>\r\n\r\n</div><br  style="clear:both; " />\r\n<div class="A5floatClear"></div>'
+			src: '<div \tid="DLG1.V.R1.CONTAINER_13"   \r\n\t\t\tclass="A5CWLayout "  style="background-color: rgba(0,0,0,0.41); display: flex; width: 100%; height: screen.height/2; justify-content: center; align-items: center; "  >\r\n<div class="A5CWLayout"  style=" padding: 0px; ">\r\n<div class="A5CWLayout" style="width: 100%" >\r\n\t<div id="DLG1.V.R1.STATICTEXT_10" title=""  class="" style="width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;"   ><h1>Tecnolog&iacute;a de sistema de informaci&oacute;n y reporte</h1></div>\r\n</div><br  style="clear:both; " />\r\n<div class="A5CWLayout" style="width: 100%" >\r\n\t\r\n<div >\r\n\t<div id="DLG1.V.R1.STARRATING3.CONTROL"  class="DLG1_STARRATING3" style="overflow: auto; width: 100%; "></div>\r\n</div>\r\n\r\n</div><br  style="clear:both; " />\r\n</div><div style="font: 0pt arial;clear:both;"></div>\r\n\t</div>\r\n<br  id="DLG1.V.R1.CONTAINER_13.BREAK"  style="clear:both; " />\r\n<div \tid="DLG1.V.R1.CONTAINER_18"   \r\n\t\t\tclass="A5CWLayout "  style="background-color: rgba(0,0,0,0.41); width: 100%; height: screen.height; "  >\r\n<div class="A5CWLayout" style="width: 100%" >\r\n\t<label id="DLG1.LBL.R1.PREGUNTA_SISTEMAINFORMACION_DESCRIPCION" for="DLG1.V.R1.PREGUNTA_SISTEMAINFORMACION_DESCRIPCION" title="" class="GrBlueDialogLabel" style="display:block;">&nbsp;</label>\r\n\r\n\t<textarea\tid="DLG1.V.R1.PREGUNTA_SISTEMAINFORMACION_DESCRIPCION" class="GrBlueEdit " title="" style="color: white; background: transparent; font-size: 1.5em; width: 100%; height: screen.height/3; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;" rows="4" cols="0"    name="V.R1.PREGUNTA_SISTEMAINFORMACION_DESCRIPCION"  ></textarea>\r\n\r\n</div><br  style="clear:both; " />\r\n<div style="font: 0pt arial;clear:both;"></div>\r\n\t</div>\r\n<br  id="DLG1.V.R1.CONTAINER_18.BREAK"  style="clear:both; " />\r\n<div class="A5floatClear"></div>'
 		},
 		scroll: {
 			axis: 'both',
@@ -1278,7 +1387,7 @@ if(typeof DLG1_DlgObj != 'undefined' && typeof DLG1_DlgObj._panelCardResize != '
 				}
 			}
 		},
-		style: 'text-align: center;'
+		style: 'text-align: center;  margin-left:-10px;  margin-right:-10px;  background-color: rgba(0,57,255,0.45);  color: white;;background: url(matrix-elon-musk-nick-bostrom-simulacion.jpg) center no-repeat; background-size: cover;'
 	},
 	header: {
 		html: '<div style="display:table; margin:auto;"><div class="A5CWLayout" style="width: " > \t<div id="DLG1.V.R1.STATICTEXT_3" title=""  class="" style="box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;"   ><b>3/5</b></div> </div> </div><div style="display:none;"></div>',
@@ -1300,7 +1409,7 @@ if(typeof DLG1_DlgObj != 'undefined' && typeof DLG1_DlgObj._panelCardResize != '
 	body: {
 		content: {
 			type: 'html',
-			src: '<div class="A5CWLayout" style="width: 100%" >\r\n\t<div id="DLG1.V.R1.STATICTEXT_19" title=""  class="" style="width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;"   ><h2>&iquest;Tiene redes sociales?</h2></div>\r\n</div><br  style="clear:both; " />\r\n<div class="A5CWLayout" style="width: 100%" >\r\n\t<label id="DLG1.LBL.R1.CHECK_TIENEREDESSOCIALES" for="DLG1.V.R1.CHECK_TIENEREDESSOCIALES" title="" class="GrBlueDialogLabel" style="display:block;">&nbsp;</label>\r\n\r\n\t<div id="DLG1.V.R1.CHECK_TIENEREDESSOCIALES" style="display: inline-block; border-width: 1px" title="">\r\n<span  class="CUSTOM_RADIOBUTTON_DLG1_CHECK_TIENEREDESSOCIALES" ><input id="DLG1.V.R1.CHECK_TIENEREDESSOCIALES.1" type="radio" value="True" name="V.R1.CHECK_TIENEREDESSOCIALES[DLG1]"    /><label id="DLG1.V.R1.CHECK_TIENEREDESSOCIALES.1.L" for="DLG1.V.R1.CHECK_TIENEREDESSOCIALES.1" style="white-space:nowrap;">Si</label></span> <span  class="CUSTOM_RADIOBUTTON_DLG1_CHECK_TIENEREDESSOCIALES" ><input id="DLG1.V.R1.CHECK_TIENEREDESSOCIALES.2" type="radio" value="False" name="V.R1.CHECK_TIENEREDESSOCIALES[DLG1]"    /><label id="DLG1.V.R1.CHECK_TIENEREDESSOCIALES.2.L" for="DLG1.V.R1.CHECK_TIENEREDESSOCIALES.2" style="white-space:nowrap;">No</label></span>  \r\n</div>\r\n\t\r\n\t\r\n</div><br  style="clear:both; " />\r\n<div \tid="DLG1.V.R1.CONTAINER_1"   \r\n\t\t\tclass="A5CWLayout "  style="width: 100%; "  >\r\n<div class="A5CWLayout" style="width: 100%" >\r\n\t<div id="DLG1.V.R1.STATICTEXT_12" title=""  class="" style="width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;"   ><h3>&iquest;Le gusta nuestro contenido en las redes sociales?</h3></div>\r\n</div><br  style="clear:both; " />\r\n<div class="A5CWLayout" style="width: 100%" >\r\n\t\r\n<div >\r\n\t<div id="DLG1.V.R1.STARRATING2.CONTROL"  class="DLG1_STARRATING2" style="overflow: auto; width: 100%; "></div>\r\n</div>\r\n\r\n</div><br  style="clear:both; " />\r\n<div style="font: 0pt arial;clear:both;"></div>\r\n\t</div>\r\n<br  id="DLG1.V.R1.CONTAINER_1.BREAK"  style="clear:both; " />\r\n<div class="A5floatClear"></div>'
+			src: '<div \tid="DLG1.V.R1.CONTAINER_14"   \r\n\t\t\tclass="A5CWLayout "  style="background-color: rgba(0,0,0,0.41); display: flex; width: 100%; height: screen.height/2; justify-content: center; align-items: center; "  >\r\n<div class="A5CWLayout"  style=" padding: 0px; ">\r\n<div class="A5CWLayout" style="width: 100%" >\r\n\t<div id="DLG1.V.R1.STATICTEXT_19" title=""  class="" style="width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;"   ><h1>&iquest;Tiene redes sociales?</h1></div>\r\n</div><br  style="clear:both; " />\r\n<div class="A5CWLayout" style="width: 100%" >\r\n\t<label id="DLG1.LBL.R1.CHECK_TIENEREDESSOCIALES" for="DLG1.V.R1.CHECK_TIENEREDESSOCIALES" title="" class="GrBlueDialogLabel" style="display:block;">&nbsp;</label>\r\n\r\n\t<div id="DLG1.V.R1.CHECK_TIENEREDESSOCIALES" style="display: inline-block; border-width: 1px" title="">\r\n<span  class="CUSTOM_RADIOBUTTON_DLG1_CHECK_TIENEREDESSOCIALES" ><input id="DLG1.V.R1.CHECK_TIENEREDESSOCIALES.1" type="radio" value="True" name="V.R1.CHECK_TIENEREDESSOCIALES[DLG1]"    /><label id="DLG1.V.R1.CHECK_TIENEREDESSOCIALES.1.L" for="DLG1.V.R1.CHECK_TIENEREDESSOCIALES.1" style="white-space:nowrap;">Si</label></span> <span  class="CUSTOM_RADIOBUTTON_DLG1_CHECK_TIENEREDESSOCIALES" ><input id="DLG1.V.R1.CHECK_TIENEREDESSOCIALES.2" type="radio" value="False" name="V.R1.CHECK_TIENEREDESSOCIALES[DLG1]"    /><label id="DLG1.V.R1.CHECK_TIENEREDESSOCIALES.2.L" for="DLG1.V.R1.CHECK_TIENEREDESSOCIALES.2" style="white-space:nowrap;">No</label></span>  \r\n</div>\r\n\t\r\n\t\r\n</div><br  style="clear:both; " />\r\n<div class="A5CWLayout" style="width: 100%" >\r\n\t<div id="DLG1.V.R1.STATICTEXT_20" title=""  class="" style="width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;"   ><h1>&iquest;Nos sigues en las redes sociales?</h1></div>\r\n</div><br  style="clear:both; " />\r\n<div class="A5CWLayout" style="width: 100%" >\r\n\t<label id="DLG1.LBL.R1.CHECK_NOSSIGUEREDESSOCIALES" for="DLG1.V.R1.CHECK_NOSSIGUEREDESSOCIALES" title="" class="GrBlueDialogLabel" style="display:block;">&nbsp;</label>\r\n\r\n\t<div id="DLG1.V.R1.CHECK_NOSSIGUEREDESSOCIALES" style="display: inline-block; border-width: 1px" title="">\r\n<span  class="CUSTOM_RADIOBUTTON_DLG1_CHECK_NOSSIGUEREDESSOCIALES" ><input id="DLG1.V.R1.CHECK_NOSSIGUEREDESSOCIALES.1" type="radio" value="True" name="V.R1.CHECK_NOSSIGUEREDESSOCIALES[DLG1]"    /><label id="DLG1.V.R1.CHECK_NOSSIGUEREDESSOCIALES.1.L" for="DLG1.V.R1.CHECK_NOSSIGUEREDESSOCIALES.1" style="white-space:nowrap;">Si</label></span> <span  class="CUSTOM_RADIOBUTTON_DLG1_CHECK_NOSSIGUEREDESSOCIALES" ><input id="DLG1.V.R1.CHECK_NOSSIGUEREDESSOCIALES.2" type="radio" value="False" name="V.R1.CHECK_NOSSIGUEREDESSOCIALES[DLG1]"    /><label id="DLG1.V.R1.CHECK_NOSSIGUEREDESSOCIALES.2.L" for="DLG1.V.R1.CHECK_NOSSIGUEREDESSOCIALES.2" style="white-space:nowrap;">No</label></span>  \r\n</div>\r\n\t\r\n\t\r\n</div><br  style="clear:both; " />\r\n</div><div style="font: 0pt arial;clear:both;"></div>\r\n\t</div>\r\n<br  id="DLG1.V.R1.CONTAINER_14.BREAK"  style="clear:both; " />\r\n<div \tid="DLG1.V.R1.CONTAINER_19"   \r\n\t\t\tclass="A5CWLayout "  style="background-color: rgba(0,0,0,0.41); width: 100%; height: screen.height; "  >\r\n<div class="A5CWLayout" style="width: 100%" >\r\n\t<div id="DLG1.V.R1.STATICTEXT_12" title=""  class="" style="width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;"   ><h2>&iquest;Le gusta nuestro contenido en las redes sociales?</h2></div>\r\n</div><br  style="clear:both; " />\r\n<div class="A5CWLayout" style="width: 100%" >\r\n\t\r\n<div >\r\n\t<div id="DLG1.V.R1.STARRATING2.CONTROL"  class="DLG1_STARRATING2" style="overflow: auto; width: 100%; "></div>\r\n</div>\r\n\r\n</div><br  style="clear:both; " />\r\n<div class="A5CWLayout" style="width: 100%" >\r\n\t<label id="DLG1.LBL.R1.PREGUNTA_CONTENIDOREDESSOCIALES_DESCRIPCION" for="DLG1.V.R1.PREGUNTA_CONTENIDOREDESSOCIALES_DESCRIPCION" title="" class="GrBlueDialogLabel" style="display:block;">&nbsp;</label>\r\n\r\n\t<textarea\tid="DLG1.V.R1.PREGUNTA_CONTENIDOREDESSOCIALES_DESCRIPCION" class="GrBlueEdit " title="" style="color: white; background: transparent; font-size: 1.5em; width: 100%; height: screen.height/3; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;" rows="4" cols="20"    name="V.R1.PREGUNTA_CONTENIDOREDESSOCIALES_DESCRIPCION"  ></textarea>\r\n\r\n</div><br  style="clear:both; " />\r\n<div style="font: 0pt arial;clear:both;"></div>\r\n\t</div>\r\n<br  id="DLG1.V.R1.CONTAINER_19.BREAK"  style="clear:both; " />\r\n<div class="A5floatClear"></div>'
 		},
 		scroll: {
 			axis: 'both',
@@ -1327,7 +1436,7 @@ if(typeof DLG1_DlgObj != 'undefined' && typeof DLG1_DlgObj._panelCardResize != '
 				}
 			}
 		},
-		style: 'text-align: center;'
+		style: 'text-align: center;  margin-left:-10px;  margin-right:-10px;  background-color: rgba(0,57,255,0.45);  color: white;;background: url(modern-watercolor-social-media-icon-collection_63801-47.jpg) center no-repeat; background-size: cover;'
 	},
 	header: {
 		html: '<div style="display:table; margin:auto;"><div class="A5CWLayout" style="width: " > \t<div id="DLG1.V.R1.STATICTEXT_5" title=""  class="" style="box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;"   ><b>4/5</b></div> </div> </div><div style="display:none;"></div>',
@@ -1349,7 +1458,7 @@ if(typeof DLG1_DlgObj != 'undefined' && typeof DLG1_DlgObj._panelCardResize != '
 	body: {
 		content: {
 			type: 'html',
-			src: '<div class="A5CWLayout" style="width: 100%" >\r\n\t<div id="DLG1.V.R1.STATICTEXT_15" title=""  class="" style="width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;"   ><h2>&iquest;Recomendar&iacute;a Nuestro Servicio?</h2></div>\r\n</div><br  style="clear:both; " />\r\n<div class="A5CWLayout" style="width: 100%" >\r\n\t\r\n<div >\r\n\t<div id="DLG1.V.R1.STARRATING4.CONTROL"  class="DLG1_STARRATING4" style="overflow: auto; width: 100%; "></div>\r\n</div>\r\n\r\n</div><br  style="clear:both; " />\r\n<div class="A5floatClear"></div>'
+			src: '<div \tid="DLG1.V.R1.CONTAINER_15"   \r\n\t\t\tclass="A5CWLayout "  style="background-color: rgba(0,0,0,0.41); display: flex; width: 100%; height: screen.height/2; justify-content: center; align-items: center; "  >\r\n<div class="A5CWLayout"  style=" padding: 0px; ">\r\n<div class="A5CWLayout" style="width: 100%" >\r\n\t<div id="DLG1.V.R1.STATICTEXT_15" title=""  class="" style="width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;"   ><h2>&iquest;Recomendar&iacute;a Nuestro Servicio?</h2></div>\r\n</div><br  style="clear:both; " />\r\n<div class="A5CWLayout" style="width: 100%" >\r\n\t\r\n<div >\r\n\t<div id="DLG1.V.R1.STARRATING4.CONTROL"  class="DLG1_STARRATING4" style="overflow: auto; width: 100%; "></div>\r\n</div>\r\n\r\n</div><br  style="clear:both; " />\r\n</div><div style="font: 0pt arial;clear:both;"></div>\r\n\t</div>\r\n<br  id="DLG1.V.R1.CONTAINER_15.BREAK"  style="clear:both; " />\r\n<div \tid="DLG1.V.R1.CONTAINER_20"   \r\n\t\t\tclass="A5CWLayout "  style="background-color: rgba(0,0,0,0.41); width: 100%; height: screen.height; "  >\r\n<div class="A5CWLayout" style="width: 100%" >\r\n\t<label id="DLG1.LBL.R1.PREGUNTA_RECOMIENDASERVICIO_DESCRIPCION" for="DLG1.V.R1.PREGUNTA_RECOMIENDASERVICIO_DESCRIPCION" title="" class="GrBlueDialogLabel" style="display:block;">&nbsp;</label>\r\n\r\n\t<textarea\tid="DLG1.V.R1.PREGUNTA_RECOMIENDASERVICIO_DESCRIPCION" class="GrBlueEdit " title="" style="color: white; background: transparent; font-size: 1.5em; width: 100%; height: screen.height/3; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;" rows="4" cols="0"    name="V.R1.PREGUNTA_RECOMIENDASERVICIO_DESCRIPCION"  ></textarea>\r\n\r\n</div><br  style="clear:both; " />\r\n<div style="font: 0pt arial;clear:both;"></div>\r\n\t</div>\r\n<br  id="DLG1.V.R1.CONTAINER_20.BREAK"  style="clear:both; " />\r\n<div class="A5floatClear"></div>'
 		},
 		scroll: {
 			axis: 'both',
@@ -1376,7 +1485,7 @@ if(typeof DLG1_DlgObj != 'undefined' && typeof DLG1_DlgObj._panelCardResize != '
 				}
 			}
 		},
-		style: 'text-align: center;'
+		style: 'text-align: center;  margin-left:-10px;  margin-right:-10px;  background-color: rgba(0,57,255,0.45);  color: white;;background: url(unnamed.jpg) center no-repeat; background-size: cover;'
 	},
 	header: {
 		html: '<div style="display:table; margin:auto;"><div class="A5CWLayout" style="width: " > \t<div id="DLG1.V.R1.STATICTEXT_5" title=""  class="" style="box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;"   ><b>5/5</b></div> </div> </div><div style="display:none;"></div>',
@@ -1464,6 +1573,7 @@ DLG1_PanelObj._panelPath = {
 	PANELCARD_RECORRIDO: 'PANELCARD_RECORRIDO',
 	PANELCARD_SATISFACCION: 'PANELCARD_SATISFACCION',
 	PANELCARD_SERVICIOS: 'PANELCARD_SERVICIOS',
+	PANELCARD_PRESENTACIONENCUESTA: 'PANELCARD_PRESENTACIONENCUESTA',
 	PANELCARD_PREGUNTA1: 'PANELCARD_PREGUNTA1',
 	PANELCARD_PREGUNTA2: 'PANELCARD_PREGUNTA2',
 	PANELCARD_PREGUNTA3: 'PANELCARD_PREGUNTA3',
@@ -1471,7 +1581,7 @@ DLG1_PanelObj._panelPath = {
 	PANELCARD_PREGUNTA5: 'PANELCARD_PREGUNTA5'
 }
 DLG1_PanelObj._displayNames = {
-PANELCARD_INICIO : 'PANELCARD_INICIO',PANEL_LOGIN : 'PANEL_LOGIN',PANELCARD_RRHH : 'PANELCARD_RRHH',PANELCARD_RRHH1 : 'PANELCARD_RRHH1',PANELCARD_MOSTRARPDF : 'PANELCARD_MOSTRARPDF',PANELCARD_RECORRIDO : 'PANELCARD_RECORRIDO',PANELCARD_SATISFACCION : 'PANELCARD_SATISFACCION',PANELCARD_SERVICIOS : 'PANELCARD_SERVICIOS',PANELCARD_PREGUNTA1 : 'PANELCARD_PREGUNTA1',PANELCARD_PREGUNTA2 : 'PANELCARD_PREGUNTA2',PANELCARD_PREGUNTA3 : 'PANELCARD_PREGUNTA3',PANELCARD_PREGUNTA4 : 'PANELCARD_PREGUNTA4',PANELCARD_PREGUNTA5 : 'PANELCARD_PREGUNTA5',PANEL_APPLICATIONNAVIGATOR : 'PANEL_APPLICATIONNAVIGATOR'
+PANELCARD_INICIO : 'PANELCARD_INICIO',PANEL_LOGIN : 'PANEL_LOGIN',PANELCARD_RRHH : 'PANELCARD_RRHH',PANELCARD_RRHH1 : 'PANELCARD_RRHH1',PANELCARD_MOSTRARPDF : 'PANELCARD_MOSTRARPDF',PANELCARD_RECORRIDO : 'PANELCARD_RECORRIDO',PANELCARD_SATISFACCION : 'PANELCARD_SATISFACCION',PANELCARD_SERVICIOS : 'PANELCARD_SERVICIOS',PANELCARD_PRESENTACIONENCUESTA : 'PANELCARD_PRESENTACIONENCUESTA',PANELCARD_PREGUNTA1 : 'PANELCARD_PREGUNTA1',PANELCARD_PREGUNTA2 : 'PANELCARD_PREGUNTA2',PANELCARD_PREGUNTA3 : 'PANELCARD_PREGUNTA3',PANELCARD_PREGUNTA4 : 'PANELCARD_PREGUNTA4',PANELCARD_PREGUNTA5 : 'PANELCARD_PREGUNTA5',PANEL_APPLICATIONNAVIGATOR : 'PANEL_APPLICATIONNAVIGATOR'
 };
 if(typeof DLG1_DlgObj == 'object') DLG1_DlgObj._destroy();
 var DLG1_DlgObj = new A5.DialogComponentHelper('DLG1',{
@@ -1479,7 +1589,7 @@ var DLG1_DlgObj = new A5.DialogComponentHelper('DLG1',{
 	_embeddedMode: false,
 	_livePreviewInBuilder: false,
 	componentGUID: '57f8c0fe-416f-458a-a00b-6a038ee025da',
-	columnInfo: {'TEXTBOX1': {info: {controlType: 'Label'}, hiddenVal: false, type: 'label,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'LABEL4': {info: {controlType: 'label'}, hiddenVal: false, type: 'label,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'LABEL1': {info: {controlType: 'label'}, hiddenVal: false, type: 'label,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'LABEL2': {info: {controlType: 'label'}, hiddenVal: false, type: 'label,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'LABEL5': {info: {controlType: 'label'}, hiddenVal: false, type: 'label,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'USERID': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'PASSWORD': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'LISTRRHH': {info: {controlType: 'list'}, hiddenVal: false, type: 'control', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'ID_TRABAJADOR': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'N'  },'LISTRRHH1': {info: {controlType: 'list'}, hiddenVal: false, type: 'control', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'LISTRECORRIDO': {info: {controlType: 'list'}, hiddenVal: false, type: 'control', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'LISTSATISFACCION': {info: {controlType: 'list'}, hiddenVal: false, type: 'control', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'ID_SATISFACCION': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'N'  },'ID_CLIENTE': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'N'  },'LISTSERVICIOSENCUESTA': {info: {controlType: 'list'}, hiddenVal: false, type: 'control', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'STARRATING': {info: {controlType: 'StarRating'}, hiddenVal: false, type: 'control', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'STARRATING1': {info: {controlType: 'StarRating'}, hiddenVal: false, type: 'control', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'STARRATING3': {info: {controlType: 'StarRating'}, hiddenVal: false, type: 'control', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'CHECK_TIENEREDESSOCIALES': {info: {controlType: 'RadioButton'}, hiddenVal: false, type: 'logicalRadio,label', isCalc: false, hlp: '', isArray: false, dataType: 'L'  },'STARRATING2': {info: {controlType: 'StarRating'}, hiddenVal: false, type: 'control', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'STARRATING4': {info: {controlType: 'StarRating'}, hiddenVal: false, type: 'control', isCalc: false, hlp: '', isArray: false, dataType: 'C'  }},
+	columnInfo: {'TEXTBOX1': {info: {controlType: 'Label'}, hiddenVal: false, type: 'label,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'LABEL4': {info: {controlType: 'label'}, hiddenVal: false, type: 'label,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'LABEL1': {info: {controlType: 'label'}, hiddenVal: false, type: 'label,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'LABEL2': {info: {controlType: 'label'}, hiddenVal: false, type: 'label,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'LABEL5': {info: {controlType: 'label'}, hiddenVal: false, type: 'label,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'USERID': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'PASSWORD': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'LISTRRHH': {info: {controlType: 'list'}, hiddenVal: false, type: 'control', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'ID_TRABAJADOR': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'N'  },'LISTRRHH1': {info: {controlType: 'list'}, hiddenVal: false, type: 'control', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'LISTRECORRIDO': {info: {controlType: 'list'}, hiddenVal: false, type: 'control', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'LISTSATISFACCION': {info: {controlType: 'list'}, hiddenVal: false, type: 'control', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'ID_SATISFACCION': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'N'  },'ID_CLIENTE': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'N'  },'LISTSERVICIOSENCUESTA': {info: {controlType: 'list'}, hiddenVal: false, type: 'control', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'STARRATING': {info: {controlType: 'StarRating'}, hiddenVal: false, type: 'control', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'PREGUNTA_CUMPLIMOSESPECTATIVAS_DESCRIPCION': {info: {controlType: 'TextArea'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'STARRATING1': {info: {controlType: 'StarRating'}, hiddenVal: false, type: 'control', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'PREGUNTA_RELACIONCALIDAPRECIO_DESCRIPCION': {info: {controlType: 'TextArea'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'STARRATING3': {info: {controlType: 'StarRating'}, hiddenVal: false, type: 'control', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'PREGUNTA_SISTEMAINFORMACION_DESCRIPCION': {info: {controlType: 'TextArea'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'CHECK_TIENEREDESSOCIALES': {info: {controlType: 'RadioButton'}, hiddenVal: false, type: 'logicalRadio,label', isCalc: false, hlp: '', isArray: false, dataType: 'L'  },'CHECK_NOSSIGUEREDESSOCIALES': {info: {controlType: 'RadioButton'}, hiddenVal: false, type: 'logicalRadio,label', isCalc: false, hlp: '', isArray: false, dataType: 'L'  },'STARRATING2': {info: {controlType: 'StarRating'}, hiddenVal: false, type: 'control', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'PREGUNTA_CONTENIDOREDESSOCIALES_DESCRIPCION': {info: {controlType: 'TextArea'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'STARRATING4': {info: {controlType: 'StarRating'}, hiddenVal: false, type: 'control', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'PREGUNTA_RECOMIENDASERVICIO_DESCRIPCION': {info: {controlType: 'TextArea'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  }},
 	originalValues: [{
 	"TEXTBOX1": "session.USERID",
 	"LABEL4": "0",
@@ -1497,11 +1607,17 @@ var DLG1_DlgObj = new A5.DialogComponentHelper('DLG1',{
 	"ID_CLIENTE": "",
 	"LISTSERVICIOSENCUESTA": "",
 	"STARRATING": "",
+	"PREGUNTA_CUMPLIMOSESPECTATIVAS_DESCRIPCION": "",
 	"STARRATING1": "",
+	"PREGUNTA_RELACIONCALIDAPRECIO_DESCRIPCION": "",
 	"STARRATING3": "",
+	"PREGUNTA_SISTEMAINFORMACION_DESCRIPCION": "",
 	"CHECK_TIENEREDESSOCIALES": false,
+	"CHECK_NOSSIGUEREDESSOCIALES": false,
 	"STARRATING2": "",
-	"STARRATING4": ""
+	"PREGUNTA_CONTENIDOREDESSOCIALES_DESCRIPCION": "",
+	"STARRATING4": "",
+	"PREGUNTA_RECOMIENDASERVICIO_DESCRIPCION": ""
 }],
 	defaultValues: {
 	"TEXTBOX1": "session.USERID",
@@ -1520,11 +1636,17 @@ var DLG1_DlgObj = new A5.DialogComponentHelper('DLG1',{
 	"ID_CLIENTE": "",
 	"LISTSERVICIOSENCUESTA": "",
 	"STARRATING": "",
+	"PREGUNTA_CUMPLIMOSESPECTATIVAS_DESCRIPCION": "",
 	"STARRATING1": "",
+	"PREGUNTA_RELACIONCALIDAPRECIO_DESCRIPCION": "",
 	"STARRATING3": "",
+	"PREGUNTA_SISTEMAINFORMACION_DESCRIPCION": "",
 	"CHECK_TIENEREDESSOCIALES": false,
+	"CHECK_NOSSIGUEREDESSOCIALES": false,
 	"STARRATING2": "",
-	"STARRATING4": ""
+	"PREGUNTA_CONTENIDOREDESSOCIALES_DESCRIPCION": "",
+	"STARRATING4": "",
+	"PREGUNTA_RECOMIENDASERVICIO_DESCRIPCION": ""
 },
 	datePickerMonthNames: ['January','February','March','April','May','June','July','August','September','October','November','December'],
 	datePickerDayNames: ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'],
@@ -1598,7 +1720,7 @@ A5.map._fn='https://maps.googleapis.com/maps/api/js?key=AIzaSyCwJ3t4qfu7_Z0VQdc0
 	if(typeof A5.map.defaults.staticMap == 'undefined') A5.map.defaults.staticMap = {};
 A5.map.defaults.staticMap.key='AIzaSyCwJ3t4qfu7_Z0VQdc0XrFDse_3mWRQADk';
 DLG1_DlgObj._tabObjects = [];
-A5.loadJavascript('function handleBackButton(e) {\nmsgResult = confirm(\'Desea Salir de la Aplicacion\');\nif ( msgResult )\n{\ne.preventDefault();\nnavigator.app.exitApp();\n}\nelse return;\n}\nfunction additionalAjaxDataListaRecorrido(){\n var id_recorrido = DLG1_DlgObj.getValue(\'list::listRecorrido::Id_Recorrido\');\n var data = A5.ajax.buildURLParam(\'__additionalData\', id_recorrido);\n return data;\n}\nfunction additionalAjaxDataListaRRHH(){\n var id_rrhh = DLG1_DlgObj.getValue(\'list::listRRHH::Id_Trabajador\');\n var data = A5.ajax.buildURLParam(\'__additionalData\', id_rrhh);\n return data;\n}\nfunction paraMostrarBotones(){\n var id_tipoflete = DLG1_DlgObj.getValue(\'list::listRecorrido::Id_TipoFlete\');\n var enable = false;\n if( id_tipoflete != 6){\n  enable = true;\n }\n return enable;\n}\nfunction phoneNumber(){\nvar id_recorrido = DLG1_DlgObj.getValue(\'listRecorrido\');\nvar x = typeof(id_recorrido);\nalert(id_recorrido);\n}\nfunction id_rrhhh(){\nvar ID_TRABAJADOR = DLG1_DlgObj.getValue(\'list::listRRHH::Id_Trabajador\');\nvar ID_Tr = DLG1_DlgObj.getValue(\'Id_Trabajador\');\nDLG1_DlgObj.setArgumentValue("ID_TRABAJADOR", parseInt(DLG1_DlgObj.getValue(\'list::listRRHH::Id_Trabajador\')));\n}\nfunction selectListEncuesta(){\nvar select = false;\nvar x = DLG1_DlgObj.getValue(\'list::listSatisfaccion::Id_Satisfaccion\');\nif(x > 0){\nselect = true;\n}\nreturn select;\n}\n;\n;\n;\n;\n;\n;\n;',true);
+A5.loadJavascript('function handleBackButton(e) {\nmsgResult = confirm(\'Desea Salir de la Aplicacion\');\nif ( msgResult )\n{\ne.preventDefault();\nnavigator.app.exitApp();\n}\nelse return;\n}\nfunction additionalAjaxDataListaRecorrido(){\n var id_recorrido = DLG1_DlgObj.getValue(\'list::listRecorrido::Id_Recorrido\');\n var data = A5.ajax.buildURLParam(\'__additionalData\', id_recorrido);\n return data;\n}\nfunction selectListaRecorrido(){\n var id_recorrido = DLG1_DlgObj.getValue(\'list::listRecorrido::Id_Recorrido\');\n var enable = false;\n if(id_recorrido > 0){\n enable = true;\n }\n return enable;\n}\nfunction additionalAjaxDataListaRRHH(){\n var id_rrhh = DLG1_DlgObj.getValue(\'list::listRRHH::Id_Trabajador\');\n var data = A5.ajax.buildURLParam(\'__additionalData\', id_rrhh);\n return data;\n}\nfunction paraMostrarBotones(){\n var id_tipoflete = DLG1_DlgObj.getValue(\'list::listRecorrido::Id_TipoFlete\');\n var enable = false;\n if( id_tipoflete != 6){\n  enable = true;\n }\n return enable;\n}\nfunction phoneNumber(){\nvar id_recorrido = DLG1_DlgObj.getValue(\'listRecorrido\');\nvar x = typeof(id_recorrido);\nalert(id_recorrido);\n}\nfunction id_rrhhh(){\nvar ID_TRABAJADOR = DLG1_DlgObj.getValue(\'list::listRRHH::Id_Trabajador\');\nvar ID_Tr = DLG1_DlgObj.getValue(\'Id_Trabajador\');\nDLG1_DlgObj.setArgumentValue("ID_TRABAJADOR", parseInt(DLG1_DlgObj.getValue(\'list::listRRHH::Id_Trabajador\')));\n}\nfunction selectListEncuesta(){\nvar select = false;\nvar x = DLG1_DlgObj.getValue(\'list::listSatisfaccion::Id_Satisfaccion\');\nif(x > 0){\nselect = true;\n}\nreturn select;\n}\n;\n;\n;\n;\n;\n;\n;',true);
 if(!DLG1_DlgObj.fieldHelpers['USERID'])DLG1_DlgObj.fieldHelpers['USERID'] = new A5.Edit({
 	watermark: {
 		text: 'Usuario',
@@ -1609,6 +1731,36 @@ if(!DLG1_DlgObj.fieldHelpers['PASSWORD'])DLG1_DlgObj.fieldHelpers['PASSWORD'] = 
 	watermark: {
 		text: 'Contrase\u00F1a',
 		style: 'text-align: center; color: rgba(0,0,0,0.58);'
+	}
+});
+if(!DLG1_DlgObj.fieldHelpers['PREGUNTA_CUMPLIMOSESPECTATIVAS_DESCRIPCION'])DLG1_DlgObj.fieldHelpers['PREGUNTA_CUMPLIMOSESPECTATIVAS_DESCRIPCION'] = new A5.Edit({
+	watermark: {
+		text: 'Su comentario nos ayuda a mejorar!!',
+		style: 'color: rgba(246,246,246,0.96); font-size: 1.5em;'
+	}
+});
+if(!DLG1_DlgObj.fieldHelpers['PREGUNTA_RELACIONCALIDAPRECIO_DESCRIPCION'])DLG1_DlgObj.fieldHelpers['PREGUNTA_RELACIONCALIDAPRECIO_DESCRIPCION'] = new A5.Edit({
+	watermark: {
+		text: 'Su comentario nos ayuda a mejorar!!',
+		style: 'color: white;'
+	}
+});
+if(!DLG1_DlgObj.fieldHelpers['PREGUNTA_SISTEMAINFORMACION_DESCRIPCION'])DLG1_DlgObj.fieldHelpers['PREGUNTA_SISTEMAINFORMACION_DESCRIPCION'] = new A5.Edit({
+	watermark: {
+		text: 'Su comentario nos ayuda a mejorar!!',
+		style: 'color: white;'
+	}
+});
+if(!DLG1_DlgObj.fieldHelpers['PREGUNTA_CONTENIDOREDESSOCIALES_DESCRIPCION'])DLG1_DlgObj.fieldHelpers['PREGUNTA_CONTENIDOREDESSOCIALES_DESCRIPCION'] = new A5.Edit({
+	watermark: {
+		text: 'Su comentario nos ayuda a mejorar!!',
+		style: 'color: white;'
+	}
+});
+if(!DLG1_DlgObj.fieldHelpers['PREGUNTA_RECOMIENDASERVICIO_DESCRIPCION'])DLG1_DlgObj.fieldHelpers['PREGUNTA_RECOMIENDASERVICIO_DESCRIPCION'] = new A5.Edit({
+	watermark: {
+		text: 'Su comentario nos ayuda a mejorar!!',
+		style: 'color: white;'
 	}
 });
 DLG1_DlgObj.lookups = {
@@ -1648,6 +1800,216 @@ DLG1_DlgObj.dialogWatches['SHOWHIDE_LOGOUT_BUTTON'] = {
 	}
 	;
 	DLG1_DlgObj._executeEvent('onWatchEvent',{type: 'show/hide', control: 'LOGOUT_BUTTON', flag: $if(showHide == '',true,false)});}
+}
+DLG1_DlgObj.dialogWatches['ENABLE_BUTTON_127'] = {
+		watch: [],
+		variables: [],
+		onChange: function(data) {
+	var dialog = {};
+	var summary = {};var enable = (selectListaRecorrido() == true);
+	var eles = $cetp($n('V.R' + data.rowNumber + '.BUTTON_127'),$('DLG1.R'+data.rowNumber));
+	if(typeof eles.length == 'undefined' || eles.length == 0) eles = [$('DLG1.'+'V.R' + data.rowNumber + '.BUTTON_127')];
+	var pObj = DLG1_DlgObj.getControl('BUTTON_127'); if(pObj) { if(typeof pObj.setDisabled != 'undefined') {  pObj.setDisabled(!enable,eles); return true;  } }
+	if(typeof DLG1_DlgObj._buttons['BUTTON_127'] != 'undefined') {
+	DLG1_DlgObj._buttons['BUTTON_127'].setDisabled(!enable,eles)
+	} else {
+	for(var i=0; i<eles.length;i++) eles[i].disabled = !enable;
+	}
+	;;
+	DLG1_DlgObj._executeEvent('onWatchEvent',{type: 'enable', control: 'BUTTON_127', flag: enable});}
+}
+DLG1_DlgObj.dialogWatches['ENABLE_BUTTON_8'] = {
+		watch: [],
+		variables: [],
+		onChange: function(data) {
+	var dialog = {};
+	var summary = {};var enable = (selectListEncuesta() == true);
+	var eles = $cetp($n('V.R' + data.rowNumber + '.BUTTON_8'),$('DLG1.R'+data.rowNumber));
+	if(typeof eles.length == 'undefined' || eles.length == 0) eles = [$('DLG1.'+'V.R' + data.rowNumber + '.BUTTON_8')];
+	var pObj = DLG1_DlgObj.getControl('BUTTON_8'); if(pObj) { if(typeof pObj.setDisabled != 'undefined') {  pObj.setDisabled(!enable,eles); return true;  } }
+	if(typeof DLG1_DlgObj._buttons['BUTTON_8'] != 'undefined') {
+	DLG1_DlgObj._buttons['BUTTON_8'].setDisabled(!enable,eles)
+	} else {
+	for(var i=0; i<eles.length;i++) eles[i].disabled = !enable;
+	}
+	;;
+	DLG1_DlgObj._executeEvent('onWatchEvent',{type: 'enable', control: 'BUTTON_8', flag: enable});}
+}
+DLG1_DlgObj.dialogWatches['ENABLE_BUTTON_6'] = {
+		watch: [],
+		variables: [],
+		onChange: function(data) {
+	var dialog = {};
+	var summary = {};var enable = (selectListEncuesta() == true);
+	var eles = $cetp($n('V.R' + data.rowNumber + '.BUTTON_6'),$('DLG1.R'+data.rowNumber));
+	if(typeof eles.length == 'undefined' || eles.length == 0) eles = [$('DLG1.'+'V.R' + data.rowNumber + '.BUTTON_6')];
+	var pObj = DLG1_DlgObj.getControl('BUTTON_6'); if(pObj) { if(typeof pObj.setDisabled != 'undefined') {  pObj.setDisabled(!enable,eles); return true;  } }
+	if(typeof DLG1_DlgObj._buttons['BUTTON_6'] != 'undefined') {
+	DLG1_DlgObj._buttons['BUTTON_6'].setDisabled(!enable,eles)
+	} else {
+	for(var i=0; i<eles.length;i++) eles[i].disabled = !enable;
+	}
+	;;
+	DLG1_DlgObj._executeEvent('onWatchEvent',{type: 'enable', control: 'BUTTON_6', flag: enable});}
+}
+DLG1_DlgObj.dialogWatches['SHOWHIDE_STATICTEXT_20'] = {
+		watch: ['CHECK_TIENEREDESSOCIALES'],
+		variables: [],
+		onChange: function(data) {
+	var dialog = {};
+	var summary = {};var CHECK_TIENEREDESSOCIALES = $u.s.toBool(DLG1_DlgObj.getValue('CHECK_TIENEREDESSOCIALES',data.rowNumber));
+	var showHide = '';
+	if( (CHECK_TIENEREDESSOCIALES == true) == true ) showHide = '';
+	else showHide = 'none';	
+	if(showHide == 'none') {	
+		DLG1_DlgObj.setControlDisplay(''+'STATICTEXT_20'+'',false,'display');
+	} else {
+		DLG1_DlgObj.setControlDisplay(''+'STATICTEXT_20'+'',true,'display');
+	}
+	;
+	DLG1_DlgObj._executeEvent('onWatchEvent',{type: 'show/hide', control: 'STATICTEXT_20', flag: $if(showHide == '',true,false)});}
+}
+DLG1_DlgObj.dialogWatches['SHOWHIDE_CHECK_NOSSIGUEREDESSOCIALES'] = {
+		watch: ['CHECK_TIENEREDESSOCIALES'],
+		variables: [],
+		onChange: function(data) {
+	var dialog = {};
+	var summary = {};var CHECK_TIENEREDESSOCIALES = $u.s.toBool(DLG1_DlgObj.getValue('CHECK_TIENEREDESSOCIALES',data.rowNumber));
+	var showHide = '';
+	if( (CHECK_TIENEREDESSOCIALES == true) == true ) showHide = '';
+	else showHide = 'none';	
+	if(showHide == 'none') {	
+		DLG1_DlgObj.setControlDisplay(''+'CHECK_NOSSIGUEREDESSOCIALES'+'',false,'display');
+	} else {
+		DLG1_DlgObj.setControlDisplay(''+'CHECK_NOSSIGUEREDESSOCIALES'+'',true,'display');
+	}
+	;
+	DLG1_DlgObj._executeEvent('onWatchEvent',{type: 'show/hide', control: 'Check_NosSigueRedesSociales', flag: $if(showHide == '',true,false)});}
+}
+DLG1_DlgObj.dialogWatches['SHOWHIDE_STATICTEXT_12'] = {
+		watch: ['CHECK_NOSSIGUEREDESSOCIALES'],
+		variables: [],
+		onChange: function(data) {
+	var dialog = {};
+	var summary = {};var CHECK_NOSSIGUEREDESSOCIALES = $u.s.toBool(DLG1_DlgObj.getValue('CHECK_NOSSIGUEREDESSOCIALES',data.rowNumber));
+	var showHide = '';
+	if( (CHECK_NOSSIGUEREDESSOCIALES == true) == true ) showHide = '';
+	else showHide = 'none';	
+	if(showHide == 'none') {	
+		DLG1_DlgObj.setControlDisplay(''+'STATICTEXT_12'+'',false,'display');
+	} else {
+		DLG1_DlgObj.setControlDisplay(''+'STATICTEXT_12'+'',true,'display');
+	}
+	;
+	DLG1_DlgObj._executeEvent('onWatchEvent',{type: 'show/hide', control: 'STATICTEXT_12', flag: $if(showHide == '',true,false)});}
+}
+DLG1_DlgObj.dialogWatches['SHOWHIDE_STARRATING2'] = {
+		watch: ['CHECK_NOSSIGUEREDESSOCIALES'],
+		variables: [],
+		onChange: function(data) {
+	var dialog = {};
+	var summary = {};var CHECK_NOSSIGUEREDESSOCIALES = $u.s.toBool(DLG1_DlgObj.getValue('CHECK_NOSSIGUEREDESSOCIALES',data.rowNumber));
+	var showHide = '';
+	if( (CHECK_NOSSIGUEREDESSOCIALES == true) == true ) showHide = '';
+	else showHide = 'none';	
+	if(showHide == 'none') {	
+		DLG1_DlgObj.setControlDisplay(''+'STARRATING2'+'',false,'display');
+	} else {
+		DLG1_DlgObj.setControlDisplay(''+'STARRATING2'+'',true,'display');
+	}
+	;
+	DLG1_DlgObj._executeEvent('onWatchEvent',{type: 'show/hide', control: 'StarRating2', flag: $if(showHide == '',true,false)});}
+}
+DLG1_DlgObj.dialogWatches['SHOWHIDE_PREGUNTA_CONTENIDOREDESSOCIALES_DESCRIPCION'] = {
+		watch: ['CHECK_NOSSIGUEREDESSOCIALES'],
+		variables: [],
+		onChange: function(data) {
+	var dialog = {};
+	var summary = {};var CHECK_NOSSIGUEREDESSOCIALES = $u.s.toBool(DLG1_DlgObj.getValue('CHECK_NOSSIGUEREDESSOCIALES',data.rowNumber));
+	var showHide = '';
+	if( (CHECK_NOSSIGUEREDESSOCIALES == true) == true ) showHide = '';
+	else showHide = 'none';	
+	if(showHide == 'none') {	
+		DLG1_DlgObj.setControlDisplay(''+'PREGUNTA_CONTENIDOREDESSOCIALES_DESCRIPCION'+'',false,'display');
+	} else {
+		DLG1_DlgObj.setControlDisplay(''+'PREGUNTA_CONTENIDOREDESSOCIALES_DESCRIPCION'+'',true,'display');
+	}
+	;
+	DLG1_DlgObj._executeEvent('onWatchEvent',{type: 'show/hide', control: 'Pregunta_ContenidoRedesSociales_Descripcion', flag: $if(showHide == '',true,false)});}
+}
+DLG1_DlgObj.dialogWatches['ENABLE_BUTTON_DVSAVE_LISTSATISFACCION'] = {
+		watch: ['STARRATING'],
+		variables: [],
+		onChange: function(data) {
+	var dialog = {};
+	var summary = {};
+	DLG1_DlgObj._getDialogVariables(dialog,summary,data);
+	var STARRATING = DLG1_DlgObj.getValue('STARRATING',data.rowNumber);
+	if( A5.isBlank(STARRATING)) STARRATING= '';
+	var enable = (((dialog.listDetailView.LISTSATISFACCION.isDirty == true) && (dialog.listDetailView.LISTSATISFACCION.mode != 'search')) && (STARRATING != ''));
+	var eles = $cetp($n('V.R' + data.rowNumber + '.BUTTON_DVSAVE_LISTSATISFACCION'),$('DLG1.R'+data.rowNumber));
+	if(typeof eles.length == 'undefined' || eles.length == 0) eles = [$('DLG1.'+'V.R' + data.rowNumber + '.BUTTON_DVSAVE_LISTSATISFACCION')];
+	var pObj = DLG1_DlgObj.getControl('BUTTON_DVSAVE_LISTSATISFACCION'); if(pObj) { if(typeof pObj.setDisabled != 'undefined') {  pObj.setDisabled(!enable,eles); return true;  } }
+	if(typeof DLG1_DlgObj._buttons['BUTTON_DVSAVE_LISTSATISFACCION'] != 'undefined') {
+	DLG1_DlgObj._buttons['BUTTON_DVSAVE_LISTSATISFACCION'].setDisabled(!enable,eles)
+	} else {
+	for(var i=0; i<eles.length;i++) eles[i].disabled = !enable;
+	}
+	;;
+	DLG1_DlgObj._executeEvent('onWatchEvent',{type: 'enable', control: 'BUTTON_DVSAVE_LISTSATISFACCION', flag: enable});}
+}
+DLG1_DlgObj.dialogWatches['ENABLE_BUTTON_DVSYNCHRONIZE_LISTSATISFACCION'] = {
+		watch: [],
+		variables: [],
+		onChange: function(data) {
+	var dialog = {};
+	var summary = {};
+	DLG1_DlgObj._getDialogVariables(dialog,summary,data);
+	var enable = ((dialog.list.LISTSATISFACCION.isDirty == true) && (dialog.listDetailView.LISTSATISFACCION.mode != 'search'));
+	var eles = $cetp($n('V.R' + data.rowNumber + '.BUTTON_DVSYNCHRONIZE_LISTSATISFACCION'),$('DLG1.R'+data.rowNumber));
+	if(typeof eles.length == 'undefined' || eles.length == 0) eles = [$('DLG1.'+'V.R' + data.rowNumber + '.BUTTON_DVSYNCHRONIZE_LISTSATISFACCION')];
+	var pObj = DLG1_DlgObj.getControl('BUTTON_DVSYNCHRONIZE_LISTSATISFACCION'); if(pObj) { if(typeof pObj.setDisabled != 'undefined') {  pObj.setDisabled(!enable,eles); return true;  } }
+	if(typeof DLG1_DlgObj._buttons['BUTTON_DVSYNCHRONIZE_LISTSATISFACCION'] != 'undefined') {
+	DLG1_DlgObj._buttons['BUTTON_DVSYNCHRONIZE_LISTSATISFACCION'].setDisabled(!enable,eles)
+	} else {
+	for(var i=0; i<eles.length;i++) eles[i].disabled = !enable;
+	}
+	;;
+	DLG1_DlgObj._executeEvent('onWatchEvent',{type: 'enable', control: 'BUTTON_DVSYNCHRONIZE_LISTSATISFACCION', flag: enable});}
+}
+DLG1_DlgObj.dialogWatches['ENABLE_BUTTON_120'] = {
+		watch: [],
+		variables: [],
+		onChange: function(data) {
+	var dialog = {};
+	var summary = {};var enable = (selectListaRecorrido() == true);
+	var eles = $cetp($n('V.R' + data.rowNumber + '.BUTTON_120'),$('DLG1.R'+data.rowNumber));
+	if(typeof eles.length == 'undefined' || eles.length == 0) eles = [$('DLG1.'+'V.R' + data.rowNumber + '.BUTTON_120')];
+	var pObj = DLG1_DlgObj.getControl('BUTTON_120'); if(pObj) { if(typeof pObj.setDisabled != 'undefined') {  pObj.setDisabled(!enable,eles); return true;  } }
+	if(typeof DLG1_DlgObj._buttons['BUTTON_120'] != 'undefined') {
+	DLG1_DlgObj._buttons['BUTTON_120'].setDisabled(!enable,eles)
+	} else {
+	for(var i=0; i<eles.length;i++) eles[i].disabled = !enable;
+	}
+	;;
+	DLG1_DlgObj._executeEvent('onWatchEvent',{type: 'enable', control: 'BUTTON_120', flag: enable});}
+}
+DLG1_DlgObj.dialogWatches['ENABLE_BUTTON_121'] = {
+		watch: [],
+		variables: [],
+		onChange: function(data) {
+	var dialog = {};
+	var summary = {};var enable = (selectListaRecorrido() == true);
+	var eles = $cetp($n('V.R' + data.rowNumber + '.BUTTON_121'),$('DLG1.R'+data.rowNumber));
+	if(typeof eles.length == 'undefined' || eles.length == 0) eles = [$('DLG1.'+'V.R' + data.rowNumber + '.BUTTON_121')];
+	var pObj = DLG1_DlgObj.getControl('BUTTON_121'); if(pObj) { if(typeof pObj.setDisabled != 'undefined') {  pObj.setDisabled(!enable,eles); return true;  } }
+	if(typeof DLG1_DlgObj._buttons['BUTTON_121'] != 'undefined') {
+	DLG1_DlgObj._buttons['BUTTON_121'].setDisabled(!enable,eles)
+	} else {
+	for(var i=0; i<eles.length;i++) eles[i].disabled = !enable;
+	}
+	;;
+	DLG1_DlgObj._executeEvent('onWatchEvent',{type: 'enable', control: 'BUTTON_121', flag: enable});}
 }
 DLG1_DlgObj.dialogWatches['ENABLE_BUTTON_122'] = {
 		watch: [],
@@ -1733,97 +2095,6 @@ DLG1_DlgObj.dialogWatches['ENABLE_BUTTON_126'] = {
 	}
 	;;
 	DLG1_DlgObj._executeEvent('onWatchEvent',{type: 'enable', control: 'BUTTON_126', flag: enable});}
-}
-DLG1_DlgObj.dialogWatches['ENABLE_BUTTON_8'] = {
-		watch: [],
-		variables: [],
-		onChange: function(data) {
-	var dialog = {};
-	var summary = {};var enable = (selectListEncuesta() == true);
-	var eles = $cetp($n('V.R' + data.rowNumber + '.BUTTON_8'),$('DLG1.R'+data.rowNumber));
-	if(typeof eles.length == 'undefined' || eles.length == 0) eles = [$('DLG1.'+'V.R' + data.rowNumber + '.BUTTON_8')];
-	var pObj = DLG1_DlgObj.getControl('BUTTON_8'); if(pObj) { if(typeof pObj.setDisabled != 'undefined') {  pObj.setDisabled(!enable,eles); return true;  } }
-	if(typeof DLG1_DlgObj._buttons['BUTTON_8'] != 'undefined') {
-	DLG1_DlgObj._buttons['BUTTON_8'].setDisabled(!enable,eles)
-	} else {
-	for(var i=0; i<eles.length;i++) eles[i].disabled = !enable;
-	}
-	;;
-	DLG1_DlgObj._executeEvent('onWatchEvent',{type: 'enable', control: 'BUTTON_8', flag: enable});}
-}
-DLG1_DlgObj.dialogWatches['ENABLE_BUTTON_6'] = {
-		watch: [],
-		variables: [],
-		onChange: function(data) {
-	var dialog = {};
-	var summary = {};var enable = (selectListEncuesta() == true);
-	var eles = $cetp($n('V.R' + data.rowNumber + '.BUTTON_6'),$('DLG1.R'+data.rowNumber));
-	if(typeof eles.length == 'undefined' || eles.length == 0) eles = [$('DLG1.'+'V.R' + data.rowNumber + '.BUTTON_6')];
-	var pObj = DLG1_DlgObj.getControl('BUTTON_6'); if(pObj) { if(typeof pObj.setDisabled != 'undefined') {  pObj.setDisabled(!enable,eles); return true;  } }
-	if(typeof DLG1_DlgObj._buttons['BUTTON_6'] != 'undefined') {
-	DLG1_DlgObj._buttons['BUTTON_6'].setDisabled(!enable,eles)
-	} else {
-	for(var i=0; i<eles.length;i++) eles[i].disabled = !enable;
-	}
-	;;
-	DLG1_DlgObj._executeEvent('onWatchEvent',{type: 'enable', control: 'BUTTON_6', flag: enable});}
-}
-DLG1_DlgObj.dialogWatches['SHOWHIDE_CONTAINER_1'] = {
-		watch: ['CHECK_TIENEREDESSOCIALES'],
-		variables: [],
-		onChange: function(data) {
-	var dialog = {};
-	var summary = {};var CHECK_TIENEREDESSOCIALES = $u.s.toBool(DLG1_DlgObj.getValue('CHECK_TIENEREDESSOCIALES',data.rowNumber));
-	var showHide = '';
-	if( (CHECK_TIENEREDESSOCIALES == true) == true ) showHide = '';
-	else showHide = 'none';	
-	if(showHide == 'none') {	
-		DLG1_DlgObj.setControlDisplay(''+'CONTAINER_1'+'',false,'display');
-	} else {
-		DLG1_DlgObj.setControlDisplay(''+'CONTAINER_1'+'',true,'display');
-	}
-	;
-	DLG1_DlgObj._executeEvent('onWatchEvent',{type: 'show/hide', control: 'CONTAINER_1', flag: $if(showHide == '',true,false)});}
-}
-DLG1_DlgObj.dialogWatches['ENABLE_BUTTON_DVSAVE_LISTSATISFACCION'] = {
-		watch: ['STARRATING'],
-		variables: [],
-		onChange: function(data) {
-	var dialog = {};
-	var summary = {};
-	DLG1_DlgObj._getDialogVariables(dialog,summary,data);
-	var STARRATING = DLG1_DlgObj.getValue('STARRATING',data.rowNumber);
-	if( A5.isBlank(STARRATING)) STARRATING= '';
-	var enable = (((dialog.listDetailView.LISTSATISFACCION.isDirty == true) && (dialog.listDetailView.LISTSATISFACCION.mode != 'search')) && (STARRATING != ''));
-	var eles = $cetp($n('V.R' + data.rowNumber + '.BUTTON_DVSAVE_LISTSATISFACCION'),$('DLG1.R'+data.rowNumber));
-	if(typeof eles.length == 'undefined' || eles.length == 0) eles = [$('DLG1.'+'V.R' + data.rowNumber + '.BUTTON_DVSAVE_LISTSATISFACCION')];
-	var pObj = DLG1_DlgObj.getControl('BUTTON_DVSAVE_LISTSATISFACCION'); if(pObj) { if(typeof pObj.setDisabled != 'undefined') {  pObj.setDisabled(!enable,eles); return true;  } }
-	if(typeof DLG1_DlgObj._buttons['BUTTON_DVSAVE_LISTSATISFACCION'] != 'undefined') {
-	DLG1_DlgObj._buttons['BUTTON_DVSAVE_LISTSATISFACCION'].setDisabled(!enable,eles)
-	} else {
-	for(var i=0; i<eles.length;i++) eles[i].disabled = !enable;
-	}
-	;;
-	DLG1_DlgObj._executeEvent('onWatchEvent',{type: 'enable', control: 'BUTTON_DVSAVE_LISTSATISFACCION', flag: enable});}
-}
-DLG1_DlgObj.dialogWatches['ENABLE_BUTTON_DVSYNCHRONIZE_LISTSATISFACCION'] = {
-		watch: [],
-		variables: [],
-		onChange: function(data) {
-	var dialog = {};
-	var summary = {};
-	DLG1_DlgObj._getDialogVariables(dialog,summary,data);
-	var enable = ((dialog.list.LISTSATISFACCION.isDirty == true) && (dialog.listDetailView.LISTSATISFACCION.mode != 'search'));
-	var eles = $cetp($n('V.R' + data.rowNumber + '.BUTTON_DVSYNCHRONIZE_LISTSATISFACCION'),$('DLG1.R'+data.rowNumber));
-	if(typeof eles.length == 'undefined' || eles.length == 0) eles = [$('DLG1.'+'V.R' + data.rowNumber + '.BUTTON_DVSYNCHRONIZE_LISTSATISFACCION')];
-	var pObj = DLG1_DlgObj.getControl('BUTTON_DVSYNCHRONIZE_LISTSATISFACCION'); if(pObj) { if(typeof pObj.setDisabled != 'undefined') {  pObj.setDisabled(!enable,eles); return true;  } }
-	if(typeof DLG1_DlgObj._buttons['BUTTON_DVSYNCHRONIZE_LISTSATISFACCION'] != 'undefined') {
-	DLG1_DlgObj._buttons['BUTTON_DVSYNCHRONIZE_LISTSATISFACCION'].setDisabled(!enable,eles)
-	} else {
-	for(var i=0; i<eles.length;i++) eles[i].disabled = !enable;
-	}
-	;;
-	DLG1_DlgObj._executeEvent('onWatchEvent',{type: 'enable', control: 'BUTTON_DVSYNCHRONIZE_LISTSATISFACCION', flag: enable});}
 }
 window['DLG1_O_CFDFFBBD29A34CAF8C7A32E90E3F332E'] = function(rowNum,rowId,objEle) {
 var windowName = 'WINDOW_650086f0_e0ed_49ba_9190_47438e5f137b';
@@ -1946,11 +2217,17 @@ ID_SATISFACCION:'PANELCARD_SATISFACCION',
 ID_CLIENTE:'PANELCARD_SATISFACCION',
 LISTSERVICIOSENCUESTA:'PANELCARD_SERVICIOS',
 STARRATING:'PANELCARD_PREGUNTA1',
+PREGUNTA_CUMPLIMOSESPECTATIVAS_DESCRIPCION:'PANELCARD_PREGUNTA1',
 STARRATING1:'PANELCARD_PREGUNTA2',
+PREGUNTA_RELACIONCALIDAPRECIO_DESCRIPCION:'PANELCARD_PREGUNTA2',
 STARRATING3:'PANELCARD_PREGUNTA3',
+PREGUNTA_SISTEMAINFORMACION_DESCRIPCION:'PANELCARD_PREGUNTA3',
 CHECK_TIENEREDESSOCIALES:'PANELCARD_PREGUNTA4',
+CHECK_NOSSIGUEREDESSOCIALES:'PANELCARD_PREGUNTA4',
 STARRATING2:'PANELCARD_PREGUNTA4',
-STARRATING4:'PANELCARD_PREGUNTA5'
+PREGUNTA_CONTENIDOREDESSOCIALES_DESCRIPCION:'PANELCARD_PREGUNTA4',
+STARRATING4:'PANELCARD_PREGUNTA5',
+PREGUNTA_RECOMIENDASERVICIO_DESCRIPCION:'PANELCARD_PREGUNTA5'
 }
 DLG1_DlgObj._controlsOnPanel = {
 	'PANELCARD_INICIO' : {controls: ['TEXTBOX1','LABEL4','LABEL1','LABEL2','LABEL5']},
@@ -1960,11 +2237,11 @@ DLG1_DlgObj._controlsOnPanel = {
 	'PANELCARD_RECORRIDO' : {controls: ['LISTRECORRIDO']},
 	'PANELCARD_SATISFACCION' : {controls: ['LISTSATISFACCION','ID_SATISFACCION','ID_CLIENTE']},
 	'PANELCARD_SERVICIOS' : {controls: ['LISTSERVICIOSENCUESTA']},
-	'PANELCARD_PREGUNTA1' : {controls: ['STARRATING']},
-	'PANELCARD_PREGUNTA2' : {controls: ['STARRATING1']},
-	'PANELCARD_PREGUNTA3' : {controls: ['STARRATING3']},
-	'PANELCARD_PREGUNTA4' : {controls: ['CHECK_TIENEREDESSOCIALES','STARRATING2']},
-	'PANELCARD_PREGUNTA5' : {controls: ['STARRATING4']}
+	'PANELCARD_PREGUNTA1' : {controls: ['STARRATING','PREGUNTA_CUMPLIMOSESPECTATIVAS_DESCRIPCION']},
+	'PANELCARD_PREGUNTA2' : {controls: ['STARRATING1','PREGUNTA_RELACIONCALIDAPRECIO_DESCRIPCION']},
+	'PANELCARD_PREGUNTA3' : {controls: ['STARRATING3','PREGUNTA_SISTEMAINFORMACION_DESCRIPCION']},
+	'PANELCARD_PREGUNTA4' : {controls: ['CHECK_TIENEREDESSOCIALES','CHECK_NOSSIGUEREDESSOCIALES','STARRATING2','PREGUNTA_CONTENIDOREDESSOCIALES_DESCRIPCION']},
+	'PANELCARD_PREGUNTA5' : {controls: ['STARRATING4','PREGUNTA_RECOMIENDASERVICIO_DESCRIPCION']}
 }
 DLG1_DlgObj._buttons = {};
 DLG1_DlgObj._buttons['BUTTON_119'] = new A5.Button({
@@ -2052,82 +2329,12 @@ DLG1_DlgObj._buttons['BUTTON_117'] = new A5.Button({
 },
 	theme: 'GrBlue:base'
 });
-DLG1_DlgObj._buttons['BUTTON_118'] = new A5.Button({
-	layout: 'icon/text',
-	style: 'width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; ',
-	html: 'MC',
-	icon: 'a5images/applicationadobepdf.png',
-	disabledIcon: 'a5images/disabledapplicationadobepdf.png',
-	onClick: function() { 
-},
-	theme: 'GrBlue:base'
-});
-DLG1_DlgObj._buttons['BUTTON_120'] = new A5.Button({
-	layout: 'icon/text',
-	style: 'width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; ',
-	html: 'EH',
-	icon: 'a5images/applicationadobepdf.png',
-	disabledIcon: 'a5images/disabledapplicationadobepdf.png',
-	onClick: function() { 
-},
-	theme: 'GrBlue:base'
-});
-DLG1_DlgObj._buttons['BUTTON_121'] = new A5.Button({
-	layout: 'icon/text',
-	style: 'width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; ',
-	html: 'IS',
-	icon: 'a5images/applicationadobepdf.png',
-	disabledIcon: 'a5images/disabledapplicationadobepdf.png',
-	onClick: function() { 
-},
-	theme: 'GrBlue:base'
-});
-DLG1_DlgObj._buttons['BUTTON_122'] = new A5.Button({
-	layout: 'icon/text',
-	style: 'width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; ',
-	html: 'RT',
-	icon: 'a5images/applicationadobepdf.png',
-	disabledIcon: 'a5images/disabledapplicationadobepdf.png',
-	onClick: function() { 
-},
-	theme: 'GrBlue:base'
-});
-DLG1_DlgObj._buttons['BUTTON_123'] = new A5.Button({
-	layout: 'icon/text',
-	style: 'width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; ',
-	html: 'LP',
-	icon: 'a5images/applicationadobepdf.png',
-	disabledIcon: 'a5images/disabledapplicationadobepdf.png',
-	onClick: function() { 
-},
-	theme: 'GrBlue:base'
-});
-DLG1_DlgObj._buttons['BUTTON_124'] = new A5.Button({
-	layout: 'icon/text',
-	style: 'width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; ',
-	html: 'RD',
-	icon: 'a5images/applicationadobepdf.png',
-	disabledIcon: 'a5images/disabledapplicationadobepdf.png',
-	onClick: function() { 
-},
-	theme: 'GrBlue:base'
-});
-DLG1_DlgObj._buttons['BUTTON_125'] = new A5.Button({
-	layout: 'icon/text',
-	style: 'width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; ',
-	html: 'SW',
-	icon: 'a5images/applicationadobepdf.png',
-	disabledIcon: 'a5images/disabledapplicationadobepdf.png',
-	onClick: function() { 
-},
-	theme: 'GrBlue:base'
-});
-DLG1_DlgObj._buttons['BUTTON_126'] = new A5.Button({
-	layout: 'icon/text',
-	style: 'width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; ',
-	html: 'VT',
-	icon: 'a5images/applicationadobepdf.png',
-	disabledIcon: 'a5images/disabledapplicationadobepdf.png',
+DLG1_DlgObj._buttons['BUTTON_127'] = new A5.Button({
+	layout: 'text/icon',
+	style: 'box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;',
+	html: 'Descargar Documentos',
+	icon: 'a5images/webdownload.png',
+	disabledIcon: 'a5images/disabledwebdownload.png',
 	onClick: function() { 
 },
 	theme: 'GrBlue:base'
@@ -2172,9 +2379,9 @@ DLG1_DlgObj._buttons['BUTTON_115'] = new A5.Button({
 },
 	theme: 'GrBlue:base'
 });
-DLG1_DlgObj._buttons['BUTTON_114'] = new A5.Button({
-	layout: 'icon/text',
-	style: 'width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; ',
+DLG1_DlgObj._buttons['BUTTON_128'] = new A5.Button({
+	layout: 'icon',
+	style: 'width: 100%; height: 0.4in; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; ',
 	html: 'Salir de Encuesta',
 	icon: 'a5images/mininavigateprev.png',
 	disabledIcon: 'a5images/disabledmininavigateprev.png',
@@ -2182,9 +2389,29 @@ DLG1_DlgObj._buttons['BUTTON_114'] = new A5.Button({
 },
 	theme: 'GrBlue:base'
 });
+DLG1_DlgObj._buttons['BUTTON_129'] = new A5.Button({
+	layout: 'icon',
+	style: 'width: 100%; height: 0.4in; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; ',
+	html: 'Siguiente',
+	icon: 'a5images/mininavigatenext.png',
+	disabledIcon: 'a5images/disabledmininavigatenext.png',
+	onClick: function() { 
+},
+	theme: 'GrBlue:base'
+});
+DLG1_DlgObj._buttons['BUTTON_130'] = new A5.Button({
+	layout: 'icon',
+	style: 'width: 100%; height: 0.4in; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; ',
+	html: 'Anterior',
+	icon: 'a5images/mininavigateprev.png',
+	disabledIcon: 'a5images/disabledmininavigateprev.png',
+	onClick: function() { 
+},
+	theme: 'GrBlue:base'
+});
 DLG1_DlgObj._buttons['BUTTON_106'] = new A5.Button({
-	layout: 'icon/text',
-	style: 'width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; ',
+	layout: 'icon',
+	style: 'width: 100%; height: 0.4in; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; ',
 	html: 'Siguiente',
 	icon: 'a5images/mininavigatenext.png',
 	disabledIcon: 'a5images/disabledmininavigatenext.png',
@@ -2193,8 +2420,8 @@ DLG1_DlgObj._buttons['BUTTON_106'] = new A5.Button({
 	theme: 'GrBlue:base'
 });
 DLG1_DlgObj._buttons['BUTTON_113'] = new A5.Button({
-	layout: 'icon/text',
-	style: 'width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; ',
+	layout: 'icon',
+	style: 'width: 100%; height: 0.4in; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; ',
 	html: 'Anterior',
 	icon: 'a5images/mininavigateprev.png',
 	disabledIcon: 'a5images/disabledmininavigateprev.png',
@@ -2203,8 +2430,8 @@ DLG1_DlgObj._buttons['BUTTON_113'] = new A5.Button({
 	theme: 'GrBlue:base'
 });
 DLG1_DlgObj._buttons['BUTTON_107'] = new A5.Button({
-	layout: 'icon/text',
-	style: 'width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; ',
+	layout: 'icon',
+	style: 'width: 100%; height: 0.4in; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; ',
 	html: 'Siguiente',
 	icon: 'a5images/mininavigatenext.png',
 	disabledIcon: 'a5images/disabledmininavigatenext.png',
@@ -2213,8 +2440,8 @@ DLG1_DlgObj._buttons['BUTTON_107'] = new A5.Button({
 	theme: 'GrBlue:base'
 });
 DLG1_DlgObj._buttons['BUTTON_112'] = new A5.Button({
-	layout: 'icon/text',
-	style: 'width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; ',
+	layout: 'icon',
+	style: 'width: 100%; height: 0.4in; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; ',
 	html: 'Anterior',
 	icon: 'a5images/mininavigateprev.png',
 	disabledIcon: 'a5images/disabledmininavigateprev.png',
@@ -2223,8 +2450,8 @@ DLG1_DlgObj._buttons['BUTTON_112'] = new A5.Button({
 	theme: 'GrBlue:base'
 });
 DLG1_DlgObj._buttons['BUTTON_108'] = new A5.Button({
-	layout: 'icon/text',
-	style: 'width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; ',
+	layout: 'icon',
+	style: 'width: 100%; height: 0.4in; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; ',
 	html: 'Siguiente',
 	icon: 'a5images/mininavigatenext.png',
 	disabledIcon: 'a5images/disabledmininavigatenext.png',
@@ -2232,18 +2459,9 @@ DLG1_DlgObj._buttons['BUTTON_108'] = new A5.Button({
 },
 	theme: 'GrBlue:base'
 });
-DLG1_DlgObj._buttons['BUTTON_3'] = new A5.Button({
-	layout: 'icon',
-	html: 'Button',
-	icon: 'a5images/codedebuglinebreakpointinvalid.png',
-	disabledIcon: 'a5images/disabledcodedebuglinebreakpointinvalid.png',
-	onClick: function() { 
-},
-	theme: 'GrBlue:base'
-});
 DLG1_DlgObj._buttons['BUTTON_111'] = new A5.Button({
-	layout: 'icon/text',
-	style: 'width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; ',
+	layout: 'icon',
+	style: 'width: 100%; height: 0.4in; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; ',
 	html: 'Anterior',
 	icon: 'a5images/mininavigateprev.png',
 	disabledIcon: 'a5images/disabledmininavigateprev.png',
@@ -2252,8 +2470,8 @@ DLG1_DlgObj._buttons['BUTTON_111'] = new A5.Button({
 	theme: 'GrBlue:base'
 });
 DLG1_DlgObj._buttons['BUTTON_109'] = new A5.Button({
-	layout: 'icon/text',
-	style: 'width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; ',
+	layout: 'icon',
+	style: 'width: 100%; height: 0.4in; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; ',
 	html: 'Siguiente',
 	icon: 'a5images/mininavigatenext.png',
 	disabledIcon: 'a5images/disabledmininavigatenext.png',
@@ -2262,8 +2480,8 @@ DLG1_DlgObj._buttons['BUTTON_109'] = new A5.Button({
 	theme: 'GrBlue:base'
 });
 DLG1_DlgObj._buttons['BUTTON_110'] = new A5.Button({
-	layout: 'icon/text',
-	style: 'width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; ',
+	layout: 'icon',
+	style: 'width: 100%; height: 0.4in; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; ',
 	html: 'Anterior',
 	icon: 'a5images/mininavigateprev.png',
 	disabledIcon: 'a5images/disabledmininavigateprev.png',
@@ -2272,10 +2490,10 @@ DLG1_DlgObj._buttons['BUTTON_110'] = new A5.Button({
 	theme: 'GrBlue:base'
 });
 DLG1_DlgObj._buttons['BUTTON_DVSAVE_LISTSATISFACCION'] = new A5.Button({
-	layout: 'icon/text',
-	style: 'width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; ',
+	layout: 'icon',
+	style: 'width: 100%; height: 0.4in; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; ',
 	tip: 'Save edits',
-	html: 'Save',
+	html: 'Guardar',
 	icon: 'css/GrBlue/GridRowSave.png',
 	disabledIcon: 'css/GrBlue/GridRowSaveDisabled.png',
 	onClick: function() { 
@@ -2283,15 +2501,95 @@ DLG1_DlgObj._buttons['BUTTON_DVSAVE_LISTSATISFACCION'] = new A5.Button({
 	theme: 'GrBlue'
 });
 DLG1_DlgObj._buttons['BUTTON_DVSYNCHRONIZE_LISTSATISFACCION'] = new A5.Button({
-	layout: 'icon/text',
-	style: 'width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; ',
+	layout: 'icon',
+	style: 'width: 100%; height: 0.4in; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; ',
 	tip: 'Synchronize data - push local edits back to the server',
-	html: 'Synchronize',
+	html: 'Sincronizar',
 	icon: 'css/GrBlue/GridRowSave.png',
 	disabledIcon: 'css/GrBlue/GridRowSaveDisabled.png',
 	onClick: function() { 
 },
 	theme: 'GrBlue'
+});
+DLG1_DlgObj._buttons['BUTTON_118'] = new A5.Button({
+	layout: 'icon text',
+	style: 'width: 100%; height: 0.4in; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; ',
+	html: 'Manifiesto de Carga',
+	icon: 'a5images/applicationadobepdf.png',
+	disabledIcon: 'a5images/disabledapplicationadobepdf.png',
+	onClick: function() { 
+},
+	theme: 'GrBlue:base'
+});
+DLG1_DlgObj._buttons['BUTTON_120'] = new A5.Button({
+	layout: 'icon text',
+	style: 'width: 100%; height: 0.4in; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; ',
+	html: 'Estado de Hechos',
+	icon: 'a5images/applicationadobepdf.png',
+	disabledIcon: 'a5images/disabledapplicationadobepdf.png',
+	onClick: function() { 
+},
+	theme: 'GrBlue:base'
+});
+DLG1_DlgObj._buttons['BUTTON_121'] = new A5.Button({
+	layout: 'icon text',
+	style: 'width: 100%; height: 0.4in; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; ',
+	html: 'Informe de Supervisi&oacute;n',
+	icon: 'a5images/applicationadobepdf.png',
+	disabledIcon: 'a5images/disabledapplicationadobepdf.png',
+	onClick: function() { 
+},
+	theme: 'GrBlue:base'
+});
+DLG1_DlgObj._buttons['BUTTON_122'] = new A5.Button({
+	layout: 'icon text',
+	style: 'width: 100%; height: 0.4in; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; ',
+	html: 'Reporte de Tripulantes',
+	icon: 'a5images/applicationadobepdf.png',
+	disabledIcon: 'a5images/disabledapplicationadobepdf.png',
+	onClick: function() { 
+},
+	theme: 'GrBlue:base'
+});
+DLG1_DlgObj._buttons['BUTTON_123'] = new A5.Button({
+	layout: 'icon text',
+	style: 'width: 100%; height: 0.4in; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; ',
+	html: 'Lista de Pasajeros',
+	icon: 'a5images/applicationadobepdf.png',
+	disabledIcon: 'a5images/disabledapplicationadobepdf.png',
+	onClick: function() { 
+},
+	theme: 'GrBlue:base'
+});
+DLG1_DlgObj._buttons['BUTTON_124'] = new A5.Button({
+	layout: 'icon text',
+	style: 'width: 100%; height: 0.4in; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; ',
+	html: 'Reporte de Desinfecci&oacute;n',
+	icon: 'a5images/applicationadobepdf.png',
+	disabledIcon: 'a5images/disabledapplicationadobepdf.png',
+	onClick: function() { 
+},
+	theme: 'GrBlue:base'
+});
+DLG1_DlgObj._buttons['BUTTON_125'] = new A5.Button({
+	layout: 'icon text',
+	style: 'width: 100%; height: 0.4in; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; ',
+	html: 'Sea Waybill',
+	icon: 'a5images/applicationadobepdf.png',
+	disabledIcon: 'a5images/disabledapplicationadobepdf.png',
+	onClick: function() { 
+},
+	theme: 'GrBlue:base'
+});
+DLG1_DlgObj._buttons['BUTTON_126'] = new A5.Button({
+	layout: 'icon text',
+	style: 'width: 100%; height: 0.4in; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; ',
+	html: 'Veh&iacute;culo y Trayectoria',
+	icon: 'a5images/applicationadobepdf.png',
+	disabledIcon: 'a5images/disabledapplicationadobepdf.png',
+	onClick: function() { 
+},
+	theme: 'GrBlue:base'
 });
 DLG1_DlgObj._buttons['BUTTON_119'].bind('DLG1.V.R1.BUTTON_119');
 DLG1_DlgObj._buttons['BUTTON_1'].bind('DLG1.V.R1.BUTTON_1');
@@ -2302,6 +2600,24 @@ DLG1_DlgObj._buttons['BUTTON_103'].bind('DLG1.V.R1.BUTTON_103');
 DLG1_DlgObj._buttons['BUTTON_101'].bind('DLG1.V.R1.BUTTON_101');
 DLG1_DlgObj._buttons['BUTTON_102'].bind('DLG1.V.R1.BUTTON_102');
 DLG1_DlgObj._buttons['BUTTON_117'].bind('DLG1.V.R1.BUTTON_117');
+DLG1_DlgObj._buttons['BUTTON_127'].bind('DLG1.V.R1.BUTTON_127');
+DLG1_DlgObj._buttons['BUTTON_116'].bind('DLG1.V.R1.BUTTON_116');
+DLG1_DlgObj._buttons['BUTTON_8'].bind('DLG1.V.R1.BUTTON_8');
+DLG1_DlgObj._buttons['BUTTON_6'].bind('DLG1.V.R1.BUTTON_6');
+DLG1_DlgObj._buttons['BUTTON_115'].bind('DLG1.V.R1.BUTTON_115');
+DLG1_DlgObj._buttons['BUTTON_128'].bind('DLG1.V.R1.BUTTON_128');
+DLG1_DlgObj._buttons['BUTTON_129'].bind('DLG1.V.R1.BUTTON_129');
+DLG1_DlgObj._buttons['BUTTON_130'].bind('DLG1.V.R1.BUTTON_130');
+DLG1_DlgObj._buttons['BUTTON_106'].bind('DLG1.V.R1.BUTTON_106');
+DLG1_DlgObj._buttons['BUTTON_113'].bind('DLG1.V.R1.BUTTON_113');
+DLG1_DlgObj._buttons['BUTTON_107'].bind('DLG1.V.R1.BUTTON_107');
+DLG1_DlgObj._buttons['BUTTON_112'].bind('DLG1.V.R1.BUTTON_112');
+DLG1_DlgObj._buttons['BUTTON_108'].bind('DLG1.V.R1.BUTTON_108');
+DLG1_DlgObj._buttons['BUTTON_111'].bind('DLG1.V.R1.BUTTON_111');
+DLG1_DlgObj._buttons['BUTTON_109'].bind('DLG1.V.R1.BUTTON_109');
+DLG1_DlgObj._buttons['BUTTON_110'].bind('DLG1.V.R1.BUTTON_110');
+DLG1_DlgObj._buttons['BUTTON_DVSAVE_LISTSATISFACCION'].bind('DLG1.V.R1.BUTTON_DVSAVE_LISTSATISFACCION');
+DLG1_DlgObj._buttons['BUTTON_DVSYNCHRONIZE_LISTSATISFACCION'].bind('DLG1.V.R1.BUTTON_DVSYNCHRONIZE_LISTSATISFACCION');
 DLG1_DlgObj._buttons['BUTTON_118'].bind('DLG1.V.R1.BUTTON_118');
 DLG1_DlgObj._buttons['BUTTON_120'].bind('DLG1.V.R1.BUTTON_120');
 DLG1_DlgObj._buttons['BUTTON_121'].bind('DLG1.V.R1.BUTTON_121');
@@ -2310,22 +2626,6 @@ DLG1_DlgObj._buttons['BUTTON_123'].bind('DLG1.V.R1.BUTTON_123');
 DLG1_DlgObj._buttons['BUTTON_124'].bind('DLG1.V.R1.BUTTON_124');
 DLG1_DlgObj._buttons['BUTTON_125'].bind('DLG1.V.R1.BUTTON_125');
 DLG1_DlgObj._buttons['BUTTON_126'].bind('DLG1.V.R1.BUTTON_126');
-DLG1_DlgObj._buttons['BUTTON_116'].bind('DLG1.V.R1.BUTTON_116');
-DLG1_DlgObj._buttons['BUTTON_8'].bind('DLG1.V.R1.BUTTON_8');
-DLG1_DlgObj._buttons['BUTTON_6'].bind('DLG1.V.R1.BUTTON_6');
-DLG1_DlgObj._buttons['BUTTON_115'].bind('DLG1.V.R1.BUTTON_115');
-DLG1_DlgObj._buttons['BUTTON_114'].bind('DLG1.V.R1.BUTTON_114');
-DLG1_DlgObj._buttons['BUTTON_106'].bind('DLG1.V.R1.BUTTON_106');
-DLG1_DlgObj._buttons['BUTTON_113'].bind('DLG1.V.R1.BUTTON_113');
-DLG1_DlgObj._buttons['BUTTON_107'].bind('DLG1.V.R1.BUTTON_107');
-DLG1_DlgObj._buttons['BUTTON_112'].bind('DLG1.V.R1.BUTTON_112');
-DLG1_DlgObj._buttons['BUTTON_108'].bind('DLG1.V.R1.BUTTON_108');
-DLG1_DlgObj._buttons['BUTTON_3'].bind('DLG1.V.R1.BUTTON_3');
-DLG1_DlgObj._buttons['BUTTON_111'].bind('DLG1.V.R1.BUTTON_111');
-DLG1_DlgObj._buttons['BUTTON_109'].bind('DLG1.V.R1.BUTTON_109');
-DLG1_DlgObj._buttons['BUTTON_110'].bind('DLG1.V.R1.BUTTON_110');
-DLG1_DlgObj._buttons['BUTTON_DVSAVE_LISTSATISFACCION'].bind('DLG1.V.R1.BUTTON_DVSAVE_LISTSATISFACCION');
-DLG1_DlgObj._buttons['BUTTON_DVSYNCHRONIZE_LISTSATISFACCION'].bind('DLG1.V.R1.BUTTON_DVSYNCHRONIZE_LISTSATISFACCION');
 DLG1_DlgObj._buttons['BUTTON_119'].bind('DLG1.V.R1.BUTTON_119');
 DLG1_DlgObj._buttons['BUTTON_1'].bind('DLG1.V.R1.BUTTON_1');
 DLG1_DlgObj._buttons['BUTTON_94'].bind('DLG1.V.R1.BUTTON_94');
@@ -2335,6 +2635,24 @@ DLG1_DlgObj._buttons['BUTTON_103'].bind('DLG1.V.R1.BUTTON_103');
 DLG1_DlgObj._buttons['BUTTON_101'].bind('DLG1.V.R1.BUTTON_101');
 DLG1_DlgObj._buttons['BUTTON_102'].bind('DLG1.V.R1.BUTTON_102');
 DLG1_DlgObj._buttons['BUTTON_117'].bind('DLG1.V.R1.BUTTON_117');
+DLG1_DlgObj._buttons['BUTTON_127'].bind('DLG1.V.R1.BUTTON_127');
+DLG1_DlgObj._buttons['BUTTON_116'].bind('DLG1.V.R1.BUTTON_116');
+DLG1_DlgObj._buttons['BUTTON_8'].bind('DLG1.V.R1.BUTTON_8');
+DLG1_DlgObj._buttons['BUTTON_6'].bind('DLG1.V.R1.BUTTON_6');
+DLG1_DlgObj._buttons['BUTTON_115'].bind('DLG1.V.R1.BUTTON_115');
+DLG1_DlgObj._buttons['BUTTON_128'].bind('DLG1.V.R1.BUTTON_128');
+DLG1_DlgObj._buttons['BUTTON_129'].bind('DLG1.V.R1.BUTTON_129');
+DLG1_DlgObj._buttons['BUTTON_130'].bind('DLG1.V.R1.BUTTON_130');
+DLG1_DlgObj._buttons['BUTTON_106'].bind('DLG1.V.R1.BUTTON_106');
+DLG1_DlgObj._buttons['BUTTON_113'].bind('DLG1.V.R1.BUTTON_113');
+DLG1_DlgObj._buttons['BUTTON_107'].bind('DLG1.V.R1.BUTTON_107');
+DLG1_DlgObj._buttons['BUTTON_112'].bind('DLG1.V.R1.BUTTON_112');
+DLG1_DlgObj._buttons['BUTTON_108'].bind('DLG1.V.R1.BUTTON_108');
+DLG1_DlgObj._buttons['BUTTON_111'].bind('DLG1.V.R1.BUTTON_111');
+DLG1_DlgObj._buttons['BUTTON_109'].bind('DLG1.V.R1.BUTTON_109');
+DLG1_DlgObj._buttons['BUTTON_110'].bind('DLG1.V.R1.BUTTON_110');
+DLG1_DlgObj._buttons['BUTTON_DVSAVE_LISTSATISFACCION'].bind('DLG1.V.R1.BUTTON_DVSAVE_LISTSATISFACCION');
+DLG1_DlgObj._buttons['BUTTON_DVSYNCHRONIZE_LISTSATISFACCION'].bind('DLG1.V.R1.BUTTON_DVSYNCHRONIZE_LISTSATISFACCION');
 DLG1_DlgObj._buttons['BUTTON_118'].bind('DLG1.V.R1.BUTTON_118');
 DLG1_DlgObj._buttons['BUTTON_120'].bind('DLG1.V.R1.BUTTON_120');
 DLG1_DlgObj._buttons['BUTTON_121'].bind('DLG1.V.R1.BUTTON_121');
@@ -2343,22 +2661,6 @@ DLG1_DlgObj._buttons['BUTTON_123'].bind('DLG1.V.R1.BUTTON_123');
 DLG1_DlgObj._buttons['BUTTON_124'].bind('DLG1.V.R1.BUTTON_124');
 DLG1_DlgObj._buttons['BUTTON_125'].bind('DLG1.V.R1.BUTTON_125');
 DLG1_DlgObj._buttons['BUTTON_126'].bind('DLG1.V.R1.BUTTON_126');
-DLG1_DlgObj._buttons['BUTTON_116'].bind('DLG1.V.R1.BUTTON_116');
-DLG1_DlgObj._buttons['BUTTON_8'].bind('DLG1.V.R1.BUTTON_8');
-DLG1_DlgObj._buttons['BUTTON_6'].bind('DLG1.V.R1.BUTTON_6');
-DLG1_DlgObj._buttons['BUTTON_115'].bind('DLG1.V.R1.BUTTON_115');
-DLG1_DlgObj._buttons['BUTTON_114'].bind('DLG1.V.R1.BUTTON_114');
-DLG1_DlgObj._buttons['BUTTON_106'].bind('DLG1.V.R1.BUTTON_106');
-DLG1_DlgObj._buttons['BUTTON_113'].bind('DLG1.V.R1.BUTTON_113');
-DLG1_DlgObj._buttons['BUTTON_107'].bind('DLG1.V.R1.BUTTON_107');
-DLG1_DlgObj._buttons['BUTTON_112'].bind('DLG1.V.R1.BUTTON_112');
-DLG1_DlgObj._buttons['BUTTON_108'].bind('DLG1.V.R1.BUTTON_108');
-DLG1_DlgObj._buttons['BUTTON_3'].bind('DLG1.V.R1.BUTTON_3');
-DLG1_DlgObj._buttons['BUTTON_111'].bind('DLG1.V.R1.BUTTON_111');
-DLG1_DlgObj._buttons['BUTTON_109'].bind('DLG1.V.R1.BUTTON_109');
-DLG1_DlgObj._buttons['BUTTON_110'].bind('DLG1.V.R1.BUTTON_110');
-DLG1_DlgObj._buttons['BUTTON_DVSAVE_LISTSATISFACCION'].bind('DLG1.V.R1.BUTTON_DVSAVE_LISTSATISFACCION');
-DLG1_DlgObj._buttons['BUTTON_DVSYNCHRONIZE_LISTSATISFACCION'].bind('DLG1.V.R1.BUTTON_DVSYNCHRONIZE_LISTSATISFACCION');
 DLG1_DlgObj._listViewSettings['LISTRRHH'] = {
 	_switchInfo: {
 },
@@ -6061,6 +6363,10 @@ DLG1_DlgObj._listViewSettings['LISTSATISFACCION'] = {
 	defaultValue: 'return this._controlDefaultValueForListField(\'Id_Satisfaccion\');'
 },
 {
+	name: 'Check_NosSigueRedesSociales',
+	defaultValue: 'return this._controlDefaultValueForListField(\'Check_NosSigueRedesSociales\');'
+},
+{
 	name: 'Id_Cliente',
 	defaultValue: 'return this._controlDefaultValueForListField(\'Id_Cliente\');'
 },
@@ -6103,6 +6409,34 @@ DLG1_DlgObj._listViewSettings['LISTSATISFACCION'] = {
 {
 	name: 'Check_TieneRedesSociales',
 	defaultValue: 'return this._controlDefaultValueForListField(\'Check_TieneRedesSociales\');'
+},
+{
+	name: 'fechaCreacion',
+	defaultValue: 'return this._controlDefaultValueForListField(\'fechaCreacion\');'
+},
+{
+	name: 'creador',
+	defaultValue: 'return this._controlDefaultValueForListField(\'creador\');'
+},
+{
+	name: 'Pregunta_CumplimosEspectativas_Descripcion',
+	defaultValue: 'return this._controlDefaultValueForListField(\'Pregunta_CumplimosEspectativas_Descripcion\');'
+},
+{
+	name: 'Pregunta_RelacionCalidaPrecio_Descripcion',
+	defaultValue: 'return this._controlDefaultValueForListField(\'Pregunta_RelacionCalidaPrecio_Descripcion\');'
+},
+{
+	name: 'Pregunta_SistemaInformacion_Descripcion',
+	defaultValue: 'return this._controlDefaultValueForListField(\'Pregunta_SistemaInformacion_Descripcion\');'
+},
+{
+	name: 'Pregunta_ContenidoRedesSociales_Descripcion',
+	defaultValue: 'return this._controlDefaultValueForListField(\'Pregunta_ContenidoRedesSociales_Descripcion\');'
+},
+{
+	name: 'Pregunta_RecomiendaServicio_Descripcion',
+	defaultValue: 'return this._controlDefaultValueForListField(\'Pregunta_RecomiendaServicio_Descripcion\');'
 }],
 	_delayRenderTillRefresh: false,
 	_searchPartHas: false,
@@ -6202,6 +6536,10 @@ DLG1_DlgObj._listViewSettings['LISTSATISFACCION'] = {
 	control: 'Id_Satisfaccion'
 },
 {
+	field: 'Check_NosSigueRedesSociales',
+	control: 'Check_NosSigueRedesSociales'
+},
+{
 	field: 'Id_Cliente',
 	control: 'Id_Cliente'
 },
@@ -6228,6 +6566,26 @@ DLG1_DlgObj._listViewSettings['LISTSATISFACCION'] = {
 {
 	field: 'Check_TieneRedesSociales',
 	control: 'Check_TieneRedesSociales'
+},
+{
+	field: 'Pregunta_CumplimosEspectativas_Descripcion',
+	control: 'Pregunta_CumplimosEspectativas_Descripcion'
+},
+{
+	field: 'Pregunta_RelacionCalidaPrecio_Descripcion',
+	control: 'Pregunta_RelacionCalidaPrecio_Descripcion'
+},
+{
+	field: 'Pregunta_SistemaInformacion_Descripcion',
+	control: 'Pregunta_SistemaInformacion_Descripcion'
+},
+{
+	field: 'Pregunta_ContenidoRedesSociales_Descripcion',
+	control: 'Pregunta_ContenidoRedesSociales_Descripcion'
+},
+{
+	field: 'Pregunta_RecomiendaServicio_Descripcion',
+	control: 'Pregunta_RecomiendaServicio_Descripcion'
 }]
 	},
 	_detailViewGlobalErrorStyle: 'font-family: Arial; font-size: 10pt; color: red; border: solid 1px red; width: 100%;',
@@ -6371,7 +6729,7 @@ if(this._allrowschecked) {
 var _id = 'DLG1.' + this.listVariableName + '.CHECKBOXALL';
 var ele = $(_id)
 ele.innerHTML = h},
-	synchronizeImmediately: false,
+	synchronizeImmediately: true,
 	pushServerEditsToClient: false,
 	customization: {
 		dv: {
@@ -6542,7 +6900,7 @@ DLG1_DlgObj._listSystemOnClick('LISTSATISFACCION',this.selection[0]);},
 			template: [
 			'<div class="card card-wide">',
 			'\t<div class="card-content">',
-			'\t\t<h2>Encuesta {Id_Satisfaccion}</h2>',
+			'\t\t<h2>Encuesta MRG-ESC-{Id_Satisfaccion}</h2>',
 			'\t\t<h3>Desde:<span id="DLG1.LISTSATISFACCION.FECHAINICIO.I.{*dataRow}">{fechaInicio}&nbsp;</span> - Hasta:<span id="DLG1.LISTSATISFACCION.FECHAFIN.I.{*dataRow}">{fechaFin}&nbsp;</span></h3>',
 			'\t</div>',
 			'</div>']
@@ -7112,7 +7470,7 @@ searchFor =  searchFor.replace(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, "\\$&");
 if(searchFor != '') {
 	//fixes bug in Chrome when searching on dates strings that use forward slashes
 	searchFor = searchFor.replace(/\//g,'\\/');
-	this.setFilter({'Id_Satisfaccion': RegExp('' + searchFor,'i'), 'Id_Cliente': RegExp('' + searchFor,'i'), 'fechaInicio': RegExp('' + searchFor,'i'), 'fechaFin': RegExp('' + searchFor,'i'), 'Observacion': RegExp('' + searchFor,'i'), 'Pregunta_CumplimosEspectativas': RegExp('' + searchFor,'i'), 'Pregunta_RelacionCalidaPrecio': RegExp('' + searchFor,'i'), 'Pregunta_SistemaInformacion': RegExp('' + searchFor,'i'), 'Pregunta_ContenidoRedesSociales': RegExp('' + searchFor,'i'), 'Pregunta_RecomiendaServicio': RegExp('' + searchFor,'i'), 'Id_EstadoFK': RegExp('' + searchFor,'i'), 'Check_TieneRedesSociales': RegExp('' + searchFor,'i')});
+	this.setFilter({'Id_Satisfaccion': RegExp('' + searchFor,'i'), 'Check_NosSigueRedesSociales': RegExp('' + searchFor,'i'), 'Id_Cliente': RegExp('' + searchFor,'i'), 'fechaInicio': RegExp('' + searchFor,'i'), 'fechaFin': RegExp('' + searchFor,'i'), 'Observacion': RegExp('' + searchFor,'i'), 'Pregunta_CumplimosEspectativas': RegExp('' + searchFor,'i'), 'Pregunta_RelacionCalidaPrecio': RegExp('' + searchFor,'i'), 'Pregunta_SistemaInformacion': RegExp('' + searchFor,'i'), 'Pregunta_ContenidoRedesSociales': RegExp('' + searchFor,'i'), 'Pregunta_RecomiendaServicio': RegExp('' + searchFor,'i'), 'Id_EstadoFK': RegExp('' + searchFor,'i'), 'Check_TieneRedesSociales': RegExp('' + searchFor,'i'), 'fechaCreacion': RegExp('' + searchFor,'i'), 'creador': RegExp('' + searchFor,'i'), 'Pregunta_CumplimosEspectativas_Descripcion': RegExp('' + searchFor,'i'), 'Pregunta_RelacionCalidaPrecio_Descripcion': RegExp('' + searchFor,'i'), 'Pregunta_SistemaInformacion_Descripcion': RegExp('' + searchFor,'i'), 'Pregunta_ContenidoRedesSociales_Descripcion': RegExp('' + searchFor,'i'), 'Pregunta_RecomiendaServicio_Descripcion': RegExp('' + searchFor,'i')});
 } else this.setFilter(false);
 var rowCount = this._values.length;
 //var e = {};
@@ -8866,34 +9224,8 @@ DLG1_DlgObj._listViewData['LISTRRHH1'] = [];
 DLG1_DlgObj._listViewData['LISTRECORRIDO'] = A5DataArrayToObject(['Id_Recorrido','Id_TipoFlete','Origen','Destino','FechaSalida','fechaCompletado','referenciaCliente','ObservacionUltimaAct','Actividad','__primaryKey'],[['186','3','Damco Ecuador','San Carlos (BL 43) - Puerto','2017-07-12',null,null,null,null,'186'],['208','4','Conduto - Puerto','Miranda - Puerto','2017-08-29',null,null,'','Fin de Operaciones','208'],['299','4','Itaya - Puerto','San Carlos (BL 43) - Puerto','2017-08-31',null,null,'','Fin de Operaciones','299'],['375','1','Qingdao - Puerto','Contecon Guayaquil SA','2017-11-05',null,null,'','Salir / Zarpe','375'],['420','4','Providencia - Puerto','Miranda - Puerto','2017-11-16',null,null,'','Pernocta','420'],['421','4','Providencia - Puerto','Providencia - Puerto','2017-11-16',null,null,'','Pernocta','421'],['736','4','Miranda - Puerto','Providencia - Puerto','2018-01-05',null,null,'','Fin de Operaciones','736'],['762','4','Miranda - Puerto','Providencia - Puerto','2018-01-07',null,null,'','Pernocta','762'],['4346','4','GLL - Puerto','Miranda - Puerto','2018-05-07',null,null,'','Arribó','4346'],['4401','4','GLL - Puerto','Miranda - Puerto','2018-05-09',null,null,'','En Tránsito','4401']]); 
 DLG1_DlgObj._listViewData['LISTSATISFACCION'] = [
         {
-            "Id_Satisfaccion": "1",
-            "Id_Cliente": "1",
-            "fechaInicio": "2020-01-01",
-            "fechaFin": "2020-01-31",
-            "Observacion": null,
-            "Pregunta_CumplimosEspectativas": "3",
-            "Pregunta_RelacionCalidaPrecio": "3",
-            "Pregunta_SistemaInformacion": "3",
-            "Pregunta_ContenidoRedesSociales": "2",
-            "Pregunta_RecomiendaServicio": "4",
-            "Id_EstadoFK": "1",
-            "Check_TieneRedesSociales": "F",
-            "__primaryKey": "1",
-            "__a5crc": -483351,
-            "__LIST__LISTSERVICIOSENCUESTA": [
-                {
-                    "Id_SatisfaccionFK": "1",
-                    "FechaSalida": "2020-02-05",
-                    "fechaCompletado": "11/25/2019 10:48:29 697 am",
-                    "referenciaCliente": "ECU142_2DA",
-                    "Origen": "San Carlos (BL 43) - Puerto",
-                    "Destino": "Conduto Ecuador SA",
-                    "__primaryKey": "1"
-                }
-            ]
-        },
-        {
             "Id_Satisfaccion": "3",
+            "Check_NosSigueRedesSociales": null,
             "Id_Cliente": "306",
             "fechaInicio": "2020-10-01",
             "fechaFin": "2020-10-31",
@@ -8905,8 +9237,15 @@ DLG1_DlgObj._listViewData['LISTSATISFACCION'] = [
             "Pregunta_RecomiendaServicio": null,
             "Id_EstadoFK": "1",
             "Check_TieneRedesSociales": null,
+            "fechaCreacion": "11/25/2020 12:35:35 527 pm",
+            "creador": "jarvis",
+            "Pregunta_CumplimosEspectativas_Descripcion": null,
+            "Pregunta_RelacionCalidaPrecio_Descripcion": null,
+            "Pregunta_SistemaInformacion_Descripcion": null,
+            "Pregunta_ContenidoRedesSociales_Descripcion": null,
+            "Pregunta_RecomiendaServicio_Descripcion": null,
             "__primaryKey": "3",
-            "__a5crc": -820156,
+            "__a5crc": -1244704,
             "__LIST__LISTSERVICIOSENCUESTA": [
                 {
                     "Id_SatisfaccionFK": "3",
@@ -8921,6 +9260,7 @@ DLG1_DlgObj._listViewData['LISTSATISFACCION'] = [
         },
         {
             "Id_Satisfaccion": "4",
+            "Check_NosSigueRedesSociales": null,
             "Id_Cliente": "125",
             "fechaInicio": "2017-09-01",
             "fechaFin": "2017-09-30",
@@ -8932,8 +9272,15 @@ DLG1_DlgObj._listViewData['LISTSATISFACCION'] = [
             "Pregunta_RecomiendaServicio": null,
             "Id_EstadoFK": "1",
             "Check_TieneRedesSociales": null,
+            "fechaCreacion": "11/25/2020 12:47:30 807 pm",
+            "creador": "jarvis",
+            "Pregunta_CumplimosEspectativas_Descripcion": null,
+            "Pregunta_RelacionCalidaPrecio_Descripcion": null,
+            "Pregunta_SistemaInformacion_Descripcion": null,
+            "Pregunta_ContenidoRedesSociales_Descripcion": null,
+            "Pregunta_RecomiendaServicio_Descripcion": null,
             "__primaryKey": "4",
-            "__a5crc": -822435,
+            "__a5crc": -1272467,
             "__LIST__LISTSERVICIOSENCUESTA": [
                 {
                     "Id_SatisfaccionFK": "4",
@@ -8948,6 +9295,7 @@ DLG1_DlgObj._listViewData['LISTSATISFACCION'] = [
         },
         {
             "Id_Satisfaccion": "5",
+            "Check_NosSigueRedesSociales": null,
             "Id_Cliente": "202",
             "fechaInicio": "2020-11-01",
             "fechaFin": "2020-11-30",
@@ -8959,8 +9307,15 @@ DLG1_DlgObj._listViewData['LISTSATISFACCION'] = [
             "Pregunta_RecomiendaServicio": null,
             "Id_EstadoFK": "1",
             "Check_TieneRedesSociales": null,
+            "fechaCreacion": "11/25/2020 02:40:23 020 pm",
+            "creador": "luiscastillo",
+            "Pregunta_CumplimosEspectativas_Descripcion": null,
+            "Pregunta_RelacionCalidaPrecio_Descripcion": null,
+            "Pregunta_SistemaInformacion_Descripcion": null,
+            "Pregunta_ContenidoRedesSociales_Descripcion": null,
+            "Pregunta_RecomiendaServicio_Descripcion": null,
             "__primaryKey": "5",
-            "__a5crc": -1111130,
+            "__a5crc": -1545214,
             "__LIST__LISTSERVICIOSENCUESTA": [
                 {
                     "Id_SatisfaccionFK": "5",
@@ -8984,6 +9339,7 @@ DLG1_DlgObj._listViewData['LISTSATISFACCION'] = [
         },
         {
             "Id_Satisfaccion": "6",
+            "Check_NosSigueRedesSociales": null,
             "Id_Cliente": "117",
             "fechaInicio": "2020-11-01",
             "fechaFin": "2020-11-30",
@@ -8995,8 +9351,15 @@ DLG1_DlgObj._listViewData['LISTSATISFACCION'] = [
             "Pregunta_RecomiendaServicio": null,
             "Id_EstadoFK": "1",
             "Check_TieneRedesSociales": null,
+            "fechaCreacion": "11/25/2020 03:48:08 027 pm",
+            "creador": "luiscastillo",
+            "Pregunta_CumplimosEspectativas_Descripcion": null,
+            "Pregunta_RelacionCalidaPrecio_Descripcion": null,
+            "Pregunta_SistemaInformacion_Descripcion": null,
+            "Pregunta_ContenidoRedesSociales_Descripcion": null,
+            "Pregunta_RecomiendaServicio_Descripcion": null,
             "__primaryKey": "6",
-            "__a5crc": -3630198,
+            "__a5crc": -12440241,
             "__LIST__LISTSERVICIOSENCUESTA": [
                 {
                     "Id_SatisfaccionFK": "6",
@@ -9114,6 +9477,357 @@ DLG1_DlgObj._listViewData['LISTSATISFACCION'] = [
                     "Origen": "Itaya - Puerto",
                     "Destino": "Miranda - Puerto",
                     "__primaryKey": "25"
+                },
+                {
+                    "Id_SatisfaccionFK": "6",
+                    "FechaSalida": "2020-11-26",
+                    "fechaCompletado": "11/27/2020 09:28:25 453 am",
+                    "referenciaCliente": null,
+                    "Origen": "Miranda - Puerto",
+                    "Destino": "Mariloginsa - Puerto",
+                    "__primaryKey": "26"
+                },
+                {
+                    "Id_SatisfaccionFK": "6",
+                    "FechaSalida": "2020-11-26",
+                    "fechaCompletado": "11/27/2020 09:29:36 983 am",
+                    "referenciaCliente": null,
+                    "Origen": "Miranda - Puerto",
+                    "Destino": "Miranda - Puerto",
+                    "__primaryKey": "27"
+                },
+                {
+                    "Id_SatisfaccionFK": "6",
+                    "FechaSalida": "2020-11-26",
+                    "fechaCompletado": "11/27/2020 09:30:26 403 am",
+                    "referenciaCliente": null,
+                    "Origen": "Mariloginsa - Puerto",
+                    "Destino": "Mariloginsa - Puerto",
+                    "__primaryKey": "28"
+                },
+                {
+                    "Id_SatisfaccionFK": "6",
+                    "FechaSalida": "2020-11-26",
+                    "fechaCompletado": "11/27/2020 09:33:18 183 am",
+                    "referenciaCliente": null,
+                    "Origen": "Mariloginsa - Puerto",
+                    "Destino": "Mariloginsa - Puerto",
+                    "__primaryKey": "29"
+                },
+                {
+                    "Id_SatisfaccionFK": "6",
+                    "FechaSalida": "2020-11-26",
+                    "fechaCompletado": "11/27/2020 09:34:16 057 am",
+                    "referenciaCliente": null,
+                    "Origen": "Mariloginsa - Puerto",
+                    "Destino": "Mariloginsa - Puerto",
+                    "__primaryKey": "30"
+                },
+                {
+                    "Id_SatisfaccionFK": "6",
+                    "FechaSalida": "2020-11-27",
+                    "fechaCompletado": "11/27/2020 11:31:07 667 am",
+                    "referenciaCliente": null,
+                    "Origen": "Mariloginsa - Puerto",
+                    "Destino": "Miranda - Puerto",
+                    "__primaryKey": "31"
+                },
+                {
+                    "Id_SatisfaccionFK": "6",
+                    "FechaSalida": "2020-11-27",
+                    "fechaCompletado": "11/27/2020 11:45:56 097 am",
+                    "referenciaCliente": null,
+                    "Origen": "Mariloginsa - Puerto",
+                    "Destino": "Miranda - Puerto",
+                    "__primaryKey": "32"
+                },
+                {
+                    "Id_SatisfaccionFK": "6",
+                    "FechaSalida": "2020-11-25",
+                    "fechaCompletado": "11/27/2020 12:36:59 190 pm",
+                    "referenciaCliente": null,
+                    "Origen": "Itaya - Puerto",
+                    "Destino": "Miranda - Puerto",
+                    "__primaryKey": "33"
+                },
+                {
+                    "Id_SatisfaccionFK": "6",
+                    "FechaSalida": "2020-11-24",
+                    "fechaCompletado": "11/27/2020 02:38:46 733 pm",
+                    "referenciaCliente": null,
+                    "Origen": "Miranda - Puerto",
+                    "Destino": "Itaya - Puerto",
+                    "__primaryKey": "34"
+                },
+                {
+                    "Id_SatisfaccionFK": "6",
+                    "FechaSalida": "2020-11-25",
+                    "fechaCompletado": "11/27/2020 04:00:11 487 pm",
+                    "referenciaCliente": null,
+                    "Origen": "Miranda - Puerto",
+                    "Destino": "Itaya - Puerto",
+                    "__primaryKey": "35"
+                },
+                {
+                    "Id_SatisfaccionFK": "6",
+                    "FechaSalida": "2020-11-24",
+                    "fechaCompletado": "11/27/2020 05:01:30 123 pm",
+                    "referenciaCliente": null,
+                    "Origen": "Miranda - Puerto",
+                    "Destino": "Providencia - Puerto",
+                    "__primaryKey": "36"
+                },
+                {
+                    "Id_SatisfaccionFK": "6",
+                    "FechaSalida": "2020-11-28",
+                    "fechaCompletado": "11/28/2020 12:08:47 510 pm",
+                    "referenciaCliente": null,
+                    "Origen": "Mariloginsa - Puerto",
+                    "Destino": "Miranda - Puerto",
+                    "__primaryKey": "37"
+                },
+                {
+                    "Id_SatisfaccionFK": "6",
+                    "FechaSalida": "2020-11-28",
+                    "fechaCompletado": "11/28/2020 12:50:38 893 pm",
+                    "referenciaCliente": null,
+                    "Origen": "Mariloginsa - Puerto",
+                    "Destino": "Miranda - Puerto",
+                    "__primaryKey": "38"
+                },
+                {
+                    "Id_SatisfaccionFK": "6",
+                    "FechaSalida": "2020-11-28",
+                    "fechaCompletado": "11/28/2020 03:01:27 917 pm",
+                    "referenciaCliente": null,
+                    "Origen": "Mariloginsa - Puerto",
+                    "Destino": "Miranda - Puerto",
+                    "__primaryKey": "39"
+                },
+                {
+                    "Id_SatisfaccionFK": "6",
+                    "FechaSalida": "2020-11-28",
+                    "fechaCompletado": "11/28/2020 04:37:39 437 pm",
+                    "referenciaCliente": null,
+                    "Origen": "Mariloginsa - Puerto",
+                    "Destino": "Miranda - Puerto",
+                    "__primaryKey": "40"
+                },
+                {
+                    "Id_SatisfaccionFK": "6",
+                    "FechaSalida": "2020-11-27",
+                    "fechaCompletado": "11/28/2020 06:29:40 093 pm",
+                    "referenciaCliente": null,
+                    "Origen": "Miranda - Puerto",
+                    "Destino": "Mariloginsa - Puerto",
+                    "__primaryKey": "41"
+                },
+                {
+                    "Id_SatisfaccionFK": "6",
+                    "FechaSalida": "2020-11-27",
+                    "fechaCompletado": "11/28/2020 06:32:01 077 pm",
+                    "referenciaCliente": null,
+                    "Origen": "Miranda - Puerto",
+                    "Destino": "Mariloginsa - Puerto",
+                    "__primaryKey": "42"
+                },
+                {
+                    "Id_SatisfaccionFK": "6",
+                    "FechaSalida": "2020-11-27",
+                    "fechaCompletado": "11/28/2020 06:33:28 937 pm",
+                    "referenciaCliente": null,
+                    "Origen": "Mariloginsa - Puerto",
+                    "Destino": "Miranda - Puerto",
+                    "__primaryKey": "43"
+                },
+                {
+                    "Id_SatisfaccionFK": "6",
+                    "FechaSalida": "2020-11-27",
+                    "fechaCompletado": "11/28/2020 06:35:06 607 pm",
+                    "referenciaCliente": null,
+                    "Origen": "Miranda - Puerto",
+                    "Destino": "Miranda - Puerto",
+                    "__primaryKey": "44"
+                },
+                {
+                    "Id_SatisfaccionFK": "6",
+                    "FechaSalida": "2020-11-27",
+                    "fechaCompletado": "11/28/2020 06:35:59 637 pm",
+                    "referenciaCliente": null,
+                    "Origen": "Mariloginsa - Puerto",
+                    "Destino": "Mariloginsa - Puerto",
+                    "__primaryKey": "45"
+                },
+                {
+                    "Id_SatisfaccionFK": "6",
+                    "FechaSalida": "2020-11-27",
+                    "fechaCompletado": "11/28/2020 07:19:29 770 pm",
+                    "referenciaCliente": null,
+                    "Origen": "Itaya - Puerto",
+                    "Destino": "Miranda - Puerto",
+                    "__primaryKey": "46"
+                },
+                {
+                    "Id_SatisfaccionFK": "6",
+                    "FechaSalida": "2020-11-26",
+                    "fechaCompletado": "11/28/2020 07:42:21 367 pm",
+                    "referenciaCliente": null,
+                    "Origen": "Miranda - Puerto",
+                    "Destino": "Itaya - Puerto",
+                    "__primaryKey": "47"
+                },
+                {
+                    "Id_SatisfaccionFK": "6",
+                    "FechaSalida": "2020-11-28",
+                    "fechaCompletado": "11/28/2020 08:35:13 637 pm",
+                    "referenciaCliente": null,
+                    "Origen": "Miranda - Puerto",
+                    "Destino": "Mariloginsa - Puerto",
+                    "__primaryKey": "48"
+                },
+                {
+                    "Id_SatisfaccionFK": "6",
+                    "FechaSalida": "2020-11-28",
+                    "fechaCompletado": "11/28/2020 09:28:49 150 pm",
+                    "referenciaCliente": null,
+                    "Origen": "Miranda - Puerto",
+                    "Destino": "Mariloginsa - Puerto",
+                    "__primaryKey": "49"
+                },
+                {
+                    "Id_SatisfaccionFK": "6",
+                    "FechaSalida": "2020-11-29",
+                    "fechaCompletado": "11/29/2020 10:34:09 973 am",
+                    "referenciaCliente": null,
+                    "Origen": "Mariloginsa - Puerto",
+                    "Destino": "Miranda - Puerto",
+                    "__primaryKey": "50"
+                },
+                {
+                    "Id_SatisfaccionFK": "6",
+                    "FechaSalida": "2020-11-29",
+                    "fechaCompletado": "11/29/2020 10:56:23 287 am",
+                    "referenciaCliente": null,
+                    "Origen": "Mariloginsa - Puerto",
+                    "Destino": "Miranda - Puerto",
+                    "__primaryKey": "51"
+                },
+                {
+                    "Id_SatisfaccionFK": "6",
+                    "FechaSalida": "2020-11-29",
+                    "fechaCompletado": "11/29/2020 11:01:37 863 am",
+                    "referenciaCliente": null,
+                    "Origen": "Mariloginsa - Puerto",
+                    "Destino": "Miranda - Puerto",
+                    "__primaryKey": "52"
+                },
+                {
+                    "Id_SatisfaccionFK": "6",
+                    "FechaSalida": "2020-11-29",
+                    "fechaCompletado": "11/29/2020 11:06:27 017 am",
+                    "referenciaCliente": null,
+                    "Origen": "Mariloginsa - Puerto",
+                    "Destino": "Miranda - Puerto",
+                    "__primaryKey": "53"
+                },
+                {
+                    "Id_SatisfaccionFK": "6",
+                    "FechaSalida": "2020-11-28",
+                    "fechaCompletado": "11/29/2020 11:34:28 327 am",
+                    "referenciaCliente": null,
+                    "Origen": "Miranda - Puerto",
+                    "Destino": "Mariloginsa - Puerto",
+                    "__primaryKey": "54"
+                },
+                {
+                    "Id_SatisfaccionFK": "6",
+                    "FechaSalida": "2020-11-28",
+                    "fechaCompletado": "11/29/2020 11:37:26 623 am",
+                    "referenciaCliente": null,
+                    "Origen": "Miranda - Puerto",
+                    "Destino": "Miranda - Puerto",
+                    "__primaryKey": "55"
+                },
+                {
+                    "Id_SatisfaccionFK": "6",
+                    "FechaSalida": "2020-11-28",
+                    "fechaCompletado": "11/29/2020 02:11:58 303 pm",
+                    "referenciaCliente": null,
+                    "Origen": "Miranda - Puerto",
+                    "Destino": "Mariloginsa - Puerto",
+                    "__primaryKey": "56"
+                },
+                {
+                    "Id_SatisfaccionFK": "6",
+                    "FechaSalida": "2020-11-27",
+                    "fechaCompletado": "11/29/2020 03:38:25 693 pm",
+                    "referenciaCliente": null,
+                    "Origen": "Itaya - Puerto",
+                    "Destino": "Miranda - Puerto",
+                    "__primaryKey": "57"
+                },
+                {
+                    "Id_SatisfaccionFK": "6",
+                    "FechaSalida": "2020-11-27",
+                    "fechaCompletado": "11/29/2020 04:14:54 627 pm",
+                    "referenciaCliente": null,
+                    "Origen": "Miranda - Puerto",
+                    "Destino": "Itaya - Puerto",
+                    "__primaryKey": "58"
+                },
+                {
+                    "Id_SatisfaccionFK": "6",
+                    "FechaSalida": "2020-11-30",
+                    "fechaCompletado": "11/30/2020 09:48:37 097 am",
+                    "referenciaCliente": null,
+                    "Origen": "Mariloginsa - Puerto",
+                    "Destino": "Miranda - Puerto",
+                    "__primaryKey": "59"
+                },
+                {
+                    "Id_SatisfaccionFK": "6",
+                    "FechaSalida": "2020-11-29",
+                    "fechaCompletado": "11/30/2020 10:00:18 967 am",
+                    "referenciaCliente": null,
+                    "Origen": "Miranda - Puerto",
+                    "Destino": "Miranda - Puerto",
+                    "__primaryKey": "60"
+                },
+                {
+                    "Id_SatisfaccionFK": "6",
+                    "FechaSalida": "2020-11-29",
+                    "fechaCompletado": "11/30/2020 10:01:18 793 am",
+                    "referenciaCliente": null,
+                    "Origen": "Miranda - Puerto",
+                    "Destino": "Mariloginsa - Puerto",
+                    "__primaryKey": "61"
+                },
+                {
+                    "Id_SatisfaccionFK": "6",
+                    "FechaSalida": "2020-11-29",
+                    "fechaCompletado": "11/30/2020 10:05:12 353 am",
+                    "referenciaCliente": null,
+                    "Origen": "Miranda - Puerto",
+                    "Destino": "Mariloginsa - Puerto",
+                    "__primaryKey": "62"
+                },
+                {
+                    "Id_SatisfaccionFK": "6",
+                    "FechaSalida": "2020-11-29",
+                    "fechaCompletado": "11/30/2020 10:10:41 523 am",
+                    "referenciaCliente": null,
+                    "Origen": "Miranda - Puerto",
+                    "Destino": "Mariloginsa - Puerto",
+                    "__primaryKey": "63"
+                },
+                {
+                    "Id_SatisfaccionFK": "6",
+                    "FechaSalida": "2020-11-29",
+                    "fechaCompletado": "11/30/2020 10:22:14 873 am",
+                    "referenciaCliente": null,
+                    "Origen": "Miranda - Puerto",
+                    "Destino": "Mariloginsa - Puerto",
+                    "__primaryKey": "64"
                 }
             ]
         }
@@ -9302,6 +10016,73 @@ DLG1_DlgObj._primaryTableAlias = '';
 DLG1_DlgObj._actions = {};
 DLG1_DlgObj._actions['panelMove2'] = '/* actionJavascript:1dbff3fa-1c99-41e3-844f-27d4ebe06e61     */\nDLG1_DlgObj.panelSetActive(\'PANELCARD_RRHH1\',true);';
 DLG1_DlgObj._listControlsInfo = {};
+DLG1_DlgObj.createWindow('SLIDEMENU','modalpopup',
+	{
+	body: {
+		content: {
+			type: 'element',
+			elementId: 'DLG1.V.R1.WINDOW_4'
+		},
+		scroll: {
+			axis: 'both',
+			stopPropogation: false,
+			pull: {
+				y: 'auto',
+				x: 'auto'
+			},
+			indicator: {
+				show: true,
+				h: {
+					show: true,
+					location: 'top',
+					offset: '0px',
+					left: '0px',
+					right: '0px'
+				},
+				v: {
+					show: true,
+					location: 'right',
+					offset: '0px',
+					top: '0px',
+					bottom: '0px'
+				}
+			}
+		},
+		style: 'padding:0px;'
+	},
+	height: '100%',
+	width: '70%',
+	title: {
+		html: 'Window',
+		show: false,
+		location: 'top',
+		direction: 'ltr'
+	},
+	disableMove: true,
+	theme: 'GrBlue:panel',
+	header: {
+		show: true,
+		html: '<button class="GrBlueButton" style="float: left "onclick="A5.windows.getFromElement(this).hide();">\r\n<svg     width="20" height="20"><use x="0" y="0" width="100%" height="100%" xlink:href="#alpha-icon-bars"  pointer-events="none" /></svg>\r\n</button><br style="CLEAR: both">',
+		style: 'text-align: center;'
+	},
+	animation: {
+		show: {
+			type: 'css-slide',
+			duration: 'fast'
+		},
+		hide: {
+			type: 'css-slide',
+			duration: 'slow'
+		}
+	}
+}
+	);
+DLG1_DlgObj._functions._showContainerWindow_WINDOW_4 = function(objEle) {
+	var currWindow = DLG1_DlgObj.getWindow('SLIDEMENU');
+	if(typeof DLG1_DlgObj._openWindows == 'undefined') DLG1_DlgObj._openWindows = {};
+	DLG1_DlgObj._openWindows['WINDOW_4'] = currWindow;
+	currWindow.show('dock','right');
+	}
 DLG1_DlgObj._functions.__fillContainer_LISTRRHH = function() {
 	var path = DLG1_PanelObj._panelPath['PANELCARD_RRHH'];
 	if(typeof path != 'undefined') {
@@ -14198,17 +14979,29 @@ PANELFOOTER_19: [],
 PANELHEADER_27: [],
 PANELFOOTER_18: ['Id_Satisfaccion','Id_Cliente'],
 PANELHEADER_26: [],
+CONTAINER_10: [],
+PANELFOOTER_20: [],
 PANELHEADER_2: [],
+CONTAINER_9: ['StarRating'],
+CONTAINER_16: ['Pregunta_CumplimosEspectativas_Descripcion'],
 PANELFOOTER_13: [],
 PANELHEADER_3: [],
+CONTAINER_12: ['StarRating1'],
+CONTAINER_17: ['Pregunta_RelacionCalidaPrecio_Descripcion'],
 PANELFOOTER_14: [],
 PANELHEADER_4: [],
+CONTAINER_13: ['StarRating3'],
+CONTAINER_18: ['Pregunta_SistemaInformacion_Descripcion'],
 PANELFOOTER_15: [],
 PANELHEADER_5: [],
-CONTAINER_1: ['StarRating2'],
+CONTAINER_14: ['Check_TieneRedesSociales','Check_NosSigueRedesSociales'],
+CONTAINER_19: ['StarRating2','Pregunta_ContenidoRedesSociales_Descripcion'],
 PANELFOOTER_16: [],
 PANELHEADER_6: [],
-PANELFOOTER_17: []
+CONTAINER_15: ['StarRating4'],
+CONTAINER_20: ['Pregunta_RecomiendaServicio_Descripcion'],
+PANELFOOTER_17: [],
+WINDOW_4: []
 }
 DLG1_DlgObj._listsDV = ['LISTRRHH','LISTSATISFACCION'];
 //Add methods to the List prototype for Lists with Detail Views
@@ -17457,7 +18250,7 @@ DLG1_DlgObj._listsWithDependentTFControls = DLG1_DlgObj._listsWithDependentTFCon
 DLG1_DlgObj.__r = [];
 var ele2 = $('DLG1.R1'); if(ele2) {
 var ele = document.createElement('div');
-ele.innerHTML = '\n\n\n<div style="display:none;"><span><input\ttype="text" id="DLG1.V.R1.ID_TRABAJADOR" title=""     class="[theme:edit.base.className|class.dialogInput] " style="width: 50%; "    name="V.R1.ID_TRABAJADOR"    value=""    />\n</span>\n</div>\n\n\n\n<div style="display:none;"><span><input\ttype="text" id="DLG1.V.R1.ID_SATISFACCION" title=""     class="[theme:edit.base.className|class.dialogInput] " style="width: 50%; "    name="V.R1.ID_SATISFACCION"    value=""    />\n</span>\n<span><input\ttype="text" id="DLG1.V.R1.ID_CLIENTE" title=""     class="[theme:edit.base.className|class.dialogInput] " style="width: 50%; "    name="V.R1.ID_CLIENTE"    value=""    />\n</span>\n</div>\n\n\n\n\n\n';
+ele.innerHTML = '\n\n\n<div style="display:none;"><span><input\ttype="text" id="DLG1.V.R1.ID_TRABAJADOR" title=""     class="[theme:edit.base.className|class.dialogInput] " style="width: 50%; "    name="V.R1.ID_TRABAJADOR"    value=""    />\n</span>\n</div>\n\n\n\n<div style="display:none;"><span><input\ttype="text" id="DLG1.V.R1.ID_SATISFACCION" title=""     class="[theme:edit.base.className|class.dialogInput] " style="width: 50%; "    name="V.R1.ID_SATISFACCION"    value=""    />\n</span>\n<span><input\ttype="text" id="DLG1.V.R1.ID_CLIENTE" title=""     class="[theme:edit.base.className|class.dialogInput] " style="width: 50%; "    name="V.R1.ID_CLIENTE"    value=""    />\n</span>\n</div>\n\n\n\n\n\n\n';
 ele2.appendChild(ele);
 };
 function __preventDefault(event) { event.preventDefault()};
@@ -17642,6 +18435,181 @@ window.location = 'sms:+5930991682860';
 $e.add('DLG1.V.R1.BUTTON_117',A5.d.evnts.click,function(e) {
 DLG1_DlgObj.panelSetActive('PANELCARD_INICIO',true);
 },this,false,'DLG1.V.R1.BUTTON_117');
+
+$e.add('DLG1.V.R1.BUTTON_127',A5.d.evnts.click,function(e) {
+DLG1_DlgObj.showContainerWindow(this,'WINDOW_4');
+},this,false,'DLG1.V.R1.BUTTON_127');
+
+
+
+
+
+
+
+
+$e.add('DLG1.V.R1.BUTTON_116',A5.d.evnts.click,function(e) {
+DLG1_DlgObj.panelSetActive('PANELCARD_INICIO',true);
+},this,false,'DLG1.V.R1.BUTTON_116');
+
+
+
+
+
+
+$e.add('DLG1.V.R1.BUTTON_8',A5.d.evnts.click,function(e) {
+DLG1_DlgObj.panelSetActive('PANELCARD_SERVICIOS',true);
+},this,false,'DLG1.V.R1.BUTTON_8');
+
+$e.add('DLG1.V.R1.BUTTON_6',A5.d.evnts.click,function(e) {
+DLG1_DlgObj.panelSetActive('PANELCARD_PRESENTACIONENCUESTA',true);
+},this,false,'DLG1.V.R1.BUTTON_6');
+
+
+
+
+
+$e.add('DLG1.V.R1.BUTTON_115',A5.d.evnts.click,function(e) {
+DLG1_DlgObj.panelSetActive('PANELCARD_SATISFACCION',true);
+},this,false,'DLG1.V.R1.BUTTON_115');
+
+
+
+
+
+
+
+
+
+$e.add('DLG1.V.R1.BUTTON_128',A5.d.evnts.click,function(e) {
+DLG1_DlgObj.panelSetActive('PANELCARD_SATISFACCION',true);
+},this,false,'DLG1.V.R1.BUTTON_128');
+
+$e.add('DLG1.V.R1.BUTTON_129',A5.d.evnts.click,function(e) {
+DLG1_DlgObj.panelSetActive('PANELCARD_PREGUNTA2',true);
+},this,false,'DLG1.V.R1.BUTTON_129');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$e.add('DLG1.V.R1.BUTTON_130',A5.d.evnts.click,function(e) {
+DLG1_DlgObj.panelSetActive('PANELCARD_PRESENTACIONENCUESTA',true);
+},this,false,'DLG1.V.R1.BUTTON_130');
+
+$e.add('DLG1.V.R1.BUTTON_106',A5.d.evnts.click,function(e) {
+DLG1_DlgObj.panelSetActive('PANELCARD_PREGUNTA2',true);
+},this,false,'DLG1.V.R1.BUTTON_106');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$e.add('DLG1.V.R1.BUTTON_113',A5.d.evnts.click,function(e) {
+DLG1_DlgObj.panelSetActive('PANELCARD_PREGUNTA1',true);
+},this,false,'DLG1.V.R1.BUTTON_113');
+
+$e.add('DLG1.V.R1.BUTTON_107',A5.d.evnts.click,function(e) {
+DLG1_DlgObj.panelSetActive('PANELCARD_PREGUNTA3',true);
+},this,false,'DLG1.V.R1.BUTTON_107');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$e.add('DLG1.V.R1.BUTTON_112',A5.d.evnts.click,function(e) {
+DLG1_DlgObj.panelSetActive('PANELCARD_PREGUNTA2',true);
+},this,false,'DLG1.V.R1.BUTTON_112');
+
+$e.add('DLG1.V.R1.BUTTON_108',A5.d.evnts.click,function(e) {
+DLG1_DlgObj.panelSetActive('PANELCARD_PREGUNTA4',true);
+},this,false,'DLG1.V.R1.BUTTON_108');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$e.add('DLG1.V.R1.BUTTON_111',A5.d.evnts.click,function(e) {
+DLG1_DlgObj.panelSetActive('PANELCARD_PREGUNTA3',true);
+},this,false,'DLG1.V.R1.BUTTON_111');
+
+$e.add('DLG1.V.R1.BUTTON_109',A5.d.evnts.click,function(e) {
+DLG1_DlgObj.panelSetActive('PANELCARD_PREGUNTA5',true);
+},this,false,'DLG1.V.R1.BUTTON_109');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$e.add('DLG1.V.R1.BUTTON_110',A5.d.evnts.click,function(e) {
+DLG1_DlgObj.panelSetActive('PANELCARD_PREGUNTA4',true);
+},this,false,'DLG1.V.R1.BUTTON_110');
+
+$e.add('DLG1.V.R1.BUTTON_DVSAVE_LISTSATISFACCION',A5.d.evnts.click,function(e) {
+var lObj = DLG1_DlgObj.getControl('LISTSATISFACCION');
+if(lObj.selection[0] != 'undefined') {
+ lObj._selectedRow = lObj.selection[0];
+}
+lObj.updateListFromUXControls();
+},this,false,'DLG1.V.R1.BUTTON_DVSAVE_LISTSATISFACCION');
+
+$e.add('DLG1.V.R1.BUTTON_DVSYNCHRONIZE_LISTSATISFACCION',A5.d.evnts.click,function(e) {
+  DLG1_DlgObj.saveListEdits('LISTSATISFACCION',{rows: 'allRows', ajax: { timeOut: 15000, onAjaxFail: function() { } , onDeviceOffline: function() { } } });
+},this,false,'DLG1.V.R1.BUTTON_DVSYNCHRONIZE_LISTSATISFACCION');
+
 
 
 
@@ -18062,137 +19030,6 @@ DLG1_DlgObj.phoneGapOpenFileWithNativeViewer(obj,_onSuccess,_onError);
 A5.executeThisThenThat(tempfunction_1a0c35b3_df94_41f6_8b08_46301e497ec6,tempfunction_6395d61e_cadf_43de_bba2_7810ed8e4268);
 },this,false,'DLG1.V.R1.BUTTON_126');
 
-
-
-
-
-$e.add('DLG1.V.R1.BUTTON_116',A5.d.evnts.click,function(e) {
-DLG1_DlgObj.panelSetActive('PANELCARD_INICIO',true);
-},this,false,'DLG1.V.R1.BUTTON_116');
-
-
-
-
-
-
-$e.add('DLG1.V.R1.BUTTON_8',A5.d.evnts.click,function(e) {
-DLG1_DlgObj.panelSetActive('PANELCARD_SERVICIOS',true);
-},this,false,'DLG1.V.R1.BUTTON_8');
-
-$e.add('DLG1.V.R1.BUTTON_6',A5.d.evnts.click,function(e) {
-DLG1_DlgObj.panelSetActive('PANELCARD_PREGUNTA1',true);
-},this,false,'DLG1.V.R1.BUTTON_6');
-
-
-
-
-
-$e.add('DLG1.V.R1.BUTTON_115',A5.d.evnts.click,function(e) {
-DLG1_DlgObj.panelSetActive('PANELCARD_SATISFACCION',true);
-},this,false,'DLG1.V.R1.BUTTON_115');
-
-
-
-
-
-
-
-
-
-
-
-$e.add('DLG1.V.R1.BUTTON_114',A5.d.evnts.click,function(e) {
-DLG1_DlgObj.panelSetActive('PANELCARD_SATISFACCION',true);
-},this,false,'DLG1.V.R1.BUTTON_114');
-
-$e.add('DLG1.V.R1.BUTTON_106',A5.d.evnts.click,function(e) {
-DLG1_DlgObj.panelSetActive('PANELCARD_PREGUNTA2',true);
-},this,false,'DLG1.V.R1.BUTTON_106');
-
-
-
-
-
-
-
-
-
-
-$e.add('DLG1.V.R1.BUTTON_113',A5.d.evnts.click,function(e) {
-DLG1_DlgObj.panelSetActive('PANELCARD_PREGUNTA1',true);
-},this,false,'DLG1.V.R1.BUTTON_113');
-
-$e.add('DLG1.V.R1.BUTTON_107',A5.d.evnts.click,function(e) {
-DLG1_DlgObj.panelSetActive('PANELCARD_PREGUNTA3',true);
-},this,false,'DLG1.V.R1.BUTTON_107');
-
-
-
-
-
-
-
-
-
-
-$e.add('DLG1.V.R1.BUTTON_112',A5.d.evnts.click,function(e) {
-DLG1_DlgObj.panelSetActive('PANELCARD_PREGUNTA2',true);
-},this,false,'DLG1.V.R1.BUTTON_112');
-
-$e.add('DLG1.V.R1.BUTTON_108',A5.d.evnts.click,function(e) {
-DLG1_DlgObj.panelSetActive('PANELCARD_PREGUNTA4',true);
-},this,false,'DLG1.V.R1.BUTTON_108');
-
-
-
-
-
-
-
-
-
-
-
-$e.add('DLG1.V.R1.BUTTON_3',A5.d.evnts.click,function(e) {
-alert('Sample Message');
-},this,false,'DLG1.V.R1.BUTTON_3');
-
-
-
-
-$e.add('DLG1.V.R1.BUTTON_111',A5.d.evnts.click,function(e) {
-DLG1_DlgObj.panelSetActive('PANELCARD_PREGUNTA3',true);
-},this,false,'DLG1.V.R1.BUTTON_111');
-
-$e.add('DLG1.V.R1.BUTTON_109',A5.d.evnts.click,function(e) {
-DLG1_DlgObj.panelSetActive('PANELCARD_PREGUNTA5',true);
-},this,false,'DLG1.V.R1.BUTTON_109');
-
-
-
-
-
-
-
-
-
-
-$e.add('DLG1.V.R1.BUTTON_110',A5.d.evnts.click,function(e) {
-DLG1_DlgObj.panelSetActive('PANELCARD_PREGUNTA4',true);
-},this,false,'DLG1.V.R1.BUTTON_110');
-
-$e.add('DLG1.V.R1.BUTTON_DVSAVE_LISTSATISFACCION',A5.d.evnts.click,function(e) {
-var lObj = DLG1_DlgObj.getControl('LISTSATISFACCION');
-if(lObj.selection[0] != 'undefined') {
- lObj._selectedRow = lObj.selection[0];
-}
-lObj.updateListFromUXControls();
-},this,false,'DLG1.V.R1.BUTTON_DVSAVE_LISTSATISFACCION');
-
-$e.add('DLG1.V.R1.BUTTON_DVSYNCHRONIZE_LISTSATISFACCION',A5.d.evnts.click,function(e) {
-  DLG1_DlgObj.saveListEdits('LISTSATISFACCION',{rows: 'allRows', ajax: { timeOut: 15000, onAjaxFail: function() { } , onDeviceOffline: function() { } } });
-},this,false,'DLG1.V.R1.BUTTON_DVSYNCHRONIZE_LISTSATISFACCION');
-
 DLG1_DlgObj.prepare();DLG1_DlgObj.populate(DLG1_DlgObj.originalValues[0]);
 DLG1_DlgObj._fireWatches(1);
 
@@ -18344,11 +19181,12 @@ if(listObj._refreshStateMessages) listObj._refreshStateMessages();
 
 
 
+
 var listObj = DLG1_DlgObj.getControl('LISTRECORRIDO');
-if(listObj) listObj._state.recordCount = 13714;
-if(listObj) listObj._state.recordCountFormatted = '13,714';
+if(listObj) listObj._state.recordCount = 13751;
+if(listObj) listObj._state.recordCountFormatted = '13,751';
 if(listObj) listObj._state.lastBreakValue = '';
-if(listObj) listObj._state.pageCount = 1372;
+if(listObj) listObj._state.pageCount = 1376;
 if(listObj) listObj._state.pageSize = 10;
 if(listObj) {var ele = $('DLG1.listRecorrido.RECORDCOUNT'); if(ele) ele.innerHTML = listObj._state.recordCountFormatted;};
 if(listObj) listObj._state.paginated = true;
@@ -18368,9 +19206,9 @@ listObj._state.order = 'N_Recorrido.Id_EstadoRecorrido';
 		
 		
 ;
-if(listObj) listObj._state.pageCount = 1372;
+if(listObj) listObj._state.pageCount = 1376;
 DLG1_DlgObj._list_executeEvent('LISTRECORRIDO','afterRenderComplete',{});
-listObj._recordNavigatorLinks = ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','1372'];
+listObj._recordNavigatorLinks = ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','1376'];
 if(listObj._refreshStateMessages) listObj._refreshStateMessages();
 
 
@@ -18379,17 +19217,9 @@ if(listObj._refreshStateMessages) listObj._refreshStateMessages();
 
 
 
-
-
-
-
-
-
-
-
 var listObj = DLG1_DlgObj.getControl('LISTSATISFACCION');
-if(listObj) listObj._state.recordCount = 5;
-if(listObj) listObj._state.recordCountFormatted = '5';
+if(listObj) listObj._state.recordCount = 4;
+if(listObj) listObj._state.recordCountFormatted = '4';
 if(listObj) listObj._state.lastBreakValue = '';
 if(listObj) listObj._state.pageCount = 1;
 if(listObj) listObj._state.pageSize = 20;
@@ -18397,7 +19227,7 @@ if(listObj) {var ele = $('DLG1.listSatisfaccion.RECORDCOUNT'); if(ele) ele.inner
 if(listObj) listObj._state.paginated = false;
 if(listObj) listObj._state._optimizedJSON = false;
 if(listObj) listObj._state.highlight = {  };
-if(listObj) listObj._state.whereClause = '';
+if(listObj) listObj._state.whereClause = 'fechaCreacion >= ( GETDATE()  - 7)';
 if(listObj) listObj._state.whereParameters = '|||C|USERID\n0|||N|ID_TRABAJADOR\n';
 listObj._state.order = '';
 		
@@ -18436,7 +19266,7 @@ if(listObj) {var ele = $('DLG1.listServiciosEncuesta.RECORDCOUNT'); if(ele) ele.
 if(listObj) listObj._state.paginated = false;
 if(listObj) listObj._state._optimizedJSON = false;
 if(listObj) listObj._state.highlight = {  };
-if(listObj) listObj._state.whereClause = '';
+if(listObj) listObj._state.whereClause = 'fechaCreacion >= ( GETDATE()  - 7)';
 if(listObj) listObj._state.whereParameters = '|||C|USERID\n0|||N|ID_TRABAJADOR\n';
 listObj._state.order = '';
 		
@@ -18454,6 +19284,49 @@ if(listObj) listObj._state.pageCount = 1;
 DLG1_DlgObj._list_executeEvent('LISTSERVICIOSENCUESTA','afterRenderComplete',{});
 
 if(listObj._refreshStateMessages) listObj._refreshStateMessages();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -18614,6 +19487,37 @@ setTimeout(function() {
 
  },1);
 ;
+DLG1_DlgObj._setScreenHeight = function() {
+try{
+var s = DLG1_DlgObj.getSize();
+var ele = DLG1_DlgObj.getPointer('CONTAINER_10');
+if(ele) ele.style.height = (s.height)+'px';
+var ele = DLG1_DlgObj.getPointer('CONTAINER_9');
+if(ele) ele.style.height = (s.height/2)+'px';
+var ele = DLG1_DlgObj.getPointer('CONTAINER_16');
+if(ele) ele.style.height = (s.height)+'px';
+var ele = DLG1_DlgObj.getPointer('CONTAINER_12');
+if(ele) ele.style.height = (s.height/2)+'px';
+var ele = DLG1_DlgObj.getPointer('CONTAINER_17');
+if(ele) ele.style.height = (s.height)+'px';
+var ele = DLG1_DlgObj.getPointer('CONTAINER_13');
+if(ele) ele.style.height = (s.height/2)+'px';
+var ele = DLG1_DlgObj.getPointer('CONTAINER_18');
+if(ele) ele.style.height = (s.height)+'px';
+var ele = DLG1_DlgObj.getPointer('CONTAINER_14');
+if(ele) ele.style.height = (s.height/2)+'px';
+var ele = DLG1_DlgObj.getPointer('CONTAINER_19');
+if(ele) ele.style.height = (s.height)+'px';
+var ele = DLG1_DlgObj.getPointer('CONTAINER_15');
+if(ele) ele.style.height = (s.height/2)+'px';
+var ele = DLG1_DlgObj.getPointer('CONTAINER_20');
+if(ele) ele.style.height = (s.height)+'px';
+
+}catch(err) { };
+};
+
+$e.add(window,'resize',DLG1_DlgObj._setScreenHeight,DLG1_DlgObj,true,'DLG1.DIALOG')
+DLG1_DlgObj._setScreenHeight();
 ;
 
 var o2 = 'portrait';
