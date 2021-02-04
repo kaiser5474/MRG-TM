@@ -1,0 +1,758 @@
+{
+    "$schema": "UX",
+    "$definition": {
+        "builderType": "PageLayout",
+        "info": {
+            "createdBy": "Jarvis",
+            "dateCreated": "2020-12-3",
+            "dateLastEdited": "2020-12-3",
+            "revisionnumber": 5
+        },
+        "flagOptimizedUXTree": false,
+        "flagReanalyzeContainers": false,
+        "minimumBuildNumber": "",
+        "_display": "",
+        "guid": "e6f3dbfc-9ffd-4b0a-a880-60c7c392dae8",
+        "style_name": "<ProjectStyle>",
+        "showPulseEffect": true,
+        "componentName": "Evaluacion360",
+        "componentFilename": "D:\\Nibble-TM\\Nibble-TM.WebProjects\\MRG5.WebProject\\Evaluacion360.a5wcmp",
+        "page_fields": [
+            {
+                "controltype": "layout_directive_TabControl",
+                "display": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=002d6ca3-c91f-4fbb-a41b-5d3c67ccb893}{I:'$a5_control_tab'} [Tab Control: TAB_1]",
+                "displayODFlat": "{Data=002d6ca3-c91f-4fbb-a41b-5d3c67ccb893}{I:'$a5_control_tab'} [Tab Control: TAB_1]",
+                "displayOD": "{Data=002d6ca3-c91f-4fbb-a41b-5d3c67ccb893}{I:'$a5_control_tab'} [Tab Control: TAB_1]",
+                "displayODtree": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=002d6ca3-c91f-4fbb-a41b-5d3c67ccb893}{I:'$a5_control_tab'} [Tab Control: TAB_1]",
+                "idInternal": "002d6ca3-c91f-4fbb-a41b-5d3c67ccb893",
+                "lastIndex": 8,
+                "parentContainer": -1,
+                "errorInDefinition": false,
+                "childTabPanes": "2\n4\n6\n",
+                "repeatingSectionParentId": -1,
+                "indentTree": 0,
+                "precalc": {
+                    "ControlHTML": "<div class=\"A5container [theme:tab.Top.className|{grid.style}TabT]\" id=\"{grid.componentname}.TAB_1\"><!--Tab Start {grid.componentname}.TAB_1-->\n\t<div id=\"{grid.componentname}.TAB_1.TABBAND\" class=\"[theme:tab.Top.tabsClassName|{grid.style}TabTBand]\"><!--Tab Buttons Start {grid.componentname}.TAB_1-->\n\t\t<a id=\"{grid.componentname}.TAB_1.0.TAB\" class=\"\" href=\"#\">Evaluaci&oacute;n Trabajadores</a>\n\t\t<a id=\"{grid.componentname}.TAB_1.1.TAB\" class=\"\" href=\"#\">Evaluaci&oacute;n Trabajadores</a>\n\t\t<a id=\"{grid.componentname}.TAB_1.2.TAB\" class=\"\" href=\"#\">Encuesta Clientes</a>\n\t<br style=\"clear: both;\" />\n\t</div><!--Tab Buttons Start {grid.componentname}.TAB_1-->\n\t<div id=\"{grid.componentname}.TAB_1.PANES\" class=\"[theme:tab.Top.panesClassName|{grid.style}TabTPanes]\"><!--Tab Panes Start {grid.componentname}.TAB_1-->",
+                    "controlJS": "window['{grid.componentName}.TAB_1Obj'] = new A5.Tab('{grid.componentName}.TAB_1',[\n{ \thtml: 'Evaluaci&oacute;n Trabajadores', \tvalue: '1', \tonDynamicLoadDelay: 0, \tshow: true, \tdisabled: false, \tonDynamicLoad: function() {action_{alias}_4c3f9bc0_d5dd_46a6_925a_44c55f6db770();} }, \n{ \thtml: 'Evaluaci&oacute;n Trabajadores', \tvalue: '2', \tonDynamicLoadDelay: 0, \tshow: true, \tdisabled: false, \tonDynamicLoad: function() {action_{alias}_0617d07c_9a0e_483d_8cae_4779b9380060();} }, \n{ \thtml: 'Encuesta Clientes', \tvalue: '3', \tonDynamicLoadDelay: 0, \tshow: true, \tdisabled: false, \tonDynamicLoad: function() {action_{alias}_24225bc4_96a9_4a48_afed_67d414e82414();} }\n],\n\t{\n\ttheme: '{grid.style}:Top'\n}\n\n);\n\n\twindow['{grid.componentName}.TAB_1Obj'].select('1');\n\n"
+                },
+                "iscollapsed": false,
+                "v": {
+                    "TabControl": {
+                        "useModernTabs": true,
+                        "ID": "TAB_1",
+                        "Type": "Tab",
+                        "TabPosition": "Top",
+                        "AccordionType": "Single",
+                        "InitialPane": 1,
+                        "animation": {
+                            "show": {
+                                "method": "Suggested",
+                                "speed": "Slow"
+                            },
+                            "hide": {
+                                "method": "Suggested",
+                                "speed": "Slow"
+                            }
+                        },
+                        "methodForSelectingActivePane": "UserClicksOnTabButton",
+                        "timerInterval": "5",
+                        "useSystemClassNamesForPanes": true,
+                        "genie": {
+                            "progressBarPosition": "Bottom"
+                        }
+                    },
+                    "securityGroups": "",
+                    "showHideExpn": "",
+                    "ShowExpression": "",
+                    "javascript": {
+                        "onChange": "",
+                        "onBeforeChange": "",
+                        "onRightClick": "",
+                        "onLeave": "",
+                        "onBeforeLeave": ""
+                    },
+                    "precalc": {
+                        "javascriptClientSideWatches": ""
+                    },
+                    "_displayText": "[Tab Control: TAB_1]"
+                }
+            },
+            {
+                "controltype": "layout_directive_TabPane",
+                "display": "{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{I:'vertLine'}{Data=8bad4b52-c890-4d2f-b1dd-ff624c13e4c4}{I:'$$control.tab.pane'} [TabPane: Evaluaci&oacute;n Trabajadores]",
+                "displayODFlat": "{Data=8bad4b52-c890-4d2f-b1dd-ff624c13e4c4}{I:'$$control.tab.pane'} [TabPane: Evaliacion Trabajadores]",
+                "displayOD": "{Data=8bad4b52-c890-4d2f-b1dd-ff624c13e4c4}{I:'$$control.tab.pane'} [TabPane: Evaliacion Trabajadores]",
+                "displayODtree": "{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{I:'vertLine'}{Data=8bad4b52-c890-4d2f-b1dd-ff624c13e4c4}{I:'$$control.tab.pane'} [TabPane: Evaluaci&oacute;n Trabajadores]",
+                "idInternal": "8bad4b52-c890-4d2f-b1dd-ff624c13e4c4",
+                "lastIndex": 3,
+                "parentContainer": 1,
+                "parentTabIndex": 1,
+                "tabPaneNumber": 1,
+                "repeatingSectionParentId": -1,
+                "indentTree": 1,
+                "precalc": {
+                    "controlHTML": "<div id=\"{grid.componentName}.TAB_1.0.PANE\"><!--TabPaneBegin {grid.componentName}.TAB_1.0-->\n",
+                    "DesignViewHTML": "<div id=\"{grid.componentName}.TAB_1.0.PANE\"><!--TabPaneBegin {grid.componentName}.TAB_1.0-->\n"
+                },
+                "iscollapsed": false,
+                "v": {
+                    "title": "Evaluaci&oacute;n Trabajadores",
+                    "tabPane": {
+                        "show": true,
+                        "JS": {
+                            "onDynamicLoad": "action_{alias}_4c3f9bc0_d5dd_46a6_925a_44c55f6db770();"
+                        },
+                        "id": "PANE_2"
+                    },
+                    "securityGroups": "169614bb1dba41f2a50ff75adbb43cd4,Evaluacion",
+                    "javascript": {
+                        "renderChildren": "action_{alias}_4c3f9bc0_d5dd_46a6_925a_44c55f6db770();\n"
+                    },
+                    "_displayText": "[TabPane: Evaluaci&oacute;n Trabajadores]"
+                }
+            },
+            {
+                "controltype": "PageLayoutPart",
+                "display": "{B=White,Light Blue}{I:'vertLine'}{I:'vertLine'}{Data=4c3f9bc0-d5dd-46a6-925a-44c55f6db770}{I:'$$control.html.advButton'} [Page Layout Part: RRHH_TrabajadorDesempenoUsuarios (Grid Component)] �",
+                "displayODFlat": "{Data=4c3f9bc0-d5dd-46a6-925a-44c55f6db770}{I:'$$control.html.advButton'} [Page Layout Part: RRHH_TrabajadorDesempenoUsuarios]",
+                "displayOD": "{Data=4c3f9bc0-d5dd-46a6-925a-44c55f6db770}{I:'$$control.html.advButton'} [Page Layout Part: RRHH_TrabajadorDesempenoUsuarios]",
+                "displayODtree": "{B=White,Light Blue}{I:'vertLine'}{I:'vertLine'}{Data=4c3f9bc0-d5dd-46a6-925a-44c55f6db770}{I:'$$control.html.advButton'} [Page Layout Part: RRHH_TrabajadorDesempenoUsuarios (Grid Component)] �",
+                "idInternal": "4c3f9bc0-d5dd-46a6-925a-44c55f6db770",
+                "parentContainer": 1,
+                "inPanelCard": false,
+                "inTreeControl": false,
+                "parentTabPaneIndex": 2,
+                "repeatingSectionParentId": -1,
+                "indentTree": 2,
+                "v": {
+                    "pageLayoutPart": {
+                        "showMode": "When page is loaded",
+                        "objectPosition": "To right of button",
+                        "freeformButtonLayout": "{button}<br />\n{object}\n",
+                        "windowType": "On page",
+                        "closeWindowHyperlink": "Close",
+                        "windowIsResizable": true,
+                        "paneTitle": "Pane",
+                        "reuseExistingPane": true,
+                        "buttonType": "Button",
+                        "buttonText": "RRHH_TrabajadorDesempenoUsuarios",
+                        "actionType": "Component",
+                        "optimization": {
+                            "method": "AjaxCallback"
+                        },
+                        "grid": {
+                            "gridName": "RRHH_TrabajadorDesempenoUsuarios",
+                            "componentType": "Grid",
+                            "alias": "<DefaultAlias>",
+                            "customSettingOverridesJSON": "",
+                            "useMasterStyle": true,
+                            "workingMessage": "<img src=\"css/A5System/Images/wait.gif\" /> Working..."
+                        },
+                        "report": {
+                            "workingMessage": "<img src=\"css/A5System/Images/wait.gif\" /> Working...",
+                            "moreRecordsTemplate": "<hr />Showing first [DisplayRecords] of [TotalRecords] records in query",
+                            "moreRecordsStyle": "text-align: center;",
+                            "initialView": "PDF",
+                            "HTMLToolbar": {
+                                "buttons": {
+                                    "pdf": true,
+                                    "excel": true,
+                                    "printHTML": true,
+                                    "word": true,
+                                    "pdfButton": {
+                                        "text": "PDF",
+                                        "buttonType": "Image followed by text",
+                                        "imageName": "images/$$application.adobe.pdf.png.a5image",
+                                        "bubbleHelp": "Print report as a PDF document."
+                                    },
+                                    "excelButton": {
+                                        "text": "Excel",
+                                        "buttonType": "Image followed by text",
+                                        "imageName": "images/$$application.ms.excel.png.a5image",
+                                        "bubbleHelp": "Export report to Excel."
+                                    },
+                                    "printHTMLButton": {
+                                        "text": "Print HTML",
+                                        "buttonType": "Image followed by text",
+                                        "imageName": "images/$$device.printer.png.a5image",
+                                        "bubbleHelp": "Print the HTML report."
+                                    },
+                                    "WordButton": {
+                                        "text": "Word",
+                                        "buttonType": "Image followed by text",
+                                        "imageName": "images/$$application.ms.word.png.a5image",
+                                        "bubbleHelp": "Export report to Word."
+                                    },
+                                    "textButton": {
+                                        "text": "Text",
+                                        "buttonType": "Image followed by text",
+                                        "imageName": "images/$$control.text.png.a5image",
+                                        "bubbleHelp": "Export data in report to a text file."
+                                    },
+                                    "bookmarksButton": {
+                                        "buttonType": "Text",
+                                        "text": "Bookmarks",
+                                        "imageName": "images/$$generic.book.png.a5image"
+                                    }
+                                },
+                                "bookMarkPanelSize": "3in"
+                            }
+                        },
+                        "a5wPage": {
+                            "liveUpdate": false
+                        }
+                    },
+                    "id": "PAGELAYOUTPART_4",
+                    "controlContainerPreventFloat": true,
+                    "class": "<Default>",
+                    "style": "width:1.5in;",
+                    "BreakType": "After",
+                    "breakHeight": ".1in",
+                    "breakHorizontalSpace": ".1in",
+                    "breakHeight2": "",
+                    "breakHorizontalSpace2": "",
+                    "securityGroups": "",
+                    "showHideExpn": "",
+                    "javascript": {
+                        "onclick": "",
+                        "ondblclick": "",
+                        "onmousedown": "",
+                        "onmouseup": "",
+                        "onmouseover": "",
+                        "onmousemove": "",
+                        "onmouseout": "",
+                        "onkeypress": "",
+                        "onkeydown": "",
+                        "onkeyup": "",
+                        "onBlur": "",
+                        "onChange": "",
+                        "onFocus": "",
+                        "onSelect": "",
+                        "immediate": "action_{alias}_4c3f9bc0_d5dd_46a6_925a_44c55f6db770();"
+                    },
+                    "Window": {
+                        "onInitialize": "",
+                        "onBeforeShow": "",
+                        "onShow": "",
+                        "onBeforeHide": "",
+                        "onHide": "",
+                        "onFocus": "",
+                        "onMove": "",
+                        "onResize": "",
+                        "hasCustomButtons": false,
+                        "buttonsArrayString": "",
+                        "buttonCount": 0,
+                        "customButtonsInLineStyle": "",
+                        "tbar": {
+                            "show": false,
+                            "html": "",
+                            "style": ""
+                        },
+                        "header": {
+                            "show": false,
+                            "html": "",
+                            "style": ""
+                        },
+                        "footer": {
+                            "show": false,
+                            "html": "",
+                            "style": ""
+                        },
+                        "bbar": {
+                            "show": false,
+                            "html": "",
+                            "style": ""
+                        }
+                    },
+                    "labelposition": "",
+                    "tabbedUI": {
+                        "autoRefreshOnFocus": false
+                    }
+                },
+                "precalc": {
+                    "ControlHTML": "\t<div class=\"A5container\">\n\t\t<div id=\"{alias}_DIVCONTAINER_4c3f9bc0_d5dd_46a6_925a_44c55f6db770\"   ><img src=\"css/A5System/Images/wait.gif\" /> Working...</div>\n\t</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n\t\t",
+                    "pageLayoutPartJavascript": "window['action_{alias}_4c3f9bc0_d5dd_46a6_925a_44c55f6db770'] = function() {\n\t\n\t\n\tvar onCompleteCode = '';\n\tvar callbackId = A5.UUID();\n\tif(typeof objx == 'undefined') objx = {};\n\tobjx[callbackId] = Function(onCompleteCode);\n\n\n\tvar go = new Object();\n\tgo.gridName = 'RRHH_TrabajadorDesempenoUsuarios';\n\tgo.alias = '{alias}_RRHH_TRABA_34856MKXT';\n\t\n\t\n\t\n\t\n\t\n\t\n\tgo.workingMessage = '<img src=\"css/A5System/Images/wait.gif\" /> Working...';\n\tgo.flagTimer = 'F';\n\tgo.flagQueryEcho = 'F';\n\tgo.flagDebugMode = 'F';\n\tgo.userFilter = '';\n\tgo.baseFilter = '';\n\tgo.userOrder = '';\n\tgo.overrideSettings = 'style_name=`{pageLayout.style}`'+'||';\n\tgo.arguments = '';\n\t\n\t\n\t\t\n\n//embedded objects on a ux can be refreshed or reloaded. the function that renders the embedded object can be \n//called with an optional argument (true=reload). defaults to false, which does a refresh (on a grid)\n\nvar flagReload = false;\nif(typeof arguments[0] != 'undefined' && arguments[0] == true) {\n\tflagReload = true\n}\nif (flagReload) go.__useCachedGrid = false;\nelse go.__useCachedGrid = true;\n\n\n\t\n\t\n\t\n\tgo.localArguments = '';\n\tgo.linkDefinition = '';\n\tgo.placeHolderValues = '';\n\tgo.parameterBucket = $gvs('{alias}.PARAMETERBUCKET');\n\tgo.argumentValueBucket = $gvs('{alias}.ARGUMENTVALUES');\n\tgo.a5_default_path = '{PageLayout.a5_default_path}';\n\tgo.onLoadCompleteJavascript = 'run:'+callbackId;\n\t\n\t\n\tif(typeof tbiObj != 'undefined' && typeof tbiObj._workingPreviewHost != 'undefined') { \n\t\tgo._workingPreviewHost = tbiObj._workingPreviewHost;\n\t}\n\n\n\tgo.gridDiv = '{alias}_DIVCONTAINER_4c3f9bc0_d5dd_46a6_925a_44c55f6db770';\n\tA5.component.runGrid(go);\n\t\n}\n"
+                },
+                "hasParentTab": true,
+                "parentTabId": "8bad4b52-c890-4d2f-b1dd-ff624c13e4c4"
+            },
+            {
+                "controltype": "layout_directive_TabPane",
+                "display": "{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{I:'vertLine'}{Data=ca24737f-2e21-4a31-8150-c03f1693c8e8}{I:'$$control.tab.pane'} [TabPane: Evaluaci&oacute;n Trabajadores]",
+                "displayODFlat": "{Data=ca24737f-2e21-4a31-8150-c03f1693c8e8}{I:'$$control.tab.pane'} [TabPane: Evaluaci&oacute;n Trabajadores]",
+                "displayOD": "{Data=ca24737f-2e21-4a31-8150-c03f1693c8e8}{I:'$$control.tab.pane'} [TabPane: Evaluaci&oacute;n Trabajadores]",
+                "displayODtree": "{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{I:'vertLine'}{Data=ca24737f-2e21-4a31-8150-c03f1693c8e8}{I:'$$control.tab.pane'} [TabPane: Evaluaci&oacute;n Trabajadores]",
+                "idInternal": "ca24737f-2e21-4a31-8150-c03f1693c8e8",
+                "lastIndex": 5,
+                "parentContainer": 1,
+                "parentTabIndex": 1,
+                "tabPaneNumber": 2,
+                "repeatingSectionParentId": -1,
+                "indentTree": 1,
+                "precalc": {
+                    "controlHTML": "<div id=\"{grid.componentName}.TAB_1.1.PANE\"><!--TabPaneBegin {grid.componentName}.TAB_1.1-->\n",
+                    "DesignViewHTML": "<div id=\"{grid.componentName}.TAB_1.1.PANE\"><!--TabPaneBegin {grid.componentName}.TAB_1.1-->\n"
+                },
+                "v": {
+                    "title": "Evaluaci&oacute;n Trabajadores",
+                    "tabPane": {
+                        "show": true,
+                        "JS": {
+                            "onDynamicLoad": "action_{alias}_0617d07c_9a0e_483d_8cae_4779b9380060();"
+                        },
+                        "id": "PANE_3"
+                    },
+                    "securityGroups": "9277abeb9c814dc7a5e0e05692033415,Evaluacion_Administrator",
+                    "javascript": {
+                        "renderChildren": "action_{alias}_0617d07c_9a0e_483d_8cae_4779b9380060();\n"
+                    },
+                    "_displayText": "[TabPane: Evaluaci&oacute;n Trabajadores]"
+                }
+            },
+            {
+                "controltype": "PageLayoutPart",
+                "display": "{B=White,Light Blue}{I:'vertLine'}{I:'vertLine'}{Data=0617d07c-9a0e-483d-8cae-4779b9380060}{I:'$$control.html.advButton'} [Page Layout Part: RRHH_TrabajadorDesempenoAdmin (Grid Component)] �",
+                "displayODFlat": "{Data=0617d07c-9a0e-483d-8cae-4779b9380060}{I:'$$control.html.advButton'} [Page Layout Part: RRHH_TrabajadorDesempenoAdmin] �",
+                "displayOD": "{Data=0617d07c-9a0e-483d-8cae-4779b9380060}{I:'$$control.html.advButton'} [Page Layout Part: RRHH_TrabajadorDesempenoAdmin] �",
+                "displayODtree": "{B=White,Light Blue}{I:'vertLine'}{I:'vertLine'}{Data=0617d07c-9a0e-483d-8cae-4779b9380060}{I:'$$control.html.advButton'} [Page Layout Part: RRHH_TrabajadorDesempenoAdmin (Grid Component)] �",
+                "idInternal": "0617d07c-9a0e-483d-8cae-4779b9380060",
+                "parentContainer": 1,
+                "inPanelCard": false,
+                "inTreeControl": false,
+                "parentTabPaneIndex": 4,
+                "repeatingSectionParentId": -1,
+                "indentTree": 2,
+                "v": {
+                    "pageLayoutPart": {
+                        "showMode": "When page is loaded",
+                        "objectPosition": "To right of button",
+                        "freeformButtonLayout": "{button}<br />\n{object}\n",
+                        "windowType": "On page",
+                        "closeWindowHyperlink": "Close",
+                        "windowIsResizable": true,
+                        "paneTitle": "Pane",
+                        "reuseExistingPane": true,
+                        "buttonType": "Button",
+                        "buttonText": "RRHH_TrabajadorDesempenoAdmin",
+                        "actionType": "Component",
+                        "optimization": {
+                            "method": "AjaxCallback"
+                        },
+                        "grid": {
+                            "gridName": "RRHH_TrabajadorDesempenoAdmin",
+                            "componentType": "Grid",
+                            "alias": "<DefaultAlias>",
+                            "customSettingOverridesJSON": "",
+                            "useMasterStyle": true,
+                            "workingMessage": "<img src=\"css/A5System/Images/wait.gif\" /> Working..."
+                        },
+                        "report": {
+                            "workingMessage": "<img src=\"css/A5System/Images/wait.gif\" /> Working...",
+                            "moreRecordsTemplate": "<hr />Showing first [DisplayRecords] of [TotalRecords] records in query",
+                            "moreRecordsStyle": "text-align: center;",
+                            "initialView": "PDF",
+                            "HTMLToolbar": {
+                                "buttons": {
+                                    "pdf": true,
+                                    "excel": true,
+                                    "printHTML": true,
+                                    "word": true,
+                                    "pdfButton": {
+                                        "text": "PDF",
+                                        "buttonType": "Image followed by text",
+                                        "imageName": "images/$$application.adobe.pdf.png.a5image",
+                                        "bubbleHelp": "Print report as a PDF document."
+                                    },
+                                    "excelButton": {
+                                        "text": "Excel",
+                                        "buttonType": "Image followed by text",
+                                        "imageName": "images/$$application.ms.excel.png.a5image",
+                                        "bubbleHelp": "Export report to Excel."
+                                    },
+                                    "printHTMLButton": {
+                                        "text": "Print HTML",
+                                        "buttonType": "Image followed by text",
+                                        "imageName": "images/$$device.printer.png.a5image",
+                                        "bubbleHelp": "Print the HTML report."
+                                    },
+                                    "WordButton": {
+                                        "text": "Word",
+                                        "buttonType": "Image followed by text",
+                                        "imageName": "images/$$application.ms.word.png.a5image",
+                                        "bubbleHelp": "Export report to Word."
+                                    },
+                                    "textButton": {
+                                        "text": "Text",
+                                        "buttonType": "Image followed by text",
+                                        "imageName": "images/$$control.text.png.a5image",
+                                        "bubbleHelp": "Export data in report to a text file."
+                                    },
+                                    "bookmarksButton": {
+                                        "buttonType": "Text",
+                                        "text": "Bookmarks",
+                                        "imageName": "images/$$generic.book.png.a5image"
+                                    }
+                                },
+                                "bookMarkPanelSize": "3in"
+                            }
+                        },
+                        "a5wPage": {
+                            "liveUpdate": false
+                        }
+                    },
+                    "id": "PAGELAYOUTPART_3",
+                    "controlContainerPreventFloat": true,
+                    "class": "<Default>",
+                    "style": "width:1.5in;",
+                    "BreakType": "After",
+                    "breakHeight": ".1in",
+                    "breakHorizontalSpace": ".1in",
+                    "breakHeight2": "",
+                    "breakHorizontalSpace2": "",
+                    "securityGroups": "",
+                    "showHideExpn": "",
+                    "javascript": {
+                        "onclick": "",
+                        "ondblclick": "",
+                        "onmousedown": "",
+                        "onmouseup": "",
+                        "onmouseover": "",
+                        "onmousemove": "",
+                        "onmouseout": "",
+                        "onkeypress": "",
+                        "onkeydown": "",
+                        "onkeyup": "",
+                        "onBlur": "",
+                        "onChange": "",
+                        "onFocus": "",
+                        "onSelect": "",
+                        "immediate": "action_{alias}_0617d07c_9a0e_483d_8cae_4779b9380060();"
+                    },
+                    "Window": {
+                        "onInitialize": "",
+                        "onBeforeShow": "",
+                        "onShow": "",
+                        "onBeforeHide": "",
+                        "onHide": "",
+                        "onFocus": "",
+                        "onMove": "",
+                        "onResize": "",
+                        "hasCustomButtons": false,
+                        "buttonsArrayString": "",
+                        "buttonCount": 0,
+                        "customButtonsInLineStyle": "",
+                        "tbar": {
+                            "show": false,
+                            "html": "",
+                            "style": ""
+                        },
+                        "header": {
+                            "show": false,
+                            "html": "",
+                            "style": ""
+                        },
+                        "footer": {
+                            "show": false,
+                            "html": "",
+                            "style": ""
+                        },
+                        "bbar": {
+                            "show": false,
+                            "html": "",
+                            "style": ""
+                        }
+                    },
+                    "labelposition": "",
+                    "tabbedUI": {
+                        "autoRefreshOnFocus": false
+                    },
+                    "_displayText": "[Page Layout Part: RRHH_TrabajadorDesempenoAdmin (Grid Component)]"
+                },
+                "precalc": {
+                    "ControlHTML": "\t<div class=\"A5container\">\n\t\t<div id=\"{alias}_DIVCONTAINER_0617d07c_9a0e_483d_8cae_4779b9380060\"   ><img src=\"css/A5System/Images/wait.gif\" /> Working...</div>\n\t</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n\t\t",
+                    "pageLayoutPartJavascript": "window['action_{alias}_0617d07c_9a0e_483d_8cae_4779b9380060'] = function() {\n\t\n\t\n\tvar onCompleteCode = '';\n\tvar callbackId = A5.UUID();\n\tif(typeof objx == 'undefined') objx = {};\n\tobjx[callbackId] = Function(onCompleteCode);\n\n\n\tvar go = new Object();\n\tgo.gridName = 'RRHH_TrabajadorDesempenoAdmin';\n\tgo.alias = '{alias}_RRHH_TRABA_34715QNMV';\n\t\n\t\n\t\n\t\n\t\n\t\n\tgo.workingMessage = '<img src=\"css/A5System/Images/wait.gif\" /> Working...';\n\tgo.flagTimer = 'F';\n\tgo.flagQueryEcho = 'F';\n\tgo.flagDebugMode = 'F';\n\tgo.userFilter = '';\n\tgo.baseFilter = '';\n\tgo.userOrder = '';\n\tgo.overrideSettings = 'style_name=`{pageLayout.style}`'+'||';\n\tgo.arguments = '';\n\t\n\t\n\t\t\n\n//embedded objects on a ux can be refreshed or reloaded. the function that renders the embedded object can be \n//called with an optional argument (true=reload). defaults to false, which does a refresh (on a grid)\n\nvar flagReload = false;\nif(typeof arguments[0] != 'undefined' && arguments[0] == true) {\n\tflagReload = true\n}\nif (flagReload) go.__useCachedGrid = false;\nelse go.__useCachedGrid = true;\n\n\n\t\n\t\n\t\n\tgo.localArguments = '';\n\tgo.linkDefinition = '';\n\tgo.placeHolderValues = '';\n\tgo.parameterBucket = $gvs('{alias}.PARAMETERBUCKET');\n\tgo.argumentValueBucket = $gvs('{alias}.ARGUMENTVALUES');\n\tgo.a5_default_path = '{PageLayout.a5_default_path}';\n\tgo.onLoadCompleteJavascript = 'run:'+callbackId;\n\t\n\t\n\tif(typeof tbiObj != 'undefined' && typeof tbiObj._workingPreviewHost != 'undefined') { \n\t\tgo._workingPreviewHost = tbiObj._workingPreviewHost;\n\t}\n\n\n\tgo.gridDiv = '{alias}_DIVCONTAINER_0617d07c_9a0e_483d_8cae_4779b9380060';\n\tA5.component.runGrid(go);\n\t\n}\n"
+                },
+                "hasParentTab": true,
+                "parentTabId": "ca24737f-2e21-4a31-8150-c03f1693c8e8"
+            },
+            {
+                "controlType": "layout_directive_TabPane",
+                "display": "{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{I:'vertLine'}{Data=cc9c8ff8-453f-412c-a2cd-9cfe8d5894c0}{I:'$$control.tab.pane'} [TabPane: Encuesta Clientes]",
+                "displayODFlat": "{Data=cc9c8ff8-453f-412c-a2cd-9cfe8d5894c0}{I:'$$control.tab.pane'} [TabPane: Evaluacion 360]",
+                "idInternal": "cc9c8ff8-453f-412c-a2cd-9cfe8d5894c0",
+                "lastIndex": 7,
+                "parentContainer": 1,
+                "parentTabIndex": 1,
+                "tabPaneNumber": 3,
+                "displayOD": "{Data=cc9c8ff8-453f-412c-a2cd-9cfe8d5894c0}{I:'$$control.tab.pane'} [TabPane: Evaluacion 360]",
+                "repeatingSectionParentId": -1,
+                "displayODtree": "{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{I:'vertLine'}{Data=cc9c8ff8-453f-412c-a2cd-9cfe8d5894c0}{I:'$$control.tab.pane'} [TabPane: Encuesta Clientes]",
+                "indentTree": 1,
+                "precalc": {
+                    "controlHTML": "<div id=\"{grid.componentName}.TAB_1.2.PANE\"><!--TabPaneBegin {grid.componentName}.TAB_1.2-->\n",
+                    "DesignViewHTML": "<div id=\"{grid.componentName}.TAB_1.2.PANE\"><!--TabPaneBegin {grid.componentName}.TAB_1.2-->\n"
+                },
+                "v": {
+                    "title": "Encuesta Clientes",
+                    "tabPane": {
+                        "show": true,
+                        "JS": {
+                            "onDynamicLoad": "action_{alias}_24225bc4_96a9_4a48_afed_67d414e82414();"
+                        }
+                    },
+                    "javascript": {
+                        "renderChildren": "action_{alias}_24225bc4_96a9_4a48_afed_67d414e82414();\n"
+                    },
+                    "_displayText": "[TabPane: Encuesta Clientes]"
+                },
+                "iscollapsed": false
+            },
+            {
+                "controltype": "PageLayoutPart",
+                "display": "{B=White,Light Blue}{I:'vertLine'}{I:'vertLine'}{Data=24225bc4-96a9-4a48-afed-67d414e82414}{I:'$$control.html.advButton'} [Page Layout Part:  (Grid Component)] �",
+                "displayODFlat": "{Data=24225bc4-96a9-4a48-afed-67d414e82414}{I:'$$control.html.advButton'} [Page Layout Part: ] �",
+                "displayOD": "{Data=24225bc4-96a9-4a48-afed-67d414e82414}{I:'$$control.html.advButton'} [Page Layout Part: ] �",
+                "displayODtree": "{B=White,Light Blue}{I:'vertLine'}{I:'vertLine'}{Data=24225bc4-96a9-4a48-afed-67d414e82414}{I:'$$control.html.advButton'} [Page Layout Part:  (Grid Component)] �",
+                "idInternal": "24225bc4-96a9-4a48-afed-67d414e82414",
+                "parentContainer": 1,
+                "inPanelCard": false,
+                "inTreeControl": false,
+                "parentTabPaneIndex": 6,
+                "repeatingSectionParentId": -1,
+                "indentTree": 2,
+                "v": {
+                    "pageLayoutPart": {
+                        "showMode": "When page is loaded",
+                        "objectPosition": "To right of button",
+                        "freeformButtonLayout": "{button}<br />\n{object}\n",
+                        "windowType": "On page",
+                        "closeWindowHyperlink": "Close",
+                        "windowIsResizable": true,
+                        "paneTitle": "Pane",
+                        "reuseExistingPane": true,
+                        "buttonType": "Button",
+                        "actionType": "Component",
+                        "optimization": {
+                            "method": "AjaxCallback"
+                        },
+                        "grid": {
+                            "gridName": "N_SatisfaccionCliente",
+                            "componentType": "Grid",
+                            "alias": "<DefaultAlias>",
+                            "customSettingOverridesJSON": "",
+                            "useMasterStyle": true,
+                            "workingMessage": "<img src=\"css/A5System/Images/wait.gif\" /> Working..."
+                        },
+                        "report": {
+                            "workingMessage": "<img src=\"css/A5System/Images/wait.gif\" /> Working...",
+                            "moreRecordsTemplate": "<hr />Showing first [DisplayRecords] of [TotalRecords] records in query",
+                            "moreRecordsStyle": "text-align: center;",
+                            "initialView": "PDF",
+                            "HTMLToolbar": {
+                                "buttons": {
+                                    "pdf": true,
+                                    "excel": true,
+                                    "printHTML": true,
+                                    "word": true,
+                                    "pdfButton": {
+                                        "text": "PDF",
+                                        "buttonType": "Image followed by text",
+                                        "imageName": "images/$$application.adobe.pdf.png.a5image",
+                                        "bubbleHelp": "Print report as a PDF document."
+                                    },
+                                    "excelButton": {
+                                        "text": "Excel",
+                                        "buttonType": "Image followed by text",
+                                        "imageName": "images/$$application.ms.excel.png.a5image",
+                                        "bubbleHelp": "Export report to Excel."
+                                    },
+                                    "printHTMLButton": {
+                                        "text": "Print HTML",
+                                        "buttonType": "Image followed by text",
+                                        "imageName": "images/$$device.printer.png.a5image",
+                                        "bubbleHelp": "Print the HTML report."
+                                    },
+                                    "WordButton": {
+                                        "text": "Word",
+                                        "buttonType": "Image followed by text",
+                                        "imageName": "images/$$application.ms.word.png.a5image",
+                                        "bubbleHelp": "Export report to Word."
+                                    },
+                                    "textButton": {
+                                        "text": "Text",
+                                        "buttonType": "Image followed by text",
+                                        "imageName": "images/$$control.text.png.a5image",
+                                        "bubbleHelp": "Export data in report to a text file."
+                                    },
+                                    "bookmarksButton": {
+                                        "buttonType": "Text",
+                                        "text": "Bookmarks",
+                                        "imageName": "images/$$generic.book.png.a5image"
+                                    }
+                                },
+                                "bookMarkPanelSize": "3in"
+                            }
+                        },
+                        "a5wPage": {
+                            "liveUpdate": false
+                        }
+                    },
+                    "id": "PAGELAYOUTPART_2",
+                    "controlContainerPreventFloat": true,
+                    "class": "<Default>",
+                    "style": "width:1.5in;",
+                    "BreakType": "After",
+                    "breakHeight": ".1in",
+                    "breakHorizontalSpace": ".1in",
+                    "breakHeight2": "",
+                    "breakHorizontalSpace2": "",
+                    "securityGroups": "",
+                    "showHideExpn": "",
+                    "javascript": {
+                        "onclick": "",
+                        "ondblclick": "",
+                        "onmousedown": "",
+                        "onmouseup": "",
+                        "onmouseover": "",
+                        "onmousemove": "",
+                        "onmouseout": "",
+                        "onkeypress": "",
+                        "onkeydown": "",
+                        "onkeyup": "",
+                        "onBlur": "",
+                        "onChange": "",
+                        "onFocus": "",
+                        "onSelect": "",
+                        "immediate": "action_{alias}_24225bc4_96a9_4a48_afed_67d414e82414();"
+                    },
+                    "Window": {
+                        "onInitialize": "",
+                        "onBeforeShow": "",
+                        "onShow": "",
+                        "onBeforeHide": "",
+                        "onHide": "",
+                        "onFocus": "",
+                        "onMove": "",
+                        "onResize": "",
+                        "hasCustomButtons": false,
+                        "buttonsArrayString": "",
+                        "buttonCount": 0,
+                        "customButtonsInLineStyle": "",
+                        "tbar": {
+                            "show": false,
+                            "html": "",
+                            "style": ""
+                        },
+                        "header": {
+                            "show": false,
+                            "html": "",
+                            "style": ""
+                        },
+                        "footer": {
+                            "show": false,
+                            "html": "",
+                            "style": ""
+                        },
+                        "bbar": {
+                            "show": false,
+                            "html": "",
+                            "style": ""
+                        }
+                    },
+                    "labelposition": "",
+                    "tabbedUI": {
+                        "autoRefreshOnFocus": false
+                    },
+                    "_displayText": "[Page Layout Part:  (Grid Component)]"
+                },
+                "precalc": {
+                    "ControlHTML": "\t<div class=\"A5container\">\n\t\t<div id=\"{alias}_DIVCONTAINER_24225bc4_96a9_4a48_afed_67d414e82414\"   ><img src=\"css/A5System/Images/wait.gif\" /> Working...</div>\n\t</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n\t\t",
+                    "pageLayoutPartJavascript": "window['action_{alias}_24225bc4_96a9_4a48_afed_67d414e82414'] = function() {\n\t\n\t\n\tvar onCompleteCode = '';\n\tvar callbackId = A5.UUID();\n\tif(typeof objx == 'undefined') objx = {};\n\tobjx[callbackId] = Function(onCompleteCode);\n\n\n\tvar go = new Object();\n\tgo.gridName = 'N_SatisfaccionCliente';\n\tgo.alias = '{alias}_N_SATISFAC_34551NZBW';\n\t\n\t\n\t\n\t\n\t\n\t\n\tgo.workingMessage = '<img src=\"css/A5System/Images/wait.gif\" /> Working...';\n\tgo.flagTimer = 'F';\n\tgo.flagQueryEcho = 'F';\n\tgo.flagDebugMode = 'F';\n\tgo.userFilter = '';\n\tgo.baseFilter = '';\n\tgo.userOrder = '';\n\tgo.overrideSettings = 'style_name=`{pageLayout.style}`'+'||';\n\tgo.arguments = '';\n\t\n\t\n\t\t\n\n//embedded objects on a ux can be refreshed or reloaded. the function that renders the embedded object can be \n//called with an optional argument (true=reload). defaults to false, which does a refresh (on a grid)\n\nvar flagReload = false;\nif(typeof arguments[0] != 'undefined' && arguments[0] == true) {\n\tflagReload = true\n}\nif (flagReload) go.__useCachedGrid = false;\nelse go.__useCachedGrid = true;\n\n\n\t\n\t\n\t\n\tgo.localArguments = '';\n\tgo.linkDefinition = '';\n\tgo.placeHolderValues = '';\n\tgo.parameterBucket = $gvs('{alias}.PARAMETERBUCKET');\n\tgo.argumentValueBucket = $gvs('{alias}.ARGUMENTVALUES');\n\tgo.a5_default_path = '{PageLayout.a5_default_path}';\n\tgo.onLoadCompleteJavascript = 'run:'+callbackId;\n\t\n\t\n\tif(typeof tbiObj != 'undefined' && typeof tbiObj._workingPreviewHost != 'undefined') { \n\t\tgo._workingPreviewHost = tbiObj._workingPreviewHost;\n\t}\n\n\n\tgo.gridDiv = '{alias}_DIVCONTAINER_24225bc4_96a9_4a48_afed_67d414e82414';\n\tA5.component.runGrid(go);\n\t\n}\n"
+                },
+                "hasParentTab": true,
+                "parentTabId": "cc9c8ff8-453f-412c-a2cd-9cfe8d5894c0"
+            },
+            {
+                "controltype": "layout_directive_TabControlEnd",
+                "display": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=cd848910-6d2c-43aa-94e7-10eedcad0df4}{I:'vertLineCap'} [Tab Control End - TAB_1] �",
+                "displayODFlat": "{Data=cd848910-6d2c-43aa-94e7-10eedcad0df4}{I:'$a5_control_tab'} [Tab Control End] �",
+                "idInternal": "cd848910-6d2c-43aa-94e7-10eedcad0df4",
+                "v": {
+                    "TabControl": {
+                        "BreakType": "After",
+                        "BreakHeight": ".1in",
+                        "breakHorizontalSpace": ".1in"
+                    },
+                    "_displayText": "[Tab Control End - TAB_1]"
+                },
+                "containerStartIndex": 1,
+                "parentContainer": -1,
+                "displayOD": "{Data=cd848910-6d2c-43aa-94e7-10eedcad0df4}{I:'$a5_control_tab'} [Tab Control End] �",
+                "repeatingSectionParentId": -1,
+                "displayODtree": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=cd848910-6d2c-43aa-94e7-10eedcad0df4}{I:'vertLineCap'} [Tab Control End - TAB_1] �",
+                "indentTree": 0,
+                "precalc": {
+                    "controlHTML": "</div><!--Tab Panes End {grid.componentName}.TAB_1-->\n</div><!--Tab End {grid.componentName}.TAB_1--><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->"
+                }
+            }
+        ],
+        "flagShowDeleteConfirmation": true,
+        "useCompactTheme": false,
+        "style_type": "Alpha Five",
+        "resolveAbstractClassNames": true,
+        "overrideStyleName": "Default",
+        "FontSize": "Medium",
+        "LocalCss": "<style>\n\n\n</style>",
+        "linkedResources": "",
+        "clientSideDateFormat": "MM/dd/yyyy",
+        "activeLanguage": "<Default>",
+        "A5ContainerClassPadding": "4px",
+        "masterTemplate": "",
+        "saveFileType": "Formatted JSON",
+        "pageTitle": "PageLayout",
+        "selected": "002d6ca3-c91f-4fbb-a41b-5d3c67ccb893\n",
+        "designPaneIndex": 1,
+        "masterPaneC": "TabbedUIProps",
+        "__WPhostName": "Chrome",
+        "__LPhostName": "Chrome",
+        "clientSideEventIndexC": "",
+        "embeddedMode": false,
+        "_style_versionNumber": 4,
+        "_style_hasSassOverrides": false,
+        "_style_hasCSSTweaks": false,
+        "_style_hassubthemeTweaks": false,
+        "_style_hasCSS_or_subtheme_tweaks": false,
+        "_style_isInherited": false,
+        "layouttype": "ControlWidth",
+        "repeatingSectionsAreDirty": true,
+        "flagDropdownCascadingChanged": false,
+        "_flagForceRecalcChildren": true,
+        "toolBox_value": "pageLayoutComponentButton_GridComponent",
+        "addinBuildNumber": "5522",
+        "addinBuildNumberHighestUsed": "5522",
+        "alphaFiveBuildNumber": "12",
+        "openedFromTemplate": false,
+        "builderVersionNumber": 1,
+        "builtWithVersionNumer": 1,
+        "_buildCount": "4",
+        "cachecomponent": false,
+        "_treeErrors": "",
+        "securityEnabled": true,
+        "showHideIsUsed": false,
+        "precalc": {
+            "pageLayout": {
+                "HTML": "<div class=\"A5container [theme:tab.Top.className|{grid.style}TabT]\" id=\"{pageLayout.alias}.TAB_1\"><!--Tab Start {pageLayout.alias}.TAB_1-->\n\t<div id=\"{pageLayout.alias}.TAB_1.TABBAND\" class=\"[theme:tab.Top.tabsClassName|{grid.style}TabTBand]\"><!--Tab Buttons Start {pageLayout.alias}.TAB_1-->\n\t\t<a id=\"{pageLayout.alias}.TAB_1.0.TAB\" class=\"\" href=\"#\">Evaluaci&oacute;n Trabajadores</a>\n\t\t<a id=\"{pageLayout.alias}.TAB_1.1.TAB\" class=\"\" href=\"#\">Evaluaci&oacute;n Trabajadores</a>\n\t\t<a id=\"{pageLayout.alias}.TAB_1.2.TAB\" class=\"\" href=\"#\">Encuesta Clientes</a>\n\t<br style=\"clear: both;\" />\n\t</div><!--Tab Buttons Start {pageLayout.alias}.TAB_1-->\n\t<div id=\"{pageLayout.alias}.TAB_1.PANES\" class=\"[theme:tab.Top.panesClassName|{grid.style}TabTPanes]\"><!--Tab Panes Start {pageLayout.alias}.TAB_1-->\n<div id=\"{pageLayout.alias}.TAB_1.0.PANE\"><!--TabPaneBegin {pageLayout.alias}.TAB_1.0-->\n\t<div class=\"A5container\">\n\t\t<div id=\"{alias}_DIVCONTAINER_4c3f9bc0_d5dd_46a6_925a_44c55f6db770\"   ><img src=\"css/A5System/Images/wait.gif\" /> Working...</div>\n\t</div><div class=\"A5floatClear\"></div>\n</div><!--end DIV for tab pane-->\n<div id=\"{pageLayout.alias}.TAB_1.1.PANE\"><!--TabPaneBegin {pageLayout.alias}.TAB_1.1-->\n\t<div class=\"A5container\">\n\t\t<div id=\"{alias}_DIVCONTAINER_0617d07c_9a0e_483d_8cae_4779b9380060\"   ><img src=\"css/A5System/Images/wait.gif\" /> Working...</div>\n\t</div><div class=\"A5floatClear\"></div>\n</div><!--end DIV for tab pane-->\n<div id=\"{pageLayout.alias}.TAB_1.2.PANE\"><!--TabPaneBegin {pageLayout.alias}.TAB_1.2-->\n\t<div class=\"A5container\">\n\t\t<div id=\"{alias}_DIVCONTAINER_24225bc4_96a9_4a48_afed_67d414e82414\"   ><img src=\"css/A5System/Images/wait.gif\" /> Working...</div>\n\t</div><div class=\"A5floatClear\"></div>\n</div><!--end DIV for tab pane-->\n</div><!--Tab Panes End {pageLayout.alias}.TAB_1-->\n</div><!--Tab End {pageLayout.alias}.TAB_1--><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->",
+                "JS": "window['{pageLayout.alias}.TAB_1Obj'] = new A5.Tab('{pageLayout.alias}.TAB_1',[\n{ \thtml: 'Evaluaci&oacute;n Trabajadores', \tvalue: '1', \tonDynamicLoadDelay: 0, \tshow: true, \tdisabled: false, \tonDynamicLoad: function() {action_{alias}_4c3f9bc0_d5dd_46a6_925a_44c55f6db770();} }, \n{ \thtml: 'Evaluaci&oacute;n Trabajadores', \tvalue: '2', \tonDynamicLoadDelay: 0, \tshow: true, \tdisabled: false, \tonDynamicLoad: function() {action_{alias}_0617d07c_9a0e_483d_8cae_4779b9380060();} }, \n{ \thtml: 'Encuesta Clientes', \tvalue: '3', \tonDynamicLoadDelay: 0, \tshow: true, \tdisabled: false, \tonDynamicLoad: function() {action_{alias}_24225bc4_96a9_4a48_afed_67d414e82414();} }\n],\n\t{\n\ttheme: '{grid.style}:Top'\n}\n);\n\twindow['{pageLayout.alias}.TAB_1Obj'].select('1');"
+            },
+            "PageLayoutMasterTemplate": "<div id=\"{alias}.PAGELAYOUT\">\n\t<input type=\"hidden\" value=\"{parameterBucket}\" id=\"{alias}.PARAMETERBUCKET\"/>\n\t<input type=\"hidden\" value=\"{savedArgValues}\" id=\"{alias}.ARGUMENTVALUES\"/>\n\n\t{pageLayout.contentsHTML}\n</div>\n",
+            "PageSetupJavascript": ""
+        },
+        "componentType": "PageLayout",
+        "version": 1,
+        "A5SaveTimeStamp": "20201203044716608",
+        "style_color_palette": "",
+        "listofstyles": "",
+        "allowusertoswitchstylesatruntime": false,
+        "SVGLinkedFiles": ""
+    }
+}

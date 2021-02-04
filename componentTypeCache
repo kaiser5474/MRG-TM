@@ -1,3 +1,4 @@
+{N_SatisfaccionCliente_Servicios.a5wcmp}|Grid
 {satisfaccion_al_Cliente.a5wcmp}|Dialog2
 {N_SubTareas.a5wcmp}|Grid
 {Tareas_PorUsuario.a5wcmp}|Dialog2
@@ -638,3 +639,6 @@
 {RecMedTransp_DocumentosPrefactura.a5wcmp}|Grid
 {N_Entidad_ServicioFacturacion.a5wcmp}|Grid
 {app_MRG_ClienteLogin.a5wcmp}|Dialog2
+{N_SatisfaccionCliente.a5wcmp}|Grid
+{Evaluacion360.a5wcmp}|Pagelayout
+{N_SatisfaccionCliente_Pregunta1.a5wcmp}|Grid
