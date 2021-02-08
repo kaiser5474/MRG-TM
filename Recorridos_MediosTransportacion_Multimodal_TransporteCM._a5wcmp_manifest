@@ -1,9 +1,9 @@
-A5SaveTimeStamp:20210205143311786
+A5SaveTimeStamp:20210207230358761
 css:<ProjectStyle>
 subComponent:ParaPickUpOrder2
 subComponent:ParaShipping2
 subComponent:RecorridosMediosTransporte_Pasajeros_Multimodal.a5wcmp
-copyfile:{D:\Nibble-TM\Nibble-TM.WebProjects\MRG5.WebProject\Plantilla_Shipping_Instruction.a5rpt}
-copyfile:{D:\Nibble-TM\Nibble-TM.WebProjects\MRG5.WebProject\Plantilla_AWB.a5rpt}
-copyfile:{D:\Nibble-TM\Nibble-TM.WebProjects\MRG5.WebProject\Pick_UP_Order.a5rpt}
-copyfile:{D:\Nibble-TM\Nibble-TM.WebProjects\MRG5.WebProject\Shipping_Instruction.a5rpt}
+copyfile:{C:\4-Trabajos\Nibble-TM\Nibble-TM.WebProjects\MRG5.WebProject\Plantilla_Shipping_Instruction.a5rpt}
+copyfile:{C:\4-Trabajos\Nibble-TM\Nibble-TM.WebProjects\MRG5.WebProject\Plantilla_AWB.a5rpt}
+copyfile:{C:\4-Trabajos\Nibble-TM\Nibble-TM.WebProjects\MRG5.WebProject\Pick_UP_Order.a5rpt}
+copyfile:{C:\4-Trabajos\Nibble-TM\Nibble-TM.WebProjects\MRG5.WebProject\Shipping_Instruction.a5rpt}

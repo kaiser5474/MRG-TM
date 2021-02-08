@@ -1,4 +1,4 @@
-A5SaveTimeStamp:20201021001217377
+A5SaveTimeStamp:20210207101641453
 css:<ProjectStyle>
 subComponent:Contrato_ServiciosTransportacion_MultimodaDesdeCM
 subComponent:Prefacturacion_Multimodal
@@ -12,10 +12,10 @@ subComponent:Recorridos_Validaciones_Multimodal_Agrupa
 subComponent:Recorridos_Valores
 subComponent:Recorridos_Prepaid_Collect
 subComponent:RecMedTransp_DocumentosPrefactura
-copyfile:{C:\4-Trabajos\Mariloginsa\Nibble-TM\Nibble-TM.WebProjects\MRG.WebProject\Images\checkmark.png}
-copyfile:{C:\4-Trabajos\Mariloginsa\Nibble-TM\Nibble-TM.WebProjects\MRG.WebProject\Images\doblecheckmark.png}
-copyfile:{C:\4-Trabajos\Mariloginsa\Nibble-TM\Nibble-TM.WebProjects\MRG.WebProject\Reporte_InformeSupervisionMultimodal_Cliente.a5rpt}
-copyfile:{C:\4-Trabajos\Mariloginsa\Nibble-TM\Nibble-TM.WebProjects\MRG.WebProject\Reporte_ManifiestoCarga_Multimodal.a5rpt}
-copyfile:{C:\4-Trabajos\Mariloginsa\Nibble-TM\Nibble-TM.WebProjects\MRG.WebProject\ReporteActividades_LugaresPredefinidosMultimodal.a5rpt}
-copyfile:{C:\4-Trabajos\Mariloginsa\Nibble-TM\Nibble-TM.WebProjects\MRG.WebProject\Notificacion_Entrega_Multimodal.a5rpt}
-copyfile:{C:\4-Trabajos\Mariloginsa\Nibble-TM\Nibble-TM.WebProjects\MRG.WebProject\Images\doblecheckmark.png}
+copyfile:{C:\4-Trabajos\Nibble-TM\Nibble-TM.WebProjects\MRG5.WebProject\Images\checkmark.png}
+copyfile:{C:\4-Trabajos\Nibble-TM\Nibble-TM.WebProjects\MRG5.WebProject\Images\doblecheckmark.png}
+copyfile:{C:\4-Trabajos\Nibble-TM\Nibble-TM.WebProjects\MRG5.WebProject\Reporte_InformeSupervisionMultimodal_Cliente.a5rpt}
+copyfile:{C:\4-Trabajos\Nibble-TM\Nibble-TM.WebProjects\MRG5.WebProject\Reporte_ManifiestoCarga_Multimodal.a5rpt}
+copyfile:{C:\4-Trabajos\Nibble-TM\Nibble-TM.WebProjects\MRG5.WebProject\ReporteActividades_LugaresPredefinidosMultimodal.a5rpt}
+copyfile:{C:\4-Trabajos\Nibble-TM\Nibble-TM.WebProjects\MRG5.WebProject\Notificacion_Entrega_Multimodal.a5rpt}
+copyfile:{C:\4-Trabajos\Nibble-TM\Nibble-TM.WebProjects\MRG5.WebProject\Images\doblecheckmark.png}
