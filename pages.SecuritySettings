@@ -3458,4 +3458,16 @@
 <action="allow">
 <groups="">
 >
+<[866]<page="Entidad_Rutas.a5wcmp">
+<action="allow">
+<groups="">
+>
+<[867]<page="N_TarifasRutas.a5wcmp">
+<action="allow">
+<groups="">
+>
+<[868]<page="N_Tarifas_Medios.a5wcmp">
+<action="allow">
+<groups="">
+>
 >
