@@ -1,0 +1,72 @@
+	dim pProfile as p
+	dim msg as c 
+	dim pSocket as p
+	pSocket.timeout = 5000
+	pProfile.client_hostname = "secure.emailsrvr.com"
+	pProfile.smtp_port = 465
+	pProfile.smtp_username = "reportes@mariloginsatm.com"
+	pProfile.smtp_password = "DIJ017^eN;H2Jckb|ktK"
+	dim secureMode as c = "SSL"
+	dim SHARED pMessage as p
+	'dim pMessage.message as C
+	dim pMessage.html_message as C 
+	
+	
+	pMessage.html_message = <<%html%
+<h3>Estimado:</h3> 
+<p>Adjunto encontrar&aacute; informes relacionados con el viaje de referencia:</p>
+<ul>
+  <li>Listado de Pasajeros.</li>
+  <li>Estado de Hechos.</li>
+  <li>Listado de Tripulantes.</li>
+  <li>Manifiesto de carga.</li>
+  <li>Informe de Supervisi&oacute;n.</li>
+</ul>
+<p>De requerir informaci&oacute;n adicional sobre el viaje de referencia usted puede solicitarla v&iacute;a mail a: mariloginsatm@mariloginsatm.com</p>
+<p>S&iacute;ganos en las redes sociales:</p>
+<a href="https://www.youtube.com/channel/UCY2Gl1pMBqnf3K8Cv8EjQ8g">Youtube</a><br>
+<a href="https://www.twitter.com/Mariloginsa_Ec">Twitter</a><br>
+<a href="https://www.linkedin.com/in/mariloginsa">Linkedin</a><br>
+<a href="https://www.facebook.com/LogisticaMaritimaIntegral">Facebook</a>
+<hr width="100%">
+<h6>La Informaci&oacute;n contenida en este mensaje es privilegiada, confidencial y para uso exclusivo de las personas destinatarias de este mensaje as&iacute; como por otros espec&iacute;ficamente autorizados a recibirlo. Si usted recibiese esta comunicaci&oacute;n por error, por favor tome las medidas apropiadas para destruir el mensaje y/o contactar al remitente.</h6>
+%html%
+			
+	dim pMessage._to as C = "jarvismiranda728096@gmail.com"
+	dim pMessage.subject as C = "aaa"
+	dim pMessage.attachments as C 
+	dim pMessage.cc as C
+	dim pMessage.bcc as C = "jarvismiranda728096@gmail.com"
+	dim pMessage.lRelated as L
+	dim pMessage.ReturnReceipt as L
+	dim pMessage.from as C = "reportes@mariloginsatm.com"
+	dim pMessage.from_alias as C = "MariloginsaTM"
+	dim flagOpen as l 
+	dim lSilent as l = .f.
+	
+	
+	flagOpen = email_smtp_open(pSocket,pProfile.client_hostname,pProfile.smtp_port,pProfile.smtp_username, pProfile.smtp_password, secureMode)
+	if flagOpen then 
+		dim autowrap as l = .t.
+		dim flagSent as l
+		flagSent = email_smtp_send(pMessage, pSocket, (.NOT. lSilent), autowrap)
+		if flagSent = .f.
+			msg = "Los reportes no fueron enviados. Error reportado:" + pSocket.buffer
+		else
+			msg = "Los reportes fueron enviados."
+			dim cn as sql::Connection
+			cn.open("::Name::Nibble")
+			dim id_Recorrido as c
+			id_Recorrido = session.Id_RecorridoActual
+			dim sql as c
+			dim args as sql::Arguments
+			args.Add("id_recorrido", id_Recorrido)
+			args.Add("usuario", session.Userid)
+			sql = "update N_recorrido set estaEnviadoCorreo = 'True', usuarioEnvio = :usuario where Id_Recorrido = :id_recorrido"
+			cn.Execute(sql, args)
+			cn.Close()
+		end if 
+	email_smtp_close(pSocket)
+	else
+	msg = "Los reportes no fueron enviados. Error reportado: No se puedo conectar via SMTP server: "+pProfile.client_hostname + crlf()+ pSocket.buffer
+	end if 

@@ -1,3 +1,4 @@
+{PlantillaGRID.a5wcmp}|Grid
 {N_Tarifas_Medios.a5wcmp}|Grid
 {N_Rutas.a5wcmp}|Grid
 {N_SatisfaccionCliente_Servicios.a5wcmp}|Grid
@@ -647,3 +648,5 @@
 {Recorridos_MediosTransportacion_Multimodal_TransporteCM.a5wcmp}|Grid
 {Entidad_Rutas.a5wcmp}|Grid
 {N_TarifasRutas.a5wcmp}|Grid
+{Email_List_Ruta.a5wcmp}|Grid
+{Email_List_Ruta_Ruta.a5wcmp}|Grid

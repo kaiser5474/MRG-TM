@@ -3470,4 +3470,16 @@
 <action="allow">
 <groups="">
 >
+<[869]<page="Email_List_Ruta.a5wcmp">
+<action="allow">
+<groups="">
+>
+<[870]<page="PlantillaGRID.a5wcmp">
+<action="allow">
+<groups="">
+>
+<[871]<page="Email_List_Ruta_Ruta.a5wcmp">
+<action="allow">
+<groups="">
+>
 >
