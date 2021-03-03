@@ -20,7 +20,7 @@
     <preference name="exit-on-suspend" value="false" />
     <preference name="auto-hide-splash-screen" value="true" />
     <preference name="disable-cursor" value="false" />
-    <preference name="android-minSdkVersion" value="19" />
+    <preference name="android-minSdkVersion" value="22" />
     <preference name="android-installLocation" value="internalOnly" />
 	<preference name="phonegap-version" value="cli-9.0.0" />
 	<preference name="EnableViewportScale" value="true" />
