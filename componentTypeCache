@@ -650,3 +650,6 @@
 {N_TarifasRutas.a5wcmp}|Grid
 {Email_List_Ruta.a5wcmp}|Grid
 {Email_List_Ruta_Ruta.a5wcmp}|Grid
+{N_TarifaEntidad.a5wcmp}|Grid
+{PlantillaGRID_Editar.a5wcmp}|Grid
+{N_TarifasMedios_Contenedor.a5wcmp}|Grid

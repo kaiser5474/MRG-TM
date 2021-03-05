@@ -1,0 +1,27 @@
+{
+    "data": {
+        "legacy": "../Registro_EstadoVehiculoTrayectoria.a5rpt"
+    },
+    "layout": {
+        "info": {
+            "PageWidth": 15120,
+            "PageHeight": 16803,
+            "MarginLeft": 720,
+            "MarginTop": 720,
+            "MarginRight": 720,
+            "MarginBottom": 720
+        },
+        "block": {
+            "Content": [
+                {
+                    "Field": "image",
+                    "ContentType": "ExternalImage",
+                    "image": {
+                        "width": 13680
+                    }
+                }
+            ],
+            "startNew": "Page"
+        }
+    }
+}

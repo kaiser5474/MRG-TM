@@ -1,0 +1,27 @@
+{
+    "data": {
+        "legacy": "../Registro_Eventos.a5rpt"
+    },
+    "layout": {
+        "info": {
+            "PageWidth": 15850,
+            "PageHeight": 8352,
+            "MarginLeft": 720,
+            "MarginTop": 720,
+            "MarginRight": 720,
+            "MarginBottom": 720
+        },
+        "block": {
+            "Content": [
+                {
+                    "Field": "image",
+                    "ContentType": "ExternalImage",
+                    "image": {
+                        "width": 14410
+                    }
+                }
+            ],
+            "startNew": "Page"
+        }
+    }
+}

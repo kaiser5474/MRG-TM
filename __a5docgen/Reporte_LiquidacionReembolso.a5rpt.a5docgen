@@ -1,0 +1,27 @@
+{
+    "data": {
+        "legacy": "../Reporte_LiquidacionReembolso.a5rpt"
+    },
+    "layout": {
+        "info": {
+            "PageWidth": 14400,
+            "PageHeight": 21600,
+            "MarginLeft": 720,
+            "MarginTop": 720,
+            "MarginRight": 720,
+            "MarginBottom": 720
+        },
+        "block": {
+            "Content": [
+                {
+                    "Field": "image",
+                    "ContentType": "ExternalImage",
+                    "image": {
+                        "width": 12960
+                    }
+                }
+            ],
+            "startNew": "Page"
+        }
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "data": {
+        "legacy": "../Lista_Pasajeros.a5rpt"
+    },
+    "layout": {
+        "info": {
+            "PageWidth": 16837,
+            "PageHeight": 11905,
+            "MarginLeft": 720,
+            "MarginTop": 720,
+            "MarginRight": 720,
+            "MarginBottom": 720
+        },
+        "block": {
+            "Content": [
+                {
+                    "Field": "image",
+                    "ContentType": "ExternalImage",
+                    "image": {
+                        "width": 15397
+                    }
+                }
+            ],
+            "startNew": "Page"
+        }
+    }
+}

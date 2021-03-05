@@ -1,0 +1,27 @@
+{
+    "data": {
+        "legacy": "../lt_Instruccion_de_Pago_Excel.a5rpt"
+    },
+    "layout": {
+        "info": {
+            "PageWidth": 16560,
+            "PageHeight": 15840,
+            "MarginLeft": 720,
+            "MarginTop": 720,
+            "MarginRight": 720,
+            "MarginBottom": 720
+        },
+        "block": {
+            "Content": [
+                {
+                    "Field": "image",
+                    "ContentType": "ExternalImage",
+                    "image": {
+                        "width": 15120
+                    }
+                }
+            ],
+            "startNew": "Page"
+        }
+    }
+}

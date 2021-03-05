@@ -1,4 +1,4 @@
-A5SaveTimeStamp:20201203162511127
+A5SaveTimeStamp:20210305012321430
 css:<Project>
 subComponent:Recorridos_MediosTransportacion_Multimodal_Origen
 subComponent:Recorridos_MediosTransportacion_Multimodal_Transporte
@@ -9,4 +9,6 @@ subComponent:Recorridos_MediosTransportacion_Multimodal_DestinoCM
 subComponent:RecorridosMediosTransporte_ReporteActividades_Observaciones.a5wcmp
 subComponent:RecorridosMediosTransportacion_ReporteActividades_Imagenes.a5wcmp
 subComponent:RecorridosMediosTransportacion_ReporteActividades_Imagenes_Edit.a5wcmp
+copyfile:{C:\4-Trabajos\Nibble-TM\Nibble-TM.WebProjects\MRG5.WebProject\Modulo-1.a5xbm}
+copyfile:{C:\4-Trabajos\Nibble-TM\Nibble-TM.WebProjects\MRG5.WebProject\Modulo-1.a5xbm}
 copyfile:{C:\4-Trabajos\Nibble-TM\Nibble-TM.WebProjects\MRG5.WebProject\Reporte_ManifiestoCarga_Multimodal.a5rpt}

@@ -1,0 +1,27 @@
+{
+    "data": {
+        "legacy": "../auditoria2Parte_Lista.a5rpt"
+    },
+    "layout": {
+        "info": {
+            "PageWidth": 15120,
+            "PageHeight": 11520,
+            "MarginLeft": 720,
+            "MarginTop": 720,
+            "MarginRight": 720,
+            "MarginBottom": 720
+        },
+        "block": {
+            "Content": [
+                {
+                    "Field": "image",
+                    "ContentType": "ExternalImage",
+                    "image": {
+                        "width": 13680
+                    }
+                }
+            ],
+            "startNew": "Page"
+        }
+    }
+}

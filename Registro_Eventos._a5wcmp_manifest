@@ -1,9 +1,11 @@
-A5SaveTimeStamp:20200606013109606
+A5SaveTimeStamp:20210305005735189
 css:GrBlue
 subComponent:Registro_Eventos_Detalles
 subComponent:Registro_Eventos_Instructor
 subComponent:Registro_Eventos_Contactos
 subComponent:Registro_Eventos_Documentos
 subComponent:Registro_Eventos_Acuerdos_Pendientes2
-copyfile:{C:\4-Trabajos\Mariloginsa\Nibble-TM\Nibble-TM.WebProjects\MRG.WebProject\Registro_Eventos_Contactos.a5rpt}
-copyfile:{C:\4-Trabajos\Mariloginsa\Nibble-TM\Nibble-TM.WebProjects\MRG.WebProject\Registro_Eventos.a5rpt}
+copyfile:{C:\4-Trabajos\Nibble-TM\Nibble-TM.WebProjects\MRG5.WebProject\Modulo-1.a5xbm}
+copyfile:{C:\4-Trabajos\Nibble-TM\Nibble-TM.WebProjects\MRG5.WebProject\Modulo-1.a5xbm}
+copyfile:{C:\4-Trabajos\Nibble-TM\Nibble-TM.WebProjects\MRG5.WebProject\Registro_Eventos_Contactos.a5rpt}
+copyfile:{C:\4-Trabajos\Nibble-TM\Nibble-TM.WebProjects\MRG5.WebProject\Registro_Eventos.a5rpt}

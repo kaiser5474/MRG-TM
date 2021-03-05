@@ -1,0 +1,27 @@
+{
+    "data": {
+        "legacy": "../Reporte_Prefacturacion3.a5rpt"
+    },
+    "layout": {
+        "info": {
+            "PageWidth": 14427,
+            "PageHeight": 18276,
+            "MarginLeft": 720,
+            "MarginTop": 720,
+            "MarginRight": 720,
+            "MarginBottom": 720
+        },
+        "block": {
+            "Content": [
+                {
+                    "Field": "image",
+                    "ContentType": "ExternalImage",
+                    "image": {
+                        "width": 12987
+                    }
+                }
+            ],
+            "startNew": "Page"
+        }
+    }
+}

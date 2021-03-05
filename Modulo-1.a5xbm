@@ -1,1 +1,24 @@
+function greeting as c ()
+    'greeting = "Hello " + ut(name) + " the time is now: " + currentDate()
+    greeting = "Hola"
+end function 
+
+function paraEmail as p ()
+	
+    dim pProfile as p
+	
+	pProfile.timeout = 5000
+	pProfile.client_hostname = "secure.emailsrvr.com"
+	pProfile.smtp_port = 465
+	pProfile.smtp_username = "reportes@mariloginsatm.com"
+	pProfile.smtp_password = "RaC!mYug^tFKaF*LIO^0Qu6%vR"
+	pProfile.secureMode = "SSL"
+		
+	paraEmail = pProfile
+end function 
+
+
+exports.sayHello = greeting
+exports.paraEmail = paraEmail
+
 

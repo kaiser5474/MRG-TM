@@ -1,4 +1,4 @@
-A5SaveTimeStamp:20210216000633708
+A5SaveTimeStamp:20210305010144645
 css:<Project>
 subComponent:Entidades_Detalles
 subComponent:Entidades_Observaciones
@@ -17,6 +17,7 @@ subComponent:Entidades_Visitas
 subComponent:Entidad_Seguridad_Agrupa
 subComponent:Auditoria2parte_Entidades
 subComponent:Entidad_Rutas
+copyfile:{C:\4-Trabajos\Nibble-TM\Nibble-TM.WebProjects\MRG5.WebProject\Modulo-1.a5xbm}
 copyfile:{C:\4-Trabajos\Nibble-TM\Nibble-TM.WebProjects\MRG5.WebProject\Images\mapiconscollection-markers\administration.png}
 copyfile:{C:\4-Trabajos\Nibble-TM\Nibble-TM.WebProjects\MRG5.WebProject\Images\mapiconscollection-markers\air_fixwing.png}
 copyfile:{C:\4-Trabajos\Nibble-TM\Nibble-TM.WebProjects\MRG5.WebProject\Images\mapiconscollection-markers\boatcrane.png}
