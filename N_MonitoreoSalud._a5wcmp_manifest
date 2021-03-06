@@ -1,8 +1,8 @@
-A5SaveTimeStamp:20200905145735937
+A5SaveTimeStamp:20210306135207137
 css:GrBlue
 subComponent:N_MonitoreoTrabajador
 subComponent:N_Monitoreo_Sintomas
 subComponent:N_MonitoreoSalud_Imagen
-copyfile:{C:\4-Trabajos\Mariloginsa\Nibble-TM\Nibble-TM.WebProjects\MRG.WebProject\N_MonitoreoSintomas.a5rpt}
-copyfile:{C:\4-Trabajos\Mariloginsa\Nibble-TM\Nibble-TM.WebProjects\MRG.WebProject\N_Monitoreo2.a5rpt}
-copyfile:{C:\4-Trabajos\Mariloginsa\Nibble-TM\Nibble-TM.WebProjects\MRG.WebProject\N_Monitoreo_Familiar2.a5rpt}
+copyfile:{C:\4-Trabajos\Nibble-TM\Nibble-TM.WebProjects\MRG5.WebProject\N_MonitoreoSintomas.a5rpt}
+copyfile:{C:\4-Trabajos\Nibble-TM\Nibble-TM.WebProjects\MRG5.WebProject\N_Monitoreo2.a5rpt}
+copyfile:{C:\4-Trabajos\Nibble-TM\Nibble-TM.WebProjects\MRG5.WebProject\N_Monitoreo_Familiar2.a5rpt}

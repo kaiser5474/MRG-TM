@@ -14,7 +14,7 @@ function _phoneGapSettings() {
         "exit-on-suspend": "false",
         "auto-hide-splash-screen": "true",
         "disable-cursor": "false",
-        "android-minSdkVersion": "19",
+        "android-minSdkVersion": "21",
         "android-installLocation": "internalOnly",
         "phonegap-version": "cli-9.0.0",
         "EnableViewportScale": "true",
