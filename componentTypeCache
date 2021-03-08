@@ -654,3 +654,6 @@
 {PlantillaGRID_Editar.a5wcmp}|Grid
 {N_TarifasMedios_Contenedor.a5wcmp}|Grid
 {app_MRG_Login2.a5wcmp}|Dialog2
+{N_Rutas_LocalSharge.a5wcmp}|Grid
+{N_Rutas_ServiciosAdicionales.a5wcmp}|Grid
+{N_Rutas_TerminosCondiciones.a5wcmp}|Grid
