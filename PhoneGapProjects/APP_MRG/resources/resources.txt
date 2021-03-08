@@ -1,19 +1,19 @@
 {
 	"_id": "",
-	"_icon": "C:\\Users\\Jarvis\\Desktop\\logoMRGTM.png",
+	"_icon": "C:\\Users\\Jarvis\\Desktop\\MRG\\Imagenes\\logoMRGTM.png",
 	"_storyboardImage": "",
-	"_ssL": "C:\\Users\\Jarvis\\Desktop\\logoMRGTM.png",
+	"_ssL": "",
 	"_ssP": "",
-	"_ssA9": "C:\\Users\\Jarvis\\Desktop\\logoMRGTM.png",
+	"_ssA9": "",
 	"_genStoryboardImages": false,
 	"_gen9PatchImages": true,
 	"_appImagesGenerated": false,
-	"_initialUxComponent": "app_MRG_ClienteLogin",
-	"_componentLastUpdated": "03/06/2021 08:21:15 13 pm",
+	"_initialUxComponent": "app_MRG_Login2",
+	"_componentLastUpdated": "03/06/2021 04:54:33 16 pm",
 	"_ajaxUrl": "https://www.mariloginsatm.com",
 	"_additionalFiles": "",
-	"_userName": "hFH2jej01ny3tO9Ezprj0oD4YPioh7jsu4xSeBeX4QA=",
-	"_pw": "S139YSumaA5XhbzWQ+JC5Lgqu7mVrjEy",
+	"_userName": "osLnGM4pUcQ=",
+	"_pw": "c5JMXi9Y+Ko=",
 	"_token": "",
 	"timeout": {
 		"phoneGapBuild": "<default>",
@@ -37,10 +37,10 @@
 	"_androidBuildFlag": true,
 	"_iOSBuildFlag": false,
 	"_windowsBuildFlag": false,
-	"_allowIntentTel": true,
+	"_allowIntentTel": false,
 	"_allowIntentSms": false,
 	"_allowIntentGeo": false,
-	"_allowIntentMailto": true,
+	"_allowIntentMailto": false,
 	"_enableFirebaseAuthentication": false,
 	"_firebaseAuthorizedDomainName": "",
 	"_firebaseDynamicLinksDomainName": "",
@@ -49,9 +49,9 @@
 	"_channel": "<Default>",
 	"_newAjaxURL": "",
 	"_changeAjaxURL": false,
-	"_baseLineGuid": "715e1b69ed414a96bd9b755ff3a60206",
+	"_baseLineGuid": "3f1ff12ee5c34baabf146f6b0c91133a",
 	"enableInstantUpdate": false,
-	"instantUpdateSettingsJSON": "{\r\n\t\"item1\": \"item1\",\r\n\t\"name\": \"\",\r\n\t\"patchLocation\": \"AlphaSoftware\",\r\n\t\"storageConnectionString\": \"\",\r\n\t\"baseURL\": \"\",\r\n\t\"displayMessageAfterUpdate\": true,\r\n\t\"firsttimerunmessage\": \"Bienvenido a MariloginsaTM\",\r\n\t\"displayfirsttimeloadmessage\": true,\r\n\t\"message\": \"Version Actualizada\",\r\n\t\"systemMessages\": \"Verbose\",\r\n\t\"autoUpdate\": true,\r\n\t\"path\": \"\"\r\n}",
+	"instantUpdateSettingsJSON": "",
 	"launchAppManager": true,
 	"cli": {
 		"keystoreType": "auto-detect",
@@ -59,7 +59,7 @@
 		"alias": "",
 		"keystorePassword": "",
 		"keystore": "",
-		"installOnDeviceOrEmulator": true,
+		"installOnDeviceOrEmulator": false,
 		"showQRCode": false,
 		"buildiOS": false,
 		"buildType": "Debug",
@@ -80,9 +80,8 @@
 		}
 	},
 	"baseline": {
-		"_initialUXcomponent": "app_MRG_ClienteLogin",
-		"_ajaxurl": "https://www.mariloginsatm.com"
+		"_initialUXcomponent": "app_MRG_Login2",
+		"_ajaxurl": ""
 	},
-	"_sqlitedbdefined": false,
-	"_channels": ""
+	"_sqlitedbdefined": false
 }

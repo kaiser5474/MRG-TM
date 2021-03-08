@@ -1,6 +1,6 @@
 function _phoneGapSettings() { 
  return {
-    "appId": "com.mariloginsa.cliente",
+    "appId": "com.mariloginsa.mariloginsatm",
     "preferences": {
         "permissions": "",
         "orientation": "default",
@@ -47,15 +47,13 @@ function _phoneGapSettings() {
     },
     "plugins": {
         "cordova-plugin-device": "npm",
-        "cordova-plugin-file": "npm",
-        "cordova-plugin-file-transfer": "npm",
         "cordova-plugin-network-information": "npm",
         "cordova-plugin-splashscreen": "npm",
         "cordova-plugin-whitelist": "npm",
-        "cordova-openhttps://github.com/remoorejr/cordova-open.git": "git",
-        "cordova-plugin-dialogs": "npm",
-        "cordova-plugin-camera-with-exif": "npm",
-        "cordova-plugin-x-toast": "npm"
+        "cordova-plugin-file": "npm",
+        "cordova-plugin-file-transfer": "npm",
+        "cordova-plugin-android-permissions": "npm",
+        "cordova-openhttps://github.com/remoorejr/cordova-open.git": "git"
     }
 };
 }
