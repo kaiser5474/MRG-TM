@@ -4419,5 +4419,35 @@
 		"page": "N_Rutas_ServiciosAdicionales.a5rpt",
 		"action": "allow",
 		"groups": ""
+	},
+	{
+		"page": "N_Ruta_RutaInteres.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "N_Rutas_RutaRelacionada_FREQUENCY.a5rpt",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "N_Rutas_RutaRelacionada_TRANSHIPMENT.a5rpt",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "N_Rutas_RutaRelacionada_CUTOFF.a5rpt",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "N_Rutas_RutaRelacionada_TYPESHIP.a5rpt",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Rutas_Tarifas_Entidad_ORDER5.a5rpt",
+		"action": "allow",
+		"groups": ""
 	}]
 }

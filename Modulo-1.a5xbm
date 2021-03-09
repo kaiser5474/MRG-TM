@@ -1,8 +1,3 @@
-function greeting as c ()
-    'greeting = "Hello " + ut(name) + " the time is now: " + currentDate()
-    greeting = "Hola"
-end function 
-
 function paraEmail as p ()
 	
     dim pProfile as p
@@ -18,8 +13,6 @@ function paraEmail as p ()
 	paraEmail = pProfile
 end function 
 
-
-exports.sayHello = greeting
 exports.paraEmail = paraEmail
 
 
