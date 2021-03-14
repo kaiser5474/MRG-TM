@@ -52,10 +52,10 @@ function _phoneGapSettings() {
         "cordova-plugin-network-information": "npm",
         "cordova-plugin-splashscreen": "npm",
         "cordova-plugin-whitelist": "npm",
-        "cordova-openhttps://github.com/remoorejr/cordova-open.git": "git",
         "cordova-plugin-dialogs": "npm",
-        "cordova-plugin-camera-with-exif": "npm",
-        "cordova-plugin-x-toast": "npm"
+        "cordova-plugin-x-toast": "npm",
+        "cordova-plugin-zip": "npm",
+        "cordova-openhttps://github.com/remoorejr/cordova-open.git": "git"
     }
 };
 }

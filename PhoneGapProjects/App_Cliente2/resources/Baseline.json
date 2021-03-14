@@ -77,6 +77,14 @@
 		"name": "\\a5images\\disabledmininavigateprev.png"
 	},
 	{
+		"crc": 4294917377,
+		"name": "\\a5images\\disabledpresentationformfind.png"
+	},
+	{
+		"crc": 4294905317,
+		"name": "\\a5images\\disabledpresentationformfindclear.png"
+	},
+	{
 		"crc": 4294906852,
 		"name": "\\a5images\\disabledwebdownload.png"
 	},
@@ -127,6 +135,14 @@
 	{
 		"crc": 4294910201,
 		"name": "\\a5images\\mininavigateprev.png"
+	},
+	{
+		"crc": 4294912478,
+		"name": "\\a5images\\presentationformfind.png"
+	},
+	{
+		"crc": 4294908177,
+		"name": "\\a5images\\presentationformfindclear.png"
 	},
 	{
 		"crc": 4294950686,
@@ -922,11 +938,11 @@
 	}],
 	"rootfiles": [
 	{
-		"crc": 4294956527,
+		"crc": 4294959701,
 		"name": "\\baseline.zip"
 	},
 	{
-		"crc": 4294915431,
+		"crc": 4294915462,
 		"name": "\\config.xml"
 	},
 	{
@@ -934,7 +950,7 @@
 		"name": "\\icon.png"
 	},
 	{
-		"crc": 4294950338,
+		"crc": 4294922541,
 		"name": "\\index.html"
 	},
 	{
@@ -974,15 +990,15 @@
 		"name": "\\unnamed.jpg"
 	},
 	{
-		"crc": 4294931149,
+		"crc": 4294927347,
 		"name": "\\version.json"
 	},
 	{
-		"crc": 4294942121,
+		"crc": 4294933800,
 		"name": "\\_instantUpdateSettings.js"
 	},
 	{
-		"crc": 4294943225,
+		"crc": 4294914309,
 		"name": "\\_phoneGapSettings.js"
 	}],
 	"plugins": [
@@ -1017,29 +1033,14 @@
 		"version": "1.3.3"
 	},
 	{
-		"name": "cordova-open",
-		"source": "git",
-		"version": ""
-	},
-	{
 		"name": "cordova-plugin-dialogs",
 		"source": "npm",
 		"version": "2.0.2"
 	},
 	{
-		"name": "cordova-plugin-camera-with-exif",
+		"name": "cordova-plugin-x-toast",
 		"source": "npm",
-		"version": ""
-	},
-	{
-		"name": "CordovaCallNumberPlugin",
-		"source": "git",
-		"version": ""
-	},
-	{
-		"name": "cordova-plugin-phonedialer",
-		"source": "npm",
-		"version": ""
+		"version": "2.6.0"
 	},
 	{
 		"name": "cordova-plugin-zip",
@@ -1047,8 +1048,8 @@
 		"version": "3.1.0"
 	},
 	{
-		"name": "cordova-plugin-x-toast",
-		"source": "npm",
-		"version": "2.6.0"
+		"name": "cordova-open",
+		"source": "git",
+		"version": ""
 	}]
 }

@@ -90,8 +90,8 @@ iframe {-webkit-user-select: text;}
 
 </style>
 
-<link palette="" rel="stylesheet" type="text/css" href="css/GrBlue/style.css?buildcount_1004">
-<link rel="stylesheet" type="text/css" href="css/_sharedStyles/style.css?buildcount_1004">
+<link palette="" rel="stylesheet" type="text/css" href="css/GrBlue/style.css?buildcount_1026">
+<link rel="stylesheet" type="text/css" href="css/_sharedStyles/style.css?buildcount_1026">
 
 <style type="text/css">
 .icon {
@@ -335,6 +335,31 @@ aaa {
   background: transparent;
   padding: 8px; }
 .DLG1_LISTRECORRIDO_2 .card-wide .card-buttons > button {
+  border-radius: 6px;
+  margin-bottom: 4px;
+  padding: 0px 16px; }
+.DLG1_LISTRECORRIDO1_2 .card-wide {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center; }
+.DLG1_LISTRECORRIDO1_2 .card-wide .card-image {
+  width: 100px;
+  overflow: hidden; }
+.DLG1_LISTRECORRIDO1_2 .card-wide .card-image > img {
+  width: auto;
+  min-width: 100%;
+  max-width: 150px;
+  min-height: 100%;
+  margin-left: 50%;
+  transform: translateX(-50%); }
+.DLG1_LISTRECORRIDO1_2 .card-wide .card-content {
+  flex: 1; }
+.DLG1_LISTRECORRIDO1_2 .card-wide .card-buttons {
+  flex-direction: column;
+  background: transparent;
+  padding: 8px; }
+.DLG1_LISTRECORRIDO1_2 .card-wide .card-buttons > button {
   border-radius: 6px;
   margin-bottom: 4px;
   padding: 0px 16px; }
@@ -704,6 +729,7 @@ box-shadow: 0 0 0 2px #fff inset;
 <input type="hidden" id="DLG1.V.R1.LISTRRHH" name="V.R1.LISTRRHH" />
 <input type="hidden" id="DLG1.V.R1.LISTRRHH1" name="V.R1.LISTRRHH1" />
 <input type="hidden" id="DLG1.V.R1.LISTRECORRIDO" name="V.R1.LISTRECORRIDO" />
+<input type="hidden" id="DLG1.V.R1.LISTRECORRIDO1" name="V.R1.LISTRECORRIDO1" />
 <input type="hidden" id="DLG1.V.R1.LISTSATISFACCION" name="V.R1.LISTSATISFACCION" />
 <input type="hidden" id="DLG1.V.R1.LISTSERVICIOSENCUESTA" name="V.R1.LISTSERVICIOSENCUESTA" />
 <input type="hidden" id="DLG1.V.R1.STARRATING" name="V.R1.STARRATING" />
@@ -904,7 +930,7 @@ if(typeof DLG1_DlgObj == 'object') {
 	body: {
 		content: {
 			type: 'html',
-			src: '<div \tid="DLG1.V.R1.CONTAINER_4"   \r\n\t\t\tclass="A5CWLayout "  style=""  >\r\n<div \tid="DLG1.V.R1.CONTAINER_7"   \r\n\t\t\tclass="A5CWLayout "  style="color: rgb(4,0,7); background-color: #cdd1e5; border-style: outset; padding-top: 2px; margin-top: 2px; top: 1px; width: 60%; height: 2.05in; border-radius: 6px; "  >\r\n<div style="display: table; margin: auto;">\r\n<div class="A5CWLayout" style="width: 100%" >\r\n\t<div id="DLG1.V.R1.STATICTEXT_4" title=""  class="" style="color: rgb(4,0,7); background-color: #cdd1e5; border-style: none; width: 100%; border-radius: 6px; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;"   ><center><img src="a5images/chartline.png" style="padding-top:20px; width:px;height:px"><br> Dashboard</center>  </div>\r\n</div><br  style="clear:both; " />\r\n<div class="A5CWLayout" style="width: 100%" >\r\n\t<div id="SPACER_2" style="width: 100%; height: 30px; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;; font: 0pt Arial;">&nbsp;</div>\r\n</div>\r\n\t\r\n<div class="A5CWLayout" style="width: 25%" >\r\n\t<div id="DLG1.V.R1.IMAGE_10" style="z-index:10000; width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; ; padding:0;margin:0;"    >\r\n\t\t<img src="a5images/genericconditionfalse.png" class="" style="width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;" title=""  onerror="if(typeof DLG1_DlgObj != \'undefined\') DLG1_DlgObj._executeEvent(\'onImageError\',{element: this});"  />\r\n\t</div>\r\n</div>\r\n<div class="A5CWLayout" style="width: 25%" >\r\n\t<span\tid="DLG1.V.R1.LABEL4" class="GrBlueGridData " style="text-align: center; color: rgb(4,0,7); background-color: #cdd1e5; width: 100%; border-radius: 6px; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;; display:inline-block" title=""    ></span>\r\n</div>\r\n<div class="A5CWLayout" style="width: 25%" >\r\n\t<div id="DLG1.V.R1.IMAGE_8" style="z-index:10000; width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; ; padding:0;margin:0;"    >\r\n\t\t<img src="a5images/genericcondition.png" class="" style="width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;" title=""  onerror="if(typeof DLG1_DlgObj != \'undefined\') DLG1_DlgObj._executeEvent(\'onImageError\',{element: this});"  />\r\n\t</div>\r\n</div>\r\n<div class="A5CWLayout" style="width: 25%" >\r\n\t<span\tid="DLG1.V.R1.LABEL1" class="GrBlueGridData " style="text-align: center; color: rgb(4,0,7); background-color: #cdd1e5; width: 100%; border-radius: 6px; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;; display:inline-block" title=""    ></span>\r\n</div><br  style="clear:both; " />\r\n<div class="A5CWLayout" style="width: 25%" >\r\n\t<div id="DLG1.V.R1.IMAGE_9" style="z-index:10000; width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; ; padding:0;margin:0;"    >\r\n\t\t<img src="a5images/genericconditiontrue.png" class="" style="width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;" title=""  onerror="if(typeof DLG1_DlgObj != \'undefined\') DLG1_DlgObj._executeEvent(\'onImageError\',{element: this});"  />\r\n\t</div>\r\n</div>\r\n<div class="A5CWLayout" style="width: 25%" >\r\n\t<span\tid="DLG1.V.R1.LABEL2" class="GrBlueGridData " style="text-align: center; color: rgb(4,0,7); background-color: #cdd1e5; width: 100%; border-radius: 6px; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;; display:inline-block" title=""    ></span>\r\n</div>\r\n<div class="A5CWLayout" style="width: 25%" >\r\n\t<div id="DLG1.V.R1.IMAGE_12" style="z-index:10000; width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; ; padding:0;margin:0;"    >\r\n\t\t<img src="a5images/editdelete.png" class="" style="width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;" title=""  onerror="if(typeof DLG1_DlgObj != \'undefined\') DLG1_DlgObj._executeEvent(\'onImageError\',{element: this});"  />\r\n\t</div>\r\n</div>\r\n<div class="A5CWLayout" style="width: 25%" >\r\n\t<span\tid="DLG1.V.R1.LABEL5" class="GrBlueGridData " style="text-align: center; background-color: transparent; width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;; display:inline-block" title=""    ></span>\r\n</div>\r\n<div style="font: 0pt arial;clear:both;"></div>\r\n\t</div>\r\n\t</div>\r\n\r\n<div \tid="DLG1.V.R1.CONTAINER_11"   \r\n\t\t\tclass="A5CWLayout "  style="color: rgb(4,0,7); background-color: #cdd1e5; border-style: outset; padding-top: 2px; margin-top: 2px; top: 2px; width: 40%; height: 1in; border-radius: 6px; "  >\r\n<div class="A5CWLayout" style="width: 75%" >\r\n\t<div id="SPACER_9" style="width: 100%; height: 1px; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;; font: 0pt Arial;">&nbsp;</div>\r\n</div>\r\n\t\r\n<div class="A5CWLayout" style="width: " >\r\n\t<div id="DLG1.V.R1.STATICTEXT_LISTSATISFACCION.RECORDCOUNT1" title=""  class="" style="color: #f00; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;"   ><span id=""></span></div>\r\n</div><br  style="clear:both; " />\r\n<div class="A5CWLayout" style="width: 100%" >\r\n\t<button type="button" id="DLG1.V.R1.BUTTON_131"    ></button>\r\n\t<br/>\r\n\t<label id="DLG1.LBL.R1.BUTTON_131" for="DLG1.V.R1.BUTTON_131" title="" class="GrBlueDialogLabel" style="text-align: Center; background-color: transparent; display: block; ">&nbsp;</label>\r\n\r\n</div><br  style="clear:both; " />\r\n<div style="font: 0pt arial;clear:both;"></div>\r\n\t</div>\r\n\r\n<div \tid="DLG1.V.R1.CONTAINER_21"   \r\n\t\t\tclass="A5CWLayout "  style="color: rgb(4,0,7); background-color: #cdd1e5; border-style: outset; padding-top: 2px; margin-top: 2px; top: 2px; width: 40%; height: 1in; border-radius: 6px; "  >\r\n<div class="A5CWLayout" style="width: 75%" >\r\n\t<div id="SPACER_10" style="width: 100%; height: 1px; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;; font: 0pt Arial;">&nbsp;</div>\r\n</div>\r\n\t\r\n<div class="A5CWLayout" style="width: " >\r\n\t<div id="DLG1.V.R1.STATICTEXT_LISTSATISFACCION.RECORDCOUNT2" title=""  class="" style="color: #f00; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;"   ><span id=""></span></div>\r\n</div><br  style="clear:both; " />\r\n<div class="A5CWLayout" style="width: 100%" >\r\n\t<button type="button" id="DLG1.V.R1.BUTTON_132"    ></button>\r\n\t<br/>\r\n\t<label id="DLG1.LBL.R1.BUTTON_132" for="DLG1.V.R1.BUTTON_132" title="" class="GrBlueDialogLabel" style="text-align: Center; background-color: transparent; display: block; ">&nbsp;</label>\r\n\r\n</div><br  style="clear:both; " />\r\n<div style="font: 0pt arial;clear:both;"></div>\r\n\t</div>\r\n\r\n<div \tid="DLG1.V.R1.CONTAINER_22"   \r\n\t\t\tclass="A5CWLayout "  style="color: rgb(4,0,7); background-color: #cdd1e5; border-style: outset; padding-top: 2px; margin-top: 2px; top: 2px; width: 40%; height: 1in; border-radius: 6px; "  >\r\n<div class="A5CWLayout" style="width: 75%" >\r\n\t<div id="SPACER_11" style="width: 100%; height: 1px; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;; font: 0pt Arial;">&nbsp;</div>\r\n</div>\r\n\t\r\n<div class="A5CWLayout" style="width: " >\r\n\t<div id="DLG1.V.R1.STATICTEXT_LISTSATISFACCION.RECORDCOUNT3" title=""  class="" style="color: #f00; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;"   ><span id=""></span></div>\r\n</div><br  style="clear:both; " />\r\n<div class="A5CWLayout" style="width: 100%" >\r\n\t<button type="button" id="DLG1.V.R1.BUTTON_133"    ></button>\r\n\t<br/>\r\n\t<label id="DLG1.LBL.R1.BUTTON_133" for="DLG1.V.R1.BUTTON_133" title="" class="GrBlueDialogLabel" style="text-align: Center; background-color: transparent; display: block; ">&nbsp;</label>\r\n\r\n</div><br  style="clear:both; " />\r\n<div style="font: 0pt arial;clear:both;"></div>\r\n\t</div>\r\n\r\n<div class="A5CWLayout" style="width: 60%" >\r\n\t<div id="SPACER_7" style="width: 100%; height: 1px; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;; font: 0pt Arial;">&nbsp;</div>\r\n</div>\r\n\t\r\n<div \tid="DLG1.V.R1.CONTAINER_8"   \r\n\t\t\tclass="A5CWLayout "  style="color: rgb(4,0,7); background-color: #cdd1e5; border-style: outset; padding-top: 2px; margin-top: 2px; top: 2px; width: 40%; height: 1in; border-radius: 6px; "  >\r\n<div class="A5CWLayout" style="width: 75%" >\r\n\t<div id="SPACER_6" style="width: 100%; height: 1px; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;; font: 0pt Arial;">&nbsp;</div>\r\n</div>\r\n\t\r\n<div class="A5CWLayout" style="width: " >\r\n\t<div id="DLG1.V.R1.STATICTEXT_LISTSATISFACCION.RECORDCOUNT" title=""  class="" style="color: #f00; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;"   ><span id="DLG1.listSatisfaccion.RECORDCOUNT"></span></div>\r\n</div><br  style="clear:both; " />\r\n<div class="A5CWLayout" style="width: 100%" >\r\n\t<button type="button" id="DLG1.V.R1.BUTTON_119"    ></button>\r\n</div><br  style="clear:both; " />\r\n<div style="font: 0pt arial;clear:both;"></div>\r\n\t</div>\r\n<br  id="DLG1.V.R1.CONTAINER_8.BREAK"  style="clear:both; " />\r\n<div class="A5CWLayout" style="width: 60%" >\r\n\t<div id="SPACER_8" style="width: 100%; height: 1px; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;; font: 0pt Arial;">&nbsp;</div>\r\n</div>\r\n\t\r\n<div \tid="DLG1.V.R1.CONTAINER_33"  onclick="function tempfunction_669a5c13_fc03_4c25_8c8d_eed3e79cf238() {\r\nDLG1_DlgObj.logout()\r\n}\r\nfunction tempfunction_5d6c5b7e_168f_40ea_9f1f_8c43b82f895d() {\r\nDLG1_DlgObj.panelSetActive(\'PANEL_LOGIN\',true);\r\n}\r\nA5.executeThisThenThat(tempfunction_669a5c13_fc03_4c25_8c8d_eed3e79cf238,tempfunction_5d6c5b7e_168f_40ea_9f1f_8c43b82f895d);"  \r\n\t\t\tclass="A5CWLayout "  style="color: rgb(4,0,7); background-color: #cdd1e5; border-style: outset; padding-top: 2px; margin-top: 2px; top: 2px; width: 40%; height: 1in; border-radius: 6px; "  >\r\n<div class="A5CWLayout" style="width: 75%" >\r\n\t<div id="SPACER_12" style="width: 100%; height: 1px; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;; font: 0pt Arial;">&nbsp;</div>\r\n</div>\r\n\t\r\n<div class="A5CWLayout" style="width: " >\r\n\t<div id="DLG1.V.R1.STATICTEXT_LISTSATISFACCION.RECORDCOUNT4" title=""  class="" style="color: #f00; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;"   ><span id=""></span></div>\r\n</div><br  style="clear:both; " />\r\n<div class="A5CWLayout" style="width: 100%" >\r\n\t<button type="button" id="DLG1.V.R1.BUTTON_134"    ></button>\r\n\t<br/>\r\n\t<label id="DLG1.LBL.R1.BUTTON_134" for="DLG1.V.R1.BUTTON_134" title="" class="GrBlueDialogLabel" style="text-align: Center; background-color: transparent; display: block; ">&nbsp;</label>\r\n\r\n</div><br  style="clear:both; " />\r\n<div style="font: 0pt arial;clear:both;"></div>\r\n\t</div>\r\n<br  id="DLG1.V.R1.CONTAINER_33.BREAK"  style="clear:both; " />\r\n<div style="font: 0pt arial;clear:both;"></div>\r\n\t</div>\r\n<br  id="DLG1.V.R1.CONTAINER_4.BREAK"  style="clear:both; " />\r\n<div style="width:" class="A5CWLayout">\r\n\t<div id="DLG1.V.R1.FREEFORM_2" class="" style=""   ><div id="msg2"></div></div>\r\n</div><div class="A5floatClear"></div>'
+			src: '<div \tid="DLG1.V.R1.CONTAINER_4"   \r\n\t\t\tclass="A5CWLayout "  style=""  >\r\n<div \tid="DLG1.V.R1.CONTAINER_7"   \r\n\t\t\tclass="A5CWLayout "  style="color: rgb(4,0,7); background-color: #cdd1e5; border-style: outset; padding-top: 2px; margin-top: 2px; top: 1px; width: 60%; height: 2.05in; border-radius: 6px; "  >\r\n<div style="display: table; margin: auto;">\r\n<div class="A5CWLayout" style="width: 100%" >\r\n\t<div id="DLG1.V.R1.STATICTEXT_4" title=""  class="" style="color: rgb(4,0,7); background-color: #cdd1e5; border-style: none; width: 100%; border-radius: 6px; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;"   ><center><img src="a5images/chartline.png" style="padding-top:20px; width:px;height:px"><br> Dashboard</center>  </div>\r\n</div><br  style="clear:both; " />\r\n<div class="A5CWLayout" style="width: 100%" >\r\n\t<div id="SPACER_2" style="width: 100%; height: 30px; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;; font: 0pt Arial;">&nbsp;</div>\r\n</div>\r\n\t\r\n<div class="A5CWLayout" style="width: 25%" >\r\n\t<div id="DLG1.V.R1.IMAGE_10" style="z-index:10000; width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; ; padding:0;margin:0;"    >\r\n\t\t<img src="a5images/genericconditionfalse.png" class="" style="width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;" title=""  onerror="if(typeof DLG1_DlgObj != \'undefined\') DLG1_DlgObj._executeEvent(\'onImageError\',{element: this});"  />\r\n\t</div>\r\n</div>\r\n<div class="A5CWLayout" style="width: 25%" >\r\n\t<span\tid="DLG1.V.R1.LABEL4" class="GrBlueGridData " style="text-align: center; color: rgb(4,0,7); background-color: #cdd1e5; width: 100%; border-radius: 6px; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;; display:inline-block" title=""    ></span>\r\n</div>\r\n<div class="A5CWLayout" style="width: 25%" >\r\n\t<div id="DLG1.V.R1.IMAGE_8" style="z-index:10000; width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; ; padding:0;margin:0;"    >\r\n\t\t<img src="a5images/genericcondition.png" class="" style="width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;" title=""  onerror="if(typeof DLG1_DlgObj != \'undefined\') DLG1_DlgObj._executeEvent(\'onImageError\',{element: this});"  />\r\n\t</div>\r\n</div>\r\n<div class="A5CWLayout" style="width: 25%" >\r\n\t<span\tid="DLG1.V.R1.LABEL1" class="GrBlueGridData " style="text-align: center; color: rgb(4,0,7); background-color: #cdd1e5; width: 100%; border-radius: 6px; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;; display:inline-block" title=""    ></span>\r\n</div><br  style="clear:both; " />\r\n<div class="A5CWLayout" style="width: 25%" >\r\n\t<div id="DLG1.V.R1.IMAGE_9" style="z-index:10000; width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; ; padding:0;margin:0;"    >\r\n\t\t<img src="a5images/genericconditiontrue.png" class="" style="width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;" title=""  onerror="if(typeof DLG1_DlgObj != \'undefined\') DLG1_DlgObj._executeEvent(\'onImageError\',{element: this});"  />\r\n\t</div>\r\n</div>\r\n<div class="A5CWLayout" style="width: 25%" >\r\n\t<span\tid="DLG1.V.R1.LABEL2" class="GrBlueGridData " style="text-align: center; color: rgb(4,0,7); background-color: #cdd1e5; width: 100%; border-radius: 6px; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;; display:inline-block" title=""    ></span>\r\n</div>\r\n<div class="A5CWLayout" style="width: 25%" >\r\n\t<div id="DLG1.V.R1.IMAGE_12" style="z-index:10000; width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; ; padding:0;margin:0;"    >\r\n\t\t<img src="a5images/editdelete.png" class="" style="width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;" title=""  onerror="if(typeof DLG1_DlgObj != \'undefined\') DLG1_DlgObj._executeEvent(\'onImageError\',{element: this});"  />\r\n\t</div>\r\n</div>\r\n<div class="A5CWLayout" style="width: 25%" >\r\n\t<span\tid="DLG1.V.R1.LABEL5" class="GrBlueGridData " style="text-align: center; background-color: transparent; width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;; display:inline-block" title=""    ></span>\r\n</div>\r\n<div style="font: 0pt arial;clear:both;"></div>\r\n\t</div>\r\n\t</div>\r\n\r\n<div \tid="DLG1.V.R1.CONTAINER_11"   \r\n\t\t\tclass="A5CWLayout "  style="color: rgb(4,0,7); background-color: #cdd1e5; border-style: outset; padding-top: 2px; margin-top: 2px; top: 2px; width: 40%; height: 1in; border-radius: 6px; "  >\r\n<div class="A5CWLayout" style="width: 75%" >\r\n\t<div id="SPACER_9" style="width: 100%; height: 1px; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;; font: 0pt Arial;">&nbsp;</div>\r\n</div>\r\n\t\r\n<div class="A5CWLayout" style="width: " >\r\n\t<div id="DLG1.V.R1.STATICTEXT_LISTSATISFACCION.RECORDCOUNT1" title=""  class="" style="color: #f00; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;"   ><span id=""></span></div>\r\n</div><br  style="clear:both; " />\r\n<div class="A5CWLayout" style="width: 100%" >\r\n\t<button type="button" id="DLG1.V.R1.BUTTON_131"    ></button>\r\n\t<br/>\r\n\t<label id="DLG1.LBL.R1.BUTTON_131" for="DLG1.V.R1.BUTTON_131" title="" class="GrBlueDialogLabel" style="text-align: Center; background-color: transparent; display: block; ">&nbsp;</label>\r\n\r\n</div><br  style="clear:both; " />\r\n<div style="font: 0pt arial;clear:both;"></div>\r\n\t</div>\r\n\r\n<div \tid="DLG1.V.R1.CONTAINER_21"   \r\n\t\t\tclass="A5CWLayout "  style="color: rgb(4,0,7); background-color: #cdd1e5; border-style: outset; padding-top: 2px; margin-top: 2px; top: 2px; width: 40%; height: 1in; border-radius: 6px; "  >\r\n<div class="A5CWLayout" style="width: 75%" >\r\n\t<div id="SPACER_10" style="width: 100%; height: 1px; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;; font: 0pt Arial;">&nbsp;</div>\r\n</div>\r\n\t\r\n<div class="A5CWLayout" style="width: " >\r\n\t<div id="DLG1.V.R1.STATICTEXT_LISTSATISFACCION.RECORDCOUNT2" title=""  class="" style="color: #f00; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;"   ><span id=""></span></div>\r\n</div><br  style="clear:both; " />\r\n<div class="A5CWLayout" style="width: 100%" >\r\n\t<button type="button" id="DLG1.V.R1.BUTTON_132"    ></button>\r\n\t<br/>\r\n\t<label id="DLG1.LBL.R1.BUTTON_132" for="DLG1.V.R1.BUTTON_132" title="" class="GrBlueDialogLabel" style="text-align: Center; background-color: transparent; display: block; ">&nbsp;</label>\r\n\r\n</div><br  style="clear:both; " />\r\n<div style="font: 0pt arial;clear:both;"></div>\r\n\t</div>\r\n\r\n<div \tid="DLG1.V.R1.CONTAINER_22"   \r\n\t\t\tclass="A5CWLayout "  style="color: rgb(4,0,7); background-color: #cdd1e5; border-style: outset; padding-top: 2px; margin-top: 2px; top: 2px; width: 40%; height: 1in; border-radius: 6px; "  >\r\n<div class="A5CWLayout" style="width: 75%" >\r\n\t<div id="SPACER_11" style="width: 100%; height: 1px; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;; font: 0pt Arial;">&nbsp;</div>\r\n</div>\r\n\t\r\n<div class="A5CWLayout" style="width: " >\r\n\t<div id="DLG1.V.R1.STATICTEXT_LISTSATISFACCION.RECORDCOUNT3" title=""  class="" style="color: #f00; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;"   ><span id=""></span></div>\r\n</div><br  style="clear:both; " />\r\n<div class="A5CWLayout" style="width: 100%" >\r\n\t<button type="button" id="DLG1.V.R1.BUTTON_133"    ></button>\r\n\t<br/>\r\n\t<label id="DLG1.LBL.R1.BUTTON_133" for="DLG1.V.R1.BUTTON_133" title="" class="GrBlueDialogLabel" style="text-align: Center; background-color: transparent; display: block; ">&nbsp;</label>\r\n\r\n</div><br  style="clear:both; " />\r\n<div style="font: 0pt arial;clear:both;"></div>\r\n\t</div>\r\n\r\n<div class="A5CWLayout" style="width: 60%" >\r\n\t<div id="SPACER_7" style="width: 100%; height: 1px; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;; font: 0pt Arial;">&nbsp;</div>\r\n</div>\r\n\t\r\n<div \tid="DLG1.V.R1.CONTAINER_8"   \r\n\t\t\tclass="A5CWLayout "  style="color: rgb(4,0,7); background-color: #cdd1e5; border-style: outset; padding-top: 2px; margin-top: 2px; top: 2px; width: 40%; height: 1in; border-radius: 6px; "  >\r\n<div class="A5CWLayout" style="width: 75%" >\r\n\t<div id="SPACER_6" style="width: 100%; height: 1px; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;; font: 0pt Arial;">&nbsp;</div>\r\n</div>\r\n\t\r\n<div class="A5CWLayout" style="width: " >\r\n\t<div id="DLG1.V.R1.STATICTEXT_LISTSATISFACCION.RECORDCOUNT" title=""  class="" style="color: #f00; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;"   ><span id="DLG1.listSatisfaccion.RECORDCOUNT"></span></div>\r\n</div><br  style="clear:both; " />\r\n<div class="A5CWLayout" style="width: 100%" >\r\n\t<button type="button" id="DLG1.V.R1.BUTTON_119"    ></button>\r\n</div><br  style="clear:both; " />\r\n<div style="font: 0pt arial;clear:both;"></div>\r\n\t</div>\r\n<br  id="DLG1.V.R1.CONTAINER_8.BREAK"  style="clear:both; " />\r\n<div class="A5CWLayout" style="width: 60%" >\r\n\t<div id="SPACER_8" style="width: 100%; height: 1px; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;; font: 0pt Arial;">&nbsp;</div>\r\n</div>\r\n\t\r\n<div \tid="DLG1.V.R1.CONTAINER_34"   \r\n\t\t\tclass="A5CWLayout "  style="color: rgb(4,0,7); background-color: #cdd1e5; border-style: outset; padding-top: 2px; margin-top: 2px; top: 2px; width: 40%; height: 1in; border-radius: 6px; "  >\r\n<div class="A5CWLayout" style="width: 75%" >\r\n\t<div id="SPACER_13" style="width: 100%; height: 1px; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;; font: 0pt Arial;">&nbsp;</div>\r\n</div>\r\n\t\r\n<div class="A5CWLayout" style="width: " >\r\n\t<div id="DLG1.V.R1.STATICTEXT_LISTSATISFACCION.RECORDCOUNT5" title=""  class="" style="color: #f00; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;"   ><span id="DLG1.listSatisfaccion.RECORDCOUNT"></span></div>\r\n</div><br  style="clear:both; " />\r\n<div class="A5CWLayout" style="width: 100%" >\r\n\t<button type="button" id="DLG1.V.R1.BUTTON_138"    ></button>\r\n</div><br  style="clear:both; " />\r\n<div style="font: 0pt arial;clear:both;"></div>\r\n\t</div>\r\n<br  id="DLG1.V.R1.CONTAINER_34.BREAK"  style="clear:both; " />\r\n<div class="A5CWLayout" style="width: 60%" >\r\n\t<div id="SPACER_14" style="width: 100%; height: 1px; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;; font: 0pt Arial;">&nbsp;</div>\r\n</div>\r\n\t\r\n<div \tid="DLG1.V.R1.CONTAINER_33"  onclick="function tempfunction_669a5c13_fc03_4c25_8c8d_eed3e79cf238() {\r\nDLG1_DlgObj.logout()\r\n}\r\nfunction tempfunction_5d6c5b7e_168f_40ea_9f1f_8c43b82f895d() {\r\nDLG1_DlgObj.panelSetActive(\'PANEL_LOGIN\',true);\r\n}\r\nA5.executeThisThenThat(tempfunction_669a5c13_fc03_4c25_8c8d_eed3e79cf238,tempfunction_5d6c5b7e_168f_40ea_9f1f_8c43b82f895d);"  \r\n\t\t\tclass="A5CWLayout "  style="color: rgb(4,0,7); background-color: #cdd1e5; border-style: outset; padding-top: 2px; margin-top: 2px; top: 2px; width: 40%; height: 1in; border-radius: 6px; "  >\r\n<div class="A5CWLayout" style="width: 75%" >\r\n\t<div id="SPACER_12" style="width: 100%; height: 1px; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;; font: 0pt Arial;">&nbsp;</div>\r\n</div>\r\n\t\r\n<div class="A5CWLayout" style="width: " >\r\n\t<div id="DLG1.V.R1.STATICTEXT_LISTSATISFACCION.RECORDCOUNT4" title=""  class="" style="color: #f00; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;"   ><span id=""></span></div>\r\n</div><br  style="clear:both; " />\r\n<div class="A5CWLayout" style="width: 100%" >\r\n\t<button type="button" id="DLG1.V.R1.BUTTON_134"    ></button>\r\n\t<br/>\r\n\t<label id="DLG1.LBL.R1.BUTTON_134" for="DLG1.V.R1.BUTTON_134" title="" class="GrBlueDialogLabel" style="text-align: Center; background-color: transparent; display: block; ">&nbsp;</label>\r\n\r\n</div><br  style="clear:both; " />\r\n<div style="font: 0pt arial;clear:both;"></div>\r\n\t</div>\r\n<br  id="DLG1.V.R1.CONTAINER_33.BREAK"  style="clear:both; " />\r\n<div style="font: 0pt arial;clear:both;"></div>\r\n\t</div>\r\n<br  id="DLG1.V.R1.CONTAINER_4.BREAK"  style="clear:both; " />\r\n<div style="width:" class="A5CWLayout">\r\n\t<div id="DLG1.V.R1.FREEFORM_2" class="" style=""   ><div id="msg2"></div></div>\r\n</div><div class="A5floatClear"></div>'
 		},
 		scroll: {
 			axis: 'both',
@@ -1150,7 +1176,7 @@ if(typeof DLG1_DlgObj != 'undefined' && typeof DLG1_DlgObj._panelCardResize != '
 		show: true
 	},
 	footer: {
-		html: '<div class="A5CWLayout" style="width: 50%" > \t<button type="button" id="DLG1.V.R1.BUTTON_101"    ></button> </div> <div class="A5CWLayout" style="width: 50%" > \t<button type="button" id="DLG1.V.R1.BUTTON_102"    ></button> </div> ',
+		html: '<div class="A5CWLayout" style="width: 50%" > \t<button type="button" id="DLG1.V.R1.BUTTON_101"    ></button> </div> ',
 		show: true
 	},
 	overlay: {
@@ -1207,6 +1233,8 @@ if(typeof DLG1_DlgObj != 'undefined' && typeof DLG1_DlgObj._panelCardResize != '
 		show: true
 	},
 	footer: {
+		html: '<div class="A5CWLayout" style="width: 50%" > \t<select \t \t\tsize="1"  \t\tclass="GrBlueEdit "   \t\tname="V.R1.ID_ESTADORECORRIDO"  \t\ttitle="" \t\tstyle="width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;" \t\tid="DLG1.V.R1.ID_ESTADORECORRIDO"   \t\t   \t\t \t\t \t\t > <option value="8">Cancelado</option> <option value="3">Completado</option> <option value="2">En Curso</option> <option value="1">No Comenzado</option> <option value="4">Prefacturado</option> <option value="5">Validado</option>  </select>  </div> <div class="A5CWLayout" style="width: 25%" > \t<button type="button" id="DLG1.V.R1.BUTTON_LISTSEARCH_LISTRECORRIDO"    ></button> </div> <div class="A5CWLayout" style="width: 25%" > \t<button type="button" id="DLG1.V.R1.BUTTON_LISTSEARCHCLEAR_LISTRECORRIDO"    ></button> </div> ',
+		show: true
 	},
 	overlay: {
 	},
@@ -1220,6 +1248,63 @@ if(typeof DLG1_DlgObj != 'undefined' && DLG1_DlgObj ) {var mObj = DLG1_DlgObj.ge
   }
  }
 if(typeof DLG1_DlgObj != 'undefined' && typeof DLG1_DlgObj._panelCardResize != 'undefined') { DLG1_DlgObj._panelCardResize('PANELCARD_RECORRIDO'); };}
+})
+},
+{
+	name: 'PANELCARD_RECORRIDO1',
+	src: new A5.PanelCard({
+	theme: 'GrBlue',
+	body: {
+		content: {
+			type: 'html',
+			src: '<div class="A5CWLayout" style="width: 100%" >\r\n\t\r\n<div  class="GrBlueList"   style="padding:0px; "  >\r\n\t<div id="DLG1.V.R1.LISTRECORRIDO1.CONTROL"  class="DLG1_LISTRECORRIDO1 <Default>" style="overflow: auto; width: 100%; height: 3in; "></div>\r\n</div>\r\n\r\n</div><br  style="clear:both; " />\r\n<div class="A5floatClear"></div>'
+		},
+		scroll: {
+			axis: 'both',
+			stopPropogation: false,
+			pull: {
+				y: 'auto',
+				x: 'auto'
+			},
+			indicator: {
+				show: true,
+				h: {
+					show: true,
+					location: 'top',
+					offset: '0px',
+					left: '0px',
+					right: '0px'
+				},
+				v: {
+					show: true,
+					location: 'right',
+					offset: '0px',
+					top: '0px',
+					bottom: '0px'
+				}
+			}
+		}
+	},
+	header: {
+		html: '<div class="A5CWLayout" style="padding: 0px; width: 50%"><div class="A5CWLayout" style="width: " > \t<button type="button" id="DLG1.V.R1.BUTTON_139"    ></button> </div> </div> <div class="A5CWLayout" style="padding: 0px; width: 50%"><div style="float:right;"> <div class="A5CWLayout" style="width: " > \t<button type="button" id="DLG1.V.R1.BUTTON_140"    ></button> </div> </div></div> <br style="clear: both;" /><div style="display:none;"></div>',
+		show: true
+	},
+	footer: {
+		html: '<div class="A5CWLayout" style="width: 50%" > \t<select \t \t\tsize="1"  \t\tclass="GrBlueEdit "   \t\tname="V.R1.ID_ESTADORECORRIDO1"  \t\ttitle="" \t\tstyle="width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;" \t\tid="DLG1.V.R1.ID_ESTADORECORRIDO1"   \t\t   \t\t \t\t \t\t > <option value="8">Cancelado</option> <option value="3">Completado</option> <option value="2">En Curso</option> <option value="1">No Comenzado</option> <option value="4">Prefacturado</option> <option value="5">Validado</option>  </select>  </div> <div class="A5CWLayout" style="width: 25%" > \t<button type="button" id="DLG1.V.R1.BUTTON_LISTSEARCH_LISTRECORRIDO1"    ></button> </div> <div class="A5CWLayout" style="width: 25%" > \t<button type="button" id="DLG1.V.R1.BUTTON_LISTSEARCHCLEAR_LISTRECORRIDO1"    ></button> </div> ',
+		show: true
+	},
+	overlay: {
+	},
+	onSize: function() {;
+if(typeof DLG1_DlgObj != 'undefined' && DLG1_DlgObj ) {var mObj = DLG1_DlgObj.getControl('LISTRECORRIDO1'); if(mObj) {
+   if(mObj.resize) {
+    mObj.resize();
+   } else {
+    mObj.refresh()
+   }
+  }
+ }
+if(typeof DLG1_DlgObj != 'undefined' && typeof DLG1_DlgObj._panelCardResize != 'undefined') { DLG1_DlgObj._panelCardResize('PANELCARD_RECORRIDO1'); };}
 })
 },
 {
@@ -1699,6 +1784,7 @@ DLG1_PanelObj._panelPath = {
 	PANELCARD_RRHH: 'PANELCARD_RRHH',
 	PANELCARD_RRHH1: 'PANELCARD_RRHH1',
 	PANELCARD_RECORRIDO: 'PANELCARD_RECORRIDO',
+	PANELCARD_RECORRIDO1: 'PANELCARD_RECORRIDO1',
 	PANELCARD_SATISFACCION: 'PANELCARD_SATISFACCION',
 	PANELCARD_SERVICIOS: 'PANELCARD_SERVICIOS',
 	PANELCARD_PRESENTACIONENCUESTA: 'PANELCARD_PRESENTACIONENCUESTA',
@@ -1709,7 +1795,7 @@ DLG1_PanelObj._panelPath = {
 	PANELCARD_PREGUNTA5: 'PANELCARD_PREGUNTA5'
 }
 DLG1_PanelObj._displayNames = {
-PANEL_LOGIN : 'PANEL_LOGIN',PANELCARD_INICIO : 'PANELCARD_INICIO',PANELCARD_PREFACTURAS : 'PANELCARD_PREFACTURAS',PANELCARD_PREFACTURAS2 : 'PANELCARD_PREFACTURAS2',PANELCARD_RRHH : 'PANELCARD_RRHH',PANELCARD_RRHH1 : 'PANELCARD_RRHH1',PANELCARD_RECORRIDO : 'PANELCARD_RECORRIDO',PANELCARD_SATISFACCION : 'PANELCARD_SATISFACCION',PANELCARD_SERVICIOS : 'PANELCARD_SERVICIOS',PANELCARD_PRESENTACIONENCUESTA : 'PANELCARD_PRESENTACIONENCUESTA',PANELCARD_PREGUNTA1 : 'PANELCARD_PREGUNTA1',PANELCARD_PREGUNTA2 : 'PANELCARD_PREGUNTA2',PANELCARD_PREGUNTA3 : 'PANELCARD_PREGUNTA3',PANELCARD_PREGUNTA4 : 'PANELCARD_PREGUNTA4',PANELCARD_PREGUNTA5 : 'PANELCARD_PREGUNTA5',PANEL_APPLICATIONNAVIGATOR : 'PANEL_APPLICATIONNAVIGATOR'
+PANEL_LOGIN : 'PANEL_LOGIN',PANELCARD_INICIO : 'PANELCARD_INICIO',PANELCARD_PREFACTURAS : 'PANELCARD_PREFACTURAS',PANELCARD_PREFACTURAS2 : 'PANELCARD_PREFACTURAS2',PANELCARD_RRHH : 'PANELCARD_RRHH',PANELCARD_RRHH1 : 'PANELCARD_RRHH1',PANELCARD_RECORRIDO : 'PANELCARD_RECORRIDO',PANELCARD_RECORRIDO1 : 'PANELCARD_RECORRIDO1',PANELCARD_SATISFACCION : 'PANELCARD_SATISFACCION',PANELCARD_SERVICIOS : 'PANELCARD_SERVICIOS',PANELCARD_PRESENTACIONENCUESTA : 'PANELCARD_PRESENTACIONENCUESTA',PANELCARD_PREGUNTA1 : 'PANELCARD_PREGUNTA1',PANELCARD_PREGUNTA2 : 'PANELCARD_PREGUNTA2',PANELCARD_PREGUNTA3 : 'PANELCARD_PREGUNTA3',PANELCARD_PREGUNTA4 : 'PANELCARD_PREGUNTA4',PANELCARD_PREGUNTA5 : 'PANELCARD_PREGUNTA5',PANEL_APPLICATIONNAVIGATOR : 'PANEL_APPLICATIONNAVIGATOR'
 };
 if(typeof DLG1_DlgObj == 'object') DLG1_DlgObj._destroy();
 var DLG1_DlgObj = new A5.DialogComponentHelper('DLG1',{
@@ -1717,7 +1803,7 @@ var DLG1_DlgObj = new A5.DialogComponentHelper('DLG1',{
 	_embeddedMode: false,
 	_livePreviewInBuilder: false,
 	componentGUID: '57f8c0fe-416f-458a-a00b-6a038ee025da',
-	columnInfo: {'USERID': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'PASSWORD': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'GUID': {info: {controlType: 'textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'TEXTBOX1': {info: {controlType: 'Label'}, hiddenVal: false, type: 'label,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'LABEL4': {info: {controlType: 'label'}, hiddenVal: false, type: 'label,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'LABEL1': {info: {controlType: 'label'}, hiddenVal: false, type: 'label,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'LABEL2': {info: {controlType: 'label'}, hiddenVal: false, type: 'label,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'LABEL5': {info: {controlType: 'label'}, hiddenVal: false, type: 'label,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'LISTPREFACTURAS': {info: {controlType: 'list'}, hiddenVal: false, type: 'control', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'LISTPREFACTURAS2': {info: {controlType: 'list'}, hiddenVal: false, type: 'control', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'LISTRRHH': {info: {controlType: 'list'}, hiddenVal: false, type: 'control', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'ID_TRABAJADOR': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'N'  },'LISTRRHH1': {info: {controlType: 'list'}, hiddenVal: false, type: 'control', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'LISTRECORRIDO': {info: {controlType: 'list'}, hiddenVal: false, type: 'control', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'LISTSATISFACCION': {info: {controlType: 'list'}, hiddenVal: false, type: 'control', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'ID_SATISFACCION': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'N'  },'ID_CLIENTE': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'N'  },'LISTSERVICIOSENCUESTA': {info: {controlType: 'list'}, hiddenVal: false, type: 'control', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'STARRATING': {info: {controlType: 'StarRating'}, hiddenVal: false, type: 'control', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'PREGUNTA_CUMPLIMOSESPECTATIVAS_DESCRIPCION': {info: {controlType: 'TextArea'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'STARRATING1': {info: {controlType: 'StarRating'}, hiddenVal: false, type: 'control', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'PREGUNTA_RELACIONCALIDAPRECIO_DESCRIPCION': {info: {controlType: 'TextArea'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'STARRATING3': {info: {controlType: 'StarRating'}, hiddenVal: false, type: 'control', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'PREGUNTA_SISTEMAINFORMACION_DESCRIPCION': {info: {controlType: 'TextArea'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'CHECK_TIENEREDESSOCIALES': {info: {controlType: 'RadioButton'}, hiddenVal: false, type: 'logicalRadio,label', isCalc: false, hlp: '', isArray: false, dataType: 'L'  },'CHECK_NOSSIGUEREDESSOCIALES': {info: {controlType: 'RadioButton'}, hiddenVal: false, type: 'logicalRadio,label', isCalc: false, hlp: '', isArray: false, dataType: 'L'  },'STARRATING2': {info: {controlType: 'StarRating'}, hiddenVal: false, type: 'control', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'PREGUNTA_CONTENIDOREDESSOCIALES_DESCRIPCION': {info: {controlType: 'TextArea'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'STARRATING4': {info: {controlType: 'StarRating'}, hiddenVal: false, type: 'control', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'PREGUNTA_RECOMIENDASERVICIO_DESCRIPCION': {info: {controlType: 'TextArea'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  }},
+	columnInfo: {'USERID': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'PASSWORD': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'GUID': {info: {controlType: 'textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'TEXTBOX1': {info: {controlType: 'Label'}, hiddenVal: false, type: 'label,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'LABEL4': {info: {controlType: 'label'}, hiddenVal: false, type: 'label,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'LABEL1': {info: {controlType: 'label'}, hiddenVal: false, type: 'label,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'LABEL2': {info: {controlType: 'label'}, hiddenVal: false, type: 'label,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'LABEL5': {info: {controlType: 'label'}, hiddenVal: false, type: 'label,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'LISTPREFACTURAS': {info: {controlType: 'list'}, hiddenVal: false, type: 'control', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'LISTPREFACTURAS2': {info: {controlType: 'list'}, hiddenVal: false, type: 'control', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'LISTRRHH': {info: {controlType: 'list'}, hiddenVal: false, type: 'control', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'ID_TRABAJADOR': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'N'  },'LISTRRHH1': {info: {controlType: 'list'}, hiddenVal: false, type: 'control', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'LISTRECORRIDO': {info: {controlType: 'list'}, hiddenVal: false, type: 'control', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'ID_ESTADORECORRIDO': {info: {controlType: 'DropDownBox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'N'  },'LISTRECORRIDO1': {info: {controlType: 'list'}, hiddenVal: false, type: 'control', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'ID_ESTADORECORRIDO1': {info: {controlType: 'DropDownBox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'N'  },'LISTSATISFACCION': {info: {controlType: 'list'}, hiddenVal: false, type: 'control', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'ID_SATISFACCION': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'N'  },'ID_CLIENTE': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'N'  },'LISTSERVICIOSENCUESTA': {info: {controlType: 'list'}, hiddenVal: false, type: 'control', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'STARRATING': {info: {controlType: 'StarRating'}, hiddenVal: false, type: 'control', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'PREGUNTA_CUMPLIMOSESPECTATIVAS_DESCRIPCION': {info: {controlType: 'TextArea'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'STARRATING1': {info: {controlType: 'StarRating'}, hiddenVal: false, type: 'control', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'PREGUNTA_RELACIONCALIDAPRECIO_DESCRIPCION': {info: {controlType: 'TextArea'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'STARRATING3': {info: {controlType: 'StarRating'}, hiddenVal: false, type: 'control', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'PREGUNTA_SISTEMAINFORMACION_DESCRIPCION': {info: {controlType: 'TextArea'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'CHECK_TIENEREDESSOCIALES': {info: {controlType: 'RadioButton'}, hiddenVal: false, type: 'logicalRadio,label', isCalc: false, hlp: '', isArray: false, dataType: 'L'  },'CHECK_NOSSIGUEREDESSOCIALES': {info: {controlType: 'RadioButton'}, hiddenVal: false, type: 'logicalRadio,label', isCalc: false, hlp: '', isArray: false, dataType: 'L'  },'STARRATING2': {info: {controlType: 'StarRating'}, hiddenVal: false, type: 'control', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'PREGUNTA_CONTENIDOREDESSOCIALES_DESCRIPCION': {info: {controlType: 'TextArea'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'STARRATING4': {info: {controlType: 'StarRating'}, hiddenVal: false, type: 'control', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'PREGUNTA_RECOMIENDASERVICIO_DESCRIPCION': {info: {controlType: 'TextArea'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  }},
 	originalValues: [{
 	"USERID": "",
 	"PASSWORD": "",
@@ -1733,6 +1819,9 @@ var DLG1_DlgObj = new A5.DialogComponentHelper('DLG1',{
 	"ID_TRABAJADOR": "",
 	"LISTRRHH1": "",
 	"LISTRECORRIDO": "",
+	"ID_ESTADORECORRIDO": "",
+	"LISTRECORRIDO1": "",
+	"ID_ESTADORECORRIDO1": "",
 	"LISTSATISFACCION": "",
 	"ID_SATISFACCION": "",
 	"ID_CLIENTE": "",
@@ -1765,6 +1854,9 @@ var DLG1_DlgObj = new A5.DialogComponentHelper('DLG1',{
 	"ID_TRABAJADOR": "",
 	"LISTRRHH1": "",
 	"LISTRECORRIDO": "",
+	"ID_ESTADORECORRIDO": "",
+	"LISTRECORRIDO1": "",
+	"ID_ESTADORECORRIDO1": "",
 	"LISTSATISFACCION": "",
 	"ID_SATISFACCION": "",
 	"ID_CLIENTE": "",
@@ -1933,6 +2025,61 @@ DLG1_DlgObj.dialogWatches['ENABLE_BUTTON_127'] = {
 	}
 	;;
 	DLG1_DlgObj._executeEvent('onWatchEvent',{type: 'enable', control: 'BUTTON_127', flag: enable});}
+}
+DLG1_DlgObj.dialogWatches['ENABLE_BUTTON_LISTSEARCHCLEAR_LISTRECORRIDO'] = {
+		watch: [],
+		variables: [],
+		onChange: function(data) {
+	var dialog = {};
+	var summary = {};
+	DLG1_DlgObj._getDialogVariables(dialog,summary,data);
+	var enable = (dialog.listDetailView.LISTRECORRIDO.isDirty == false);
+	var eles = $cetp($n('V.R' + data.rowNumber + '.BUTTON_LISTSEARCHCLEAR_LISTRECORRIDO'),$('DLG1.R'+data.rowNumber));
+	if(typeof eles.length == 'undefined' || eles.length == 0) eles = [$('DLG1.'+'V.R' + data.rowNumber + '.BUTTON_LISTSEARCHCLEAR_LISTRECORRIDO')];
+	var pObj = DLG1_DlgObj.getControl('BUTTON_LISTSEARCHCLEAR_LISTRECORRIDO'); if(pObj) { if(typeof pObj.setDisabled != 'undefined') {  pObj.setDisabled(!enable,eles); return true;  } }
+	if(typeof DLG1_DlgObj._buttons['BUTTON_LISTSEARCHCLEAR_LISTRECORRIDO'] != 'undefined') {
+	DLG1_DlgObj._buttons['BUTTON_LISTSEARCHCLEAR_LISTRECORRIDO'].setDisabled(!enable,eles)
+	} else {
+	for(var i=0; i<eles.length;i++) eles[i].disabled = !enable;
+	}
+	;;
+	DLG1_DlgObj._executeEvent('onWatchEvent',{type: 'enable', control: 'BUTTON_LISTSEARCHCLEAR_LISTRECORRIDO', flag: enable});}
+}
+DLG1_DlgObj.dialogWatches['ENABLE_BUTTON_140'] = {
+		watch: [],
+		variables: [],
+		onChange: function(data) {
+	var dialog = {};
+	var summary = {};var enable = (selectListaRecorrido() == true);
+	var eles = $cetp($n('V.R' + data.rowNumber + '.BUTTON_140'),$('DLG1.R'+data.rowNumber));
+	if(typeof eles.length == 'undefined' || eles.length == 0) eles = [$('DLG1.'+'V.R' + data.rowNumber + '.BUTTON_140')];
+	var pObj = DLG1_DlgObj.getControl('BUTTON_140'); if(pObj) { if(typeof pObj.setDisabled != 'undefined') {  pObj.setDisabled(!enable,eles); return true;  } }
+	if(typeof DLG1_DlgObj._buttons['BUTTON_140'] != 'undefined') {
+	DLG1_DlgObj._buttons['BUTTON_140'].setDisabled(!enable,eles)
+	} else {
+	for(var i=0; i<eles.length;i++) eles[i].disabled = !enable;
+	}
+	;;
+	DLG1_DlgObj._executeEvent('onWatchEvent',{type: 'enable', control: 'BUTTON_140', flag: enable});}
+}
+DLG1_DlgObj.dialogWatches['ENABLE_BUTTON_LISTSEARCHCLEAR_LISTRECORRIDO1'] = {
+		watch: [],
+		variables: [],
+		onChange: function(data) {
+	var dialog = {};
+	var summary = {};
+	DLG1_DlgObj._getDialogVariables(dialog,summary,data);
+	var enable = (dialog.listDetailView.LISTRECORRIDO.isDirty == false);
+	var eles = $cetp($n('V.R' + data.rowNumber + '.BUTTON_LISTSEARCHCLEAR_LISTRECORRIDO1'),$('DLG1.R'+data.rowNumber));
+	if(typeof eles.length == 'undefined' || eles.length == 0) eles = [$('DLG1.'+'V.R' + data.rowNumber + '.BUTTON_LISTSEARCHCLEAR_LISTRECORRIDO1')];
+	var pObj = DLG1_DlgObj.getControl('BUTTON_LISTSEARCHCLEAR_LISTRECORRIDO1'); if(pObj) { if(typeof pObj.setDisabled != 'undefined') {  pObj.setDisabled(!enable,eles); return true;  } }
+	if(typeof DLG1_DlgObj._buttons['BUTTON_LISTSEARCHCLEAR_LISTRECORRIDO1'] != 'undefined') {
+	DLG1_DlgObj._buttons['BUTTON_LISTSEARCHCLEAR_LISTRECORRIDO1'].setDisabled(!enable,eles)
+	} else {
+	for(var i=0; i<eles.length;i++) eles[i].disabled = !enable;
+	}
+	;;
+	DLG1_DlgObj._executeEvent('onWatchEvent',{type: 'enable', control: 'BUTTON_LISTSEARCHCLEAR_LISTRECORRIDO1', flag: enable});}
 }
 DLG1_DlgObj.dialogWatches['ENABLE_BUTTON_8'] = {
 		watch: [],
@@ -2405,6 +2552,9 @@ LISTRRHH:'PANELCARD_RRHH',
 ID_TRABAJADOR:'PANELCARD_RRHH',
 LISTRRHH1:'PANELCARD_RRHH1',
 LISTRECORRIDO:'PANELCARD_RECORRIDO',
+ID_ESTADORECORRIDO:'PANELCARD_RECORRIDO',
+LISTRECORRIDO1:'PANELCARD_RECORRIDO1',
+ID_ESTADORECORRIDO1:'PANELCARD_RECORRIDO1',
 LISTSATISFACCION:'PANELCARD_SATISFACCION',
 ID_SATISFACCION:'PANELCARD_SATISFACCION',
 ID_CLIENTE:'PANELCARD_SATISFACCION',
@@ -2429,7 +2579,8 @@ DLG1_DlgObj._controlsOnPanel = {
 	'PANELCARD_PREFACTURAS2' : {controls: ['LISTPREFACTURAS2']},
 	'PANELCARD_RRHH' : {controls: ['LISTRRHH','ID_TRABAJADOR']},
 	'PANELCARD_RRHH1' : {controls: ['LISTRRHH1']},
-	'PANELCARD_RECORRIDO' : {controls: ['LISTRECORRIDO']},
+	'PANELCARD_RECORRIDO' : {controls: ['LISTRECORRIDO','ID_ESTADORECORRIDO']},
+	'PANELCARD_RECORRIDO1' : {controls: ['LISTRECORRIDO1','ID_ESTADORECORRIDO1']},
 	'PANELCARD_SATISFACCION' : {controls: ['LISTSATISFACCION','ID_SATISFACCION','ID_CLIENTE']},
 	'PANELCARD_SERVICIOS' : {controls: ['LISTSERVICIOSENCUESTA']},
 	'PANELCARD_PREGUNTA1' : {controls: ['STARRATING','PREGUNTA_CUMPLIMOSESPECTATIVAS_DESCRIPCION']},
@@ -2515,6 +2666,18 @@ DLG1_DlgObj._buttons['BUTTON_119'] = new A5.Button({
 },
 	theme: 'GrBlue:toolbar'
 });
+DLG1_DlgObj._buttons['BUTTON_138'] = new A5.Button({
+	layout: 'icon/text',
+	style: 'width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; ',
+	hoverClassName: 'color: #ff7a59;\r\n  border: #ff7a59 solid 1px;\r\n  background:#fff;',
+	pressedClassName: 'color: #ff7a59;\r\n  border: #ff7a59 solid 1px;\r\n  background:#fff;',
+	html: 'Reporte Posici&#0243;n',
+	icon: 'a5images/genericfavoritescriptsedit.png',
+	disabledIcon: 'a5images/disabledgenericfavoritescriptsedit.png',
+	onClick: function() { 
+},
+	theme: 'GrBlue:toolbar'
+});
 DLG1_DlgObj._buttons['BUTTON_134'] = new A5.Button({
 	layout: 'icon/text',
 	style: 'width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; ',
@@ -2587,16 +2750,6 @@ DLG1_DlgObj._buttons['BUTTON_101'] = new A5.Button({
 },
 	theme: 'GrBlue:base'
 });
-DLG1_DlgObj._buttons['BUTTON_102'] = new A5.Button({
-	layout: 'icon/text',
-	style: 'width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; ',
-	html: 'Llamar',
-	icon: 'a5images/devicemobilephone.png',
-	disabledIcon: 'a5images/disableddevicemobilephone.png',
-	onClick: function() { 
-},
-	theme: 'GrBlue:base'
-});
 DLG1_DlgObj._buttons['BUTTON_117'] = new A5.Button({
 	layout: 'icon text',
 	style: 'box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;',
@@ -2616,6 +2769,70 @@ DLG1_DlgObj._buttons['BUTTON_127'] = new A5.Button({
 	onClick: function() { 
 },
 	theme: 'GrBlue:base'
+});
+DLG1_DlgObj._buttons['BUTTON_LISTSEARCH_LISTRECORRIDO'] = new A5.Button({
+	layout: 'icon',
+	style: 'width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; ',
+	tip: 'Search for matching records.',
+	html: 'Search',
+	icon: 'a5images/presentationformfind.png',
+	disabledIcon: 'a5images/disabledpresentationformfind.png',
+	onClick: function() { 
+},
+	theme: 'GrBlue'
+});
+DLG1_DlgObj._buttons['BUTTON_LISTSEARCHCLEAR_LISTRECORRIDO'] = new A5.Button({
+	layout: 'icon',
+	style: 'width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; ',
+	tip: 'Remove the List filter.',
+	html: 'Clear Filter',
+	icon: 'a5images/presentationformfindclear.png',
+	disabledIcon: 'a5images/disabledpresentationformfindclear.png',
+	onClick: function() { 
+},
+	theme: 'GrBlue'
+});
+DLG1_DlgObj._buttons['BUTTON_139'] = new A5.Button({
+	layout: 'icon text',
+	style: 'box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;',
+	html: 'Inicio',
+	icon: 'a5images/generichome.png',
+	disabledIcon: 'a5images/disabledgenerichome.png',
+	onClick: function() { 
+},
+	theme: 'GrBlue:base'
+});
+DLG1_DlgObj._buttons['BUTTON_140'] = new A5.Button({
+	layout: 'icon',
+	style: 'box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;',
+	html: 'Descargar Documentos',
+	icon: 'a5images/webdownload.png',
+	disabledIcon: 'a5images/disabledwebdownload.png',
+	onClick: function() { 
+},
+	theme: 'GrBlue:base'
+});
+DLG1_DlgObj._buttons['BUTTON_LISTSEARCH_LISTRECORRIDO1'] = new A5.Button({
+	layout: 'icon',
+	style: 'width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; ',
+	tip: 'Search for matching records.',
+	html: 'Search',
+	icon: 'a5images/presentationformfind.png',
+	disabledIcon: 'a5images/disabledpresentationformfind.png',
+	onClick: function() { 
+},
+	theme: 'GrBlue'
+});
+DLG1_DlgObj._buttons['BUTTON_LISTSEARCHCLEAR_LISTRECORRIDO1'] = new A5.Button({
+	layout: 'icon',
+	style: 'width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; ',
+	tip: 'Remove the List filter.',
+	html: 'Clear Filter',
+	icon: 'a5images/presentationformfindclear.png',
+	disabledIcon: 'a5images/disabledpresentationformfindclear.png',
+	onClick: function() { 
+},
+	theme: 'GrBlue'
 });
 DLG1_DlgObj._buttons['BUTTON_116'] = new A5.Button({
 	layout: 'icon text',
@@ -2866,6 +3083,7 @@ DLG1_DlgObj._buttons['BUTTON_131'].bind('DLG1.V.R1.BUTTON_131');
 DLG1_DlgObj._buttons['BUTTON_132'].bind('DLG1.V.R1.BUTTON_132');
 DLG1_DlgObj._buttons['BUTTON_133'].bind('DLG1.V.R1.BUTTON_133');
 DLG1_DlgObj._buttons['BUTTON_119'].bind('DLG1.V.R1.BUTTON_119');
+DLG1_DlgObj._buttons['BUTTON_138'].bind('DLG1.V.R1.BUTTON_138');
 DLG1_DlgObj._buttons['BUTTON_134'].bind('DLG1.V.R1.BUTTON_134');
 DLG1_DlgObj._buttons['BUTTON_135'].bind('DLG1.V.R1.BUTTON_135');
 DLG1_DlgObj._buttons['BUTTON_104'].bind('DLG1.V.R1.BUTTON_104');
@@ -2873,9 +3091,14 @@ DLG1_DlgObj._buttons['BUTTON_137'].bind('DLG1.V.R1.BUTTON_137');
 DLG1_DlgObj._buttons['BUTTON_136'].bind('DLG1.V.R1.BUTTON_136');
 DLG1_DlgObj._buttons['BUTTON_103'].bind('DLG1.V.R1.BUTTON_103');
 DLG1_DlgObj._buttons['BUTTON_101'].bind('DLG1.V.R1.BUTTON_101');
-DLG1_DlgObj._buttons['BUTTON_102'].bind('DLG1.V.R1.BUTTON_102');
 DLG1_DlgObj._buttons['BUTTON_117'].bind('DLG1.V.R1.BUTTON_117');
 DLG1_DlgObj._buttons['BUTTON_127'].bind('DLG1.V.R1.BUTTON_127');
+DLG1_DlgObj._buttons['BUTTON_LISTSEARCH_LISTRECORRIDO'].bind('DLG1.V.R1.BUTTON_LISTSEARCH_LISTRECORRIDO');
+DLG1_DlgObj._buttons['BUTTON_LISTSEARCHCLEAR_LISTRECORRIDO'].bind('DLG1.V.R1.BUTTON_LISTSEARCHCLEAR_LISTRECORRIDO');
+DLG1_DlgObj._buttons['BUTTON_139'].bind('DLG1.V.R1.BUTTON_139');
+DLG1_DlgObj._buttons['BUTTON_140'].bind('DLG1.V.R1.BUTTON_140');
+DLG1_DlgObj._buttons['BUTTON_LISTSEARCH_LISTRECORRIDO1'].bind('DLG1.V.R1.BUTTON_LISTSEARCH_LISTRECORRIDO1');
+DLG1_DlgObj._buttons['BUTTON_LISTSEARCHCLEAR_LISTRECORRIDO1'].bind('DLG1.V.R1.BUTTON_LISTSEARCHCLEAR_LISTRECORRIDO1');
 DLG1_DlgObj._buttons['BUTTON_116'].bind('DLG1.V.R1.BUTTON_116');
 DLG1_DlgObj._buttons['BUTTON_8'].bind('DLG1.V.R1.BUTTON_8');
 DLG1_DlgObj._buttons['BUTTON_6'].bind('DLG1.V.R1.BUTTON_6');
@@ -2908,6 +3131,7 @@ DLG1_DlgObj._buttons['BUTTON_131'].bind('DLG1.V.R1.BUTTON_131');
 DLG1_DlgObj._buttons['BUTTON_132'].bind('DLG1.V.R1.BUTTON_132');
 DLG1_DlgObj._buttons['BUTTON_133'].bind('DLG1.V.R1.BUTTON_133');
 DLG1_DlgObj._buttons['BUTTON_119'].bind('DLG1.V.R1.BUTTON_119');
+DLG1_DlgObj._buttons['BUTTON_138'].bind('DLG1.V.R1.BUTTON_138');
 DLG1_DlgObj._buttons['BUTTON_134'].bind('DLG1.V.R1.BUTTON_134');
 DLG1_DlgObj._buttons['BUTTON_135'].bind('DLG1.V.R1.BUTTON_135');
 DLG1_DlgObj._buttons['BUTTON_104'].bind('DLG1.V.R1.BUTTON_104');
@@ -2915,9 +3139,14 @@ DLG1_DlgObj._buttons['BUTTON_137'].bind('DLG1.V.R1.BUTTON_137');
 DLG1_DlgObj._buttons['BUTTON_136'].bind('DLG1.V.R1.BUTTON_136');
 DLG1_DlgObj._buttons['BUTTON_103'].bind('DLG1.V.R1.BUTTON_103');
 DLG1_DlgObj._buttons['BUTTON_101'].bind('DLG1.V.R1.BUTTON_101');
-DLG1_DlgObj._buttons['BUTTON_102'].bind('DLG1.V.R1.BUTTON_102');
 DLG1_DlgObj._buttons['BUTTON_117'].bind('DLG1.V.R1.BUTTON_117');
 DLG1_DlgObj._buttons['BUTTON_127'].bind('DLG1.V.R1.BUTTON_127');
+DLG1_DlgObj._buttons['BUTTON_LISTSEARCH_LISTRECORRIDO'].bind('DLG1.V.R1.BUTTON_LISTSEARCH_LISTRECORRIDO');
+DLG1_DlgObj._buttons['BUTTON_LISTSEARCHCLEAR_LISTRECORRIDO'].bind('DLG1.V.R1.BUTTON_LISTSEARCHCLEAR_LISTRECORRIDO');
+DLG1_DlgObj._buttons['BUTTON_139'].bind('DLG1.V.R1.BUTTON_139');
+DLG1_DlgObj._buttons['BUTTON_140'].bind('DLG1.V.R1.BUTTON_140');
+DLG1_DlgObj._buttons['BUTTON_LISTSEARCH_LISTRECORRIDO1'].bind('DLG1.V.R1.BUTTON_LISTSEARCH_LISTRECORRIDO1');
+DLG1_DlgObj._buttons['BUTTON_LISTSEARCHCLEAR_LISTRECORRIDO1'].bind('DLG1.V.R1.BUTTON_LISTSEARCHCLEAR_LISTRECORRIDO1');
 DLG1_DlgObj._buttons['BUTTON_116'].bind('DLG1.V.R1.BUTTON_116');
 DLG1_DlgObj._buttons['BUTTON_8'].bind('DLG1.V.R1.BUTTON_8');
 DLG1_DlgObj._buttons['BUTTON_6'].bind('DLG1.V.R1.BUTTON_6');
@@ -5871,8 +6100,12 @@ DLG1_DlgObj._listSystemOnClick('LISTRRHH',this.selection[0]);},
 			template: [
 			'<div class="card card-image-bubble-left" style="max-width: 100%;">',
 			'\t<div class="card-content">',
-			'\t\t<h3><img src="a5images/mininavigatenext.png" />{Area}</h3>',
+			'\t\t<center>',
+			'\t\t<h3>',
+			'\t\t\t<img src="a5images/mininavigatenext.png" />{Area}',
+			'\t\t</h3>',
 			' \t\t<span id="DLG1.LISTRRHH.NOMBRETRABAJADOR.I.{*dataRow}">{NombreTrabajador}&nbsp;</span>',
+			'\t\t</center>',
 			'\t</div>',
 			'</div>']
 		}
@@ -8007,6 +8240,10 @@ DLG1_DlgObj._listViewSettings['LISTRECORRIDO'] = {
 	defaultValue: 'return this._controlDefaultValueForListField(\'Id_Recorrido\');'
 },
 {
+	name: 'Id_EstadoRecorrido',
+	defaultValue: 'return this._controlDefaultValueForListField(\'Id_EstadoRecorrido\');'
+},
+{
 	name: 'Id_TipoFlete',
 	defaultValue: 'return this._controlDefaultValueForListField(\'Id_TipoFlete\');'
 },
@@ -8047,7 +8284,30 @@ DLG1_DlgObj._listViewSettings['LISTRECORRIDO'] = {
 	defaultValue: 'return this._controlDefaultValueForListField(\'Expr1\');'
 }],
 	_delayRenderTillRefresh: false,
-	_searchPartHas: false,
+	_searchPartHas: true,
+	_searchPart: {
+		fieldMap: [
+{
+	field: 'Id_EstadoRecorrido',
+	control: 'Id_EstadoRecorrido'
+}]
+	},
+	_searchPartStyle: 'individualcontrols',
+	_searchFieldOptions: {
+"ID_RECORRIDO" : {option: 2,qbf: false,type: 'n'},
+"ID_ESTADORECORRIDO" : {option: 2,qbf: false,type: 'n'},
+"ID_TIPOFLETE" : {option: 2,qbf: false,type: 'n'},
+"ORIGEN" : {option: 2,qbf: false,type: 'c'},
+"DESTINO" : {option: 2,qbf: false,type: 'c'},
+"FECHASALIDA" : {option: 2,qbf: false,type: 'c'},
+"FECHACOMPLETADO" : {option: 2,qbf: false,type: 'c'},
+"REFERENCIACLIENTE" : {option: 2,qbf: false,type: 'c'},
+"OBSERVACIONULTIMAACT" : {option: 2,qbf: false,type: 'c'},
+"ACTIVIDAD" : {option: 2,qbf: false,type: 'c'},
+"USERID" : {option: 2,qbf: false,type: 'c'},
+"EXPR1" : {option: 2,qbf: false,type: 'c'}
+},
+	_showSearchDebugInfo: false,
 	_mediaFields: [],
 	_mediaTypes: {
 },
@@ -8791,7 +9051,7 @@ searchFor =  searchFor.replace(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, "\\$&");
 if(searchFor != '') {
 	//fixes bug in Chrome when searching on dates strings that use forward slashes
 	searchFor = searchFor.replace(/\//g,'\\/');
-	this.setFilter({'Id_Recorrido': RegExp('' + searchFor,'i'), 'Id_TipoFlete': RegExp('' + searchFor,'i'), 'Origen': RegExp('' + searchFor,'i'), 'Destino': RegExp('' + searchFor,'i'), 'FechaSalida': RegExp('' + searchFor,'i'), 'fechaCompletado': RegExp('' + searchFor,'i'), 'referenciaCliente': RegExp('' + searchFor,'i'), 'ObservacionUltimaAct': RegExp('' + searchFor,'i'), 'Actividad': RegExp('' + searchFor,'i'), 'Userid': RegExp('' + searchFor,'i'), 'Expr1': RegExp('' + searchFor,'i')});
+	this.setFilter({'Id_Recorrido': RegExp('' + searchFor,'i'), 'Id_EstadoRecorrido': RegExp('' + searchFor,'i'), 'Id_TipoFlete': RegExp('' + searchFor,'i'), 'Origen': RegExp('' + searchFor,'i'), 'Destino': RegExp('' + searchFor,'i'), 'FechaSalida': RegExp('' + searchFor,'i'), 'fechaCompletado': RegExp('' + searchFor,'i'), 'referenciaCliente': RegExp('' + searchFor,'i'), 'ObservacionUltimaAct': RegExp('' + searchFor,'i'), 'Actividad': RegExp('' + searchFor,'i'), 'Userid': RegExp('' + searchFor,'i'), 'Expr1': RegExp('' + searchFor,'i')});
 } else this.setFilter(false);
 var rowCount = this._values.length;
 //var e = {};
@@ -9023,6 +9283,1116 @@ if(this.multiple ) return;
 	"selectable": false,
 	"onClick": function(index,v,args) { 					var data = this._data[this._dataMap[index]];
 					(function(rowNumber,value,ia,data,lObj,listObj) { DLG1_DlgObj._listMethod('LISTRECORRIDO',{cmd: 'fetchMore'}); }(index,v,args,data,this,this))
+				}
+}
+},
+	_searchHighlighting: false,
+	_incrementalRefreshTimestampField: '',
+	_hasNavigationBar: false,
+	_listGUID: '771900fc-f0c1-4458-9bbf-0fabd262e467'
+};
+DLG1_DlgObj._listViewSettings['LISTRECORRIDO1'] = {
+	_switchInfo: {
+},
+	_setupAlphabetSearch: function() { },
+	_flagAutoFetchMore: false,
+	_persistListLayout: false,
+	_loadPersistedLayout: false,
+	saveLayoutSettings: function() {
+		var s = localStorage.listSettings;
+		if(typeof s == 'undefined' || s == null) s = {};
+		if(typeof s == 'string') { 
+			try{s = JSON.parse(s);}catch(err) {return false;}
+		}
+		var sl = s[this._listGUID];
+		if(typeof sl == 'undefined') sl = {};
+		sl.listVariableName = this.listVariableName;
+		sl.layouts = this.layouts;
+		sl.layout = this.layout;
+		s[this._listGUID] = sl ;
+		var str = JSON.stringify(s,'','\t')
+		localStorage.listSettings = str;
+	}
+	,
+	onLayoutUpdate: function(type,args,layoutName) {if(this.saveLayoutSettings) this.saveLayoutSettings();},
+	restoreLayoutSettings: function(dlgObj,mode) { 
+		var str = localStorage.listSettings;
+		if(typeof str == 'undefined' || str == null) {return false;}
+		try{var s = JSON.parse(str);}catch(err) {return false;};
+		var sl = s[this._listGUID];
+		if(typeof sl == 'undefined') {return false;}
+		if(mode == 'delete') { 
+			delete s[this._listGUID];
+			var str = JSON.stringify(s,'','\t')
+			localStorage.listSettings = str;
+			return;
+		}
+		if(mode == 'get') { 
+			return JSON.stringify(sl);
+		}
+		this.layouts = sl.layouts;
+		this.layout = sl.layout;
+		var listSelector = 'listSelector_' + sl.listVariableName ;
+		var that = this;
+		setTimeout(function() {
+			dlgObj.setValue(listSelector,that.layout);
+			delete that;
+		},0);
+		this.refresh();
+		this._flagRestoringLayoutSettings = true;
+	}	
+,
+	_hasDependentLists: false,
+	_dataSourceType: 'SQL',
+	_listFields: [
+{
+	name: 'Id_Recorrido',
+	defaultValue: 'return this._controlDefaultValueForListField(\'Id_Recorrido\');'
+},
+{
+	name: 'Id_EstadoRecorrido',
+	defaultValue: 'return this._controlDefaultValueForListField(\'Id_EstadoRecorrido\');'
+},
+{
+	name: 'Id_TipoFlete',
+	defaultValue: 'return this._controlDefaultValueForListField(\'Id_TipoFlete\');'
+},
+{
+	name: 'Origen',
+	defaultValue: 'return this._controlDefaultValueForListField(\'Origen\');'
+},
+{
+	name: 'Destino',
+	defaultValue: 'return this._controlDefaultValueForListField(\'Destino\');'
+},
+{
+	name: 'FechaSalida',
+	defaultValue: 'return this._controlDefaultValueForListField(\'FechaSalida\');'
+},
+{
+	name: 'fechaCompletado',
+	defaultValue: 'return this._controlDefaultValueForListField(\'fechaCompletado\');'
+},
+{
+	name: 'referenciaCliente',
+	defaultValue: 'return this._controlDefaultValueForListField(\'referenciaCliente\');'
+},
+{
+	name: 'ObservacionUltimaAct',
+	defaultValue: 'return this._controlDefaultValueForListField(\'ObservacionUltimaAct\');'
+},
+{
+	name: 'Actividad',
+	defaultValue: 'return this._controlDefaultValueForListField(\'Actividad\');'
+},
+{
+	name: 'Userid',
+	defaultValue: 'return this._controlDefaultValueForListField(\'Userid\');'
+},
+{
+	name: 'Expr1',
+	defaultValue: 'return this._controlDefaultValueForListField(\'Expr1\');'
+}],
+	_delayRenderTillRefresh: false,
+	_searchPartHas: true,
+	_searchPart: {
+		fieldMap: [
+{
+	field: 'Id_EstadoRecorrido',
+	control: 'Id_EstadoRecorrido'
+}]
+	},
+	_searchPartStyle: 'individualcontrols',
+	_searchFieldOptions: {
+"ID_RECORRIDO" : {option: 2,qbf: false,type: 'n'},
+"ID_ESTADORECORRIDO" : {option: 2,qbf: false,type: 'n'},
+"ID_TIPOFLETE" : {option: 2,qbf: false,type: 'n'},
+"ORIGEN" : {option: 2,qbf: false,type: 'c'},
+"DESTINO" : {option: 2,qbf: false,type: 'c'},
+"FECHASALIDA" : {option: 2,qbf: false,type: 'c'},
+"FECHACOMPLETADO" : {option: 2,qbf: false,type: 'c'},
+"REFERENCIACLIENTE" : {option: 2,qbf: false,type: 'c'},
+"OBSERVACIONULTIMAACT" : {option: 2,qbf: false,type: 'c'},
+"ACTIVIDAD" : {option: 2,qbf: false,type: 'c'},
+"USERID" : {option: 2,qbf: false,type: 'c'},
+"EXPR1" : {option: 2,qbf: false,type: 'c'}
+},
+	_showSearchDebugInfo: false,
+	_mediaFields: [],
+	_mediaTypes: {
+},
+	_mediaFieldReadOnly: [],
+	_ignoreMediaFieldsInWWWSubFolder: false,
+	_phoneGap: {
+		mediaFiles: {
+			protectedRead: false,
+			target: 'server',
+			targetFilenameFunction: 'return \'<DeviceId>_\' +e.object.listFieldName + \'_\' + A5.ts() + \'_\' +e.name',
+			showProgress: false,
+			download: {
+				autodownloadFilesOnPullSynch: false,
+				deleteOrphansAfterSync: false,
+				targetFolder: '_AAFiles',
+				showProgress: false,
+				targetFileSystem: 'persistent'
+			},
+			onErrorFunction: function(e) { }
+		}
+	},
+	_incrementalRefreshAfterLoad: function() { },
+	_dvmode: 'enter',
+	_hasDetailView: false,
+	deselectAll: function() { 	
+	var _dlgObj = window[this._hostComponentId + '_DlgObj']; 
+	_dlgObj.setValue(this.listVariableName,'',true);
+	this._deselectAll();
+	if(this.nullOutDetailViewRecord) {
+		this.nullOutDetailViewRecord();
+		for(var i = 0; i < this.childLists.length; i++) { 
+			var lname = this.childLists[i];
+			var lobjC = DLG1_DlgObj.getControl(lname);
+			lobjC.nullOutDetailViewRecord();
+		}
+		if(this._noRecordInListIsSelectedSettingForDetailView ==  'disabledetailview') { 
+			this.disableDetailView()
+			for(var i = 0; i < this.childLists.length; i++) { 
+				var lname = this.childLists[i];
+				var lobjC = DLG1_DlgObj.getControl(lname);
+				lobjC.disableDetailView();
+			}
+		}
+	}
+}
+,
+	showHideColumn: function(columnNumber,flagShow,layoutName,flagSetShowState) { 	if(typeof flagSetShowState == 'undefined') flagSetShowState  = false; //set when this function called from listColumnSelector()
+	if(typeof layoutName == 'undefined') layoutName = this.layout;
+	if(this.layouts[layoutName].columns[columnNumber].show != flagShow) {
+		this.layouts[layoutName].columns[columnNumber].show = flagShow;
+		if(flagSetShowState) this.layouts[layoutName].columns[columnNumber]._showState = flagShow;
+		this.refresh();
+	}
+}
+,
+	showAllColumns: function() { 
+	var l = this.layouts
+	var c = '';
+	var flagRefresh = false;
+	for(var n in l) { 
+		c = l[n].columns;
+		if(typeof c != 'undefined') { 
+			for(var i = 0; i < c.length; i++) { 
+				if(!c[i].initialStateHidden) {
+					var flag = true
+					if(typeof c[i]._showState != 'undefined') { 
+						if(!c[i]._showState) flag = false;
+					}
+					if(flag && !c[i].show) {
+						c[i].show = true;
+						flagRefresh = true;
+					}
+				}
+			}
+		}
+	}
+	if(flagRefresh) {
+		this.refresh();
+	}
+}
+,
+	_hideColumns: function() { 
+}
+,
+	theme: 'GrBlue',
+	scroll: {
+		axis: 'both',
+		indicator: {
+			show: true,
+			h: {
+				show: true,
+				location: 'top',
+				offset: '0px',
+				left: '0px',
+				right: '0px'
+			},
+			v: {
+				show: true,
+				location: 'right',
+				offset: '0px',
+				top: '0px',
+				bottom: '0px'
+			}
+		},
+		momentum: {
+			allow: true
+		},
+		pull: {
+			y: 'auto',
+			x: 'auto'
+		}
+	},
+	layout: 'Default',
+	calculateValue: function(data) {  {var _val = '' +(function(data) {if(typeof data.__primaryKey != 'undefined') {return data.__primaryKey;} else { 
+try{} catch(err) { return undefined }
+}})(data); if((_val == '' ||  _val == 'undefined'  )&& typeof data['*rowGUID'] != 'undefined') _val = '_temporaryValue_' + data['*rowGUID']; return _val;}},
+	listVariableName: 'LISTRECORRIDO1',
+	listVariableNameTrueCase: 'listRecorrido1',
+	_hostComponentId: 'DLG1',
+	_includeCRC: false,
+	allParentLists: [],
+	_inplaceEditing: {
+		allow: false
+	},
+	__flagPersist: false,
+	__flagIncrementalRefreshAfterLoad: false,
+	onBeforePopulate: function(data) {this.__onPopulateHasFired = false;
+},
+	onPopulate: function(data) {if(!this._isInit) {if (typeof window['cordova'] == 'undefined') { 
+	DLG1_DlgObj._list_executeEvent(this.listVariableName,'detailView.listReadyToPersist',{listSyncMode: 'fullRefresh' });
+}
+};},
+	onBeforeUpdateRow: function(index,data){;},
+	onUpdateRow: function(index,data){;},
+	onBeforeAddRows: function(data,info){;},
+	onAddRows: function(data,info){;},
+	onBeforeRemoveRows: function(rows){;},
+	onRemoveRows: function(rows){;},
+	onResize: function(){var l = this.layout;
+if(this.layouts[l].type == 'column') { 
+	var flagRefresh = false; //prevent multiple refreshes from being done
+	if(this.layouts[l]._hasRCW) {
+		var w = $(this.contId).offsetWidth;
+		if(typeof this._w == 'undefined') {
+			flagRefresh = true;
+			this._w = w;
+		} else { 
+			if(this._w != w) flagRefresh = true;
+			this._w = w;
+		}
+		var _c = this.layouts[l].columns;
+		for(var i = 0; i < _c.length; i++) { 
+			if(_c[i].rcw) { 
+				if(_c[i].rcw != '' && Number(_c[i].rcw) > 0) { 
+					if(typeof _c[i]._show == 'undefined') _c[i]._show = _c[i].show;
+					if(_c[i]._show == _c[i].show) { 
+						if(Number(_c[i].rcw) >= w) {
+							_c[i].show = false;
+						} else {
+							_c[i].show = true;
+						}
+						_c[i]._show = _c[i].show;
+					}
+				}
+			}
+		}
+		var that = this;
+		setTimeout(function() { 
+			if(flagRefresh) that.refresh();
+			console.log('refresh');
+		},0);
+	}
+}
+;},
+	onListDraw: function(data,startIndex) {
+ if(A5.flags.isMobile)  $e.add(this.contId+'.CONTENT','abstractdown',function(e) {$e.preventDefault(e);}); this._hasrun = true;
+this._allrowschecked = true;
+var d = this._data
+for(var i = 0; i < d.length; i++) {
+ if(!d[i].__selected) {
+  this._allrowschecked = false;
+  break;
+ }
+}
+if (d.length == 0) this._allrowschecked = false;
+var h ;
+if(this._allrowschecked) {
+ h = A5.u.icon.html(this.__checkedImage);
+} else {
+ h = A5.u.icon.html(this.__uncheckedImage);
+}
+var _id = 'DLG1.' + this.listVariableName + '.CHECKBOXALL';
+var ele = $(_id)
+ele.innerHTML = h},
+	childLists: [],
+	childListEndpoints: ['LISTRECORRIDO1'],
+	_populateAllChildLists: function() { },
+	onSelect: function() {DLG1_DlgObj._listRowSelect('listRecorrido1',this);
+ this._selectedRow = this.selection[0];if(typeof this._selectedRow != 'undefined') { };;
+this._selectedRow = this.selection[0];
+;},
+	onClick: function() {
+DLG1_DlgObj._listSystemOnClick('LISTRECORRIDO1',this.selection[0]);},
+	layouts: {
+		Default: {
+			group: {
+				auto:  null 
+			},
+			type: 'template',
+			item: {
+			},
+			template: [
+			'<div class="card card-wide">',
+			'\t<div class="card-content">',
+			'\t\t<h2><span id="DLG1.LISTRECORRIDO1.REFERENCIACLIENTE.I.{*dataRow}">{referenciaCliente}&nbsp;</span></h2>',
+			'\t\t<h3>Origen: <span id="DLG1.LISTRECORRIDO1.ORIGEN.I.{*dataRow}">{Origen}&nbsp;</span></h3>',
+			'\t\t<h3>Destino: <span id="DLG1.LISTRECORRIDO1.DESTINO.I.{*dataRow}">{Destino}&nbsp;</span></h3>',
+			'\t\t<h4><span style="text-align:center;">Fecha Inicio: <span id="DLG1.LISTRECORRIDO1.FECHASALIDA.I.{*dataRow}">{FechaSalida}&nbsp;</span></span></h4>',
+			'\t\t<h4><span style="text-align:center;">Fecha Fin: <span id="DLG1.LISTRECORRIDO1.FECHACOMPLETADO.I.{*dataRow}">{fechaCompletado}&nbsp;</span></span></h4>',
+			'\t\t<h4><span style="text-align:center;">&Uacute;ltima Actividad: <span id="DLG1.LISTRECORRIDO1.ACTIVIDAD.I.{*dataRow}">{Actividad}&nbsp;</span></span></h4>',
+			'\t\t<h5><span style="text-align:center;">Observaciones: <span id="DLG1.LISTRECORRIDO1.OBSERVACIONULTIMAACT.I.{*dataRow}">{ObservacionUltimaAct}&nbsp;</span></span></h5>',
+			'\t</div>',
+			'</div>']
+		}
+	},
+	__checkedImage: 'svgIcon=#alpha-icon-checkCircle:icon,24',
+	__uncheckedImage: 'svgIcon=#alpha-icon-circle:icon,24',
+	captureFocus: true,
+	content: {
+		header: {
+			show: false
+		},
+		footer: {
+			show: true,
+			html: '<div style="text-align: center;"><button class="GrBlueButton" style="cursor: pointer;" a5-item="__fetchMore">M&aacute;s...</button></div>'
+		}
+	},
+	systemEvents: {
+		onTap: function(e) {},
+		afterAjaxCallback: function(e) {},
+		afterClientSideFilter: function(e) {},
+		beforeServerSideSort: function(e) {},
+		afterServerSideSort: function(e) {},
+		onSwipe: function(e) {},
+		onScroll: function(e) {},
+		onPullRelease: function(e) {},
+		onPull: function(e) {},
+		onPullEnd: function(e) {},
+		afterSearchComplete: function(e) {},
+		beforeSearch: function(e) {},
+		onSearchResultTooLarge: function(e) {},
+		onSearchResultTooLargeForLocalStorage: function(e) {},
+		onBeforePersistToLocalStorage: function(e) {},
+		onPersistToLocalStorage: function(e) {},
+		onRestoreFromLocalStorage: function(e) {},
+		onListReady: function(e) {},
+		afterRenderComplete: function(e) {},
+		beforeFetchMore: function(e) {},
+		afterFetchMore: function(e) {},
+		beforePageNavigate: function(e) {},
+		afterPageNavigate: function(e) {},
+		beforeRefreshRow: function(e) {},
+		afterRefreshRow: function(e) {},
+		afterRefreshData: function(e) {},
+		afterServerSideSummaryCompute: function(summary) {},
+		detailView: {
+			_afterRefreshListIncremental: function() { 
+if (typeof window['cordova'] == 'undefined') { 
+	DLG1_DlgObj._list_executeEvent(this.listVariableName,'detailView.listReadyToPersist',{listSyncMode: 'incrementalRefresh' });
+}
+}
+		},
+		_afterAjaxCallback: function() {this._refreshStateMessages();}
+	},
+	_clientsideSummary: [],
+	computeClientSideSummaryValues: function(e) {},
+	_executeEvent: function(event,obj) { 
+	return DLG1_DlgObj._list_executeEvent('LISTRECORRIDO1',event,obj);
+}
+,
+	_selectAll: function() {
+	var v = this._values;
+	var v2 = [].concat(v);
+	this.setValue(v2,false);
+}
+,
+	searchList: function() { 
+	if(this._searchPartStyle == 'querybyform') { 
+		if(this._dvmode != 'search') return false;
+	}
+	if(typeof this.detailViewIsDirty == 'function') {
+		if(this.detailViewIsDirty()) { 
+				if(this._autoCommitDetailView) { 
+					this.updateListFromUXControls();
+				}
+		}
+	}
+	var obj = typeof arguments[0] != 'undefined' ? arguments[0] : {};
+	var mode = 'serverSide';
+	if(typeof obj.searchMode != 'undefined') mode = obj.searchMode;
+	mode = mode.toLowerCase();
+	if(mode.indexOf('auto') == 0) { 
+		var flagCS = false;
+		if(typeof this.detailViewIsDirty == 'function') { 
+			if(this.listIsDirty() || this.detailViewIsDirty()) flagCS = true;
+		} else { 
+			if(this.listIsDirty()) flagCS = true;
+		}
+		if(flagCS) mode = 'clientside';
+		else {
+			if(this._dataSourceType.toLowerCase() == 'sql' || this._dataSourceType.toLowerCase() == 'dbf') {
+				mode = 'serverside';
+			} else { 
+				mode = 'clientside';
+			}
+		}
+	}
+	if(this._dataSourceType.toLowerCase() == 'static') mode = 'clientside';
+	var parentList = this.parentList;
+	if(typeof parentList != 'undefined') {
+		if(parentList != '') mode = 'clientside';
+	}
+	var flagDirty = false;
+	if(this.listIsDirty) flagDirty = this.listIsDirty();
+	var flagResult = DLG1_DlgObj._list_executeEvent(this.listVariableName,'beforeSearch',{searchMode: 'search', searchWhere: mode, listIsDirty: flagDirty});
+	if(!flagResult) return false;
+	if(mode == 'serverside') {
+		this._searchListServerSide(obj);
+	} else if(mode == 'clientside') { 
+		this._searchPartSubmit_clientSideFilter();
+		var rowCount = this._rData.length;
+		DLG1_DlgObj._list_executeEvent(this.listVariableName,'afterSearchComplete',{searchMode: 'search', searchWhere: mode, recordsInQuery: rowCount});
+	}
+}
+,
+	_searchListServerSide: function() { 
+	var obj = typeof arguments[0] != 'undefined' ? arguments[0] : {};
+	var _d={};
+	var flagDirty = false;
+	if(this.listIsDirty) flagDirty = this.listIsDirty();
+	if(flagDirty) { 
+		alert('Can\'t execute server-side search because List has edits that have not yet been synchronized.');
+		return false;
+	}
+	_d.listId = this.listVariableName
+	var _data = A5.ajax.buildURLParam('__searchInfo',JSON.stringify(_d));
+	_data = _data + '&' + A5.ajax.buildURLParam('__searchOptions',JSON.stringify(obj));
+	this.filter = false;
+	DLG1_DlgObj.ajaxCallback('','','system:ListSearchPart','',_data);
+}
+,
+	setListSize: function(height,width) {
+	var l = $(this.contId);
+	if(typeof height != 'undefined') l.style.height = ''+ height; 
+	if(typeof width != 'undefined') l.style.width = '' + width;
+	this.resize();
+}
+,
+	clearSearchList: function() { 
+	var obj = typeof arguments[0] != 'undefined' ? arguments[0] : {};
+	var mode = 'serverSide';
+	if(typeof obj.searchMode != 'undefined') mode = obj.searchMode;
+	mode = mode.toLowerCase();
+	if(mode.indexOf('auto') == 0) { 
+		if(this.listIsDirty()) mode = 'clientside';
+		else mode = 'serverside';
+	}
+	if(this._dataSourceType.toLowerCase() == 'static') mode = 'clientside';
+	var parentList = this.parentList;
+	if(typeof parentList != 'undefined') {
+		if(parentList != '') mode = 'clientside';
+	}
+	var flagResult = DLG1_DlgObj._list_executeEvent(this.listVariableName,'beforeSearch',{searchMode: 'clear', searchWhere: mode});
+	if(!flagResult) return false;
+	if(mode == 'serverside') {
+		this._clearSearchListServerSide();
+	} else if(mode == 'clientside') { 
+		this._searchPartSubmit_clientSideFilterClear();
+		var rowCount = this._rData.length;
+		DLG1_DlgObj._list_executeEvent(this.listVariableName,'afterSearchComplete',{searchMode: 'clear', searchWhere: mode, recordsInQuery: rowCount});
+	}
+}
+,
+	_clearSearchListServerSide: function() { 
+	var _d={};
+	_d.listId = this.listVariableName
+	var _data = A5.ajax.buildURLParam('__searchInfo',JSON.stringify(_d));
+	DLG1_DlgObj.ajaxCallback('','','system:ListSearchPartClear','',_data);
+}
+,
+	_str: function(txt) {
+	txt = txt.replace("'","\\'");
+	txt = '\'' + txt + '\'';
+	return txt;
+}
+,
+	_QBF: function(txt) { 
+	var o = {};
+	o.v2 = '';
+	o.v1 = txt;
+	o.flag = false;
+	if(txt.indexOf('>=') >= 0) {
+		o.op = '>=';
+		o.v1 = txt.substr(2);
+		o.flag = true;
+	} else if (txt.indexOf('<=') >= 0 ) { 
+		o.op = '<=';
+		o.v1 = txt.substr(2);
+		o.flag = true;
+	} else if (txt.indexOf('>') >= 0 ) {
+		o.op = '>';
+		o.v1 = txt.substr(1);
+		o.flag = true;
+	} else if (txt.indexOf('<') >= 0)  { 
+		o.op = '<';
+		o.v1 = txt.substr(1);
+		o.flag = true;
+	} else if (txt.indexOf('..') == 0)  {
+		o.op = '<=';
+		o.v1 = txt.substr(2);
+		o.flag = true;
+	} else if ( txt.indexOf('..', txt.length - '..'.length) !== -1 ) { 
+		//ends with ..
+		o.op = '>=';
+		txt = txt.split('..')
+		o.v1 = txt[0];
+		o.flag = true;
+	} else if (txt.indexOf('..') > 0 ) {
+		o.op = 'between'
+		txt = txt.split('..');
+		o.v1 = txt[0];
+		o.v2 = txt[1];
+		o.flag = true;
+	}
+	return o;
+}
+,
+	_match: function(data,field,val,obj) { 
+	if(obj.qbf && obj.type == 'c') val = $u.s.rTrim(val,',');
+	var flagKeyword = false;
+	if(typeof obj.flagKeyword != 'undefined') flagKeyword = obj.flagKeyword;
+	if(flagKeyword) { 
+		var obj_i = this._searchFieldOptions[field.toUpperCase()];
+		this._setSearchOps(obj,obj_i);
+	}
+	var _d = '';
+	var _v = val;
+	var flagC = false;
+	if(obj.type == 'c') {
+		flagC = true;
+		if(!obj.caseSensitive) _v = _v.toLowerCase();
+	} else { 
+		//non mumeric searches are only mode 1 or -1
+		if(obj.mode > 1) obj.mode = 1;
+		if(obj.mode < -1) obj.mode = -1;
+	}
+	var flag = false;
+	obj.usesQBFOperator = false;
+	if(obj.qbf) { 
+		_v = _v.split(',');
+	} else {
+		_v = [_v];
+	}
+	var o = {}
+	var r = '';
+	var _vals = [];
+	for(var i = 0; i < _v.length; i++) { 
+		if(obj.qbf) {
+			o = this._QBF(_v[i]);
+		} else {
+			o.flag = false;
+			o.v1 = _v[i];
+			o.v2 = '';
+		}
+		if(typeof data[field] != 'undefined') {
+			if(data[field] != null) { 
+				_d = data[field];
+				if(obj.type == 'n') { 
+					o.v1 = Number(o.v1);
+					o.v2 = Number(o.v2);
+					_d = Number(_d);
+				} else if (obj.type == 'l') { 
+					o.v1 = $u.s.toBool(o.v1);
+					o.v2 = $u.s.toBool(o.v2);
+					_d = $u.s.toBool(_d);
+				} else if (obj.type == 'd') { 
+					o.v1 = A5.stringToDate(o.v1,obj.dateFormat);
+					o.v2 = A5.stringToDate(o.v2,obj.dateFormat);
+					if(typeof _d == 'string') _d = A5.stringToDate(_d,obj.dateFormat);
+					if(o.v1 != '' && o.v1 != null ) o.v1 = o.v1.getTime();
+					if(o.v2 != '' && o.v2 != null ) o.v2 = o.v2.getTime();
+					if(_d != '' && _d != null ) _d = _d.getTime();
+				}
+				if(flagC) {if(!obj.caseSensitive && typeof _d == 'string') _d = _d.toLowerCase();}
+				if(o.flag) { 
+					//has qbf operators
+					if(o.op == 'between') {
+						if(flagC) {
+							if(_d.substr(0,o.v1.length) >= o.v1 && _d.substr(0,o.v2.length) <= o.v2 ) flag = true;
+						} else { 
+							if(_d >= o.v1 && _d <= o.v2 && (typeof _d == typeof o.v1)  ) flag = true;
+						}
+					} else { 
+						if(flagC) _d = _d.substr(0,o.v1.length)
+						if(o.op == '>=') if( _d >= o.v1) flag = true;
+						if(o.op == '<=') if( _d <= o.v1) flag = true;
+						if(o.op == '>') if(_d > o.v1) flag = true;
+						if(o.op == '<') if(_d < o.v1) flag = true;
+					}
+				} else { 
+					if(obj.mode == 1 || obj.mode == -1 ) {
+						if(obj.mode == 1) if(_d == o.v1) flag = true;; //match
+						if(obj.mode == -1) if(!(_d == o.v1)) flag = true;; //match
+					} else if (obj.mode == 2 || obj.mode == -2) { 
+						if(obj.mode == 2) if(_d.indexOf(o.v1) > -1) flag = true; //contains
+						if(obj.mode == -2) if(!(_d.indexOf(o.v1) > -1)) flag = true;
+					} else if (obj.mode == 3 || obj.mode == -3) { 
+						if(obj.mode == 3) if(_d.indexOf(o.v1) == 0) flag = true; //starts with
+						if(obj.mode == -3) if(!(_d.indexOf(o.v1) == 0)) flag = true; //starts with
+					}
+				}
+				if(o.v1 != '') {
+					if(_vals.indexOf(o.v1) == -1) { 
+						_vals.push(o.v1);
+					}
+				}
+				if(o.v2 != '') {
+					if(_vals.indexOf(o.v2) == -1) { 
+						_vals.push(o.v2);
+					}
+				}
+			}
+		}
+	}
+	if(flag) { 
+		if(typeof this._state.highlight == 'undefined') this._state.highlight = {};
+		this._state.highlight[field.toUpperCase()] = _vals;
+	} else { 
+		//this._state.highlight[field.toUpperCase()] = [];
+	}
+	return flag;
+}
+,
+	_setSearchOps: function(obj,obj_i) { 
+	obj.mode = obj_i.option;
+	obj.qbf = obj_i.qbf;
+	obj.type = obj_i.type;
+	//obj.treatAs = obj_i.treatAs;
+}
+,
+	_searchPartOperator: '&&',
+	_searchPartSubmit_clientSideFilter: function() { 
+	if(!this._searchPartHas) return true;
+	//_searchPartStyle: 'individualcontrols'
+	this._state.highlight = {};
+	if(this._searchPartStyle == 'singlekeywordcontrol') { 
+		var searchFor = DLG1_DlgObj.getValue(this._keywordSearchControl);
+		var arr = this._keywordSearchFields;
+		var expn = [];
+		var expn_i = '';
+		var obj = {};
+		//obj.caseSensitive = false;
+		//obj.qbf = true;
+		//obj.mode = 1;
+		obj.flagKeyword = true;
+		var objStr = JSON.stringify(obj)
+		for(var i = 0; i < arr.length; i++) { 
+			expn_i = 'this._match(data,' +this._str(arr[i]) + ',' + this._str(searchFor) + ','+objStr+')';
+			expn.push(expn_i);
+		}
+		expn = expn.join('||');
+		//alert(expn);
+	} else if ( this._searchPartStyle == 'individualcontrols' || this._searchPartStyle == 'querybyform'  ) { 
+		var map = this._searchPart.fieldMap;
+		var val = '';
+		var expn = [];
+		var expn_i = '';
+		var obj = {};
+		obj.caseSensitive = false;
+		//obj.qbf = true;
+		//obj.mode = 2;
+		//var objStr = JSON.stringify(obj)
+		var ac = [];
+		var aco = {};
+		var _highlight = {};
+		if(this._searchPartStyle == 'individualcontrols') {
+			for(var i = 0; i < map.length; i++) { 
+				val = DLG1_DlgObj.getValue(map[i].control);
+				if(val != '') {
+					obj_i = this._searchFieldOptions[map[i].field.toUpperCase()];
+					this._setSearchOps(obj,obj_i);
+					expn_i = 'this._match(data,' +this._str(map[i].field) + ',' + this._str(val) + ','+JSON.stringify(obj)+')';
+					expn.push(expn_i);
+				}
+			}
+		} else if (this._searchPartStyle == 'querybyform' ) { 
+			var controlName = '';
+			for(var i = 0; i < this._listFields.length; i++) { 
+				controlName = this._getUXDetailViewControlName(this._listFields[i].name);
+				if(controlName != '') {
+					val = DLG1_DlgObj.getValue(controlName);
+					if(val != '') {
+						obj_i = this._searchFieldOptions[map[i].field.toUpperCase()];
+						this._setSearchOps(obj,obj_i);
+						expn_i = 'this._match(data,' +this._str(this._listFields[i].name) + ',' + this._str(val) + ','+JSON.stringify(obj)+')';
+						expn.push(expn_i);
+						aco.control = controlName;
+						aco.value = val;
+						ac.push(aco);
+					}
+				}
+			}
+			this.__queryByFormValues = ac;
+			DLG1_DlgObj._setDVClean(this);
+		}	
+		var operator = '&&';
+		if(typeof this._searchPartOperator != 'undefined') operator = this._searchPartOperator;
+		expn = expn.join(' '+operator+' ');
+	} 
+	if (this._showSearchDebugInfo) {
+		var ele = $('DLG1.V.R1.' + this._searchDebugPH);
+		if(ele) ele.innerHTML = expn;
+	}
+	//user did not fill in any search fields
+	if(expn == '') return true;
+	var fnTxt = 'if(' + expn + ') {return true;} else { return false;}'
+	var searchFunction = new Function('data',fnTxt);
+	this.setFilter(searchFunction);
+	if(this._rData.length > 0) this.setValue(0);
+}
+,
+	_searchPartSubmit_clientSideFilterClear: function() { 
+if(!this._searchPartHas) return true;
+	this._state.highlight = {};
+	this.setFilter(false);
+	var map = this._searchPart.fieldMap;
+	var val = '';
+	var od = DLG1_DlgObj.originalValues[0];
+	for(var i = 0; i < map.length; i++) {
+		var val = od[map[i].control.toUpperCase()];
+		//selwyn 8/6/20 -- used to be false, but then the floating label is not resotred to its initial position when the form is cleared
+		if(typeof val != 'undefined') DLG1_DlgObj.setValue(map[i].control,val,false);
+	}
+	this.setFilter(false);
+	delete this.__queryByFormValues;
+	DLG1_DlgObj._setDVClean(this);
+	if(this._data.length > 0) this.setValue(0);
+	if (this._showSearchDebugInfo) {
+		var ele = $('DLG1.V.R1.' + this._searchDebugPH);
+		if(ele) ele.innerHTML = '';
+	}
+}
+,
+	detailViewIsDirty: function() { return false; },
+	populateUXControls: function() { return true; },
+	listIsDirty: function() { return false; },
+	lookupValue: function(key,name,keyValue) {
+	var _d = this._data;
+	var indx = A5FindPropInArray(_d,key,keyValue);
+	var rv = '';
+	if(indx >=0) {
+		if(name == '__rowData__') return _d[indx];
+		rv =  _d[indx][name];
+	} else {
+		//null out all properties in row
+		var _d2 = {};
+		if(typeof _d[0] == 'undefined') { return {}} ;
+		for(var n in _d[0]) {
+			_d2[n] = '&nbsp;';
+		}
+		rv = _d2;
+	}
+	return rv;
+}
+,
+	allowNullSelection: true,
+	allowTextSelection: false,
+	allowAnyValue: false,
+	allowNullDeselection: false,
+	loopNavigate: false,
+	loopNavigateNullSelection: false,
+	refreshChildLists: function() {DLG1_DlgObj._listRefreshCascadingLists('LISTRECORRIDO1'); },
+	rowExpander: function(rowNumber) { 
+	var mode = typeof arguments[2] != 'undefined' ? arguments[2] : 'toggle';
+	if(typeof rowNumber === 'undefined' || rowNumber === '' ) {
+		rowNumber = this.selection[0];
+		if(typeof rowNumber == 'undefined') return false;
+	}
+	var animObj = typeof arguments[1] != 'undefined' ? arguments[1] : {};
+	var ele = $(this._hostComponentId + '.' + this.listVariableName + '.ROWEXPANDER.' + rowNumber);
+	if(ele) {
+		if(mode == 'toggle') A5.u.element.toggle(ele,animObj);
+		if(mode == 'show') A5.u.element.show(ele,animObj);
+		if(mode == 'hide') A5.u.element.hide(ele,animObj);
+	}
+}
+,
+	afterClientSideSummaryCompute: function(csSummary) { },
+	selectCurrentLayout: function(name) { 
+if(this._flagRestoringLayoutSettings) { 
+	this._flagRestoringLayoutSettings = false;
+	return;
+}
+var pl = this.layouts[name];
+if(typeof pl == 'undefined') return false;
+this.setLayout(name);
+if(pl.type == 'column') {
+	this.columnLayout.header.show = this.layouts[name].showColumnTitles; 
+	this.refresh();
+}
+var flagPersist = this._persistListLayout;
+if(flagPersist && this.saveLayoutSettings ) this.saveLayoutSettings()
+},
+	onFilter: function() { 	var e = {}; 
+	e.rowCount = this._values.length;  
+	var ele = $('DLG1.__listId__.RECORDCOUNT'); 
+	if(ele) {ele.innerHTML = e.rowCount;}; 
+	if(this.persistToStorage) { this.persistToStorage({});} 
+	(function(e) {   })(e);
+}
+,
+	serverSideSort: function(column,initialDirection) {
+var e = {};
+this.setOrder(false);
+e.column = column;
+var result = this.systemEvents.beforeServerSideSort(e);
+if(result == false) return false;
+var obj = {};
+obj.cmd = 'sort';
+obj.column = column;
+obj.layoutName = this.layout;
+obj.listState = this._state;
+obj.initialDirection = initialDirection;
+var data = '_listId=LISTRECORRIDO1&' + A5.ajax.buildURLParam('_cmdObj',$u.o.toJSON(obj));
+DLG1_DlgObj.ajaxCallback('','','system:listServerSideSort','',data);
+},
+	filterListClientSide: function(searchFor) {
+searchFor =  searchFor.replace(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, "\\$&");
+//var result = this.systemEvents.beforeClientSideFilter();
+//if(result == false) return false;
+if(searchFor != '') {
+	//fixes bug in Chrome when searching on dates strings that use forward slashes
+	searchFor = searchFor.replace(/\//g,'\\/');
+	this.setFilter({'Id_Recorrido': RegExp('' + searchFor,'i'), 'Id_EstadoRecorrido': RegExp('' + searchFor,'i'), 'Id_TipoFlete': RegExp('' + searchFor,'i'), 'Origen': RegExp('' + searchFor,'i'), 'Destino': RegExp('' + searchFor,'i'), 'FechaSalida': RegExp('' + searchFor,'i'), 'fechaCompletado': RegExp('' + searchFor,'i'), 'referenciaCliente': RegExp('' + searchFor,'i'), 'ObservacionUltimaAct': RegExp('' + searchFor,'i'), 'Actividad': RegExp('' + searchFor,'i'), 'Userid': RegExp('' + searchFor,'i'), 'Expr1': RegExp('' + searchFor,'i')});
+} else this.setFilter(false);
+var rowCount = this._values.length;
+//var e = {};
+//e.rowCount = rowCount;
+//this.systemEvents.afterClientSideFilter(e);
+var ele = $('DLG1.listRecorrido1.RECORDCOUNT');
+if(ele) ele.innerHTML = rowCount;
+if(this._showHideFetchMoreSpinner) this._showHideFetchMoreSpinner();
+}
+,
+	scrollToClosestValue: function(val) { 	
+	if(typeof val != 'string') val = val.join('');
+	var flagCI = typeof arguments[1] != 'undefined' ? arguments[1] : false;
+	var pos = typeof arguments[2] != 'undefined' ? arguments[2] : 'top';
+	var anim = typeof arguments[3] != 'undefined' ? arguments[3] : {}
+	var _d = this._rData;
+	var len = val.length;
+	var _d2;
+	var i2 = -1;
+	if(flagCI) val = val.toLowerCase();
+	for(var i = 0 ; i < _d.length; i++) {
+		i2 = i;
+		_d2 = String(_d[i]['*value']);
+		_d2 = _d2.substr(0,len);
+		_d2 = $u.s.pad(_d2,len,' ','l');
+		if(flagCI) _d2 = _d2.toLowerCase();
+		if(val <= _d2){
+			 break;
+		}
+	}
+	if(i2 > -1) { 
+		this.scrollToItem(i2,{mode: pos, animation: anim});
+	}
+}
+,
+	_setPageSize: function(pageSize) {
+	this._state.pageSize = pageSize;
+	DLG1_DlgObj._refreshListData(this.listVariableName);
+}
+,
+	_refreshStateMessages: function() {
+	if(DLG1_DlgObj._listStateChange) DLG1_DlgObj._listStateChange(this.listVariableName);
+	var ele = '';
+	ele = $('DLG1.LISTRECORRIDO1.PAGENUMBER');
+	if(ele) ele.innerHTML = this._state.page;
+	ele = $('DLG1.LISTRECORRIDO1.PAGECOUNT');
+	if(ele) ele.innerHTML = this._state.pageCount;
+	ele = $('DLG1.LISTRECORRIDO1.PAGECOUNT.PAGESELECTOR');
+	if(ele) ele.innerHTML = this._state.pageCount;	
+	ele = $('DLG1.LISTRECORRIDO1.LISTSTATE');
+	if(ele) {
+		var listState = $u.o.toJSON(this._state);
+		ele.innerHTML = listState;
+	}
+	if(this._hasNavigationBar) { 
+		var nObj = this._listNavigator;
+		if(!nObj) { 
+			this._listNavigator = DLG1_DlgObj._navigationBar(this._navBarId);
+		}
+		if(nObj) {
+			var obj = nObj.data;
+			obj.settings = this._navigationBar;
+			obj.pageNumber = this._state.page;
+			obj.totalPages = this._state.pageCount;
+			obj.totalRecords = this._state.recordCount;
+			obj.listName = this.listVariableName;
+			nObj.populate(obj);
+		}
+	}
+	//navigation buttons	
+	ele = DLG1_DlgObj._buttons['BUTTON_LISTNAV_NEXT.LISTRECORRIDO1'];
+	if(ele) {
+		if(this._state.page == this._state.pageCount || this._state.pageCount == 0) ele.setDisabled(true);
+		else ele.setDisabled(false);
+	}
+	ele = DLG1_DlgObj._buttons['BUTTON_LISTNAV_LAST.LISTRECORRIDO1'];
+	if(ele) {
+		if(this._state.page == this._state.pageCount || this._state.pageCount == 0) ele.setDisabled(true);
+		else ele.setDisabled(false);
+	}
+	ele = DLG1_DlgObj._buttons['BUTTON_LISTNAV_FIRST.LISTRECORRIDO1'];
+	if(ele) {
+		if(this._state.page == 1 || this._state.pageCount == 0) ele.setDisabled(true);
+		else ele.setDisabled(false);
+	}
+	ele = DLG1_DlgObj._buttons['BUTTON_LISTNAV_PREV.LISTRECORRIDO1'];
+	if(ele) {
+		if(this._state.page == 1 || this._state.pageCount == 0 ) ele.setDisabled(true);
+		else ele.setDisabled(false);
+	}
+	ele = $('DLG1.V.R1.A5SYSTEM_LIST_PAGESELECTOR_LISTRECORRIDO1');
+	if(ele) {
+		var data = this._recordNavigatorLinks;
+		if(data) A5.form.populateSelect(ele,this._state.page,data,true);
+	}
+}
+,
+	header: {
+	},
+	_getRoute: function() { 
+	var mode = typeof arguments[0] != 'undefined' ? arguments[0] : 'rowNumber'; //
+	var obj  = typeof arguments[1] != 'undefined' ? arguments[1] : [];
+	if(typeof this.selection == 'undefined') return false;
+	if(typeof this.selection[0] == 'undefined') return false;
+	if(typeof this.getData(this.selection[0]) == 'undefined') return false;
+	if(mode != 'rowNumber') { 
+		var _d = this.getData(this.selection[0]);
+		if(typeof _d.__primaryKey == 'undefined') { 
+			mode = 'rowNumber';
+		}
+	}
+	var endPoint = typeof arguments[2] != 'undefined' ? arguments[2]: '';
+	if(endPoint != '') { 
+		//if you have sibling children _getRoute() is returning wrong route -- it is including the siblings in the route.
+		//route should only include parents
+		//by passing in the listName to the function we get the route from the top parent to the 'endPoint' list (ignoring siblings)
+		var _dlgObj = window[this._hostComponentId + '_DlgObj'];
+		var ra2 = [];
+		var lObj = _dlgObj.getControl(endPoint);
+		var parentList = lObj.parentList;
+		while(typeof parentList != 'undefined') { 
+			var l2 = _dlgObj.getControl(parentList);
+			var row = '';
+			if(mode == 'rowNumber') { row = l2.selection[0] } else {row = l2.getData(this.selection[0])['*key'] }
+			ra2.push({list: parentList, row: row});
+			parentList = l2.parentList
+		}
+		return ra2.reverse();
+	}
+	if(mode == 'rowNumber') {
+		obj.push({list: this.listVariableName, row: this.getData(this.selection[0])['*key']});
+	} else {
+		var _d = this.getData(this.selection[0]);
+		var _pk = _d.__primaryKey;
+		if(typeof _d.__primaryKey == 'undefined') { 
+			_pk = _d['*rowGUID'];
+		}
+		obj.push({list: this.listVariableName, row: _pk});
+	}
+	for(var i = 0; i < this.childLists.length; i++) { 
+		var lname = this.childLists[i];
+		var lObj = window[this._hostComponentId + '_DlgObj'].getControl(lname);
+		if(lObj) lObj._getRoute(mode,obj);
+	}
+	return obj;
+}
+,
+	_getRouteOLD: function() { 
+	var obj  = typeof arguments[1] != 'undefined' ? arguments[1] : [];
+	var mode = typeof arguments[0] != 'undefined' ? arguments[0] : 'rowNumber'; //
+	if(typeof this.selection == 'undefined') return false;
+	if(typeof this.selection[0] == 'undefined') return false;
+	if(typeof this.getData(this.selection[0]) == 'undefined') return false;
+	if(mode == 'rowNumber') obj.push({list: this.listVariableName, row: this.getData(this.selection[0])['*key']});
+	else obj.push({list: this.listVariableName, row: this.getData(this.selection[0]).__primaryKey});
+	for(var i = 0; i < this.childLists.length; i++) { 
+		var lname = this.childLists[i];
+		var lObj = window[this._hostComponentId + '_DlgObj'].getControl(lname);
+		if(lObj) lObj._getRoute(mode,obj);
+	}
+	return obj;
+}
+,
+	_setRoute: function(route) { 
+if(this.multiple ) return;
+	if(typeof route == 'undefined') { 
+		route = this.__currentRoute;
+		if(typeof route == 'undefined') return false;
+	}
+	var mode = typeof arguments[1] != 'undefined' ? arguments[1] : 'rowNumber'; //
+	if(mode == 'primaryKey') { 
+		if(typeof this._data != 'undefined') { 
+			var _d = this._data;
+			if(typeof _d[0] != 'undefined') { 
+				if(typeof _d[0].__primaryKey == 'undefined') { 
+					mode = 'rowNumber';
+				}
+			}
+		}
+	}
+	var lObj = '';
+	var row = '';
+	var _pk = '';
+	for(var i = 0; i < route.length; i++) {
+		lObj = window[this._hostComponentId + '_DlgObj'].getControl(route[i].list);
+		row = route[i].row;
+		if(mode == 'primaryKey') _pk = row;
+		/*
+		if(mode != 'rowNumber') { 
+			var _d = lObj._rData;
+			var _i2 = -1;
+			for(var j = 0; j < _d.length; j++) { 
+				if(_d[j].__primaryKey == row) { 
+					_i2 = j;
+					break;
+				}
+			}
+			row = _i2
+		}
+		*/
+		var flag = typeof this._restoringList != 'undefined' ? !this._restoringList : true;
+		if(mode == 'rowNumber') { 
+			if(typeof row != 'undefined') {
+				var rowFixed = '';
+				if(typeof lObj._dataMap == 'undefined') return false;
+				if(mode != 'rowNumber')  { 
+					rowFixed = row;
+					} else {
+				rowFixed = lObj._dataMap.indexOf(route[i].row);
+				}
+				lObj.setValue(rowFixed,flag);
+				if(this._clearServerSideErrors) this._clearServerSideErrors();
+				if(this._showServerSideErrors) this._showServerSideErrors();
+				if(this._showWriteConflictErrors) this._showWriteConflictErrors();
+			}
+		} else { 
+			lObj.setValue(''+_pk,flag);
+			if(this._clearServerSideErrors) this._clearServerSideErrors();
+			if(this._showServerSideErrors) this._showServerSideErrors();
+			if(this._showWriteConflictErrors) this._showWriteConflictErrors();
+		}
+	}
+}
+,
+	_useServerSideSyncLog: false,
+	items: {
+'__fetchMore' : {
+	"itemName": "__fetchMore",
+	"selectable": false,
+	"onClick": function(index,v,args) { 					var data = this._data[this._dataMap[index]];
+					(function(rowNumber,value,ia,data,lObj,listObj) { DLG1_DlgObj._listMethod('LISTRECORRIDO1',{cmd: 'fetchMore'}); }(index,v,args,data,this,this))
 				}
 }
 },
@@ -11952,7 +13322,8 @@ DLG1_DlgObj._listViewData['LISTRRHH'] = [
         }
     ]; 
 DLG1_DlgObj._listViewData['LISTRRHH1'] = []; 
-DLG1_DlgObj._listViewData['LISTRECORRIDO'] = A5DataArrayToObject(['Id_Recorrido','Id_TipoFlete','Origen','Destino','FechaSalida','fechaCompletado','referenciaCliente','ObservacionUltimaAct','Actividad','Userid','Expr1','__primaryKey'],[]); 
+DLG1_DlgObj._listViewData['LISTRECORRIDO'] = A5DataArrayToObject(['Id_Recorrido','Id_EstadoRecorrido','Id_TipoFlete','Origen','Destino','FechaSalida','fechaCompletado','referenciaCliente','ObservacionUltimaAct','Actividad','Userid','Expr1','__primaryKey'],[]); 
+DLG1_DlgObj._listViewData['LISTRECORRIDO1'] = A5DataArrayToObject(['Id_Recorrido','Id_EstadoRecorrido','Id_TipoFlete','Origen','Destino','FechaSalida','fechaCompletado','referenciaCliente','ObservacionUltimaAct','Actividad','Userid','Expr1','__primaryKey'],[]); 
 DLG1_DlgObj._listViewData['LISTSATISFACCION'] = []; 
 DLG1_DlgObj._listViewData['LISTSERVICIOSENCUESTA'] = [];
 ;
@@ -12132,6 +13503,13 @@ DLG1_DlgObj._controls['LISTRECORRIDO'] =  { type: 'list',  data: DLG1_DlgObj._li
 			$acn(pe,_cn);
 		}
 ; if(this._setupAlphabetSearch) this._setupAlphabetSearch.call(this)},  settings: DLG1_DlgObj._listViewSettings['LISTRECORRIDO'] }
+DLG1_DlgObj._controls['LISTRECORRIDO1'] =  { type: 'list',  data: DLG1_DlgObj._listViewData['LISTRECORRIDO1'],  onInitialize: function() { 
+		var pe = $(this.contId).parentElement;
+		if(typeof this.listVariableName != 'undefined') { 
+			var _cn = 'DLG1_' + this.listVariableName.toUpperCase() + '_2';
+			$acn(pe,_cn);
+		}
+; if(this._setupAlphabetSearch) this._setupAlphabetSearch.call(this)},  settings: DLG1_DlgObj._listViewSettings['LISTRECORRIDO1'] }
 DLG1_DlgObj._controls['LISTSATISFACCION'] =  { type: 'list',  data: DLG1_DlgObj._listViewData['LISTSATISFACCION'],  onInitialize: function() { var that = this; setTimeout(function() {that._onSelect(); delete that; },10);
 		var pe = $(this.contId).parentElement;
 		if(typeof this.listVariableName != 'undefined') { 
@@ -12310,6 +13688,24 @@ DLG1_DlgObj._functions.__fillContainer_LISTRECORRIDO = function() {
 	$(id).innerHTML = '';
 }
 DLG1_DlgObj._functions.__fillContainer_LISTRECORRIDO();
+DLG1_DlgObj._functions.__fillContainer_LISTRECORRIDO1 = function() {
+	var path = DLG1_PanelObj._panelPath['PANELCARD_RECORRIDO1'];
+	if(typeof path != 'undefined') {
+		var panel = DLG1_PanelObj.getPanel(path);
+		var id = panel.src.getPanelId('body');
+	} else {
+		var id = DLG1_PanelObj.getPanelId('body');
+	}
+	//removing scrolling from the PanelBody since we will be obliterating the Panel with a control that fills the body
+	if($(id + '.SCROLLWRAPPER')) {
+		A5.u.drag.remove(id,'scroll');
+	}
+	DLG1_DlgObj._listViewSettings['LISTRECORRIDO1'].containerId = id;
+	DLG1_DlgObj._listViewSettings['LISTRECORRIDO1'].className = '<Default>';
+	//blow away any existing content in the panel
+	$(id).innerHTML = '';
+}
+DLG1_DlgObj._functions.__fillContainer_LISTRECORRIDO1();
 DLG1_DlgObj._functions.__fillContainer_LISTSATISFACCION = function() {
 	var path = DLG1_PanelObj._panelPath['PANELCARD_SATISFACCION'];
 	if(typeof path != 'undefined') {
@@ -17140,12 +18536,13 @@ CONTAINER_3: [],
 CONTAINER_6: [],
 CONTAINER_5: ['Userid','Password','guid'],
 PANELHEADER_13: ['textbox1'],
-CONTAINER_4: ['container:CONTAINER_7','container:CONTAINER_11','container:CONTAINER_21','container:CONTAINER_22','container:CONTAINER_8','container:CONTAINER_33'],
+CONTAINER_4: ['container:CONTAINER_7','container:CONTAINER_11','container:CONTAINER_21','container:CONTAINER_22','container:CONTAINER_8','container:CONTAINER_34','container:CONTAINER_33'],
 CONTAINER_7: ['label4','label1','label2','label5'],
 CONTAINER_11: [],
 CONTAINER_21: [],
 CONTAINER_22: [],
 CONTAINER_8: [],
+CONTAINER_34: [],
 CONTAINER_33: [],
 PANELHEADER_34: [],
 PANELFOOTER_34: [],
@@ -17156,7 +18553,9 @@ PANELFOOTER_11: ['Id_Trabajador'],
 PANELHEADER_25: [],
 PANELFOOTER_12: [],
 PANELHEADER_28: [],
-PANELFOOTER_19: [],
+PANELFOOTER_19: ['Id_EstadoRecorrido'],
+PANELHEADER_29: [],
+PANELFOOTER_21: ['Id_EstadoRecorrido1'],
 PANELHEADER_27: [],
 PANELFOOTER_18: ['Id_Satisfaccion','Id_Cliente'],
 PANELHEADER_26: [],
@@ -20421,7 +21820,7 @@ $u.o.assign(A5.ListBox.prototype,
 }
 )
 //End section - Add methods to List prototype
-DLG1_DlgObj._listControls = ['listPrefacturas','listPrefacturas2','listRRHH','listRRHH1','listRecorrido','listSatisfaccion','listServiciosEncuesta']
+DLG1_DlgObj._listControls = ['listPrefacturas','listPrefacturas2','listRRHH','listRRHH1','listRecorrido','listRecorrido1','listSatisfaccion','listServiciosEncuesta']
 DLG1_DlgObj._localStorageSettings = {namespace: 'ALPHA_57f8c0fe416f458aa00b6a038ee025da',friendlyName: '',description: '',persistVariableValues: true,variablesToNotPersist: 'ID_TRABAJADOR,LISTRRHH,LISTRRHH1,LISTRECORRIDO,LISTSATISFACCION,LISTSERVICIOSENCUESTA',__version: 1,persistComponentState: false,workingPreviewTestingFolder: '',restore: {variables: true,data: true,state: false},compressData: false,minify: false,workingPreviewTestingMode: 'Browser',compressListData: false}
 ;
 DLG1_DlgObj.__r = [];
@@ -20441,7 +21840,7 @@ DLG1_DlgObj._listsWithDependentTFControls = DLG1_DlgObj._listsWithDependentTFCon
 DLG1_DlgObj.__r = [];
 var ele2 = $('DLG1.R1'); if(ele2) {
 var ele = document.createElement('div');
-ele.innerHTML = '\n<div style="display:none;"><span><input\ttype="text" id="DLG1.V.R1.GUID" title=""     class="[theme:edit.base.className|class.dialogInput] " style=""    name="V.R1.GUID"    value=""    />\n</span>\n</div>\n\n\n\n<div style="display:none;"><span><input\ttype="text" id="DLG1.V.R1.ID_TRABAJADOR" title=""     class="[theme:edit.base.className|class.dialogInput] " style="width: 50%; "    name="V.R1.ID_TRABAJADOR"    value=""    />\n</span>\n</div>\n\n\n<div style="display:none;"><span><input\ttype="text" id="DLG1.V.R1.ID_SATISFACCION" title=""     class="[theme:edit.base.className|class.dialogInput] " style="width: 50%; "    name="V.R1.ID_SATISFACCION"    value=""    />\n</span>\n<span><input\ttype="text" id="DLG1.V.R1.ID_CLIENTE" title=""     class="[theme:edit.base.className|class.dialogInput] " style="width: 50%; "    name="V.R1.ID_CLIENTE"    value=""    />\n</span>\n</div>\n\n\n\n\n\n\n';
+ele.innerHTML = '\n<div style="display:none;"><span><input\ttype="text" id="DLG1.V.R1.GUID" title=""     class="[theme:edit.base.className|class.dialogInput] " style=""    name="V.R1.GUID"    value=""    />\n</span>\n</div>\n\n\n\n<div style="display:none;"><span><input\ttype="text" id="DLG1.V.R1.ID_TRABAJADOR" title=""     class="[theme:edit.base.className|class.dialogInput] " style="width: 50%; "    name="V.R1.ID_TRABAJADOR"    value=""    />\n</span>\n</div>\n\n\n\n<div style="display:none;"><span><input\ttype="text" id="DLG1.V.R1.ID_SATISFACCION" title=""     class="[theme:edit.base.className|class.dialogInput] " style="width: 50%; "    name="V.R1.ID_SATISFACCION"    value=""    />\n</span>\n<span><input\ttype="text" id="DLG1.V.R1.ID_CLIENTE" title=""     class="[theme:edit.base.className|class.dialogInput] " style="width: 50%; "    name="V.R1.ID_CLIENTE"    value=""    />\n</span>\n</div>\n\n\n\n\n\n\n';
 ele2.appendChild(ele);
 };
 function __preventDefault(event) { event.preventDefault()};
@@ -20532,6 +21931,30 @@ DLG1_DlgObj.panelSetActive('PANELCARD_SATISFACCION',true);
 
 
 
+
+
+
+$e.add('DLG1.V.R1.CONTAINER_34',A5.d.evnts.click,function(e) {
+function tempfunction_4c7f07ac_a88d_4b36_8ae2_704108a9d31b() {
+DLG1_DlgObj.refreshListData('listRecorrido1');
+}
+function tempfunction_421ed434_b9e4_435e_ae55_f95f8ba008e8() {
+DLG1_DlgObj.panelSetActive('PANELCARD_RECORRIDO1',true);
+}
+A5.executeThisThenThat(tempfunction_4c7f07ac_a88d_4b36_8ae2_704108a9d31b,tempfunction_421ed434_b9e4_435e_ae55_f95f8ba008e8);
+},this,false,'DLG1.V.R1.CONTAINER_34');
+
+
+
+$e.add('DLG1.V.R1.BUTTON_138',A5.d.evnts.click,function(e) {
+function tempfunction_c2a6325d_268e_455d_8cbb_0b2eb590505e() {
+DLG1_DlgObj.refreshListData('listRecorrido1');
+}
+function tempfunction_58c3ce64_e058_4a7a_b3d1_0a2ea3b7f08f() {
+DLG1_DlgObj.panelSetActive('PANELCARD_RECORRIDO1',true);
+}
+A5.executeThisThenThat(tempfunction_c2a6325d_268e_455d_8cbb_0b2eb590505e,tempfunction_58c3ce64_e058_4a7a_b3d1_0a2ea3b7f08f);
+},this,false,'DLG1.V.R1.BUTTON_138');
 
 
 
@@ -20633,11 +22056,7 @@ DLG1_DlgObj.panelSetActive('PANELCARD_RRHH',true);
 
 
 $e.add('DLG1.V.R1.BUTTON_101',A5.d.evnts.click,function(e) {
-function tempfunction_04d43df5_9c01_4b77_8d7b_2065592b2089() {
-DLG1_DlgObj.ajaxCallback('','','paraRRHH','',additionalAjaxDataListaRRHH(),{chunkedResponses: {allow: false},deviceOfflineFunction: function() {   }});
-}
-function tempfunction_77033c3a_18d5_4359_81b4_e83b1955ffc8() {
-  var xbasicFunction = 'system:savereportaspdf';
+var xbasicFunction = 'system:savereportaspdf';
   var additionalData = '__functionname=SaveReportAsPDF_d7bc573eed3f4544a031e98771fae91e';
   var onAjaxCompleteFunction = function() {
    var _o = {
@@ -20666,7 +22085,7 @@ var downloadOptions = {
 var obj = {
  "targetFileSystem": "temp",
  "targetFolder": "__AATEMPFILES",
- "sourceFileSystem": "persistent",
+ "sourceFileSystem": "private",
  "sourceFolder": "__AATEMPFILES",
  "sourceFileName": _o.fileName,
  "options": downloadOptions,
@@ -20680,13 +22099,7 @@ DLG1_DlgObj.phoneGapOpenFileWithNativeViewer(obj,_onSuccess,_onError);
   var ajaxErrorFunction = function() {  };
   var deviceOfflineAjaxFunction = function() {   }
   DLG1_DlgObj.ajaxCallback('','',xbasicFunction,'',additionalData,{errorFunction: ajaxErrorFunction, onComplete: onAjaxCompleteFunction, deviceOfflineFunction: deviceOfflineAjaxFunction });
-}
-A5.executeThisThenThat(tempfunction_04d43df5_9c01_4b77_8d7b_2065592b2089,tempfunction_77033c3a_18d5_4359_81b4_e83b1955ffc8);
 },this,false,'DLG1.V.R1.BUTTON_101');
-
-$e.add('DLG1.V.R1.BUTTON_102',A5.d.evnts.click,function(e) {
-window.location = 'sms:+5930991682860';
-},this,false,'DLG1.V.R1.BUTTON_102');
 
 
 
@@ -20703,6 +22116,40 @@ DLG1_DlgObj.showContainerWindow(this,'WINDOW_4');
 
 
 
+
+
+$e.add('DLG1.V.R1.BUTTON_LISTSEARCH_LISTRECORRIDO',A5.d.evnts.click,function(e) {
+DLG1_DlgObj.getControl('LISTRECORRIDO').searchList({searchMode : 'auto'});
+},this,false,'DLG1.V.R1.BUTTON_LISTSEARCH_LISTRECORRIDO');
+
+$e.add('DLG1.V.R1.BUTTON_LISTSEARCHCLEAR_LISTRECORRIDO',A5.d.evnts.click,function(e) {
+DLG1_DlgObj.getControl('LISTRECORRIDO').clearSearchList({searchMode : 'auto'});
+},this,false,'DLG1.V.R1.BUTTON_LISTSEARCHCLEAR_LISTRECORRIDO');
+
+
+
+
+
+$e.add('DLG1.V.R1.BUTTON_139',A5.d.evnts.click,function(e) {
+DLG1_DlgObj.panelSetActive('PANELCARD_INICIO',true);
+},this,false,'DLG1.V.R1.BUTTON_139');
+
+
+$e.add('DLG1.V.R1.BUTTON_140',A5.d.evnts.click,function(e) {
+DLG1_DlgObj.showContainerWindow(this,'WINDOW_4');
+},this,false,'DLG1.V.R1.BUTTON_140');
+
+
+
+
+
+$e.add('DLG1.V.R1.BUTTON_LISTSEARCH_LISTRECORRIDO1',A5.d.evnts.click,function(e) {
+DLG1_DlgObj.getControl('LISTRECORRIDO').searchList({searchMode : 'auto'});
+},this,false,'DLG1.V.R1.BUTTON_LISTSEARCH_LISTRECORRIDO1');
+
+$e.add('DLG1.V.R1.BUTTON_LISTSEARCHCLEAR_LISTRECORRIDO1',A5.d.evnts.click,function(e) {
+DLG1_DlgObj.getControl('LISTRECORRIDO').clearSearchList({searchMode : 'auto'});
+},this,false,'DLG1.V.R1.BUTTON_LISTSEARCHCLEAR_LISTRECORRIDO1');
 
 
 
@@ -21406,6 +22853,12 @@ setTimeout(function() { if(DLG1_DlgObj.resizeLists) { DLG1_DlgObj.resizeLists();
 
 
 
+
+
+
+
+
+
 var listObj = DLG1_DlgObj.getControl('LISTPREFACTURAS');
 if(listObj) listObj._state.recordCount = 0;
 if(listObj) listObj._state.recordCountFormatted = '0';
@@ -21553,7 +23006,6 @@ if(listObj._refreshStateMessages) listObj._refreshStateMessages();
 
 
 
-
 var listObj = DLG1_DlgObj.getControl('LISTRECORRIDO');
 if(listObj) listObj._state.recordCount = 0;
 if(listObj) listObj._state.recordCountFormatted = '0';
@@ -21566,7 +23018,7 @@ if(listObj) listObj._state._optimizedJSON = false;
 if(listObj) listObj._state.highlight = {  };
 if(listObj) listObj._state.whereClause = '( WebSecurityUsers.Userid = :USERID  OR  WebSecurityUsers_1.Userid = :USERID ) AND  N_Recorrido.Id_EstadoRecorrido >= 2';
 if(listObj) listObj._state.whereParameters = '|||C|USERID\n0|||N|ID_TRABAJADOR\n';
-listObj._state.order = '';
+listObj._state.order = 'N_Recorrido.FechaSalida DESC';
 		
 		var flagPersist = false;
 		if(typeof listObj._flagPersistDataOK != 'undefined') { 
@@ -21583,6 +23035,50 @@ if(listObj) listObj.setDisplay('content-footer',false);
 DLG1_DlgObj._list_executeEvent('LISTRECORRIDO','afterRenderComplete',{});
 listObj._recordNavigatorLinks = ['1','0'];
 if(listObj._refreshStateMessages) listObj._refreshStateMessages();
+
+
+
+
+
+
+
+
+
+
+
+
+var listObj = DLG1_DlgObj.getControl('LISTRECORRIDO1');
+if(listObj) listObj._state.recordCount = 0;
+if(listObj) listObj._state.recordCountFormatted = '0';
+if(listObj) listObj._state.lastBreakValue = '';
+if(listObj) listObj._state.pageCount = 0;
+if(listObj) listObj._state.pageSize = 10;
+if(listObj) {var ele = $('DLG1.listRecorrido1.RECORDCOUNT'); if(ele) ele.innerHTML = listObj._state.recordCountFormatted;};
+if(listObj) listObj._state.paginated = true;
+if(listObj) listObj._state._optimizedJSON = false;
+if(listObj) listObj._state.highlight = {  };
+if(listObj) listObj._state.whereClause = '( WebSecurityUsers.Userid = :USERID  OR  WebSecurityUsers_1.Userid = :USERID ) AND  N_Recorrido.Id_EstadoRecorrido = 2';
+if(listObj) listObj._state.whereParameters = '|||C|USERID\n0|||N|ID_TRABAJADOR\n';
+listObj._state.order = 'N_Recorrido.FechaSalida DESC';
+		
+		var flagPersist = false;
+		if(typeof listObj._flagPersistDataOK != 'undefined') { 
+			if(listObj._flagPersistDataOK) { 
+				var data = listObj._data;
+				listObj.persistToStorage({mode:'populate', data: data, submode: 'ListViewData'});
+			}
+		}
+		
+		
+;
+if(listObj) listObj._state.pageCount = 0;
+if(listObj) listObj.setDisplay('content-footer',false);
+DLG1_DlgObj._list_executeEvent('LISTRECORRIDO1','afterRenderComplete',{});
+listObj._recordNavigatorLinks = ['1','0'];
+if(listObj._refreshStateMessages) listObj._refreshStateMessages();
+
+
+
 
 
 
@@ -21811,6 +23307,10 @@ var lObj = DLG1_DlgObj.getControl('LISTRECORRIDO');
 var __obj = {
 };
 if(lObj) $u.o.assign(lObj,__obj);;;
+var lObj = DLG1_DlgObj.getControl('LISTRECORRIDO1');
+var __obj = {
+};
+if(lObj) $u.o.assign(lObj,__obj);;;
 var lObj = DLG1_DlgObj.getControl('LISTSATISFACCION');
 var __obj = {
 };
@@ -21819,6 +23319,9 @@ var lObj = DLG1_DlgObj.getControl('LISTSERVICIOSENCUESTA');
 var __obj = {
 };
 if(lObj) $u.o.assign(lObj,__obj);;
+
+
+
 
 
 
@@ -21862,6 +23365,8 @@ DLG1_DlgObj.populate(dataObj);
 DLG1_DlgObj._fireWatches(1);
 
 
+
+DLG1_DlgObj.__onRenderComplete = function() { DLG1_DlgObj._updateAjaxURL('https://www.mariloginsatm.com'); }; 
 
 DLG1_DlgObj._onRenderComplete = function() { DLG1_DlgObj._runJSOnLoad(); DLG1_DlgObj._findActiveLayoutRule(); }; 
 
@@ -21928,7 +23433,203 @@ if(ele) ele.style.height = (s.height)+'px';
 $e.add(window,'resize',DLG1_DlgObj._setScreenHeight,DLG1_DlgObj,true,'DLG1.DIALOG')
 DLG1_DlgObj._setScreenHeight();
 ;
+DLG1_DlgObj.instantUpdateRefresh = function() { 
 
+var _success = function(properties) { 
+	var fName = properties.nativeURL+'www/index.html';
+	if (DLG1_DlgObj.usingAlphaWkWebView()) {
+		fName = 'alpha-local://html?url='+fName;
+	}
+	location.href = fName;	
+};
+
+var _error = function(e) { 
+	console.log('www/index.html does not exist');
+	navigator.notification.alert('Error, required index.html file is missing.'); 
+};
+
+localStorage.checkForUpdate="true";
+var _filePath = cordova.file.applicationDirectory;
+window.resolveLocalFileSystemURL(_filePath,_success,_error);
+
+}
+DLG1_DlgObj.instantUpdateCheckForUpdate = function(successCallback,errorCallback) { 
+var settings = {};
+	
+	function getInstalledAppVersion() {
+		_success = function(result) { 
+			console.log('version.json file contained: '+result);
+			var vObj = JSON.parse(result);
+			console.dir(vObj);
+			
+			//vObj may contain a version or versionNumber property so deal with it
+			settings.version = typeof vObj.version == 'undefined' ? vObj.versionNumber : vObj.version;
+			
+			//channel might not exist in version.json, handle it.
+			settings.channel = typeof vObj.channel == 'undefined' ? '' : vObj.channel;
+			
+			console.log('Installed app version is: '+ settings.version);
+			console.log('Channel is: ' + settings.channel);
+			
+			doUpdateCheck(settings);
+		};
+		var _error = function(e) { 
+			errorCallback(e);
+		};
+		settings =  _instantUpdateSettings();
+		var _filePath = DLG1_DlgObj.phoneGapGetLocalDirURL('private') + 'thisApp/version.json';
+		DLG1_DlgObj.phoneGapReadFileURL(_filePath, _success,_error)
+	};
+	
+	function doUpdateCheck(settings){
+		var xhr = new XMLHttpRequest();
+		var url = settings.baseURL + 'currentversion_' + settings.channel + settings.baseLineGUID +'.json';
+		var _settings = settings;
+		
+		xhr.ontimeout = function (e) {
+			errorCallback(e);
+		};
+	
+		xhr.onreadystatechange = function() {
+			console.log('onReadyStateChange: xhr.readyState='+xhr.readyState+' xhr.status='+xhr.status);
+			var e = {};
+			if (xhr.readyState==4) {
+				if (xhr.status==200) {
+					try {
+						var result = JSON.parse(this.responseText);
+					} catch(e) {
+						// invalid json
+						var eText = 'Error: received invalid JSON.';
+						console.log(eText);
+						errorCallback(eText);
+					}
+					e.result = true;
+					if (result.versionNumber != _settings.version) {
+						console.log('getUpdateVersion: update is available.');
+						successCallback(e);
+					} else {
+						console.log('app is running the latest version');
+						// No update
+						e.result = false;
+						successCallback(e);
+					}
+				} else if (xhr.status==403) {
+					//update file does not exist
+					e.result = false;
+					successCallback(e);
+				} else {
+					//some other type of error
+					console.log('No update, xhr.status: '+xhr.status);
+					errorCallback(xhr.status);
+				}
+			}
+		};		
+	
+		xhr.open('GET',url,true);
+		xhr.timeout = 5000;
+		xhr.send();
+	};
+	
+	// demand load _instantUpdateSettings.js file
+	if (typeof _instantUpdateSettings != 'function') {
+		var script = document.createElement('script');
+		script.onload = function () {
+			getInstalledAppVersion();
+		};
+		script.src = '_instantUpdateSettings.js';
+		document.head.appendChild(script);
+	} else {
+		getInstalledAppVersion();
+	}
+
+
+}
+DLG1_DlgObj.instantUpdateUseAutoUpdate = function(flag) { localStorage.autoUpdate=flag==true ?'true':'false';};
+DLG1_DlgObj.setChannel = function(channelName) { 
+	channelName = channelName || 'production';
+	if(channelName.toLowerCase() == '' || channelName.toLowerCase() == '<default>') channelName = 'production';
+	localStorage.channel = channelName;
+	localStorage.changeChannel = 'true';
+	localStorage.autoUpdate = 'true';
+	if (DLG1_DlgObj.usingAlphaWkWebView()) {
+		DLG1_DlgObj.writeLocalStorageToFile();
+	}
+
+};
+DLG1_DlgObj.writeLocalStorageToFile = function(localFile='json.txt') { 
+	return new Promise((resolve,reject) => {
+		var obj = {};
+		obj.autoUpdate = localStorage.autoUpdate;
+		obj.changeChannel = localStorage.changeChannel;
+		obj.channel = localStorage.channel;
+		obj.checkForUpdate = localStorage.checkForUpdate;
+	
+		var thisJson = JSON.stringify(obj);
+		console.log('writeLocalStorageToFile()');
+		DLG1_DlgObj.phoneGapCreateFile(localFile,thisJson,function(){
+			resolve('Instant Update local file written.');
+		}, function() {
+			reject('Instant Update local file write failed.');
+		}, false);
+	});
+
+};
+DLG1_DlgObj.writeFileToLocalStorage = function(localFile='json.txt') { 
+	console.log('writeFileToLocalStorage');
+	return new Promise((resolve,reject) => {
+		DLG1_DlgObj.phoneGapReadFile(localFile,function(data) { 
+			var thisJson = data;
+			console.log('writeFileToLocalStorage.thisJson -> '+thisJson);
+			var obj = {};
+			obj = JSON.parse(thisJson);
+			localStorage.autoUpdate = obj.autoUpdate;
+			localStorage.changeChannel = obj.changeChannel;
+			localStorage.channel = obj.channel;
+			localStorage.checkForUpdate = obj.checkForUpdate;
+			console.log('Instant Update local file properties successfully stored to localStorage');
+			resolve('Instant Update local file properties successfully stored to localStorage');
+		}, function() {
+			reject('local file json.txt does not exist');
+		});
+	});
+
+};
+DLG1_DlgObj.usingAlphaWkWebView = function() { 
+	// Is Alpha's WkWebView plugin installed?
+	var _result = false;
+	if (typeof(WkWebView) == 'object') {
+		if (typeof(WkWebView.isAlphaWkWebView) == 'function') {
+			_result = WkWebView.isAlphaWkWebView();
+		}
+	}
+	return _result;
+
+};
+DLG1_DlgObj.instantUpdateOnRenderComplete = function(channelName) { 
+if (DLG1_DlgObj.usingAlphaWkWebView()) {
+	DLG1_DlgObj.writeFileToLocalStorage()
+	.then(message => {
+		console.log(message);
+		var channel = localStorage.channel;
+		var autoUpdate = localStorage.autoUpdate;
+		if(typeof channel != 'undefined') { 
+			channel = channel.toLowerCase();
+			if(channel == '<default>') channel = 'production';
+			if(channel == '') channel = 'production';
+			if(channel != 'production') { 
+				//alert('2 refresh to get channel: ' + channel)
+				DLG1_DlgObj.instantUpdateRefresh();
+			} else { 
+				//alert('no need to do refresh');
+			}
+		}
+	})
+	.catch( e => {
+		console.log('Error: ' +e);
+	});	
+}
+
+};
 var o2 = 'portrait';
 if(window.innerHeight < window.innerWidth) o2 = 'landscape';
 DLG1_DlgObj._screen = {h: window.innerHeight, w: window.innerWidth, o: o2};
