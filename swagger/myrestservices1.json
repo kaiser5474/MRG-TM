@@ -1,0 +1,51 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "Myrestservices1 Service Endpoint",
+    "version": "1.0.0",
+    "title": "Myrestservices1 Service Endpoint"
+  },
+  "host": "{{host}}",
+  "basePath": "{{basePath}}",
+  "schemes": [
+    "{{scheme}}"
+  ],
+  "paths": {
+    "/getRecorrido2": {
+      "get": {
+        "operationId": "getRecorrido2",
+        "parameters": [
+          {
+            "in": "query",
+            "name": "id",
+            "required": true,
+            "type": "number"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful request."
+          }
+        }
+      }
+    },
+    "/getRecorrido": {
+      "get": {
+        "operationId": "getRecorrido",
+        "parameters": [
+          {
+            "in": "query",
+            "name": "id",
+            "required": true,
+            "type": "number"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful request."
+          }
+        }
+      }
+    }
+  }
+}

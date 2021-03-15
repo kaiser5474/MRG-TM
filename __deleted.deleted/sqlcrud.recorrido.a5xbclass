@@ -1,0 +1,686 @@
+define class sqlcrud::recorrido
+dim __http_status as n 'dim variable for HTTP status code
+dim cs as c = "::Name::Nibble"
+
+function option_request_handler as n ()
+	'handle the browser's pre-flight OPTIONS request
+	self.__http_status = 200
+	Response.AddHeader("Access-Control-Allow-Headers: apikey")		
+end function
+function select_generic as p (table as c , fields = "",where = "",order = "", arguments = "", pagesize = "", pageNumber = "")
+
+'in the swagger tester, if you do not specify a value for arguments, it calls the function with the argument value set to "string"
+if where = "string" then 
+	where = ""
+end if 
+
+if order = "string" then 
+	order = ""
+end if 
+
+if arguments = "string" then 
+	arguments = ""
+end if 
+
+if pagesize = "string" then 
+	pagesize = ""
+end if 
+
+if pageNumber = "string" then 
+	pageNumber = ""
+end if 
+
+self.__http_status = 200
+dim cn as sql::Connection
+dim flag as l
+flag = cn.open(self.cs)
+if flag = .f. then
+	pOut.error = .t.
+	pOut.errorText = "Could not open database. Error reported was: " + cn.CallResult.text
+	select_generic = pout
+	exit function
+end if
+
+dim sql as c
+cn.PortableSQLEnabled = .t.
+dim args as sql::arguments
+arguments = comma_to_crlf(arguments)
+dim name as c
+dim value as c
+dim type as c
+for each aa in arguments
+	value = word(aa.value,2,"=")
+	name = word(aa.value,1,"=")
+	type = word(name,1,"_")
+	'name = word(name,2,"_",100)
+	args.add(name, convert_type(value,type))
+next
+
+dim fieldsInTable as c = ""
+dim sql1 as c = "select first 1 * from " + a5_qualify_field(table)
+flag = cn.Execute(sql1)
+
+if flag = .f. then
+	pOut.error = .t.
+	pOut.errorText = "Could not get list of fields in table. Error reported was: " + cn.CallResult.text
+	cn.close()
+	select_generic = pout
+	exit function
+end if
+
+dim rs as sql::ResultSet
+rs = cn.ResultSet
+dim i as n
+dim count as n
+count = rs.ColumnCount
+
+for i = 1 to count
+	fieldsInTable = fieldsInTable + rs.ColumnInfo[i].name + crlf()
+next i
+
+fields = comma_to_crlf(fields)
+fields = stritran(fields,"\comma",",")
+dim fieldsToValidate as c
+dim fieldsExpressions as c
+fieldsExpressions = filter_string(fields," as ",crlf())
+fieldsToValidate = filter_string(fields," as ",crlf(),.t.)
+dim validFields as c
+validFields = word_in_common(fieldsToValidate,fieldsInTable,crlf())
+
+if validFields = "" then
+	validFields = fieldsInTable
+end if
+
+dim allfields as c
+allfields = alltrim(validFields) + crlf() + fieldsExpressions
+allfields = alltrim(allfields)
+
+if where <> "" then
+	dim q as sql::Query::LogicalExpression
+	flag = q.parse(where)
+	if flag = .f. then
+		pOut.error = .t.
+		pOut.errorText = "Invalid WHERE clause. Error reported was: " + q.CallResult.text
+		cn.close()
+		select_generic = pout
+		exit function
+	end if
+end if
+
+dim sqlPortable as c
+dim sqlNative as c
+dim fieldsPortable as c = ""
+for each fn in allfields
+	if atc(" as ",fn.value) > 0 then
+		fieldsPortable = fieldsPortable + fn.value + crlf()
+	else
+		fieldsPortable = fieldsPortable + a5_qualify_field(fn.value) + crlf()
+	end if
+next
+sqlPortable = "select " + crlf_to_comma(fieldsPortable) + " from " + a5_qualify_field(table)
+
+if where <> "" then
+	sqlPortable = a5_sql_addfilterorder(sqlPortable,where,"")
+	
+end if
+
+if order <> "" then
+	sqlPortable = a5_sql_addfilterorder(sqlPortable,"","",order)
+end if
+
+if where <> "" .and. order = "" then
+	sqlNative = "select " + table + "from " + crlf_to_comma(fields) + " where " + where
+else if where <> "" .and. order <> "" then
+	sqlNative = "select " + table + "from " + crlf_to_comma(fields) + " where " + where + " order by " + order
+else
+	sqlNative = "select " + table + "from " + crlf_to_comma(fields)
+end if
+
+
+dim pCount as p
+pCount = a5_SQL_GetCount(cn,sqlPortable,args)
+
+
+flag = cn.Execute(sqlPortable,args)
+dim errorText as c = ""
+if flag = .f. then
+	errorText = cn.callresult.text
+	cn.PortableSQLEnabled = .f.
+	'try again using native syntax
+	flag = cn.Execute(sqlNative)
+end if
+if flag then
+	dim rs as sql::ResultSet
+	rs = cn.ResultSet
+	
+	if pageNumber <> "" then 
+		if pagesize = "" then 
+			pageNumber = ""
+		end if 
+	end if 
+	
+	dim targetRow as n = 1
+	if pageNumber <> "" then 
+		targetRow = ( (val(pagesize) * (val(pageNumber)-1)) + 1)
+	end if 
+	
+	
+	dim json as c
+	if targetRow = 1 .and. pageSize = "" then
+		json = rs.tojson()
+		pout.pageSize = -1
+		pout.pageNumber = -1
+	else 
+		dim flag as l 
+		flag = rs.GoToRow(targetRow)
+		if flag then 
+			json = rs.tojson(val(pagesize))
+		else
+			json = "[]"
+		end if 
+		pout.pageSize = val(pagesize)
+		pout.pageNumber = val(pageNumber)
+	end if 
+	if pCount.error = .F. then 
+		pout.records = pcount.Count
+	end if 
+else
+	pout.error = .t.
+	pout.errorText = errorText
+	cn.close()
+	select_generic = pout
+	exit function
+end if
+cn.close()
+pout.error = .f.
+pout.result = json_parse(json)
+select_generic = pout
+end function 
+
+function update_generic as p (table as c, fieldvaluepairs as c , where = "", arguments = "")
+
+'in the swagger tester, if you do not specify a value for arguments, it calls the function with the argument value set to "string"
+if where = "string" then 
+	where = ""
+end if 
+if arguments = "string" then 
+	arguments = ""
+end if 
+
+self.__http_status = 200
+dim cn as sql::Connection
+dim flag as l 
+flag = cn.open(self.cs)
+if flag = .f. then 
+	pOut.error = .t.
+	pOut.errorText = "Could not open database. Error reported was: " + cn.CallResult.text 
+	update_generic = pout
+	exit function 
+end if 
+dim prOut as p 
+dim flag as l
+flag = cn.open(cs)
+if flag = .f. then 
+	prOut.error = .t.
+	prOut.errorText = cn.CallResult.text 
+	update_generic = prOut
+	exit function 
+end if 	
+
+
+dim fieldsInTable as c = ""
+dim sql1 as c = "select first 1 * from " + a5_qualify_field(table)
+cn.PortableSQLEnabled = .t.
+flag = cn.Execute(sql1)
+
+if flag = .f. then 
+	pOut.error = .t.
+	pOut.errorText = "Could not get list of fields in table. Error reported was: " + cn.CallResult.text 
+	cn.close()
+	update_generic = pout
+	exit function 
+end if 
+
+dim rs as sql::ResultSet
+rs = cn.ResultSet
+dim i as n 
+dim count as n 
+count = rs.ColumnCount
+dim a_fields[count] as p
+
+for i = 1 to count 
+	a_fields[i].name = rs.ColumnInfo[i].name 
+	a_fields[i].type = rs.ColumnInfo[i].dbftype
+next i 
+
+dim field_type as c 
+field_type = a_fields.dump_properties("name=type")
+dim sd as stringdictionary
+sd.Initialize(field_type)
+
+
+arguments = comma_to_crlf(arguments)
+dim count as n 
+count = line_count(arguments)
+dim a_args[count] as p
+a_args.initialize_properties("raw",arguments)
+dim i as n 
+for i = 1 to count 
+	a_args[i].argname = word(a_args[i].raw,1,"=")
+	a_args[i].argvalue = word(a_args[i].raw,2,"=")
+next i 
+dim sdArguments as stringdictionary
+dim sdTxt as c = a_args.dump_properties("argname=argvalue")
+sdArguments.Initialize(sdtxt)
+
+
+dim count as n 
+fieldValuePairs = comma_to_crlf(fieldValuePairs)
+count = line_count(fieldValuePairs)
+
+if count = 0 then 
+	pOut.error = .t.
+	pOut.errorText = "No field to update were specified" 
+	cn.close()
+	update_generic = pout
+	exit function 
+end if 
+
+dim a_values[count] as p
+a_values.initialize_properties("raw",fieldValuePairs)
+dim i as n 
+dim count as n 
+dim args as sql::arguments 
+
+for i = 1 to count 
+	a_values[i].field = word(a_values[i].raw,1,"=")
+	a_values[i].value = word(a_values[i].raw,2,"=",200)
+	a_values[i].value = stritran(a_values[i].value,"\comma",",")
+	a_values[i].value = stritran(a_values[i].value,"\crlf",crlf())
+	a_values[i].value = stritran(a_values[i].value,"\lf",crlf())
+	a_values[i].type = sd.Get(a_values[i].field)
+	
+	if left(a_values[i].value,1) = ":" then 
+		a_values[i].argname = substr(a_values[i].value,2)
+		a_values[i].argValue = sdArguments.get(a_values[i].argName)
+	else
+		a_values[i].argname = "argument_" + i 
+		a_values[i].argValue = a_values[i].value	
+	end if 
+	dim ix as n 
+	ix = a_args.findi(a_values[i].argname,"argname")
+	if ix > 0 then 
+		a_args[ix].handled = .t.
+	end if 
+	a_values[i].field = a5_qualify_field(a_values[i].field)
+	args.add(a_values[i].argname,convert_type(a_values[i].argvalue,a_values[i].type))
+next i 
+
+
+dim count as n 
+count = a_args.size()
+dim i as n 
+for i = 1 to count 
+	with a_args[i]
+		dim handled as l = default .f.
+	end with 
+	if a_args[i].handled = .f. then 
+		dim type as c 
+		type = word(a_args[i].argname,1,"_")
+		args.add(a_args[i].argname, convert_type(a_args[i].argvalue,type))
+	end if 
+next i 
+dim setfields as c 
+setfields = a_values.dump_properties("field=:argname")
+dim sql as c 
+sql = "update " + a5_qualify_field(table) + " SET " + crlf_to_comma(setfields) + " where " + where 
+cn.PortableSQLEnabled = .t.
+flag = cn.Execute(sql,args)
+if flag = .f. then 
+	prOut.error = .t.
+	prOut.errorText = cn.CallResult.text 
+	update_generic = prOut
+	cn.close()
+	exit function 
+end if 		
+
+prOut.error = .f.
+prOut.rowsAffected = cn.CallResult.rowsAffected
+update_generic = prOut
+cn.close()
+	
+end function 
+
+
+function delete_generic as p (table as c, where = "", arguments = "")
+
+'in the swagger tester, if you do not specify a value for arguments, it calls the function with the argument value set to "string"
+if where = "string" then 
+	where = ""
+end if 
+if arguments = "string" then 
+	arguments = ""
+end if 
+
+
+self.__http_status = 200
+dim cn as sql::Connection
+dim flag as l 
+flag = cn.open(self.cs)
+if flag = .f. then 
+	pOut.error = .t.
+	pOut.errorText = "Could not open database. Error reported was: " + cn.CallResult.text 
+	delete_generic = pout
+	exit function 
+end if 
+dim prOut as p 
+dim flag as l
+flag = cn.open(cs)
+if flag = .f. then 
+	prOut.error = .t.
+	prOut.errorText = cn.CallResult.text 
+	delete_generic = prOut
+	exit function 
+end if 	
+
+
+dim fieldsInTable as c = ""
+dim sql1 as c = "select first 1 * from " + a5_qualify_field(table)
+cn.PortableSQLEnabled = .t.
+flag = cn.Execute(sql1)
+
+if flag = .f. then 
+	pOut.error = .t.
+	pOut.errorText = "Could not get list of fields in table. Error reported was: " + cn.CallResult.text 
+	cn.close()
+	delete_generic = pout
+	exit function 
+end if 
+
+dim rs as sql::ResultSet
+rs = cn.ResultSet
+dim i as n 
+dim count as n 
+count = rs.ColumnCount
+dim a_fields[count] as p
+
+for i = 1 to count 
+	a_fields[i].name = rs.ColumnInfo[i].name 
+	a_fields[i].type = rs.ColumnInfo[i].dbftype
+next i 
+
+dim field_type as c 
+field_type = a_fields.dump_properties("name=type")
+dim sd as stringdictionary
+sd.Initialize(field_type)
+
+
+arguments = comma_to_crlf(arguments)
+dim count as n 
+count = line_count(arguments)
+dim a_args[count] as p
+a_args.initialize_properties("raw",arguments)
+dim i as n 
+for i = 1 to count 
+	a_args[i].argname = word(a_args[i].raw,1,"=")
+	a_args[i].argvalue = word(a_args[i].raw,2,"=")
+next i 
+dim sdArguments as stringdictionary
+dim sdTxt as c = a_args.dump_properties("argname=argvalue")
+sdArguments.Initialize(sdtxt)
+
+
+dim args as sql::arguments 
+
+dim count as n 
+count = a_args.size()
+dim i as n 
+for i = 1 to count 
+	with a_args[i]
+		dim handled as l = default .f.
+	end with 
+	if a_args[i].handled = .f. then 
+		dim type as c 
+		type = word(a_args[i].argname,1,"_")
+		args.add(a_args[i].argname, convert_type(a_args[i].argvalue,type))
+	end if 
+next i 
+dim sql as c 
+sql = "delete from  " + a5_qualify_field(table) + " where " + where 
+cn.PortableSQLEnabled = .t.
+flag = cn.Execute(sql,args)
+if flag = .f. then 
+	prOut.error = .t.
+	prOut.errorText = cn.CallResult.text 
+	delete_generic = prOut
+	cn.close()
+	exit function 
+end if 		
+
+prOut.error = .f.
+prOut.rowsAffected = cn.CallResult.rowsAffected
+delete_generic = prOut
+cn.close()
+	
+end function 
+
+
+function insert_generic as p (table as c, fieldvaluepairs as c, arguments = "")
+
+'in the swagger tester, if you do not specify a value for arguments, it calls the function with the argument value set to "string"
+if arguments = "string" then 
+	arguments = ""
+end if 
+
+
+
+self.__http_status = 200
+dim cn as sql::Connection
+dim flag as l 
+flag = cn.open(self.cs)
+if flag = .f. then 
+	pOut.error = .t.
+	pOut.errorText = "Could not open database. Error reported was: " + cn.CallResult.text 
+	insert_generic = pout
+	exit function 
+end if 
+dim prOut as p 
+dim flag as l
+flag = cn.open(cs)
+if flag = .f. then 
+	prOut.error = .t.
+	prOut.errorText = cn.CallResult.text 
+	insert_generic = prOut
+	exit function 
+end if 	
+
+
+dim fieldsInTable as c = ""
+dim sql1 as c = "select first 1 * from " + a5_qualify_field(table)
+cn.PortableSQLEnabled = .t.
+flag = cn.Execute(sql1)
+
+if flag = .f. then 
+	pOut.error = .t.
+	pOut.errorText = "Could not get list of fields in table. Error reported was: " + cn.CallResult.text 
+	cn.close()
+	insert_generic = pout
+	exit function 
+end if 
+
+dim rs as sql::ResultSet
+rs = cn.ResultSet
+dim i as n 
+dim count as n 
+count = rs.ColumnCount
+dim a_fields[count] as p
+
+for i = 1 to count 
+	a_fields[i].name = rs.ColumnInfo[i].name 
+	a_fields[i].type = rs.ColumnInfo[i].dbftype
+next i 
+
+dim field_type as c 
+field_type = a_fields.dump_properties("name=type")
+dim sd as stringdictionary
+sd.Initialize(field_type)
+
+
+arguments = comma_to_crlf(arguments)
+dim count as n 
+count = line_count(arguments)
+dim a_args[count] as p
+a_args.initialize_properties("raw",arguments)
+dim i as n 
+for i = 1 to count 
+	a_args[i].argname = word(a_args[i].raw,1,"=")
+	a_args[i].argvalue = word(a_args[i].raw,2,"=")
+next i 
+dim sdArguments as stringdictionary
+dim sdTxt as c = a_args.dump_properties("argname=argvalue")
+sdArguments.Initialize(sdtxt)
+
+
+dim count as n 
+fieldValuePairs = comma_to_crlf(fieldValuePairs)
+count = line_count(fieldValuePairs)
+
+if count = 0 then 
+	pOut.error = .t.
+	pOut.errorText = "No field to insert were specified" 
+	cn.close()
+	insert_generic = pout
+	exit function 
+end if 
+
+dim a_values[count] as p
+a_values.initialize_properties("raw",fieldValuePairs)
+dim i as n 
+dim count as n 
+dim args as sql::arguments 
+
+for i = 1 to count 
+	a_values[i].field = word(a_values[i].raw,1,"=")
+	a_values[i].value = word(a_values[i].raw,2,"=",200)
+	a_values[i].value = stritran(a_values[i].value,"\comma",",")
+	a_values[i].value = stritran(a_values[i].value,"\crlf",crlf())
+	a_values[i].value = stritran(a_values[i].value,"\lf",crlf())
+	a_values[i].type = sd.Get(a_values[i].field)
+	
+	if left(a_values[i].value,1) = ":" then 
+		a_values[i].argname = substr(a_values[i].value,2)
+		a_values[i].argValue = sdArguments.get(a_values[i].argName)
+	else
+		a_values[i].argname = "argument_" + i 
+		a_values[i].argValue = a_values[i].value	
+	end if 
+	dim ix as n 
+	ix = a_args.findi(a_values[i].argname,"argname")
+	if ix > 0 then 
+		a_args[ix].handled = .t.
+	end if 
+	a_values[i].field = a5_qualify_field(a_values[i].field)
+	args.add(a_values[i].argname,convert_type(a_values[i].argvalue,a_values[i].type))
+next i 
+
+
+dim setfields as c = a_values.dump_Properties("field")
+dim setargs as c = a_values.dump_properties("argname")
+setargs = *for_each(x,":" + x, setargs)
+
+dim sql as c  = "insert into "  + a5_qualify_field(table) + "(" + crlf_to_comma(setfields) + ") values (" + crlf_to_comma(setargs) + ")"
+
+
+cn.PortableSQLEnabled = .t.
+flag = cn.Execute(sql,args)
+if flag = .f. then 
+	prOut.error = .t.
+	prOut.errorText = cn.CallResult.text 
+	insert_generic = prOut
+	cn.close()
+	exit function 
+end if 		
+
+prOut.error = .f.
+prOut.rowsAffected = cn.CallResult.rowsAffected
+prOut.lastInsertedIdentity = cn.CallResult.lastInsertedIdentity
+insert_generic = prOut
+cn.close()
+	
+end function 
+
+
+function schema_generic as p (table as c)
+self.__http_status = 200
+
+
+
+dim cn as sql::Connection
+dim flag as l
+flag = cn.open(self.cs)
+if flag = .f. then
+	pOut.error = .t.
+	pOut.errorText = "Could not open database. Error reported was: " + cn.CallResult.text
+	schema_generic = pout
+	exit function
+end if
+
+dim sql as c
+cn.PortableSQLEnabled = .t.
+
+dim sql1 as c = "select first 1 * from " + a5_qualify_field(table)
+flag = cn.Execute(sql1)
+
+if flag = .f. then
+	pOut.error = .t.
+	pOut.errorText = "Could not get schema for table. Error reported was: " + cn.CallResult.text
+	cn.close()
+	schema_generic = pout
+	exit function
+end if
+
+dim rs as sql::ResultSet
+rs = cn.ResultSet
+dim i as n
+dim count as n
+count = rs.ColumnCount
+
+dim af[count] as p
+
+
+for i = 1 to count
+	af[i].name = rs.ColumnInfo[i].name
+	af[i].type = rs.ColumnInfo[i].alphatype
+	af[i].length = rs.ColumnInfo[i].length
+	af[i].decimals = rs.ColumnInfo[i].decimaldigits
+next i
+
+cn.close()
+pout.error = .f.
+pout.result = json_parse(json_generate(af))
+schema_generic = pout
+end function 
+
+'----------------end of generic functions ----------------------------
+
+function NRecorrido_select as p (fields = "", where = "", order = "", arguments = "", pagesize = "", pageNumber = "")
+'DESCRIPTION:Select data from the 'N_Recorrido' table. Data are returned in JSON format.
+'ARGUMENT(field):A comma delimited list of fields to return
+'ARGUMENT(where):An optional WHERE clause. E.g. city='boston'. Can also use arguments in where clause. e.g. city=:c_city
+'ARGUMENT(order):An optional ORDER BY clause
+'ARGUMENT(arguments):A comma delimited list of argumentname/value pairs. Syntax for argument name is dataType_name, e.g. T_DOB is an argument of time value. Example t_dob=1972/12/6,c_place=medford
+'ARGUMENT(pagesize):Specifies number of records per 'page'. If blank, all records are returned. 
+'ARGUMENT(pageNumber):Specifies the page of data to return. Only meaningful if pagesize is not blank.
+NRecorrido_select = select_generic("N_Recorrido",fields,where,order,arguments,pagesize,pagenumber)
+end function 
+
+function NRecorrido_select_authenticate as n (apikey = "")
+'to enable authentication
+'1) change the function prototype to make apikey required (e.g. function NRecorridoselectauthenticate as n (apikey as c ) )
+'2) write code that determines if the apikey allows this action
+'3) if allowed, return 200, if not allowed, return 401
+NRecorrido_select_authenticate = 200	
+end function 
+
+
+end class

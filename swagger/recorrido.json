@@ -1,0 +1,76 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "Recorrido Service Endpoint",
+    "version": "1.0.0",
+    "title": "Recorrido Service Endpoint"
+  },
+  "host": "{{host}}",
+  "basePath": "{{basePath}}",
+  "schemes": [
+    "{{scheme}}"
+  ],
+  "securityDefinitions": {
+    "NRecorrido_select_authenticate": {
+      "type": "apiKey",
+      "in": "query",
+      "name": "apikey",
+      "description": "NRecorrido_select_authenticate security"
+    }
+  },
+  "paths": {
+    "/NRecorrido_select": {
+      "get": {
+        "summary": "Select data from the 'N_Recorrido' table. Data are returned in JSON format.",
+        "operationId": "NRecorrido_select",
+        "parameters": [
+          {
+            "in": "query",
+            "name": "fields",
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "where",
+            "description": "An optional WHERE clause. E.g. city='boston'. Can also use arguments in where clause. e.g. city=:c_city",
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "order",
+            "description": "An optional ORDER BY clause",
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "arguments",
+            "description": "A comma delimited list of argumentname/value pairs. Syntax for argument name is dataType_name, e.g. T_DOB is an argument of time value. Example t_dob=1972/12/6,c_place=medford",
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "pagesize",
+            "description": "Specifies number of records per 'page'. If blank, all records are returned.",
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "pageNumber",
+            "description": "Specifies the page of data to return. Only meaningful if pagesize is not blank.",
+            "type": "string"
+          }
+        ],
+        "security": [
+          {
+            "NRecorrido_select_authenticate": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful request."
+          }
+        }
+      }
+    }
+  }
+}

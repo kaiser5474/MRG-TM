@@ -1,0 +1,33 @@
+{
+    "api": [
+        {
+            "implementation": "Xbasic",
+            "service": "sqlcrud::recorrido",
+            "methods": [
+                {
+                    "name": "NRecorrido_select",
+                    "method": "GET",
+                    "path": "/NRecorrido_select",
+                    "use_query": true,
+                    "auth": "NRecorrido_select_authenticate"
+                }
+            ]
+        }
+    ],
+    "msg": "Working...",
+    "height": ".5in",
+    "width": "4in",
+    "allow": false,
+    "flatten_arguments": true,
+    "debugger_header": false,
+    "auth_type": [
+        {
+            "name": "NRecorrido_select_authenticate",
+            "implementation": "Xbasic",
+            "service": "sqlcrud::recorrido",
+            "authorize": "NRecorrido_select_authenticate",
+            "arguments": "queryString",
+            "use_query": true
+        }
+    ]
+}

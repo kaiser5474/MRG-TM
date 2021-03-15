@@ -1,0 +1,168 @@
+define class REST::myRestAPI
+
+
+dim sampleVar1 as c
+sampleVar1 = "Alpha"
+
+function getData as p()
+	
+	dim p as  p
+	p.firstname = "Jarvis"
+	p.lastname = "Miranda"
+	p.address = "De las Hortensias"
+	p.city = "Quito"
+	p.state = "Pichincha"
+	
+	getData = p
+	
+	end function
+	
+	function getRecorrido as p(id as n)
+	
+'	'Execute a query on a SQL database
+''DIM a connection variable
+'DIM cn as SQL::Connection
+'dim flagResult as l 
+'flagResult = cn.open("::Name::Nibble")
+'if flagResult = .f. then 
+'	ui_msg_box("Error","Could not connect to database. Error reported was: " + crlf() + cn.CallResult.text)
+'	end 
+'end if
+'
+''Specify if you are using Portable SQL syntax, or not
+'cn.PortableSQLEnabled = .t. 
+'dim sqlStatement as c 
+'sqlStatement = <<%sql%
+'SELECT   *  FROM N_Recorrido 
+'WHERE Id_Recorrido = :id OR Id_Recorrido = 3 
+'%sql%
+''Execute the Query
+'dim args2 as sql::Arguments 
+'args2.Add("id", id)
+'flagResult = cn.Execute(sqlStatement, args2)
+'if flagResult = .f. then 
+'	ui_msg_box("Error",cn.CallResult.text)
+'	cn.close()
+'	end 
+'end if 
+''dim rs as sql::resultset
+'
+'dim json as c
+'json = cn.ResultSet.toJSON()
+''rs = cn.ResultSet
+''The sql_resultset_preview() function opens a window showing a table with the results
+''of your query. Show a maximum of 1,000 rows of data
+''Note that the connection object is passed into the sql_resultset_preview() function so that the
+''function can immediately release the resultset, thereby releasing any locks on the database that some databases might
+''have applied.
+'dim p as p
+'p = json_parse(json)
+'getRecorrido = p
+'
+''getRecorrido = json
+'	'Now, close the connection 
+'cn.close()
+
+dim ops as p
+ops.connectionString = "::Name::Nibble"
+dim ops.sql as c
+ops.json = .t.
+'define the nested sql queries and query properties. each level of indentation denotes a parent-child relationship
+ops.sql = <<%xstr%
+{sql: 'SELECT  \t*  FROM N_Recorrido WHERE Id_Recorrido = 6 OR Id_Recorrido = 3 ',name: 'Top',sqlSecurityJSON: ''}
+%xstr%
+dim args as sql::arguments
+dim p as p
+'execute the definition to get the JSON data
+p = a5_sql_nested_query_to_json_document(ops,args)
+if p.hasError = .f. then
+	dim json as c 
+	json = p.json
+	
+else
+	'there was an error
+	dim errorText as c 
+	errorText = p.errortext
+end if
+
+getRecorrido = json
+dim a as p
+a = json_parse(json)
+getRecorrido = a
+	end function
+	
+	function getRecorrido2 as p(id as n)
+	
+'	'Execute a query on a SQL database
+''DIM a connection variable
+'DIM cn as SQL::Connection
+'dim flagResult as l 
+'flagResult = cn.open("::Name::Nibble")
+'if flagResult = .f. then 
+'	ui_msg_box("Error","Could not connect to database. Error reported was: " + crlf() + cn.CallResult.text)
+'	end 
+'end if
+'
+''Specify if you are using Portable SQL syntax, or not
+'cn.PortableSQLEnabled = .t. 
+'dim sqlStatement as c 
+'sqlStatement = <<%sql%
+'SELECT   *  FROM N_Recorrido 
+'WHERE Id_Recorrido = :id OR Id_Recorrido = 3 
+'%sql%
+''Execute the Query
+'dim args2 as sql::Arguments 
+'args2.Add("id", id)
+'flagResult = cn.Execute(sqlStatement, args2)
+'if flagResult = .f. then 
+'	ui_msg_box("Error",cn.CallResult.text)
+'	cn.close()
+'	end 
+'end if 
+''dim rs as sql::resultset
+'
+'dim json as c
+'json = cn.ResultSet.toJSON()
+''rs = cn.ResultSet
+''The sql_resultset_preview() function opens a window showing a table with the results
+''of your query. Show a maximum of 1,000 rows of data
+''Note that the connection object is passed into the sql_resultset_preview() function so that the
+''function can immediately release the resultset, thereby releasing any locks on the database that some databases might
+''have applied.
+'dim p as p
+'p = json_parse(json)
+'getRecorrido = p
+'
+''getRecorrido = json
+'	'Now, close the connection 
+'cn.close()
+
+dim ops as p
+ops.connectionString = "::Name::Nibble"
+dim ops.sql as c
+ops.json = .t.
+'define the nested sql queries and query properties. each level of indentation denotes a parent-child relationship
+ops.sql = <<%xstr%
+{sql: 'SELECT  \t*  FROM N_Recorrido WHERE Id_Recorrido = 6 OR Id_Recorrido = 3 ',name: 'Top',sqlSecurityJSON: ''}
+%xstr%
+dim args as sql::arguments
+dim p as p
+'execute the definition to get the JSON data
+p = a5_sql_nested_query_to_json_document(ops,args)
+if p.hasError = .f. then
+	dim json as c 
+	json = p.json
+	
+else
+	'there was an error
+	dim errorText as c 
+	errorText = p.errortext
+end if
+
+'getRecorrido = json
+dim a as p
+a = json_parse(json)
+getRecorrido = a
+	end function
+	
+end class	
