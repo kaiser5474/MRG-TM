@@ -925,7 +925,7 @@
 		"name": "\\Images\\Aereo.png"
 	},
 	{
-		"crc": 4294960507,
+		"crc": 4294927890,
 		"name": "\\javascript\\a5.js"
 	},
 	{
@@ -935,10 +935,30 @@
 	{
 		"crc": 4294925972,
 		"name": "\\javascript\\a5_url.js"
+	},
+	{
+		"crc": 4294950020,
+		"name": "\\__a5_system\\googleapis\\firebase-app.js"
+	},
+	{
+		"crc": 4294905357,
+		"name": "\\__a5_system\\googleapis\\firebase-auth.js"
+	},
+	{
+		"crc": 4294920474,
+		"name": "\\__a5_system\\googleapis\\firebase-firestore.js"
+	},
+	{
+		"crc": 4294927995,
+		"name": "\\__a5_system\\googleapis\\firebase-functions.js"
+	},
+	{
+		"crc": 4294939382,
+		"name": "\\__a5_system\\a5SvcBind.js"
 	}],
 	"rootfiles": [
 	{
-		"crc": 4294959701,
+		"crc": 4294904022,
 		"name": "\\baseline.zip"
 	},
 	{
@@ -950,7 +970,7 @@
 		"name": "\\icon.png"
 	},
 	{
-		"crc": 4294922541,
+		"crc": 4294937711,
 		"name": "\\index.html"
 	},
 	{
@@ -990,11 +1010,11 @@
 		"name": "\\unnamed.jpg"
 	},
 	{
-		"crc": 4294927347,
+		"crc": 4294902128,
 		"name": "\\version.json"
 	},
 	{
-		"crc": 4294933800,
+		"crc": 4294944146,
 		"name": "\\_instantUpdateSettings.js"
 	},
 	{

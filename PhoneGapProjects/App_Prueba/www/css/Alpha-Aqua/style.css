@@ -1391,7 +1391,6 @@ select.edit option, select.editPrimary option {
 
 .pulse .button, .pulse .buttonIcon, .pulse .buttonDD, .pulse .buttonSplit {
   position: relative;
-  overflow: hidden;
   transition: background-color 600ms cubic-bezier(0, 0.8, 1, 0.86); }
 
 .pulse .button:after, .pulse .buttonIcon:after, .pulse .buttonDD:after, .pulse .buttonSplit:after {
