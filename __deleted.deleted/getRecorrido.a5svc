@@ -1,0 +1,28 @@
+{
+    "api": [
+        {
+            "implementation": "Xbasic",
+            "service": "REST::myRestAPI",
+            "methods": [
+                {
+                    "name": "getRecorrido",
+                    "method": "GET",
+                    "path": "/getRecorrido",
+                    "use_query": true,
+                    "body_encoding": "json",
+                    "auth": ""
+                },
+                {
+                    "name": "getRecorrido2",
+                    "method": "GET",
+                    "path": "/getRecorrido2",
+                    "use_query": true,
+                    "auth": ""
+                }
+            ]
+        }
+    ],
+    "allow": false,
+    "flatten_arguments": true,
+    "debugger_header": false
+}
