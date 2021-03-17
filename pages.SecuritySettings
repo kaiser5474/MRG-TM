@@ -4464,5 +4464,10 @@
 		"page": "REST.myRestAPI.a5xbclass",
 		"action": "allow",
 		"groups": ""
+	},
+	{
+		"page": "getRecorrido.a5svc",
+		"action": "allow",
+		"groups": ""
 	}]
 }

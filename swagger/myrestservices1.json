@@ -11,17 +11,9 @@
     "{{scheme}}"
   ],
   "paths": {
-    "/getRecorrido2": {
+    "/getRRHH": {
       "get": {
-        "operationId": "getRecorrido2",
-        "parameters": [
-          {
-            "in": "query",
-            "name": "id",
-            "required": true,
-            "type": "number"
-          }
-        ],
+        "operationId": "getRRHH",
         "responses": {
           "200": {
             "description": "Successful request."
@@ -35,9 +27,9 @@
         "parameters": [
           {
             "in": "query",
-            "name": "id",
+            "name": "Userid",
             "required": true,
-            "type": "number"
+            "type": "string"
           }
         ],
         "responses": {

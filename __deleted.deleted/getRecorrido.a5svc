@@ -13,9 +13,9 @@
                     "auth": ""
                 },
                 {
-                    "name": "getRRHH",
+                    "name": "getRecorrido2",
                     "method": "GET",
-                    "path": "/getRRHH",
+                    "path": "/getRecorrido2",
                     "use_query": true,
                     "auth": ""
                 }
