@@ -4,165 +4,106 @@ define class REST::myRestAPI
 dim sampleVar1 as c
 sampleVar1 = "Alpha"
 
-function getData as p()
+function getRecorrido as p(Userid as c)
 	
-	dim p as  p
-	p.firstname = "Jarvis"
-	p.lastname = "Miranda"
-	p.address = "De las Hortensias"
-	p.city = "Quito"
-	p.state = "Pichincha"
-	
-	getData = p
-	
-	end function
-	
-	function getRecorrido as p(id as n)
-	
-'	'Execute a query on a SQL database
-''DIM a connection variable
-'DIM cn as SQL::Connection
-'dim flagResult as l 
-'flagResult = cn.open("::Name::Nibble")
-'if flagResult = .f. then 
-'	ui_msg_box("Error","Could not connect to database. Error reported was: " + crlf() + cn.CallResult.text)
-'	end 
-'end if
-'
-''Specify if you are using Portable SQL syntax, or not
-'cn.PortableSQLEnabled = .t. 
-'dim sqlStatement as c 
-'sqlStatement = <<%sql%
-'SELECT   *  FROM N_Recorrido 
-'WHERE Id_Recorrido = :id OR Id_Recorrido = 3 
-'%sql%
-''Execute the Query
-'dim args2 as sql::Arguments 
-'args2.Add("id", id)
-'flagResult = cn.Execute(sqlStatement, args2)
-'if flagResult = .f. then 
-'	ui_msg_box("Error",cn.CallResult.text)
-'	cn.close()
-'	end 
-'end if 
-''dim rs as sql::resultset
-'
-'dim json as c
-'json = cn.ResultSet.toJSON()
-''rs = cn.ResultSet
-''The sql_resultset_preview() function opens a window showing a table with the results
-''of your query. Show a maximum of 1,000 rows of data
-''Note that the connection object is passed into the sql_resultset_preview() function so that the
-''function can immediately release the resultset, thereby releasing any locks on the database that some databases might
-''have applied.
-'dim p as p
-'p = json_parse(json)
-'getRecorrido = p
-'
-''getRecorrido = json
-'	'Now, close the connection 
-'cn.close()
-
-dim ops as p
-ops.connectionString = "::Name::Nibble"
-dim ops.sql as c
-ops.json = .t.
-'define the nested sql queries and query properties. each level of indentation denotes a parent-child relationship
-ops.sql = <<%xstr%
-{sql: 'SELECT  \t*  FROM N_Recorrido WHERE Id_Recorrido = 6 OR Id_Recorrido = 3 ',name: 'Top',sqlSecurityJSON: ''}
-%xstr%
+	'DIM a SQL arguments object
 dim args as sql::arguments
-dim p as p
-'execute the definition to get the JSON data
-p = a5_sql_nested_query_to_json_document(ops,args)
-if p.hasError = .f. then
-	dim json as c 
-	json = p.json
-	
-else
-	'there was an error
-	dim errorText as c 
-	errorText = p.errortext
-end if
+args.Add("Userid", Userid)
 
-getRecorrido = json
+'DIM an Xbasic AlphaDAO connection object
+dim cn as sql::connection
+dim flag as l
+''open the connection object to connect to the Database
+flag = cn.open("::Name::Nibble")
+dim sql as c
+sql = <<%txt%
+	SELECT DISTINCT      N_Recorrido.Id_Recorrido, N_Recorrido.Id_EstadoRecorrido, N_Recorrido.Id_TipoFlete, N_EntidadOrigen.Organizacion AS Origen, 
+                         N_EntidadDestino.Organizacion AS Destino, N_Recorrido.FechaSalida, N_Recorrido.fechaCompletado, N_Recorrido.referenciaCliente, 
+                         View_RecorridoUltimaActividad2.Observaciones AS ObservacionUltimaAct, N_Actividad.Descripcion AS Actividad, 
+                         WebSecurityUsers.Userid
+             FROM        N_Entidad AS N_EntidadOrigen RIGHT OUTER JOIN
+                         N_Recorrido AS N_Recorrido ON N_EntidadOrigen.Id_Entidad = N_Recorrido.Id_Origen LEFT OUTER JOIN
+                         N_Entidad AS N_EntidadCliente LEFT OUTER JOIN
+                         WebSecurityUsers AS WebSecurityUsers INNER JOIN
+                         N_Contactos AS N_Contactos ON WebSecurityUsers.Id_Usuario = N_Contactos.Id_Usuario ON N_EntidadCliente.Id_Entidad = N_Contactos.Id_Entidad ON 
+                         N_Recorrido.Id_Cliente = N_EntidadCliente.Id_Entidad LEFT OUTER JOIN
+                         N_Entidad AS N_EntidadDestino ON N_Recorrido.Id_Destino = N_EntidadDestino.Id_Entidad LEFT OUTER JOIN
+                         View_RecorridoUltimaActividad2 AS View_RecorridoUltimaActividad2 LEFT OUTER JOIN
+                         N_Actividad AS N_Actividad ON View_RecorridoUltimaActividad2.Id_Actividad = N_Actividad.Id_Actividad ON N_Recorrido.Id_Recorrido = View_RecorridoUltimaActividad2.Id_Recorrido FULL OUTER JOIN
+                         N_Entidad AS N_Entidad INNER JOIN
+                         N_Contactos AS N_Contactos_1 ON N_Entidad.Id_Entidad = N_Contactos_1.Id_Entidad INNER JOIN
+                         WebSecurityUsers AS WebSecurityUsers_1 ON N_Contactos_1.Id_Usuario = WebSecurityUsers_1.Id_Usuario FULL OUTER JOIN
+                         Contrato_ServiciosTransportacion AS Contrato_ServiciosTransportacion ON N_Entidad.Id_Entidad = Contrato_ServiciosTransportacion.Id_Entidad ON 
+                         N_Recorrido.Id_ContratoServicio = Contrato_ServiciosTransportacion.Id_ContratoServicioTransportacion
+           WHERE         (WebSecurityUsers.Userid = :Userid) AND (N_Recorrido.Id_EstadoRecorrido >= 2) OR
+                         (N_Recorrido.Id_EstadoRecorrido >= 2) AND (WebSecurityUsers_1.Userid = :Userid)
+ORDER BY N_Recorrido.FechaSalida DESC
+	
+
+%txt%
+'turn portable SQL on. (for more information on portable sql search in help (https://www.alphasoftware.com/documentation)
+'execute the SQL - pass in the sql::arguments object
+flag = cn.execute(sql,args)
+if flag = .f. then 
+	'an error occurred - get the error message from cn.callresult.text 
+	'report the error, close the database and then end the script
+	dim errortext as c 
+	errortext = cn.callresult.text
+	cn.close()
+end if
+'DIM a SQL::Resultset object
+dim rs as sql::resultset
+rs = cn.resultset
+'get the JSON from the query
+dim json as c 
+json = rs.toJSON()
 dim a as p
 a = json_parse(json)
 getRecorrido = a
+'Clean up by freeing the resultset and then closing the database
+cn.freeresult()
+cn.close()
 	end function
 	
-	function getRecorrido2 as p(id as n)
+	function getRRHH as p()
 	
-'	'Execute a query on a SQL database
-''DIM a connection variable
-'DIM cn as SQL::Connection
-'dim flagResult as l 
-'flagResult = cn.open("::Name::Nibble")
-'if flagResult = .f. then 
-'	ui_msg_box("Error","Could not connect to database. Error reported was: " + crlf() + cn.CallResult.text)
-'	end 
-'end if
-'
-''Specify if you are using Portable SQL syntax, or not
-'cn.PortableSQLEnabled = .t. 
-'dim sqlStatement as c 
-'sqlStatement = <<%sql%
-'SELECT   *  FROM N_Recorrido 
-'WHERE Id_Recorrido = :id OR Id_Recorrido = 3 
-'%sql%
-''Execute the Query
-'dim args2 as sql::Arguments 
-'args2.Add("id", id)
-'flagResult = cn.Execute(sqlStatement, args2)
-'if flagResult = .f. then 
-'	ui_msg_box("Error",cn.CallResult.text)
-'	cn.close()
-'	end 
-'end if 
-''dim rs as sql::resultset
-'
-'dim json as c
-'json = cn.ResultSet.toJSON()
-''rs = cn.ResultSet
-''The sql_resultset_preview() function opens a window showing a table with the results
-''of your query. Show a maximum of 1,000 rows of data
-''Note that the connection object is passed into the sql_resultset_preview() function so that the
-''function can immediately release the resultset, thereby releasing any locks on the database that some databases might
-''have applied.
-'dim p as p
-'p = json_parse(json)
-'getRecorrido = p
-'
-''getRecorrido = json
-'	'Now, close the connection 
-'cn.close()
-
-dim ops as p
-ops.connectionString = "::Name::Nibble"
-dim ops.sql as c
-ops.json = .t.
-'define the nested sql queries and query properties. each level of indentation denotes a parent-child relationship
-ops.sql = <<%xstr%
-{sql: 'SELECT  \t*  FROM N_Recorrido WHERE Id_Recorrido = 6 OR Id_Recorrido = 3 ',name: 'Top',sqlSecurityJSON: ''}
-%xstr%
+	'DIM a SQL arguments object
 dim args as sql::arguments
-dim p as p
-'execute the definition to get the JSON data
-p = a5_sql_nested_query_to_json_document(ops,args)
-if p.hasError = .f. then
-	dim json as c 
-	json = p.json
-	
-else
-	'there was an error
-	dim errorText as c 
-	errorText = p.errortext
-end if
 
-'getRecorrido = json
+
+'DIM an Xbasic AlphaDAO connection object
+dim cn as sql::connection
+dim flag as l
+''open the connection object to connect to the Database
+flag = cn.open("::Name::Nibble")
+dim sql as c
+sql = <<%txt%
+SELECT  N_FichaTrabajadores.Id_Trabajador, 	N_Areas.Descripcion AS Area, 	((('(+' + N_Pais.PrefijoTelefonico) + ') ') + N_FichaTrabajadores.MobileTelephoneNumber) AS Movil, 	N_FichaTrabajadores.Imagen, 	N_FichaTrabajadores.EmailAddress1, 	N_FichaTrabajadores.CodIdentidad, 	((((N_FichaTrabajadores.PrimerNombre + ' ') + N_FichaTrabajadores.SegundoNombre) + ' ') + N_FichaTrabajadores.Apellido) AS NombreTrabajador  FROM (N_FichaTrabajadores N_FichaTrabajadores 	 LEFT OUTER JOIN N_Pais N_Pais 		 ON  N_FichaTrabajadores.Id_PaisMobileTelephone = N_Pais.Id_Pais  	 LEFT OUTER JOIN N_Areas N_Areas 		 ON  N_FichaTrabajadores.Id_AreaComercial = N_Areas.Id_Areas )  WHERE N_FichaTrabajadores.Activo = 1	
+%txt%
+'turn portable SQL on. (for more information on portable sql search in help (https://www.alphasoftware.com/documentation)
+'execute the SQL - pass in the sql::arguments object
+flag = cn.execute(sql,args)
+if flag = .f. then 
+	'an error occurred - get the error message from cn.callresult.text 
+	'report the error, close the database and then end the script
+	dim errortext as c 
+	errortext = cn.callresult.text
+	cn.close()
+end if
+'DIM a SQL::Resultset object
+dim rs as sql::resultset
+rs = cn.resultset
+'get the JSON from the query
+dim json as c 
+json = rs.toJSON()
 dim a as p
 a = json_parse(json)
-getRecorrido = a
-	end function
-	
+getRRHH = a
+'Clean up by freeing the resultset and then closing the database
+cn.freeresult()
+cn.close()
+
+	'self.__ http_status = 200
+end function
+'SELECT  N_FichaTrabajadores.Id_Trabajador, 	N_Areas.Descripcion AS Area, 	((('(+' + N_Pais.PrefijoTelefonico) + ') ') + N_FichaTrabajadores.MobileTelephoneNumber) AS Movil, 	N_FichaTrabajadores.Imagen, 	N_FichaTrabajadores.EmailAddress1, 	N_FichaTrabajadores.CodIdentidad, 	((((N_FichaTrabajadores.PrimerNombre + ' ') + N_FichaTrabajadores.SegundoNombre) + ' ') + N_FichaTrabajadores.Apellido) AS NombreTrabajador  FROM (N_FichaTrabajadores N_FichaTrabajadores 	 LEFT OUTER JOIN N_Pais N_Pais 		 ON  N_FichaTrabajadores.Id_PaisMobileTelephone = N_Pais.Id_Pais  	 LEFT OUTER JOIN N_Areas N_Areas 		 ON  N_FichaTrabajadores.Id_AreaComercial = N_Areas.Id_Areas )  WHERE N_FichaTrabajadores.Activo = 1	
 end class	

@@ -141,16 +141,7 @@ iframe {-webkit-user-select: text;}
 
 <div id="DLG1.R1">
 <div class="A5CWLayout" style="width: " >
-	<button type="button" id="DLG1.V.R1.BUTTON_1"    ></button>
-</div><br  style="clear:both; " />
-<div class="A5CWLayout" style="width: " >
 	<button type="button" id="DLG1.V.R1.BUTTON_2"    ></button>
-</div><br  style="clear:both; " />
-<div class="A5CWLayout" style="width: " >
-	<button type="button" id="DLG1.V.R1.BUTTON_3"    ></button>
-</div><br  style="clear:both; " />
-<div class="A5CWLayout" style="width: " >
-	<button type="button" id="DLG1.V.R1.BUTTON_4"    ></button>
 </div><br  style="clear:both; " />
 
 
@@ -350,117 +341,6 @@ A5.loadJavascript(';\n;');
 DLG1_DlgObj.lookups = {
 };
 DLG1_DlgObj._onOrientationChange =  function(e) {   };
-window['DLG1_O_DDCBBF14D5D84BDD8C81B89182D91E9F'] = function(rowNum,rowId,objEle) {
-window['DLG1_DDCBBF14D5D84BDD8C81B89182D91E9F'] = DLG1_DlgObj.createWindow('DLG1_WINDOW_DDCBBF14D5D84BDD8C81B89182D91E9F','modal-url-resizable',{
-	height: '5in',
-	width: '8in',
-	title: {
-		html: 'Window',
-		location: 'top',
-		direction: 'ltr'
-	},
-	disableMove: false,
-	theme: 'Alpha-Aqua',
-	body: {
-		content: {
-			type: 'url',
-			url: '__workingMessage.a5w'
-		}
-	},
-	onHide: function() { $(this.getWindowId('body')).src = '__workingMessage.a5w';}
-}   );
-window['DLG1_DDCBBF14D5D84BDD8C81B89182D91E9F'].show();
-$(window['DLG1_DDCBBF14D5D84BDD8C81B89182D91E9F'].getWindowId('body')).src = 'MRG-GI-FOR-004-V1 Acuerdo de Seguridad.pdf';
-}
-window['DLG1_O_AF0F92A0EC374F0BB7982620B324713D'] = function(rowNum,rowId,objEle) {
-var runMethod = 'ajax';
-if(runMethod == 'ajax') {
-if(typeof DLG1_DlgObj._onlineStatus != 'undefined') { 
-	if(DLG1_DlgObj._onlineStatus == 'offline') { 
-		( function() {  }() );
-		DLG1_DlgObj._executeEvent('onAjaxCallbackNotAvailable', {xbasicFunctionName: '', ajaxEvent: 'OpenReport'})
-		return false;
-	}
-}		
-};
- window['DLG1_AF0F92A0EC374F0BB7982620B324713D'] = DLG1_DlgObj.getWindow('WINDOW_50b1273a_c7cb_4603_9feb_143ee6af6ad5' );
-if(!window['DLG1_AF0F92A0EC374F0BB7982620B324713D']) {
-window['DLG1_AF0F92A0EC374F0BB7982620B324713D'] = DLG1_DlgObj.createWindow('WINDOW_50b1273a_c7cb_4603_9feb_143ee6af6ad5','modal-url-resizable',{
-	height: '5in',
-	width: '8in',
-	title: {
-		html: 'Window',
-		location: 'top',
-		direction: 'ltr',
-		show: true
-	},
-	disableMove: false,
-	theme: 'Alpha-Aqua',
-	body: {
-		content: {
-			type: 'url',
-			url: '__workingMessage.a5w'
-		}
-	},
-	onHide: function() { $(this.getWindowId('body')).src = '__workingMessage.a5w';;}
-}   );
-};
-	var ro = new Object();
-ro.ajaxFailedMessage = '';
-ro.ajaxCallbackTimeout = DLG1_DlgObj.ajaxCallbackTimeout;
-	ro.hostComponentType = 'Dialog';
-	ro.reportName = 'app_EstadoHecho@ProjectReport';
-	ro.reportNameShort = 'app_EstadoHecho';
-	ro.reportType = 'Report';
-	ro.reportIFrame = window['DLG1_AF0F92A0EC374F0BB7982620B324713D'].getWindowId('body');;
-	ro.gridId = 'DLG1';
-	ro.download = 'N';
-	ro.xbasicFunction = '';
-	ro.clientSideFilename = 'aaa';
-	ro.reportMessagesDivId = '';
-	ro.filter = '';
-	ro.order = '';
-	ro.sqlFilter = 'N_Recorrido.Id_Recorrido = 4';
-	ro.sqlOrder = '';
-	ro.arguments = '';
-	ro.rawArgumentMapping = '';
-	ro.controlReferences = [];
-	ro.arrayControls = DLG1_DlgObj._getArrayControls();
-	ro.workingMessage = 'Working...';
-	ro.workingMessageIcon = 'css/A5System/Images/wait.gif'
-	ro.pdfoptions = '';
-	ro.displayMode = '';
-	ro.saveAs = 'PDF';
-	ro.pdfOpenParameters = '' ;
-	ro._rowNumber = rowNum;
-	ro.afterExecuteJavascript = '';
-	if(A5.__dtfmt) ro.__dtfmt = A5.__dtfmt;
-	ro.__flagIIS = false;
-	if(A5.__flagIIS) ro.__flagIIS = A5.__flagIIS;
-	//should the PDF be displayed in a PDFViewer control
-	ro.pdfTarget = false;
-	ro.pdfViewerID = '';
-	ro.htmlReporting = {initialView: 'PDF'};
-	if(DLG1_DlgObj._embeddedMode) {
-		var callWorkingPreview = true;
-		if( typeof ro.htmlReporting == 'object' ) {
-			if( ro.htmlReporting.initialView == "HTML" ) {
-				callWorkingPreview = false;
-			}
-		}
-		if( callWorkingPreview ) {
-			ro.windowType = 'Modal';
-			var usingPDFViewer = false;
-			if(typeof ro.pdfTarget != 'undefined') usingPDFViewer = ro.pdfTarget;
-			if(!usingPDFViewer) {
-				reportPreviewFromWorkingPreview(ro);
-				return false;
-			}
-		}
-	}
-	A5.component.runReport(ro);
-window['DLG1_AF0F92A0EC374F0BB7982620B324713D'].show();
-}
 DLG1_DlgObj.setStateInfo({
 	"__dialogGuid": "ed9a90e3-2902-48e3-aa6a-b7a17cf9a41e",
 	"argumentsBoundToCotrols": "",
@@ -475,14 +355,6 @@ A5.msgBox.buttonWidth = '1in';
 DLG1_DlgObj._defaultWindowTitleDirection = 'ltr';
 DLG1_DlgObj._controlContainers = {}
 DLG1_DlgObj._buttons = {};
-DLG1_DlgObj._buttons['BUTTON_1'] = new A5.Button({
-	layout: 'text',
-	style: 'box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;',
-	html: 'descarga',
-	onClick: function() { 
-},
-	theme: 'Alpha-Aqua:base'
-});
 DLG1_DlgObj._buttons['BUTTON_2'] = new A5.Button({
 	layout: 'text',
 	style: 'box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;',
@@ -491,30 +363,8 @@ DLG1_DlgObj._buttons['BUTTON_2'] = new A5.Button({
 },
 	theme: 'Alpha-Aqua:base'
 });
-DLG1_DlgObj._buttons['BUTTON_3'] = new A5.Button({
-	layout: 'text',
-	style: 'box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;',
-	html: 'descarga3',
-	onClick: function() { 
-},
-	theme: 'Alpha-Aqua:base'
-});
-DLG1_DlgObj._buttons['BUTTON_4'] = new A5.Button({
-	layout: 'text',
-	style: 'box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;',
-	html: 'descarga4',
-	onClick: function() { 
-},
-	theme: 'Alpha-Aqua:base'
-});
-DLG1_DlgObj._buttons['BUTTON_1'].bind('DLG1.V.R1.BUTTON_1');
 DLG1_DlgObj._buttons['BUTTON_2'].bind('DLG1.V.R1.BUTTON_2');
-DLG1_DlgObj._buttons['BUTTON_3'].bind('DLG1.V.R1.BUTTON_3');
-DLG1_DlgObj._buttons['BUTTON_4'].bind('DLG1.V.R1.BUTTON_4');
-DLG1_DlgObj._buttons['BUTTON_1'].bind('DLG1.V.R1.BUTTON_1');
 DLG1_DlgObj._buttons['BUTTON_2'].bind('DLG1.V.R1.BUTTON_2');
-DLG1_DlgObj._buttons['BUTTON_3'].bind('DLG1.V.R1.BUTTON_3');
-DLG1_DlgObj._buttons['BUTTON_4'].bind('DLG1.V.R1.BUTTON_4');
 DLG1_DlgObj.setVariables({});
 DLG1_DlgObj._dataBoundControls = [];
 DLG1_DlgObj._primaryTableAlias = '';
@@ -10877,10 +10727,6 @@ DLG1_DlgObj._listInsideCards = {
 ;
 ;
 
-$e.add('DLG1.V.R1.BUTTON_1',A5.d.evnts.click,function(e) {
-var _disabled = this.disabled; if(typeof _disabled == 'undefined') _disabled = false; if(!_disabled) {DLG1_DlgObj.phoneGapReadFile('1.pdf',function(data) { },function() { });var that = this; this.disabled = true; setTimeout(function() { that.disabled = false; },300);}
-},this,false,'DLG1.V.R1.BUTTON_1');
-
 $e.add('DLG1.V.R1.BUTTON_2',A5.d.evnts.click,function(e) {
 var _disabled = this.disabled; if(typeof _disabled == 'undefined') _disabled = false; if(!_disabled) {var xbasicFunction = 'system:savereportaspdf';
   var additionalData = '__functionname=SaveReportAsPDF_3f9d23c0856d4d57b905458ccc8145e9';
@@ -10926,14 +10772,6 @@ DLG1_DlgObj.phoneGapOpenFileWithNativeViewer(obj,_onSuccess,_onError);
   var deviceOfflineAjaxFunction = function() {   }
   DLG1_DlgObj.ajaxCallback('','',xbasicFunction,'',additionalData,{errorFunction: ajaxErrorFunction, onComplete: onAjaxCompleteFunction, deviceOfflineFunction: deviceOfflineAjaxFunction });;var that = this; this.disabled = true; setTimeout(function() { that.disabled = false; },300);}
 },this,false,'DLG1.V.R1.BUTTON_2');
-
-$e.add('DLG1.V.R1.BUTTON_3',A5.d.evnts.click,function(e) {
-var _disabled = this.disabled; if(typeof _disabled == 'undefined') _disabled = false; if(!_disabled) {DLG1_O_DDCBBF14D5D84BDD8C81B89182D91E9F(1,'1',this);;var that = this; this.disabled = true; setTimeout(function() { that.disabled = false; },300);}
-},this,false,'DLG1.V.R1.BUTTON_3');
-
-$e.add('DLG1.V.R1.BUTTON_4',A5.d.evnts.click,function(e) {
-var _disabled = this.disabled; if(typeof _disabled == 'undefined') _disabled = false; if(!_disabled) {DLG1_O_AF0F92A0EC374F0BB7982620B324713D(1,'1',this);;var that = this; this.disabled = true; setTimeout(function() { that.disabled = false; },300);}
-},this,false,'DLG1.V.R1.BUTTON_4');
 
 DLG1_DlgObj.prepare();DLG1_DlgObj.populate(DLG1_DlgObj.originalValues[0]);
 DLG1_DlgObj._fireWatches(1);
