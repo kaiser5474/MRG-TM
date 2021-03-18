@@ -1,4 +1,4 @@
-A5SaveTimeStamp:20210308200001672
+A5SaveTimeStamp:20210317173030483
 css:GrBlue
 subComponent:MarinePictures.a5wcmp
 subComponent:DashBoard_Cliente.a5wcmp
@@ -99,6 +99,7 @@ subComponent:accionRecorridoMultimodal.a5wcmp
 subComponent:help.a5wcmp
 subComponent:N_Diccionario.a5wcmp
 subComponent:N_Empresas.a5wcmp
+subComponent:N_RRHH2.a5wcmp
 subComponent:CrearUsuarioSistema2.a5wcmp
 subComponent:N_Recorrido_Editar.a5wcmp
 subComponent:Empresas_Usuarios.a5wcmp
@@ -214,6 +215,7 @@ subComponent:accionRecorridoMultimodal
 subComponent:help
 subComponent:N_Diccionario
 subComponent:N_Empresas
+subComponent:N_RRHH2
 subComponent:CrearUsuarioSistema2
 subComponent:N_Recorrido_Editar
 subComponent:Empresas_Usuarios

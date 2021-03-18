@@ -1,0 +1,27 @@
+{
+    "data": {
+        "legacy": "../RRHH_MonitoreoSintomas.a5rpt"
+    },
+    "layout": {
+        "info": {
+            "PageWidth": 16836,
+            "PageHeight": 11894,
+            "MarginLeft": 720,
+            "MarginTop": 720,
+            "MarginRight": 720,
+            "MarginBottom": 720
+        },
+        "block": {
+            "Content": [
+                {
+                    "Field": "image",
+                    "ContentType": "ExternalImage",
+                    "image": {
+                        "width": 15396
+                    }
+                }
+            ],
+            "startNew": "Page"
+        }
+    }
+}

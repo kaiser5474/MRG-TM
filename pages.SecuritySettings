@@ -162,8 +162,8 @@
 	},
 	{
 		"page": "N_RRHH.a5wcmp",
-		"action": "login",
-		"groups": "18470709a31c4fc7a89b4529bf99f4ea,Administrators,7efcd2e785604ed98fe3a66ff4b6900e,Coca"
+		"action": "allow",
+		"groups": ""
 	},
 	{
 		"page": "RRHH_Detalles.a5wcmp",
@@ -4466,7 +4466,22 @@
 		"groups": ""
 	},
 	{
-		"page": "getRecorrido.a5svc",
+		"page": "N_FichaTrabajadores_Experiencia.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "N_FichaTrabajadores_Estudios.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "N_FichaTrabajadores_Experiencia2.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "N_RRHH2.a5wcmp",
 		"action": "allow",
 		"groups": ""
 	}]
