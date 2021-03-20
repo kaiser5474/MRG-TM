@@ -78,7 +78,14 @@ dim flag as l
 flag = cn.open("::Name::Nibble")
 dim sql as c
 sql = <<%txt%
-SELECT  N_FichaTrabajadores.Id_Trabajador, 	N_Areas.Descripcion AS Area, 	((('(+' + N_Pais.PrefijoTelefonico) + ') ') + N_FichaTrabajadores.MobileTelephoneNumber) AS Movil, 	N_FichaTrabajadores.Imagen, 	N_FichaTrabajadores.EmailAddress1, 	N_FichaTrabajadores.CodIdentidad, 	((((N_FichaTrabajadores.PrimerNombre + ' ') + N_FichaTrabajadores.SegundoNombre) + ' ') + N_FichaTrabajadores.Apellido) AS NombreTrabajador  FROM (N_FichaTrabajadores N_FichaTrabajadores 	 LEFT OUTER JOIN N_Pais N_Pais 		 ON  N_FichaTrabajadores.Id_PaisMobileTelephone = N_Pais.Id_Pais  	 LEFT OUTER JOIN N_Areas N_Areas 		 ON  N_FichaTrabajadores.Id_AreaComercial = N_Areas.Id_Areas )  WHERE N_FichaTrabajadores.Activo = 1	
+SELECT  N_FichaTrabajadores.Id_Trabajador, 	N_Areas.Descripcion AS Area, N_FichaTrabajadores.FechaNacimiento, N_FichaTrabajadores.Observaciones, 
+N_FichaTrabajadores.EstadoCivil, N_FichaTrabajadores.Sexo, N_FichaTrabajadores.FechaContrato,
+((('(+' + N_Pais.PrefijoTelefonico) + ') ') + N_FichaTrabajadores.MobileTelephoneNumber) AS Movil, 	
+N_FichaTrabajadores.Imagen, 	N_FichaTrabajadores.EmailAddress1, 	N_FichaTrabajadores.CodIdentidad, 	
+((((N_FichaTrabajadores.PrimerNombre + ' ') + N_FichaTrabajadores.SegundoNombre) + ' ') + N_FichaTrabajadores.Apellido) AS NombreTrabajador  
+FROM (N_FichaTrabajadores N_FichaTrabajadores 	 LEFT OUTER JOIN N_Pais N_Pais 		 ON  N_FichaTrabajadores.Id_PaisMobileTelephone = N_Pais.Id_Pais  	 
+LEFT OUTER JOIN N_Areas N_Areas 		 ON  N_FichaTrabajadores.Id_AreaComercial = N_Areas.Id_Areas )  
+WHERE N_FichaTrabajadores.Activo = 1	
 %txt%
 'turn portable SQL on. (for more information on portable sql search in help (https://www.alphasoftware.com/documentation)
 'execute the SQL - pass in the sql::arguments object

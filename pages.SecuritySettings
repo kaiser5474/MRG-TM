@@ -4484,5 +4484,10 @@
 		"page": "N_RRHH2.a5wcmp",
 		"action": "allow",
 		"groups": ""
+	},
+	{
+		"page": "N_Ruta_RutaInteres2.a5wcmp",
+		"action": "allow",
+		"groups": ""
 	}]
 }
