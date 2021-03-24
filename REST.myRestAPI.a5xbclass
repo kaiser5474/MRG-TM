@@ -4,6 +4,137 @@ define class REST::myRestAPI
 dim sampleVar1 as c
 sampleVar1 = "Alpha"
 
+function updateEncuesta as p(valorPregunta1 as n, valorPregunta2 as n, valorPregunta3 as n, valorPregunta4 as n, valorPregunta5 as n)
+	
+'DIM a SQL arguments object
+
+dim args as sql::arguments
+args.Add("Pregunta_CumplimosEspectativas", valorPregunta1)
+args.Add("Pregunta_RelacionCalidaPrecio", valorPregunta2) 	
+args.Add("Pregunta_SistemaInformacion", valorPregunta3) 
+args.Add("Pregunta_ContenidoRedesSociales", valorPregunta4) 
+args.Add("Pregunta_RecomiendaServicio", valorPregunta5)  
+
+'DIM an Xbasic AlphaDAO connection object
+dim cn as sql::connection
+dim flag as l
+''open the connection object to connect to the Database
+flag = cn.open("::Name::Nibble")
+dim sql as c
+'sql = <<%txt%
+'	N_SatisfaccionCliente.Check_NosSigueRedesSociales, 	N_SatisfaccionCliente.Id_Cliente, 	N_SatisfaccionCliente.fechaInicio, 	
+' 	N_SatisfaccionCliente.Observacion, 	N_SatisfaccionCliente.Pregunta_CumplimosEspectativas, 	
+'	N_SatisfaccionCliente.Pregunta_RelacionCalidaPrecio, 	N_SatisfaccionCliente.Pregunta_SistemaInformacion, 	
+'	N_SatisfaccionCliente.Pregunta_ContenidoRedesSociales, 	N_SatisfaccionCliente.Pregunta_RecomiendaServicio, 	
+'	N_SatisfaccionCliente.Id_EstadoFK, 	N_SatisfaccionCliente.Check_TieneRedesSociales, 	N_SatisfaccionCliente.fechaCreacion, 	
+'	N_SatisfaccionCliente.creador, 	N_SatisfaccionCliente.Pregunta_CumplimosEspectativas_Descripcion, 	
+'	N_SatisfaccionCliente.Pregunta_RelacionCalidaPrecio_Descripcion, 	N_SatisfaccionCliente.Pregunta_SistemaInformacion_Descripcion, 	
+'	N_SatisfaccionCliente.Pregunta_ContenidoRedesSociales_Descripcion, 	N_SatisfaccionCliente.Pregunta_RecomiendaServicio_Descripcion  
+'	FROM N_SatisfaccionCliente N_SatisfaccionCliente 	 LEFT OUTER JOIN (Contrato_ServiciosTransportacion Contrato_ServiciosTransportacion 		 
+'	LEFT OUTER JOIN (N_Entidad N_Entidad 			 LEFT OUTER JOIN (N_Contactos N_Contactos 				 
+'	LEFT OUTER JOIN WebSecurityUsers WebSecurityUsers 					 ON  N_Contactos.Id_Usuario = WebSecurityUsers.Id_Usuario ) 				 
+'	ON  N_Entidad.Id_Entidad = N_Contactos.Id_Entidad ) 			 ON  Contrato_ServiciosTransportacion.Id_Entidad = N_Entidad.Id_Entidad  		 
+'	LEFT OUTER JOIN (N_Entidad N_EntidadCliente 			 LEFT OUTER JOIN (N_Contactos N_ContactosCliente 				 
+'	LEFT OUTER JOIN WebSecurityUsers WebSecurityUsersCliente 					 
+'	ON  N_ContactosCliente.Id_Usuario = WebSecurityUsersCliente.Id_Usuario ) 				 
+'	ON  N_EntidadCliente.Id_Entidad = N_ContactosCliente.Id_Entidad ) 			 
+'	ON  Contrato_ServiciosTransportacion.Id_Cliente = N_EntidadCliente.Id_Entidad ) 		 
+'	ON  N_SatisfaccionCliente.Id_ServicioFK = Contrato_ServiciosTransportacion.Id_ContratoServicioTransportacion   
+'	WHERE N_SatisfaccionCliente.fechaCreacion >= ( GETDATE()  - 7)  
+'	AND ( WebSecurityUsers.Userid = :USERID  OR  WebSecurityUsersCliente.Userid = :USERID )
+'%txt%
+
+sql = <<%txt%
+	UPDATE N_SatisfaccionCliente
+	SET 	N_SatisfaccionCliente.Pregunta_CumplimosEspectativas = :Pregunta_CumplimosEspectativas, 
+	N_SatisfaccionCliente.Pregunta_RelacionCalidaPrecio = :Pregunta_RelacionCalidaPrecio, 	
+	N_SatisfaccionCliente.Pregunta_SistemaInformacion = :Pregunta_SistemaInformacion, 	
+	N_SatisfaccionCliente.Pregunta_ContenidoRedesSociales = :Pregunta_ContenidoRedesSociales, 	
+	N_SatisfaccionCliente.Pregunta_RecomiendaServicio = :Pregunta_RecomiendaServicio	
+	WHERE N_SatisfaccionCliente.Id_Satisfaccion = 1083
+%txt%
+
+flag = cn.execute(sql,args)
+if flag = .f. then 
+	'an error occurred - get the error message from cn.callresult.text 
+	'report the error, close the database and then end the script
+	dim errortext as c 
+	errortext = cn.callresult.text
+	cn.close()
+end if
+'DIM a SQL::Resultset object
+'dim rs as sql::resultset
+'rs = cn.resultset
+''get the JSON from the query
+'dim json as c 
+'json = rs.toJSON()
+'dim a as p
+'a = json_parse(json)
+'getEncuesta = a
+'Clean up by freeing the resultset and then closing the database
+cn.freeresult()
+cn.close()
+end function
+
+
+function getEncuesta as p(Userid as c)
+	
+'DIM a SQL arguments object
+dim args as sql::arguments
+args.Add("Userid", Userid)
+
+'DIM an Xbasic AlphaDAO connection object
+dim cn as sql::connection
+dim flag as l
+''open the connection object to connect to the Database
+flag = cn.open("::Name::Nibble")
+dim sql as c
+sql = <<%txt%
+	SELECT  	DISTINCT N_SatisfaccionCliente.Id_Satisfaccion, 	Contrato_ServiciosTransportacion.Descripcion AS Servicio, 	
+	N_SatisfaccionCliente.Check_NosSigueRedesSociales, 	N_SatisfaccionCliente.Id_Cliente, 	N_SatisfaccionCliente.fechaInicio, 	
+	N_SatisfaccionCliente.fechaFin, 	N_SatisfaccionCliente.Observacion, 	N_SatisfaccionCliente.Pregunta_CumplimosEspectativas, 	
+	N_SatisfaccionCliente.Pregunta_RelacionCalidaPrecio, 	N_SatisfaccionCliente.Pregunta_SistemaInformacion, 	
+	N_SatisfaccionCliente.Pregunta_ContenidoRedesSociales, 	N_SatisfaccionCliente.Pregunta_RecomiendaServicio, 	
+	N_SatisfaccionCliente.Id_EstadoFK, 	N_SatisfaccionCliente.Check_TieneRedesSociales, 	N_SatisfaccionCliente.fechaCreacion, 	
+	N_SatisfaccionCliente.creador, 	N_SatisfaccionCliente.Pregunta_CumplimosEspectativas_Descripcion, 	
+	N_SatisfaccionCliente.Pregunta_RelacionCalidaPrecio_Descripcion, 	N_SatisfaccionCliente.Pregunta_SistemaInformacion_Descripcion, 	
+	N_SatisfaccionCliente.Pregunta_ContenidoRedesSociales_Descripcion, 	N_SatisfaccionCliente.Pregunta_RecomiendaServicio_Descripcion  
+	FROM N_SatisfaccionCliente N_SatisfaccionCliente 	 LEFT OUTER JOIN (Contrato_ServiciosTransportacion Contrato_ServiciosTransportacion 		 
+	LEFT OUTER JOIN (N_Entidad N_Entidad 			 LEFT OUTER JOIN (N_Contactos N_Contactos 				 
+	LEFT OUTER JOIN WebSecurityUsers WebSecurityUsers 					 ON  N_Contactos.Id_Usuario = WebSecurityUsers.Id_Usuario ) 				 
+	ON  N_Entidad.Id_Entidad = N_Contactos.Id_Entidad ) 			 ON  Contrato_ServiciosTransportacion.Id_Entidad = N_Entidad.Id_Entidad  		 
+	LEFT OUTER JOIN (N_Entidad N_EntidadCliente 			 LEFT OUTER JOIN (N_Contactos N_ContactosCliente 				 
+	LEFT OUTER JOIN WebSecurityUsers WebSecurityUsersCliente 					 
+	ON  N_ContactosCliente.Id_Usuario = WebSecurityUsersCliente.Id_Usuario ) 				 
+	ON  N_EntidadCliente.Id_Entidad = N_ContactosCliente.Id_Entidad ) 			 
+	ON  Contrato_ServiciosTransportacion.Id_Cliente = N_EntidadCliente.Id_Entidad ) 		 
+	ON  N_SatisfaccionCliente.Id_ServicioFK = Contrato_ServiciosTransportacion.Id_ContratoServicioTransportacion   
+	WHERE N_SatisfaccionCliente.fechaCreacion >= ( GETDATE()  - 7)  
+	AND ( WebSecurityUsers.Userid = :USERID  OR  WebSecurityUsersCliente.Userid = :USERID )
+%txt%
+
+flag = cn.execute(sql,args)
+if flag = .f. then 
+	'an error occurred - get the error message from cn.callresult.text 
+	'report the error, close the database and then end the script
+	dim errortext as c 
+	errortext = cn.callresult.text
+	cn.close()
+end if
+'DIM a SQL::Resultset object
+dim rs as sql::resultset
+rs = cn.resultset
+'get the JSON from the query
+dim json as c 
+json = rs.toJSON()
+dim a as p
+a = json_parse(json)
+getEncuesta = a
+'Clean up by freeing the resultset and then closing the database
+cn.freeresult()
+cn.close()
+end function
+
 function getRecorrido as p(Userid as c)
 	
 	'DIM a SQL arguments object

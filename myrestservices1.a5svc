@@ -5,6 +5,13 @@
             "service": "REST::myRestAPI",
             "methods": [
                 {
+                    "name": "getEncuesta",
+                    "method": "GET",
+                    "path": "/getEncuesta",
+                    "use_query": true,
+                    "auth": ""
+                },
+                {
                     "name": "getRecorrido",
                     "method": "GET",
                     "path": "/getRecorrido",
@@ -18,11 +25,21 @@
                     "path": "/getRRHH",
                     "use_query": true,
                     "auth": ""
+                },
+                {
+                    "name": "updateEncuesta",
+                    "method": "PUT",
+                    "path": "/updateEncuesta",
+                    "use_query": false,
+                    "auth": ""
                 }
             ]
         }
     ],
     "allow": false,
     "flatten_arguments": true,
-    "debugger_header": false
+    "debugger_header": false,
+    "msg": "Working...",
+    "height": ".5in",
+    "width": "4in"
 }

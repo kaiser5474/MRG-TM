@@ -38,6 +38,60 @@
           }
         }
       }
+    },
+    "/getEncuesta": {
+      "get": {
+        "operationId": "getEncuesta",
+        "parameters": [
+          {
+            "in": "query",
+            "name": "Userid",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful request."
+          }
+        }
+      }
+    },
+    "/updateEncuesta": {
+      "put": {
+        "operationId": "updateEncuesta",
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "properties": {
+                "valorPregunta1": {
+                  "type": "number"
+                },
+                "valorPregunta2": {
+                  "type": "number"
+                },
+                "valorPregunta3": {
+                  "type": "number"
+                },
+                "valorPregunta4": {
+                  "type": "number"
+                },
+                "valorPregunta5": {
+                  "type": "number"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful request."
+          }
+        }
+      }
     }
   }
 }
