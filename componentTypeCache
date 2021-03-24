@@ -424,7 +424,6 @@
 {Recorridos_MediosTransportacion_Multimodal_DestinoCM.a5wcmp}|Grid
 {Recorridos_MediosTransportacion_Multimodal_Origen.a5wcmp}|Grid
 {Recorridos_MediosTransportacion_Multimodal_Origen2.a5wcmp}|Grid
-{Recorridos_MediosTransportacion_Multimodal_OrigenCM.a5wcmp}|Grid
 {Recorridos_MediosTransportacion_Multimodal_Transporte.a5wcmp}|Grid
 {Recorridos_MediosTransportacion_MultimodalCM.a5wcmp}|Grid
 {Recorridos_MediosTransportacion_Ultima.a5wcmp}|Grid
@@ -644,8 +643,6 @@
 {N_SatisfaccionCliente.a5wcmp}|Grid
 {Evaluacion360.a5wcmp}|Pagelayout
 {N_SatisfaccionCliente_Pregunta1.a5wcmp}|Grid
-{Recorridos_MediosTransportacion_Multimodal_TransporteCM2.a5wcmp}|Grid
-{Recorridos_MediosTransportacion_Multimodal_TransporteCM.a5wcmp}|Grid
 {Entidad_Rutas.a5wcmp}|Grid
 {N_TarifasRutas.a5wcmp}|Grid
 {Email_List_Ruta.a5wcmp}|Grid
@@ -663,3 +660,5 @@
 {N_FichaTrabajadores_Experiencia.a5wcmp}|Grid
 {N_FichaTrabajadores_Experiencia2.a5wcmp}|Grid
 {N_RRHH2.a5wcmp}|Grid
+{Recorridos_MediosTransportacion_Multimodal_TransporteCM.a5wcmp}|Grid
+{Recorridos_MediosTransportacion_Multimodal_OrigenCM.a5wcmp}|Grid
