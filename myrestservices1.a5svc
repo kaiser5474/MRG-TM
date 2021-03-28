@@ -12,6 +12,13 @@
                     "auth": ""
                 },
                 {
+                    "name": "getPrefacturas",
+                    "method": "GET",
+                    "path": "/getPrefacturas",
+                    "use_query": true,
+                    "auth": ""
+                },
+                {
                     "name": "getRecorrido",
                     "method": "GET",
                     "path": "/getRecorrido",

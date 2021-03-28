@@ -4,7 +4,7 @@ define class REST::myRestAPI
 dim sampleVar1 as c
 sampleVar1 = "Alpha"
 
-function updateEncuesta as p(valorPregunta1 as n, valorPregunta2 as n, valorPregunta3 as n, valorPregunta4 as n, valorPregunta5 as n)
+function updateEncuesta as p(valorPregunta1 as n, valorPregunta2 as n, valorPregunta3 as n, valorPregunta4 as n, valorPregunta5 as n, Id_Satisfaccion as n, Check_TieneRedesSociales as l, Check_NosSigueRedesSociales as l, descripcion1 as c, descripcion2 as c, descripcion3 as c, descripcion4 as c, descripcion5 as c)
 	
 'DIM a SQL arguments object
 
@@ -14,35 +14,20 @@ args.Add("Pregunta_RelacionCalidaPrecio", valorPregunta2)
 args.Add("Pregunta_SistemaInformacion", valorPregunta3) 
 args.Add("Pregunta_ContenidoRedesSociales", valorPregunta4) 
 args.Add("Pregunta_RecomiendaServicio", valorPregunta5)  
-
+args.Add("Id_Satisfaccion", Id_Satisfaccion)
+args.Add("Check_TieneRedesSociales", Check_TieneRedesSociales)
+args.Add("Check_NosSigueRedesSociales", Check_NosSigueRedesSociales)
+args.Add("Pregunta_CumplimosEspectativas_Descripcion", descripcion1)
+args.Add("Pregunta_RelacionCalidaPrecio_Descripcion", descripcion2)
+args.Add("Pregunta_SistemaInformacion_Descripcion", descripcion3)
+args.Add("Pregunta_ContenidoRedesSociales_Descripcion", descripcion4)
+args.Add("Pregunta_RecomiendaServicio_Descripcion", descripcion5)
 'DIM an Xbasic AlphaDAO connection object
 dim cn as sql::connection
 dim flag as l
 ''open the connection object to connect to the Database
 flag = cn.open("::Name::Nibble")
 dim sql as c
-'sql = <<%txt%
-'	N_SatisfaccionCliente.Check_NosSigueRedesSociales, 	N_SatisfaccionCliente.Id_Cliente, 	N_SatisfaccionCliente.fechaInicio, 	
-' 	N_SatisfaccionCliente.Observacion, 	N_SatisfaccionCliente.Pregunta_CumplimosEspectativas, 	
-'	N_SatisfaccionCliente.Pregunta_RelacionCalidaPrecio, 	N_SatisfaccionCliente.Pregunta_SistemaInformacion, 	
-'	N_SatisfaccionCliente.Pregunta_ContenidoRedesSociales, 	N_SatisfaccionCliente.Pregunta_RecomiendaServicio, 	
-'	N_SatisfaccionCliente.Id_EstadoFK, 	N_SatisfaccionCliente.Check_TieneRedesSociales, 	N_SatisfaccionCliente.fechaCreacion, 	
-'	N_SatisfaccionCliente.creador, 	N_SatisfaccionCliente.Pregunta_CumplimosEspectativas_Descripcion, 	
-'	N_SatisfaccionCliente.Pregunta_RelacionCalidaPrecio_Descripcion, 	N_SatisfaccionCliente.Pregunta_SistemaInformacion_Descripcion, 	
-'	N_SatisfaccionCliente.Pregunta_ContenidoRedesSociales_Descripcion, 	N_SatisfaccionCliente.Pregunta_RecomiendaServicio_Descripcion  
-'	FROM N_SatisfaccionCliente N_SatisfaccionCliente 	 LEFT OUTER JOIN (Contrato_ServiciosTransportacion Contrato_ServiciosTransportacion 		 
-'	LEFT OUTER JOIN (N_Entidad N_Entidad 			 LEFT OUTER JOIN (N_Contactos N_Contactos 				 
-'	LEFT OUTER JOIN WebSecurityUsers WebSecurityUsers 					 ON  N_Contactos.Id_Usuario = WebSecurityUsers.Id_Usuario ) 				 
-'	ON  N_Entidad.Id_Entidad = N_Contactos.Id_Entidad ) 			 ON  Contrato_ServiciosTransportacion.Id_Entidad = N_Entidad.Id_Entidad  		 
-'	LEFT OUTER JOIN (N_Entidad N_EntidadCliente 			 LEFT OUTER JOIN (N_Contactos N_ContactosCliente 				 
-'	LEFT OUTER JOIN WebSecurityUsers WebSecurityUsersCliente 					 
-'	ON  N_ContactosCliente.Id_Usuario = WebSecurityUsersCliente.Id_Usuario ) 				 
-'	ON  N_EntidadCliente.Id_Entidad = N_ContactosCliente.Id_Entidad ) 			 
-'	ON  Contrato_ServiciosTransportacion.Id_Cliente = N_EntidadCliente.Id_Entidad ) 		 
-'	ON  N_SatisfaccionCliente.Id_ServicioFK = Contrato_ServiciosTransportacion.Id_ContratoServicioTransportacion   
-'	WHERE N_SatisfaccionCliente.fechaCreacion >= ( GETDATE()  - 7)  
-'	AND ( WebSecurityUsers.Userid = :USERID  OR  WebSecurityUsersCliente.Userid = :USERID )
-'%txt%
 
 sql = <<%txt%
 	UPDATE N_SatisfaccionCliente
@@ -50,44 +35,103 @@ sql = <<%txt%
 	N_SatisfaccionCliente.Pregunta_RelacionCalidaPrecio = :Pregunta_RelacionCalidaPrecio, 	
 	N_SatisfaccionCliente.Pregunta_SistemaInformacion = :Pregunta_SistemaInformacion, 	
 	N_SatisfaccionCliente.Pregunta_ContenidoRedesSociales = :Pregunta_ContenidoRedesSociales, 	
-	N_SatisfaccionCliente.Pregunta_RecomiendaServicio = :Pregunta_RecomiendaServicio	
-	WHERE N_SatisfaccionCliente.Id_Satisfaccion = 1083
+	N_SatisfaccionCliente.Pregunta_RecomiendaServicio = :Pregunta_RecomiendaServicio, 
+	N_SatisfaccionCliente.Id_EstadoFK = 2, 	N_SatisfaccionCliente.Check_TieneRedesSociales = :Check_TieneRedesSociales, 
+	N_SatisfaccionCliente.Check_NosSigueRedesSociales = :Check_NosSigueRedesSociales, 	 	
+	N_SatisfaccionCliente.Pregunta_CumplimosEspectativas_Descripcion = :Pregunta_CumplimosEspectativas_Descripcion, 	
+	N_SatisfaccionCliente.Pregunta_RelacionCalidaPrecio_Descripcion = :Pregunta_CumplimosEspectativas_Descripcion, 	
+	N_SatisfaccionCliente.Pregunta_SistemaInformacion_Descripcion = :Pregunta_SistemaInformacion_Descripcion, 	
+	N_SatisfaccionCliente.Pregunta_ContenidoRedesSociales_Descripcion = :Pregunta_ContenidoRedesSociales_Descripcion, 	
+	N_SatisfaccionCliente.Pregunta_RecomiendaServicio_Descripcion = :Pregunta_RecomiendaServicio_Descripcion
+	WHERE N_SatisfaccionCliente.Id_Satisfaccion = :Id_Satisfaccion
 %txt%
 
 flag = cn.execute(sql,args)
+dim json as c 
+dim a as p
 if flag = .f. then 
 	'an error occurred - get the error message from cn.callresult.text 
 	'report the error, close the database and then end the script
 	dim errortext as c 
 	errortext = cn.callresult.text
+	json = "{'res': false}"
+	a = json_parse(json)
+	updateEncuesta = a
 	cn.close()
+	else	
+	json = "{'res': true}"
+	a = json_parse(json)
+	updateEncuesta = a
 end if
-'DIM a SQL::Resultset object
-'dim rs as sql::resultset
-'rs = cn.resultset
-''get the JSON from the query
-'dim json as c 
-'json = rs.toJSON()
-'dim a as p
-'a = json_parse(json)
-'getEncuesta = a
+
 'Clean up by freeing the resultset and then closing the database
 cn.freeresult()
 cn.close()
 end function
 
+function getPrefacturas as p(Userid as c)
+	
+dim cn as sql::connection
+dim flag as l
+''open the connection object to connect to the Database
+flag = cn.open("::Name::Nibble")
+	
+dim args as sql::arguments
+args.Add("Userid", Userid)
+	
+dim sql as c
+sql = <<%txt%	
+SELECT  	DISTINCT Prefacturas.id_Prefactura, Prefacturas.estado,	Prefacturas.noPrefactura, 	Prefacturas.noFactura, 	Prefacturas.valor, 	
+Prefacturas.fechaCreacion, 	Contrato_ServiciosTransportacion.Descripcion AS Servicio  
+FROM (Prefacturas Prefacturas 	 LEFT OUTER JOIN (WebSecurityUsers WebSecurityUsers 		 
+INNER JOIN (N_Contactos N_Contactos 			 INNER JOIN N_Entidad N_Entidad 				 
+ON  N_Contactos.Id_Entidad = N_Entidad.Id_Entidad ) 			 ON  WebSecurityUsers.Id_Usuario = N_Contactos.Id_Usuario ) 		 
+ON  Prefacturas.id_cliente = N_Entidad.Id_Entidad  	 FULL OUTER JOIN (N_Entidad N_EntidadSubCliente 		 
+LEFT OUTER JOIN (WebSecurityUsers WebSecurityUsersSubCliente 			 RIGHT OUTER JOIN N_Contactos N_ContactosSubCliente 				 
+ON  WebSecurityUsersSubCliente.Id_Usuario = N_ContactosSubCliente.Id_Usuario ) 			 
+ON  N_EntidadSubCliente.Id_Entidad = N_ContactosSubCliente.Id_Entidad  		 
+FULL OUTER JOIN Contrato_ServiciosTransportacion Contrato_ServiciosTransportacion 			 
+ON  N_EntidadSubCliente.Id_Entidad = Contrato_ServiciosTransportacion.Id_Entidad ) 		 
+ON  Prefacturas.id_servicio = Contrato_ServiciosTransportacion.Id_ContratoServicioTransportacion )  
+WHERE (WebSecurityUsersSubCliente.Userid = :Userid  OR  WebSecurityUsers.Userid = :Userid)  AND  Prefacturas.estado = 'Prefacturado'   
+ORDER BY Prefacturas.id_Prefactura DESC
+%txt%	
+
+flag = cn.execute(sql,args)
+
+if flag = .f. then 
+	'an error occurred - get the error message from cn.callresult.text 
+	'report the error, close the database and then end the script
+	dim errortext as c 
+	errortext = cn.callresult.text
+end if
+
+'DIM a SQL::Resultset object
+dim rs as sql::resultset
+rs = cn.resultset
+'get the JSON from the query
+dim json as c 
+json = rs.toJSON()
+dim a as p
+a = json_parse(json)
+getPrefacturas = a
+'Clean up by freeing the resultset and then closing the database
+cn.freeresult()
+cn.close()
+
+end function
 
 function getEncuesta as p(Userid as c)
+	
+dim cn as sql::connection
+dim flag as l
+''open the connection object to connect to the Database
+flag = cn.open("::Name::Nibble")
 	
 'DIM a SQL arguments object
 dim args as sql::arguments
 args.Add("Userid", Userid)
 
-'DIM an Xbasic AlphaDAO connection object
-dim cn as sql::connection
-dim flag as l
-''open the connection object to connect to the Database
-flag = cn.open("::Name::Nibble")
 dim sql as c
 sql = <<%txt%
 	SELECT  	DISTINCT N_SatisfaccionCliente.Id_Satisfaccion, 	Contrato_ServiciosTransportacion.Descripcion AS Servicio, 	
@@ -110,7 +154,7 @@ sql = <<%txt%
 	ON  Contrato_ServiciosTransportacion.Id_Cliente = N_EntidadCliente.Id_Entidad ) 		 
 	ON  N_SatisfaccionCliente.Id_ServicioFK = Contrato_ServiciosTransportacion.Id_ContratoServicioTransportacion   
 	WHERE N_SatisfaccionCliente.fechaCreacion >= ( GETDATE()  - 7)  
-	AND ( WebSecurityUsers.Userid = :USERID  OR  WebSecurityUsersCliente.Userid = :USERID )
+	AND ( WebSecurityUsers.Userid = :USERID  OR  WebSecurityUsersCliente.Userid = :USERID ) AND N_SatisfaccionCliente.Id_EstadoFK = 1
 %txt%
 
 flag = cn.execute(sql,args)
@@ -137,7 +181,6 @@ end function
 
 function getRecorrido as p(Userid as c)
 	
-	'DIM a SQL arguments object
 dim args as sql::arguments
 args.Add("Userid", Userid)
 
@@ -172,8 +215,7 @@ ORDER BY N_Recorrido.FechaSalida DESC
 	
 
 %txt%
-'turn portable SQL on. (for more information on portable sql search in help (https://www.alphasoftware.com/documentation)
-'execute the SQL - pass in the sql::arguments object
+
 flag = cn.execute(sql,args)
 if flag = .f. then 
 	'an error occurred - get the error message from cn.callresult.text 
@@ -194,9 +236,12 @@ getRecorrido = a
 'Clean up by freeing the resultset and then closing the database
 cn.freeresult()
 cn.close()
-	end function
+
+end function
+
 	
-	function getRRHH as p()
+'**** funcion para obtener el listado de trabajadores activos	
+function getRRHH as p()
 	
 	'DIM a SQL arguments object
 dim args as sql::arguments
