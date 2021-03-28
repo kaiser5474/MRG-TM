@@ -57,6 +57,24 @@
         }
       }
     },
+    "/getPrefacturas": {
+      "get": {
+        "operationId": "getPrefacturas",
+        "parameters": [
+          {
+            "in": "query",
+            "name": "Userid",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful request."
+          }
+        }
+      }
+    },
     "/updateEncuesta": {
       "put": {
         "operationId": "updateEncuesta",
@@ -81,6 +99,30 @@
                 },
                 "valorPregunta5": {
                   "type": "number"
+                },
+                "Id_Satisfaccion": {
+                  "type": "number"
+                },
+                "Check_TieneRedesSociales": {
+                  "type": "boolean"
+                },
+                "Check_NosSigueRedesSociales": {
+                  "type": "boolean"
+                },
+                "descripcion1": {
+                  "type": "string"
+                },
+                "descripcion2": {
+                  "type": "string"
+                },
+                "descripcion3": {
+                  "type": "string"
+                },
+                "descripcion4": {
+                  "type": "string"
+                },
+                "descripcion5": {
+                  "type": "string"
                 }
               }
             }
