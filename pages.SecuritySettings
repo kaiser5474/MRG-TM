@@ -2771,11 +2771,6 @@
 		"groups": ""
 	},
 	{
-		"page": "Recorridos_MediosTransportacion_Multimodal_TransporteCM.a5wcmp",
-		"action": "allow",
-		"groups": ""
-	},
-	{
 		"page": "PickUpContacto_Crea.a5wcmp",
 		"action": "allow",
 		"groups": ""
@@ -4487,6 +4482,11 @@
 	},
 	{
 		"page": "Rutas_Tarifas_Entidad_ORDER5-.a5rpt",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Recorridos_MediosTransportacion_Multimodal_OrigenCM2.a5wcmp",
 		"action": "allow",
 		"groups": ""
 	}]
