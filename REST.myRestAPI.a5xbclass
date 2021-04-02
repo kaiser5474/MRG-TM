@@ -1,13 +1,17 @@
 define class REST::myRestAPI
 
-
 dim sampleVar1 as c
 sampleVar1 = "Alpha"
 
 function updateEncuesta as p(valorPregunta1 as n, valorPregunta2 as n, valorPregunta3 as n, valorPregunta4 as n, valorPregunta5 as n, Id_Satisfaccion as n, Check_TieneRedesSociales as l, Check_NosSigueRedesSociales as l, descripcion1 as c, descripcion2 as c, descripcion3 as c, descripcion4 as c, descripcion5 as c)
 	
+'DIM an Xbasic AlphaDAO connection object
+dim cn as sql::connection
+dim flag as l
+''open the connection object to connect to the Database
+flag = cn.open("::Name::Nibble")	
+	
 'DIM a SQL arguments object
-
 dim args as sql::arguments
 args.Add("Pregunta_CumplimosEspectativas", valorPregunta1)
 args.Add("Pregunta_RelacionCalidaPrecio", valorPregunta2) 	
@@ -22,11 +26,7 @@ args.Add("Pregunta_RelacionCalidaPrecio_Descripcion", descripcion2)
 args.Add("Pregunta_SistemaInformacion_Descripcion", descripcion3)
 args.Add("Pregunta_ContenidoRedesSociales_Descripcion", descripcion4)
 args.Add("Pregunta_RecomiendaServicio_Descripcion", descripcion5)
-'DIM an Xbasic AlphaDAO connection object
-dim cn as sql::connection
-dim flag as l
-''open the connection object to connect to the Database
-flag = cn.open("::Name::Nibble")
+
 dim sql as c
 
 sql = <<%txt%
@@ -68,6 +68,65 @@ end if
 cn.freeresult()
 cn.close()
 end function
+
+function paraPass as p (Userid as c, pass as c)
+	'DIM an Xbasic AlphaDAO connection object
+dim cn as sql::connection
+dim flag as l
+''open the connection object to connect to the Database
+flag = cn.open("::Name::Nibble")	
+	
+'dim paraPass2 as c
+'paraPass2 = md5(pass)
+	
+'DIM a SQL arguments object
+dim args as sql::arguments
+args.Add("Userid", Userid)
+args.Add("Pass", paraPass)
+
+dim sql as c
+sql = <<%txt%
+	select passApp 
+	from WebSecurityUsers 
+	WHERE Userid = :Userid
+%txt%
+
+flag = cn.execute(sql,args)
+dim json as c 
+dim a as p
+if flag = .f. then 
+	'an error occurred - get the error message from cn.callresult.text 
+	'report the error, close the database and then end the script	
+	dim errortext as c 
+	errortext = cn.callresult.text
+	paraPass = "{'res': false, 'res2': false, 'msg': 'Problema en la conexi\u00F3n.'}"
+	a = json_parse(json)
+	updateEncuesta = a
+	cn.close()
+	
+	else	
+	json = "{'res': false, 'res2': false, 'msg': 'Usuario incorrecto.'}"	
+
+	dim rs as sql::resultset
+	rs = cn.resultset
+	dim paraPass3 as c
+	while rs.NextRow()
+		paraPass3 = rs.Data(1)
+		if paraPass3 = pass then
+			json = "{'res': true, 'res2': true, 'msg': 'Todo correcto.'}"
+		else
+			json = "{'res': true, 'res2': false, 'msg': 'Contrase\u00F1a incorrecta.'}"
+		end if
+	end while
+	
+	a = json_parse(json)
+	paraPass = a
+end if
+
+'Clean up by freeing the resultset and then closing the database
+cn.freeresult()
+cn.close()
+end function	
 
 function getPrefacturas as p(Userid as c)
 	
@@ -194,7 +253,7 @@ sql = <<%txt%
 	SELECT DISTINCT      N_Recorrido.Id_Recorrido, N_Recorrido.Id_EstadoRecorrido, N_Recorrido.Id_TipoFlete, N_EntidadOrigen.Organizacion AS Origen, 
                          N_EntidadDestino.Organizacion AS Destino, N_Recorrido.FechaSalida, N_Recorrido.fechaCompletado, N_Recorrido.referenciaCliente, 
                          View_RecorridoUltimaActividad2.Observaciones AS ObservacionUltimaAct, N_Actividad.Descripcion AS Actividad, 
-                         WebSecurityUsers.Userid
+                         WebSecurityUsers.Userid,  Contrato_ServiciosTransportacion.Descripcion AS Servicio
              FROM        N_Entidad AS N_EntidadOrigen RIGHT OUTER JOIN
                          N_Recorrido AS N_Recorrido ON N_EntidadOrigen.Id_Entidad = N_Recorrido.Id_Origen LEFT OUTER JOIN
                          N_Entidad AS N_EntidadCliente LEFT OUTER JOIN
@@ -212,8 +271,6 @@ sql = <<%txt%
            WHERE         (WebSecurityUsers.Userid = :Userid) AND (N_Recorrido.Id_EstadoRecorrido >= 2) OR
                          (N_Recorrido.Id_EstadoRecorrido >= 2) AND (WebSecurityUsers_1.Userid = :Userid)
 ORDER BY N_Recorrido.FechaSalida DESC
-	
-
 %txt%
 
 flag = cn.execute(sql,args)
@@ -239,6 +296,149 @@ cn.close()
 
 end function
 
+'***** funcion para obtener los datos para generar el estado de hecho dado un recorrido
+function getEstadoHechos as p(Id_Recorrido as n)
+
+dim args as sql::arguments
+args.Add("Id_Recorrido", Id_Recorrido)
+
+'DIM an Xbasic AlphaDAO connection object
+dim cn as sql::connection
+dim flag as l
+''open the connection object to connect to the Database
+flag = cn.open("::Name::Nibble")
+dim sql as c
+sql = <<%txt%
+SELECT              	 N_Recorrido.Id_Recorrido, N_Recorrido.FechaSalida, N_Recorrido.Id_TipoTransportacion, N_Recorrido.Observaciones, N_Recorrido.Id_TipoFlete, N_Recorrido.Id_EstadoRecorrido, 
+                         N_Recorrido.Id_TipoEjecucion, N_Recorrido.horaSalidaEstimada, N_Recorrido.FechaLlegadaEstimada, N_Recorrido.horaLlegadaEstimada, N_Recorrido.Id_Alcance, N_Recorrido.referenciaCliente, 
+                         N_Recorrido.dashCarga, N_Recorrido.dashPickUp, N_Recorrido.dashValor, N_Recorrido.dashTiempo, N_Recorrido.dashTiempoAct, N_Recorrido.tiempoReal, N_Recorrido.tiempoEstimado, 
+                         N_Recorrido.dashDocumento, N_Recorrido.prefacturado, N_Recorrido.horasExtras, N_Recorrido.tieneCargaSegura, N_Recorrido.diasPrefactura, N_Recorrido.TieneImagenActividad, N_Recorrido.tieneBL, 
+                         N_Recorrido.tieneCertificadosTerceros, N_Recorrido.tieneDeclaracionAduanas, N_Recorrido.tieneDocumentosPrevios, N_Recorrido.tieneEntregaOfertas, N_Recorrido.tieneFacturaComercial, 
+                         N_Recorrido.tieneGerenciamientoViaje, N_Recorrido.tieneGuiaTerceros, N_Recorrido.tieneInformesInternos, N_Recorrido.tieneInstruccionesPermanentes, N_Recorrido.tieneListaEmpaque, 
+                         N_Recorrido.tienePoliza, N_Recorrido.tieneTransporteNacional, N_Recorrido.tieneCheckList, N_Recorrido.tieneReporteDiarioTrabajo, N_Recorrido.tieneCGOrigen, N_Recorrido.paraDocIP, 
+                         N_Recorrido.Id_ServicioFacturacion, N_Entidad_Origen.Organizacion AS LugarOrigen1, N_Entidad_Destino.Organizacion AS LugarDestino1, N_Entidad_Cliente.Organizacion, 
+                         RecMedTranspRepAct.Id_RecMedTranspRepAct, RecMedTranspRepAct.Id_Recorrido AS Expr1, RecMedTranspRepAct.Fecha, RecMedTranspRepAct.HoraDesde, RecMedTranspRepAct.HoraHasta, 
+                         RecMedTranspRepAct.Tiempo, RecMedTranspRepAct.Id_Actividad, RecMedTranspRepAct.Calado, RecMedTranspRepAct.NivelRio, RecMedTranspRepAct.Id_Lugar, RecMedTranspRepAct.FechaLugarSiguiente, 
+                         RecMedTranspRepAct.HoraLugarSiguiente, RecMedTranspRepAct.Id_LugarSiguientes, RecMedTranspRepAct.FechaHoraDesde, RecMedTranspRepAct.FechaHoraHasta, 
+                         RecMedTranspRepAct.Observaciones AS Expr2, RecMedTranspRepAct.FechaHasta, RecMedTranspRepAct.Id_RecMedTransp_Origen, RecMedTranspRepAct.TiempoActividad, RecMedTranspRepAct.Valor, 
+                         RecMedTranspRepAct.Moneda, RecMedTranspRepAct.ValorFinal, RecMedTranspRepAct.MonedaFinal, RecMedTranspRepAct.Id_RecMedTransp_Transp, RecMedTranspRepAct.Id_RecMedTransp_Destino, 
+                         RecMedTranspRepAct.ValorCompra, RecMedTranspRepAct.MonedaCompra, RecMedTranspRepAct.ValorCompraFinal, RecMedTranspRepAct.MonedaCompraFinal, RecMedTranspRepAct.Documento, 
+                         RecMedTranspRepAct.Extension, RecMedTranspRepAct.Archivo, RecMedTranspRepAct.valorGanancia, RecMedTranspRepAct.valorFinanciamiento, RecMedTranspRepAct.ValorFinalEstimado, 
+                         RecMedTranspRepAct.MonedaFinalEstimado, RecMedTranspRepAct.Id_RecMedTransp_OrigenCM, RecMedTranspRepAct.Id_RecMedTransp_DestinoCM, RecMedTranspRepAct.Id_RecMedTransp_TranspCM, 
+                         RecMedTranspRepAct.Id_RecMedTransp, RecMedTranspRepAct.mostrarPrefactura, RecMedTranspRepAct.sumaTiempo, RecMedTranspRepAct.facturaProveedores, RecMedTranspRepAct.Id_FacturaProveedor, 
+                         RecMedTranspRepAct.pagadoTotal, RecMedTranspRepAct.esReembolsable, RecMedTranspRepAct.prepaid, RecMedTranspRepAct.collect, RecMedTranspRepAct.Id_SiglaEspera_FK, 
+                         RecMedTranspRepAct.otherCharge, RecMedTranspRepAct.valorXTonelada, RecMedTranspRepAct.pesoCarga, RecMedTranspRepAct.valorInspeccionMensual, RecMedTranspRepAct.noFormulario, 
+                         Contrato_ServiciosTransportacion.Descripcion AS Servicio, N_Contrato.NoContrato AS Contrato, N_Entidad_Lugar.Organizacion AS Lugar, N_Actividad.Descripcion AS Actividad, 
+                         N_Entidad_2.Organizacion AS ProximoLugar, N_Actividad.LugarSiguiente, N_Entidad_Origen.Referencia AS LugarOrigen, N_Entidad_Destino.Referencia AS LugarDestino, 
+                         N_Entidad_Cliente.Referencia AS Cliente, N_Recorrido.numeroReferendo
+FROM            		 N_Recorrido AS N_Recorrido LEFT OUTER JOIN
+                         RecMedTranspRepAct AS RecMedTranspRepAct LEFT OUTER JOIN
+                         N_Actividad AS N_Actividad ON RecMedTranspRepAct.Id_Actividad = N_Actividad.Id_Actividad LEFT OUTER JOIN
+                         N_Entidad AS N_Entidad_Lugar ON RecMedTranspRepAct.Id_Lugar = N_Entidad_Lugar.Id_Entidad LEFT OUTER JOIN
+                         N_Entidad AS N_Entidad_2 ON RecMedTranspRepAct.Id_LugarSiguientes = N_Entidad_2.Id_Entidad ON N_Recorrido.Id_Recorrido = RecMedTranspRepAct.Id_Recorrido INNER JOIN
+                         N_Entidad AS N_Entidad_Cliente ON N_Recorrido.Id_Cliente = N_Entidad_Cliente.Id_Entidad INNER JOIN
+                         N_Contrato AS N_Contrato ON N_Recorrido.Id_Contrato = N_Contrato.Id_Contrato INNER JOIN
+                         Contrato_ServiciosTransportacion AS Contrato_ServiciosTransportacion ON N_Recorrido.Id_ContratoServicio = Contrato_ServiciosTransportacion.Id_ContratoServicioTransportacion LEFT OUTER JOIN
+                         N_Entidad AS N_Entidad_Origen ON N_Recorrido.Id_Origen = N_Entidad_Origen.Id_Entidad LEFT OUTER JOIN
+                         N_Entidad AS N_Entidad_Destino ON N_Recorrido.Id_Destino = N_Entidad_Destino.Id_Entidad
+WHERE        			(RecMedTranspRepAct.Fecha IS NOT NULL) AND (RecMedTranspRepAct.FechaHasta IS NOT NULL) AND (N_Actividad.estaReportes = 1) AND (N_Recorrido.Id_Recorrido = :Id_Recorrido)
+ORDER BY 				RecMedTranspRepAct.FechaHasta, RecMedTranspRepAct.Fecha, RecMedTranspRepAct.HoraHasta, RecMedTranspRepAct.HoraDesde
+%txt%	
+
+flag = cn.execute(sql,args)
+if flag = .f. then 
+	'an error occurred - get the error message from cn.callresult.text 
+	'report the error, close the database and then end the script
+	dim errortext as c 
+	errortext = cn.callresult.text
+	cn.close()
+end if
+'DIM a SQL::Resultset object
+dim rs as sql::resultset
+rs = cn.resultset
+'get the JSON from the query
+dim json as c 
+json = rs.toJSON()
+dim a as p
+a = json_parse(json)
+getEstadoHechos = a
+'Clean up by freeing the resultset and then closing the database
+cn.freeresult()
+cn.close()
+end function
+
+'***** funcion para obtener los datos para generar el estado de hecho dado un recorrido
+function getManifiestaCarga as p(Id_Recorrido as n)
+
+dim args as sql::arguments
+args.Add("Id_Recorrido", Id_Recorrido)
+
+'DIM an Xbasic AlphaDAO connection object
+dim cn as sql::connection
+dim flag as l
+''open the connection object to connect to the Database
+flag = cn.open("::Name::Nibble")
+dim sql as c
+sql = <<%txt%
+SELECT              	 N_Recorrido.Id_Recorrido, N_Recorrido.FechaSalida, N_Recorrido.Id_TipoTransportacion, N_Recorrido.Observaciones, N_Recorrido.Id_TipoFlete, N_Recorrido.Id_EstadoRecorrido, 
+                         N_Recorrido.Id_TipoEjecucion, N_Recorrido.horaSalidaEstimada, N_Recorrido.FechaLlegadaEstimada, N_Recorrido.horaLlegadaEstimada, N_Recorrido.Id_Alcance, N_Recorrido.referenciaCliente, 
+                         N_Recorrido.dashCarga, N_Recorrido.dashPickUp, N_Recorrido.dashValor, N_Recorrido.dashTiempo, N_Recorrido.dashTiempoAct, N_Recorrido.tiempoReal, N_Recorrido.tiempoEstimado, 
+                         N_Recorrido.dashDocumento, N_Recorrido.prefacturado, N_Recorrido.horasExtras, N_Recorrido.tieneCargaSegura, N_Recorrido.diasPrefactura, N_Recorrido.TieneImagenActividad, N_Recorrido.tieneBL, 
+                         N_Recorrido.tieneCertificadosTerceros, N_Recorrido.tieneDeclaracionAduanas, N_Recorrido.tieneDocumentosPrevios, N_Recorrido.tieneEntregaOfertas, N_Recorrido.tieneFacturaComercial, 
+                         N_Recorrido.tieneGerenciamientoViaje, N_Recorrido.tieneGuiaTerceros, N_Recorrido.tieneInformesInternos, N_Recorrido.tieneInstruccionesPermanentes, N_Recorrido.tieneListaEmpaque, 
+                         N_Recorrido.tienePoliza, N_Recorrido.tieneTransporteNacional, N_Recorrido.tieneCheckList, N_Recorrido.tieneReporteDiarioTrabajo, N_Recorrido.tieneCGOrigen, N_Recorrido.paraDocIP, 
+                         N_Recorrido.Id_ServicioFacturacion, N_Entidad_Origen.Organizacion AS LugarOrigen1, N_Entidad_Destino.Organizacion AS LugarDestino1, N_Entidad_Cliente.Organizacion, 
+                         RecMedTranspRepAct.Id_RecMedTranspRepAct, RecMedTranspRepAct.Id_Recorrido AS Expr1, RecMedTranspRepAct.Fecha, RecMedTranspRepAct.HoraDesde, RecMedTranspRepAct.HoraHasta, 
+                         RecMedTranspRepAct.Tiempo, RecMedTranspRepAct.Id_Actividad, RecMedTranspRepAct.Calado, RecMedTranspRepAct.NivelRio, RecMedTranspRepAct.Id_Lugar, RecMedTranspRepAct.FechaLugarSiguiente, 
+                         RecMedTranspRepAct.HoraLugarSiguiente, RecMedTranspRepAct.Id_LugarSiguientes, RecMedTranspRepAct.FechaHoraDesde, RecMedTranspRepAct.FechaHoraHasta, 
+                         RecMedTranspRepAct.Observaciones AS Expr2, RecMedTranspRepAct.FechaHasta, RecMedTranspRepAct.Id_RecMedTransp_Origen, RecMedTranspRepAct.TiempoActividad, RecMedTranspRepAct.Valor, 
+                         RecMedTranspRepAct.Moneda, RecMedTranspRepAct.ValorFinal, RecMedTranspRepAct.MonedaFinal, RecMedTranspRepAct.Id_RecMedTransp_Transp, RecMedTranspRepAct.Id_RecMedTransp_Destino, 
+                         RecMedTranspRepAct.ValorCompra, RecMedTranspRepAct.MonedaCompra, RecMedTranspRepAct.ValorCompraFinal, RecMedTranspRepAct.MonedaCompraFinal, RecMedTranspRepAct.Documento, 
+                         RecMedTranspRepAct.Extension, RecMedTranspRepAct.Archivo, RecMedTranspRepAct.valorGanancia, RecMedTranspRepAct.valorFinanciamiento, RecMedTranspRepAct.ValorFinalEstimado, 
+                         RecMedTranspRepAct.MonedaFinalEstimado, RecMedTranspRepAct.Id_RecMedTransp_OrigenCM, RecMedTranspRepAct.Id_RecMedTransp_DestinoCM, RecMedTranspRepAct.Id_RecMedTransp_TranspCM, 
+                         RecMedTranspRepAct.Id_RecMedTransp, RecMedTranspRepAct.mostrarPrefactura, RecMedTranspRepAct.sumaTiempo, RecMedTranspRepAct.facturaProveedores, RecMedTranspRepAct.Id_FacturaProveedor, 
+                         RecMedTranspRepAct.pagadoTotal, RecMedTranspRepAct.esReembolsable, RecMedTranspRepAct.prepaid, RecMedTranspRepAct.collect, RecMedTranspRepAct.Id_SiglaEspera_FK, 
+                         RecMedTranspRepAct.otherCharge, RecMedTranspRepAct.valorXTonelada, RecMedTranspRepAct.pesoCarga, RecMedTranspRepAct.valorInspeccionMensual, RecMedTranspRepAct.noFormulario, 
+                         Contrato_ServiciosTransportacion.Descripcion AS Servicio, N_Contrato.NoContrato AS Contrato, N_Entidad_Lugar.Organizacion AS Lugar, N_Actividad.Descripcion AS Actividad, 
+                         N_Entidad_2.Organizacion AS ProximoLugar, N_Actividad.LugarSiguiente, N_Entidad_Origen.Referencia AS LugarOrigen, N_Entidad_Destino.Referencia AS LugarDestino, 
+                         N_Entidad_Cliente.Referencia AS Cliente, N_Recorrido.numeroReferendo
+FROM            		 N_Recorrido AS N_Recorrido LEFT OUTER JOIN
+                         RecMedTranspRepAct AS RecMedTranspRepAct LEFT OUTER JOIN
+                         N_Actividad AS N_Actividad ON RecMedTranspRepAct.Id_Actividad = N_Actividad.Id_Actividad LEFT OUTER JOIN
+                         N_Entidad AS N_Entidad_Lugar ON RecMedTranspRepAct.Id_Lugar = N_Entidad_Lugar.Id_Entidad LEFT OUTER JOIN
+                         N_Entidad AS N_Entidad_2 ON RecMedTranspRepAct.Id_LugarSiguientes = N_Entidad_2.Id_Entidad ON N_Recorrido.Id_Recorrido = RecMedTranspRepAct.Id_Recorrido INNER JOIN
+                         N_Entidad AS N_Entidad_Cliente ON N_Recorrido.Id_Cliente = N_Entidad_Cliente.Id_Entidad INNER JOIN
+                         N_Contrato AS N_Contrato ON N_Recorrido.Id_Contrato = N_Contrato.Id_Contrato INNER JOIN
+                         Contrato_ServiciosTransportacion AS Contrato_ServiciosTransportacion ON N_Recorrido.Id_ContratoServicio = Contrato_ServiciosTransportacion.Id_ContratoServicioTransportacion LEFT OUTER JOIN
+                         N_Entidad AS N_Entidad_Origen ON N_Recorrido.Id_Origen = N_Entidad_Origen.Id_Entidad LEFT OUTER JOIN
+                         N_Entidad AS N_Entidad_Destino ON N_Recorrido.Id_Destino = N_Entidad_Destino.Id_Entidad
+WHERE        			(RecMedTranspRepAct.Fecha IS NOT NULL) AND (RecMedTranspRepAct.FechaHasta IS NOT NULL) AND (N_Actividad.estaReportes = 1) AND (N_Recorrido.Id_Recorrido = :Id_Recorrido)
+ORDER BY 				RecMedTranspRepAct.FechaHasta, RecMedTranspRepAct.Fecha, RecMedTranspRepAct.HoraHasta, RecMedTranspRepAct.HoraDesde
+%txt%	
+
+flag = cn.execute(sql,args)
+if flag = .f. then 
+	'an error occurred - get the error message from cn.callresult.text 
+	'report the error, close the database and then end the script
+	dim errortext as c 
+	errortext = cn.callresult.text
+	cn.close()
+end if
+'DIM a SQL::Resultset object
+dim rs as sql::resultset
+rs = cn.resultset
+'get the JSON from the query
+dim json as c 
+json = rs.toJSON()
+dim a as p
+a = json_parse(json)
+getEstadoHechos = a
+'Clean up by freeing the resultset and then closing the database
+cn.freeresult()
+cn.close()
+end function
+
+
 	
 '**** funcion para obtener el listado de trabajadores activos	
 function getRRHH as p()
@@ -258,7 +458,8 @@ SELECT  N_FichaTrabajadores.Id_Trabajador, 	N_Areas.Descripcion AS Area, N_Ficha
 N_FichaTrabajadores.EstadoCivil, N_FichaTrabajadores.Sexo, N_FichaTrabajadores.FechaContrato,
 ((('(+' + N_Pais.PrefijoTelefonico) + ') ') + N_FichaTrabajadores.MobileTelephoneNumber) AS Movil, 	
 N_FichaTrabajadores.Imagen, 	N_FichaTrabajadores.EmailAddress1, 	N_FichaTrabajadores.CodIdentidad, 	
-((((N_FichaTrabajadores.PrimerNombre + ' ') + N_FichaTrabajadores.SegundoNombre) + ' ') + N_FichaTrabajadores.Apellido) AS NombreTrabajador  
+((((N_FichaTrabajadores.PrimerNombre + ' ') + N_FichaTrabajadores.SegundoNombre) + ' ') + N_FichaTrabajadores.Apellido) AS NombreTrabajador,  
+N_Pais.DescripcionEspanol AS Nacionalidad
 FROM (N_FichaTrabajadores N_FichaTrabajadores 	 LEFT OUTER JOIN N_Pais N_Pais 		 ON  N_FichaTrabajadores.Id_PaisMobileTelephone = N_Pais.Id_Pais  	 
 LEFT OUTER JOIN N_Areas N_Areas 		 ON  N_FichaTrabajadores.Id_AreaComercial = N_Areas.Id_Areas )  
 WHERE N_FichaTrabajadores.Activo = 1	

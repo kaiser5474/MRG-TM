@@ -12,6 +12,20 @@
                     "auth": ""
                 },
                 {
+                    "name": "getEstadoHechos",
+                    "method": "POST",
+                    "path": "/getEstadoHechos",
+                    "use_query": false,
+                    "auth": ""
+                },
+                {
+                    "name": "getManifiestaCarga",
+                    "method": "POST",
+                    "path": "/getManifiestaCarga",
+                    "use_query": false,
+                    "auth": ""
+                },
+                {
                     "name": "getPrefacturas",
                     "method": "GET",
                     "path": "/getPrefacturas",
@@ -31,6 +45,13 @@
                     "method": "GET",
                     "path": "/getRRHH",
                     "use_query": true,
+                    "auth": ""
+                },
+                {
+                    "name": "paraPass",
+                    "method": "POST",
+                    "path": "/paraPass",
+                    "use_query": false,
                     "auth": ""
                 },
                 {

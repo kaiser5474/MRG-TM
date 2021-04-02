@@ -21,6 +21,54 @@
         }
       }
     },
+    "/getManifiestaCarga": {
+      "post": {
+        "operationId": "getManifiestaCarga",
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "properties": {
+                "Id_Recorrido": {
+                  "type": "number"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful request."
+          }
+        }
+      }
+    },
+    "/getEstadoHechos": {
+      "post": {
+        "operationId": "getEstadoHechos",
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "properties": {
+                "Id_Recorrido": {
+                  "type": "number"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful request."
+          }
+        }
+      }
+    },
     "/getRecorrido": {
       "get": {
         "operationId": "getRecorrido",
@@ -66,6 +114,33 @@
             "name": "Userid",
             "required": true,
             "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful request."
+          }
+        }
+      }
+    },
+    "/paraPass": {
+      "post": {
+        "operationId": "paraPass",
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "properties": {
+                "Userid": {
+                  "type": "string"
+                },
+                "pass": {
+                  "type": "string"
+                }
+              }
+            }
           }
         ],
         "responses": {

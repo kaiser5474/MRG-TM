@@ -1,0 +1,27 @@
+{
+    "data": {
+        "legacy": "../lt_Recorrido_Valores.a5rpt"
+    },
+    "layout": {
+        "info": {
+            "PageWidth": 16747,
+            "PageHeight": 15840,
+            "MarginLeft": 720,
+            "MarginTop": 720,
+            "MarginRight": 720,
+            "MarginBottom": 720
+        },
+        "block": {
+            "Content": [
+                {
+                    "Field": "image",
+                    "ContentType": "ExternalImage",
+                    "image": {
+                        "width": 15307
+                    }
+                }
+            ],
+            "startNew": "Page"
+        }
+    }
+}

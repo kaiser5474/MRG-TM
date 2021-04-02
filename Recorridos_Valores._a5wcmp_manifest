@@ -1,4 +1,4 @@
-A5SaveTimeStamp:20201119150303443
+A5SaveTimeStamp:20210402020204688
 css:GrBlue
 subComponent:Recorridos_MediosTransportacion_Multimodal_Origen
 subComponent:Recorridos_MediosTransportacion_Multimodal_Transporte
@@ -9,4 +9,4 @@ subComponent:Recorridos_MediosTransportacion_Multimodal_DestinoCM
 subComponent:RegistroProveedores
 subComponent:MostrarViajesPrefacturados_Multimodal
 subComponent:subirDocumentosRecorridosValores
-copyfile:{C:\4-Trabajos\Mariloginsa\Nibble-TM\Nibble-TM.WebProjects\MRG.WebProject\lt_Recorrido_Valores.a5rpt}
+copyfile:{D:\Nibble-TM\Nibble-TM.WebProjects\MRG5.WebProject\lt_Recorrido_Valores.a5rpt}
