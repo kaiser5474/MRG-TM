@@ -6,7 +6,7 @@ function paraEmail as p ()
 	pProfile.client_hostname = "secure.emailsrvr.com"
 	pProfile.smtp_port = 465
 	pProfile.smtp_username = "reportes@mariloginsatm.com"
-	pProfile.smtp_password = "87UcDw2$Q!&6"
+	pProfile.smtp_password = "tv^9Ne*xbnrbtnq%ry5G"
 	pProfile.secureMode = "SSL"
 	pProfile.emailOculto = "jarvismiranda728096@gmail.com"
 	pProfile.from = "reportes@mariloginsatm.com"		

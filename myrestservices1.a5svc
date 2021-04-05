@@ -23,6 +23,7 @@
                     "method": "POST",
                     "path": "/getManifiestaCarga",
                     "use_query": false,
+                    "body_encoding": "json",
                     "auth": ""
                 },
                 {
